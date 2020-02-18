@@ -18,8 +18,8 @@ Das Praxissemester soll mindestens 95 Arbeitstage umfassen, die zwischen einschl
 [Cardioids](Code/Cardioids/start.html)  
 [RubberBand](Code/RubberBand/start.html)
 
-## Komposition
-[Fuwashima (Soundtrack zum GlobalGameJam2020)](Music/Fuwashima)
+## Musik
+[Fuwashima (Soundtrack zum GlobalGameJam2020)](Musik/Fuwashima)
 
 ## Grafik
 [Donald Trump, Kugelschreiberzeichnung](CCF18022020_0004.jpg)  
