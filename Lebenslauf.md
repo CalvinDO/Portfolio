@@ -1,5 +1,5 @@
 # Daten und Lebenslauf
-<img src="Calvin1.jpg" align="right" width="28%"/>  
+<img src="Calvin1.jpg" align="right" width="29%"/>  
 
 ## Adresse  
 Erlenbrucker Straße 28  
