@@ -19,7 +19,8 @@ Das Praxissemester soll mindestens 95 Arbeitstage umfassen, die zwischen einschl
 [FraktalAnimation](Code/FraktalAnimation/start.html)  
 [Cardioids](Code/Cardioids/start.html)  
 [RubberBand](Code/RubberBand/start.html)
-
+## Video
+[Cardioids - Tutorial](https://www.youtube.com/watch?v=A68-juE2ves&t=92s)
 ## Musik
 [Fuwashima (Soundtrack zum GlobalGameJam2020)](Musik/Fuwashima.mp3)  
 [PiSong](Musik/PiSong.mp3)  
@@ -28,7 +29,6 @@ Das Praxissemester soll mindestens 95 Arbeitstage umfassen, die zwischen einschl
 [Donald Trump, Kugelschreiberzeichnung](CCF18022020_0004.jpg)  
 [Schlafend im Bus, Kugelschreiberzeichnung](CCF18022020_0005.jpg)  
 [Tribal, Tuschezeichnung](CCF18022020_0006.jpg)  
-
 # Erfahrung
 Seit mein Vater, ein Professor für Computerspiele, mich bereits in sehr frühem Alter von 3 Jahren vorsichtig an dieses Medium herangeführt hat, interessierte ich mich nicht nur für das Spielen, sondern auch ähnlich stark für die Entwicklung von Games. Ich zeichnete zusätzliche Level für Super Mario oder entwarf neue Spiele, das könnte man als meine ersten Schritte im Gamedesign bezeichnen. Später verbrachte ich viel Zeit mit der Kombination der elementaren Redstone-Elemente von Minecraft um logische Schaltungen, Rechensysteme, Binärzähler und Segmentanzeigen zu konstruieren. Auch bereitete mir die Modifikation des Spiels durch selbst gestaltete Resourcepacks viel Freude.  
 
