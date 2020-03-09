@@ -8,7 +8,8 @@ Das Praxissemester soll mindestens 95 Arbeitstage umfassen, die zwischen einschl
 # Anhang
 ## Dokumente
 [Daten und Lebenslauf](Lebenslauf.md)  
-[Abiturzeugnis](CCF18022020_0001.jpg)  
+[Abiturzeugnis](CCF18022020_0001.jpg) 
+[Semesternotenspiegel](Notenspiegel.pdf)  
 [Empfehlungsschreiben](EmpfehlungCalvinDellOro.pdf)  
 [Auszeichnung des Gymnasiums für kulturelles Engagement](CCF18022020_0003.jpg)  
 [Hackathon-Urkunde](CCF18022020_0002.jpg)  
