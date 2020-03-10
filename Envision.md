@@ -3,6 +3,7 @@
 # Motivation
 ** Es wäre gut, wenn Du hier ein wenig auf deren tatsächlichen Produkte eingehst damit sie sehen, dass Du wenigstens auf der Website warst**
 
+
 Ich bewerbe mich bei Envision um eine Stelle für mein Praxis-Semester, da ich auf Grund ihrer Produkte, Ihres Auftretens und Ihrer praktikumsbezogener Stellenanzeige ein hohes Potential der Erfüllung einer, mehrerer oder aller unter [Erfahrung](#erfahrung) genannter Interessen bei Ihnen sehe. Bei der Betrachtung der in Ihren Titeln verwendeten Modellen, Grafiken, Sounds und Spielmechaniken erfahre ich Inspiration und betrachte es als wahrscheinlich, bei der Zusammenarbeit mit anzutreffenden Beteiligten Ihres Unternehmens kreativ und mit großem Enthusiasmus bei der Planung und Entwicklung von Game-Inhalten mitwirken zu können, sowie auch meine persönlichen Fähigkeiten zu verbessern. Nicht abstreiten möchte ich dabei auch den Faktor der Freude und des Spaßes, den ich meiner und Ihrerseits in Aussicht stelle.  
 
 Das Praxissemester soll mindestens 95 Arbeitstage umfassen, die zwischen einschließlich August 2020 und Februar 2021 erbracht weden. 
@@ -10,7 +11,7 @@ Das Praxissemester soll mindestens 95 Arbeitstage umfassen, die zwischen einschl
 # Anhang
 ## Dokumente
 [Daten und Lebenslauf](Lebenslauf.md)  
-[Abiturzeugnis](CCF18022020_0001.jpg)
+[Abiturzeugnis](CCF18022020_0001.jpg)  
 [Semesternotenspiegel](Notenspiegel.pdf)  
 [Empfehlungsschreiben](EmpfehlungCalvinDellOro.pdf)  
 [Auszeichnung des Gymnasiums für kulturelles Engagement](CCF18022020_0003.jpg)  
