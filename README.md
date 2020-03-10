@@ -1,5 +1,7 @@
+### Bewerbung bei Black Forest Games
+
 # Motivation
-Ich bewerbe mich bei Black Forest Games um eine Stelle für mein Praxis-Semester, da ich auf Grund ihrer Produkte und Ihres Auftretens ein hohes Potential der Erfüllung einer, mehrerer oder aller unter [Erfahrung](#erfahrung) genannter Interessen bei Ihnen sehe. Bei der Betrachtung der in Ihren Titeln verwendeten Modellen, Grafiken, Sounds und Spielmechaniken erfahre ich Inspiration und betrachte es als wahrscheinlich, bei der Zusammenarbeit mit anzutreffenden Beteiligten Ihres Unternehmens kreativ und mit großem Enthusiasmus bei der Planung und Entwicklung von Game-Inhalten mitwirken zu können, sowie auch meine persönlichen Fähigkeiten zu verbessern. Nicht abstreiten möchte ich dabei auch den Faktor der Freude und des Spaßes, den ich meiner und Ihrerseits in Aussicht stelle.  
+Ich bewerbe mich bei Black Forest Games um eine Stelle für mein Praxis-Semester, da ich auf Grund Ihrer Produkte und Ihres Auftretens ein hohes Potential der Erfüllung einer, mehrerer oder aller unter [Erfahrung](#erfahrung) genannter Interessen bei Ihnen sehe. Bei der Betrachtung der in Ihren Titeln verwendeten Modellen, Grafiken, Sounds und Spielmechaniken erfahre ich Inspiration und betrachte es als wahrscheinlich, bei der Zusammenarbeit mit anzutreffenden Beteiligten Ihres Unternehmens kreativ und mit großem Enthusiasmus bei der Planung und Entwicklung von Game-Inhalten mitwirken zu können, sowie auch meine persönlichen Fähigkeiten zu verbessern. Nicht abstreiten möchte ich dabei auch den Faktor der Freude und des Spaßes, den ich meiner und Ihrerseits in Aussicht stelle.  
 
 Das Praxissemester soll mindestens 95 Arbeitstage umfassen, die zwischen einschließlich August 2020 und Februar 2021 erbracht weden. 
 
@@ -7,6 +9,7 @@ Das Praxissemester soll mindestens 95 Arbeitstage umfassen, die zwischen einschl
 ## Dokumente
 [Daten und Lebenslauf](Lebenslauf.md)  
 [Abiturzeugnis](CCF18022020_0001.jpg)  
+[Semesternotenspiegel](Notenspiegel.pdf)  
 [Empfehlungsschreiben](EmpfehlungCalvinDellOro.pdf)  
 [Auszeichnung des Gymnasiums für kulturelles Engagement](CCF18022020_0003.jpg)  
 [Hackathon-Urkunde](CCF18022020_0002.jpg)  
@@ -17,7 +20,8 @@ Das Praxissemester soll mindestens 95 Arbeitstage umfassen, die zwischen einschl
 [FraktalAnimation](Code/FraktalAnimation/start.html)  
 [Cardioids](Code/Cardioids/start.html)  
 [RubberBand](Code/RubberBand/start.html)
-
+## Video
+[Cardioids - Tutorial](https://youtu.be/A68-juE2ves)
 ## Musik
 [Fuwashima (Soundtrack zum GlobalGameJam2020)](Musik/Fuwashima.mp3)  
 [PiSong](Musik/PiSong.mp3)  
