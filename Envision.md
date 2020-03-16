@@ -2,7 +2,8 @@
 
 # Motivation
 
-Bereits in meinen ersten Lebensjahren schaute ich meinem Vater bei der Entwicklung von Effekten für SpellForce über die Tischkante. Nun bewerbe ich mich bei Envision um eine Stelle für mein Praxis-Semester, um selbst als Teil dieser Branche Spielinhalte zu entwickeln. Auf Grund Ihrer Produkte, Ihres Auftretens und Ihrer praktikumsbezogener Stellenanzeige sehe ich ein hohes Potential der Erfüllung einer, mehrerer oder aller unter [Erfahrung](#erfahrung) genannter Interessen bei Ihnen. Bei der Betrachtung der in Ihren Titeln verwendeten Modellen, Grafiken, Sounds und Spielmechaniken erfahre ich Inspiration und betrachte es als wahrscheinlich, bei der Zusammenarbeit mit anzutreffenden Beteiligten Ihres Unternehmens kreativ und mit großem Enthusiasmus bei der Planung und Entwicklung von Game-Inhalten mitwirken zu können, sowie auch über meine Vorerfahrung hinauszugehen und somit persönliche Fähigkeiten zu verbessern. Nicht abstreiten möchte ich dabei auch den Faktor der Freude und des Spaßes, den ich meiner und Ihrerseits in Aussicht stelle.  
+Bereits in meinen ersten Lebensjahren schaute ich meinem Vater bei der Entwicklung von Effekten für SpellForce über die Tischkante. Was mir damals unverständlich vorkam, ist heute nicht mehr wegzudenken. Nun bewerbe ich mich bei Envision um eine Stelle für mein Praxis-Semester, um selbst als Teil dieser Branche Spielinhalte zu entwickeln. Auf Grund Ihrer Produkte, Ihres Auftretens und Ihrer praktikumsbezogener Stellenanzeige sehe ich ein hohes Potential der Erfüllung einer, mehrerer oder aller unter [Erfahrung](#erfahrung) genannter Interessen bei Ihnen. Bei der Betrachtung der in Ihren Titeln verwendeten Modellen, Grafiken, Sounds und Spielmechaniken erfahre ich Inspiration und betrachte es als wahrscheinlich, bei der Zusammenarbeit mit anzutreffenden Bet
+eiligten Ihres Unternehmens kreativ und mit großem Enthusiasmus bei der Planung und Entwicklung von Game-Inhalten mitwirken zu können, sowie auch über meine Vorerfahrung hinauszugehen und somit persönliche Fähigkeiten zu verbessern. Nicht abstreiten möchte ich dabei auch den Faktor der Freude und des Spaßes, den ich meiner und Ihrerseits in Aussicht stelle.  
 
 Das Praxissemester soll mindestens 95 Arbeitstage umfassen, die zwischen einschließlich August 2020 und Februar 2021 erbracht weden. 
 
@@ -15,7 +16,6 @@ Das Praxissemester soll mindestens 95 Arbeitstage umfassen, die zwischen einschl
 [Auszeichnung des Gymnasiums für kulturelles Engagement](CCF18022020_0003.jpg)  
 [Hackathon-Urkunde](CCF18022020_0002.jpg)  
 [Regelung zum praktischen Studiensemester](CCF18022020_0000.jpg)  
-** Bestätigung zu den Modulen **
 
 ## Coding-Beispiele  
 [Fraktal](Code/Fraktal/start.html)  
