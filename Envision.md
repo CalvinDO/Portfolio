@@ -23,8 +23,64 @@ Das Praxissemester soll mindestens 95 Arbeitstage umfassen, die zwischen einschl
 [Cardioids](Code/Cardioids/start.html)  
 [RubberBand](Code/RubberBand/start.html)  
 
-## 3D - Modeling Projekte
-<iframe src ="https://calvindo.github.io/GiS/Aufgabe02/"> </iframe>
+## 3D - Blender Projekte
+<table>
+      <thead>
+        <tr>
+          <th>
+            Ein Turret für <a href="https://vale-sch.github.io/GIS-SoSe2020/Aufgabe02/Portfolio.htm">Valentin</a>s
+            Tower-Defense-Game:
+          </th>
+          <th>
+            Eine Truhe</b>
+          </th>
+          <th>
+            Und dessen Schloss
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <iframe width="640" height="390" src="https://www.youtube.com/embed/VAOCARtbn54"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </td>
+          <td>
+            <img src="Truhe.png" alt="Truhe" height="390">
+          </td>
+          <td>
+            <img src="Schloss.png" alt="Schloss" height="390">
+          </td>
+        </tr>
+      </tbody>
+      <tr>
+        <th>
+          Eine Wackelpudding-Simulation <small><i>(etwas zu klebrig)</i></small>
+        </th>
+        <th>
+          Ein verrücktes U-Boot
+        </th>
+        <th>
+          Ein Schild
+        </th>
+      </tr>
+      <tbody>
+        <tr>
+          <td>
+            <video height="390" controls loop autoplay>
+              <source src="Jelly.mp4" alt="Jelly" type="video/mp4">
+              Dein Browser unterstützt den Video-Tag nicht
+            </video>
+          </td>
+          <td>
+            <video height="390" controls loop autoplay>
+              <source src="submarine.mp4" alt="submarine" type="video/mp4">
+              Dein Browser unterstützt den Video-Tag nicht
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
 ## Video
 [Cardioids - Tutorial](https://youtu.be/A68-juE2ves)
