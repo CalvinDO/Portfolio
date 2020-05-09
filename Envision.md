@@ -23,7 +23,7 @@ Das Praxissemester soll mindestens 95 Arbeitstage umfassen, die zwischen einschl
 [Cardioids](Code/Cardioids/start.html)  
 [RubberBand](Code/RubberBand/start.html)  
 
-## 3D-Modeling Projekte
+## 3D - Modeling Projekte
 <iframe src ="https://calvindo.github.io/GiS/Aufgabe02/"> </iframe>
 
 ## Video
