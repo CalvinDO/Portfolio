@@ -1,5 +1,5 @@
-var Wingsuit;
-(function (Wingsuit) {
+var RubberBand;
+(function (RubberBand) {
     let crc2;
     const timeSliceInMS = 1;
     // Initial position
@@ -121,5 +121,5 @@ var Wingsuit;
         drawPull2(3);
         requestAnimationFrame(animate);
     }
-})(Wingsuit || (Wingsuit = {}));
+})(RubberBand || (RubberBand = {}));
 //# sourceMappingURL=Main.js.map
