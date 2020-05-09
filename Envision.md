@@ -21,7 +21,9 @@ Das Praxissemester soll mindestens 95 Arbeitstage umfassen, die zwischen einschl
 [Fraktal](Code/Fraktal/start.html)  
 [FraktalAnimation](Code/FraktalAnimation/start.html)  
 [Cardioids](Code/Cardioids/start.html)  
-[RubberBand](Code/RubberBand/start.html)
+[RubberBand](Code/RubberBand/start.html)  
+## 3D-Modeling Projekte
+
 ## Video
 [Cardioids - Tutorial](https://youtu.be/A68-juE2ves)
 ## Musik
