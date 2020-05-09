@@ -46,7 +46,7 @@ Das Praxissemester soll mindestens 95 Arbeitstage umfassen, die zwischen einschl
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </td>
           <td>
-            <img src="Truhe.png" alt="Truhe" height="390">
+            <img src="Truhe.png" alt="Truhe" height="width = 640">
           </td>
           <td>
             <img src="Schloss.png" alt="Schloss" height="390">
