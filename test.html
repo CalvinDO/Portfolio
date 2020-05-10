@@ -122,6 +122,8 @@
                     erschaffen wollte.
                     Ich verwendete hier alle elementaren Tools, die der Edit-Mode von Blender für Hard-Surface-Modeling
                     zu bieten hat.
+                    <br>
+                    Das Endresultat ist in dem Tower-Defense-Game meines Kollegen integriert
                 </i>
             </p>
 
@@ -132,7 +134,8 @@
                     ohne Material) einer symmetrischen Truhe, mitsamt eines Deckels und eines Rahmens war. <br>
                     Ich ging darüber hinaus, in dem ich aus der primitiven Geometrie Details wie Edelsteine durch
                     Loop-Cuts, Extrudes und Insets erzeugte. Die Marmortexturen erzeugte ich prozedural über
-                    Noise-Nodes</i>
+                    Noise-Nodes, die Holztextur ebenso über Noise, Musgrave und Voronoi Nodes, sowie Vektorkurven und
+                    Color-Burn-Nodes.</i>
             </p>
 
             <h3>Und dessen Schloss</h3>
@@ -161,16 +164,30 @@
                 Ihr Browser unterstützt den Video-Tag nicht
             </video>
             <p>
-                <i>Die Anforderungen der Computergrafik-Aufgabe, die mich zu dieser Animation inspirierte, bestand darin, im Object-Mode rein durch Skalierung, Rotation und Verschiebung, sowie das Anwenden einfacher Materialien ein U-Boot zusammenzustellen.Komposition primitiver Körper (Rein "Object-Mode",
-                    ohne Eingriff in die Topologie oder Benutzung von
-                    Modifiern), volumetrische Beleuchtung</i>
+                <i>Die Anforderungen der Computergrafik-Aufgabe, die mich zu dieser Animation inspirierte, bestand
+                    darin, rein durch Skalierung, Rotation und Verschiebung von Objekten, sowie das Anwenden einfacher
+                    Materialien ein U-Boot zusammenzustellen. Der "Regel", nur mit der Komposition primitiver Körper zu
+                    arbeiten widersetzte ich mich nicht, sondern nahm es als Herausforderung.<br>
+                    Die Positionierung der Spirale aus Blasen erreichte ich durch Rotation langer Blasenreihen unter
+                    Proportionalem Bearbeiten. Ähnlich erreichte ich auch die Greifarme des U-Boots. <br>
+                    Die Textur der Blasen erreichte ich durch die Mischung einer Noise-Textur und Transparenz. Die
+                    Volumetrische Beleuchtung erreichte ich durch die Addition eines Lichtstreuenden, und eines
+                    Licht-Absorbierenden Shaders mit unterschiedlicher Dichte.<br>
+                    Die Bewegungsabläufe erreichte ich durch Keyframes und interpolierten Kurven.
+                    <br>
+                    Dies war mein erstes Modellierungsprojekt mit einer zeitlich beschränkten Vorgabe</i>
             </p>
             <h3>
                 Ein Schild
             </h3>
             <img src="Schild.png" alt="Schild" height="390">
             <p>
-                <i>Freies Design mit Bézierkurven, Präzisions-Modeling, Prozedurales Texturing</i>
+                <i>Die Grundidee für diesen Schild ist der Vorarbeitung eines Computergrafik-Vorlesungsskriptes, welches
+                    nun allerdings ersetzt wurde, zu verdanken. Hier hätte die Anforderung aus dem Modellieren eines
+                    Schildes, und dem Ausschneiden von Bereichen mit dem Boolean-Modifier bestanden. <br>
+                    Ich ging durch die Modellierung komplexerer Details, sowie frei gestaltete Verzierungen durch
+                    Bézierkurven hinaus. Auch hier verwendete ich Kombinationen aus Noise-Texturen, um detaillierte
+                    Shader zu erreichen</i>
             </p>
             <h3>
                 Ein Korallenriff
@@ -180,16 +197,30 @@
                 Ihr Browser unterstützt das Videoformat nicht
             </video>
             <p>
-                <i>Hervorgehend aus einer Computergrafik-Aufgabe, Prozedurales Displacement</i>
+                <i>Dieses Projekt geht aus der aktuellsten Computergrafik-Aufgabe hervor. Das Modeling erfolgte über die
+                    Extrudierung eines "Control-Cage", auf dem der Catmull-Clark Algorithmus angewendet wurde Allerdings
+                    wurden auch hier keine Materialien gefordert, sondern der Umgang mit dem Displacement-Modifier
+                    verinnerlicht werden.<br>
+                    Diesen ersetzte ich durch einen entsprechenden Displacement-Node, durch den ich nicht nur
+                    Oberflächenberechnungen der Versetzten Stellen verändern kann, um beispielsweise unterschiedliche
+                    Farben oder Rauigkeitswerte zu erreichen, sondern auch generell mehr Kombinations- und
+                    Steuerungsmöglichkeiten durch weitere Nodes, wie beispielsweise Noise-Nodes hatte.
+                </i>
             </p>
             <h3>
                 Ein Donut
             </h3>
             <img src="Donut.png" alt="Donut" height="390">
             <p>
-                <i>Ergebnis des zweiten Levels der Blender-Tutorialreihe von <a
-                        href="https://www.youtube.com/watch?v=TPrnSACiTJ4">Blender Guru</a>Soft-Surface-Modeling,
-                    Sculpting, Prozedurales Texturing</i>
+                <i>Dies ist mein Ergebnis des zweiten Levels der Blender-Tutorialreihe des <a
+                        href="https://www.youtube.com/watch?v=TPrnSACiTJ4">Blender Guru</a>s. Das durch proportionales
+                    Editieren und Scultping erreichte Mesh des Teigs wurde durch Noise-Texturen und Overlay-Variation
+                    mit Bump versehen und geshaded, sowie Texture-Painting angewandt, um leicht verbrannte Stellen zu
+                    malen<br>
+                    In der Tutorial Reihe wird eine Zuckerglasur verwendet, ich jedoch erwünschte mir eine
+                    Schokoladenglasur, die ich durch ein Node-Setup, in dem ein Glossy- und Diffuse Shader gemischt
+                    werden, erreichte. Auch hier ist etwas Displacement durch eine Noise-Textur meinerseits verwendet
+                    worden.</i>
             </p>
             <h3>
                 Ein brennender Affenkopf
@@ -199,7 +230,17 @@
                 Ihr Browser unterstützt das Videoformat nicht
             </video>
             <p>
-                <i>Mein erstes Blender Projekt, Mantaflow Feuer&Rauch Simulation</i>
+                <i>Dies ist mein erstes Blender Projekt überhaupt. In diesem Erfahrungszustand hatte ich noch nie
+                    Topologie verändert, und somit für eine Mantaflow Feuer&Rauch-Simulation den vorgefertigten
+                    Affenkopf "Suzanne" verwendet, und eine Animation gerendert. Die Position der einzelnen Flammen wird
+                    durch eine Wolken-Textur über das Objekt bewegt, um einen höheren Grad an Zufall zu erreichen.
+                    Ein brennender Affenkopf kommt in dem Donut-Tutorial des <a
+                        href="https://www.youtube.com/watch?v=TPrnSACiTJ4">Blender Guru</a>s ganz zu Beginn vor,
+                    allerdings gab es zu der Entstehungszeit Mantaflow noch nicht. Er demonstrierte das Feuer, um
+                    Motivation für Blender zu schaffen. Dieser Teil der ersten Folge war mit Mantaflow allerdings nicht
+                    nachahmbar, was mich nicht zum Aufgeben, sondern eigenständigem Nachforschen und Ausprobieren
+                    ermutigte, bis ich einen brennenden Affenkopf erhielt.
+                </i>
             </p>
 
 
