@@ -19,7 +19,7 @@
 
 # 3D-Modelling Projekte mit Blender                  
 ## Turret for Tower-Defense-Game
-<iframe width="100%" height="50%" src="https://www.youtube.com/embed/VAOCARtbn54"
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/VAOCARtbn54"
 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>  
 Dies ist mein erstes 3D-Mesh-Modellierungsprojekt, daher wird in diesem Video teilweise unerfahrener Workflow wiedergegeben. Die Idee dazu kam mir, als ich einem Kollegen beim Programmieren eines 3D-Tower-Defense Spiels zuschaute.  
@@ -57,7 +57,7 @@ Die Grundidee für diesen Schild ist der Vorarbeitung eines Computergrafik-Vorle
 Ich ging durch die Modellierung komplexerer Details, sowie frei gestaltete Verzierungen durch Bézierkurven darüber hinaus. Auch hier verwendete ich Kombinationen aus Noise-Texturen, um detaillierte Shader zu erreichen.  
 
 ## Korallenriff  
-<video widht="100%" controls loop>
+<video width="100%" controls loop>
             <source src="CoralReef.mp4" alt="CoralReef">
             Ihr Browser unterstützt das Videoformat nicht
 </video>
@@ -70,7 +70,7 @@ Dies ist mein Ergebnis des zweiten Levels der Blender-Tutorialreihe des <a href=
 In der Tutorial Reihe wird eine Zuckerglasur verwendet, ich jedoch erwünschte mir eine Schokoladenglasur, die ich durch ein Node-Setup, in dem ein Glossy- und Diffuse Shader gemischt werden, erreichte. Auch hier ist etwas Displacement durch eine Noise-Textur meinerseits verwendet worden.
 
 # Brennender Affenkopf  
-<video widht="100%" height="50%" controls loop>
+<video width="100%" height="100%" controls loop>
             <source src="Monkey.mp4" alt="Monkey">
             Ihr Browser unterstützt das Videoformat nicht
 </video>  
@@ -78,142 +78,48 @@ Dies ist mein erstes Blender Projekt überhaupt. In diesem Erfahrungszustand hat
 Ein brennender Affenkopf kommt in dem Donut-Tutorial des <a href="https://www.youtube.com/watch?v=TPrnSACiT Motivation für Blender zu schaffen. Dieser Teil der ersten Folge war mit Mantaflow allerdings nicht nachahmbar, was mich nicht zum Aufgeben, sondern eigenständigem Nachforschen und Ausprobieren ermutigte, bis ich einen brennenden Affenkopf erhielt.
 
 # Video
+## Cardioids - Tutorial
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/A68-juE2ves"
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"                allowfullscreen>
+</iframe>
 
-            <p>Cardioids - Tutorial</p><iframe width="454" height="255" src="https://www.youtube.com/embed/A68-juE2ves"
-                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <h2 id="musik">Musik</h2>
-            <p>
-                Fuwashima
-                (Soundtrack zum GlobalGameJam2020)<br>
-                <audio controls>
-                    <source src="Musik/Fuwashima.mp3" type="audio/mp3">
-                    Ihr Browser unterstützt den Audio-Tag nicht
-                </audio><br>
-                PiSong <br>
-                <audio controls>
-                    <source src="Musik/PiSong.mp3" type="audio/mp3">
-                    Ihr Browser unterstützt den Audio-Tag nicht
-                </audio> <br>
-                VocalRemixTrap <br>
-                <audio controls>
-                    <source src="Musik/VocalRemixTrap.mp3" type="audio/mp3">
-                    Ihr Browser unterstützt den Audio-Tag nicht
-                </audio></p>
+# Musik
+## Fuwashima (Soundtrack zum GlobalGameJam2020)
+<audio controls>
+            <source src="Musik/Fuwashima.mp3" type="audio/mp3">
+            Ihr Browser unterstützt den Audio-Tag nicht
+</audio><br>
 
-            <h2 id="grafik">Grafik</h2>
-            <p>
-                Donald Trump, Kugelschreiberzeichnung <br>
-                <img src="Zeichnungen/Trump.jpg" alt="Trump" height="390"> <br>
-                Schlafend im Bus, Kugelschreiberzeichnung <br>
-                <img src="Zeichnungen/Sleep.jpg" alt="Sleep" height="390"><br>
-                Tribal, Tuschezeichnung<br>
-                <img src="Zeichnungen/Tribal.jpg" alt="Tribal" height="390"><br>
-                <h1 id="erfahrung">Erfahrung</h1>
-                <p>Seit mein Vater, ein Professor für Computerspiele, mich bereits in sehr frühem Alter von 3 Jahren
-                    vorsichtig an dieses Medium herangeführt hat, interessierte ich mich nicht nur für das Spielen,
-                    sondern
-                    auch ähnlich stark für die Entwicklung von Games. Ich zeichnete zusätzliche Level für Super
-                    Mario
-                    oder
-                    entwarf neue Spiele, das könnte man als meine ersten Schritte im Gamedesign bezeichnen. Später
-                    verbrachte ich viel Zeit mit der Kombination der elementaren Redstone-Elemente von Minecraft um
-                    logische
-                    Schaltungen, Rechensysteme, Binärzähler und Segmentanzeigen zu konstruieren. Auch bereitete mir
-                    die
-                    Modifikation des Spiels durch selbst gestaltete Resourcepacks viel Freude.</p>
+## PiSong
+<audio controls>
+            <source src="Musik/PiSong.mp3" type="audio/mp3">
+            Ihr Browser unterstützt den Audio-Tag nicht
+</audio>
 
-                <p>Im Alter von 9 Jahren begann mein Interesse am 3D–Modelling, was sich durch Architektur-Projekte
-                    in
-                    Google SketchUp und diverses Modeling in Sculpt3D wiederspiegelte. Mit 10 Jahren folgten
-                    kleinere
-                    Text-Games, die ich mit Batch – meiner ersten Programmiersprache - und dem Windows Editor
-                    umsetzte.
-                    Mit
-                    einem Leuchtturm von Fischer-Technik machte ich zu dieser Zeit auch erste Erfahrungen mit
-                    Ablaufsteuerungen. Am Nintendo-DS erstellte ich Zeichentrickanimationen über das Touchpad und
-                    kleine
-                    Stop-Motion-Trickfilme. Mit 11 Jahren begann ich mit der grafischen Bildbearbeitung mit Paint,
-                    mit
-                    13
-                    Jahren intensivierte ich dieses Hobby mit GIMP.</p>
+## VocalRemixTrap
+<audio controls>
+            <source src="Musik/VocalRemixTrap.mp3" type="audio/mp3">
+            Ihr Browser unterstützt den Audio-Tag nicht
+</audio>
 
-                <p>Etwa zur selben Zeit befreite mich TypeScript aus der Unflexibilität von Batch, was mir die
-                    dynamische
-                    Generierung zweidimensionaler Bilder auf einem Canvas ermöglichte. Im Rahmen des mehrmals
-                    besuchten
-                    Kinder-Uni Feriencamps in Furtwangen machte ich erste Erfahrungen mit Processing und
-                    programmierte
-                    Pong.
-                    Jedes Erlernen eines neuen programmiertechnischen Werkzeuges verstärkte die Erkenntnis der
-                    Möglichkeit,
-                    dadurch meine Ideen in einem digitalem Medium festzuhalten, und sie von mir oder anderen,
-                    interaktiv
-                    oder passiv, später wieder abrufbar zu machen, was wiederum meine Motivation immer weiter
-                    steigen
-                    ließ.
-                    Auch begann ich, elektronische Musik mit FL-Studio zu produzieren, oft mit dem Hintergedanken,
-                    diese
-                    für
-                    Computerspiele zu verwenden.</p>
+# Grafik
+## Donald Trump, Kugelschreiberzeichnung
+<img src="Zeichnungen/Trump.jpg" alt="Trump" width="100%">
 
-                <p>Ich erkannte durch die Programmierung die Relevanz der Mathematik in verschiedenen Bereichen und
-                    begann
-                    mit experimenteller Programmierung für verschiedene Fächer am technischen Gymnasium, wo auch
-                    meine
-                    erste
-                    formale Ausbildung in Informatik begann. Mit 15 Jahren entwickelte ich eine regelrechte
-                    Begeisterung
-                    für
-                    die Möglichkeiten der Vektorrechnung und fraktaler Geometrie. Zusammen mit einem Lehrer und
-                    einem
-                    Mitschüler, mit dem ich einen Übersetzer für eine ausgedachte Geheimsprache programmierte,
-                    gründete
-                    ich
-                    eine Informatik-AG. In dieser wagten wir uns an die voll umfassende Programmierung neuronaler
-                    Netzwerke
-                    zum Experimentieren mit künstlicher Intelligenz, besonders bezogen auf Echtzeit -
-                    Bildverarbeitung
-                    eines
-                    Live-Kamerabildes.</p>
+## Schlafend im Bus, Kugelschreiberzeichnung
+<img src="Zeichnungen/Sleep.jpg" alt="Sleep" width="100%"
 
-                <p>Im Rahmen der freiwilligen Aufgaben des Programmieren-Moduls meines aktuellen Studiums
-                    entwickelte
-                    ich
-                    mit Java einen ewigen Kalender und Tic-Tac-Toe. Letzteres baute ich zusätzlich mit einem
-                    zufällig
-                    spielenden Computergegner aus, der zum Trainieren einer künstlichen Intelligenz genutzt werden
-                    soll.
-                    Beim GlobalGameJam 2020 im Spiellabor der Hochschule wirkte ich in einem Team bei der
-                    Entwicklung
-                    eines
-                    VR-Spiels mit, wobei meine Hauptaufgaben bei Gamedesign und Sound lagen. Dieses Event weckte bei
-                    mir
-                    erneut die Interesse an der 3D-Programmierung und dem 3D-Modeling, weshalb ich mich momentan in
-                    Unity
-                    und Blender weiter vertiefe.</p>
+## Tribal, Tuschezeichnung
+<img src="Zeichnungen/Tribal.jpg" alt="Tribal" width="100%">
 
-        </section>
+# Erfahrung
+Seit mein Vater, ein Professor für Computerspiele, mich bereits in sehr frühem Alter von 3 Jahren vorsichtig an dieses Medium herangeführt hat, interessierte ich mich nicht nur für das Spielen, sondern auch ähnlich stark für die Entwicklung von Games. Ich zeichnete zusätzliche Level für Super Mario oder entwarf neue Spiele, das könnte man als meine ersten Schritte im Gamedesign bezeichnen. Später verbrachte ich viel Zeit mit der Kombination der elementaren Redstone-Elemente von Minecraft um logische Schaltungen, Rechensysteme, Binärzähler und Segmentanzeigen zu konstruieren. Auch bereitete mir die Modifikation des Spiels durch selbst gestaltete Resourcepacks viel Freude.  
+Im Alter von 9 Jahren begann mein Interesse am 3D–Modelling, was sich durch Architektur-Projekte in Google SketchUp und diverses Modeling in Sculpt3D wiederspiegelte. Mit 10 Jahren folgten kleinere Text-Games, die ich mit Batch – meiner ersten Programmiersprache - und dem Windows Editor umsetzte. Mit einem Leuchtturm von Fischer-Technik machte ich zu dieser Zeit auch erste Erfahrungen mit Ablaufsteuerungen. Am Nintendo-DS erstellte ich Zeichentrickanimationen über das Touchpad und kleine Stop-Motion-Trickfilme. Mit 11 Jahren begann ich mit der grafischen Bildbearbeitung mit Paint, mit 13 Jahren intensivierte ich dieses Hobby mit GIMP.  
+Etwa zur selben Zeit befreite mich TypeScript aus der Unflexibilität von Batch, was mir die dynamische Generierung zweidimensionaler Bilder auf einem Canvas ermöglichte. Im Rahmen des mehrmals besuchten Kinder-Uni Feriencamps in Furtwangen machte ich erste Erfahrungen mit Processing und programmierte Pong. Jedes Erlernen eines neuen programmiertechnischen Werkzeuges verstärkte die Erkenntnis der Möglichkeit, dadurch meine Ideen in einem digitalem Medium festzuhalten, und sie von mir oder anderen, interaktiv oder passiv, später wieder abrufbar zu machen, was wiederum meine Motivation immer weiter steigen ließ.  
+Auch begann ich, elektronische Musik mit FL-Studio zu produzieren, oft mit dem Hintergedanken, diese für Computerspiele zu verwenden.  
 
-        <footer>
-            <span class="ribbon-outer">
-                <span class="ribbon-inner">
+Ich erkannte durch die Programmierung die Relevanz der Mathematik in verschiedenen Bereichen und begann mit experimenteller Programmierung für verschiedene Fächer am technischen Gymnasium, wo auch meine erste formale Ausbildung in Informatik begann. Mit 15 Jahren entwickelte ich eine regelrechte Begeisterung für die Möglichkeiten der Vektorrechnung und fraktaler Geometrie. Zusammen mit einem Lehrer und einem Mitschüler, mit dem ich einen Übersetzer für eine ausgedachte Geheimsprache programmierte, gründete ich eine Informatik-AG. In dieser wagten wir uns an die voll umfassende Programmierung neuronaler Netzwerke zum Experimentieren mit künstlicher Intelligenz, besonders bezogen auf Echtzeit - Bildverarbeitung eines Live-Kamerabildes.  
 
-                    <p>this project by <a href="https://github.com/CalvinDO">CalvinDO</a> can be found on <a
-                            href="https://github.com/CalvinDO/Bewerbung">GitHub</a></p>
+Im Rahmen der freiwilligen Aufgaben des Programmieren-Moduls meines aktuellen Studiums entwickelte ich mit Java einen ewigen Kalender und Tic-Tac-Toe. Letzteres baute ich zusätzlich mit einem zufällig spielenden Computergegner aus, der zum Trainieren einer künstlichen Intelligenz genutzt werden soll.  
 
-
-                </span>
-                <span class="left-tail"></span>
-                <span class="right-tail"></span>
-            </span>
-            <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
-            <span class="octocat"></span>
-        </footer>
-
-    </div>
-
-
-</body>
-
-</html>
+Beim GlobalGameJam 2020 im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines VR-Spiels mit, wobei meine Hauptaufgaben bei Gamedesign und Sound lagen. Dieses Event weckte bei mir erneut die Interesse an der 3D-Programmierung und dem 3D-Modeling, weshalb ich mich momentan in Unity und Blender weiter vertiefe.
