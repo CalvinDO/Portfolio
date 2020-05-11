@@ -120,6 +120,7 @@ Ein brennender Affenkopf kommt in dem Donut-Tutorial des <a href="https://www.yo
 <iframe width="100%" height="300em" src="https://www.youtube.com/embed/A68-juE2ves"
 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"                allowfullscreen>
 </iframe>
+Dies ist das unter [Cardioids](##Cardioids) angedeutete Lernvideo, welches im Rahmen einer Projektarbeit unter Auswahl eines eigenen Themas entstand. Hier wird ebenso die Funktionsweise meines dazu verfassten Programms ähnlich zu Pseudocode erklärt.
 
 # Musik
 ## Fuwashima (Soundtrack zum GlobalGameJam2020)
@@ -147,12 +148,17 @@ Bei diesem Stück handelt es sich ebenfalls um ein Gimmick, diesmal im Kreis von
 # Grafik
 ## Donald Trump, Kugelschreiberzeichnung
 <img src="Zeichnungen/Trump.jpg" alt="Trump" width+="100%">
+Vor dem Erstellen dieses Bildes pflegte ich eine starke Abgneigung gegen das Zeichnen organischer Objekte und Lebewesen. Dies ist darauf zurück zu führen, dass es mir sonst, leider nicht nur meiner Einschätzung nach, in außerordentlichem Maße misslang, unter anderem auch un. Eines Tages, im Alter von 16 Jahren, als ich mich von dem Lernen für eine Klausur ablenkte, verspürte ich die Lust, genau dies zu tun. Es stellte für mich eine gewisse Art der Herausforderung an mich selbst dar, besonders in anbetracht des Versäumnis' der Lernzeit.  
+Ein Bild dieses Präsidenten auf meinem Bildschirm vorgelegt, versuchte ich die Konturen frei auf das Papier zu übertragen. Das Ergebnis überraschte mich sehr.  
 
 ## Schlafend im Bus, Kugelschreiberzeichnung
 <img src="Zeichnungen/Sleep.jpg" alt="Sleep" width="100%"/>
+Mit dem Wissen, auch hier etwas Talent aufweisen zu können, zeichnete ich wenige Wochen später einen Klassenkameraden, der im Reisebus zur Klassenfahrt in den Schlaf fiel. Hier reizte mich noch mehr die Herausforderung, in Anbetracht der unruhigen Fahrt, des temporären Ruhezustands des Kollegen, des Zeichnens auf den Oberschenkeln, sowie seinen Abneigung, photografiert zu werden.
 
 ## Tribal, Tuschezeichnung
 <img src="Zeichnungen/Tribal.jpg" alt="Tribal" width="100%">
+Mit dieser, sich von Kugelschreiberzeichnungen stark unterscheidenden Art des Zeichnens experimentiert ich schon früher, im Alter von etwa 13 Jahren, was allerdings auch auf eine Art der Herausforderung meiner meiner Selbstdisziplin zurückzuführen ist, da ich meine Werkzeuge hierbei stark einschränkte.  
+Anstatt einen Pinsel oder Kaligrafiestift zu verwenden, benutzte ich konsequent eine Art eines Fine-Liners, dessen Spitze ich nie das Papier berühren lies, und somit über einen durch die Oberflächenspannung entstehenden winzigen Tintenkanal äußerst vorsichtig über dem Blatt schweben lassen musste, da direkter Kontakt sofort zu unansehnlichen Färbungen führte.  
 
 # Dokumente
 - [Daten und Lebenslauf](Lebenslauf.md)
