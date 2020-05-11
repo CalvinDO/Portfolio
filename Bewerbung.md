@@ -21,9 +21,10 @@
 ## Turret for Tower-Defense-Game
 <video controls width="100%"> 
   <source src="https://www.youtube.com/embed/VAOCARtbn54" type="video/mp4">
-            <a href="https://www.youtube.com/embed/VAOCARtbn54">Video</a>
-</video>  
-Dies ist mein erstes 3D-Mesh-Modellierungsprojekt, und somit auch Ursache für den unerfahrenen Workflow in diesem Video, welches einen Teil der Modellierung wiedergibt. Die Idee dazu kam mir, als ich einem Kollegen beim Programmieren eines 3D-Tower-Defense Spiels zuschaute.  
+            <a href="https://www.youtube.com/embed/VAOCARtbn54">Play Video</a>
+</video>   
+
+Dies ist mein erstes 3D-Mesh-Modellierungsprojekt, daher wird in diesem Video teilweise unerfahrener Workflow wiedergegeben. Die Idee dazu kam mir, als ich einem Kollegen beim Programmieren eines 3D-Tower-Defense Spiels zuschaute.  
 Abgesehen von dem Kugellager und den Läufen, bediente ich mich keinen Tutorials, um die Modelliertechniken herauszufinden, da ich ein möglichst individualisiertes Gatling-Geschütz erschaffen wollte. Ich verwendete hier alle elementaren Tools, die der Edit-Mode von Blender für Hard-Surface-Modeling zu bieten hat.  
 Das Endresultat ist in dem Tower-Defense-Game meines Kollegen integriert
 
