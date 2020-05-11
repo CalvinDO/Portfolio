@@ -1,13 +1,13 @@
 # Inhaltsverzeichnis
-- [Motivation und Erfahrung](#motivation-und-erfahrung)
-- [Dokumente](#dokumente)
+- [Motivation](#motivation)
 - [Coding](#coding)
 - [Modelling](#modelling)
 - [Video](#video)
 - [Musik](#musik)
 - [Grafik](#grafik)
+- [Dokumente](#dokumente)
 
-# Motivation und Erfahrung
+# Motivation
 Seit mein Vater, ein Professor für Computerspiele, mich bereits in sehr frühem Alter von 3 Jahren vorsichtig an dieses Medium herangeführt hat, interessierte ich mich nicht nur für das Spielen, sondern auch ähnlich stark für die Entwicklung von Games. Ich zeichnete zusätzliche Level für Super Mario oder entwarf neue Spiele, das könnte man als meine ersten Schritte im Gamedesign bezeichnen. Später verbrachte ich viel Zeit mit der Kombination der elementaren Redstone-Elemente von Minecraft um logische Schaltungen, Rechensysteme, Binärzähler und Segmentanzeigen zu konstruieren. Auch bereitete mir die Modifikation des Spiels durch selbst gestaltete Resourcepacks viel Freude.  
 
 Im Alter von 9 Jahren begann mein Interesse am 3D–Modelling, was sich durch Architektur-Projekte in Google SketchUp und diverses Modeling in Sculpt3D wiederspiegelte. Mit 10 Jahren folgten kleinere Text-Games, die ich mit Batch – meiner ersten Programmiersprache - und dem Windows Editor umsetzte. Mit einem Leuchtturm von Fischer-Technik machte ich zu dieser Zeit auch erste Erfahrungen mit Ablaufsteuerungen. Am Nintendo-DS erstellte ich Zeichentrickanimationen über das Touchpad und kleine Stop-Motion-Trickfilme. Mit 11 Jahren begann ich mit der grafischen Bildbearbeitung mit Paint, mit 13 Jahren intensivierte ich dieses Hobby mit GIMP.  
@@ -23,15 +23,6 @@ Im Rahmen der freiwilligen Aufgaben des Programmieren-Moduls meines aktuellen St
 Beim GlobalGameJam 2020 im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines VR-Spiels mit, wobei meine Hauptaufgaben bei Gamedesign und Sound lagen. Dieses Event weckte bei mir erneut die Interesse an der 3D-Programmierung und dem 3D-Modeling, weshalb ich mich momentan in Unity und Blender weiter vertiefe.  
 
 Seit Oktober 2019 studiere ich nun Medieninformatik an der Hochschule Furtwangen. Das dritte Semester ist als Praxissemester vorgesehen und so bin ich auf der Suche nach einer entsprechenden Stelle ab Oktober 2020. Auf dieser Seite sammle ich einige meiner eigenmotivierten Arbeiten um einen Beleg für meinen Enthusiasmus und Lernfähigkeit zu liefern und Interesse für ein Angebot zu wecken.
-
-# Dokumente
-- [Daten und Lebenslauf](Lebenslauf.md)
-- [Abiturzeugnis](CCF18022020_0001.jpg)
-- [Semesternotenspiegel](Notenspiegel.pdf)
-- [Empfehlungsschreiben](EmpfehlungCalvinDellOro.pdf)
-- [Auszeichnung des Gymnasiums für kulturelles Engagement](CCF18022020_0003.jpg")
-- [Hackathon-Urkunde](CCF18022020_0002.jpg)
-- [Regelung zum praktischen Studiensemester](CCF18022020_0000.jpg)
 
 # Coding
 ## Fraktal
@@ -133,7 +124,17 @@ frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; pict
 <img src="Zeichnungen/Trump.jpg" alt="Trump" width="100%">
 
 ## Schlafend im Bus, Kugelschreiberzeichnung
-<img src="Zeichnungen/Sleep.jpg" alt="Sleep" width="100%"
+<img src="Zeichnungen/Sleep.jpg" alt="Sleep" width="100%"/>
 
 ## Tribal, Tuschezeichnung
 <img src="Zeichnungen/Tribal.jpg" alt="Tribal" width="100%">
+
+# Dokumente
+- [Daten und Lebenslauf](Lebenslauf.md)
+- [Abiturzeugnis](CCF18022020_0001.jpg)
+- [Semesternotenspiegel](Notenspiegel.pdf)
+- [Empfehlungsschreiben](EmpfehlungCalvinDellOro.pdf)
+- [Auszeichnung des Gymnasiums für kulturelles Engagement](CCF18022020_0003.jpg")
+- [Hackathon-Urkunde](CCF18022020_0002.jpg)
+- [Regelung zum praktischen Studiensemester](CCF18022020_0000.jpg)
+
