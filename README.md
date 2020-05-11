@@ -126,23 +126,27 @@ frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; pict
 <audio controls>
             <source src="Musik/Fuwashima.mp3" type="audio/mp3">
             Ihr Browser unterstützt den Audio-Tag nicht
-</audio><br>
+</audio>  
+Dieses Stück komponierte ich als Titelsong im Rahmen des Global-Game-Jams 2020, bei dem ich in einem Team innerhalb von 48 Stunden bei der Entwicklung eines VR-Games mitwirkte. In erster Linie versuchte ich, das Thema des umgesetzten Atomkraftwerk-Supergau-Simulators, in dem man unter Stressdruck der Lösung von Rätseln ausgesetzt ist, durch einen spannenden Aufbau und aggressivem Klang entsprechende Stimmung zu erzeugen. Auch versuchte ich, den Effekt von Tonverzerrungen, verursacht durch enorme radioaktive Strahlung, mit der zeitlichen Automation der Delay-Time eines Echo-Delay-Plugins annähernd zu simulieren. Um Originalität zu schaffen, versah ich zurückhaltende Drum-Sounds mit dem prägnanten "Amen-Break"-Rythmus, was sich als eher unüblich gestaltet. Die "Fill-Ins" habe ich mir frei ausgedacht.
 
 ## PiSong
 <audio controls>
             <source src="Musik/PiSong.mp3" type="audio/mp3">
             Ihr Browser unterstützt den Audio-Tag nicht
 </audio>
+Bei dieser Audio handelt es sich um ein Gimmick, entworfen für den internationalen "Pi-Day", welches ebenso mein erstes außerhalb der Familie im Alter von 11 Jahren präsentierte Audio Projekt auszeichnet. Ich überlegte mir eine Idee, einige Nachkommastellen der Kreiszahl Pi musikalisch umzusetzen, ohne Töne und Aufbau nach der Konstante zu gestalten. Dies gelang mir durch das Aufsagen der Stellen von Roboterstimmen. Nach einem "Wobble-Bass", umgesetzt durch zeitliche Modulation des "Cutoffs", folgt eine rein akkustisch nicht entzifferbare Sequenz, die das Stück beendet. Wenn Sie meinen "Pi-Song" in eine DAW, beispielsweise Audacity, importieren, und sich die Tonspur als Spektrogramm anzeigen lassen, sehen Sie, dass es sich hierbei um die auditive Wiedergabe einer Grafik des griechischem Symbols für "Pi" handelt.
+
 
 ## VocalRemixTrap
 <audio controls>
             <source src="Musik/VocalRemixTrap.mp3" type="audio/mp3">
             Ihr Browser unterstützt den Audio-Tag nicht
 </audio>
+Bei diesem Stück handelt es sich ebenfalls um ein Gimmick, diesmal im Kreis von engen Kollegen. Ich versuchte, aus einigen verschiedene menschliche nAufnahmen, die bei uns täglich für Lacher sorgten, einen "Remix" zu erstellen, der an der Musikrichtung des Traps anlehnt. Dabei verwendete ich eine Vielzahl von Plugins, wovon sich das wichtigste, welches für die Stimmverzerrungen verantwortlich ist, "Fruity Granulizer" nennt. Dies ist mein erstes Audioprojekt, in dem ich, unterstützt durch meinen als DJ erfahrenen Schwager, auf Audioqualität, Mischungen (EQ-ing), Normpegel achtete, sowie Kompressoren benutzte.  
 
 # Grafik
 ## Donald Trump, Kugelschreiberzeichnung
-<img src="Zeichnungen/Trump.jpg" alt="Trump" width="100%">
+<img src="Zeichnungen/Trump.jpg" alt="Trump" width+="100%">
 
 ## Schlafend im Bus, Kugelschreiberzeichnung
 <img src="Zeichnungen/Sleep.jpg" alt="Sleep" width="100%"/>
