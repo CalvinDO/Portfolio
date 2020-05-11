@@ -1,6 +1,11 @@
 # Inhaltsverzeichnis
 - [Motivation und Erfahrung](#motivation-und-erfahrung)
-- [Dokumente](#Dokumente)
+- [Dokumente](#dokumente)
+- [Grafik](#grafik)
+- [Musik](#musik)
+- [Video](#video)
+- [Modelling](#modelling)
+- [Coding](#coding)
 
 # Motivation und Erfahrung
 Seit mein Vater, ein Professor für Computerspiele, mich bereits in sehr frühem Alter von 3 Jahren vorsichtig an dieses Medium herangeführt hat, interessierte ich mich nicht nur für das Spielen, sondern auch ähnlich stark für die Entwicklung von Games. Ich zeichnete zusätzliche Level für Super Mario oder entwarf neue Spiele, das könnte man als meine ersten Schritte im Gamedesign bezeichnen. Später verbrachte ich viel Zeit mit der Kombination der elementaren Redstone-Elemente von Minecraft um logische Schaltungen, Rechensysteme, Binärzähler und Segmentanzeigen zu konstruieren. Auch bereitete mir die Modifikation des Spiels durch selbst gestaltete Resourcepacks viel Freude.  
@@ -23,7 +28,7 @@ Beim GlobalGameJam 2020 im Spiellabor der Hochschule wirkte ich in einem Team be
 - [Hackathon-Urkunde](CCF18022020_0002.jpg)
 - [Regelung zum praktischen Studiensemester](CCF18022020_0000.jpg)
 
-# Coding-Beispiele  
+# Coding
 ## Fraktal
 <a href="Code/Fraktal/start.html"><img src="Fraktal.PNG" alt="Fraktal" width="100%"/></a>
 ## FraktalAnimation
@@ -33,7 +38,7 @@ Beim GlobalGameJam 2020 im Spiellabor der Hochschule wirkte ich in einem Team be
 ## RubberBand
 <a href="Code/RubberBand/start.html"><img src="Rubber.PNG" width="100%"/></a>
 
-# 3D-Modelling Projekte mit Blender                  
+# Modelling                   
 ## Turret for Tower-Defense-Game
 <iframe width="100%" height="300em" src="https://www.youtube.com/embed/VAOCARtbn54"
 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -85,7 +90,7 @@ Diesen ersetzte ich durch einen entsprechenden Displacement-Node, durch den ich 
 Dies ist mein Ergebnis des zweiten Levels der Blender-Tutorialreihe des <a href="https://www.youtube.com/watch?v=TPrnSACiTJ4">Blender Guru</a>s. Das durch proportionales Editieren und Scultping erreichte Mesh des Teigs wurde durch Noise-Texturen und Overlay-Variation mit Bump versehen und geshaded, sowie Texture-Painting angewandt, um leicht verbrannte Stellen zu malen.  
 In der Tutorial Reihe wird eine Zuckerglasur verwendet, ich jedoch erwünschte mir eine Schokoladenglasur, die ich durch ein Node-Setup, in dem ein Glossy- und Diffuse Shader gemischt werden, erreichte. Auch hier ist etwas Displacement durch eine Noise-Textur meinerseits verwendet worden.
 
-# Brennender Affenkopf  
+## Brennender Affenkopf  
 <video width="100%" controls loop>
             <source src="Monkey.mp4" alt="Monkey">
             Ihr Browser unterstützt das Videoformat nicht
