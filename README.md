@@ -8,6 +8,7 @@
 - [Dokumente](#dokumente)
 
 <hr/>  
+<hr/>  
 
 # Motivation
 Seit mein Vater, ein Professor für Computerspiele, mich bereits in sehr frühem Alter von 3 Jahren vorsichtig an dieses Medium herangeführt hat, interessierte ich mich nicht nur für das Spielen, sondern auch ähnlich stark für die Entwicklung von Games. Ich zeichnete zusätzliche Level für Super Mario oder entwarf neue Spiele, das könnte man als meine ersten Schritte im Gamedesign bezeichnen. Später verbrachte ich viel Zeit mit der Kombination der elementaren Redstone-Elemente von Minecraft um logische Schaltungen, Rechensysteme, Binärzähler und Segmentanzeigen zu konstruieren. Auch bereitete mir die Modifikation des Spiels durch selbst gestaltete Resourcepacks viel Freude.  
@@ -26,6 +27,7 @@ Beim GlobalGameJam 2020 im Spiellabor der Hochschule wirkte ich in einem Team be
 
 Seit Oktober 2019 studiere ich nun Medieninformatik an der Hochschule Furtwangen. Das dritte Semester ist als Praxissemester vorgesehen und so bin ich auf der Suche nach einer entsprechenden Stelle ab Oktober 2020. Auf dieser Seite sammle ich einige meiner eigenmotivierten Arbeiten um einen Beleg für meinen Enthusiasmus und Lernfähigkeit zu liefern und Interesse für ein Angebot zu wecken.
 
+<hr/>  
 <hr/>  
 
 # Coding
@@ -54,6 +56,7 @@ Bei höheren Werten des in der Applikation auch von Ihnen einstellbaren Paramete
 Grundlage für diese Physik-Simulation war die in Echtzeit stattfindende Anwendung physikalischem Verhaltens auf Körper, die von dem Mauszeiger beeinflusst werden. Durch simple Vektoradition erschuf ich damit schon ein System dreier gekoppelter Massen, deren Verhalten annähernd Gummibändern ähneln.<br>
 Hierraus wird sich in naher Zukunft noch eine Simulation eines ganzen Rasters dieser Massen entwickeln, um Stoff zu simulieren (Cloth-Simulation).
 
+<hr/>  
 <hr/>  
 
 # Modelling                   
@@ -118,6 +121,7 @@ Ein brennender Affenkopf kommt in dem Donut-Tutorial des <a href="https://www.yo
                     allerdings gab es zu der Entstehungszeit Mantaflow noch nicht. Er demonstrierte das Feuer, umMotivation für Blender zu schaffen. Dieser Teil der ersten Folge war mit Mantaflow allerdings nicht nachahmbar, was mich nicht zum Aufgeben, sondern eigenständigem Nachforschen und Ausprobieren ermutigte, bis ich einen brennenden Affenkopf erhielt.
 
 <hr/>  
+<hr/>  
 
 # Video
 ## Cardioids - Tutorial
@@ -125,6 +129,7 @@ Ein brennender Affenkopf kommt in dem Donut-Tutorial des <a href="https://www.yo
 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"                allowfullscreen>
 </iframe>
 
+<hr/>  
 <hr/>  
 
 # Musik
@@ -147,6 +152,7 @@ frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; pict
 </audio>
 
 <hr/>  
+<hr/>  
 
 # Grafik
 ## Donald Trump, Kugelschreiberzeichnung
@@ -158,6 +164,7 @@ frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; pict
 ## Tribal, Tuschezeichnung
 <img src="Zeichnungen/Tribal.jpg" alt="Tribal" width="100%">
 
+<hr/>  
 <hr/>  
 
 # Dokumente
