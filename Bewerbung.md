@@ -21,7 +21,7 @@
 ## Turret for Tower-Defense-Game
 <video controls width="100%"> 
   <source src="https://www.youtube.com/embed/watch?v=VAOCARtbn54"/>
-  <a href="https://www.youtube.com/embed/VAOCARtbn54">Play Video</a>
+  <a href="https://www.youtube.com/embed/watch?v=VAOCARtbn54">Play Video</a>
 </video>   
 
 Dies ist mein erstes 3D-Mesh-Modellierungsprojekt, daher wird in diesem Video teilweise unerfahrener Workflow wiedergegeben. Die Idee dazu kam mir, als ich einem Kollegen beim Programmieren eines 3D-Tower-Defense Spiels zuschaute.  
