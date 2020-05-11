@@ -9,55 +9,41 @@
 
 # Coding-Beispiele  
 ## Fraktal
-<a href="Code/Fraktal/start.html"><img src="Fraktal.PNG" alt="Fraktal" width="400"/></a>
+<a href="Code/Fraktal/start.html"><img src="Fraktal.PNG" alt="Fraktal" width="100%"/></a>
 ## FraktalAnimation
-<a href="Code/FraktalAnimation/start.html"><img src="Animation.PNG" width="400"></a>
+<a href="Code/FraktalAnimation/start.html"><img src="Animation.PNG" width="100%"></a>
 ## Cardioids
-<a href="Code/Cardioids/start.html"><img src="cardioids.PNG" width="400"/></a>
+<a href="Code/Cardioids/start.html"><img src="cardioids.PNG" width="100%"/></a>
 ## RubberBand
-<a href="Code/RubberBand/start.html"><img src="Rubber.PNG" width="400"/></a>
+<a href="Code/RubberBand/start.html"><img src="Rubber.PNG" width="100%"/></a>
 
 # 3D-Modelling Projekte mit Blender                  
 ## Turret for Tower-Defense-Game
-<iframe width="400" src="https://www.youtube.com/embed/VAOCARtbn54"
+<iframe width="100%" src="https://www.youtube.com/embed/VAOCARtbn54"
 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>  
 Dies ist mein erstes 3D-Mesh-Modellierungsprojekt, daher wird in diesem Video teilweise unerfahrener Workflow wiedergegeben. Die Idee dazu kam mir, als ich einem Kollegen beim Programmieren eines 3D-Tower-Defense Spiels zuschaute.  
 Abgesehen von dem Kugellager und den Läufen, bediente ich mich keinen Tutorials, um die Modelliertechniken herauszufinden, da ich ein möglichst individualisiertes Gatling-Geschütz erschaffen wollte. Ich verwendete hier alle elementaren Tools, die der Edit-Mode von Blender für Hard-Surface-Modeling zu bieten hat.  
 Das Endresultat ist in dem Tower-Defense-Game meines Kollegen integriert
 
-            <h3>Eine Truhe</h3>
-            <img src="Truhe.png" alt="Truhe" height="390">
-            <p>
-                <i>Dieses Projekt geht aus einer Computergrafik-Aufgabe hervor, deren Anforderung das Modellieren (Mesh
-                    ohne Material) einer symmetrischen Truhe, mitsamt eines Deckels und eines Rahmens war. <br>
-                    Ich ging darüber hinaus, in dem ich aus der primitiven Geometrie Details wie Edelsteine durch
-                    Loop-Cuts, Extrudes und Insets erzeugte. Die Marmortexturen erzeugte ich prozedural über
-                    Noise-Nodes, die Holztextur ebenso über Noise, Musgrave und Voronoi Nodes, sowie Vektorkurven und
-                    Color-Burn-Nodes.</i>
-            </p>
+## Truhe
+<img src="Truhe.png" alt="Truhe" width="100%">  
+Dieses Projekt geht aus einer Computergrafik-Aufgabe hervor, deren Anforderung das Modellieren (Mesh ohne Material) einer symmetrischen Truhe, mitsamt eines Deckels und eines Rahmens war.  
+Ich ging darüber hinaus, in dem ich aus der primitiven Geometrie Details wie Edelsteine durch Loop-Cuts, Extrudes und Insets erzeugte. Die Marmortexturen erzeugte ich prozedural über Noise-Nodes, die Holztextur ebenso über Noise, Musgrave und Voronoi Nodes, sowie Vektorkurven und Color-Burn-Nodes. 
 
-            <h3>Und dessen Schloss</h3>
-            <img src="Schloss.png" alt="Schloss" height="390">
-            <p>
-                <i>Die Anforderung für das Schloss war, aus einem größeren Würfel einen kleineren durch Insets oder dem
-                    boolean-Modifier auszustanzen <br>
-                    um einen höheren Detailgrad zu erreichen, modellierte ich mit Bézierkurven eine etwas aufwendigere
-                    Ausstanzform für ein Schloss. Hier generierte ich die prozedurale Textur ebenfalls über die
-                    Steuerung der Normalenlänge auf der Oberfläche mittels eines mit Noise-Texturen angesteuerten
-                    Bump-Nodes(Displacements)</i>
-            </p>
-            <h3>Eine Wackelpudding-Simulation <small></small></h3>
-            <video height="390" controls loop>
-                <source src="Jelly.mp4" alt="Jelly" type="video/mp4">
-                Ihr Browser unterstützt den Video-Tag nicht
-            </video>
-            <p>
-                <i>Hier habe ich weniger gemodelt, sondern eher aus freihen Stücken die Möglichkeiten der
-                    Softbody&Collision Physik Simulation ausprobiert, und eine kleine Animation gerendert, um ein
-                    Wackelpudding-ähnliches Verhalten zu simulieren</i>
-            </p>
-            <h3>Ein verrücktes U-Boot</h3>
+## Deren Schloss
+<img src="Schloss.png" alt="Schloss" height="100%">  
+Die Anforderung für das Schloss war, aus einem größeren Würfel einen kleineren durch Insets oder dem boolean-Modifier auszustanzen.  
+Um einen höheren Detailgrad zu erreichen, modellierte ich mit Bézierkurven eine etwas aufwendigere Ausstanzform für ein Schloss. Hier generierte ich die prozedurale Textur ebenfalls über die Steuerung der Normalenlänge auf der Oberfläche mittels eines mit Noise-Texturen angesteuerten Bump-Nodes(Displacements)
+
+# Wackelpudding-Simulation
+<video width="100%" controls loop>
+            <source src="Jelly.mp4" alt="Jelly" type="video/mp4"/>
+            Ihr Browser unterstützt den Video-Tag nicht
+</video>  
+  Hier habe ich weniger gemodelt, sondern eher aus freihen Stücken die Möglichkeiten der  Softbody&Collision Physik Simulation ausprobiert, und eine kleine Animation gerendert, um ein Wackelpudding-ähnliches Verhalten zu simulieren
+  
+  Ein verrücktes U-Boot</h3>
             <video height="390" controls loop>
                 <source src="submarine.mp4" alt="submarine" type="video/mp4">
                 Ihr Browser unterstützt den Video-Tag nicht
