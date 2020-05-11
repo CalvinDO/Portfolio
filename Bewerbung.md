@@ -20,8 +20,8 @@
 # 3D-Modelling Projekte mit Blender
 ## Turret for Tower-Defense-Game
 <video controls width="100%"> 
-  <source src="https://www.youtube.com/embed/watch?v=VAOCARtbn54"/>
-  <a href="https://www.youtube.com/embed/watch?v=VAOCARtbn54">Play Video</a>
+  <source src="https://www.youtube.com/watch?v=VAOCARtbn54"/>
+  <a href="https://www.youtube.com/watch?v=VAOCARtbn54">Play Video</a>
 </video>   
 
 Dies ist mein erstes 3D-Mesh-Modellierungsprojekt, daher wird in diesem Video teilweise unerfahrener Workflow wiedergegeben. Die Idee dazu kam mir, als ich einem Kollegen beim Programmieren eines 3D-Tower-Defense Spiels zuschaute.  
