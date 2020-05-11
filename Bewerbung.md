@@ -32,38 +32,26 @@ Dieses Projekt geht aus einer Computergrafik-Aufgabe hervor, deren Anforderung d
 Ich ging darüber hinaus, in dem ich aus der primitiven Geometrie Details wie Edelsteine durch Loop-Cuts, Extrudes und Insets erzeugte. Die Marmortexturen erzeugte ich prozedural über Noise-Nodes, die Holztextur ebenso über Noise, Musgrave und Voronoi Nodes, sowie Vektorkurven und Color-Burn-Nodes. 
 
 ## Deren Schloss
-<img src="Schloss.png" alt="Schloss" height="100%">  
+<img src="Schloss.png" alt="Schloss" width="100%">  
 Die Anforderung für das Schloss war, aus einem größeren Würfel einen kleineren durch Insets oder dem boolean-Modifier auszustanzen.  
 Um einen höheren Detailgrad zu erreichen, modellierte ich mit Bézierkurven eine etwas aufwendigere Ausstanzform für ein Schloss. Hier generierte ich die prozedurale Textur ebenfalls über die Steuerung der Normalenlänge auf der Oberfläche mittels eines mit Noise-Texturen angesteuerten Bump-Nodes(Displacements)
 
-# Wackelpudding-Simulation
+## Wackelpudding-Simulation  
 <video width="100%" controls loop>
             <source src="Jelly.mp4" alt="Jelly" type="video/mp4"/>
             Ihr Browser unterstützt den Video-Tag nicht
 </video>  
-  Hier habe ich weniger gemodelt, sondern eher aus freihen Stücken die Möglichkeiten der  Softbody&Collision Physik Simulation ausprobiert, und eine kleine Animation gerendert, um ein Wackelpudding-ähnliches Verhalten zu simulieren
+Hier habe ich weniger gemodelt, sondern eher aus freihen Stücken die Möglichkeiten der  Softbody&Collision Physik Simulation ausprobiert, und eine kleine Animation gerendert, um ein Wackelpudding-ähnliches Verhalten zu simulieren
   
-  Ein verrücktes U-Boot</h3>
-            <video height="390" controls loop>
-                <source src="submarine.mp4" alt="submarine" type="video/mp4">
-                Ihr Browser unterstützt den Video-Tag nicht
-            </video>
-            <p>
-                <i>Die Anforderungen der Computergrafik-Aufgabe, die mich zu dieser Animation inspirierte, bestand
-                    darin, rein durch Skalierung, Rotation und Verschiebung von Objekten, sowie das Anwenden einfacher
-                    Materialien ein U-Boot zusammenzustellen. Der "Regel", nur mit der Komposition primitiver Körper zu
-                    arbeiten widersetzte ich mich nicht, sondern nahm es als Herausforderung.<br>
-                    Die Positionierung der Spirale aus Blasen erreichte ich durch Rotation langer Blasenreihen unter
-                    Proportionalem Bearbeiten. Ähnlich erreichte ich auch die Greifarme des U-Boots. <br>
-                    Die Textur der Blasen erreichte ich durch die Mischung einer Noise-Textur und Transparenz. Die
-                    Volumetrische Beleuchtung erreichte ich durch die Addition eines Lichtstreuenden, und eines
-                    Licht-Absorbierenden Shaders mit unterschiedlicher Dichte.<br>
-                    Die Bewegungsabläufe erreichte ich durch Keyframes und interpolierten Kurven.
-                    <br>
-                    Dies war mein erstes Modellierungsprojekt mit einer zeitlich beschränkten Vorgabe</i>
-            </p>
-            <h3>
-                Ein Schild
+## Ein verrücktes U-Boot  
+<video width="100%" controls loop>
+            <source src="submarine.mp4" alt="submarine" type="video/mp4">
+            Ihr Browser unterstützt den Video-Tag nicht
+</video>  
+Die Anforderungen der Computergrafik-Aufgabe, die mich zu dieser Animation inspirierte, bestand darin, rein durch Skalierung, Rotation und Verschiebung von Objekten, sowie das Anwenden einfacher Materialien ein U-Boot zusammenzustellen. Der Anforderung, nur mit der Komposition primitiver Körper zu arbeiten, widersetzte ich mich nicht sondern nahm sie als Herausforderung an.  
+Die Positionierung der Spirale aus Blasen erreichte ich durch Rotation langer Blasenreihen unter Proportionalem Bearbeiten. Ähnlich erreichte ich auch die Greifarme des U-Boots. Die Textur der Blasen erreichte ich durch die Mischung einer Noise-Textur und Transparenz. Die Volumetrische Beleuchtung erreichte ich durch die Addition eines Lichtstreuenden, und eines Licht-Absorbierenden Shaders mit unterschiedlicher Dichte. Die Bewegungsabläufe erreichte ich durch Keyframes und interpolierten Kurven. Dies war mein erstes Modellierungsprojekt mit einer zeitlich beschränkten Vorgabe.
+
+## Ein Schild
             </h3>
             <img src="Schild.png" alt="Schild" height="390">
             <p>
