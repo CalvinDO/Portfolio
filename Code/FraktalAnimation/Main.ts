@@ -20,6 +20,7 @@ namespace FraktalAnimation {
     let rotationSpeed: number;
     export let rotationAngle: number = 0;
 
+    
     window.addEventListener("load", init);
     document.addEventListener("input", update);
 
@@ -29,8 +30,6 @@ namespace FraktalAnimation {
         drawBackground();
         crc2.translate(canvas.width / 2, canvas.height / 2);
         update(null);
-
-        
     }
 
     function update(_event: Event): void {

@@ -24,7 +24,7 @@ var CalvinFraktal;
             this.gradColorAngle = this.colorAngle;
             for (let i = 0; i < _nChildren; i++) {
                 this.gradColorAngle += CalvinFraktal.internGradientFactor;
-                let angle = (i * 1 / _nChildren * 2 * Math.PI);
+                let angle = (((Math.PI / 32) * CalvinFraktal.rotationAngle) + (i * 1 / _nChildren * 2 * Math.PI)) * CalvinFraktal.currentSpread;
                 let x = this.position.x + this.radius * Math.sin(angle);
                 let y = this.position.y + this.radius * Math.cos(angle);
                 let ball = new Ball(x, y, this.radius / CalvinFraktal.sizeFactor, this.level, this.gradColorAngle);

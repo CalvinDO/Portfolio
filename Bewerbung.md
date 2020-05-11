@@ -18,7 +18,7 @@ Auch begann ich, elektronische Musik mit FL-Studio zu produzieren, oft mit dem H
 
 Ich erkannte durch die Programmierung die Relevanz der Mathematik in verschiedenen Bereichen und begann mit experimenteller Programmierung für verschiedene Fächer am technischen Gymnasium, wo auch meine erste formale Ausbildung in Informatik begann. Mit 15 Jahren entwickelte ich eine regelrechte Begeisterung für die Möglichkeiten der Vektorrechnung und fraktaler Geometrie. Zusammen mit einem Lehrer und einem Mitschüler, mit dem ich einen Übersetzer für eine ausgedachte Geheimsprache programmierte, gründete ich eine Informatik-AG. In dieser wagten wir uns an die voll umfassende Programmierung neuronaler Netzwerke zum Experimentieren mit künstlicher Intelligenz, besonders bezogen auf Echtzeit - Bildverarbeitung eines Live-Kamerabildes.  
 
-Im Rahmen der freiwilligen Aufgaben des Programmieren-Moduls meines aktuellen Studiums entwickelte ich mit Java einen ewigen Kalender und Tic-Tac-Toe. Letzteres baute ich zusätzlich mit einem zufällig spielenden Computergegner aus, der zum Trainieren einer künstlichen Intelligenz genutzt werden soll.  
+Im Rahmen der freiwilligen Aufgaben des Programmieren-Moduls meines aktuellen Studiums entwickelte ich mit Java einen ewigen Kalender, Game-Of-Life und Tic-Tac-Toe. Letzteres baute ich zusätzlich mit einem zufällig spielenden Computergegner aus, der zum Trainieren einer künstlichen Intelligenz genutzt werden soll.  
 
 Beim GlobalGameJam 2020 im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines VR-Spiels mit, wobei meine Hauptaufgaben bei Gamedesign und Sound lagen. Dieses Event weckte bei mir erneut die Interesse an der 3D-Programmierung und dem 3D-Modeling, weshalb ich mich momentan in Unity und Blender weiter vertiefe.  
 
@@ -27,12 +27,45 @@ Seit Oktober 2019 studiere ich nun Medieninformatik an der Hochschule Furtwangen
 # Coding
 ## Fraktal
 <a href="Code/Fraktal/start.html"><img src="Fraktal.PNG" alt="Fraktal" width="100%"/></a>
+<p>
+<i>
+Die Idee für diese Applikation kam mir auf, als ich die Möglichkeiten der grafischen Visualisierung durch Rekursion begriff. Das klare Endergebnis konnte ich mir, je nach Anzahl von Iterationen, noch nicht vorstellen, weshalb ich es sofort ausprobierte, mit dem Ziel, mich von meinem eigenen Programm zum Staunen zu bewegen. <br>
+Instanzierte Bälle mit "create-children" Objektmethoden schafften dies bereits. Es folgten einige Experimente mit der maximal umsetzbaren Auflösung verschiedener Browser, um ein fertig gerendertes Bild von 1000 mal 10000 Pixeln zu erhalten, welches sich stark vergrößern lässt, um die repetitiven Strukturen nahtlos entdecken zu können. <br>
+Daraufhin, ebenfalls ohne eine konkrete Vorstellung des Ergebnisses, begann ich den Farbwinkel abhängig von der Iterationsstufe und der Ordnung der circular Positionierten Kreise sowohl relativ, als auch absolut zu berechnen. Auch hier war ich von der Ästhetik der visualisierten Mathematik überrascht und begeistert. <br>
+Auf der Seite können Sie einige Parameter der Berechnung verändern.
+</i>
+</p>
 ## FraktalAnimation
 <a href="Code/FraktalAnimation/start.html"><img src="Animation.PNG" width="100%"></a>
+<p>
+<i>
+Zugrunde liegt das zuvor beschriebene Projekt "Fraktal". Diesmal mit dem Ziel, einige Parameter der Berechnung, die sich als Dezimalbrüche darstellen lassen, wie beispielsweise der Farbwinkel, zeitlich zu modulieren, um eine zusätzliche Dimension zu schaffen, die ebenso zu etlichen neuen Beobachtungen und weiteren Experimenten führen sollte. <br>
+Bemerkenswert ist unter anderem der Zusammenhang, wie sich die Veränderung des Divisors eines Vollkreises, der die Positionierung der "children" eines jeden Balls bestimmt, auf die Bewegung und das Muster der Anordnung bis hin zu den kleinsten Bällen auswirkt, ebenso wie die entstehende Farbkonstillation
+</i>
+</p>
 ## Cardioids
 <a href="Code/Cardioids/start.html"><img src="cardioids.PNG" width="100%"/></a>
+<p>
+<i>
+Dieses Projekt ist durch eine Präsentationsarbeit im Fach Mathematik der 13. Klasse entstanden. Meine Mitschüler und ich durften uns entweder aus vorgegebenen, oder eigens ausgesuchten fortgeschrittenen Themen der Mathematik widmen. Für letzteres wählte ich aus meiner schon bestehenden Kenntnis einiger mathematischer/physikalischer Phänomene die der Kardioide aus. <br>
+Um die Beschreibung der dahinter liegenden Mathematik zu vermeiden, verweise ich an dieser Stelle auf das Endresultat innerhalb des Mathematik-Projekts, welches aus einem vertonten Video bestand: <a href = "#video">Video</a> <br>
+Um den Mitschülern diese Thematik näher zu bringen und dafür zu faszinieren, programmierte ich diese Anwendung
+Bei höheren Werten des in der Applikation auch von Ihnen einstellbaren Parameters "Faktor", sowie dem ab dann interressanten Parameter "Lines", ist für mich bis heute der eindeutige Zusammenhang der eingestellten Werte mit den entstehenden Mustern zugegebenermaßen nicht eindeutig erklärbar. <br>
+Ich vermute allerdings, dass diese Muster eine Wechselwirkung der Teilbarkeit dieser Parameter, in Kombination mit Projektionen aus Potenzen, höheren räumlichen Dimensionen oder komplexen Zahlen darstellen. <br>
+Geben Sie beispielsweise einmal den Faktor: 345, mit Linienanzahl: 1290 ein, wobei perfekte Kreise entstehen, und vergleichen Sie es mit den Ergebnis bei umgebenden Werten beider Parameter.
+Ebenso bemerkenswert sind die Quotienten der Parameter, bei denen sich Muster ergeben, die wiederrum das ursprüngliche Cardioid visualisieren, wie beispielsweise bei dem Faktor: 3489,3 mit Linienanzahl: 1292 <br>
+Auch der Zusammenhang entstehender Muster bei negativen Zahlen mit ihren positiven Komplementären wurde von mir untersucht, jedoch noch nicht logisch begründet.
+</i>
+</p>
 ## RubberBand
 <a href="Code/RubberBand/start.html"><img src="Rubber.PNG" width="100%"/></a>
+<p>
+<i>
+Grundlage für diese Physik-Simulation war die in Echtzeit stattfindende Anwendung physikalischem Verhaltens auf Körper, die von dem Mauszeiger beeinflusst werden. Durch simple Vektoradition erschuf ich damit schon ein System dreier gekoppelter Massen, deren Verhalten annähernd Gummibändern ähneln.<br>
+Hierraus wird sich in naher Zukunft noch eine Simulation eines ganzen Rasters dieser Massen entwickeln, um Stoff zu simulieren (Cloth-Simulation).
+</i>
+<p>
+
 
 # Modelling                   
 ## Turret for Tower-Defense-Game

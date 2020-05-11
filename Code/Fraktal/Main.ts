@@ -11,6 +11,11 @@ namespace CalvinFraktal {
     export let color: number;
     let backgroundColor: string = "";
 
+    let spread: number = 0;
+    export let currentSpread: number = 0;
+    export let rotationAngle: number = 0;
+
+
     window.addEventListener("load", init);
     document.addEventListener("input", update);
 
@@ -31,7 +36,11 @@ namespace CalvinFraktal {
         gradientFactor = parseFloat(inputs[3].value);
         internGradientFactor = parseFloat(inputs[4].value);
         maxRecursionLevel = parseInt(inputs[5].value);
-        backgroundColor = inputs[6].value;
+        spread = parseFloat(inputs[6].value);
+        rotationAngle = parseFloat(inputs[7].value);
+        backgroundColor = inputs[8].value;
+
+        currentSpread = -Math.cos(spread/ 10 * 2 * Math.PI) ;
 
         crc2.clearRect(-crc2.canvas.width, -crc2.canvas.height, crc2.canvas.width, crc2.canvas.height);
         drawBackground();

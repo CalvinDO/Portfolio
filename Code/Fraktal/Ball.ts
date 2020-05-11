@@ -30,7 +30,8 @@ namespace CalvinFraktal {
             this.gradColorAngle = this.colorAngle;
             for (let i: number = 0; i < _nChildren; i++) {
                 this.gradColorAngle += internGradientFactor;
-                let angle: number = (i * 1 / _nChildren * 2 * Math.PI);
+                let angle: number = (((Math.PI / 32) * rotationAngle) + (i * 1 / _nChildren * 2 * Math.PI))*currentSpread;
+              
                 let x: number = this.position.x + this.radius * Math.sin(angle);
                 let y: number = this.position.y + this.radius * Math.cos(angle);
                 let ball: Ball = new Ball(x, y, this.radius / sizeFactor, this.level, this.gradColorAngle);
