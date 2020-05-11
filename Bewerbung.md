@@ -9,22 +9,16 @@
 
 # Coding-Beispiele
 ## Fraktal
-<a href="Code/Fraktal/start.html)<img src="Fraktal.png" alt="Fraktal" width="250"></a>
+<a href="Code/Fraktal/start.html"><img src="Fraktal.png" alt="Fraktal" width="250"/></a>
 ## FraktalAnimation
-                                                                                 <a href="Code/FraktalAnimation/start.html">
-                    <img src="Animation.PNG" width="300"></a><br>
-                Cardioids<br>
-                <a href="Code/Cardioids/start.html">
-                    <img src="Cardioids.PNG" width="250"></a><br>
-                RubberBand <br>
-                <a href="Code/RubberBand/start.html">
-                    <img src="Rubber.PNG" width="250"></a><br>
-            </p>
+<a href="Code/FraktalAnimation/start.html"><img src="Animation.PNG" width="300"></a>
+## Cardioids
+<a href="Code/Cardioids/start.html"><img src="Cardioids.PNG" width="250"/></a>
+## RubberBand
+<a href="Code/RubberBand/start.html"><img src="Rubber.PNG" width="250"/></a>
 
-            <h2 id="3d-modeling-projekte">3D - Modeling Projekte (bisher ausschließlich mit Blender)</h2>
-
-
-            <h3>Ein Turret für ein Tower-Defense-Game</h3>
+# 3D-Modelling Projekte mit Blender
+## Turret for Tower-Defense-Game<
             <iframe width=" 640" height="390" src="https://www.youtube.com/embed/VAOCARtbn54"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
