@@ -17,17 +17,11 @@
 ## RubberBand
 <a href="Code/RubberBand/start.html"><img src="Rubber.PNG" width="400"/></a>
 
-# 3D-Modelling Projekte mit Blender
-<iframe width="454" height="255" src="https://www.youtube.com/embed/A68-juE2ves"
-frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-                
+# 3D-Modelling Projekte mit Blender                  
 ## Turret for Tower-Defense-Game
-<video controls width="100%"> 
-  <source src="https://www.youtube.com/watch?v=VAOCARtbn54" type="video/mp4"/>
-  <a href="https://www.youtube.com/watch?v=VAOCARtbn54">Play Video</a>
-</video>   
-
+<iframe width="400" src="https://www.youtube.com/embed/VAOCARtbn54"
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>  
 Dies ist mein erstes 3D-Mesh-Modellierungsprojekt, daher wird in diesem Video teilweise unerfahrener Workflow wiedergegeben. Die Idee dazu kam mir, als ich einem Kollegen beim Programmieren eines 3D-Tower-Defense Spiels zuschaute.  
 Abgesehen von dem Kugellager und den Läufen, bediente ich mich keinen Tutorials, um die Modelliertechniken herauszufinden, da ich ein möglichst individualisiertes Gatling-Geschütz erschaffen wollte. Ich verwendete hier alle elementaren Tools, die der Edit-Mode von Blender für Hard-Surface-Modeling zu bieten hat.  
 Das Endresultat ist in dem Tower-Defense-Game meines Kollegen integriert
