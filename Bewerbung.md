@@ -9,11 +9,9 @@
 
 # Coding-Beispiele
 ## Fraktal
-![Fraktal.png](Code/Fraktal/start.html)
-                    <img src="" alt="Fraktal" width="250">
-                </a><br>
-                FraktalAnimation <br>
-                <a href="Code/FraktalAnimation/start.html">
+<a href="Code/Fraktal/start.html)<img src="Fraktal.png" alt="Fraktal" width="250"></a>
+## FraktalAnimation
+                                                                                 <a href="Code/FraktalAnimation/start.html">
                     <img src="Animation.PNG" width="300"></a><br>
                 Cardioids<br>
                 <a href="Code/Cardioids/start.html">
