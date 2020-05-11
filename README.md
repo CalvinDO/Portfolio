@@ -159,6 +159,7 @@ Mit dem Wissen, auch hier etwas Talent aufweisen zu können, zeichnete ich wenig
 <img src="Zeichnungen/Tribal.jpg" alt="Tribal" width="100%">
 Mit dieser, sich von Kugelschreiberzeichnungen stark unterscheidenden Art des Zeichnens experimentiert ich schon früher, im Alter von etwa 13 Jahren, was allerdings auch auf eine Art der Herausforderung meiner meiner Selbstdisziplin zurückzuführen ist, da ich meine Werkzeuge hierbei stark einschränkte.  
 Anstatt einen Pinsel oder Kaligrafiestift zu verwenden, benutzte ich konsequent eine Art eines Fine-Liners, dessen Spitze ich nie das Papier berühren lies, und somit über einen durch die Oberflächenspannung entstehenden winzigen Tintenkanal äußerst vorsichtig über dem Blatt schweben lassen musste, da direkter Kontakt sofort zu unansehnlichen Färbungen führte.  
+Die Motive lehnten ausschließlich an Tribal-Tattoos an.
 
 # Dokumente
 - [Daten und Lebenslauf](Lebenslauf.md)
