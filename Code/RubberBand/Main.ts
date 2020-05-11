@@ -1,4 +1,4 @@
-namespace Wingsuit {
+namespace RubberBand {
     let crc2: CanvasRenderingContext2D;
 
     const timeSliceInMS: number = 1;

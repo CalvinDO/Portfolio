@@ -1,9 +1,9 @@
 ### bei Envision Entertainment GmbH
 
 # Motivation
-** Es wäre gut, wenn Du hier ein wenig auf deren tatsächlichen Produkte eingehst damit sie sehen, dass Du wenigstens auf der Website warst**
 
-Ich bewerbe mich bei Envision um eine Stelle für mein Praxis-Semester, da ich auf Grund ihrer Produkte, Ihres Auftretens und Ihrer praktikumsbezogener Stellenanzeige ein hohes Potential der Erfüllung einer, mehrerer oder aller unter [Erfahrung](#erfahrung) genannter Interessen bei Ihnen sehe. Bei der Betrachtung der in Ihren Titeln verwendeten Modellen, Grafiken, Sounds und Spielmechaniken erfahre ich Inspiration und betrachte es als wahrscheinlich, bei der Zusammenarbeit mit anzutreffenden Beteiligten Ihres Unternehmens kreativ und mit großem Enthusiasmus bei der Planung und Entwicklung von Game-Inhalten mitwirken zu können, sowie auch meine persönlichen Fähigkeiten zu verbessern. Nicht abstreiten möchte ich dabei auch den Faktor der Freude und des Spaßes, den ich meiner und Ihrerseits in Aussicht stelle.  
+Bereits in meinen ersten Lebensjahren schaute ich meinem Vater bei der Entwicklung von Effekten für SpellForce über die Tischkante. Nun bewerbe ich mich bei Envision um eine Stelle für mein Praxis-Semester, um selbst als Teil dieser Branche Spielinhalte zu entwickeln. Auf Grund Ihrer Produkte, Ihres Auftretens und Ihrer praktikumsbezogener Stellenanzeige sehe ich ein hohes Potential der Erfüllung einer, mehrerer oder aller unter [Erfahrung](#erfahrung) genannter Interessen bei Ihnen. Bei der Betrachtung der in Ihren Titeln verwendeten Modellen, Grafiken, Sounds und Spielmechaniken erfahre ich Inspiration und betrachte es als wahrscheinlich, bei der Zusammenarbeit mit anzutreffenden Bet
+eiligten Ihres Unternehmens kreativ und mit großem Enthusiasmus bei der Planung und Entwicklung von Game-Inhalten mitwirken zu können, sowie auch über meine Vorerfahrung hinauszugehen und somit persönliche Fähigkeiten zu verbessern. Nicht abstreiten möchte ich dabei auch den Faktor der Freude und des Spaßes, den ich meiner und Ihrerseits in Aussicht stelle.  
 
 Das Praxissemester soll mindestens 95 Arbeitstage umfassen, die zwischen einschließlich August 2020 und Februar 2021 erbracht weden. 
 
@@ -11,17 +11,77 @@ Das Praxissemester soll mindestens 95 Arbeitstage umfassen, die zwischen einschl
 ## Dokumente
 [Daten und Lebenslauf](Lebenslauf.md)  
 [Abiturzeugnis](CCF18022020_0001.jpg)  
+[Semesternotenspiegel](Notenspiegel.pdf)  
 [Empfehlungsschreiben](EmpfehlungCalvinDellOro.pdf)  
 [Auszeichnung des Gymnasiums für kulturelles Engagement](CCF18022020_0003.jpg)  
 [Hackathon-Urkunde](CCF18022020_0002.jpg)  
 [Regelung zum praktischen Studiensemester](CCF18022020_0000.jpg)  
-** Bestätigung zu den Modulen **
 
 ## Coding-Beispiele  
 [Fraktal](Code/Fraktal/start.html)  
 [FraktalAnimation](Code/FraktalAnimation/start.html)  
 [Cardioids](Code/Cardioids/start.html)  
-[RubberBand](Code/RubberBand/start.html)
+[RubberBand](Code/RubberBand/start.html)  
+
+## 3D - Blender Projekte
+<table>
+      <thead>
+        <tr>
+          <th>
+            Ein Turret für <a href="https://vale-sch.github.io/GIS-SoSe2020/Aufgabe02/Portfolio.htm">Valentin</a>s
+            Tower-Defense-Game:
+          </th>
+          <th>
+            Eine Truhe</b>
+          </th>
+          <th>
+            Und dessen Schloss
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <iframe width="640" height="390" src="https://www.youtube.com/embed/VAOCARtbn54"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </td>
+          <td>
+            <img src="Truhe.png" alt="Truhe" height="width = 640">
+          </td>
+          <td>
+            <img src="Schloss.png" alt="Schloss" height="390">
+          </td>
+        </tr>
+      </tbody>
+      <tr>
+        <th>
+          Eine Wackelpudding-Simulation <small><i>(etwas zu klebrig)</i></small>
+        </th>
+        <th>
+          Ein verrücktes U-Boot
+        </th>
+        <th>
+          Ein Schild
+        </th>
+      </tr>
+      <tbody>
+        <tr>
+          <td>
+            <video height="390" controls loop autoplay>
+              <source src="Jelly.mp4" alt="Jelly" type="video/mp4">
+              Dein Browser unterstützt den Video-Tag nicht
+            </video>
+          </td>
+          <td>
+            <video height="390" controls loop autoplay>
+              <source src="submarine.mp4" alt="submarine" type="video/mp4">
+              Dein Browser unterstützt den Video-Tag nicht
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
 ## Video
 [Cardioids - Tutorial](https://youtu.be/A68-juE2ves)
 ## Musik
