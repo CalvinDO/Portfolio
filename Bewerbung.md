@@ -7,20 +7,23 @@
 - [Hackathon-Urkunde](CCF18022020_0002.jpg)
 - [Regelung zum praktischen Studiensemester](CCF18022020_0000.jpg)
 
-# Coding-Beispiele
+# Coding-Beispiele  
 ## Fraktal
-<a href="Code/Fraktal/start.html"><img src="Fraktal.png" alt="Fraktal" width="250"/></a>
+<a href="Code/Fraktal/start.html"><img src="Fraktal.PNG" alt="Fraktal" width="400"/></a>
 ## FraktalAnimation
-<a href="Code/FraktalAnimation/start.html"><img src="Animation.PNG" width="300"></a>
+<a href="Code/FraktalAnimation/start.html"><img src="Animation.PNG" width="400"></a>
 ## Cardioids
-<a href="Code/Cardioids/start.html"><img src="Cardioids.PNG" width="250"/></a>
+<a href="Code/Cardioids/start.html"><img src="cardioids.PNG" width="400"/></a>
 ## RubberBand
-<a href="Code/RubberBand/start.html"><img src="Rubber.PNG" width="250"/></a>
+<a href="Code/RubberBand/start.html"><img src="Rubber.PNG" width="400"/></a>
 
 # 3D-Modelling Projekte mit Blender
-## Turret for Tower-Defense-Game<
-            <iframe width=" 640" height="390" src="https://www.youtube.com/embed/VAOCARtbn54"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+## Turret for Tower-Defense-Game
+<video controls width="100%"> 
+  <source src="https://www.youtube.com/embed/VAOCARtbn54" type="video/mp4">
+            <a href="https://www.youtube.com/embed/VAOCARtbn54">Video</a>
+</video>
+<audio src="https://www.youtube.com/embed/VAOCARtbn54" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
             <p>
                 <i>Dies ist mein erstes 3D-Mesh-Modellierungsprojekt, und somit auch Ursache für den unerfahrenen
