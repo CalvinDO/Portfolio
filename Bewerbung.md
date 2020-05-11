@@ -26,46 +26,33 @@ Seit Oktober 2019 studiere ich nun Medieninformatik an der Hochschule Furtwangen
 
 # Coding
 ## Fraktal
-<a href="Code/Fraktal/start.html"><img src="Fraktal.PNG" alt="Fraktal" width="100%"/></a>
-<p>
-<i>
+<a href="Code/Fraktal/start.html"><img src="Fraktal.PNG" alt="Fraktal" width="100%"/></a>  
 Die Idee für diese Applikation kam mir auf, als ich die Möglichkeiten der grafischen Visualisierung durch Rekursion begriff. Das klare Endergebnis konnte ich mir, je nach Anzahl von Iterationen, noch nicht vorstellen, weshalb ich es sofort ausprobierte, mit dem Ziel, mich von meinem eigenen Programm zum Staunen zu bewegen. <br>
 Instanzierte Bälle mit "create-children" Objektmethoden schafften dies bereits. Es folgten einige Experimente mit der maximal umsetzbaren Auflösung verschiedener Browser, um ein fertig gerendertes Bild von 1000 mal 10000 Pixeln zu erhalten, welches sich stark vergrößern lässt, um die repetitiven Strukturen nahtlos entdecken zu können. <br>
 Daraufhin, ebenfalls ohne eine konkrete Vorstellung des Ergebnisses, begann ich den Farbwinkel abhängig von der Iterationsstufe und der Ordnung der circular Positionierten Kreise sowohl relativ, als auch absolut zu berechnen. Auch hier war ich von der Ästhetik der visualisierten Mathematik überrascht und begeistert. <br>
 Auf der Seite können Sie einige Parameter der Berechnung verändern.
-</i>
-</p>
+
 ## FraktalAnimation
-<a href="Code/FraktalAnimation/start.html"><img src="Animation.PNG" width="100%"></a>
-<p>
-<i>
+<a href="Code/FraktalAnimation/start.html"><img src="Animation.PNG" width="100%"></a>  
 Zugrunde liegt das zuvor beschriebene Projekt "Fraktal". Diesmal mit dem Ziel, einige Parameter der Berechnung, die sich als Dezimalbrüche darstellen lassen, wie beispielsweise der Farbwinkel, zeitlich zu modulieren, um eine zusätzliche Dimension zu schaffen, die ebenso zu etlichen neuen Beobachtungen und weiteren Experimenten führen sollte. <br>
 Bemerkenswert ist unter anderem der Zusammenhang, wie sich die Veränderung des Divisors eines Vollkreises, der die Positionierung der "children" eines jeden Balls bestimmt, auf die Bewegung und das Muster der Anordnung bis hin zu den kleinsten Bällen auswirkt, ebenso wie die entstehende Farbkonstillation
-</i>
-</p>
+
 ## Cardioids
-<a href="Code/Cardioids/start.html"><img src="cardioids.PNG" width="100%"/></a>
-<p>
-<i>
+<a href="Code/Cardioids/start.html"><img src="cardioids.PNG" width="100%"/></a>  
+
 Dieses Projekt ist durch eine Präsentationsarbeit im Fach Mathematik der 13. Klasse entstanden. Meine Mitschüler und ich durften uns entweder aus vorgegebenen, oder eigens ausgesuchten fortgeschrittenen Themen der Mathematik widmen. Für letzteres wählte ich aus meiner schon bestehenden Kenntnis einiger mathematischer/physikalischer Phänomene die der Kardioide aus. <br>
-Um die Beschreibung der dahinter liegenden Mathematik zu vermeiden, verweise ich an dieser Stelle auf das Endresultat innerhalb des Mathematik-Projekts, welches aus einem vertonten Video bestand: <a href = "#video">Video</a> <br>
+Um die Beschreibung der dahinter liegenden Mathematik zu vermeiden, verweise ich an dieser Stelle auf das Endresultat innerhalb des Mathematik-Projekts, welches aus diesem vertonten [Video](#video) bestand.  <br>
 Um den Mitschülern diese Thematik näher zu bringen und dafür zu faszinieren, programmierte ich diese Anwendung
 Bei höheren Werten des in der Applikation auch von Ihnen einstellbaren Parameters "Faktor", sowie dem ab dann interressanten Parameter "Lines", ist für mich bis heute der eindeutige Zusammenhang der eingestellten Werte mit den entstehenden Mustern zugegebenermaßen nicht eindeutig erklärbar. <br>
 Ich vermute allerdings, dass diese Muster eine Wechselwirkung der Teilbarkeit dieser Parameter, in Kombination mit Projektionen aus Potenzen, höheren räumlichen Dimensionen oder komplexen Zahlen darstellen. <br>
 Geben Sie beispielsweise einmal den Faktor: 345, mit Linienanzahl: 1290 ein, wobei perfekte Kreise entstehen, und vergleichen Sie es mit den Ergebnis bei umgebenden Werten beider Parameter.
 Ebenso bemerkenswert sind die Quotienten der Parameter, bei denen sich Muster ergeben, die wiederrum das ursprüngliche Cardioid visualisieren, wie beispielsweise bei dem Faktor: 3489,3 mit Linienanzahl: 1292 <br>
 Auch der Zusammenhang entstehender Muster bei negativen Zahlen mit ihren positiven Komplementären wurde von mir untersucht, jedoch noch nicht logisch begründet.
-</i>
-</p>
+
 ## RubberBand
-<a href="Code/RubberBand/start.html"><img src="Rubber.PNG" width="100%"/></a>
-<p>
-<i>
+<a href="Code/RubberBand/start.html"><img src="Rubber.PNG" width="100%"/></a>  
 Grundlage für diese Physik-Simulation war die in Echtzeit stattfindende Anwendung physikalischem Verhaltens auf Körper, die von dem Mauszeiger beeinflusst werden. Durch simple Vektoradition erschuf ich damit schon ein System dreier gekoppelter Massen, deren Verhalten annähernd Gummibändern ähneln.<br>
 Hierraus wird sich in naher Zukunft noch eine Simulation eines ganzen Rasters dieser Massen entwickeln, um Stoff zu simulieren (Cloth-Simulation).
-</i>
-<p>
-
 
 # Modelling                   
 ## Turret for Tower-Defense-Game
@@ -125,7 +112,8 @@ In der Tutorial Reihe wird eine Zuckerglasur verwendet, ich jedoch erwünschte m
             Ihr Browser unterstützt das Videoformat nicht
 </video>  
 Dies ist mein erstes Blender Projekt überhaupt. In diesem Erfahrungszustand hatte ich noch nie Topologie verändert, und somit für eine Mantaflow Feuer&Rauch-Simulation den vorgefertigten Affenkopf "Suzanne" verwendet, und eine Animation gerendert. Die Position der einzelnen Flammen wird durch eine Wolken-Textur über das Objekt bewegt, um einen höheren Grad an Zufall zu erreichen.  
-Ein brennender Affenkopf kommt in dem Donut-Tutorial des <a href="https://www.youtube.com/watch?v=TPrnSACiT Motivation für Blender zu schaffen. Dieser Teil der ersten Folge war mit Mantaflow allerdings nicht nachahmbar, was mich nicht zum Aufgeben, sondern eigenständigem Nachforschen und Ausprobieren ermutigte, bis ich einen brennenden Affenkopf erhielt.
+Ein brennender Affenkopf kommt in dem Donut-Tutorial des <a href="https://www.youtube.com/watch?v=TPrnSACiTJ4">Blender Guru</a>s ganz zu Beginn vor,
+                    allerdings gab es zu der Entstehungszeit Mantaflow noch nicht. Er demonstrierte das Feuer, umMotivation für Blender zu schaffen. Dieser Teil der ersten Folge war mit Mantaflow allerdings nicht nachahmbar, was mich nicht zum Aufgeben, sondern eigenständigem Nachforschen und Ausprobieren ermutigte, bis ich einen brennenden Affenkopf erhielt.
 
 # Video
 ## Cardioids - Tutorial
