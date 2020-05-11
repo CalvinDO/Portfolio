@@ -22,23 +22,11 @@
 <video controls width="100%"> 
   <source src="https://www.youtube.com/embed/VAOCARtbn54" type="video/mp4">
             <a href="https://www.youtube.com/embed/VAOCARtbn54">Video</a>
-</video>
-<audio src="https://www.youtube.com/embed/VAOCARtbn54" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-            <p>
-                <i>Dies ist mein erstes 3D-Mesh-Modellierungsprojekt, und somit auch Ursache für den unerfahrenen
-                    Workflow in diesem Video, welches einen Teil der Modellierung wiedergibt. Die Idee dazu kam mir, als
-                    ich einem Kollegen beim Programmieren eines
-                    3D-Tower-Defense Spiels zuschaute. <br>
-                    Abgesehen von dem Kugellager und den Läufen, bediente ich mich keinen Tutorials, um die
-                    Modelliertechniken herauszufinden, da ich ein möglichst individualisiertes Gatling-Geschütz
-                    erschaffen wollte.
-                    Ich verwendete hier alle elementaren Tools, die der Edit-Mode von Blender für Hard-Surface-Modeling
-                    zu bieten hat.
-                    <br>
-                    Das Endresultat ist in dem Tower-Defense-Game meines Kollegen integriert
-                </i>
-            </p>
+  </source>
+</video>  
+Dies ist mein erstes 3D-Mesh-Modellierungsprojekt, und somit auch Ursache für den unerfahrenen Workflow in diesem Video, welches einen Teil der Modellierung wiedergibt. Die Idee dazu kam mir, als ich einem Kollegen beim Programmieren eines 3D-Tower-Defense Spiels zuschaute.  
+Abgesehen von dem Kugellager und den Läufen, bediente ich mich keinen Tutorials, um die Modelliertechniken herauszufinden, da ich ein möglichst individualisiertes Gatling-Geschütz erschaffen wollte. Ich verwendete hier alle elementaren Tools, die der Edit-Mode von Blender für Hard-Surface-Modeling zu bieten hat.  
+Das Endresultat ist in dem Tower-Defense-Game meines Kollegen integriert
 
             <h3>Eine Truhe</h3>
             <img src="Truhe.png" alt="Truhe" height="390">
