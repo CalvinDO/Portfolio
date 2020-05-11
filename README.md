@@ -7,6 +7,8 @@
 - [Grafik](#grafik)
 - [Dokumente](#dokumente)
 
+<hr/>  
+
 # Motivation
 Seit mein Vater, ein Professor für Computerspiele, mich bereits in sehr frühem Alter von 3 Jahren vorsichtig an dieses Medium herangeführt hat, interessierte ich mich nicht nur für das Spielen, sondern auch ähnlich stark für die Entwicklung von Games. Ich zeichnete zusätzliche Level für Super Mario oder entwarf neue Spiele, das könnte man als meine ersten Schritte im Gamedesign bezeichnen. Später verbrachte ich viel Zeit mit der Kombination der elementaren Redstone-Elemente von Minecraft um logische Schaltungen, Rechensysteme, Binärzähler und Segmentanzeigen zu konstruieren. Auch bereitete mir die Modifikation des Spiels durch selbst gestaltete Resourcepacks viel Freude.  
 
@@ -23,6 +25,8 @@ Im Rahmen der freiwilligen Aufgaben des Programmieren-Moduls meines aktuellen St
 Beim GlobalGameJam 2020 im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines VR-Spiels mit, wobei meine Hauptaufgaben bei Gamedesign und Sound lagen. Dieses Event weckte bei mir erneut die Interesse an der 3D-Programmierung und dem 3D-Modeling, weshalb ich mich momentan in Unity und Blender weiter vertiefe.  
 
 Seit Oktober 2019 studiere ich nun Medieninformatik an der Hochschule Furtwangen. Das dritte Semester ist als Praxissemester vorgesehen und so bin ich auf der Suche nach einer entsprechenden Stelle ab Oktober 2020. Auf dieser Seite sammle ich einige meiner eigenmotivierten Arbeiten um einen Beleg für meinen Enthusiasmus und Lernfähigkeit zu liefern und Interesse für ein Angebot zu wecken.
+
+<hr/>  
 
 # Coding
 ## Fraktal
@@ -43,16 +47,14 @@ Bemerkenswert ist unter anderem der Zusammenhang, wie sich die Veränderung des 
 Dieses Projekt ist durch eine Präsentationsarbeit im Fach Mathematik der 13. Klasse entstanden. Meine Mitschüler und ich durften uns entweder aus vorgegebenen, oder eigens ausgesuchten fortgeschrittenen Themen der Mathematik widmen. Für letzteres wählte ich aus meiner schon bestehenden Kenntnis einiger mathematischer/physikalischer Phänomene die der Kardioide aus. <br>
 Um die Beschreibung der dahinter liegenden Mathematik zu vermeiden, verweise ich an dieser Stelle auf das Endresultat innerhalb des Mathematik-Projekts, welches aus diesem vertonten [Video](#video) bestand.  <br>
 Um den Mitschülern diese Thematik näher zu bringen und dafür zu faszinieren, programmierte ich diese Anwendung
-Bei höheren Werten des in der Applikation auch von Ihnen einstellbaren Parameters "Faktor", sowie dem ab dann interressanten Parameter "Lines", ist für mich bis heute der eindeutige Zusammenhang der eingestellten Werte mit den entstehenden Mustern zugegebenermaßen nicht eindeutig erklärbar. <br>
-Ich vermute allerdings, dass diese Muster eine Wechselwirkung der Teilbarkeit dieser Parameter, in Kombination mit Projektionen aus Potenzen, höheren räumlichen Dimensionen oder komplexen Zahlen darstellen. <br>
-Geben Sie beispielsweise einmal den Faktor: 345, mit Linienanzahl: 1290 ein, wobei perfekte Kreise entstehen, und vergleichen Sie es mit den Ergebnis bei umgebenden Werten beider Parameter.
-Ebenso bemerkenswert sind die Quotienten der Parameter, bei denen sich Muster ergeben, die wiederrum das ursprüngliche Cardioid visualisieren, wie beispielsweise bei dem Faktor: 3489,3 mit Linienanzahl: 1292 <br>
-Auch der Zusammenhang entstehender Muster bei negativen Zahlen mit ihren positiven Komplementären wurde von mir untersucht, jedoch noch nicht logisch begründet.
+Bei höheren Werten des in der Applikation auch von Ihnen einstellbaren Parameters "Faktor", sowie dem ab dann interressanten Parameter "Lines", ist für mich bis heute der eindeutige Zusammenhang der eingestellten Werte mit den entstehenden Mustern zugegebenermaßen nicht eindeutig erklärbar.
 
 ## RubberBand
 <a href="Code/RubberBand/start.html"><img src="Rubber.PNG" width="100%"/></a>  
 Grundlage für diese Physik-Simulation war die in Echtzeit stattfindende Anwendung physikalischem Verhaltens auf Körper, die von dem Mauszeiger beeinflusst werden. Durch simple Vektoradition erschuf ich damit schon ein System dreier gekoppelter Massen, deren Verhalten annähernd Gummibändern ähneln.<br>
 Hierraus wird sich in naher Zukunft noch eine Simulation eines ganzen Rasters dieser Massen entwickeln, um Stoff zu simulieren (Cloth-Simulation).
+
+<hr/>  
 
 # Modelling                   
 ## Turret for Tower-Defense-Game
@@ -115,11 +117,15 @@ Dies ist mein erstes Blender Projekt überhaupt. In diesem Erfahrungszustand hat
 Ein brennender Affenkopf kommt in dem Donut-Tutorial des <a href="https://www.youtube.com/watch?v=TPrnSACiTJ4">Blender Guru</a>s ganz zu Beginn vor,
                     allerdings gab es zu der Entstehungszeit Mantaflow noch nicht. Er demonstrierte das Feuer, umMotivation für Blender zu schaffen. Dieser Teil der ersten Folge war mit Mantaflow allerdings nicht nachahmbar, was mich nicht zum Aufgeben, sondern eigenständigem Nachforschen und Ausprobieren ermutigte, bis ich einen brennenden Affenkopf erhielt.
 
+<hr/>  
+
 # Video
 ## Cardioids - Tutorial
 <iframe width="100%" height="300em" src="https://www.youtube.com/embed/A68-juE2ves"
 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"                allowfullscreen>
 </iframe>
+
+<hr/>  
 
 # Musik
 ## Fuwashima (Soundtrack zum GlobalGameJam2020)
@@ -140,6 +146,8 @@ frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; pict
             Ihr Browser unterstützt den Audio-Tag nicht
 </audio>
 
+<hr/>  
+
 # Grafik
 ## Donald Trump, Kugelschreiberzeichnung
 <img src="Zeichnungen/Trump.jpg" alt="Trump" width="100%">
@@ -149,6 +157,8 @@ frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; pict
 
 ## Tribal, Tuschezeichnung
 <img src="Zeichnungen/Tribal.jpg" alt="Tribal" width="100%">
+
+<hr/>  
 
 # Dokumente
 - [Daten und Lebenslauf](Lebenslauf.md)
