@@ -20,7 +20,7 @@
 # 3D-Modelling Projekte mit Blender
 ## Turret for Tower-Defense-Game
 <video controls width="100%"> 
-  <source src="https://www.youtube.com/embed/VAOCARtbn54" type="video/mp4"/>
+  <source src="https://www.youtube.com/embed/VAOCARtbn54"/>
   <a href="https://www.youtube.com/embed/VAOCARtbn54">Play Video</a>
 </video>   
 
