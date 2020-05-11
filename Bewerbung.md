@@ -24,7 +24,7 @@ frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; pict
                 
 ## Turret for Tower-Defense-Game
 <video controls width="100%"> 
-  <source src="https://www.youtube.com/watch?v=VAOCARtbn54"/>
+  <source src="https://www.youtube.com/watch?v=VAOCARtbn54" type="video/mp4"/>
   <a href="https://www.youtube.com/watch?v=VAOCARtbn54">Play Video</a>
 </video>   
 
