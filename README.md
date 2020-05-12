@@ -94,9 +94,12 @@ Die Anforderungen der Computergrafik-Aufgabe, die mich zu dieser Animation inspi
 Die Positionierung der Spirale aus Blasen erreichte ich durch Rotation langer Blasenreihen unter Proportionalem Bearbeiten. Ähnlich erreichte ich auch die Greifarme des U-Boots. Die Textur der Blasen erreichte ich durch die Mischung einer Noise-Textur und Transparenz. Die Volumetrische Beleuchtung erreichte ich durch die Addition eines Lichtstreuenden, und eines Licht-Absorbierenden Shaders mit unterschiedlicher Dichte. Die Bewegungsabläufe erreichte ich durch Keyframes und interpolierten Kurven. Dies war mein erstes Modellierungsprojekt mit einer zeitlich beschränkten Vorgabe.
 
 ## Schild   
-<img src="Schild.png" alt="Schild" width="100%">
+<video width="100%" controls loop>
+            <source src="SchildWater.mp4" alt="SchildWater">
+            Ihr Browser unterstützt das Videoformat nicht
+</video>
 Die Grundidee für diesen Schild ist der Vorarbeitung eines Computergrafik-Vorlesungsskriptes, welches nun allerdings ersetzt wurde, zu verdanken. Hier hätte die Anforderung aus dem Modellieren eines Schildes, und dem Ausschneiden von Bereichen mit dem Boolean-Modifier bestanden.  
-Ich ging durch die Modellierung komplexerer Details, sowie frei gestaltete Verzierungen durch Bézierkurven darüber hinaus. Auch hier verwendete ich Kombinationen aus Noise-Texturen, um detaillierte Shader zu erreichen.  
+Ich ging durch die Modellierung komplexerer Details, sowie frei gestaltete Verzierungen durch Bézierkurven darüber hinaus. Auch hier verwendete ich Kombinationen aus Noise-Texturen, um detaillierte Shader zu erreichen. Die Animation ermöglichte mir die Mantaflow-Fluidsimulation. Hier benutze ich ebenso für das Wasser, als auch für die Schaum, Sprüh, Blasen und Fluid-Partikel einzelne Shader, die ich durch Node-Setups erreichte. Für das Wasser bestimmte ich die Mischung von einem "Diffuse"- und "Glossy"-Shader mit dem "Fresnel"-Linseneffekt, mischte dies mit einem "Glass"-Shader, und dies wiederrum mit mit einem "Transparent"-Shader. Für die anderen Partikel wurden die Mischungsverhältnisse der Shader verändert, oder mit dem zuvor genannten "Blasen-Node-Setup" kombiniert.  
 
 ## Korallenriff  
 <video width="100%" controls loop>
@@ -109,7 +112,7 @@ Diesen ersetzte ich durch einen entsprechenden Displacement-Node, durch den ich 
 ## Donut
 <img src="Donut.png" alt="Donut" width="100%">  
 Dies ist mein Ergebnis des zweiten Levels der Blender-Tutorialreihe des <a href="https://www.youtube.com/watch?v=TPrnSACiTJ4">Blender Guru</a>s. Das durch proportionales Editieren und Scultping erreichte Mesh des Teigs wurde durch Noise-Texturen und Overlay-Variation mit Bump versehen und geshaded, sowie Texture-Painting angewandt, um leicht verbrannte Stellen zu malen.  
-In der Tutorial Reihe wird eine Zuckerglasur verwendet, ich jedoch erwünschte mir eine Schokoladenglasur, die ich durch ein Node-Setup, in dem ein Glossy- und Diffuse Shader gemischt werden, erreichte. Auch hier ist etwas Displacement durch eine Noise-Textur meinerseits verwendet worden.
+In der Tutorial Reihe wird eine Zuckerglasur verwendet, ich jedoch erwünschte mir eine Schokoladenglasur, die ich durch ein Node-Setup, in dem ein Glossy- und Diffuse Shader gemischt werden, erreichte. Auch hier ist etwas Displacement durch eine Noise-Textur meinerseits verwendet worden. Die Streusel wurden mit einem Partikelsystem mittels "Instance-Objects" variierender Häufigkeit auf der Glasur platziert.
 
 ## Brennender Affenkopf  
 <video width="100%" controls loop>
@@ -128,6 +131,7 @@ Ein brennender Affenkopf kommt in dem Donut-Tutorial des <a href="https://www.yo
 <iframe width="100%" height="300em" src="https://www.youtube.com/embed/A68-juE2ves"
 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"                allowfullscreen>
 </iframe>
+Dies ist das unter [Cardioids](##Cardioids) angedeutete Lernvideo, welches im Rahmen einer Projektarbeit unter Auswahl eines eigenen Themas entstand. Hier wird ebenso die Funktionsweise meines dazu verfassten Programms ähnlich zu Pseudocode erklärt.
 
 <hr/>  
 <hr/>  
@@ -137,32 +141,42 @@ frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; pict
 <audio controls>
             <source src="Musik/Fuwashima.mp3" type="audio/mp3">
             Ihr Browser unterstützt den Audio-Tag nicht
-</audio><br>
+</audio>  
+Dieses Stück komponierte ich als Titelsong im Rahmen des Global-Game-Jams 2020, bei dem ich in einem Team innerhalb von 48 Stunden bei der Entwicklung eines VR-Games mitwirkte. In erster Linie versuchte ich, das Thema des umgesetzten Atomkraftwerk-Supergau-Simulators, in dem man unter Stressdruck der Lösung von Rätseln ausgesetzt ist, durch einen spannenden Aufbau und aggressivem Klang entsprechende Stimmung zu erzeugen. Auch versuchte ich, den Effekt von Tonverzerrungen, verursacht durch enorme radioaktive Strahlung, mit der zeitlichen Automation der Delay-Time eines Echo-Delay-Plugins annähernd zu simulieren. Um Originalität zu schaffen, versah ich zurückhaltende Drum-Sounds mit dem prägnanten "Amen-Break"-Rythmus, was sich als eher unüblich gestaltet. Die "Fill-Ins" habe ich mir frei ausgedacht.
 
 ## PiSong
 <audio controls>
             <source src="Musik/PiSong.mp3" type="audio/mp3">
             Ihr Browser unterstützt den Audio-Tag nicht
 </audio>
+Bei dieser Audio handelt es sich um ein Gimmick, entworfen für den internationalen "Pi-Day", welches ebenso mein erstes außerhalb der Familie im Alter von 11 Jahren präsentierte Audio Projekt auszeichnet. Ich überlegte mir eine Idee, einige Nachkommastellen der Kreiszahl Pi musikalisch umzusetzen, ohne Töne und Aufbau nach der Konstante zu gestalten. Dies gelang mir durch das Aufsagen der Stellen von Roboterstimmen. Nach einem "Wobble-Bass", umgesetzt durch zeitliche Modulation des "Cutoffs", folgt eine rein akkustisch nicht entzifferbare Sequenz, die das Stück beendet. Wenn Sie meinen "Pi-Song" in eine DAW, beispielsweise Audacity, importieren, und sich die Tonspur als Spektrogramm anzeigen lassen, sehen Sie, dass es sich hierbei um die auditive Wiedergabe einer Grafik des griechischem Symbols für "Pi" handelt.
+
 
 ## VocalRemixTrap
 <audio controls>
             <source src="Musik/VocalRemixTrap.mp3" type="audio/mp3">
             Ihr Browser unterstützt den Audio-Tag nicht
 </audio>
+Bei diesem Stück handelt es sich ebenfalls um ein Gimmick, diesmal im Kreis von engen Kollegen. Ich versuchte, aus einigen verschiedene menschliche nAufnahmen, die bei uns täglich für Lacher sorgten, einen "Remix" zu erstellen, der an der Musikrichtung des Traps anlehnt. Dabei verwendete ich eine Vielzahl von Plugins, wovon sich das wichtigste, welches für die Stimmverzerrungen verantwortlich ist, "Fruity Granulizer" nennt. Dies ist mein erstes Audioprojekt, in dem ich, unterstützt durch meinen als DJ erfahrenen Schwager, auf Audioqualität, Mischungen (EQ-ing), Normpegel achtete, sowie Kompressoren benutzte.  
 
 <hr/>  
 <hr/>  
 
 # Grafik
 ## Donald Trump, Kugelschreiberzeichnung
-<img src="Zeichnungen/Trump.jpg" alt="Trump" width="100%">
+<img src="Zeichnungen/Trump.jpg" alt="Trump" width+="100%">
+Vor dem Erstellen dieses Bildes pflegte ich eine starke Abgneigung gegen das Zeichnen organischer Objekte und Lebewesen. Dies ist darauf zurück zu führen, dass es mir sonst, leider nicht nur meiner Einschätzung nach, in außerordentlichem Maße misslang, unter anderem auch un. Eines Tages, im Alter von 16 Jahren, als ich mich von dem Lernen für eine Klausur ablenkte, verspürte ich die Lust, genau dies zu tun. Es stellte für mich eine gewisse Art der Herausforderung an mich selbst dar, besonders in anbetracht des Versäumnis' der Lernzeit.  
+Ein Bild dieses Präsidenten auf meinem Bildschirm vorgelegt, versuchte ich die Konturen frei auf das Papier zu übertragen. Das Ergebnis überraschte mich sehr.  
 
 ## Schlafend im Bus, Kugelschreiberzeichnung
 <img src="Zeichnungen/Sleep.jpg" alt="Sleep" width="100%"/>
+Mit dem Wissen, auch hier etwas Talent aufweisen zu können, zeichnete ich wenige Wochen später einen Klassenkameraden, der im Reisebus zur Klassenfahrt in den Schlaf fiel. Hier reizte mich noch mehr die Herausforderung, in Anbetracht der unruhigen Fahrt, des temporären Ruhezustands des Kollegen, des Zeichnens auf den Oberschenkeln, sowie seinen Abneigung, photografiert zu werden.
 
 ## Tribal, Tuschezeichnung
 <img src="Zeichnungen/Tribal.jpg" alt="Tribal" width="100%">
+Mit dieser, sich von Kugelschreiberzeichnungen stark unterscheidenden Art des Zeichnens experimentiert ich schon früher, im Alter von etwa 13 Jahren, was allerdings auch auf eine Art der Herausforderung meiner meiner Selbstdisziplin zurückzuführen ist, da ich meine Werkzeuge hierbei stark einschränkte.  
+Anstatt einen Pinsel oder Kaligrafiestift zu verwenden, benutzte ich konsequent eine Art eines Fine-Liners, dessen Spitze ich nie das Papier berühren lies, und somit über einen durch die Oberflächenspannung entstehenden winzigen Tintenkanal äußerst vorsichtig über dem Blatt schweben lassen musste, da direkter Kontakt sofort zu unansehnlichen Färbungen führte.  
+Die Motive lehnten ausschließlich an Tribal-Tattoos an.
 
 <hr/>  
 <hr/>  
