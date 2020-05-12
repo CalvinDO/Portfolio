@@ -182,7 +182,7 @@ Die Motive lehnten ausschließlich an Tribal-Tattoos an.
 - [Abiturzeugnis](CCF18022020_0001.jpg)
 - [Semesternotenspiegel](Notenspiegel.pdf)
 - [Empfehlungsschreiben](EmpfehlungCalvinDellOro.pdf)
-- [Auszeichnung des Gymnasiums für kulturelles Engagement](CCF18022020_0003.jpg")
+- [Auszeichnung des Gymnasiums für kulturelles Engagement](CCF18022020_0003.jpg)
 - [Hackathon-Urkunde](CCF18022020_0002.jpg)
 - [Regelung zum praktischen Studiensemester](CCF18022020_0000.jpg)
 
