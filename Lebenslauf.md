@@ -31,21 +31,26 @@ Allgemeine Hochschulreife, Durchschnittsnote 2,3
 
 ## Zusätzliche Kenntnisse
 **Sprachkenntnisse**  
-Englisch: Gute Kenntnisse  
-Latein: Grundkenntnisse  
+- Englisch: Gute Kenntnisse  
+- Latein: Grundkenntnisse  
 
-**EDV-Kenntnisse**  
-Eclipse: Gute Kenntnisse  
-Visual Studio Code: Gute Kenntnisse  
-Java, Javascript, Typescript, Batch: Gute Kenntnisse  
-Python, C: Grundkenntnisse
-Unity, Blender: Grundkenntnisse  
-Excel: Gute Kenntnisse  
-Gimp: Gute Kenntnisse  
-FLStudio: Gute Kenntnisse  
+**EDV-Kenntnisse**
+- Eclipse: Gute Kenntnisse  
+- Visual Studio Code: Gute Kenntnisse  
+- Java, Javascript, Typescript, Batch: Gute Kenntnisse  
+- Python, C: Grundkenntnisse
+- Unity: Grundkenntnisse  
+- Blender: Gute Kenntnisse 
+- Excel: Gute Kenntnisse  
+- Gimp: Gute Kenntnisse  
+- FLStudio: Gute Kenntnisse  
 
 ## Hobbys
-Programmieren  
-Chemie, Physik  
-Schlagzeug (Früher: Jugendkapelle & Trachtenkapelle Hinterzarten, Jetzt: Jazz Trio), Klavier, Musikproduktion  
-Schwimmen, Turmspringen, Turnen, Aikido  
+- Programmieren  
+- 3D-Modeling
+- Schlagzeug
+  - Früher: Jugendkapelle & Trachtenkapelle Hinterzarten
+  - Heute: Jazz Trio
+- Klavier, Musikproduktion  
+- Chemie, Physik  
+- Schwimmen, Turmspringen, Turnen, Aikido  
