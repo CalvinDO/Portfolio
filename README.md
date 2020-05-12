@@ -89,9 +89,12 @@ Die Anforderungen der Computergrafik-Aufgabe, die mich zu dieser Animation inspi
 Die Positionierung der Spirale aus Blasen erreichte ich durch Rotation langer Blasenreihen unter Proportionalem Bearbeiten. Ähnlich erreichte ich auch die Greifarme des U-Boots. Die Textur der Blasen erreichte ich durch die Mischung einer Noise-Textur und Transparenz. Die Volumetrische Beleuchtung erreichte ich durch die Addition eines Lichtstreuenden, und eines Licht-Absorbierenden Shaders mit unterschiedlicher Dichte. Die Bewegungsabläufe erreichte ich durch Keyframes und interpolierten Kurven. Dies war mein erstes Modellierungsprojekt mit einer zeitlich beschränkten Vorgabe.
 
 ## Schild   
-<img src="Schild.png" alt="Schild" width="100%">
+<video width="100%" controls loop>
+            <source src="SchildWater.mp4" alt="SchildWater">
+            Ihr Browser unterstützt das Videoformat nicht
+</video>
 Die Grundidee für diesen Schild ist der Vorarbeitung eines Computergrafik-Vorlesungsskriptes, welches nun allerdings ersetzt wurde, zu verdanken. Hier hätte die Anforderung aus dem Modellieren eines Schildes, und dem Ausschneiden von Bereichen mit dem Boolean-Modifier bestanden.  
-Ich ging durch die Modellierung komplexerer Details, sowie frei gestaltete Verzierungen durch Bézierkurven darüber hinaus. Auch hier verwendete ich Kombinationen aus Noise-Texturen, um detaillierte Shader zu erreichen.  
+Ich ging durch die Modellierung komplexerer Details, sowie frei gestaltete Verzierungen durch Bézierkurven darüber hinaus. Auch hier verwendete ich Kombinationen aus Noise-Texturen, um detaillierte Shader zu erreichen. Die Animation ermöglichte mir die Mantaflow-Fluidsimulation. Hier benutze ich ebenso für das Wasser, als auch für die Schaum, Sprüh, Blasen und Fluid-Partikel einzelne Shader, die ich durch Node-Setups erreichte. Für das Wasser bestimmte ich die Mischung von einem "Diffuse"- und "Glossy"-Shader mit dem "Fresnel"-Linseneffekt, mischte dies mit einem "Glass"-Shader, und dies wiederrum mit mit einem "Transparent"-Shader. Für die anderen Partikel wurden die Mischungsverhältnisse der Shader verändert, oder mit dem zuvor genannten "Blasen-Node-Setup" kombiniert.  
 
 ## Korallenriff  
 <video width="100%" controls loop>
@@ -104,7 +107,7 @@ Diesen ersetzte ich durch einen entsprechenden Displacement-Node, durch den ich 
 ## Donut
 <img src="Donut.png" alt="Donut" width="100%">  
 Dies ist mein Ergebnis des zweiten Levels der Blender-Tutorialreihe des <a href="https://www.youtube.com/watch?v=TPrnSACiTJ4">Blender Guru</a>s. Das durch proportionales Editieren und Scultping erreichte Mesh des Teigs wurde durch Noise-Texturen und Overlay-Variation mit Bump versehen und geshaded, sowie Texture-Painting angewandt, um leicht verbrannte Stellen zu malen.  
-In der Tutorial Reihe wird eine Zuckerglasur verwendet, ich jedoch erwünschte mir eine Schokoladenglasur, die ich durch ein Node-Setup, in dem ein Glossy- und Diffuse Shader gemischt werden, erreichte. Auch hier ist etwas Displacement durch eine Noise-Textur meinerseits verwendet worden.
+In der Tutorial Reihe wird eine Zuckerglasur verwendet, ich jedoch erwünschte mir eine Schokoladenglasur, die ich durch ein Node-Setup, in dem ein Glossy- und Diffuse Shader gemischt werden, erreichte. Auch hier ist etwas Displacement durch eine Noise-Textur meinerseits verwendet worden. Die Streusel wurden mit einem Partikelsystem mittels "Instance-Objects" variierender Häufigkeit auf der Glasur platziert.
 
 ## Brennender Affenkopf  
 <video width="100%" controls loop>
