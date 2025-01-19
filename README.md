@@ -36,7 +36,10 @@ Seit Oktober 2019 studiere ich nun Medieninformatik an der Hochschule Furtwangen
 <a download="Code\TreeGenerator\TreeGenerator.zip" href="TreeGenerator.PNG" title="TreeGenerator">
     <img alt="TreeGenerator" src="TreeGenerator.PNG">
 </a>
-Baumgenerator, Rodrigues-Rotationsformel
+Diesen parametrisierten Baumgenerator als Blender-Addon entwickelte ich in einem Team, bestehend aus einem weiteren Programmierer und einem Grafiker, der die Blätter und die Rinde der Bäume entwarf. Benutzer können in dem Tooltip die Anzahl der Ast-Abspaltungen, die Ausrichtungsstärke gen Himmel und den Radius einstellen. Auch rekursive Parameter von jedem Ast zu seinem auswachsenden Ast sind einstellbar, wie der Winkel, Verkürzung der Länge und des Radius', Änderung der Verkürzung und Zufallsabweichung
+
+
+Rodrigues-Rotationsformel
 
 ## Fraktal
 <a href="Code/Fraktal/start.html"><img src="Fraktal.PNG" alt="Fraktal" width="100%"/></a>  
