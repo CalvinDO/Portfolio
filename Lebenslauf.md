@@ -24,13 +24,13 @@ weltenbauer. Software Entwicklung GmbH, Wiesbaden
 1/21 - 4/23 Game Developer Werkstudent (Unity; Programmierung, Asset-Parametrierung & Integration)  
 weltenbauer. Software Entwicklung GmbH, Remote Furtwangen - Wiesbaden
 
-
 ## Ausbildung
 8/06 – 7/09 Peter-Härtling-Grundschule, Mainz-Finthen  
 9/09 – 7/10 Grundschule, Hinterzarten  
 9/10 – 7/16 Gymnasium Birklehof, Hinterzarten  
 9/16 – 6/19 Technisches Gymnasium, Titisee-Neustadt  
 4/19 - 3/23 Hochschule, Furtwangen
+3/23 -      Persönliche Reisen zur Aneignung kultureller Kompetenzen und Weltanschauungen
 
 ## Bildungsabschlüsse  
 Allgemeine Hochschulreife, Durchschnittsnote 2,3  
