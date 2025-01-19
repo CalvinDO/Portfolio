@@ -29,7 +29,7 @@ weltenbauer. Software Entwicklung GmbH, Remote Furtwangen - Wiesbaden
 9/09 – 7/10 Grundschule, Hinterzarten  
 9/10 – 7/16 Gymnasium Birklehof, Hinterzarten  
 9/16 – 6/19 Technisches Gymnasium, Titisee-Neustadt  
-4/19 - 3/23 Hochschule, Furtwangen
+4/19 - 3/23 Hochschule, Furtwangen   
 3/23 -      Persönliche Reisen zur Aneignung kultureller Kompetenzen und Weltanschauungen
 
 ## Bildungsabschlüsse  
