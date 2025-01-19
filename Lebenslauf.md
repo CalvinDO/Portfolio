@@ -15,9 +15,9 @@ Familienstand: ledig
 Tätigkeit: Jobsuche nach Bachelor-Abschluss und Reise
 
 ## Berufspraxis
-7/16 - 7/19 Zusteller Südkurier Hochschwarzwald  
+7/16 - 7/19 Zusteller Schülerjob Südkurier Hochschwarzwald  
 PSG Baden-Württemberg, Titisee-Neustadt  
-7/19 – 8/19 Archivierung (Excel, Auswertungsautomatismen, Scannen)
+7/19 – 8/19 Archivierung Ferienjob (Excel, Auswertungsautomatismen, Scannen)
 Novartis AG, Basel  
 8/20 - 01/21 Game Developer Praktikum (Unity, FMOD; Programmierung, Asset-Parametrierung & Integration)  
 weltenbauer. Software Entwicklung GmbH, Wiesbaden   
