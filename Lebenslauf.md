@@ -20,7 +20,7 @@ PSG Baden-Württemberg, Titisee-Neustadt
 7/19 – 8/19 Archivierung (Excel, Auswertungsautomatismen, Scannen)
 Novartis AG, Basel  
 8/20 - 01/21 Game Developer Praktikum (Unity, FMOD; Programmierung, Asset-Parametrierung & Integration)  
-weltenbauer. Software Entwicklung GmbH, Wiesbaden 
+weltenbauer. Software Entwicklung GmbH, Wiesbaden   
 1/21 - 4/23 Game Developer Werkstudent (Unity; Programmierung, Asset-Parametrierung & Integration)  
 weltenbauer. Software Entwicklung GmbH, Remote Furtwangen - Wiesbaden
 
