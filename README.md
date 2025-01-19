@@ -31,6 +31,13 @@ Seit Oktober 2019 studiere ich nun Medieninformatik an der Hochschule Furtwangen
 <hr/>  
 
 # Coding
+
+## TreeGenerator
+<a download="Code\TreeGenerator\TreeGenerator.zip" href="TreeGenerator.PNG" title="TreeGenerator">
+    <img alt="TreeGenerator" src="TreeGenerator.PNG">
+</a>
+Baumgenerator, Rodrigues-Rotationsformel
+
 ## Fraktal
 <a href="Code/Fraktal/start.html"><img src="Fraktal.PNG" alt="Fraktal" width="100%"/></a>  
 Die Idee für diese Applikation kam mir auf, als ich die Möglichkeiten der grafischen Visualisierung durch Rekursion begriff. Das klare Endergebnis konnte ich mir, je nach Anzahl von Iterationen, noch nicht vorstellen, weshalb ich es sofort ausprobierte, mit dem Ziel, mich von meinem eigenen Programm zum Staunen zu bewegen.  

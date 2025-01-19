@@ -30,7 +30,7 @@ weltenbauer. Software Entwicklung GmbH, Remote Furtwangen - Wiesbaden
 9/10 – 7/16 Gymnasium Birklehof, Hinterzarten  
 9/16 – 6/19 Technisches Gymnasium, Titisee-Neustadt  
 4/19 - 3/23 Hochschule, Furtwangen   
-3/23 -      Persönliche Reisen zur Aneignung kultureller Kompetenzen und Weltanschauungen
+3/23 - -/-- Persönliche Reisen zur Aneignung kultureller Kompetenzen und Weltanschauungen
 
 ## Bildungsabschlüsse  
 Allgemeine Hochschulreife, Durchschnittsnote 2,3  
