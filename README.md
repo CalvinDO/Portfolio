@@ -34,9 +34,9 @@ Seit Oktober 2019 studiere ich nun Medieninformatik an der Hochschule Furtwangen
 
 ## TreeGenerator
 <a href="Code/TreeGenerator/TreeGenerator.zip" download>
-    <img alt="TreeGenerator" src="TreeGenerator.PNG">
+    <img src="TreeGenerator.PNG">
 </a>
-Diesen parametrisierten Baumgenerator als Blender-Addon entwickelte ich in einem Team, bestehend aus einem weiteren Programmierer und einem Grafiker, der die Blätter und die Rinde der Bäume entwarf. Benutzer können in dem Tooltip die Anzahl der Ast-Abspaltungen, die Ausrichtungsstärke gen Himmel und den Radius einstellen. Auch rekursive Parameter von jedem Ast zu seinem auswachsenden Ast sind einstellbar, wie der Winkel, Verkürzung der Länge und des Radius', Änderung der Verkürzung und Zufallsabweichung
+!!Test!! Diesen parametrisierten Baumgenerator als Blender-Addon entwickelte ich in einem Team, bestehend aus einem weiteren Programmierer und einem Grafiker, der die Blätter und die Rinde der Bäume entwarf. Benutzer können in dem Tooltip die Anzahl der Ast-Abspaltungen, die Ausrichtungsstärke gen Himmel und den Radius einstellen. Auch rekursive Parameter von jedem Ast zu seinem auswachsenden Ast sind einstellbar, wie der Winkel, Verkürzung der Länge und des Radius', Änderung der Verkürzung und Zufallsabweichung
 
 
 Rodrigues-Rotationsformel
