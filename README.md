@@ -34,16 +34,14 @@ Seit Oktober 2019 studiere ich nun Medieninformatik an der Hochschule Furtwangen
 
 ## TreeGenerator
 <a href="Code/TreeGenerator/TreeGenerator.zip" download><img src="TreeGenerator.png"  width = "100%"></a> <br>
-<img src="TreeGenerator.png" width = "100%" >
-!!Test!! Diesen parametrisierten Baumgenerator als Blender-Addon entwickelte ich in einem Team, bestehend aus einem weiteren Programmierer und einem Grafiker, der die Blätter und die Rinde der Bäume entwarf. Benutzer können in dem Tooltip die Anzahl der Ast-Abspaltungen, die Ausrichtungsstärke gen Himmel und den Radius einstellen. Auch rekursive Parameter eines jeden Astes zu seinem auswachsenden Ast sind einstellbar, wie der Winkel, Verkürzung der Länge und des Radius', Änderung der Verkürzung und Zufallsabweichung
-
-
-Rodrigues-Rotationsformel
+Diesen parametrisierten Baumgenerator als Blender-Addon entwickelte ich in einem Team, bestehend aus einem weiteren Programmierer und einem Grafiker, der die Blätter und die Rinde der Bäume entwarf. Benutzer können in dem Tooltip die Anzahl der Ast-Abspaltungen, die Ausrichtungsstärke gen Himmel und den Radius einstellen. Auch rekursive Parameter eines jeden Astes zu seinem auswachsenden Ast sind einstellbar, Verkürzung der Länge und des Radius', Änderung der Verkürzung der Winkel und Zufallsabweichung. Nach Import der "Addon.py"-Datei finden Sie einen "Generate Tree"-Button im Scene-Tab des Property-Windows.  
+Bei der objektorientierten Programmierung lernte ich die Rodrigues-Rotationsformel kennen und wandte andere Vektorrechnung wie das Kreuzprodukt an. Auch mit Blender-eigenen Umgebungsvariablen und Methoden machte ich mich vertraut. Die Instazierung der Astaustriebe ähnelt dem Projekt [Fraktal](#fraktal)  
+Die Programmierung erfolgte im fünften Semester im Rahmen des Kurses -- Name --
 
 ## Fraktal
 <a href="Code/Fraktal/start.html"><img src="Fraktal.PNG" alt="Fraktal" width="100%"/></a>  
 Die Idee für diese Applikation kam mir auf, als ich die Möglichkeiten der grafischen Visualisierung durch Rekursion begriff. Das klare Endergebnis konnte ich mir, je nach Anzahl von Iterationen, noch nicht vorstellen, weshalb ich es sofort ausprobierte, mit dem Ziel, mich von meinem eigenen Programm zum Staunen zu bewegen.  
-Instanzierte Bälle mit "create-children" Objektmethoden schafften dies bereits. Es folgten einige Experimente mit der maximal umsetzbaren Auflösung verschiedener Browser, um ein fertig gerendertes Bild von 1000 mal 10000 Pixeln zu erhalten, welches sich stark vergrößern lässt, um die repetitiven Strukturen nahtlos entdecken zu können.  
+Instanzierte Bälle mit "create-children" Objektmethoden schafften dies bereits. Es folgten einige Experimente mit der maximal umsetzbaren Auflösung verschiedener Browser, um ein fertig gerendertes Bild von 10000 mal 10000 Pixeln zu erhalten, welches sich stark vergrößern lässt, um die repetitiven Strukturen nahtlos entdecken zu können.  
 Daraufhin, ebenfalls ohne eine konkrete Vorstellung des Ergebnisses, begann ich den Farbwinkel abhängig von der Iterationsstufe und der Ordnung der zirkular positionierten Kreise sowohl relativ, als auch absolut zu berechnen. Auch hier war ich von der Ästhetik der visualisierten Mathematik überrascht und begeistert.  
 Auf der Seite können Sie einige Parameter der Berechnung verändern.
 
@@ -188,11 +186,11 @@ Die Motive lehnten ausschließlich an Tribal-Tattoos an.
 
 # Dokumente
 - [Daten und Lebenslauf](Lebenslauf.md)
-- [Abiturzeugnis](CCF18022020_0001.jpg)
-- [Semesternotenspiegel](Notenspiegel.pdf)
 - [Empfehlungsschreiben](EmpfehlungsschreibenCalvinDellOro.pdf)
 - [Praktikumsbestätigung](PraktikumsbestätigungCalvinDellOro.pdf)
+- [Semesternotenspiegel](Notenspiegel.pdf)
+- [Abiturzeugnis](CCF18022020_0001.jpg)
 - [Auszeichnung des Gymnasiums für kulturelles Engagement](CCF18022020_0003.jpg)
 - [Hackathon-Urkunde](CCF18022020_0002.jpg)
-- [Regelung zum praktischen Studiensemester](CCF18022020_0000.jpg)
+<!-- - [Regelung zum praktischen Studiensemester](CCF18022020_0000.jpg) -->
 
