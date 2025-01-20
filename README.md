@@ -23,9 +23,10 @@ Ich erkannte durch die Programmierung die Relevanz der Mathematik in verschieden
 
 Im Rahmen der freiwilligen Aufgaben des Programmieren-Moduls meines aktuellen Studiums entwickelte ich mit Java einen ewigen Kalender, Game-Of-Life und Tic-Tac-Toe. Letzteres baute ich zusätzlich mit einem zufällig spielenden Computergegner aus, der zum Trainieren einer künstlichen Intelligenz genutzt werden soll.  
 
-Beim GlobalGameJam 2020 im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines VR-Spiels mit, wobei meine Hauptaufgaben bei Gamedesign und Sound lagen. Dieses Event weckte bei mir erneut die Interesse an der 3D-Programmierung und dem 3D-Modeling, weshalb ich mich momentan in Unity und Blender weiter vertiefe.  
+Beim GlobalGameJam 2020 im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines VR-Spiels mit, wobei meine Hauptaufgaben bei Gamedesign und Sound lagen. Dieses Event weckte bei mir erneut die Interesse an der 3D-Programmierung und dem 3D-Modeling, weshalb ich mich in Unity und Blender weiter vertiefte.  
 
-Seit Oktober 2019 studiere ich nun Medieninformatik an der Hochschule Furtwangen. Nach dem ersten Semester erhielt ich von meinen Professoren für Mathematik und Informatik Anfragen als Tutor tätig zu werden, und bin als solcher nun für das Modul "Programmierung" eingestellt. Das dritte Semester ist als Praxissemester vorgesehen und so bin ich auf der Suche nach einer entsprechenden Stelle ab Oktober 2020. Auf dieser Seite sammle ich einige meiner eigenmotivierten Arbeiten um einen Beleg für meinen Enthusiasmus und Lernfähigkeit zu liefern und Interesse für ein Angebot zu wecken.
+Seit Oktober 2019 studierte ich 7 Semester lang Medieninformatik an der Hochschule Furtwangen, und schloss mit dem Bachelor of Science ab. Nach dem ersten Semester erhielt ich von meinen Professoren für Mathematik und Informatik Anfragen als Tutor tätig zu werden, und war als solcher für das Modul "Programmierung" eingestellt. Das Praktikum als drittes Semester absolvierte ich bei "weltenbauer. Software Entwicklung GmbH", wo ich am Bau-Simulator im Developer-Team mitarbeitete. Im vierten und fünften Semester als Projektstudium entwickelte ich in einem sechsköpfigen Team aus engagierten Studenten das tiefgründige psychologische Horror-Spiel "Morbus-Animi".
+Auf dieser Seite sammle ich einige meiner Arbeiten, um einen Beleg für meinen Enthusiasmus und Lernfähigkeit zu liefern und Interesse für ein Angebot zu wecken.
 
 <hr/>  
 <hr/>  
@@ -35,7 +36,7 @@ Seit Oktober 2019 studiere ich nun Medieninformatik an der Hochschule Furtwangen
 ## TreeGenerator
 <a href="Code/TreeGenerator/TreeGenerator.zip" download><img src="TreeGenerator.png"  width = "100%"></a> <br>
 Diesen parametrisierten Baumgenerator als Blender-Addon entwickelte ich in einem Team, bestehend aus einem weiteren Programmierer und einem Grafiker, der die Blätter und die Rinde der Bäume entwarf. Benutzer können in dem Tooltip die Anzahl der Ast-Abspaltungen, die Ausrichtungsstärke gen Himmel und den Radius einstellen. Auch rekursive Parameter eines jeden Astes zu seinem auswachsenden Ast sind einstellbar, Verkürzung der Länge und des Radius', Änderung der Verkürzung der Winkel und Zufallsabweichung. Nach Import der "Addon.py"-Datei finden Sie einen "Generate Tree"-Button im Scene-Tab des Property-Windows.  
-Bei der objektorientierten Programmierung lernte ich die Rodrigues-Rotationsformel kennen und wandte andere Vektorrechnung wie das Kreuzprodukt an. Auch mit Blender-eigenen Umgebungsvariablen und Methoden machte ich mich vertraut. Die Instazierung der Astaustriebe ähnelt dem Projekt [Fraktal](#fraktal)  
+Bei der objektorientierten Programmierung lernte ich die Rodrigues-Rotationsformel kennen und wandte andere Vektorrechnung wie das Kreuzprodukt an. Auch mit Blender-eigenen Umgebungsvariablen und Methoden machte ich mich vertraut. Die Instanzierung der Astaustriebe ähnelt dem Projekt [Fraktal](#fraktal)  
 Die Programmierung erfolgte im fünften Semester im Rahmen des Kurses -- Name --
 
 ## Fraktal
