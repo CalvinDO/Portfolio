@@ -34,7 +34,7 @@ Auf dieser Seite sammle ich einige meiner Arbeiten, um einen Beleg für meinen E
 # Coding
 
 ## Eisladen
-<iframe src = "calvindo.github.io/GiS/Eisladen" alt="Eisladen" width = "100%">
+<img src = "calvindo.github.io/GiS/Eisladen" alt="Eisladen" width = "100%">
 
 ## Baumgenerator
 <a href="Code/TreeGenerator/TreeGenerator.zip" download><img src="TreeGenerator.png"  width = "100%"></a> <br>
