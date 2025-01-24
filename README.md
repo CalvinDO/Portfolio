@@ -33,6 +33,12 @@ Auf dieser Seite sammle ich einige meiner Arbeiten, um einen Beleg für meinen E
 
 # Coding
 
+## Bausimulator
+<a href="https://store.steampowered.com/app/1273400/BauSimulator/"><video width="100%" controls loop>
+            <source src="ConstructionSimulator.mp4" alt="ConstructionSimulator" type="video/mp4"/>
+            Ihr Browser unterstützt den Video-Tag nicht
+</video></a>  
+Im Dev-Team bei "weltenbauer. Software Entwicklung GmbH" mit insgesamt 25 Mitarbeitern und weiteren Outsourcern von Winter 2020 bis Frühling 2023, erst als Praktikant, dann zwei Jahre als Werkstudent gearbeitet. Unity, C#, FMOD, Fahrzeug-Setup.
 
 ## Baumgenerator
 <a href="Code/TreeGenerator/TreeGenerator.zip" download><img src="TreeGenerator.png" width = "100%"></a>  
@@ -50,6 +56,9 @@ Außer der Eisbehälter ist jede Grafik und Logik selbstgemacht, mit Zeichenmeth
 ## DiscHoverHFU
 
 <a href="https://calvindo.github.io/DiscHoverHFU/Code/DiscHoverHFU.html"><img src="DiscHoverHFU.png" width = "100%"></a>  
+Ziel dieses 360°-Point-And-Click Adventures ist die spielerische Umsetzung der "Erstie-Rallye" - einer Schnitzeljagd an der HFU für Neulinge. Im Rahmen des Kurses "User Experience Design" im zweiten Semester entwickelt, sahen wir die Notwendigkeit einer digitalen Version der Rallye wegen den Einschränkungen durch die Corona-Pandemie. Zu zweit planten wir mit Sitemaps, Wireframes, Visuellen- und Soundstyleguides, entwickelten mit TypeScript, HTML und CSS.  
+Durch Gedrückthalten und Bewegung der Maus kann der Spieler sich in den Räumen der HFU drehen und somit Ausrüstung der Hochschule entdecken. Mit der "E"-Taste öffnet sich das Menü, in dem auf die OpenStreetMap-Karte gewechselt und in dieser zu den Räumen navigiert werden kann.  
+Die Umsetzung erfolgte mit zweidimensionalen Panorama-Bildern, die durch WebXR-Polyfill und eigene Programmierung zu interaktiven Panorama-Touren wurden. Als Datenstruktur für Winkelkoordinaten der 104 Gegenstände, sowie deren Namen und Geräusch der Interaktion, wurde JSON verwendet.  
 
 
 ## Fraktal
