@@ -33,16 +33,24 @@ Auf dieser Seite sammle ich einige meiner Arbeiten, um einen Beleg für meinen E
 
 # Coding
 
+
 ## Baumgenerator
 <a href="Code/TreeGenerator/TreeGenerator.zip" download><img src="TreeGenerator.png" width = "100%"></a>  
 Diesen parametrisierten Baumgenerator als Blender-Addon entwickelte ich in einem Team, bestehend aus einem weiteren Programmierer und Grafiker, der die Blätter und die Rinde der Bäume entwarf. Benutzer können in dem Tooltip die Anzahl der Ast-Abspaltungen, die Ausrichtungsstärke gen Himmel und den Radius einstellen. Auch rekursive Parameter eines jeden Astes zu seinem auswachsenden Ast sind einstellbar, Verkürzung der Länge und des Radius', Änderung der Verkürzung der Winkel und Zufallsabweichung. Nach Import der "Addon.py"-Datei finden Sie einen "Generate Tree"-Button im Scene-Tab des Property-Windows.  
 Bei der objektorientierten Programmierung lernte ich die Rodrigues-Rotationsformel kennen und wandte andere Vektorrechnung wie das Kreuzprodukt an. Auch mit Blender-eigenen Umgebungsvariablen und Python machte ich mich vertraut. Die Instanzierung der Astaustriebe ähnelt dem Projekt [Fraktal](#fraktal)  
 Die Programmierung erfolgte im fünften Semester im Rahmen des Kurses -- Name --
 
+
+
 ## Eisladen
 <a href="https://calvindo.github.io/GiS/Eisladen/"><img src="Eisladen.png" width = "100%"></a>  
 Der Eisladen ist eine spielerische Lösung der Aufgabe, eine Website zu entwickeln, auf der Nutzer Eislieferungen aufgeben können  --und der Verkäufer sie über einen Server bearbeiten kann--. Als letzte Prüfung des Kurses "Grundlagen interaktiver Systeme" im zweiten Semester ging ich weit über die Fragestellung hinaus und realisierte die Zusammenstellung der Delikatessen mit einem Arcade-Greifer, gesteuert über Pfeiltasten und der Leertaste. Auch Toppings können durch Klicken interaktiv aus Behältern über ein Förderband auf die Eiskugeln gestreut werden.  
-Außer der Eisbehälter ist jede Grafik und Logik selbstgemacht, mithilfe des HTML-CanvasRenderingContext2Ds 
+Außer der Eisbehälter ist jede Grafik und Logik selbstgemacht, mit Zeichenmethoden des HTML-CanvasRenderingContext2Ds.  
+
+## DiscHoverHFU
+
+<a href="https://calvindo.github.io/DiscHoverHFU/Code/DiscHoverHFU.html"><img src="DiscHoverHFU.png" width = "100%"></a>  
+
 
 ## Fraktal
 <a href="Code/Fraktal/start.html"><img src="Fraktal.PNG" alt="Fraktal" width="100%"/></a>  
