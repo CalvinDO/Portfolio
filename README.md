@@ -38,7 +38,7 @@ Auf dieser Seite sammle ich einige meiner Arbeiten, um einen Beleg für meinen E
             <source src="ConstructionSimulator.mp4" alt="ConstructionSimulator" type="video/mp4"/>
             Ihr Browser unterstützt den Video-Tag nicht
 </video></a>  
-Im Dev-Team bei "weltenbauer. Software Entwicklung GmbH" mit insgesamt 25 Mitarbeitern und weiteren Outsourcern von Winter 2020 bis Frühling 2023, erst als Praktikant, dann zwei Jahre als Werkstudent gearbeitet. Unity, C#, FMOD, Fahrzeug-Setup.
+Im Dev-Team bei "weltenbauer. Software Entwicklung GmbH" mit insgesamt 25 Mitarbeitern und weiteren Outsourcern von Winter 2020 bis Frühling 2023, erst als Praktikant, dann zwei Jahre als Werkstudent gearbeitet. Unity, C#, FMOD, Fahrzeug-Setup, DebugUI.
 
 ## Baumgenerator
 <a href="Code/TreeGenerator/TreeGenerator.zip" download><img src="TreeGenerator.png" width = "100%"></a>  
