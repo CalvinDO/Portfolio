@@ -38,10 +38,11 @@ Bachelor of Science (Medieninformatik), Gesamtnote 1,7
 
 ## Zusätzliche Kenntnisse
 **Sprachkenntnisse**  
-- Englisch: Gute Kenntnisse  
-- Spanisch: Grundkenntnisse
-- Tschechisch: Grundkenntnisse
-- Latein: Grundkenntnisse  
+- Deutsch: Erstsprache, schriftlich & mündlich  
+- Englisch: Gute Kenntnisse, schriftlich & mündlich  
+- Tschechisch: Grundkenntnisse, schriftlich & mündlich  
+- Spanisch: Basiswissen, schriftlich & mündlich  
+- Latein: Basiswissen, schriftlich  
 
 **IT-Kenntnisse**
 - Eclipse: Gute Kenntnisse  
