@@ -63,7 +63,7 @@ Die Umsetzung erfolgte mit zweidimensionalen Panorama-Bildern, die durch WebXR-P
 
 ## Fraktal
 <a href="Code/Fraktal/start.html"><img src="Fraktal.PNG" alt="Fraktal" width="100%"/></a>  
-Die Idee für diese Applikation kam mir auf, als ich die Möglichkeiten der grafischen Visualisierung durch Rekursion begriff. Das klare Endergebnis konnte ich mir, je nach Anzahl von Iterationen, noch nicht vorstellen, weshalb ich es sofort ausprobierte, mit dem Ziel, mich von meinem eigenen Programm zum Staunen zu bewegen.  
+Die Idee für diese Applikation kam mir auf, als ich die Möglichkeiten der grafischen Visualisierung durch Rekursion begriff. Das klare Endergebnis konnte ich mir, je nach Anzahl von Iteratifonen, noch nicht vorstellen, weshalb ich es sofort ausprobierte, mit dem Ziel, mich von meinem eigenen Programm zum Staunen zu bewegen.  
 Instanzierte Bälle mit "create-children" Objektmethoden schafften dies bereits. Es folgten einige Experimente mit der maximal umsetzbaren Auflösung verschiedener Browser, um ein fertig gerendertes Bild von 10000 mal 10000 Pixeln zu erhalten, welches sich stark vergrößern lässt, um die repetitiven Strukturen nahtlos entdecken zu können.  
 Daraufhin, ebenfalls ohne eine konkrete Vorstellung des Ergebnisses, begann ich den Farbwinkel abhängig von der Iterationsstufe und der Ordnung der zirkular positionierten Kreise sowohl relativ, als auch absolut zu berechnen. Auch hier war ich von der Ästhetik der visualisierten Mathematik überrascht und begeistert.  
 Auf der Seite können Sie einige Parameter der Berechnung verändern.
@@ -200,7 +200,7 @@ Mit dem Wissen, auch hier etwas Talent zeigen zu können, zeichnete ich wenige W
 
 ## Tribal, Tuschezeichnung
 <img src="Zeichnungen/Tribal.jpg" alt="Tribal" width="100%">
-Mit dieser, sich von Kugelschreiberzeichnungen stark unterscheidenden Art des Zeichnens experimentiert ich schon früher, im Alter von etwa 13 Jahren, was allerdings auch auf eine Art der Herausforderung meiner meiner Selbstdisziplin zurückzuführen ist, da ich meine Werkzeuge hierbei stark einschränkte.  
+Mit dieser, sich von Kugelschreiberzeichnungen stark unterscheidenden Art des Zeichnens experimentiert ich schon früher, im Alter von etwa 13 Jahren, was allerdings auch auf eine Art der Herausforderung meiner Selbstdisziplin zurückzuführen ist, da ich meine Werkzeuge hierbei stark einschränkte.  
 Anstatt einen Pinsel oder Kaligrafiestift zu verwenden, benutzte ich konsequent eine Art eines Fine-Liners, dessen Spitze ich nie das Papier berühren lies, und somit über einen durch die Oberflächenspannung entstehenden winzigen Tintenkanal äußerst vorsichtig über dem Blatt schweben lassen musste, da direkter Kontakt sofort zu unansehnlichen Färbungen führte.  
 Die Motive lehnten ausschließlich an Tribal-Tattoos an.
 
@@ -210,8 +210,9 @@ Die Motive lehnten ausschließlich an Tribal-Tattoos an.
 # Dokumente
 - [Daten und Lebenslauf](Lebenslauf.md)
 - [Empfehlungsschreiben](EmpfehlungsschreibenCalvinDellOro.pdf)
+- [Bachelorzeugnis](BachelorOfScience.pdf)
+- [Bachelor Notenspiegel](StudiumNotenspiegel.pdf)
 - [Praktikumsbestätigung](PraktikumsbestätigungCalvinDellOro.pdf)
-- [Semesternotenspiegel](Notenspiegel.pdf)
 - [Abiturzeugnis](CCF18022020_0001.jpg)
 - [Auszeichnung des Gymnasiums für kulturelles Engagement](CCF18022020_0003.jpg)
 - [Hackathon-Urkunde](CCF18022020_0002.jpg)
