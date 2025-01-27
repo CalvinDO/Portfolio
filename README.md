@@ -62,19 +62,17 @@ Laufen erfolgt mit W A S D, Angreifen mit den Maustasten, Q und E. I öffnet das
 ### Mobile Web-AR Partyspiel - Shaderprogrammierung
 <div style="display: flex; justify-content: space-between;">
   <a href="https://calvindo.github.io/Realtime-BeerPhong/aFrame.html">
-    <img src="BeerPhong.jpeg" width="48%">
+    <img src="BeerPhong.jpeg" width="50%">
   </a>  
   <a href="BeerPhongMarker.png" download>
-    <img src="BeerPhongMarker.png" width="48%">
+    <img src="BeerPhongMarker.png" width="50%">
   </a>
 </div>
 Dieses webbasierte Mobile-Game erfordert einen AR-Marker, über dem auf dem Smartphone ein Beerpong-Tisch mit Bechern als Ziele generiert wird. Der Spieler bewegt sich um den Tisch herum, um aus einer günstigen Abwurfposition heraus den Ball mit einem Swipe auf dem Touchscreen so in die Spielszene zu werfen, dass er direkt oder nach Aufkommen auf der Platte in einem Becher landet.  
 Die Umsetzung innerhalb des Kurses "Echtzeit-Computergrafik" im sechsten Semester erfolgte mit WebAR, JavaScript und GLSL. In einem dreiköpfigen Team machten wir uns mit Programmierung von Vertex- und Fragmentshadern vertraut, sowie mit Umgebungsvariablen von WebAR und "Three.js".
 
 ## Morbus-Animi
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jkskgTyecq8?si=cYBM2GdOOEYkoyv3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
-
-<a href="https://www.youtube.com/watch?v=jkskgTyecq8"><video width="100%" controls loop>
+<a href="https://simmer.io/@DerCalvino/morbus-animi-final"><video width="100%" controls loop>
             <source src="Morbus-Animi.mp4" alt="Morbus-Animi" type="video/mp4"/>
             Ihr Browser unterstützt den Video-Tag nicht
 </video></a>

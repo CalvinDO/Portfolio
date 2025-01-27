@@ -46,11 +46,18 @@ Bachelor of Science (Medieninformatik), Gesamtnote 1,7
 
 **IT-Kenntnisse**
 - Eclipse: Gute Kenntnisse  
-- Visual Studio Code: Gute Kenntnisse  
-- C#, Python, M, Java, Javascript, Typescript, Batch: Gute Kenntnisse  
--  C: Grundkenntnisse
-- Unity: Gute Kenntnisse 
-- Blender: Gute Kenntnisse 
+- Mathlab: Gute Kenntnisse  
+- Visual Studio Code: Expertenkenntnisse  
+- Visual Studio: Expertenkenntnisse
+- Python, M, Java, Batch: Gute Kenntnisse  
+- C#, Javascript, Typescript: Expertenkenntnisse  
+- C: Grundkenntnisse  
+- FMOD: Grundkenntnisse  
+- GODOT: Grundkenntnisse  
+- FUSEE: Gute Kenntnisse  
+- FUDGE: Expertenkenntnisse  
+- Unity: Expertenkenntnisse  
+- Blender: Expertenkenntnisse  
 - Excel: Gute Kenntnisse  
 - Gimp: Gute Kenntnisse  
 - FLStudio: Gute Kenntnisse  
