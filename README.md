@@ -259,7 +259,7 @@ Die Motive lehnten ausschließlich an Tribal-Tattoos an.
 - [Hackathon-Urkunde](CCF18022020_0002.jpg)
 <!-- - [Regelung zum praktischen Studiensemester](CCF18022020_0000.jpg) -->
 
-<!-->
+<!--
 <details>
   <summary>Klicken zum Ein-/Ausklappen 1</summary>
   Dies ist der Inhalt des ersten ausklappbaren Divs.
