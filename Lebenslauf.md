@@ -2,8 +2,8 @@
 <img src="Calvin1.jpeg" align="right" width="24.5%"/>  
 
 ## Adresse  
-Erlenbrucker Straße 28  
-79856 Hinterzarten  
+Riedlistraße 26/1  
+79576 Weil am Rhein  
 E-Mail: calvindelloro@mail.de  
 Telefon: 0177 75 75 167  
 
@@ -12,7 +12,7 @@ Geburtstag: 14.10.2001
 Geburtsort: Mainz  
 Staatsangehörigkeit: Deutsch  
 Familienstand: ledig  
-Tätigkeit: Jobsuche nach Bachelor-Abschluss und Reise
+Tätigkeit: Jobsuche, nach Bachelor-Abschluss und Reise
 
 ## Berufspraxis
 7/16 - 7/19 Zusteller Schülerjob Südkurier Hochschwarzwald  
