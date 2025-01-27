@@ -1,5 +1,3 @@
-<link href="style.css" rel="stylesheet" />
-
 # Inhaltsverzeichnis
 - [Motivation](#motivation)
 - [Coding](#coding)
@@ -45,10 +43,24 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
             <source src="ConstructionSimulator.mp4" alt="ConstructionSimulator" type="video/mp4"/>
             Ihr Browser unterstützt den Video-Tag nicht
 </video></a>   
-Im Dev-Team bei "weltenbauer. Software Entwicklung GmbH" arbeitete ich mit insgesamt 25 Mitarbeitern und weiteren Outsourcern vom Winter 2020 bis zum Frühling 2023. Begonnen als Praktikant im Büro für das dritte Semester, behielt mich "weltenbauer." überzeugt als Werkstudent bis zum Bachelor-Abschluss. So sammelte ich zwei weitere Jahre lang Erfahrung in der Programmierung eines kommerziellen Mid-Tier Games. Neben strukturellem Arbeiten mit agilem Projektmanagement, wie SCRUM-Sprintmeetings, Atlassian Confluence und Bugtracking mit Mantis sowie Synergie mit Grafiker- und QA-Departments vertiefte ich mich in fortgeschrittene Programmierung mit Unity und C#. Desweiteren lernte ich FMOD als Audio-Integrationssoftware für Unity kennen.  
-Meine Hauptbeschäftigung bestand aus dem Fahrzeug-Setup, bei dem ich Modelle der Grafiker mit Logikbausteinen der Programmierer zu funktionsfähigen Baumaschinen integrierte. Da jedes der >80 Fahrzeuge sich in seinen Funktionen unterscheidet, wie beispielsweise Rotationslimits von Schaufeln und Armen oder Schaltpunkte der Motoren- und Getriebesimulation, zeichnete sich das Fahrzeug-Setup größtenteils durch Parametrierung der Logik-Assets aus. Ein weiterer Bestandteil war die intensive Kommunikation mit dem Grafik-Team, falls Meshes der Modelle ausgetauscht oder ergänzt werden mussten. Besonders im Bereich des Hydraulik-, Fahrkabinen-, Licht-, und Spiegel-Setups war die interdisziplinäre Kooperation mit dem Art-Department essentiell. Viele Ressourcen flossen auch in das Aufsetzen der Terrainsimulation, um Schuttfüllungen in verschiedenen Werkzeugen wie Schaufeln und Kipper von Mulden zu realisieren. Auch zum Fahrzeug-Setup gehörte die auditive Simulation des Baugeschehens, bei dem ich den Umgang mit Banks in FMOD lernte.  
-Meine restliche Arbeit am Bau-Simulator bestand zum Einen aus der Programmierung eines zentralen Debug-UserInterfaces, mit dem neben allen Departments vor allem die Tester der Quality-Assurance das Command-System grafisch aufbereitet und effizient benutzen können. Darunter fällt das Springen zu und Erledigen von Missionen, Spawnen von Fahrzeugen, Cargo und Props, Einstellen globaler Parameter und weitere Steuerung des Spielgeschehens auf vielen Ebenen. Für die Realisierung des Aufbaus und Designs wählte ich einen dynamisch-generischen Ansatz, der das gesamte Command-System des Spiels als Konstellation von Knöpfen, Reglern und Eingabefeldern, geordnet unter mehreren Hierarchieebenen, generiert. Somit verringerte sich der Wartungsbedarf, da neu registrierte Kommandos direkt richtig in dem Debug-UI dargestellt werden.  
-Zum Anderen bestand meine Arbeit auch aus der Programmierung einer Anzeige des Navigations-Pfades in der Minimap, um Spieler anschaulich zu ihrem Ziel in der Welt zu leiten. Hier halfen mir meine Kenntnisse der Projektion von Räumen höherer Dimensionen in Räume niederer, die ich bereits in dem Kurs "Mathematik und Simulation" erlernte -- Link zum entsprechenden Projekt --  
+Im Dev-Team bei "weltenbauer. Software Entwicklung GmbH" arbeitete ich mit insgesamt 25 Mitarbeitern und weiteren Outsourcern vom zweieinhalb Jahre lang, 
+<details>
+  <summary>Mehr...</summary>
+  von Winter 2020 bis zum Frühling 2023. Begonnen als Praktikant im Büro für das dritte Semester, behielt mich "weltenbauer." überzeugt als Werkstudent bis zum Bachelor-Abschluss. So sammelte ich zwei weitere Jahre lang Erfahrung in der Programmierung eines kommerziellen Mid-Tier Games. Neben strukturellem Arbeiten mit agilem Projektmanagement, wie SCRUM-Sprintmeetings, Atlassian Confluence und Bugtracking mit Mantis sowie Synergie mit Grafiker- und QA-Departments vertiefte ich mich in fortgeschrittene Programmierung mit Unity und C#. Desweiteren lernte ich FMOD als Audio-Integrationssoftware für Unity kennen.
+</details>    
+Meine Hauptbeschäftigung bestand aus dem Fahrzeug-Setup, 
+<details>
+  <summary>Mehr...</summary>
+  bei dem ich Modelle der Grafiker mit Logikbausteinen der Programmierer zu funktionsfähigen Baumaschinen integrierte. Da jedes der >80 Fahrzeuge sich in seinen Funktionen unterscheidet, wie beispielsweise Rotationslimits von Schaufeln und Armen oder Schaltpunkte der Motoren- und Getriebesimulation, zeichnete sich das Fahrzeug-Setup größtenteils durch Parametrierung der Logik-Assets aus. Ein weiterer Bestandteil war die intensive Kommunikation mit dem Grafik-Team, falls Meshes der Modelle ausgetauscht oder ergänzt werden mussten. Besonders im Bereich des Hydraulik-, Fahrkabinen-, Licht-, und Spiegel-Setups war die interdisziplinäre Kooperation mit dem Art-Department essentiell. Viele Ressourcen flossen auch in das Aufsetzen der Terrainsimulation, um Schuttfüllungen in verschiedenen Werkzeugen wie Schaufeln und Kipper von Mulden zu realisieren. Auch zum Fahrzeug-Setup gehörte die auditive Simulation des Baugeschehens, bei dem ich den Umgang mit Banks in FMOD lernte.
+</details>  
+Meine restliche Arbeit am Bau-Simulator bestand zum Einen aus der Programmierung eines zentralen Debug-UserInterfaces,
+<details>
+  <summary>Mehr...</summary>
+   mit dem neben allen Departments vor allem die Tester der Quality-Assurance das Command-System grafisch aufbereitet und effizient benutzen können. Darunter fällt das Springen zu und Erledigen von Missionen, Spawnen von Fahrzeugen, Cargo und Props, Einstellen globaler Parameter und weitere Steuerung des Spielgeschehens auf vielen Ebenen. Für die Realisierung des Aufbaus und Designs wählte ich einen dynamisch-generischen Ansatz, der das gesamte Command-System des Spiels als Konstellation von Knöpfen, Reglern und Eingabefeldern, geordnet unter mehreren Hierarchieebenen, generiert. Somit verringerte sich der Wartungsbedarf, da neu registrierte Kommandos direkt richtig in dem Debug-UI dargestellt werden.  
+   Zum Anderen bestand meine Arbeit auch aus der Programmierung einer Anzeige des Navigations-Pfades in der Minimap, um Spieler anschaulich zu ihrem Ziel in der Welt zu leiten. Hier halfen mir meine Kenntnisse der Projektion von Räumen höherer Dimensionen in Räume niederer, die ich bereits in dem Kurs "Mathematik und Simulation" erlernte -- Link zum entsprechenden Projekt --  
+</details>  
+
+
 
 
 ## Baumgenerator
@@ -230,56 +242,3 @@ Die Motive lehnten ausschließlich an Tribal-Tattoos an.
 - [Hackathon-Urkunde](CCF18022020_0002.jpg)
 <!-- - [Regelung zum praktischen Studiensemester](CCF18022020_0000.jpg) -->
 
-
-<details>
-  <summary>Klicken zum Ein-/Ausklappen 1</summary>
-  Dies ist der Inhalt des ersten ausklappbaren Divs.
-</details>
-
-<details>
-  <summary>Klicken zum Ein-/Ausklappen 2</summary>
-  Dies ist der Inhalt des zweiten ausklappbaren Divs.
-</details>
-
-<details>
-  <summary>Klicken zum Ein-/Ausklappen 3</summary>
-  Dies ist der Inhalt des dritten ausklappbaren Divs.
-</details>
-
-<div class="toggle-container">
-    <button class="toggle-btn">Klicken zum Ein-/Ausklappen 1</button>
-    <div class="content">
-        <p>Dies ist der Inhalt des ersten ausklappbaren Divs.</p>
-    </div>
-</div>
-
-<div class="toggle-container">
-    <button class="toggle-btn">Klicken zum Ein-/Ausklappen 2</button>
-    <div class="content">
-        <p>Dies ist der Inhalt des zweiten ausklappbaren Divs.</p>
-    </div>
-</div>
-
-<div class="toggle-container">
-    <button class="toggle-btn">Klicken zum Ein-/Ausklappen 3</button>
-    <div class="content">
-        <p>Dies ist der Inhalt des dritten ausklappbaren Divs.</p>
-    </div>
-</div>
-
-<script>
-    // Alle Buttons mit der Klasse 'toggle-btn' abfragen
-    const toggleButtons = document.querySelectorAll('.toggle-btn');
-
-    toggleButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const contentDiv = button.nextElementSibling;  // Das nächste div (in der Reihenfolge nach dem Button)
-            // Sichtbarkeit des Divs umschalten
-            if (contentDiv.style.display === 'none' || contentDiv.style.display === '') {
-                contentDiv.style.display = 'block';
-            } else {
-                contentDiv.style.display = 'none';
-            }
-        });
-    });
-</script>
