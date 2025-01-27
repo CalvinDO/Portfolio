@@ -1,3 +1,5 @@
+<link href="style.css" rel="stylesheet" />
+
 # Inhaltsverzeichnis
 - [Motivation](#motivation)
 - [Coding](#coding)
@@ -228,3 +230,56 @@ Die Motive lehnten ausschließlich an Tribal-Tattoos an.
 - [Hackathon-Urkunde](CCF18022020_0002.jpg)
 <!-- - [Regelung zum praktischen Studiensemester](CCF18022020_0000.jpg) -->
 
+
+<details>
+  <summary>Klicken zum Ein-/Ausklappen 1</summary>
+  Dies ist der Inhalt des ersten ausklappbaren Divs.
+</details>
+
+<details>
+  <summary>Klicken zum Ein-/Ausklappen 2</summary>
+  Dies ist der Inhalt des zweiten ausklappbaren Divs.
+</details>
+
+<details>
+  <summary>Klicken zum Ein-/Ausklappen 3</summary>
+  Dies ist der Inhalt des dritten ausklappbaren Divs.
+</details>
+
+<div class="toggle-container">
+    <button class="toggle-btn">Klicken zum Ein-/Ausklappen 1</button>
+    <div class="content">
+        <p>Dies ist der Inhalt des ersten ausklappbaren Divs.</p>
+    </div>
+</div>
+
+<div class="toggle-container">
+    <button class="toggle-btn">Klicken zum Ein-/Ausklappen 2</button>
+    <div class="content">
+        <p>Dies ist der Inhalt des zweiten ausklappbaren Divs.</p>
+    </div>
+</div>
+
+<div class="toggle-container">
+    <button class="toggle-btn">Klicken zum Ein-/Ausklappen 3</button>
+    <div class="content">
+        <p>Dies ist der Inhalt des dritten ausklappbaren Divs.</p>
+    </div>
+</div>
+
+<script>
+    // Alle Buttons mit der Klasse 'toggle-btn' abfragen
+    const toggleButtons = document.querySelectorAll('.toggle-btn');
+
+    toggleButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const contentDiv = button.nextElementSibling;  // Das nächste div (in der Reihenfolge nach dem Button)
+            // Sichtbarkeit des Divs umschalten
+            if (contentDiv.style.display === 'none' || contentDiv.style.display === '') {
+                contentDiv.style.display = 'block';
+            } else {
+                contentDiv.style.display = 'none';
+            }
+        });
+    });
+</script>
