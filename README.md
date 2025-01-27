@@ -59,10 +59,15 @@ Laufen erfolgt mit W A S D, Angreifen mit den Maustasten, Q und E. I öffnet das
 
 
 ## Realtime-BeerPhong
+### Mobile Web-AR Partyspiel - Shaderprogrammierung
 <a href="https://calvindo.github.io/Realtime-BeerPhong/aFrame.html"><img src="BeerPhong.jpeg" width = "100%"></a>  
 <a href="BeerPhongMarker.png" download><img src="BeerPhongMarker.png" width = "100%"></a>  
-Dieses Mobile-Game erfordert einen AR-Marker, über dem auf dem Smartphone ein Beerpong-Tisch mit Bechern als Ziele generiert wird. Der Spieler bewegt sich um den Tisch herum, um aus einer günstigen Abwurfposition heraus den Ball mit einem Swipe auf dem Touchscreen so in die Spielszene zu werfen, dass er direkt oder nach Aufkommen auf der Platte in einem Becher landet.  
+Dieses webbasierte Mobile-Game erfordert einen AR-Marker, über dem auf dem Smartphone ein Beerpong-Tisch mit Bechern als Ziele generiert wird. Der Spieler bewegt sich um den Tisch herum, um aus einer günstigen Abwurfposition heraus den Ball mit einem Swipe auf dem Touchscreen so in die Spielszene zu werfen, dass er direkt oder nach Aufkommen auf der Platte in einem Becher landet.  
 Die Umsetzung innerhalb des Kurses "Echtzeit-Computergrafik" im sechsten Semester erfolgte mit WebAR, JavaScript und GLSL. In einem dreiköpfigen Team machten wir uns mit Programmierung von Vertex- und Fragmentshadern vertraut, sowie mit Umgebungsvariablen von WebAR und "Three.js".  
+
+## Morbus-Animi
+
+
 
 ## Baumgenerator
 <a href="Code/TreeGenerator/TreeGenerator.zip" download><img src="TreeGenerator.png" width = "100%"></a>  
