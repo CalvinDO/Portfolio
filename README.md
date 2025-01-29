@@ -48,7 +48,7 @@ Meine Hauptbeschäftigung bestand aus dem Fahrzeug-Setup, bei dem ich Modelle de
 Meine restliche Arbeit am Bau-Simulator bestand zum Einen aus der Programmierung eines zentralen Debug-UserInterfaces, mit dem neben allen Departments vor allem die Tester der Quality-Assurance das Command-System grafisch aufbereitet und effizient benutzen können. Darunter fällt das Springen zu und Erledigen von Missionen, Spawnen von Fahrzeugen, Cargo und Props, Einstellen globaler Parameter und weitere Steuerung des Spielgeschehens auf vielen Ebenen. Für die Realisierung des Aufbaus und Designs wählte ich einen dynamisch-generischen Ansatz, der das gesamte Command-System des Spiels als Konstellation von Knöpfen, Reglern und Eingabefeldern, geordnet unter mehreren Hierarchieebenen, generiert. Somit verringerte sich der Wartungsbedarf, da neu registrierte Kommandos direkt richtig in dem Debug-UI dargestellt werden.  
 Zum Anderen bestand meine Arbeit auch aus der Programmierung einer Anzeige des Navigations-Pfades in der Minimap, um Spieler anschaulich zu ihrem Ziel in der Welt zu leiten. Hier halfen mir meine Kenntnisse der Projektion von Räumen höherer Dimensionen in Räume niederer, die ich bereits in dem Kurs "Mathematik und Simulation" erlernte -- Link zum entsprechenden Projekt --  
 
-## TheLastHope
+## The Last Hope
 <a href="https://simmer.io/@DerCalvino/thelasthope"><video width="100%" controls loop>
             <source src="TheLastHope.mp4" alt="TheLastHope" type="video/mp4"/>
             Ihr Browser unterstützt den Video-Tag nicht
@@ -76,6 +76,17 @@ Die Umsetzung innerhalb des Kurses "Echtzeit-Computergrafik" im sechsten Semeste
             <source src="Morbus-Animi.mp4" alt="Morbus-Animi" type="video/mp4"/>
             Ihr Browser unterstützt den Video-Tag nicht
 </video></a>
+Et irure quis commodo culpa deserunt aliquip.Eiusmod quis id est amet deserunt proident adipisicing officia nulla eiusmod est ad pariatur et. Proident veniam amet eu minim amet sint. Veniam nostrud consequat sit aliqua ipsum proident aliquip adipisicing minim officia minim aute. Eu elit do et in officia. Dolore elit sunt cillum magna ullamco proident sunt non deserunt qui pariatur esse exercitation ipsum.
+
+Occaecat deserunt aliqua in ea dolore laboris aliquip labore qui. Dolor velit cillum amet aute et incididunt excepteur. Est anim veniam velit Lorem veniam officia eu proident cupidatat cupidatat non labore sunt. Culpa duis in quis non tempor anim. Dolor cillum fugiat proident reprehenderit aliquip eiusmod. Veniam elit aliqua eu aliqua ad ipsum ullamco magna. Excepteur amet sit qui ex sunt nulla excepteur do culpa nulla pariatur minim adipisicing sint.
+
+Reprehenderit do nostrud sint dolor aliqua. Consequat dolore quis minim cupidatat aute nostrud occaecat do dolor id veniam. Ea duis anim ullamco non exercitation laboris aliquip aliquip. Nisi sint quis anim qui mollit ut ipsum dolore amet exercitation ad do dolore. Sint sit amet ex excepteur incididunt aliqua cillum ex sit sit cillum excepteur fugiat nostrud. Duis irure ex id anim et eu. Nostrud consequat ullamco minim do elit excepteur anim culpa dolore duis Lorem labore ut id.
+
+Tempor nisi sint laborum reprehenderit aliqua consectetur magna veniam proident adipisicing minim ex nulla. Voluptate est dolore duis anim. Do quis esse non aliquip eiusmod culpa mollit aliqua. Enim velit incididunt amet ullamco aute eu non. Laboris duis labore excepteur consequat irure. Esse dolore velit minim occaecat amet esse laborum sunt.
+
+Duis ex commodo dolore labore ad dolore sint anim pariatur est reprehenderit sint. In duis cillum sint enim qui ea in ex mollit eu. Sunt nostrud et cillum magna laboris anim ad ex adipisicing ex enim esse deserunt qui.  
+
+## Discombobulated Space Station
 
 
 ## Baumgenerator
@@ -106,7 +117,7 @@ Instanzierte Bälle mit "create-children" Objektmethoden schafften dies bereits.
 Daraufhin, ebenfalls ohne eine konkrete Vorstellung des Ergebnisses, begann ich den Farbwinkel abhängig von der Iterationsstufe und der Ordnung der zirkular positionierten Kreise sowohl relativ, als auch absolut zu berechnen. Auch hier war ich von der Ästhetik der visualisierten Mathematik überrascht und begeistert.  
 Auf der Seite können Sie einige Parameter der Berechnung verändern.
 
-## FraktalAnimation
+## Fraktal Animation
 <a href="Code/FraktalAnimation/start.html"><img src="Animation.PNG" width="100%"></a>  
 Zugrunde liegt das zuvor beschriebene Projekt "Fraktal". Diesmal mit dem Ziel, einige Parameter der Berechnung, die sich als Dezimalbrüche darstellen lassen, wie beispielsweise der Farbwinkel, zeitlich zu modulieren, um eine zusätzliche Dimension zu schaffen, die ebenso zu etlichen neuen Beobachtungen und weiteren Experimenten führen sollte.  
 Bemerkenswert ist unter anderem der Zusammenhang, wie sich die Veränderung des Divisors eines Vollkreises, der die Positionierung der "children" eines jeden Balls bestimmt, auf die Bewegung und das Muster der Anordnung bis hin zu den kleinsten Bällen auswirkt, ebenso wie die entstehende Farbkonstellation
