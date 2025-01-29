@@ -86,19 +86,6 @@ Tempor nisi sint laborum reprehenderit aliqua consectetur magna veniam proident 
 
 Duis ex commodo dolore labore ad dolore sint anim pariatur est reprehenderit sint. In duis cillum sint enim qui ea in ex mollit eu. Sunt nostrud et cillum magna laboris anim ad ex adipisicing ex enim esse deserunt qui.  
 
-## Discombobulated Space Station
-<a href="https://calvindo.github.io/PRIMA/"><video width="100%" controls loop>
-            <source src="DiscombobulatedSpaceStation.mp4" alt="Morbus-Animi" type="video/mp4"/>
-            Ihr Browser unterstützt den Video-Tag nicht
-</video></a>
-Culpa dolore id ut et cupidatat commodo Lorem. Do magna deserunt dolor quis exercitation culpa. Ea amet nisi enim laboris ipsum adipisicing consectetur minim.
-
-Consequat aliqua reprehenderit elit do aliquip eiusmod dolor reprehenderit Lorem anim anim tempor incididunt id. Exercitation fugiat proident ullamco proident consequat incididunt. Reprehenderit consectetur consectetur esse voluptate quis sit velit velit exercitation Lorem qui in consectetur. Ea magna irure sint eiusmod amet amet non eu exercitation ullamco. Do voluptate culpa occaecat irure dolor labore dolore. Culpa cillum laboris magna consequat.
-
-Ut labore eiusmod qui voluptate nostrud. Culpa sint ut fugiat labore aute exercitation eu minim enim. Duis fugiat reprehenderit fugiat ea excepteur elit labore ex velit cupidatat. Duis ex pariatur labore est culpa ex cupidatat tempor duis mollit officia occaecat amet culpa. Tempor irure sunt enim consectetur eiusmod consectetur sint consequat sit do excepteur labore. Id eiusmod dolor tempor ex.
-
-Veniam nostrud incididunt ut velit deserunt reprehenderit non esse et consectetur. Consectetur ut culpa fugiat est. Laborum cupidatat occaecat do laborum quis cillum enim adipisicing esse ad magna. Eu deserunt nulla laborum ipsum velit velit sunt aute duis aliquip magna.
-
 
 ## Baumgenerator
 <a href="Code/TreeGenerator/TreeGenerator.zip" download><img src="TreeGenerator.png" width = "100%"></a>  
@@ -106,7 +93,14 @@ Diesen parametrisierten Baumgenerator als Blender-Addon entwickelte ich in einem
 Bei der objektorientierten Programmierung lernte ich die Rodrigues-Rotationsformel kennen und wandte andere Vektorrechnung wie das Kreuzprodukt an. Auch mit Blender-eigenen Umgebungsvariablen und Python machte ich mich vertraut. Die Instanzierung der Astaustriebe ähnelt dem Projekt [Fraktal](#fraktal)  
 Die Programmierung erfolgte im fünften Semester im Rahmen des Kurses "Datenverarbeitung in der Medienproduktion".  
 
-
+## Discombobulated Space Station
+<a href="https://calvindo.github.io/PRIMA/"><video width="100%" controls loop>
+            <source src="DiscombobulatedSpaceStation.mp4" alt="Morbus-Animi" type="video/mp4"/>
+            Ihr Browser unterstützt den Video-Tag nicht
+</video></a>  
+Dieses 3D-Labyrinth Spiel habe ich mit TypeScript und <a href = "https://github.com/hs-furtwangen/FUDGE">FUDGE</a> programmiert, einer didaktischen Engine und Editor für webbasierte Spiele.  
+Der Spieler kann mit dem Character nicht fliegen und nur minimal springen, allerdings die gesamte Raumstation um seine Position herum auf verschiedenen Achsen drehen, um bei konstanter Schwerkraft einen Weg (oder Fall) durch das Labyrinth zu ermöglichen.  
+Als das Projekt im vierten Semester innerhalb des Kurses "Prototyping Interaktiver Medien-Apps und Games" entstand, war FUDGE noch nicht ausgereift genug, um die Labyrinth-Elemente effizient im nativen Editor anzuordnen. Dieses Problem löste ich, indem ich einen eigenen Blender-Map-Importer entwickelte, Der die Objektpositionen und Rotationen aus einer Collada-Datei ausliest.  
 
 ## Eisladen
 <a href="https://calvindo.github.io/GiS/Eisladen/"><img src="Eisladen.png" width = "100%"></a>  
