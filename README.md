@@ -53,7 +53,7 @@ Zum Anderen bestand meine Arbeit auch aus der Programmierung einer Anzeige des N
             <source src="TheLastHope.mp4" alt="TheLastHope" type="video/mp4"/>
             Ihr Browser unterstützt den Video-Tag nicht
 </video></a>  
-"Conflux - TheLastHope" entstand in einem sechsköpfigen Team. Im Kurs "Gamedesign Workshop" des sechsten Semesters programmierte ich den Großteil des Spiels, wie Spielmechanik, Physik-, Animations-, Sound- und KI-Controller, sowie UserInterfaces und Spielbalance. Begonnen mit Themenwahl, Abstimmung über Spielideenvorstellung und einer gemeinsamen Vision und Moodboard, einigten wir uns auf ein Rouge-like, dessen Story sich an H.P.Lovecrafts "Cthulhu-Mythos" orientiert. Der Spieler als Auserwählter utilisiert die 4 Elemente von Gott und Teufel kombinatorisch, um gegen die drohende Instabilisierung des Gleichgewichts durch Cthulhu der Erde anzukämpfen. Es folgten Gameplaypillars und -Loops, USP-Definition, Wireframes für Menüs und Fähigkeitskarten, Bedienungsprofile, Klassendiagramme, Sounddesign, Kanban-Boards und Priorisierungslisten, während in SCRUM-Meetings sorgfältig protokolliert und reviewed wurde. Hierbei half die bereits vorhandene Erfahrung im professionellen Umfeld bei "weltenbauer.". Das Projekt endete mit UserTests inklusive Fragebögen, sowie dem Gewinnen der Projektauszeichnung bei der "IndieNight" an der Hochschule Furtwangen.  
+"Conflux - TheLastHope" entstand in einem sechsköpfigen Team. Im Kurs "Gamedesign Workshop" des sechsten Semesters programmierte ich den Großteil des Unity-Spiels, wie Spielmechanik, Physik-, Animations-, Sound- und KI-Controller, sowie UserInterfaces und Spielbalance. Begonnen mit Themenwahl, Abstimmung über Spielideenvorstellung und einer gemeinsamen Vision und Moodboard, einigten wir uns auf ein Rouge-like, dessen Story sich an H.P.Lovecrafts "Cthulhu-Mythos" orientiert. Der Spieler als Auserwählter utilisiert die 4 Elemente von Gott und Teufel kombinatorisch, um gegen die drohende Instabilisierung des Gleichgewichts durch Cthulhu der Erde anzukämpfen. Es folgten Gameplaypillars und -Loops, USP-Definition, Wireframes für Menüs und Fähigkeitskarten, Bedienungsprofile, Klassendiagramme, Sounddesign, Kanban-Boards und Priorisierungslisten, während in SCRUM-Meetings sorgfältig protokolliert und reviewed wurde. Hierbei half die bereits vorhandene Erfahrung im professionellen Umfeld bei "weltenbauer.". Das Projekt endete mit UserTests inklusive Fragebögen, sowie dem Gewinnen der Projektauszeichnung bei der "IndieNight" an der Hochschule Furtwangen.  
 Laufen erfolgt mit W A S D, Angreifen mit den Maustasten, Q und E. I öffnet das Inventar. Drag and Drop von einer Fähigkeitskarte auf eine andere ermöglicht das Kombinieren.
 
 
@@ -75,16 +75,10 @@ Die Umsetzung innerhalb des Kurses "Echtzeit-Computergrafik" im sechsten Semeste
 <a href="https://simmer.io/@DerCalvino/morbus-animi-final"><video width="100%" controls loop>
             <source src="Morbus-Animi.mp4" alt="Morbus-Animi" type="video/mp4"/>
             Ihr Browser unterstützt den Video-Tag nicht
-</video></a>
-Et irure quis commodo culpa deserunt aliquip.Eiusmod quis id est amet deserunt proident adipisicing officia nulla eiusmod est ad pariatur et. Proident veniam amet eu minim amet sint. Veniam nostrud consequat sit aliqua ipsum proident aliquip adipisicing minim officia minim aute. Eu elit do et in officia. Dolore elit sunt cillum magna ullamco proident sunt non deserunt qui pariatur esse exercitation ipsum.
-
-Occaecat deserunt aliqua in ea dolore laboris aliquip labore qui. Dolor velit cillum amet aute et incididunt excepteur. Est anim veniam velit Lorem veniam officia eu proident cupidatat cupidatat non labore sunt. Culpa duis in quis non tempor anim. Dolor cillum fugiat proident reprehenderit aliquip eiusmod. Veniam elit aliqua eu aliqua ad ipsum ullamco magna. Excepteur amet sit qui ex sunt nulla excepteur do culpa nulla pariatur minim adipisicing sint.
-
-Reprehenderit do nostrud sint dolor aliqua. Consequat dolore quis minim cupidatat aute nostrud occaecat do dolor id veniam. Ea duis anim ullamco non exercitation laboris aliquip aliquip. Nisi sint quis anim qui mollit ut ipsum dolore amet exercitation ad do dolore. Sint sit amet ex excepteur incididunt aliqua cillum ex sit sit cillum excepteur fugiat nostrud. Duis irure ex id anim et eu. Nostrud consequat ullamco minim do elit excepteur anim culpa dolore duis Lorem labore ut id.
-
-Tempor nisi sint laborum reprehenderit aliqua consectetur magna veniam proident adipisicing minim ex nulla. Voluptate est dolore duis anim. Do quis esse non aliquip eiusmod culpa mollit aliqua. Enim velit incididunt amet ullamco aute eu non. Laboris duis labore excepteur consequat irure. Esse dolore velit minim occaecat amet esse laborum sunt.
-
-Duis ex commodo dolore labore ad dolore sint anim pariatur est reprehenderit sint. In duis cillum sint enim qui ea in ex mollit eu. Sunt nostrud et cillum magna laboris anim ad ex adipisicing ex enim esse deserunt qui.  
+</video></a>  
+Mit zwei Grafikerinnen, einem VFX-Spezialist, einem Storyteller, einem anderen Programmierer und mir entwickelten wir im vierten und fünften Semester im Rahmen des Projektstudiums dieses psychische Horrorspiel. Auch bei der Organisation dieses Projekts half die Erfahrung mit dem SCRUM-System im kommerziellen Umfeld bei "weltenbauer.".  
+Ich übernahm bis auf Inventar, Collectables und Menü-GUI das Coding der Skripte, um Spielmechanik, Physik-, Animations-, Sound- und KI-Controller, sowie UserInterfaces und Spielbalance zu realisieren. Besonders die Programmierung des Jump-and-Runs, mit Schwingen und Greifen sowie Hängen an Kanten, lag in meinem Fokus und lieferte eingängige Lernerfahrungen. Gleiches gilt für Entwicklung und Balancing des KI-Gegners mit Unity NavMesh. Auch mit dem Coding modularer Assets bereicherte ich das Projekt und die Kooperation, da andere Abteilungen diese parametrisierten, um Spielgeschehen wie Story-Fortschritt, Puzzle-Logik, Effekte und Sounds zu steuern.  
+Die Steuerung wird im Spiel erklärt.  
 
 
 ## Baumgenerator
@@ -98,9 +92,10 @@ Die Programmierung erfolgte im fünften Semester im Rahmen des Kurses "Datenvera
             <source src="DiscombobulatedSpaceStation.mp4" alt="Morbus-Animi" type="video/mp4"/>
             Ihr Browser unterstützt den Video-Tag nicht
 </video></a>  
-Dieses 3D-Labyrinth Spiel habe ich mit TypeScript und <a href = "https://github.com/hs-furtwangen/FUDGE">FUDGE</a> programmiert, einer didaktischen Engine und Editor für webbasierte Spiele.  
+Dieses 3D-Labyrinth Spiel habe ich mit TypeScript und <a href = "https://github.com/hs-furtwangen/FUDGE">FUDGE</a> programmiert, einer Node-basierten didaktischen Engine und Editor für webbasierte Spiele.  
 Der Spieler kann mit dem Character nicht fliegen und nur minimal springen, allerdings die gesamte Raumstation um seine Position herum auf verschiedenen Achsen drehen, um bei konstanter Schwerkraft einen Weg (oder Fall) durch das Labyrinth zu ermöglichen.  
 Als das Projekt im vierten Semester innerhalb des Kurses "Prototyping Interaktiver Medien-Apps und Games" entstand, war FUDGE noch nicht ausgereift genug, um die Labyrinth-Elemente effizient im nativen Editor anzuordnen. Dieses Problem löste ich, indem ich einen eigenen Blender-Map-Importer entwickelte, Der die Objektpositionen und Rotationen aus einer Collada-Datei ausliest.  
+Laufen erfolgt mit W A S D. Gedreht wird die Raumstation durch Shift, Control, Q und E.  
 
 ## Eisladen
 <a href="https://calvindo.github.io/GiS/Eisladen/"><img src="Eisladen.png" width = "100%"></a>  
