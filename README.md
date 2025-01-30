@@ -54,14 +54,16 @@ Meine restliche Arbeit am Bau-Simulator bestand zum Einen aus der Programmierung
 Zum Anderen bestand meine Arbeit auch aus der Programmierung einer Anzeige des Navigations-Pfades in der Minimap, um Spieler anschaulich zu ihrem Ziel in der Welt zu leiten. Hier halfen mir meine Kenntnisse der Projektion von Räumen höherer Dimensionen in Räume niederer, die ich bereits in dem Kurs "Mathematik und Simulation" erlernte -- Link zum entsprechenden Projekt --  
 
 ## Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen
-### <a href = "NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">Bachelor Thesis - Zur PDF</a>  
+### <a href = "NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">Bachelor Thesis - Zur PDF</a>
 <a href="https://simmer.io/@DerCalvino/neuroevolutionbenutzerdefiniertermehrbeinigerkreaturen">
-  <div style="position: relative;">
+  <div style="position: relative; display: inline-block; cursor: pointer;">
     <video width="100%" controls loop>
         <source src="BachelorThesis.mp4" alt="BachelorThesis" type="video/mp4"/>
         Ihr Browser unterstützt den Video-Tag nicht
     </video>
-    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Spielen</div>
+    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
+      Klicken zum Spielen
+    </div>
   </div>
 </a>
 
