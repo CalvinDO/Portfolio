@@ -104,7 +104,7 @@ Laufen erfolgt mit W A S D, Angreifen mit den Maustasten, Q und E. I öffnet das
   <a href="BeerPhongMarker.png" download>
     <div style="position: relative;">
       <img src="BeerPhongMarker.png" width="100%">
-      <div style="position: absolute; bottom: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5;">Klicken zum Download</div>
+      <div style="position: absolute; bottom: 20%; left: 50%; transform: translateX(-50%); color: black; font-size: 2em; opacity: 0.5;">Klicken zum Download</div>
     </div>
   </a>
 </div>  
