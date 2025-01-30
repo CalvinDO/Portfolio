@@ -39,7 +39,7 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
 # Coding
 
 ## Bau-Simulator
-<a href="https://store.steampowered.com/app/1273400/BauSimulator/"><video style="max-width: 1000px;" controls loop>
+<a href="https://store.steampowered.com/app/1273400/BauSimulator/"><video width="100%" controls loop>
             <source src="ConstructionSimulator.mp4" alt="ConstructionSimulator" type="video/mp4"/>
             Ihr Browser unterstützt den Video-Tag nicht
 </video></a>   
