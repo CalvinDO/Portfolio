@@ -45,7 +45,7 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
         <source src="ConstructionSimulator.mp4" alt="ConstructionSimulator" type="video/mp4"/>
         Ihr Browser unterstützt den Video-Tag nicht
     </video>
-    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.7;">Klicken zum Spielen</div>
+    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5;">Klicken zum Spielen</div>
   </div>
 </a>   
 Im Dev-Team bei "weltenbauer. Software Entwicklung GmbH" arbeitete ich mit insgesamt 25 Mitarbeitern und weiteren Outsourcern vom Winter 2020 bis zum Frühling 2023. Begonnen als Praktikant im Büro für das dritte Semester, behielt mich "weltenbauer." überzeugt als Werkstudent bis zum Bachelor-Abschluss. So sammelte ich zwei weitere Jahre lang Erfahrung in der Programmierung eines kommerziellen Mid-Tier Games. Neben strukturellem Arbeiten mit agilem Projektmanagement, wie SCRUM-Sprintmeetings, Atlassian Confluence, Versionskontrolle, Bugtracking mit Mantis in einem größeren Team und Orientierung nach Vorgaben eines kommerziellen Publishers (Astragon), sowie Synergie mit Grafiker- und QA-Departments vertiefte ich mich in fortgeschrittene Programmierung mit Unity und C#. Desweiteren lernte ich FMOD als Audio-Integrationssoftware für Unity kennen.  
@@ -55,10 +55,15 @@ Zum Anderen bestand meine Arbeit auch aus der Programmierung einer Anzeige des N
 
 ## Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen
 ### <a href = "NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">Bachelor Thesis - Zur PDF</a>
-<a href="https://simmer.io/@DerCalvino/neuroevolutionbenutzerdefiniertermehrbeinigerkreaturen"><video width="100%" controls loop>
-            <source src="BachelorThesis.mp4" alt="BachelorThesis" type="video/mp4"/>
-            Ihr Browser unterstützt den Video-Tag nicht
-</video></a>   
+<a href="https://simmer.io/@DerCalvino/neuroevolutionbenutzerdefiniertermehrbeinigerkreaturen">
+  <div style="position: relative;">
+    <video width="100%" controls loop>
+        <source src="BachelorThesis.mp4" alt="BachelorThesis" type="video/mp4"/>
+        Ihr Browser unterstützt den Video-Tag nicht
+    </video>
+    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5;">Klicken zum Spielen</div>
+  </div>
+</a>  
 
 Dieser AI-Playground ist die Methode meiner Bachelor-Thesis des siebten Semesters. Es ermöglicht Benutzern, eine Kreatur aus Gliedern und Gelenken nach Belieben in einem Editor zu bauen, sowie Rotationslimits der Glieder anzupassen. Im zweiten Schritt startet eine Simulation, bei dem der Kreatur ein vollständig verbundenes künstliches Neuronales Netzwerk zugeteilt wird. Daten über aktuelle Pose und Position werden als Sensoren oder Inputs in das Netz eingespeist, Outputs sind die angestrebten Winkel der Gelenke. Über Generationen hinweg werden die Kreatur und ihre Mutationen je nach räumlichem Fortschritt belohnt, selektiert und die besten Gene in die nächste Generation weitergetragen, wo sie wieder mutieren. Somit lernen die Bauten zu laufen.  
 Zugrunde liegen Evolutionäre Algorithmen, die Probleme ähnlich biologischer Organismen lösen, da genetische Operatoren wie Selektion, Rekombination und Mutation die Evolution durch Reproduktion der stärksten Gene steuern. In meiner Bachelor-Arbeit nutzte ich die topologische Flexibilität von NEAT (Neuroevolution of Augumenting Topologies) um die Kreaturen durch evolvierende Genome zu bewegen. Untersucht habe ich, welche Berechnungsmethode und Parameter-Konfiguration des NEAT-Algorithmus' zu der weitesten Laufdistanz verschiedener Kreaturen führt, ohne Laufmuster vorzugeben. Ich wollte eine Anwendung entwickeln, die ohne weitere Eingriffe des Nutzers zu Laufmustern seiner erstellten Kreaturen führt. Durch diese Arbeit entwickelte ich die Fähigkeit, künstliche Intelligenzen auf Basis von evolutionär veränderten Neuronalen Netzen zu programmieren und trainieren, sowie einen InGame-Editor in Unity zu programmieren.  
@@ -66,10 +71,15 @@ Die Kamera kann im Editor mit Mausbewegung und Drücken sowie Scrollen der mittl
 
 
 ## The Last Hope
-<a href="https://simmer.io/@DerCalvino/thelasthope"><video width="100%" controls loop>
-            <source src="TheLastHope.mp4" alt="TheLastHope" type="video/mp4"/>
-            Ihr Browser unterstützt den Video-Tag nicht
-</video></a>  
+<a href="https://simmer.io/@DerCalvino/thelasthope">
+  <div style="position: relative;">
+    <video width="100%" controls loop>
+        <source src="TheLastHope.mp4" alt="TheLastHope" type="video/mp4"/>
+        Ihr Browser unterstützt den Video-Tag nicht
+    </video>
+    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5;">Klicken zum Spielen</div>
+  </div>
+</a>  
 "Conflux - TheLastHope" entstand in einem sechsköpfigen Team. Im Kurs "Gamedesign Workshop" des sechsten Semesters programmierte ich den Großteil des Unity-Spiels, wie Spielmechanik, Physik-, Animations-, Sound- und KI-Controller, sowie UserInterfaces und Spielbalance. Begonnen mit Themenwahl, Abstimmung über Spielideenvorstellung und einer gemeinsamen Vision und Moodboard, einigten wir uns auf ein Rouge-like, dessen Story sich an H.P.Lovecrafts "Cthulhu-Mythos" orientiert. Der Spieler als Auserwählter utilisiert die 4 Elemente von Gott und Teufel kombinatorisch, um gegen die drohende Instabilisierung des Gleichgewichts durch Cthulhu der Erde anzukämpfen. Es folgten Gameplaypillars und -Loops, USP-Definition, Wireframes für Menüs und Fähigkeitskarten, Bedienungsprofile, Klassendiagramme, Sounddesign, Kanban-Boards und Priorisierungslisten, während in SCRUM-Meetings sorgfältig protokolliert und reviewed wurde. Hierbei half die bereits vorhandene Erfahrung im professionellen Umfeld bei "weltenbauer.". Das Projekt endete mit UserTests inklusive Fragebögen, sowie dem Gewinnen der Projektauszeichnung bei der "IndieNight" an der Hochschule Furtwangen.  
 Laufen erfolgt mit W A S D, Angreifen mit den Maustasten, Q und E. I öffnet das Inventar. Drag and Drop von einer Fähigkeitskarte auf eine andere ermöglicht das Kombinieren.
 
@@ -79,74 +89,120 @@ Laufen erfolgt mit W A S D, Angreifen mit den Maustasten, Q und E. I öffnet das
 ### Mobile Web-AR Partyspiel - Shaderprogrammierung
 <div style="display: flex; justify-content: space-between;">
   <a href="https://calvindo.github.io/Realtime-BeerPhong/aFrame.html">
-    <img src="BeerPhong.jpeg" width="65%">
+    <img src="BeerPhong.jpeg" width="100%">
   </a>  
   <a href="BeerPhongMarker.png" download>
-    <img src="BeerPhongMarker.png" width="65%">
+    <img src="BeerPhongMarker.png" width="100%">
   </a>
 </div>
+
 Dieses webbasierte Mobile-Game erfordert einen AR-Marker, über dem auf dem Smartphone ein Beerpong-Tisch mit Bechern als Ziele generiert wird. Der Spieler bewegt sich um den Tisch herum, um aus einer günstigen Abwurfposition heraus den Ball mit einem Swipe auf dem Touchscreen so in die Spielszene zu werfen, dass er direkt oder nach Aufkommen auf der Platte in einem Becher landet.  
 Die Umsetzung innerhalb des Kurses "Echtzeit-Computergrafik" im sechsten Semester erfolgte mit WebAR, JavaScript und GLSL. In einem dreiköpfigen Team machten wir uns mit Programmierung von Vertex- und Fragmentshadern vertraut, sowie mit Umgebungsvariablen von WebAR und "Three.js".
 
 ## Morbus-Animi
-<a href="https://simmer.io/@DerCalvino/morbus-animi-final"><video width="100%" controls loop>
-            <source src="Morbus-Animi.mp4" alt="Morbus-Animi" type="video/mp4"/>
-            Ihr Browser unterstützt den Video-Tag nicht
-</video></a>  
+<a href="https://simmer.io/@DerCalvino/morbus-animi-final">
+  <div style="position: relative;">
+    <video width="100%" controls loop>
+        <source src="Morbus-Animi.mp4" alt="Morbus-Animi" type="video/mp4"/>
+        Ihr Browser unterstützt den Video-Tag nicht
+    </video>
+    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5;">Klicken zum Spielen</div>
+  </div>
+</a>  
 Mit zwei Grafikerinnen, einem VFX-Spezialist, einem Storyteller, einem anderen Programmierer und mir entwickelten wir im vierten und fünften Semester im Rahmen des Projektstudiums dieses psychische Horrorspiel. Auch bei der Organisation dieses Projekts half die Erfahrung mit dem SCRUM-System im kommerziellen Umfeld bei "weltenbauer.".  
 Ich übernahm bis auf Inventar, Collectables und Menü-GUI das Coding der Skripte, um Spielmechanik, Physik-, Animations-, Sound- und KI-Controller, sowie UserInterfaces und Spielbalance zu realisieren. Besonders die Programmierung des Jump-and-Runs, mit Schwingen und Greifen sowie Hängen an Kanten, lag in meinem Fokus und lieferte eingängige Lernerfahrungen. Gleiches gilt für Entwicklung und Balancing des KI-Gegners mit Unity NavMesh. Auch mit dem Coding modularer Assets bereicherte ich das Projekt und die Kooperation, da andere Abteilungen diese parametrisierten, um Spielgeschehen wie Story-Fortschritt, Puzzle-Logik, Effekte und Sounds zu steuern.  
 Die Steuerung wird im Spiel erklärt.  
 
 
 ## Baumgenerator
-<a href="Code/TreeGenerator/TreeGenerator.zip" download><img src="TreeGenerator.png" width = "100%"></a>  
+<a href="Code/TreeGenerator/TreeGenerator.zip" download>
+  <div style="position: relative;">
+    <img src="TreeGenerator.png" width="100%">
+    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5;">Klicken zum Download</div>
+  </div>
+</a>  
 Diesen parametrisierten Baumgenerator als Blender-Addon entwickelte ich in einem Team, bestehend aus einem weiteren Programmierer und Grafiker, der die Blätter und die Rinde der Bäume entwarf. Benutzer können in dem Tooltip die Anzahl der Ast-Abspaltungen, die Ausrichtungsstärke gen Himmel und den Radi us einstellen. Auch rekursive Parameter eines jeden Astes zu seinem auswachsenden Ast sind einstellbar, Verkürzung der Länge und des Radius', Änderung der Verkürzung der Winkel und Zufallsabweichung. Nach Import der "Addon.py"-Datei finden Sie einen "Generate Tree"-Button im Scene-Tab des Property-Windows.  
 Bei der objektorientierten Programmierung lernte ich die Rodrigues-Rotationsformel kennen und wandte andere Vektorrechnung wie das Kreuzprodukt an. Auch mit Blender-eigenen Umgebungsvariablen und Python machte ich mich vertraut. Die Instanzierung der Astaustriebe ähnelt dem Projekt [Fraktal](#fraktal)  
 Die Programmierung erfolgte im fünften Semester im Rahmen des Kurses "Datenverarbeitung in der Medienproduktion".  
 
 ## Discombobulated Space Station
-<a href="https://calvindo.github.io/PRIMA/"><video width="100%" controls loop>
-            <source src="DiscombobulatedSpaceStation.mp4" alt="Morbus-Animi" type="video/mp4"/>
-            Ihr Browser unterstützt den Video-Tag nicht
-</video></a>  
+<a href="https://calvindo.github.io/PRIMA/">
+  <div style="position: relative;">
+    <video width="100%" controls loop>
+        <source src="DiscombobulatedSpaceStation.mp4" alt="Morbus-Animi" type="video/mp4"/>
+        Ihr Browser unterstützt den Video-Tag nicht
+    </video>
+    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5;">Klicken zum Spielen</div>
+  </div>
+</a>  
 Dieses 3D-Labyrinth Spiel habe ich mit TypeScript und <a href = "https://github.com/hs-furtwangen/FUDGE">FUDGE</a> programmiert, einer Node-basierten didaktischen Engine und Editor für webbasierte Spiele.  
 Der Spieler kann mit dem Character nicht fliegen und nur minimal springen, allerdings die gesamte Raumstation um seine Position herum auf verschiedenen Achsen drehen, um bei konstanter Schwerkraft einen Weg (oder Fall) durch das Labyrinth zu ermöglichen.  
 Als das Projekt im vierten Semester innerhalb des Kurses "Prototyping Interaktiver Medien-Apps und Games" entstand, war FUDGE noch nicht ausgereift genug, um die Labyrinth-Elemente effizient im nativen Editor anzuordnen. Dieses Problem löste ich, indem ich einen eigenen Blender-Map-Importer entwickelte, Der die Objektpositionen und Rotationen aus einer Collada-Datei ausliest.  
 Laufen erfolgt mit W A S D. Gedreht wird die Raumstation durch Shift, Control, Q und E.  
 
 ## Eisladen
-<a href="https://calvindo.github.io/GiS/Eisladen/"><img src="Eisladen.png" width = "100%"></a>  
+<a href="https://calvindo.github.io/GiS/Eisladen/">
+  <div style="position: relative;">
+    <img src="Eisladen.png" width="100%">
+    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5;">Klicken zum Spielen</div>
+  </div>
+</a>  
+
 Der Eisladen ist eine spielerische Lösung der Aufgabe, eine Website zu entwickeln, auf der Nutzer Eislieferungen aufgeben können  --und der Verkäufer sie über einen Server bearbeiten kann--. Als letzte Prüfung des Kurses "Grundlagen interaktiver Systeme" im zweiten Semester ging ich weit über die Fragestellung hinaus und realisierte die Zusammenstellung der Delikatessen mit einem Arcade-Greifer, gesteuert über Pfeiltasten und der Leertaste. Auch Toppings können durch Klicken interaktiv aus Behältern über ein Förderband auf die Eiskugeln gestreut werden.  
 Außer der Eisbehälter ist jede Grafik und Logik selbstgemacht, mit Zeichenmethoden des HTML-CanvasRenderingContext2Ds.  
 
 ## DiscHoverHFU
-
-<a href="https://calvindo.github.io/DiscHoverHFU/Code/DiscHoverHFU.html"><img src="DiscHoverHFU.png" width = "100%"></a>  
+<a href="https://calvindo.github.io/DiscHoverHFU/Code/DiscHoverHFU.html">
+  <div style="position: relative;">
+    <img src="DiscHoverHFU.png" width="100%">
+    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5;">Klicken zum Spielen</div>
+  </div>
+</a>  
 Ziel dieses 360°-Point-And-Click Adventures ist die spielerische Umsetzung der "Erstie-Rallye" - einer Schnitzeljagd an der HFU für Neulinge. Im Rahmen des Kurses "User Experience Design" im zweiten Semester entwickelt, sahen wir die Notwendigkeit einer digitalen Version der Rallye wegen den Einschränkungen durch die Corona-Pandemie. Zu zweit planten wir mit Sitemaps, Wireframes, Visuellen- und Soundstyleguides, entwickelten mit TypeScript, HTML und CSS.  
 Durch Gedrückthalten und Bewegung der Maus kann der Spieler sich in den Räumen der HFU drehen und somit Ausrüstung der Hochschule entdecken. Mit der "E"-Taste öffnet sich das Menü, in dem auf die OpenStreetMap-Karte gewechselt und in dieser zu den Räumen navigiert werden kann.  
 Die Umsetzung erfolgte mit zweidimensionalen Panorama-Bildern, die durch WebXR-Polyfill und eigene Programmierung zu interaktiven Panorama-Touren wurden. Als Datenstruktur für Winkelkoordinaten der 104 Gegenstände, sowie deren Namen und Geräusch der Interaktion, wurde JSON verwendet.  
 
 
 ## Fraktal
-<a href="Code/Fraktal/start.html"><img src="Fraktal.PNG" alt="Fraktal" width="100%"/></a>  
+<a href="Code/Fraktal/start.html">
+  <div style="position: relative;">
+    <img src="Fraktal.PNG" alt="Fraktal" width="100%"/>
+    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5;">Klicken zum Spielen</div>
+  </div>
+</a>  
 Die Idee für diese Applikation kam mir auf, als ich die Möglichkeiten der grafischen Visualisierung durch Rekursion begriff. Das klare Endergebnis konnte ich mir, je nach Anzahl von Iteratifonen, noch nicht vorstellen, weshalb ich es sofort ausprobierte, mit dem Ziel, mich von meinem eigenen Programm zum Staunen zu bewegen.  
 Instanzierte Bälle mit "create-children" Objektmethoden schafften dies bereits. Es folgten einige Experimente mit der maximal umsetzbaren Auflösung verschiedener Browser, um ein fertig gerendertes Bild von 10000 mal 10000 Pixeln zu erhalten, welches sich stark vergrößern lässt, um die repetitiven Strukturen nahtlos entdecken zu können.  
 Daraufhin, ebenfalls ohne eine konkrete Vorstellung des Ergebnisses, begann ich den Farbwinkel abhängig von der Iterationsstufe und der Ordnung der zirkular positionierten Kreise sowohl relativ, als auch absolut zu berechnen. Auch hier war ich von der Ästhetik der visualisierten Mathematik überrascht und begeistert.  
 Auf der Seite können Sie einige Parameter der Berechnung verändern.
 
 ## Fraktal Animation
-<a href="Code/FraktalAnimation/start.html"><img src="Animation.PNG" width="100%"></a>  
+<a href="Code/FraktalAnimation/start.html">
+  <div style="position: relative;">
+    <img src="Animation.PNG" width="100%">
+    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5;">Klicken zum Spielen</div>
+  </div>
+</a>  
 Zugrunde liegt das zuvor beschriebene Projekt "Fraktal". Diesmal mit dem Ziel, einige Parameter der Berechnung, die sich als Dezimalbrüche darstellen lassen, wie beispielsweise der Farbwinkel, zeitlich zu modulieren, um eine zusätzliche Dimension zu schaffen, die ebenso zu etlichen neuen Beobachtungen und weiteren Experimenten führen sollte.  
 Bemerkenswert ist unter anderem der Zusammenhang, wie sich die Veränderung des Divisors eines Vollkreises, der die Positionierung der "children" eines jeden Balls bestimmt, auf die Bewegung und das Muster der Anordnung bis hin zu den kleinsten Bällen auswirkt, ebenso wie die entstehende Farbkonstellation
 
 ## Cardioids
-<a href="Code/Cardioids/start.html"><img src="cardioids.PNG" width="100%"/></a>  
+<a href="Code/Cardioids/start.html">
+  <div style="position: relative;">
+    <img src="cardioids.PNG" width="100%"/>
+    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5;">Klicken zum Spielen</div>
+  </div>
+</a>  
 Dieses Projekt ist durch eine Präsentationsarbeit im Fach Mathematik der 13. Klasse entstanden. Meine Mitschüler und ich durften uns entweder aus vorgegebenen, oder eigens ausgesuchten fortgeschrittenen Themen der Mathematik widmen. Für letzteres wählte ich aus meiner schon bestehenden Kenntnis einiger mathematischer/physikalischer Phänomene die der Kardioide aus.  
 Um die Beschreibung der dahinter liegenden Mathematik zu vermeiden, verweise ich an dieser Stelle auf das Endresultat innerhalb des Mathematik-Projekts, welches aus diesem vertonten [Video](#video) bestand.   
 Um den Mitschülern die Thematik näher zu bringen und dafür zu faszinieren, programmierte ich diese Anwendung. Bei höheren Werten des in der Applikation auch von Ihnen einstellbaren Parameters "Faktor", sowie dem ab dann interressanten Parameter "Lines", ist für mich bis heute der eindeutige Zusammenhang der eingestellten Werte mit den entstehenden Mustern zugegebenermaßen nicht eindeutig erklärbar.
 
 ## RubberBand
-<a href="Code/RubberBand/start.html"><img src="Rubber.PNG" width="100%"/></a>  
+<a href="Code/RubberBand/start.html">
+  <div style="position: relative;">
+    <img src="Rubber.PNG" width="100%"/>
+    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5;">Klicken zum Spielen</div>
+  </div>
+</a>  
 Grundlage für diese Physik-Simulation war die in Echtzeit stattfindende Anwendung physikalischem Verhaltens auf Körper, die von dem Mauszeiger beeinflusst werden. Durch simple Vektoradition erschuf ich damit schon ein System dreier gekoppelter Massen, deren Verhalten annähernd Gummibändern ähneln.  
 Hieraus wird sich in naher Zukunft noch eine Simulation eines ganzen Rasters dieser Massen entwickeln, um Stoff zu simulieren (Cloth-Simulation).
 
