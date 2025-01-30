@@ -133,7 +133,7 @@ Die Steuerung wird im Spiel erklärt.
   <a href="Code/TreeGenerator/TreeGenerator.zip" download>
     <img src="TreeGenerator.png" width="100%">
   </a>
-  <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
+  <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none; max-width: 100%">
     Klicken zum Downloaden
   </div>
 </div>  
