@@ -1,5 +1,5 @@
 /* Breitere Container für den gesamten Inhalt */
 .inner {
-  max-width: 90 !important;/* Setze hier die gewünschte maximale Breite */
+  max-width: 90% !important;/* Setze hier die gewünschte maximale Breite */
   margin: 0 auto;    /* Zentriert den Inhalt */
 }
