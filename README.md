@@ -45,7 +45,7 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
         <source src="ConstructionSimulator.mp4" alt="ConstructionSimulator" type="video/mp4"/>
         Ihr Browser unterstützt den Video-Tag nicht
     </video>
-    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: gold; font-size: 2em; opacity: 0.7;">Klicken zum Spielen</div>
+    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.7;">Klicken zum Spielen</div>
   </div>
 </a>   
 Im Dev-Team bei "weltenbauer. Software Entwicklung GmbH" arbeitete ich mit insgesamt 25 Mitarbeitern und weiteren Outsourcern vom Winter 2020 bis zum Frühling 2023. Begonnen als Praktikant im Büro für das dritte Semester, behielt mich "weltenbauer." überzeugt als Werkstudent bis zum Bachelor-Abschluss. So sammelte ich zwei weitere Jahre lang Erfahrung in der Programmierung eines kommerziellen Mid-Tier Games. Neben strukturellem Arbeiten mit agilem Projektmanagement, wie SCRUM-Sprintmeetings, Atlassian Confluence, Versionskontrolle, Bugtracking mit Mantis in einem größeren Team und Orientierung nach Vorgaben eines kommerziellen Publishers (Astragon), sowie Synergie mit Grafiker- und QA-Departments vertiefte ich mich in fortgeschrittene Programmierung mit Unity und C#. Desweiteren lernte ich FMOD als Audio-Integrationssoftware für Unity kennen.  
