@@ -134,7 +134,7 @@ Die Steuerung wird im Spiel erklärt.
     <img src="TextGenerator.png" width="100%">
   </a>
   <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none; white-space: nowrap;">
-    Klicken zum Downloaden
+    Klicken zum Anwenden
   </div>
 </div>  
 Das Bürgergesetzbuch als Trainingsdaten eingespeist, "erfindet" mein Gesetzestext-Generator neue Paragraphen am laufenden Band. Dieses Freizeitprojekt ist eine --darüber hinausgehung-- des Kurses "Introduction to Deep Learning" im fünften Semester, in dem ich bereits Logistische Regression mit BCE und Softmax, Backpropagation und Convolutional Neural Networks erlernte.  
