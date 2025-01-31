@@ -128,6 +128,16 @@ Ich übernahm bis auf Inventar, Collectables und Menü-GUI das Coding der Skript
 Die Steuerung wird im Spiel erklärt.  
 
 
+## Gesetzestext-Generator - Rekursives Neuronales Netzwerk
+<a href="/textGenerator.md">Hier klicken, um weitergeleitet zu werden</a>  
+Fünftes Semester
+Language Model
+Jupiter Notebook
+Tensorflow
+Keras Model
+one step model
+Python  
+
 ## Baumgenerator
 <div style="position: relative; display: inline-block; cursor: pointer;">
   <a href="Code/TreeGenerator/TreeGenerator.zip" download>
