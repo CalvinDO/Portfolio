@@ -129,9 +129,8 @@ Die Steuerung wird im Spiel erklärt.
 
 
 ## Gesetzestext-Generator - Rekursives Neuronales Netzwerk
-<a href="textGenerator.md">Hier klicken, um weitergeleitet zu werden</a>  
-Das Bürgergesetzbuch als Trainingsdaten eingespeist, "erfindet" mein Gesetzestext-Generator durch --xy-- neue Paragraphen am laufenden Band.Fünftes Semester, aber Freizeitprojekt
-Im Kurs "Introduction to Deep Learning" Logistische Regression (BCE, Softmax), Backpropagation, Convolutional NNs gelernt, mit dieser Anwendung darüber hinaus gegangen.
+<a href="https://colab.research.google.com/github/CalvinDO/AITextGenerator/blob/main/LawLanguageRNN/textGenerator.ipynb">Hier klicken, um weitergeleitet zu werden</a>  
+Das Bürgergesetzbuch als Trainingsdaten eingespeist, "erfindet" mein Gesetzestext-Generator durch --xy-- neue Paragraphen am laufenden Band.Dieses Freizeitprojekt ist eine --darüber hinausgehung-- des Kurses "Introduction to Deep Learning" im fünften Semester, indem ich Logistische Regression (BCE, Softmax), Backpropagation, Convolutional NNs erlernte.
 Language Model
 Jupiter Notebook
 Tensorflow
