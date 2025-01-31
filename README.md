@@ -129,14 +129,18 @@ Die Steuerung wird im Spiel erklärt.
 
 
 ## Gesetzestext-Generator - Rekursives Neuronales Netzwerk
-<a href="/textGenerator.md">Hier klicken, um weitergeleitet zu werden</a>  
-Fünftes Semester
+<a href="textGenerator.md">Hier klicken, um weitergeleitet zu werden</a>  
+Das Bürgergesetzbuch als Trainingsdaten eingespeist, "erfindet" mein Gesetzestext-Generator durch --xy-- neue Paragraphen am laufenden Band.Fünftes Semester, aber Freizeitprojekt
+Im Kurs "Introduction to Deep Learning" Logistische Regression (BCE, Softmax), Backpropagation, Convolutional NNs gelernt, mit dieser Anwendung darüber hinaus gegangen.
 Language Model
 Jupiter Notebook
 Tensorflow
-Keras Model
+Keras Model GRU Layer
 one step model
-Python  
+Python
+Ausblick: Performance von LSTM als weitere RNN-Struktur und GPT Struktur wegen Self-Attention- und Parallelisierungsmechanismen am Bürgergesetzbuch testen.  
+
+
 
 ## Baumgenerator
 <div style="position: relative; display: inline-block; cursor: pointer;">
