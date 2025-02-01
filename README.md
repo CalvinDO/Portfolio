@@ -90,10 +90,9 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
   background-color: #f0f0f0;
 }
 
-img {
+img, video {
   width: 100%;        /* Bild skaliert auf die Breite des Containers */
   height: auto;       /* Höhe wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
-  max-width: 100%;    /* Verhindert, dass das Bild größer als seine ursprüngliche Größe wird */
 }
 
 </style>
