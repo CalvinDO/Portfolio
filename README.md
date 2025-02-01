@@ -93,6 +93,7 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
 img, video {
   width: 100%;        /* Bild skaliert auf die Breite des Containers */
   height: auto;       /* Höhe wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
+  object-fit: fill;
 }
 
 </style>
