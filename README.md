@@ -188,24 +188,7 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
     Mit zwei Grafikerinnen, einem VFX-Spezialist, einem Storyteller, einem anderen Programmierer und mir entwickelten wir im vierten und fünften Semester im Rahmen des Projektstudiums dieses psychische Horrorspiel. Auch bei der Organisation dieses Projekts half die Erfahrung mit dem SCRUM-System im kommerziellen Umfeld bei [weltenbauer. Software Entwicklung GmbH](https://www.weltenbauer-se.com/de).  
     Ich übernahm bis auf Inventar, Collectables und Menü-GUI das Coding der Skripte, um Spielmechanik, Physik-, Animations-, Sound- und KI-Controller, sowie UserInterfaces und Spielbalance zu realisieren. Besonders die Programmierung des Jump-and-Runs, mit Schwingen und Greifen sowie Hängen an Kanten, lag in meinem Fokus und lieferte eingängige Lernerfahrungen. Gleiches gilt für Entwicklung und Balancing des KI-Gegners mit Unity NavMesh. Auch mit dem Coding modularer Assets bereicherte ich das Projekt und die Kooperation, da andere Abteilungen diese parametrisierten, um Spielgeschehen wie Story-Fortschritt, Puzzle-Logik, Effekte und Sounds zu steuern. Mit diesem Titel gewannen wir den ersten Platz der Projektausstellung bei der "IndieNight" an der Hochschule Furtwangen.
     Die Steuerung wird im Spiel erklärt.
-</div>
-
-## Morbus-Animi
-
-<div style="position: relative; display: inline-block; cursor: pointer;">
-  <a href="https://simmer.io/@DerCalvino/morbus-animi-final">
-    <video width="100%" controls loop>
-        <source src="Morbus-Animi.mp4" alt="Morbus-Animi" type="video/mp4"/>
-        Ihr Browser unterstützt den Video-Tag nicht
-    </video>
-  </a>
-  <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-    Klicken zum Spielen
-  </div>
 </div>  
-Mit zwei Grafikerinnen, einem VFX-Spezialist, einem Storyteller, einem anderen Programmierer und mir entwickelten wir im vierten und fünften Semester im Rahmen des Projektstudiums dieses psychische Horrorspiel. Auch bei der Organisation dieses Projekts half die Erfahrung mit dem SCRUM-System im kommerziellen Umfeld bei [weltenbauer. Software Entwicklung GmbH](https://www.weltenbauer-se.com/de).  
-Ich übernahm bis auf Inventar, Collectables und Menü-GUI das Coding der Skripte, um Spielmechanik, Physik-, Animations-, Sound- und KI-Controller, sowie UserInterfaces und Spielbalance zu realisieren. Besonders die Programmierung des Jump-and-Runs, mit Schwingen und Greifen sowie Hängen an Kanten, lag in meinem Fokus und lieferte eingängige Lernerfahrungen. Gleiches gilt für Entwicklung und Balancing des KI-Gegners mit Unity NavMesh. Auch mit dem Coding modularer Assets bereicherte ich das Projekt und die Kooperation, da andere Abteilungen diese parametrisierten, um Spielgeschehen wie Story-Fortschritt, Puzzle-Logik, Effekte und Sounds zu steuern. Mit diesem Titel gewannen wir den ersten Platz der Projektausstellung bei der "IndieNight" an der Hochschule Furtwangen.
-Die Steuerung wird im Spiel erklärt.
 
 ## Gesetzestext-Generator - Rekursives Neuronales Netzwerk
 
