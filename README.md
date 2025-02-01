@@ -28,18 +28,19 @@
 </details>  
 
 <details>
-  <summary>*Klicken* Ich erkannte durch die Programmierung die Relevanz der Mathematik in verschiedenen Bereichen und begann mit experimenteller Programmierung für verschiedene Fächer am technischen Gymnasium, wo auch meine erste formale Ausbildung in Informatik begann.</summary>
-  Mit 15 Jahren entwickelte ich eine regelrechte Begeisterung für die Möglichkeiten der Vektorrechnung und fraktaler Geometrie. Zusammen mit einem Lehrer und einem Mitschüler, mit dem ich einen Übersetzer für eine ausgedachte Geheimsprache programmierte, gründete ich eine Informatik-AG. In dieser wagten wir uns an die voll umfassende Programmierung neuronaler Netzwerke zum Experimentieren mit künstlicher Intelligenz, besonders bezogen auf Echtzeit-Bildverarbeitung eines Live-Kamerabildes.  
+  <summary>*Klicken* Ich erkannte durch die Programmierung die Relevanz der Mathematik in verschiedenen Bereichen und begann mit experimenteller Programmierung</summary>
+   für verschiedene Fächer am technischen Gymnasium, wo auch meine erste formale Ausbildung in Informatik begann. Mit 15 Jahren entwickelte ich eine regelrechte Begeisterung für die Möglichkeiten der Vektorrechnung und fraktaler Geometrie. Zusammen mit einem Lehrer und einem Mitschüler, mit dem ich einen Übersetzer für eine ausgedachte Geheimsprache programmierte, gründete ich eine Informatik-AG. In dieser wagten wir uns an die voll umfassende Programmierung neuronaler Netzwerke zum Experimentieren mit künstlicher Intelligenz, besonders bezogen auf Echtzeit-Bildverarbeitung eines Live-Kamerabildes.  
 </details>   
+
 <details>
   <summary>
-Im Rahmen der freiwilligen Aufgaben des Programmieren-Moduls des ersten Semesters </summary>
-meines abgeschlossenen Studiums entwickelte ich mit Java einen ewigen Kalender, Game-Of-Life und Tic-Tac-Toe. Letzteres baute ich zusätzlich mit einem zufällig spielenden Computergegner aus, der zum Trainieren einer künstlichen Intelligenz genutzt werden soll.
+  Im Rahmen der freiwilligen Aufgaben des Programmieren-Moduls des ersten Semesters </summary>
+  meines abgeschlossenen Studiums entwickelte ich mit Java einen ewigen Kalender, Game-Of-Life und Tic-Tac-Toe. Letzteres baute ich zusätzlich mit einem zufällig spielenden Computergegner aus, der zum Trainieren einer künstlichen Intelligenz genutzt werden soll.
 </details>  
  
 <details>
   <summary>*Klicken* Beim GlobalGameJam 2020 im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines VR-Spiels mit,</summary>
-  wobei meine Hauptaufgaben bei Gamedesign und Sound lagen. Dieses Event weckte bei mir erneut die Interesse an der 3D-Programmierung und dem 3D-Modeling, weshalb ich mich in Unity und Blender weiter vertiefte.  
+  wobei meine Hauptaufgaben bei Gamedesign und Sound lagen ([Fuwashima](#Fuwashima (Soundtrack zum GlobalGameJam2020))). Dieses Event weckte bei mir erneut das Interesse an der 3D-Programmierung und dem 3D-Modeling, weshalb ich mich in Unity und Blender weiter vertiefte.  
 </details>   
 
 <details>
@@ -48,7 +49,7 @@ meines abgeschlossenen Studiums entwickelte ich mit Java einen ewigen Kalender, 
 </details>  
 <br>
 Ich schloss das Studium mit meiner Bachelor-Thesis "Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen" ab, bei dem in einem Editor Knochen-Gelenk-Konstruktionen erstellt werden, die durch Mutationen über Generationen hinweg Laufmuster von Grund auf lernen.
-
+<br>
 Auf dieser Seite sammle ich einige meiner Arbeiten, um einen Beleg für meinen Enthusiasmus und Lernfähigkeit zu liefern und Interesse für ein Angebot als Spieleprogrammierer zu wecken. Mittlerweile hat sich eine Spezifikation des Spielgenres herauskristallisiert, in dem ich gerne arbeite: Spiele, die ohne Gewaltdarstellungen dem Spieler eine eher friedliche, meditative Erfahrung bieten. Wenn Mehrspielermodi vorhanden sind, sollten die Spieler konstruktiv und kooperativ zusammenarbeiten. Optimalerweise kämpft der Spieler im Spiel gegen nichts, und kommt im Spielverlauf zu intuitiven Einsichten über tiefgreifende Themen und Philosophien.  
 Puzzle-Games und Aufbau-Strategiespiele sowie Cozy Games, Simulatoren oder Musik-/Sound- und Rhythm-Games kommen in Frage.  
 Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Grundlegende 3D-Modelling- und Design-Kenntnisse sind vorhanden, jedoch nicht als Haupttätigkeit bevorzugt. In der Soundgestaltung und Soundtechnik des Spiels kann ich mitwirken, während Programmieren meine Haupttätigkeit darstellt.  
@@ -247,7 +248,7 @@ Auf der Seite können Sie einige Parameter der Berechnung verändern.
     Klicken zum Spielen
   </div>
 </div>  
-Zugrunde liegt das zuvor beschriebene Projekt "Fraktal". Diesmal mit dem Ziel, einige Parameter der Berechnung, die sich als Dezimalbrüche darstellen lassen, wie beispielsweise der Farbwinkel, zeitlich zu modulieren, um eine zusätzliche Dimension zu schaffen, die ebenso zu etlichen neuen Beobachtungen und weiteren Experimenten führen sollte.  
+Zugrunde liegt das zuvor beschriebene Projekt [Fraktal](#fraktal). Diesmal mit dem Ziel, einige Parameter der Berechnung, die sich als Dezimalbrüche darstellen lassen, wie beispielsweise der Farbwinkel, zeitlich zu modulieren, um eine zusätzliche Dimension zu schaffen, die ebenso zu etlichen neuen Beobachtungen und weiteren Experimenten führen sollte.  
 Bemerkenswert ist unter anderem der Zusammenhang, wie sich die Veränderung des Divisors eines Vollkreises, der die Positionierung der "children" eines jeden Balls bestimmt, auf die Bewegung und das Muster der Anordnung bis hin zu den kleinsten Bällen auswirkt, ebenso wie die entstehende Farbkonstellation
 
 ## Cardioids
