@@ -99,7 +99,7 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
 
 <div class = "flex-container">
   <div class = "flex-item">
-    <h2>Bau-Simulator <br></h2>
+    <h2 id ="bau-simulator">Bau-Simulator <br></h2>
     <div style="position: relative; display: inline-block; cursor: pointer;">
     <a href="https://store.steampowered.com/app/1273400/BauSimulator">
     <video width="100%" controls loop>
@@ -135,6 +135,42 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
     Die Kamera kann im Editor mit Mausbewegung und Drücken sowie Scrollen der mittleren Maustaste gesteuert werden. Bauen neuer Glieder wird mit Linksklick gestartet und mit Mausbewegung verlängert. Ein erneuter Linksklick schließt das Bauen ab, während die rechte Maustaste das Bauen abbricht. Den Rotations-Einstellungs-Modus schalten Sie mit "R" um. Weitere Anleitung finden Sie in der <a href = "NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">Thesis</a>
   </div>
 
+  <div class = "flex-item">
+    <h2>The Last Hope <br></h2>
+    <div style="position: relative; display: inline-block; cursor: pointer;">
+    <a href="https://simmer.io/@DerCalvino/thelasthope">
+      <video width="100%" controls loop>
+          <source src="TheLastHope.mp4" alt="TheLastHope" type="video/mp4"/>
+          Ihr Browser unterstützt den Video-Tag nicht
+      </video>
+    </a>
+    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
+      Klicken zum Spielen
+    </div>
+    </div>  
+    "Conflux - TheLastHope" entstand in einem sechsköpfigen Team. Im Kurs "Gamedesign Workshop" des sechsten Semesters programmierte ich den Großteil des Unity-Spiels, wie Spielmechanik, Physik-, Animations-, Sound- und KI-Controller, sowie UserInterfaces und Spielbalance. Begonnen mit Themenwahl, Abstimmung über Spielideenvorstellung und einer gemeinsamen Vision und Moodboard, einigten wir uns auf ein Rouge-like, dessen Story sich an H.P.Lovecrafts "Cthulhu-Mythos" orientiert. Der Spieler als Auserwählter utilisiert die 4 Elemente von Gott und Teufel kombinatorisch, um gegen die drohende Instabilisierung des Gleichgewichts durch Cthulhu der Erde anzukämpfen. Es folgten Gameplaypillars und -Loops, USP-Definition, Wireframes für Menüs und Fähigkeitskarten, Bedienungsprofile, Klassendiagramme, Sounddesign, Kanban-Boards und Priorisierungslisten, während in SCRUM-Meetings sorgfältig protokolliert und reviewed wurde. Hierbei half die bereits vorhandene Erfahrung im professionellen Umfeld bei [weltenbauer. Software Entwicklung GmbH](https://www.weltenbauer-se.com/de). Das Projekt endete mit UserTests inklusive Fragebögen, sowie dem Gewinnen der Projektauszeichnung bei der "IndieNight" an der Hochschule Furtwangen.  
+    Laufen erfolgt mit W A S D, Angreifen mit den Maustasten, Q und E. I öffnet das Inventar. Drag and Drop von einer Fähigkeitskarte auf eine andere ermöglicht das Kombinieren.
+  </div>
+  <div class = "flex-item">
+    <h2>Realtime-BeerPhong</h2>
+    <h3>Mobile Web-AR Partyspiel - Shaderprogrammierung</h3>
+    <div style="display: flex; justify-content: space-between;">
+      <a href="https://calvindo.github.io/Realtime-BeerPhong/aFrame.html">
+      <div style="position: relative;">
+        <img src="BeerPhong.jpeg" width="100%">
+        <div style="position: absolute; top: 24%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5;">Klicken zum Spielen</div>
+      </div>
+      </a>  
+      <a href="BeerPhongMarker.png" download>
+      <div style="position: relative;">
+        <img src="BeerPhongMarker.png" width="100%">
+        <div style="position: absolute; bottom: 20%; left: 50%; transform: translateX(-50%); color: black; font-size: 2em; opacity: 0.5;">Klicken zum Download</div>
+      </div>
+      </a>
+    </div>  
+    Dieses webbasierte Mobile-Game erfordert einen AR-Marker, über dem auf dem Smartphone ein Beerpong-Tisch mit Bechern als Ziele generiert wird. Der Spieler bewegt sich um den Tisch herum, um aus einer günstigen Abwurfposition heraus den Ball mit einem Swipe auf dem Touchscreen so in die Spielszene zu werfen, dass er direkt oder nach Aufkommen auf der Platte in einem Becher landet.  
+    Die Umsetzung innerhalb des Kurses "Echtzeit-Computergrafik" im sechsten Semester erfolgte mit WebAR, JavaScript und GLSL. In einem dreiköpfigen Team machten wir uns mit Programmierung von Vertex- und Fragmentshadern vertraut, sowie mit Umgebungsvariablen von WebAR und "Three.js".
+  </div>
   <div class = "flex-item">
     <h2>The Last Hope <br></h2>
     <div style="position: relative; display: inline-block; cursor: pointer;">
