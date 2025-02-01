@@ -90,18 +90,20 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
   background-color: #f0f0f0;
 }
 
-img, video {
+img, video, .visual-presentation-container {
   width: 100%;        /* Bild skaliert auf die Breite des Containers */
   height: auto;       /* Höhe wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
   object-fit: fill;
 }
+
+.
 
 </style>
 
 <div class = "flex-container">
   <div class = "flex-item">
     <h2 id ="bau-simulator">Bau-Simulator <br> <br></h2>
-    <div style="position: relative; display: inline-block; cursor: pointer;">
+    <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
     <a href="https://store.steampowered.com/app/1273400/BauSimulator">
     <video width="100%" controls loop>
         <source src="ConstructionSimulator.mp4" alt="ConstructionSimulator" type="video/mp4"/>
@@ -120,7 +122,7 @@ img, video {
   <div class = "flex-item">
     <h2 id = "neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen">Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen</h2>
     <h3><a href="NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">Bachelor Thesis - Zur PDF</a></h3>
-    <div style="position: relative; display: inline-block; cursor: pointer;">
+    <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
     <a href="https://simmer.io/@DerCalvino/neuroevolutionbenutzerdefiniertermehrbeinigerkreaturen">
       <video width="100%" controls loop>
           <source src="BachelorThesis.mp4" alt="BachelorThesis" type="video/mp4"/>
@@ -138,7 +140,7 @@ img, video {
 
   <div class = "flex-item">
     <h2 id ="the-last-hope">The Last Hope <br> <br></h2>
-    <div style="position: relative; display: inline-block; cursor: pointer;">
+    <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
     <a href="https://simmer.io/@DerCalvino/thelasthope">
       <video width="100%" controls loop>
           <source src="TheLastHope.mp4" alt="TheLastHope" type="video/mp4"/>
@@ -176,7 +178,7 @@ img, video {
 
   <div class = "flex-item">
     <h2 id = "morbus-animi">Morbus-Animi <br> <br></h2>
-    <div style="position: relative; display: inline-block; cursor: pointer;">
+    <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
     <a href="https://simmer.io/@DerCalvino/morbus-animi-final">
     <video width="100%" controls loop>
         <source src="Morbus-Animi.mp4" alt="Morbus-Animi" type="video/mp4"/>
@@ -195,7 +197,7 @@ img, video {
 
 ## Gesetzestext-Generator - Rekursives Neuronales Netzwerk
 
-<div style="position: relative; display: inline-block; cursor: pointer;">
+<div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
   <a href="https://colab.research.google.com/github/CalvinDO/AITextGenerator/blob/main/LawLanguageRNN/textGenerator.ipynb">
     <img src="TextGenerator.png" width="100%">
   </a>
@@ -212,7 +214,7 @@ Geplant ist Implementierung von und Testen der Performance von LSTM als weitere 
 
 ## Baumgenerator
 
-<div style="position: relative; display: inline-block; cursor: pointer;">
+<div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
   <a href="Code/TreeGenerator/TreeGenerator.zip" download>
     <img src="TreeGenerator.png" width="100%">
   </a>
@@ -226,7 +228,7 @@ Die Programmierung erfolgte im fünften Semester im Rahmen des Kurses "Datenvera
 
 ## Discombobulated Space Station
 
-<div style="position: relative; display: inline-block; cursor: pointer;">
+<div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
   <a href="https://calvindo.github.io/PRIMA/">
     <video width="100%" controls loop>
         <source src="DiscombobulatedSpaceStation.mp4" alt="DiscombobulatedSpaceStation" type="video/mp4"/>
@@ -244,7 +246,7 @@ Laufen erfolgt mit W A S D. Gedreht wird die Raumstation durch Shift, Control, Q
 
 ## Eisladen
 
-<div style="position: relative; display: inline-block; cursor: pointer;">
+<div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
   <a href="https://calvindo.github.io/GiS/Eisladen/">
     <img src="Eisladen.png" width="100%">
   </a>
@@ -258,7 +260,7 @@ Außer der Eisbehälter ist jede Grafik und Logik selbstgemacht, mit Zeichenmeth
 
 ## DiscHoverHFU
 
-<div style="position: relative; display: inline-block; cursor: pointer;">
+<div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
   <a href="https://calvindo.github.io/DiscHoverHFU/Code/DiscHoverHFU.html">
     <img src="DiscHoverHFU.png" width="100%">
   </a>
@@ -273,7 +275,7 @@ Die Umsetzung erfolgte mit zweidimensionalen Panorama-Bildern, die durch WebXR-P
 
 ## Fraktal
 
-<div style="position: relative; display: inline-block; cursor: pointer;">
+<div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
   <a href="Code/Fraktal/start.html">
     <img src="Fraktal.PNG" alt="Fraktal" width="100%">
   </a>
@@ -288,7 +290,7 @@ Auf der Seite können Sie einige Parameter der Berechnung verändern.
 
 ## Fraktal Animation
 
-<div style="position: relative; display: inline-block; cursor: pointer;">
+<div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
   <a href="Code/FraktalAnimation/start.html">
     <img src="Animation.PNG" width="100%">
   </a>
@@ -301,7 +303,7 @@ Bemerkenswert ist unter anderem der Zusammenhang, wie sich die Veränderung des 
 
 ## Cardioids
 
-<div style="position: relative; display: inline-block; cursor: pointer;">
+<div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
   <a href="Code/Cardioids/start.html">
     <img src="cardioids.PNG" width="100%">
   </a>
@@ -315,7 +317,7 @@ Um den Mitschülern die Thematik näher zu bringen und dafür zu faszinieren, pr
 
 ## RubberBand
 
-<div style="position: relative; display: inline-block; cursor: pointer;">
+<div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
   <a href="Code/RubberBand/start.html">
     <img src="Rubber.PNG" width="100%">
   </a>
