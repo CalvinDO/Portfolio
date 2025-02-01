@@ -43,9 +43,10 @@
 <br>
 
 <details>
-  <summary><strong>KLICKEN</strong> Beim GlobalGameJam 2020 im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines VR-Spiels mit,</summary>
-  wobei meine Hauptaufgaben bei Gamedesign und Sound lagen ([Fuwashima](#fuwashima-soundtrack-zum-globalgamejam2020)). Dieses Event weckte bei mir erneut das Interesse an der 3D-Programmierung und dem 3D-Modeling, weshalb ich mich in Unity und Blender weiter vertiefte.  
-</details>  
+  <summary><strong>KLICKEN</strong> Beim GlobalGameJam 2020 im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines VR-Spiels mit.</summary>
+  <p>Wobei meine Hauptaufgaben bei Gamedesign und Sound lagen (<a href="#fuwashima-soundtrack-zum-globalgamejam2020">Fuwashima</a>).</p>
+  <p>Dieses Event weckte bei mir erneut das Interesse an der 3D-Programmierung und dem 3D-Modeling, weshalb ich mich in Unity und Blender weiter vertiefte.</p>
+</details>
 <br>
 
 <details>
@@ -54,7 +55,7 @@
   
   <p>Ich beendete das zweite Semester mit einer <a href="#dischoverhfu">360°-Panorama-Verkörperung</a> der Schnitzeljagd an der Hochschule Furtwangen, sowie einer <a href="#eisladen">Eisladen-Website</a> mit Server, realisiert als Browsergame.</p>
   
-  <p>Das Praktikum als drittes Semester absolvierte ich bei <a href="https://www.weltenbauer-se.com/de" target="_blank">weltenbauer. Software Entwicklung GmbH</a>, wo ich am <a href="#bau-simulator">Bau-Simulator</a> im Developer-Team mitarbeitete. Das Unternehmen behielt mich gleich als Werkstudent, bis zur Abgabe der <a href="#neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen">Thesis</a>.</p>
+  <p>Das Praktikum als drittes Semester absolvierte ich bei <a href="https://www.weltenbauer-se.com/de" target="_blank">weltenbauer. Software Entwicklung GmbH</a>, wo ich am <a href="#bau-simulator">Bau-Simulator</a> im Developer-Team mitarbeitete. Das Unternehmen behielt mich gleich 2 weitere Jahre als Werkstudent, bis zum Ende des Studiums</p>
 
   <p>Im vierten und fünften Semester, dem Projektstudium, entwickelte ich in einem sechsköpfigen Team aus engagierten Studenten das tiefgründige psychologische Horror-Spiel <a href="#morbus-animi">Morbus-Animi</a>, das den ersten Platz der IndieNight-Nominierung gewann.</p>
 
