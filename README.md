@@ -90,7 +90,7 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
   background-color: #f0f0f0;
 }
 
-img, video, .visual-presentation-container {
+video, .visual-presentation-container {
 
   display: block !important;        /* Macht den <a>-Tag zu einem Blockelement, damit es eine feste Größe haben kann */
 
@@ -98,6 +98,15 @@ img, video, .visual-presentation-container {
   height: auto  !important;         /* Höhe wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
   object-fit: fill  !important;  
 }
+img .visual-presentation-container, video .visual-presentation-container {
+
+  display: block !important;        /* Macht den <a>-Tag zu einem Blockelement, damit es eine feste Größe haben kann */
+
+  width: 100%  !important;          /* Bild skaliert auf die Breite des Containers */
+  height: auto  !important;         /* Höhe wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
+  object-fit: cover  !important;  
+} 
+
 
 
 
