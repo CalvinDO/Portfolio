@@ -93,7 +93,7 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
 
 <div class = "flex-container">
   <div class = "flex-item">
-    <h2>Bau-Simulator</h2>
+    <h2>Bau-Simulator <br></h2>
     <div style="position: relative; display: inline-block; cursor: pointer;">
     <a href="https://store.steampowered.com/app/1273400/BauSimulator">
     <video width="100%" controls loop>
@@ -130,7 +130,7 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
   </div>
 
   <div class = "flex-item">
-    <h2>The Last Hope</h2>
+    <h2>The Last Hope <br></h2>
     <div style="position: relative; display: inline-block; cursor: pointer;">
     <a href="https://simmer.io/@DerCalvino/thelasthope">
       <video width="100%" controls loop>
