@@ -31,7 +31,11 @@
   <summary>*Klicken* Ich erkannte durch die Programmierung die Relevanz der Mathematik in verschiedenen Bereichen und begann mit experimenteller Programmierung für verschiedene Fächer am technischen Gymnasium, wo auch meine erste formale Ausbildung in Informatik begann.</summary>
   Mit 15 Jahren entwickelte ich eine regelrechte Begeisterung für die Möglichkeiten der Vektorrechnung und fraktaler Geometrie. Zusammen mit einem Lehrer und einem Mitschüler, mit dem ich einen Übersetzer für eine ausgedachte Geheimsprache programmierte, gründete ich eine Informatik-AG. In dieser wagten wir uns an die voll umfassende Programmierung neuronaler Netzwerke zum Experimentieren mit künstlicher Intelligenz, besonders bezogen auf Echtzeit-Bildverarbeitung eines Live-Kamerabildes.  
 </details>   
-Im Rahmen der freiwilligen Aufgaben des Programmieren-Moduls des ersten Semesters meines abgeschlossenen Studiums entwickelte ich mit Java einen ewigen Kalender, Game-Of-Life und Tic-Tac-Toe. Letzteres baute ich zusätzlich mit einem zufällig spielenden Computergegner aus, der zum Trainieren einer künstlichen Intelligenz genutzt werden soll.  
+<details>
+  <summary>
+Im Rahmen der freiwilligen Aufgaben des Programmieren-Moduls des ersten Semesters </summary>
+meines abgeschlossenen Studiums entwickelte ich mit Java einen ewigen Kalender, Game-Of-Life und Tic-Tac-Toe. Letzteres baute ich zusätzlich mit einem zufällig spielenden Computergegner aus, der zum Trainieren einer künstlichen Intelligenz genutzt werden soll.
+</details>  
  
 <details>
   <summary>*Klicken* Beim GlobalGameJam 2020 im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines VR-Spiels mit,</summary>
@@ -42,6 +46,7 @@ Im Rahmen der freiwilligen Aufgaben des Programmieren-Moduls des ersten Semester
   <summary>*Klicken* Seit Oktober 2019 studierte ich 7 Semester lang Medieninformatik an der Hochschule Furtwangen. Nach dem ersten Semester erhielt ich von meinen Professoren für Mathematik und Informatik Anfragen als Tutor tätig zu werden,</summary>
   und war als solcher für das Modul "Programmierung" eingestellt. Ich beendete das zweite Semester mit einer 360°-Panorama-Verkörperung der Schnitzeljagd an der Hochschule Furtwangen, sowie einer Eisladen-Website mit Server, realisiert als Browsergame. Das Praktikum als drittes Semester absolvierte ich bei "weltenbauer. Software Entwicklung GmbH", wo ich am Bau-Simulator im Developer-Team mitarbeitete. Das Unternehmen behielt mich gleich als Werkstudent, bis zur Abgabe der Thesis. Im vierten und fünften Semester, dem Projektstudium, entwickelte ich in einem sechsköpfigen Team aus engagierten Studenten das tiefgründige psychologische Horror-Spiel "Morbus-Animi", das den ersten Platz der IndieNight-Nominierung gewann. Im sechsten Semester folgten Spiele wie "TheLastHope", einem Rouge-like nach H.P. Lovecraft, entwickelt mit fünf anderen talentierten Studenten, oder "BeerPhong", einer mobilen browserbasierten AR-Version des berühmten Partyspiels. 
 </details>  
+<br>
 Ich schloss das Studium mit meiner Bachelor-Thesis "Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen" ab, bei dem in einem Editor Knochen-Gelenk-Konstruktionen erstellt werden, die durch Mutationen über Generationen hinweg Laufmuster von Grund auf lernen.
 
 Auf dieser Seite sammle ich einige meiner Arbeiten, um einen Beleg für meinen Enthusiasmus und Lernfähigkeit zu liefern und Interesse für ein Angebot als Spieleprogrammierer zu wecken. Mittlerweile hat sich eine Spezifikation des Spielgenres herauskristallisiert, in dem ich gerne arbeite: Spiele, die ohne Gewaltdarstellungen dem Spieler eine eher friedliche, meditative Erfahrung bieten. Wenn Mehrspielermodi vorhanden sind, sollten die Spieler konstruktiv und kooperativ zusammenarbeiten. Optimalerweise kämpft der Spieler im Spiel gegen nichts, und kommt im Spielverlauf zu intuitiven Einsichten über tiefgreifende Themen und Philosophien.  
