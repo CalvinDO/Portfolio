@@ -501,7 +501,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Schleife über jedes gefundene Element
         innerSections.forEach(function(innerSection) {
             // Setzt die Breite jedes Elements auf 80% oder 1200px
-            innerSection.style.setProperty('width', '80%', 'important');  // Oder '1200px', je nach Bedarf
+            innerSection.style.setProperty('width', '61.8%', 'important');  // Oder '1200px', je nach Bedarf
             innerSection.style.setProperty('max-width', 'none', 'important'); // Entfernt max-width
             innerSection.style.setProperty('min-width', 'none', 'important');  // oder '1200px', je nach Bedarf
         });
