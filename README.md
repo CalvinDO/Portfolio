@@ -52,15 +52,11 @@
 
 <details>
   <summary><strong>KLICKEN</strong> Seit Oktober 2019 studierte ich 7 Semester lang Medieninformatik an der Hochschule Furtwangen.</summary>
-  <p>Nach dem ersten Semester erhielt ich von meinen Professoren für Mathematik und Informatik Anfragen als Tutor tätig zu werden und war als solcher für das Modul "Programmierung" eingestellt.</p>
-  
-  <p>Ich beendete das zweite Semester mit einer <a href="#dischoverhfu">360°-Panorama-Verkörperung</a> der Schnitzeljagd an der Hochschule Furtwangen, sowie einer <a href="#eisladen">Eisladen-Website</a> mit Server, realisiert als Browsergame.</p>
-  
-  <p>Das Praktikum als drittes Semester absolvierte ich bei <a href="https://www.weltenbauer-se.com/de" target="_blank">weltenbauer. Software Entwicklung GmbH</a>, wo ich am <a href="#bau-simulator">Bau-Simulator</a> im Developer-Team mitarbeitete. Das Unternehmen behielt mich gleich 2 weitere Jahre als Werkstudent, bis zum Ende des Studiums</p>
-
-  <p>Im vierten und fünften Semester, dem Projektstudium, entwickelte ich in einem sechsköpfigen Team aus engagierten Studenten das tiefgründige psychologische Horror-Spiel <a href="#morbus-animi">Morbus-Animi</a>, das den ersten Platz der IndieNight-Nominierung gewann.</p>
-
-  <p>Im sechsten Semester folgten Spiele wie <a href="#the-last-hope">TheLastHope</a>, einem Rogue-like nach H.P. Lovecraft, entwickelt mit fünf anderen talentierten Studenten, oder <a href="#realtime-beerphong">BeerPhong</a>, einer mobilen browserbasierten AR-Version des berühmten Partyspiels.</p>
+  <p>Nach dem ersten Semester erhielt ich von meinen Professoren für Mathematik und Informatik Anfragen als Tutor tätig zu werden und war als solcher für das Modul "Programmierung" eingestellt. <br>
+  Ich beendete das zweite Semester mit einer <a href="#dischoverhfu">360°-Panorama-Verkörperung</a> der Schnitzeljagd an der Hochschule Furtwangen, sowie einer <a href="#eisladen">Eisladen-Website</a> mit Server, realisiert als Browsergame.  
+ Das Praktikum als drittes Semester absolvierte ich bei <a href="https://www.weltenbauer-se.com/de" target="_blank">weltenbauer. Software Entwicklung GmbH</a>, wo ich am <a href="#bau-simulator">Bau-Simulator</a> im Developer-Team mitarbeitete. Das Unternehmen behielt mich gleich 2 weitere Jahre als Werkstudent, bis zum Ende des Studiums.  
+ Im vierten und fünften Semester, dem Projektstudium, entwickelte ich in einem sechsköpfigen Team aus engagierten Studenten das tiefgründige psychologische Horror-Spiel <a href="#morbus-animi">Morbus-Animi</a>, das den ersten Platz der IndieNight-Nominierung gewann.  
+ Im sechsten Semester folgten Spiele wie <a href="#the-last-hope">TheLastHope</a>, einem Rogue-like nach H.P. Lovecraft, entwickelt mit fünf anderen talentierten Studenten, oder <a href="#realtime-beerphong">BeerPhong</a>, einer mobilen browserbasierten AR-Version des berühmten Partyspiels.</p>
 </details>
 
 <br>
@@ -148,7 +144,8 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
       Klicken zum Spielen
     </div>
     </div>  
-    "Conflux - TheLastHope" entstand in einem sechsköpfigen Team. Im Kurs "Gamedesign Workshop" des sechsten Semesters programmierte ich den Großteil des Unity-Spiels, wie Spielmechanik, Physik-, Animations-, Sound- und KI-Controller, sowie UserInterfaces und Spielbalance. Begonnen mit Themenwahl, Abstimmung über Spielideenvorstellung und einer gemeinsamen Vision und Moodboard, einigten wir uns auf ein Rouge-like, dessen Story sich an H.P.Lovecrafts "Cthulhu-Mythos" orientiert. Der Spieler als Auserwählter utilisiert die 4 Elemente von Gott und Teufel kombinatorisch, um gegen die drohende Instabilisierung des Gleichgewichts durch Cthulhu der Erde anzukämpfen. Es folgten Gameplaypillars und -Loops, USP-Definition, Wireframes für Menüs und Fähigkeitskarten, Bedienungsprofile, Klassendiagramme, Sounddesign, Kanban-Boards und Priorisierungslisten, während in SCRUM-Meetings sorgfältig protokolliert und reviewed wurde. Hierbei half die bereits vorhandene Erfahrung im professionellen Umfeld bei [weltenbauer. Software Entwicklung GmbH](https://www.weltenbauer-se.com/de). Das Projekt endete mit UserTests inklusive Fragebögen, sowie dem Gewinnen der Projektauszeichnung bei der "IndieNight" an der Hochschule Furtwangen.  
+    "Conflux - TheLastHope" entstand in einem sechsköpfigen Team. Im Kurs "Gamedesign Workshop" des sechsten Semesters programmierte ich den Großteil des Unity-Spiels, wie Spielmechanik, Physik-, Animations-, Sound- und KI-Controller, sowie UserInterfaces und Spielbalance. Begonnen mit Themenwahl, Abstimmung über Spielideenvorstellung und einer gemeinsamen Vision und Moodboard, einigten wir uns auf ein Rouge-like, dessen Story sich an H.P.Lovecrafts "Cthulhu-Mythos" orientiert. Der Spieler als Auserwählter utilisiert die 4 Elemente von Gott und Teufel kombinatorisch, um gegen die drohende Instabilisierung des Gleichgewichts durch Cthulhu der Erde anzukämpfen. Es folgten Gameplaypillars und -Loops, USP-Definition, Wireframes für Menüs und Fähigkeitskarten, Bedienungsprofile, Klassendiagramme, Sounddesign, Kanban-Boards und Priorisierungslisten, während in SCRUM-Meetings sorgfältig protokolliert und reviewed wurde. Hierbei half die bereits vorhandene Erfahrung im professionellen Umfeld bei <a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a>.  
+    Das Projekt endete mit UserTests inklusive Fragebögen, sowie dem Gewinnen der Projektauszeichnung bei der "IndieNight" an der Hochschule Furtwangen.  
     Laufen erfolgt mit W A S D, Angreifen mit den Maustasten, Q und E. I öffnet das Inventar. Drag and Drop von einer Fähigkeitskarte auf eine andere ermöglicht das Kombinieren.
   </div>
   <div class = "flex-item">
@@ -188,7 +185,7 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
     Mit zwei Grafikerinnen, einem VFX-Spezialist, einem Storyteller, einem anderen Programmierer und mir entwickelten wir im vierten und fünften Semester im Rahmen des Projektstudiums dieses psychische Horrorspiel. Auch bei der Organisation dieses Projekts half die Erfahrung mit dem SCRUM-System im kommerziellen Umfeld bei [weltenbauer. Software Entwicklung GmbH](https://www.weltenbauer-se.com/de).  
     Ich übernahm bis auf Inventar, Collectables und Menü-GUI das Coding der Skripte, um Spielmechanik, Physik-, Animations-, Sound- und KI-Controller, sowie UserInterfaces und Spielbalance zu realisieren. Besonders die Programmierung des Jump-and-Runs, mit Schwingen und Greifen sowie Hängen an Kanten, lag in meinem Fokus und lieferte eingängige Lernerfahrungen. Gleiches gilt für Entwicklung und Balancing des KI-Gegners mit Unity NavMesh. Auch mit dem Coding modularer Assets bereicherte ich das Projekt und die Kooperation, da andere Abteilungen diese parametrisierten, um Spielgeschehen wie Story-Fortschritt, Puzzle-Logik, Effekte und Sounds zu steuern. Mit diesem Titel gewannen wir den ersten Platz der Projektausstellung bei der "IndieNight" an der Hochschule Furtwangen.
     Die Steuerung wird im Spiel erklärt.
-</div>  
+</div>
 
 ## Gesetzestext-Generator - Rekursives Neuronales Netzwerk
 
