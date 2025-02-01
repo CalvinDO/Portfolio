@@ -91,12 +91,15 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
 }
 
 img, video, .visual-presentation-container {
+
+  display: block;        /* Macht den <a>-Tag zu einem Blockelement, damit es eine feste Größe haben kann */
+
   width: 100%;        /* Bild skaliert auf die Breite des Containers */
   height: auto;       /* Höhe wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
   object-fit: fill;
 }
 
-.
+
 
 </style>
 
