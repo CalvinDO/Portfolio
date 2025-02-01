@@ -445,7 +445,8 @@ Die Motive lehnten ausschließlich an Tribal-Tattoos an.
   Dies ist der Inhalt des dritten ausklappbaren Divs.
 </details>
 -->
-<script>
+
+<!-- <script>
 document.addEventListener("DOMContentLoaded", function() {
     var innerSections = document.querySelectorAll('.inner'); // Holt alle Elemente mit der Klasse .inner
     console.log(innerSections);
@@ -460,4 +461,4 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
-</script>
+</script> -->
