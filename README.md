@@ -447,7 +447,8 @@ Die Motive lehnten ausschließlich an Tribal-Tattoos an.
 -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    var innerSection = document.querySelector('.inner-klasse');
+    var innerSection = document.querySelector('.inner');
+    console.log(innerSection);
     if(innerSection) {
         innerSection.style.width = '80%';
         innerSection.style.width = '1200px';
