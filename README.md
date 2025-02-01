@@ -447,11 +447,15 @@ Die Motive lehnten ausschließlich an Tribal-Tattoos an.
 -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    var innerSection = document.querySelector('.inner');
-    console.log(innerSection);
-    if(innerSection) {
-        innerSection.style.width = '80%';
-        innerSection.style.width = '1200px';
+    var innerSections = document.querySelectorAll('.inner'); // Holt alle Elemente mit der Klasse .inner
+    console.log(innerSections);
+    // Überprüft, ob es überhaupt Elemente gibt
+    if(innerSections.length > 0) {
+        // Schleife über jedes gefundene Element
+        innerSections.forEach(function(innerSection) {
+            // Setzt die Breite jedes Elements auf 80% oder 1200px
+            innerSection.style.width = '80%';  // oder '1200px', je nach Bedarf
+        });
     }
 });
 </script>
