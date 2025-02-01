@@ -445,3 +445,12 @@ Die Motive lehnten ausschließlich an Tribal-Tattoos an.
   Dies ist der Inhalt des dritten ausklappbaren Divs.
 </details>
 -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var innerSection = document.querySelector('.inner-klasse');
+    if(innerSection) {
+        innerSection.style.width = '80%';
+        innerSection.style.width = '1200px';
+    }
+});
+</script>
