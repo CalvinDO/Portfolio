@@ -76,7 +76,43 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
 
 # Coding
 
+## Bau-Simulator
+
+<div style="position: relative; display: inline-block; cursor: pointer;">
+  <a href="https://store.steampowered.com/app/1273400/BauSimulator">
+    <video width="100%" controls loop>
+        <source src="ConstructionSimulator.mp4" alt="ConstructionSimulator" type="video/mp4"/>
+        Ihr Browser unterstützt den Video-Tag nicht
+    </video>
+  </a>
+  <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
+    Klicken zum Spielen
+  </div>
+</div>  
+Im Dev-Team bei [weltenbauer. Software Entwicklung GmbH](https://www.weltenbauer-se.com/de) arbeitete ich mit insgesamt 25 Mitarbeitern und weiteren Outsourcern vom Winter 2020 bis zum Frühling 2023. Begonnen als Praktikant im Büro für das dritte Semester, behielt mich das Unternehmen überzeugt als Werkstudent bis zum Bachelor-Abschluss. So sammelte ich zwei weitere Jahre lang Erfahrung in der Programmierung eines kommerziellen Mid-Tier Games. Neben strukturellem Arbeiten mit agilem Projektmanagement, wie SCRUM-Sprintmeetings, Atlassian Confluence, Versionskontrolle, Bugtracking mit Mantis in einem größeren Team und Orientierung nach Vorgaben eines kommerziellen Publishers (Astragon), sowie Synergie mit Grafiker- und QA-Departments vertiefte ich mich in fortgeschrittene Programmierung mit Unity und C#. Desweiteren lernte ich FMOD als Audio-Integrationssoftware für Unity kennen.  
+Meine Hauptbeschäftigung bestand aus dem Fahrzeug-Setup, bei dem ich Modelle der Grafiker mit Logikbausteinen der Programmierer zu funktionsfähigen Baumaschinen integrierte. Da jedes der >80 Fahrzeuge sich in seinen Funktionen unterscheidet, wie beispielsweise Rotationslimits von Schaufeln und Armen oder Schaltpunkte der Motoren- und Getriebesimulation, zeichnete sich das Fahrzeug-Setup größtenteils durch Parametrierung der Logik-Assets aus. Ein weiterer Bestandteil war die intensive Kommunikation mit dem Grafik-Team, falls Meshes der Modelle ausgetauscht oder ergänzt werden mussten. Besonders im Bereich des Hydraulik-, Fahrkabinen-, Licht-, und Spiegel-Setups war die interdisziplinäre Kooperation mit dem Art-Department essentiell. Viele Ressourcen flossen auch in das Aufsetzen der Terrainsimulation, um Schuttfüllungen in verschiedenen Werkzeugen wie Schaufeln und Kipper von Mulden zu realisieren. Auch zum Fahrzeug-Setup gehörte die auditive Simulation des Baugeschehens, bei dem ich den Umgang mit Banks in FMOD lernte.  
+Meine restliche Arbeit am Bau-Simulator bestand zum Einen aus der Programmierung eines zentralen Debug-UserInterfaces, mit dem neben allen Departments vor allem die Tester der Quality-Assurance das Command-System grafisch aufbereitet und effizient benutzen können. Darunter fällt das Springen zu und Erledigen von Missionen, Spawnen von Fahrzeugen, Cargo und Props, Einstellen globaler Parameter und weitere Steuerung des Spielgeschehens auf vielen Ebenen. Für die Realisierung des Aufbaus und Designs wählte ich einen dynamisch-generischen Ansatz, der das gesamte Command-System des Spiels als Konstellation von Knöpfen, Reglern und Eingabefeldern, geordnet unter mehreren Hierarchieebenen, generiert. Somit verringerte sich der Wartungsbedarf, da neu registrierte Kommandos direkt richtig in dem Debug-UI dargestellt werden.  
+Zum Anderen bestand meine Arbeit auch aus der Programmierung einer Anzeige des Navigations-Pfades in der Minimap, um Spieler anschaulich zu ihrem Ziel in der Welt zu leiten. Hier halfen mir meine Kenntnisse der Projektion von Räumen höherer Dimensionen in Räume niederer, die ich bereits in dem Kurs "Mathematik und Simulation" erlernte -- Link zum entsprechenden Projekt --
+
 <div style="display: flex; gap: 20px;">
+  <div style="width: 33%; background-color: #f0f0f0; padding: 10px;">
+    <h2>Bau-Simulator</h2>
+    <div style="position: relative; display: inline-block; cursor: pointer;">
+    <a href="https://store.steampowered.com/app/1273400/BauSimulator">
+    <video width="100%" controls loop>
+        <source src="ConstructionSimulator.mp4" alt="ConstructionSimulator" type="video/mp4"/>
+        Ihr Browser unterstützt den Video-Tag nicht
+    </video>
+    </a>
+      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
+      Klicken zum Spielen
+      </div>
+    </div>  
+    Im Dev-Team bei [weltenbauer. Software Entwicklung GmbH](https://www.weltenbauer-se.com/de) arbeitete ich mit insgesamt 25 Mitarbeitern und weiteren Outsourcern vom Winter 2020 bis zum Frühling 2023. Begonnen als Praktikant im Büro für das dritte Semester, behielt mich das Unternehmen überzeugt als Werkstudent bis zum Bachelor-Abschluss. So sammelte ich zwei weitere Jahre lang Erfahrung in der Programmierung eines kommerziellen Mid-Tier Games. Neben strukturellem Arbeiten mit agilem Projektmanagement, wie SCRUM-Sprintmeetings, Atlassian Confluence, Versionskontrolle, Bugtracking mit Mantis in einem größeren Team und Orientierung nach Vorgaben eines kommerziellen Publishers (Astragon), sowie Synergie mit Grafiker- und QA-Departments vertiefte ich mich in fortgeschrittene Programmierung mit Unity und C#. Desweiteren lernte ich FMOD als Audio-Integrationssoftware für Unity kennen.  
+    Meine Hauptbeschäftigung bestand aus dem Fahrzeug-Setup, bei dem ich Modelle der Grafiker mit Logikbausteinen der Programmierer zu funktionsfähigen Baumaschinen integrierte. Da jedes der >80 Fahrzeuge sich in seinen Funktionen unterscheidet, wie beispielsweise Rotationslimits von Schaufeln und Armen oder Schaltpunkte der Motoren- und Getriebesimulation, zeichnete sich das Fahrzeug-Setup größtenteils durch Parametrierung der Logik-Assets aus. Ein weiterer Bestandteil war die intensive Kommunikation mit dem Grafik-Team, falls Meshes der Modelle ausgetauscht oder ergänzt werden mussten. Besonders im Bereich des Hydraulik-, Fahrkabinen-, Licht-, und Spiegel-Setups war die interdisziplinäre Kooperation mit dem Art-Department essentiell. Viele Ressourcen flossen auch in das Aufsetzen der Terrainsimulation, um Schuttfüllungen in verschiedenen Werkzeugen wie Schaufeln und Kipper von Mulden zu realisieren. Auch zum Fahrzeug-Setup gehörte die auditive Simulation des Baugeschehens, bei dem ich den Umgang mit Banks in FMOD lernte.  
+    Meine restliche Arbeit am Bau-Simulator bestand zum Einen aus der Programmierung eines zentralen Debug-UserInterfaces, mit dem neben allen Departments vor allem die Tester der Quality-Assurance das Command-System grafisch aufbereitet und effizient benutzen können. Darunter fällt das Springen zu und Erledigen von Missionen, Spawnen von Fahrzeugen, Cargo und Props, Einstellen globaler Parameter und weitere Steuerung des Spielgeschehens auf vielen Ebenen. Für die Realisierung des Aufbaus und Designs wählte ich einen dynamisch-generischen Ansatz, der das gesamte Command-System des Spiels als Konstellation von Knöpfen, Reglern und Eingabefeldern, geordnet unter mehreren Hierarchieebenen, generiert. Somit verringerte sich der Wartungsbedarf, da neu registrierte Kommandos direkt richtig in dem Debug-UI dargestellt werden.  
+    Zum Anderen bestand meine Arbeit auch aus der Programmierung einer Anzeige des Navigations-Pfades in der Minimap, um Spieler anschaulich zu ihrem Ziel in der Welt zu leiten. Hier halfen mir meine Kenntnisse der Projektion von Räumen höherer Dimensionen in Räume niederer, die ich bereits in dem Kurs "Mathematik und Simulation" erlernte -- Link zum entsprechenden Projekt --  
+  </div>
   <div style="width: 33%; background-color: #f0f0f0; padding: 10px;">
     <h2>Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen</h2>
     <h3><a href="NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">Bachelor Thesis - Zur PDF</a></h3>
@@ -133,27 +169,6 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
     Die Umsetzung innerhalb des Kurses "Echtzeit-Computergrafik" im sechsten Semester erfolgte mit WebAR, JavaScript und GLSL. In einem dreiköpfigen Team machten wir uns mit Programmierung von Vertex- und Fragmentshadern vertraut, sowie mit Umgebungsvariablen von WebAR und "Three.js".
   </div>
 </div>
-
-## Realtime-BeerPhong
-
-### Mobile Web-AR Partyspiel - Shaderprogrammierung
-
-<div style="display: flex; justify-content: space-between;">
-  <a href="https://calvindo.github.io/Realtime-BeerPhong/aFrame.html">
-    <div style="position: relative;">
-      <img src="BeerPhong.jpeg" width="100%">
-      <div style="position: absolute; top: 24%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5;">Klicken zum Spielen</div>
-    </div>
-  </a>  
-  <a href="BeerPhongMarker.png" download>
-    <div style="position: relative;">
-      <img src="BeerPhongMarker.png" width="100%">
-      <div style="position: absolute; bottom: 20%; left: 50%; transform: translateX(-50%); color: black; font-size: 2em; opacity: 0.5;">Klicken zum Download</div>
-    </div>
-  </a>
-</div>  
-Dieses webbasierte Mobile-Game erfordert einen AR-Marker, über dem auf dem Smartphone ein Beerpong-Tisch mit Bechern als Ziele generiert wird. Der Spieler bewegt sich um den Tisch herum, um aus einer günstigen Abwurfposition heraus den Ball mit einem Swipe auf dem Touchscreen so in die Spielszene zu werfen, dass er direkt oder nach Aufkommen auf der Platte in einem Becher landet.  
-Die Umsetzung innerhalb des Kurses "Echtzeit-Computergrafik" im sechsten Semester erfolgte mit WebAR, JavaScript und GLSL. In einem dreiköpfigen Team machten wir uns mit Programmierung von Vertex- und Fragmentshadern vertraut, sowie mit Umgebungsvariablen von WebAR und "Three.js".
 
 ## Morbus-Animi
 
