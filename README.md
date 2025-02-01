@@ -49,13 +49,18 @@
 <br>
 
 <details>
-  <summary><strong>KLICKEN</strong> Seit Oktober 2019 studierte ich 7 Semester lang Medieninformatik an der Hochschule Furtwangen.</summary>  
-  Nach dem ersten Semester erhielt ich von meinen Professoren für Mathematik und Informatik Anfragen als Tutor tätig zu werden, und war als solcher für das Modul "Programmierung" eingestellt. Ich beendete das zweite Semester mit einer [360°-Panorama-Verkörperung](#dischoverhfu) der Schnitzeljagd an der Hochschule Furtwangen, sowie einer [Eisladen-Website](#eisladen) mit Server, realisiert als Browsergame.  
+  <summary><strong>KLICKEN</strong> Seit Oktober 2019 studierte ich 7 Semester lang Medieninformatik an der Hochschule Furtwangen.</summary>
+  <p>Nach dem ersten Semester erhielt ich von meinen Professoren für Mathematik und Informatik Anfragen als Tutor tätig zu werden und war als solcher für das Modul "Programmierung" eingestellt.</p>
+  
+  <p>Ich beendete das zweite Semester mit einer <a href="#dischoverhfu">360°-Panorama-Verkörperung</a> der Schnitzeljagd an der Hochschule Furtwangen, sowie einer <a href="#eisladen">Eisladen-Website</a> mit Server, realisiert als Browsergame.</p>
+  
+  <p>Das Praktikum als drittes Semester absolvierte ich bei <a href="https://www.weltenbauer-se.com/de" target="_blank">weltenbauer. Software Entwicklung GmbH</a>, wo ich am <a href="#bau-simulator">Bau-Simulator</a> im Developer-Team mitarbeitete. Das Unternehmen behielt mich gleich als Werkstudent, bis zur Abgabe der <a href="#neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen">Thesis</a>.</p>
 
-  Das Praktikum als drittes Semester absolvierte ich bei [weltenbauer. Software Entwicklung GmbH](https://www.weltenbauer-se.com/de), wo ich am [Bau-Simulator](#bau-simulator) im Developer-Team mitarbeitete. Das Unternehmen behielt mich gleich als Werkstudent, bis zur Abgabe der [Thesis](#neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen).  
+  <p>Im vierten und fünften Semester, dem Projektstudium, entwickelte ich in einem sechsköpfigen Team aus engagierten Studenten das tiefgründige psychologische Horror-Spiel <a href="#morbus-animi">Morbus-Animi</a>, das den ersten Platz der IndieNight-Nominierung gewann.</p>
 
-  Im vierten und fünften Semester, dem Projektstudium, entwickelte ich in einem sechsköpfigen Team aus engagierten Studenten das tiefgründige psychologische Horror-Spiel [Morbus-Animi](#morbus-animi), das den ersten Platz der IndieNight-Nominierung gewann. Im sechsten Semester folgten Spiele wie [TheLastHope](#the-last-hope), einem Rouge-like nach H.P. Lovecraft, entwickelt mit fünf anderen talentierten Studenten, oder [BeerPhong](#realtime-beerphong), einer mobilen browserbasierten AR-Version des berühmten Partyspiels.  
+  <p>Im sechsten Semester folgten Spiele wie <a href="#the-last-hope">TheLastHope</a>, einem Rogue-like nach H.P. Lovecraft, entwickelt mit fünf anderen talentierten Studenten, oder <a href="#realtime-beerphong">BeerPhong</a>, einer mobilen browserbasierten AR-Version des berühmten Partyspiels.</p>
 </details>
+
 
 <br>
 
