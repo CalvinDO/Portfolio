@@ -80,14 +80,20 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
   .flex-container {
   display: flex;
   flex-wrap: wrap;
+
+  gap: 10px; /* Abstand zwischen den Items */
 }
 
 .flex-item {
-  flex: 1 1 30%; /* Jedes Element nimmt mindestens 30% der Breite ein, so dass maximal 3 Elemente pro Zeile passen */
+
+  flex: 1 1 calc(33.333% - 10px); /* Basisbreite für 3 pro Zeile, abzüglich Abstand */
+  max-width: calc(33.333% - 10px); /* Verhindert, dass einzelne Items die ganze Zeile einnehmen */
   box-sizing: border-box; /* Stellen sicher, dass Padding und Border berücksichtigt werden */
   padding: 10px; /* Optional, für Abstand zwischen den Elementen */
   width: 33%;
   background-color: #f0f0f0;
+
+
 }
 </style>
 
