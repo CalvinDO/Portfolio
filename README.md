@@ -44,7 +44,7 @@
 
 <details>
   <summary><strong>KLICKEN</strong> Beim GlobalGameJam 2020 im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines VR-Spiels mit.</summary>
-  <p>Wobei meine Hauptaufgaben bei Gamedesign und Sound lagen (<a href="#fuwashima-soundtrack-zum-globalgamejam2020">Fuwashima</a>).</p>
+  <p>Meine Hauptaufgaben lagen bei Gamedesign und Sound (<a href="#fuwashima-soundtrack-zum-globalgamejam2020">Fuwashima</a>).</p>
   <p>Dieses Event weckte bei mir erneut das Interesse an der 3D-Programmierung und dem 3D-Modeling, weshalb ich mich in Unity und Blender weiter vertiefte.</p>
 </details>
 <br>
