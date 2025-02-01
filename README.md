@@ -117,7 +117,7 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
     Zum Anderen bestand meine Arbeit auch aus der Programmierung einer Anzeige des Navigations-Pfades in der Minimap, um Spieler anschaulich zu ihrem Ziel in der Welt zu leiten. Hier halfen mir meine Kenntnisse der Projektion von Räumen höherer Dimensionen in Räume niederer, die ich bereits in dem Kurs "Mathematik und Simulation" erlernte -- Link zum entsprechenden Projekt --  
   </div>
   <div class = "flex-item">
-    <h2>Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen</h2>
+    <h2 id = "neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen">Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen</h2>
     <h3><a href="NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">Bachelor Thesis - Zur PDF</a></h3>
     <div style="position: relative; display: inline-block; cursor: pointer;">
     <a href="https://simmer.io/@DerCalvino/neuroevolutionbenutzerdefiniertermehrbeinigerkreaturen">
@@ -136,7 +136,7 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
   </div>
 
   <div class = "flex-item">
-    <h2>The Last Hope <br></h2>
+    <h2 id ="the-last-hope">The Last Hope <br></h2>
     <div style="position: relative; display: inline-block; cursor: pointer;">
     <a href="https://simmer.io/@DerCalvino/thelasthope">
       <video width="100%" controls loop>
@@ -152,7 +152,7 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
     Laufen erfolgt mit W A S D, Angreifen mit den Maustasten, Q und E. I öffnet das Inventar. Drag and Drop von einer Fähigkeitskarte auf eine andere ermöglicht das Kombinieren.
   </div>
   <div class = "flex-item">
-    <h2>Realtime-BeerPhong</h2>
+    <h2 id ="realtime-beerphong">Realtime-BeerPhong</h2>
     <h3>Mobile Web-AR Partyspiel - Shaderprogrammierung</h3>
     <div style="display: flex; justify-content: space-between;">
       <a href="https://calvindo.github.io/Realtime-BeerPhong/aFrame.html">
@@ -171,42 +171,23 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
     Dieses webbasierte Mobile-Game erfordert einen AR-Marker, über dem auf dem Smartphone ein Beerpong-Tisch mit Bechern als Ziele generiert wird. Der Spieler bewegt sich um den Tisch herum, um aus einer günstigen Abwurfposition heraus den Ball mit einem Swipe auf dem Touchscreen so in die Spielszene zu werfen, dass er direkt oder nach Aufkommen auf der Platte in einem Becher landet.  
     Die Umsetzung innerhalb des Kurses "Echtzeit-Computergrafik" im sechsten Semester erfolgte mit WebAR, JavaScript und GLSL. In einem dreiköpfigen Team machten wir uns mit Programmierung von Vertex- und Fragmentshadern vertraut, sowie mit Umgebungsvariablen von WebAR und "Three.js".
   </div>
+
   <div class = "flex-item">
-    <h2>The Last Hope <br></h2>
+    <h2 id = "morbus-animi">Morbus-Animi <br></h2>
     <div style="position: relative; display: inline-block; cursor: pointer;">
-    <a href="https://simmer.io/@DerCalvino/thelasthope">
-      <video width="100%" controls loop>
-          <source src="TheLastHope.mp4" alt="TheLastHope" type="video/mp4"/>
-          Ihr Browser unterstützt den Video-Tag nicht
-      </video>
+    <a href="https://simmer.io/@DerCalvino/morbus-animi-final">
+    <video width="100%" controls loop>
+        <source src="Morbus-Animi.mp4" alt="Morbus-Animi" type="video/mp4"/>
+        Ihr Browser unterstützt den Video-Tag nicht
+    </video>
     </a>
     <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-      Klicken zum Spielen
+    Klicken zum Spielen
     </div>
     </div>  
-    "Conflux - TheLastHope" entstand in einem sechsköpfigen Team. Im Kurs "Gamedesign Workshop" des sechsten Semesters programmierte ich den Großteil des Unity-Spiels, wie Spielmechanik, Physik-, Animations-, Sound- und KI-Controller, sowie UserInterfaces und Spielbalance. Begonnen mit Themenwahl, Abstimmung über Spielideenvorstellung und einer gemeinsamen Vision und Moodboard, einigten wir uns auf ein Rouge-like, dessen Story sich an H.P.Lovecrafts "Cthulhu-Mythos" orientiert. Der Spieler als Auserwählter utilisiert die 4 Elemente von Gott und Teufel kombinatorisch, um gegen die drohende Instabilisierung des Gleichgewichts durch Cthulhu der Erde anzukämpfen. Es folgten Gameplaypillars und -Loops, USP-Definition, Wireframes für Menüs und Fähigkeitskarten, Bedienungsprofile, Klassendiagramme, Sounddesign, Kanban-Boards und Priorisierungslisten, während in SCRUM-Meetings sorgfältig protokolliert und reviewed wurde. Hierbei half die bereits vorhandene Erfahrung im professionellen Umfeld bei [weltenbauer. Software Entwicklung GmbH](https://www.weltenbauer-se.com/de). Das Projekt endete mit UserTests inklusive Fragebögen, sowie dem Gewinnen der Projektauszeichnung bei der "IndieNight" an der Hochschule Furtwangen.  
-    Laufen erfolgt mit W A S D, Angreifen mit den Maustasten, Q und E. I öffnet das Inventar. Drag and Drop von einer Fähigkeitskarte auf eine andere ermöglicht das Kombinieren.
-  </div>
-  <div class = "flex-item">
-    <h2>Realtime-BeerPhong</h2>
-    <h3>Mobile Web-AR Partyspiel - Shaderprogrammierung</h3>
-    <div style="display: flex; justify-content: space-between;">
-      <a href="https://calvindo.github.io/Realtime-BeerPhong/aFrame.html">
-      <div style="position: relative;">
-        <img src="BeerPhong.jpeg" width="100%">
-        <div style="position: absolute; top: 24%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5;">Klicken zum Spielen</div>
-      </div>
-      </a>  
-      <a href="BeerPhongMarker.png" download>
-      <div style="position: relative;">
-        <img src="BeerPhongMarker.png" width="100%">
-        <div style="position: absolute; bottom: 20%; left: 50%; transform: translateX(-50%); color: black; font-size: 2em; opacity: 0.5;">Klicken zum Download</div>
-      </div>
-      </a>
-    </div>  
-    Dieses webbasierte Mobile-Game erfordert einen AR-Marker, über dem auf dem Smartphone ein Beerpong-Tisch mit Bechern als Ziele generiert wird. Der Spieler bewegt sich um den Tisch herum, um aus einer günstigen Abwurfposition heraus den Ball mit einem Swipe auf dem Touchscreen so in die Spielszene zu werfen, dass er direkt oder nach Aufkommen auf der Platte in einem Becher landet.  
-    Die Umsetzung innerhalb des Kurses "Echtzeit-Computergrafik" im sechsten Semester erfolgte mit WebAR, JavaScript und GLSL. In einem dreiköpfigen Team machten wir uns mit Programmierung von Vertex- und Fragmentshadern vertraut, sowie mit Umgebungsvariablen von WebAR und "Three.js".
-  </div>
+    Mit zwei Grafikerinnen, einem VFX-Spezialist, einem Storyteller, einem anderen Programmierer und mir entwickelten wir im vierten und fünften Semester im Rahmen des Projektstudiums dieses psychische Horrorspiel. Auch bei der Organisation dieses Projekts half die Erfahrung mit dem SCRUM-System im kommerziellen Umfeld bei [weltenbauer. Software Entwicklung GmbH](https://www.weltenbauer-se.com/de).  
+    Ich übernahm bis auf Inventar, Collectables und Menü-GUI das Coding der Skripte, um Spielmechanik, Physik-, Animations-, Sound- und KI-Controller, sowie UserInterfaces und Spielbalance zu realisieren. Besonders die Programmierung des Jump-and-Runs, mit Schwingen und Greifen sowie Hängen an Kanten, lag in meinem Fokus und lieferte eingängige Lernerfahrungen. Gleiches gilt für Entwicklung und Balancing des KI-Gegners mit Unity NavMesh. Auch mit dem Coding modularer Assets bereicherte ich das Projekt und die Kooperation, da andere Abteilungen diese parametrisierten, um Spielgeschehen wie Story-Fortschritt, Puzzle-Logik, Effekte und Sounds zu steuern. Mit diesem Titel gewannen wir den ersten Platz der Projektausstellung bei der "IndieNight" an der Hochschule Furtwangen.
+    Die Steuerung wird im Spiel erklärt.
 </div>
 
 ## Morbus-Animi
