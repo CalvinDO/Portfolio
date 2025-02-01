@@ -94,8 +94,23 @@ Meine Hauptbeschäftigung bestand aus dem Fahrzeug-Setup, bei dem ich Modelle de
 Meine restliche Arbeit am Bau-Simulator bestand zum Einen aus der Programmierung eines zentralen Debug-UserInterfaces, mit dem neben allen Departments vor allem die Tester der Quality-Assurance das Command-System grafisch aufbereitet und effizient benutzen können. Darunter fällt das Springen zu und Erledigen von Missionen, Spawnen von Fahrzeugen, Cargo und Props, Einstellen globaler Parameter und weitere Steuerung des Spielgeschehens auf vielen Ebenen. Für die Realisierung des Aufbaus und Designs wählte ich einen dynamisch-generischen Ansatz, der das gesamte Command-System des Spiels als Konstellation von Knöpfen, Reglern und Eingabefeldern, geordnet unter mehreren Hierarchieebenen, generiert. Somit verringerte sich der Wartungsbedarf, da neu registrierte Kommandos direkt richtig in dem Debug-UI dargestellt werden.  
 Zum Anderen bestand meine Arbeit auch aus der Programmierung einer Anzeige des Navigations-Pfades in der Minimap, um Spieler anschaulich zu ihrem Ziel in der Welt zu leiten. Hier halfen mir meine Kenntnisse der Projektion von Räumen höherer Dimensionen in Räume niederer, die ich bereits in dem Kurs "Mathematik und Simulation" erlernte -- Link zum entsprechenden Projekt --
 
-<div style="display: flex; gap: 20px;">
-  <div style="width: 33%; background-color: #f0f0f0; padding: 10px;">
+<style>
+  .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  flex: 1 1 30%; /* Jedes Element nimmt mindestens 30% der Breite ein, so dass maximal 3 Elemente pro Zeile passen */
+  box-sizing: border-box; /* Stellen sicher, dass Padding und Border berücksichtigt werden */
+  padding: 10px; /* Optional, für Abstand zwischen den Elementen */
+  width: 33%;
+  background-color: #f0f0f0;
+}
+</style>
+
+<div class = "flex-container">
+  <div class = "flex-item">
     <h2>Bau-Simulator</h2>
     <div style="position: relative; display: inline-block; cursor: pointer;">
     <a href="https://store.steampowered.com/app/1273400/BauSimulator">
@@ -113,7 +128,7 @@ Zum Anderen bestand meine Arbeit auch aus der Programmierung einer Anzeige des N
     Meine restliche Arbeit am Bau-Simulator bestand zum Einen aus der Programmierung eines zentralen Debug-UserInterfaces, mit dem neben allen Departments vor allem die Tester der Quality-Assurance das Command-System grafisch aufbereitet und effizient benutzen können. Darunter fällt das Springen zu und Erledigen von Missionen, Spawnen von Fahrzeugen, Cargo und Props, Einstellen globaler Parameter und weitere Steuerung des Spielgeschehens auf vielen Ebenen. Für die Realisierung des Aufbaus und Designs wählte ich einen dynamisch-generischen Ansatz, der das gesamte Command-System des Spiels als Konstellation von Knöpfen, Reglern und Eingabefeldern, geordnet unter mehreren Hierarchieebenen, generiert. Somit verringerte sich der Wartungsbedarf, da neu registrierte Kommandos direkt richtig in dem Debug-UI dargestellt werden.  
     Zum Anderen bestand meine Arbeit auch aus der Programmierung einer Anzeige des Navigations-Pfades in der Minimap, um Spieler anschaulich zu ihrem Ziel in der Welt zu leiten. Hier halfen mir meine Kenntnisse der Projektion von Räumen höherer Dimensionen in Räume niederer, die ich bereits in dem Kurs "Mathematik und Simulation" erlernte -- Link zum entsprechenden Projekt --  
   </div>
-  <div style="width: 33%; background-color: #f0f0f0; padding: 10px;">
+  <div class = "flex-item">
     <h2>Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen</h2>
     <h3><a href="NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">Bachelor Thesis - Zur PDF</a></h3>
     <div style="position: relative; display: inline-block; cursor: pointer;">
@@ -132,7 +147,7 @@ Zum Anderen bestand meine Arbeit auch aus der Programmierung einer Anzeige des N
     Die Kamera kann im Editor mit Mausbewegung und Drücken sowie Scrollen der mittleren Maustaste gesteuert werden. Bauen neuer Glieder wird mit Linksklick gestartet und mit Mausbewegung verlängert. Ein erneuter Linksklick schließt das Bauen ab, während die rechte Maustaste das Bauen abbricht. Den Rotations-Einstellungs-Modus schalten Sie mit "R" um. Weitere Anleitung finden Sie in der <a href = "NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">Thesis</a>
   </div>
 
-  <div style="width: 33%; background-color: #f0f0f0; padding: 10px;">
+  <div class = "flex-item">
     <h2>The Last Hope</h2>
     <div style="position: relative; display: inline-block; cursor: pointer;">
     <a href="https://simmer.io/@DerCalvino/thelasthope">
@@ -148,7 +163,7 @@ Zum Anderen bestand meine Arbeit auch aus der Programmierung einer Anzeige des N
     "Conflux - TheLastHope" entstand in einem sechsköpfigen Team. Im Kurs "Gamedesign Workshop" des sechsten Semesters programmierte ich den Großteil des Unity-Spiels, wie Spielmechanik, Physik-, Animations-, Sound- und KI-Controller, sowie UserInterfaces und Spielbalance. Begonnen mit Themenwahl, Abstimmung über Spielideenvorstellung und einer gemeinsamen Vision und Moodboard, einigten wir uns auf ein Rouge-like, dessen Story sich an H.P.Lovecrafts "Cthulhu-Mythos" orientiert. Der Spieler als Auserwählter utilisiert die 4 Elemente von Gott und Teufel kombinatorisch, um gegen die drohende Instabilisierung des Gleichgewichts durch Cthulhu der Erde anzukämpfen. Es folgten Gameplaypillars und -Loops, USP-Definition, Wireframes für Menüs und Fähigkeitskarten, Bedienungsprofile, Klassendiagramme, Sounddesign, Kanban-Boards und Priorisierungslisten, während in SCRUM-Meetings sorgfältig protokolliert und reviewed wurde. Hierbei half die bereits vorhandene Erfahrung im professionellen Umfeld bei [weltenbauer. Software Entwicklung GmbH](https://www.weltenbauer-se.com/de). Das Projekt endete mit UserTests inklusive Fragebögen, sowie dem Gewinnen der Projektauszeichnung bei der "IndieNight" an der Hochschule Furtwangen.  
     Laufen erfolgt mit W A S D, Angreifen mit den Maustasten, Q und E. I öffnet das Inventar. Drag and Drop von einer Fähigkeitskarte auf eine andere ermöglicht das Kombinieren.
   </div>
-<div style="width: 33%; background-color: #f0f0f0; padding: 10px;">
+<div class = "flex-item">
     <h2>Realtime-BeerPhong</h2>
     <h3>Mobile Web-AR Partyspiel - Shaderprogrammierung</h3>
     <div style="display: flex; justify-content: space-between;">
