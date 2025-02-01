@@ -45,18 +45,18 @@
 
 <details>
   <summary><strong>KLICKEN</strong> Beim GlobalGameJam 2020 im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines VR-Spiels mit.</summary>
-  <p>Meine Hauptaufgaben lagen bei Gamedesign und Sound (<a href="#fuwashima-soundtrack-zum-globalgamejam2020">Fuwashima</a>).</p>
-  <p>Dieses Event weckte bei mir erneut das Interesse an der 3D-Programmierung und dem 3D-Modeling, weshalb ich mich in Unity und Blender weiter vertiefte.</p>
+  <p>Meine Hauptaufgaben lagen bei Gamedesign und Sound (<a href="#fuwashima-soundtrack-zum-globalgamejam2020">Fuwashima</a>).<br>
+  Dieses Event weckte bei mir erneut das Interesse an der 3D-Programmierung und dem 3D-Modeling, weshalb ich mich in Unity und Blender weiter vertiefte.</p>
 </details>
 <br>
 
 <details>
   <summary><strong>KLICKEN</strong> Seit Oktober 2019 studierte ich 7 Semester lang Medieninformatik an der Hochschule Furtwangen.</summary>
   <p>Nach dem ersten Semester erhielt ich von meinen Professoren für Mathematik und Informatik Anfragen als Tutor tätig zu werden und war als solcher für das Modul "Programmierung" eingestellt. <br>
-  Ich beendete das zweite Semester mit einer <a href="#dischoverhfu">360°-Panorama-Verkörperung</a> der Schnitzeljagd an der Hochschule Furtwangen, sowie einer <a href="#eisladen">Eisladen-Website</a> mit Server, realisiert als Browsergame.  
- Das Praktikum als drittes Semester absolvierte ich bei <a href="https://www.weltenbauer-se.com/de" target="_blank">weltenbauer. Software Entwicklung GmbH</a>, wo ich am <a href="#bau-simulator">Bau-Simulator</a> im Developer-Team mitarbeitete. Das Unternehmen behielt mich gleich 2 weitere Jahre als Werkstudent, bis zum Ende des Studiums.  
- Im vierten und fünften Semester, dem Projektstudium, entwickelte ich in einem sechsköpfigen Team aus engagierten Studenten das tiefgründige psychologische Horror-Spiel <a href="#morbus-animi">Morbus-Animi</a>, das den ersten Platz der IndieNight-Nominierung gewann.  
- Im sechsten Semester folgten Spiele wie <a href="#the-last-hope">TheLastHope</a>, einem Rogue-like nach H.P. Lovecraft, entwickelt mit fünf anderen talentierten Studenten, oder <a href="#realtime-beerphong">BeerPhong</a>, einer mobilen browserbasierten AR-Version des berühmten Partyspiels.</p>
+  Ich beendete das zweite Semester mit einer <a href="#dischoverhfu">360°-Panorama-Verkörperung</a> der Schnitzeljagd an der Hochschule Furtwangen, sowie einer <a href="#eisladen">Eisladen-Website</a> mit Server, realisiert als Browsergame. <br>  
+  Das Praktikum als drittes Semester absolvierte ich bei <a href="https://www.weltenbauer-se.com/de" target="_blank">weltenbauer. Software Entwicklung GmbH</a>, wo ich am <a href="#bau-simulator">Bau-Simulator</a> im Developer-Team mitarbeitete. Das Unternehmen behielt mich gleich 2 weitere Jahre als Werkstudent, bis zum Ende des Studiums.<br>
+  Im vierten und fünften Semester, dem Projektstudium, entwickelte ich in einem sechsköpfigen Team aus engagierten Studenten das tiefgründige psychologische Horror-Spiel <a href="#morbus-animi">Morbus-Animi</a>, das den ersten Platz der IndieNight-Nominierung gewann.<br>
+  Im sechsten Semester folgten Spiele wie <a href="#the-last-hope">TheLastHope</a>, einem Rogue-like nach H.P. Lovecraft, entwickelt mit fünf anderen talentierten Studenten, oder <a href="#realtime-beerphong">BeerPhong</a>, einer mobilen browserbasierten AR-Version des berühmten Partyspiels.</p>
 </details>
 
 <br>
