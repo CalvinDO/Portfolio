@@ -228,7 +228,7 @@ Geplant ist Implementierung von und Testen der Performance von LSTM als weitere 
 
 <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
   <a class = "visual-presentation-container" href="Code/TreeGenerator/TreeGenerator.zip" download>
-    <img src="TreeGenerator.png" width="100%">
+    <img class = "visual-presentation-container" src="TreeGenerator.png" width="100%">
   </a>
   <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none; white-space: nowrap;">
     Klicken zum Downloaden
