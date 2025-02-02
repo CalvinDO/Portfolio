@@ -70,9 +70,12 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
 <hr/>  
 <hr/>
 
-# Coding
-
 <style>
+
+h1{
+  text-align: center;
+}
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -113,6 +116,8 @@ video, img, .visual-presentation-container {
   margin: 0
 }
 </style>
+
+# Coding
 
 <div class = "flex-container">
   <div class = "flex-item">
