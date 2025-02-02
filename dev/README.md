@@ -175,7 +175,7 @@ video, img, .visual-presentation-container {
     Laufen erfolgt mit W A S D, Angreifen mit den Maustasten, Q und E. I öffnet das Inventar. Drag and Drop von einer Fähigkeitskarte auf eine andere ermöglicht das Kombinieren.
   </div>
   <div class = "flex-item">
-    <h2 id ="realtime-beerphong">Realtime-BeerPhong</h2>
+    <h2 id ="realtime-beerphong">Realtime-BeerPhong <br><br><br></h2>
     <div style="display: flex; justify-content: space-between;">
       <a href="https://calvindo.github.io/Realtime-BeerPhong/aFrame.html">
       <div style="position: relative;">
@@ -196,7 +196,7 @@ video, img, .visual-presentation-container {
   </div>
 
   <div class = "flex-item">
-    <h2 id = "morbus-animi">Morbus-Animi <br> <br></h2>
+    <h2 id = "morbus-animi">Morbus-Animi <br> <br><br></h2>
     <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
     <a href="https://simmer.io/@DerCalvino/morbus-animi-final">
     <video width="100%" controls loop>
