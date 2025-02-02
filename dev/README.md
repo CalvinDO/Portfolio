@@ -88,14 +88,12 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
   text-align: center;
 }
 
-/* Tablet (max. 800px) → 2 Elemente pro Zeile */
-@media (max-width: 800px) {
+@media (max-width: 1225px) {
   .flex-item {
     width: calc(50% - 10px); /* 2 Elemente pro Zeile */
   }
 }
 
-/* Smartphone (max. 500px) → 1 Element pro Zeile */
 @media (max-width: 500px) {
   .flex-item {
     width: 100%; /* 1 Element pro Zeile */
