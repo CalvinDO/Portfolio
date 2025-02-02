@@ -78,46 +78,47 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
   flex-wrap: wrap;
 
   gap: 10px; /* Abstand zwischen den Items */
+  justify-content: space-between;
 }
 
 .flex-item {
+
+  width: calc(33.33% - 10px); /* Standard: 3 Elemente pro Zeile */
+
   max-width: calc(33.333% - 10px); /* Verhindert, dass einzelne Items die ganze Zeile einnehmen */
   box-sizing: border-box; /* Stellen sicher, dass Padding und Border berücksichtigt werden */
   padding: 10px; /* Optional, für Abstand zwischen den Elementen */
   width: 33%;
   background-color: #f0f0f0;
+
+   text-align: center;
 }
 
 /* Wenn der Bildschirm schmaler als 800px ist: Nur 2 Elemente pro Zeile */
 @media (max-width: 800px) {
   .flex-item {
-    flex: 1 1 calc(50% - 10px); /* 2 Elemente pro Zeile */
+    width: calc(50% - 10px);
   }
 }
 
 /* Wenn der Bildschirm schmaler als 500px ist: Nur 1 Element pro Zeile */
 @media (max-width: 500px) {
   .flex-item {
-    flex: 1 1 100%; /* 1 Element pro Zeile */
+    width: 100%; /* 1 Element pro Zeile */
   }
 }
 
-video, .visual-presentation-container {
+video, img, .visual-presentation-container {
 
   display: block !important;        /* Macht den <a>-Tag zu einem Blockelement, damit es eine feste Größe haben kann */
 
   width: 100%  !important;          /* Bild skaliert auf die Breite des Containers */
   height: auto  !important;         /* Höhe wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
   object-fit: fill  !important;  
+
+  padding: 0;
+  margin: 0
 }
-img .visual-presentation-container, video .visual-presentation-container {
-
-  display: block !important;        /* Macht den <a>-Tag zu einem Blockelement, damit es eine feste Größe haben kann */
-
-  width: 100%  !important;          /* Bild skaliert auf die Breite des Containers */
-  height: auto  !important;         /* Höhe wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
-  object-fit: cover  !important;  
-} 
 
 
 
