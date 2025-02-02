@@ -81,8 +81,6 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
 }
 
 .flex-item {
-
-  flex: 1 1 calc(33.333% - 10px); /* Basisbreite für 3 pro Zeile, abzüglich Abstand */
   max-width: calc(33.333% - 10px); /* Verhindert, dass einzelne Items die ganze Zeile einnehmen */
   box-sizing: border-box; /* Stellen sicher, dass Padding und Border berücksichtigt werden */
   padding: 10px; /* Optional, für Abstand zwischen den Elementen */
