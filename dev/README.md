@@ -90,6 +90,20 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
   background-color: #f0f0f0;
 }
 
+/* Wenn der Bildschirm schmaler als 800px ist: Nur 2 Elemente pro Zeile */
+@media (max-width: 800px) {
+  .flex-item {
+    flex: 1 1 calc(50% - 10px); /* 2 Elemente pro Zeile */
+  }
+}
+
+/* Wenn der Bildschirm schmaler als 500px ist: Nur 1 Element pro Zeile */
+@media (max-width: 500px) {
+  .flex-item {
+    flex: 1 1 100%; /* 1 Element pro Zeile */
+  }
+}
+
 video, .visual-presentation-container {
 
   display: block !important;        /* Macht den <a>-Tag zu einem Blockelement, damit es eine feste Größe haben kann */
