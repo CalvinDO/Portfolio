@@ -97,14 +97,14 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
 /* Wenn der Bildschirm schmaler als 800px ist: Nur 2 Elemente pro Zeile */
 @media (max-width: 800px) {
   .flex-item {
-    width: calc(50% - 10px);
+    width: calc(50% - 10px) !important;
   }
 }
 
 /* Wenn der Bildschirm schmaler als 500px ist: Nur 1 Element pro Zeile */
 @media (max-width: 500px) {
   .flex-item {
-    width: 100%; /* 1 Element pro Zeile */
+    width: 100% !important; /* 1 Element pro Zeile */
   }
 }
 
