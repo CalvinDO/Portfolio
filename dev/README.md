@@ -114,7 +114,7 @@ img .visual-presentation-container, video .visual-presentation-container {
 
 <div class = "flex-container">
   <div class = "flex-item">
-    <h2 id ="bau-simulator">Bau-Simulator <br> <br><br> <br></h2>
+    <h2 id ="bau-simulator">Bau-Simulator <br> <br> <br></h2>
     <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
     <a href="https://store.steampowered.com/app/1273400/BauSimulator">
     <video width="100%" controls loop>
@@ -151,7 +151,7 @@ img .visual-presentation-container, video .visual-presentation-container {
   </div>
 
   <div class = "flex-item">
-    <h2 id ="the-last-hope">The Last Hope <br> <br> <br> <br></h2>
+    <h2 id ="the-last-hope">The Last Hope <br> <br> <br></h2>
     <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
     <a href="https://simmer.io/@DerCalvino/thelasthope">
       <video width="100%" controls loop>
