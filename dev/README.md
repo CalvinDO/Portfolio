@@ -73,40 +73,35 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
 # Coding
 
 <style>
-  .flex-container {
+.flex-container {
   display: flex;
   flex-wrap: wrap;
-
   gap: 10px; /* Abstand zwischen den Items */
-  justify-content: space-between;
+  justify-content: flex-start; /* Elemente normal anordnen */
 }
 
 .flex-item {
-
   width: calc(33.33% - 10px); /* Standard: 3 Elemente pro Zeile */
-
-  max-width: calc(33.333% - 10px); /* Verhindert, dass einzelne Items die ganze Zeile einnehmen */
-  box-sizing: border-box; /* Stellen sicher, dass Padding und Border berücksichtigt werden */
-  padding: 10px; /* Optional, für Abstand zwischen den Elementen */
-  width: 33%;
+  box-sizing: border-box;
+  padding: 10px;
   background-color: #f0f0f0;
-
-   text-align: center;
+  text-align: center;
 }
 
-/* Wenn der Bildschirm schmaler als 800px ist: Nur 2 Elemente pro Zeile */
+/* Tablet (max. 800px) → 2 Elemente pro Zeile */
 @media (max-width: 800px) {
   .flex-item {
-    width: calc(50% - 10px) !important;
+    width: calc(50% - 10px); /* 2 Elemente pro Zeile */
   }
 }
 
-/* Wenn der Bildschirm schmaler als 500px ist: Nur 1 Element pro Zeile */
+/* Smartphone (max. 500px) → 1 Element pro Zeile */
 @media (max-width: 500px) {
   .flex-item {
-    width: 100% !important; /* 1 Element pro Zeile */
+    width: 100%; /* 1 Element pro Zeile */
   }
 }
+
 
 video, img, .visual-presentation-container {
 
@@ -119,10 +114,6 @@ video, img, .visual-presentation-container {
   padding: 0;
   margin: 0
 }
-
-
-
-
 </style>
 
 <div class = "flex-container">
