@@ -71,8 +71,8 @@ Bachelor of Science (Medieninformatik), Gesamtnote 1,7
 - FUDGE: Expertenkenntnisse
 - Unity: Expertenkenntnisse
 - Blender: Expertenkenntnisse
-- Excel: Gute Kenntnisse
 - Gimp: Gute Kenntnisse
+- Excel: Gute Kenntnisse
 - FLStudio: Gute Kenntnisse
 
 - SCRUM, Atlassian-Confluence, Mantis
