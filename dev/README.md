@@ -81,7 +81,8 @@ h1#header-coding ~ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 10px; /* Abstand zwischen den Items */
-  justify-content: flex-start; /* Elemente normal anordnen */
+  justify-content: center; /* Elemente normal anordnen */
+  margin: 0 auto;
 }
 
 .flex-item {
