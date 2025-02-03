@@ -62,6 +62,9 @@ Bachelor of Science (Medieninformatik), Gesamtnote 1,7
 - C#, Javascript, Typescript: Expertenkenntnisse
 - C: Grundkenntnisse
 
+- TensorFlow/Keras, NEAT, Deep Learning
+- WebXR, WebAR, Three.js, GLSL
+
 - FMOD: Grundkenntnisse
 - GODOT: Grundkenntnisse
 - FUSEE: Gute Kenntnisse
