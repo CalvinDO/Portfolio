@@ -150,12 +150,12 @@ video, img, .visual-presentation-container {
     <strong>Meine Arbeitsweise</strong><br>
     Strukturiert, interdisziplinär kooperiert mit <strong>SCRUM, Atlassian Confluence, Versionskontrolle, Bugtracking (Mantis)</strong><br>
     <br>
-    <strong>Meine Skills<br>
+    <strong>Meine Skills</strong><br>
     <strong>Unity (C#), FMOD (Audio-Integration)</strong><br>
     <br>
     <strong>Meine Aufgaben</strong>
     <ul class = "task-list">
-      <li><strong>Fahrzeug-Setup:</strong> Integration von >80 Fahrzeugmodellen mit funktionsspezifischen Logikbausteinen (Rotationslimits, Getriebe- und Motorsimulation, Terrainsimulation, FMOD-Audio).</li>
+      <li><strong>Fahrzeug-Setup</strong>: Integration von >80 Fahrzeugmodellen mit funktionsspezifischen Logikbausteinen (Rotationslimits, Getriebe- und Motorsimulation, Terrainsimulation, FMOD-Audio).</li>
       <li><strong>Debug-UI-Entwicklung</strong>: Erstellung eines dynamischen und generischen Debug-Tools für Missionen, Fahrzeug-Spawning, Parameter-Anpassungen</li>
       <li><strong>Navigationsdisplay</strong>: Anzeige des Pfades in der Minimap.</li>
     </ul>
