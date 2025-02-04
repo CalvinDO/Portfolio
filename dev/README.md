@@ -149,7 +149,9 @@ video, img, .visual-presentation-container {
     <br>
     <strong>Meine Arbeitsweise</strong><br>
     <strong>SCRUM, Atlassian Confluence, Versionskontrolle, Bugtracking (Mantis), int.disz. Kooperation</strong><br>
-    <strong>Meine Skills<br><strong>Unity (C#), FMOD (Audio-Integration)</strong><br>
+    <br>
+    <strong>Meine Skills<br>
+    <strong>Unity (C#), FMOD (Audio-Integration)</strong><br>
     <br>
     <strong>Meine Aufgaben</strong>
     <ul class = "task-list">
