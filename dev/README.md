@@ -135,11 +135,11 @@ video, img, .visual-presentation-container {
       Klicken zum Spielen
       </div>
     </div>  
+    <strong>Winter 2020 - Frühling 2023</strong>
     <strong><a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a></strong> <br>
-    <strong>Winter 2020 - Frühstrongng 2023</strong>
+    <strong>25-köpfiges</strong> Team mit externen Partnern und Publisher <a href = "https://www.astragon.de/">Astragon</a>.
     <ul>
       <li>Begonnen als Praktikant, später Werkstudent bis zum Bachelor-Abschluss.</li>
-      <li>25-köpfiges Team mit externen Partnern und Publisher <a href = "https://www.astragon.de/">Astragon</a>.</li>
       <li>Strukturierte Arbeitsweise mit <strong>SCRUM, Atlassian Confluence, Versionskontrolle, Bugtracking (Mantis).</strong></li>
       <li>Vertiefte Kenntnisse in <strong>Unity (C#), FMOD (Audio-Integration).</strong></li>
     </ul>  
