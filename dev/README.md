@@ -142,12 +142,12 @@ video, img, .visual-presentation-container {
     <strong>Winter 2020 - Frühling 2023</strong> <br>
     <strong><a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a></strong> <br>
     <strong>25-köpfiges</strong> Team + Outsourcer<br>
-    <strong>Publisher:</strong> <a href = "https://www.astragon.de/">Astragon</a>.<br><br>
+    <strong>Publisher:</strong> <a href = "https://www.astragon.de/">Astragon</a><br><br>
     <strong>6</strong> Monate <strong>Praktikant</strong><br>
     <strong>2,5</strong> Jahre <strong>Werkstudent</strong><br>
     Strukturierte Arbeitsweise<br>
-    <strong>SCRUM, Atlassian Confluence, Versionskontrolle, Bugtracking (Mantis).</strong><br>
-    Vertiefte Kenntnisse<br><strong>Unity (C#), FMOD (Audio-Integration).</strong><br><br>
+    <strong>SCRUM, Atlassian Confluence, Versionskontrolle, Bugtracking (Mantis), int.disz. Kooperation</strong><br>
+    Vertiefte Kenntnisse<br><strong>Unity (C#), FMOD (Audio-Integration)</strong><br><br>
     <strong>Meine Aufgaben</strong>
     <ul class = "task-list">
       <li>Fahrzeug-Setup: Integration von >80 Fahrzeugmodellen mit funktionsspezifischen Logikbausteinen (Rotationslimits, Getriebe- und Motorsimulation, Terrainsimulation, FMOD-Audio).</li>
