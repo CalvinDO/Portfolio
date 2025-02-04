@@ -77,6 +77,9 @@ h1#header-coding ~ h1 {
     text-align: center;
 }
 
+.task-list{
+  text-align: start;
+}
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -144,9 +147,9 @@ video, img, .visual-presentation-container {
     <strong>2,5</strong> Jahre <strong>Werkstudent</strong><br>
     Strukturierte Arbeitsweise<br>
     <strong>SCRUM, Atlassian Confluence, Versionskontrolle, Bugtracking (Mantis).</strong><br>
-    Vertiefte Kenntnisse<br><strong>Unity (C#), FMOD (Audio-Integration).</strong><br>
+    Vertiefte Kenntnisse<br><strong>Unity (C#), FMOD (Audio-Integration).</strong><br><br>
     <strong>Hauptaufgaben</strong>
-    <ul>
+    <ul class = "task-list">
       <li>Fahrzeug-Setup: Integration von >80 Fahrzeugmodellen mit funktionsspezifischen Logikbausteinen (Rotationslimits, Getriebe- und Motorsimulation, Terrainsimulation, FMOD-Audio).</li>
       <li>Debug-UI-Entwicklung: Erstellung eines dynamischen und generischen Debug-Tools für Missionen, Fahrzeug-Spawning, Parameter-Anpassungen.</li>
       <li>Navigationssystem: Anzeige des Pfades in der Minimap basierend auf mathematischer Projektion von Räumen.</li>
