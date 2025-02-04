@@ -148,7 +148,7 @@ video, img, .visual-presentation-container {
     <strong>2,5</strong> Jahre <strong>Werkstudent</strong><br>
     <br>
     <strong>Meine Arbeitsweise</strong><br>
-    <strong>SCRUM, Atlassian Confluence, Versionskontrolle, Bugtracking (Mantis), int.disz. Kooperation</strong><br>
+    Strukturiert, interdisziplinär kooperiert mit <strong>SCRUM, Atlassian Confluence, Versionskontrolle, Bugtracking (Mantis)</strong><br>
     <br>
     <strong>Meine Skills<br>
     <strong>Unity (C#), FMOD (Audio-Integration)</strong><br>
