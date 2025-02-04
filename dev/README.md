@@ -140,8 +140,8 @@ video, img, .visual-presentation-container {
     <strong><a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a></strong> <br>
     <strong>25-köpfiges</strong> Team mit externen Partnern und Publisher <a href = "https://www.astragon.de/">Astragon</a>.<br>
     <br>
-    6 Monate Praktikant<br>
-    2,5 Jahre Werkstudent<br>
+    <strong>6</strong> Monate <strong>Praktikant<strong><br>
+    <strong>2,5</strong> Jahre <strong>Werkstudent</strong><br>
     Strukturierte Arbeitsweise<br>
     <strong>SCRUM, Atlassian Confluence, Versionskontrolle, Bugtracking (Mantis).</strong><br>
     Vertiefte Kenntnisse<br><strong>Unity (C#), FMOD (Audio-Integration).</strong><br>
