@@ -141,7 +141,7 @@ video, img, .visual-presentation-container {
     <strong>25-köpfiges</strong> Team + Outsourcer<br>
     <stong>Publisher:</strong> <a href = "https://www.astragon.de/">Astragon</a>.<br>
     <br>
-    <strong>6</strong> Monate <strong>Praktikant<strong><br>
+    <strong>6</strong> Monate <strong>Praktikant</strong><br>
     <strong>2,5</strong> Jahre <strong>Werkstudent</strong><br>
     Strukturierte Arbeitsweise<br>
     <strong>SCRUM, Atlassian Confluence, Versionskontrolle, Bugtracking (Mantis).</strong><br>
