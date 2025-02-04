@@ -155,7 +155,7 @@ video, img, .visual-presentation-container {
     <br>
     <strong>Meine Aufgaben</strong>
     <ul class = "task-list">
-      <li><strong>Fahrzeug-Setup: Integration von >80 Fahrzeugmodellen mit funktionsspezifischen Logikbausteinen (Rotationslimits, Getriebe- und Motorsimulation, Terrainsimulation, FMOD-Audio).</li>
+      <li><strong>Fahrzeug-Setup:</strong> Integration von >80 Fahrzeugmodellen mit funktionsspezifischen Logikbausteinen (Rotationslimits, Getriebe- und Motorsimulation, Terrainsimulation, FMOD-Audio).</li>
       <li>Debug-UI-Entwicklung: Erstellung eines dynamischen und generischen Debug-Tools für Missionen, Fahrzeug-Spawning, Parameter-Anpassungen</li>
       <li>Navigationsdisplay: Anzeige des Pfades in der Minimap.</li>
     </ul>
