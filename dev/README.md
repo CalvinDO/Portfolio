@@ -141,7 +141,6 @@ video, img, .visual-presentation-container {
     Begonnen als Praktikant, später Werkstudent bis zum Bachelor-Abschluss.<br>
     Strukturierte Arbeitsweise mit <strong>SCRUM, Atlassian Confluence, Versionskontrolle, Bugtracking (Mantis).</strong></br>
     Vertiefte Kenntnisse in <strong>Unity (C#), FMOD (Audio-Integration).</strong></br>
-    </ul>  
     <strong>Hauptaufgaben</strong>
     <ul>
       <li>Fahrzeug-Setup: Integration von >80 Fahrzeugmodellen mit funktionsspezifischen Logikbausteinen (Rotationslimits, Getriebe- und Motorsimulation, Terrainsimulation, FMOD-Audio).</li>
