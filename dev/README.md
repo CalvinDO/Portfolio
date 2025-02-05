@@ -235,6 +235,7 @@ video, img, .visual-presentation-container {
       Herbst 2022 - Frühling 2023<br>
       AI-Playground
     </h4>
+    <br>
     <div class="skills">
         <strong>Unity (C#), <a href = "https://en.wikipedia.org/wiki/Neuroevolution_of_augmenting_topologies">NEAT</a></strong><br>
         <em>Forschungsorientiert - Innovativ - Selbstständig</em><br>
