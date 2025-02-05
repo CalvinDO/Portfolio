@@ -130,7 +130,7 @@ h1#header-coding ~ h1 {
 }
 
 .flex-item h2 {
-    height: 100px; /* Adjust height as needed */
+    height: 140px; /* Adjust height as needed */
     display: flex;
     align-items: center;
     justify-content: center;
