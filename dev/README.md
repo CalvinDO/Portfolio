@@ -230,9 +230,9 @@ video, img, .visual-presentation-container {
     <h4>
       <a href="NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">
         <i class="fas fa-file-pdf"></i> Bachelor Thesis
-      </a>
+      </a><br>
+      AI-Playground
     </h4>
-    <p><strong>AI-Playground:</strong> Erstellen und trainieren Sie benutzerdefinierte Kreaturen mit der Neuroevolution-Methode. In einem Editor können Glieder und Gelenke angepasst werden, um die Kreatur nach Belieben zu gestalten. Eine Simulation mit einem künstlichen neuronalen Netzwerk steuert die Bewegungen der Kreaturen über Generationen hinweg.</p>
     <div class="skills">
         <strong>Unity (C#), NEAT (Neuroevolution of Augmenting Topologies)</strong><br>
         <em>Forschungsorientiert - Innovativ - Selbstständig</em><br>
@@ -240,16 +240,21 @@ video, img, .visual-presentation-container {
     </div>
     <h4>Wichtige Funktionen:</h4>
     <ul class="task-list">
-        <li><strong>Evolutionäre Algorithmen</strong><br> Selektion, Rekombination und Mutation zur Verbesserung der Kreaturenbewegungen.</li>
+        <li><strong>Evolutionäre Algorithmen</strong><br> Selektion, Rekombination und Mutation zum Lernen von Kreaturenbewegungen über Generationen hinweg</li>
         <li><strong>Simulations-basierte KI-Entwicklung</strong><br>
-        Kreation und Training eines neuronalen Netzwerks zur Bewegungskontrolle.</li>
+        Kreation und Training eines neuronalen Netzwerks in physikalischer Simulation</li>
         <li><strong>Editor für Kreaturenbau</strong><br>
-        Erstellen und Modifizieren von Kreaturen durch Hinzufügen von Gliedern und Gelenken.</li>
-        <li><strong>Simulationslauf</strong><br>
-        Neuroevolution durch Generationen: Mutationen und Selektion führen zu immer besseren Laufmustern.</li>
+        Erstellen und Modifizieren von Kreaturen - Hinzufügen und Einstellen von Gliedern und Gelenken.</li>
         <li><strong>Steuerung</strong><br>
         Editor-Kamera kann mit Mausbewegung und Maustasten gesteuert werden, zur Kreaturenerstellung wird die Maus verwendet.</li>
     </ul>
+    <div class = "controls">
+    Kamera: Mausbewegung und Drücken, Scrollen.<br>
+    Bauen neuer Glieder: Starten mit Linksklick, Verlängerung mit Mausbewegung. Bauen Abschließen: erneuter Linksklick.<br>
+    Bauen Abbrechen: rechte Maustaste.<br>
+    Rotations-Einstellungs-Modus: "R".<br>
+    Weitere Anleitung: <a href ="NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">Thesis</a>
+    </div>
     <!-- Dieser AI-Playground ist die Methode meiner Bachelor-Thesis des siebten Semesters. Es ermöglicht Benutzern, eine Kreatur aus Gliedern und Gelenken nach Belieben in einem Editor zu bauen, sowie Rotationslimits der Glieder anzupassen. Im zweiten Schritt startet eine Simulation, bei dem der Kreatur ein vollständig verbundenes künstliches Neuronales Netzwerk zugeteilt wird. Daten über aktuelle Pose und Position werden als Sensoren oder Inputs in das Netz eingespeist, Outputs sind die angestrebten Winkel der Gelenke. Über Generationen hinweg werden die Kreatur und ihre Mutationen je nach räumlichem Fortschritt belohnt, selektiert und die besten Gene in die nächste Generation weitergetragen, wo sie wieder mutieren. Somit lernen die Bauten zu laufen.  
     Zugrunde liegen Evolutionäre Algorithmen, die Probleme ähnlich biologischer Organismen lösen, da genetische Operatoren wie Selektion, Rekombination und Mutation die Evolution durch Reproduktion der stärksten Gene steuern. In meiner Bachelor-Arbeit nutzte ich die topologische Flexibilität von NEAT (Neuroevolution of Augumenting Topologies) um die Kreaturen durch evolvierende Genome zu bewegen. Untersucht habe ich, welche Berechnungsmethode und Parameter-Konfiguration des NEAT-Algorithmus' zu der weitesten Laufdistanz verschiedener Kreaturen führt, ohne Laufmuster vorzugeben. Ich wollte eine Anwendung entwickeln, die ohne weitere Eingriffe des Nutzers zu Laufmustern seiner erstellten Kreaturen führt. Durch diese Arbeit entwickelte ich die Fähigkeit, künstliche Intelligenzen auf Basis von evolutionär veränderten Neuronalen Netzen zu programmieren und trainieren, sowie einen InGame-Editor in Unity zu programmieren.  
     Die Kamera kann im Editor mit Mausbewegung und Drücken sowie Scrollen der mittleren Maustaste gesteuert werden. Bauen neuer Glieder wird mit Linksklick gestartet und mit Mausbewegung verlängert. Ein erneuter Linksklick schließt das Bauen ab, während die rechte Maustaste das Bauen abbricht. Den Rotations-Einstellungs-Modus schalten Sie mit "R" um. Weitere Anleitung finden Sie in der <a href = "NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">Thesis</a> -->
