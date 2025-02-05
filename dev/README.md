@@ -108,7 +108,7 @@ h1#header-coding ~ h1 {
 .flex-item {
   width: calc(33.33% - 10px); /* Standard: 3 Elemente pro Zeile */
   box-sizing: border-box;
-  padding: 10px;
+  padding: 0px;
   background-color: #f0f0f0;
   text-align: center;
 }
