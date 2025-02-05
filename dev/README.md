@@ -164,7 +164,8 @@ video, img, .visual-presentation-container {
     <strong>6</strong> Monate <strong>Praktikant</strong><br>
     <strong>2,5</strong> Jahre <strong>Werkstudent</strong><br>
     <br>
-    Strukturiert - Interdisziplinär - Kooperativ<br>
+    <i>Strukturiert - Interdisziplinär - Kooperativ</i><br>
+    <br>
     <strong>SCRUM, Atlassian Confluence, Plastic SCM, Mantis</strong><br>
     <br>
     <strong>Unity (C#), FMOD (Audio-Integration)</strong><br>
