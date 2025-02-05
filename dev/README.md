@@ -190,7 +190,7 @@ video, img, .visual-presentation-container {
     <h4>
     <strong><a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a></strong> <br>
     <strong>25-köpfiges</strong> Team + Outsourcer<br>
-    <strong>Winter 2020 - Frühling 2023</strong> <br>
+    <strong>Herbst 2020 - Frühling 2023</strong> <br>
     <strong>Publisher:</strong> <a href = "https://www.astragon.de/">Astragon</a></h4>
     <br>
     <strong>6</strong> Monate <strong>Praktikant</strong><br>
@@ -233,7 +233,7 @@ video, img, .visual-presentation-container {
         <i class="fas fa-file-pdf"></i> Bachelor Thesis
       </a><br>
       Solo-Projekt + Hochschul-Coaching<br>
-      Herbst 2022 - Frühling 2023<br>
+      Winter 2022 / 2023<br>
       AI-Playground
     </h4>
     <br>
@@ -279,21 +279,21 @@ video, img, .visual-presentation-container {
     </div>  
     <h4>
         <strong>6-köpfiges Team</strong><br>
-        <strong>Winter 2021</strong><br>
-        <strong>Unity</strong>, <strong>SCRUM</strong>, <strong>IndieNight-Auszeichnung</strong>
+        <strong>Sommer 2022</strong><br>
+        <strong>IndieNight-Auszeichnung</strong>
     </h4>
     <br>
     <div class="skills">
         <strong>Unity (C#), Spielmechanik, KI, Animationen, UI-Design</strong><br>
         <em>Kreativ - Kooperativ - Interdisziplinär</em><br>
-        <strong>SCRUM, Kanban-Board, User Tests</strong><br>
+        <strong>Gameplay-Design, Wireframes, User Tests, Klassendiagramme, Sounddesign, SCRUM, Kanban-Board</strong><br>
     </div>
     <br>
     <ul class="task-list">
-        <li><strong>Spielmechanik & Physik</strong><br> Programmierung der Spielphysik und grundlegender Mechaniken.</li>
-        <li><strong>KI-Controller</strong><br> Erstellung von KI-Logik zur Steuerung der Gegner.</li>
-        <li><strong>Sound & Animation</strong><br> Integration von Soundeffekten und Animationen.</li>
-        <li><strong>User Interface</strong><br> Design und Implementierung des Spiels' Benutzeroberfläche.</li>
+        <li><strong>Spielmechanik & Physik</strong><br> Programmierung der Spielphysik und Mechaniken</li>
+        <li><strong>KI-Controller</strong><br> Erstellung von KI-Logik (Unity-NavMesh) zur Steuerung der Gegner</li>
+        <li><strong>Sound & Animation</strong><br> Integration von Soundeffekten und Animationen</li>
+        <li><strong>User Interface</strong><br> Design und Implementierung der Benutzeroberfläche.</li>
     </ul>
     <div class="controls">
         Steuerung: W, A, S, D zum Laufen, Maustasten und Q, E zum Angreifen, I öffnet Inventar.<br>
