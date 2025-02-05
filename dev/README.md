@@ -231,7 +231,7 @@ video, img, .visual-presentation-container {
       <a href="NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">
         <i class="fas fa-file-pdf"></i> Bachelor Thesis
       </a><br>
-      Solo-Projekt<br>
+      Solo-Projekt + Hochschul-Coaching<br>
       Herbst 2022 - Frühling 2023<br>
       AI-Playground
     </h4>
