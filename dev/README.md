@@ -161,6 +161,11 @@ video, img, .visual-presentation-container {
   padding: 0;
   margin: 0
 }
+
+.skills {
+    line-height: 1.8; /* Der Wert 1.8 kann angepasst werden, um den Abstand zu verändern */
+}
+
 </style>
 
 <h1 id = "header-coding">Coding</h1>
@@ -188,9 +193,11 @@ video, img, .visual-presentation-container {
     <strong>6</strong> Monate <strong>Praktikant</strong><br>
     <strong>2,5</strong> Jahre <strong>Werkstudent</strong><br>
     <br>
+    <div class = "skills">
     <strong>Unity (C#), FMOD (Audio-Integration)</strong><br>
     <em>Strukturiert - Interdisziplinär - Kooperativ</em><br>
     <strong>SCRUM, Atlassian Confluence, Plastic SCM, Mantis</strong><br>
+    </div>
     <br>
     <ul class = "task-list">
       <li><strong>Fahrzeug-Setup</strong><br>
