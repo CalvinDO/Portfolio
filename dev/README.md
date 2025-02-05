@@ -14,27 +14,17 @@
 # Motivation
 
 <style>
-  .details-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+.details-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Zwei Spalten */
+    gap: 20px;
 }
 
 .details-container details {
-    width: 45%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
-}
-
-.details-container details:nth-child(odd) {
-    align-self: flex-start;
-}
-
-.details-container details:nth-child(even) {
-    align-self: flex-end;
 }
 </style>
 
