@@ -163,7 +163,7 @@ video, img, .visual-presentation-container {
 }
 
 .skills {
-    line-height: 1.8; /* Der Wert 1.8 kann angepasst werden, um den Abstand zu verändern */
+    line-height: 2.1; /* Der Wert 1.8 kann angepasst werden, um den Abstand zu verändern */
 }
 
 </style>
