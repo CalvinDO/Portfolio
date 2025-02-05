@@ -183,15 +183,15 @@ video, img, .visual-presentation-container {
     <strong><a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a></strong> <br>
     <strong>25-köpfiges</strong> Team + Outsourcer<br>
     <strong>Winter 2020 - Frühling 2023</strong> <br>
-    <strong>Publisher:</strong> <a href = "https://www.astragon.de/">Astragon</a></h4><br>
+    <strong>Publisher:</strong> <a href = "https://www.astragon.de/">Astragon</a></h4>
     <strong>6</strong> Monate <strong>Praktikant</strong><br>
     <strong>2,5</strong> Jahre <strong>Werkstudent</strong><br>
+    <br>
+    <strong>Unity (C#), FMOD (Audio-Integration)</strong><br>
     <br>
     <em>Strukturiert - Interdisziplinär - Kooperativ</em><br>
     <br>
     <strong>SCRUM, Atlassian Confluence, Plastic SCM, Mantis</strong><br>
-    <br>
-    <strong>Unity (C#), FMOD (Audio-Integration)</strong><br>
     <br>
     <ul class = "task-list">
       <li><strong>Fahrzeug-Setup</strong><br>
