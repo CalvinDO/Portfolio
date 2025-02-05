@@ -263,22 +263,44 @@ video, img, .visual-presentation-container {
     Die Kamera kann im Editor mit Mausbewegung und Drücken sowie Scrollen der mittleren Maustaste gesteuert werden. Bauen neuer Glieder wird mit Linksklick gestartet und mit Mausbewegung verlängert. Ein erneuter Linksklick schließt das Bauen ab, während die rechte Maustaste das Bauen abbricht. Den Rotations-Einstellungs-Modus schalten Sie mit "R" um. Weitere Anleitung finden Sie in der <a href = "NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">Thesis</a> -->
   </div>
 
-  <div class = "flex-item">
-    <h2 id ="the-last-hope">The Last Hope</h2>
-    <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-    <a href="https://simmer.io/@DerCalvino/thelasthope">
-      <video width="100%" controls loop>
-          <source src="TheLastHope.mp4" alt="TheLastHope" type="video/mp4"/>
-          Ihr Browser unterstützt den Video-Tag nicht
-      </video>
-    </a>
-    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-      Klicken zum Spielen
-    </div>
+  <div class="flex-item">
+    <h2 id="the-last-hope">The Last Hope</h2>
+    <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+        <a href="https://simmer.io/@DerCalvino/thelasthope">
+            <video width="100%" controls loop>
+                <source src="TheLastHope.mp4" alt="TheLastHope" type="video/mp4"/>
+                Ihr Browser unterstützt den Video-Tag nicht
+            </video>
+        </a>
+        <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
+            Klicken zum Spielen
+        </div>
     </div>  
-    "Conflux - TheLastHope" entstand in einem sechsköpfigen Team. Im Kurs "Gamedesign Workshop" des sechsten Semesters programmierte ich den Großteil des Unity-Spiels, wie Spielmechanik, Physik-, Animations-, Sound- und KI-Controller, sowie UserInterfaces und Spielbalance. Begonnen mit Themenwahl, Abstimmung über Spielideenvorstellung und einer gemeinsamen Vision und Moodboard, einigten wir uns auf ein Rouge-like, dessen Story sich an H.P.Lovecrafts "Cthulhu-Mythos" orientiert. Der Spieler als Auserwählter utilisiert die 4 Elemente von Gott und Teufel kombinatorisch, um gegen die drohende Instabilisierung des Gleichgewichts durch Cthulhu der Erde anzukämpfen. Es folgten Gameplaypillars und -Loops, USP-Definition, Wireframes für Menüs und Fähigkeitskarten, Bedienungsprofile, Klassendiagramme, Sounddesign, Kanban-Boards und Priorisierungslisten, während in SCRUM-Meetings sorgfältig protokolliert und reviewed wurde. Hierbei half die bereits vorhandene Erfahrung im professionellen Umfeld bei <a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a>.  
+    <h4>
+        <strong>6-köpfiges Team</strong><br>
+        <strong>Winter 2021</strong><br>
+        <strong>Unity</strong>, <strong>SCRUM</strong>, <strong>IndieNight-Auszeichnung</strong>
+    </h4>
+    <br>
+    <div class="skills">
+        <strong>Unity (C#), Spielmechanik, KI, Animationen, UI-Design</strong><br>
+        <em>Kreativ - Kooperativ - Interdisziplinär</em><br>
+        <strong>SCRUM, Kanban-Board, User Tests</strong><br>
+    </div>
+    <br>
+    <ul class="task-list">
+        <li><strong>Spielmechanik & Physik</strong><br> Programmierung der Spielphysik und grundlegender Mechaniken.</li>
+        <li><strong>KI-Controller</strong><br> Erstellung von KI-Logik zur Steuerung der Gegner.</li>
+        <li><strong>Sound & Animation</strong><br> Integration von Soundeffekten und Animationen.</li>
+        <li><strong>User Interface</strong><br> Design und Implementierung des Spiels' Benutzeroberfläche.</li>
+    </ul>
+    <div class="controls">
+        Steuerung: W, A, S, D zum Laufen, Maustasten und Q, E zum Angreifen, I öffnet Inventar.<br>
+        Fähigkeitskarten kombinieren per Drag and Drop.
+    </div>
+    <!-- "Conflux - TheLastHope" entstand in einem sechsköpfigen Team. Im Kurs "Gamedesign Workshop" des sechsten Semesters programmierte ich den Großteil des Unity-Spiels, wie Spielmechanik, Physik-, Animations-, Sound- und KI-Controller, sowie UserInterfaces und Spielbalance. Begonnen mit Themenwahl, Abstimmung über Spielideenvorstellung und einer gemeinsamen Vision und Moodboard, einigten wir uns auf ein Rouge-like, dessen Story sich an H.P.Lovecrafts "Cthulhu-Mythos" orientiert. Der Spieler als Auserwählter utilisiert die 4 Elemente von Gott und Teufel kombinatorisch, um gegen die drohende Instabilisierung des Gleichgewichts durch Cthulhu der Erde anzukämpfen. Es folgten Gameplaypillars und -Loops, USP-Definition, Wireframes für Menüs und Fähigkeitskarten, Bedienungsprofile, Klassendiagramme, Sounddesign, Kanban-Boards und Priorisierungslisten, während in SCRUM-Meetings sorgfältig protokolliert und reviewed wurde. Hierbei half die bereits vorhandene Erfahrung im professionellen Umfeld bei <a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a>.  
     Das Projekt endete mit UserTests inklusive Fragebögen, sowie dem Gewinnen der Projektauszeichnung bei der "IndieNight" an der Hochschule Furtwangen.  
-    Laufen erfolgt mit W A S D, Angreifen mit den Maustasten, Q und E. I öffnet das Inventar. Drag and Drop von einer Fähigkeitskarte auf eine andere ermöglicht das Kombinieren.
+    Laufen erfolgt mit W A S D, Angreifen mit den Maustasten, Q und E. I öffnet das Inventar. Drag and Drop von einer Fähigkeitskarte auf eine andere ermöglicht das Kombinieren. -->
   </div>
   <div class = "flex-item">
     <h2 id ="realtime-beerphong">Realtime-BeerPhong</h2>
