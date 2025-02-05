@@ -168,6 +168,8 @@ video, img, .visual-presentation-container {
 
 </style>
 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 <h1 id = "header-coding">Coding</h1>
 
 <div class = "flex-container">
@@ -225,16 +227,21 @@ video, img, .visual-presentation-container {
             Klicken zum Spielen
         </div>
     </div>
-    <h3><a href="NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">Bachelor Thesis - Zur PDF</a></h3>
+    <h4>
+      <a href="NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">
+        <i class="fas fa-file-pdf"></i> Bachelor Thesis
+      </a>
+    </h4>
     <p><strong>AI-Playground:</strong> Erstellen und trainieren Sie benutzerdefinierte Kreaturen mit der Neuroevolution-Methode. In einem Editor können Glieder und Gelenke angepasst werden, um die Kreatur nach Belieben zu gestalten. Eine Simulation mit einem künstlichen neuronalen Netzwerk steuert die Bewegungen der Kreaturen über Generationen hinweg.</p>
-    <h4>Verwendete Technologien und Methoden:</h4>
-    <ul class="skills">
-        <li><strong>Unity (C#), NEAT (Neuroevolution of Augmenting Topologies)</strong></li>
-        <li><strong>Evolutionäre Algorithmen</strong> - Selektion, Rekombination und Mutation zur Verbesserung der Kreaturenbewegungen.</li>
-        <li><strong>Simulations-basierte KI-Entwicklung</strong> - Kreation und Training eines neuronalen Netzwerks zur Bewegungskontrolle.</li>
-    </ul>
+    <div class="skills">
+        <strong>Unity (C#), NEAT (Neuroevolution of Augmenting Topologies)</strong><br>
+        <em>Forschungsorientiert - Innovativ - Selbstständig</em><br>
+        <strong>Git, Roadmap, Kanban-Board</strong><br>
+    </div>
     <h4>Wichtige Funktionen:</h4>
     <ul class="task-list">
+        <li><strong>Evolutionäre Algorithmen</strong> - Selektion, Rekombination und Mutation zur Verbesserung der Kreaturenbewegungen.</li>
+        <li><strong>Simulations-basierte KI-Entwicklung</strong> - Kreation und Training eines neuronalen Netzwerks zur Bewegungskontrolle.</li>
         <li><strong>Editor für Kreaturenbau</strong><br>
         Erstellen und Modifizieren von Kreaturen durch Hinzufügen von Gliedern und Gelenken.</li>
         <li><strong>Simulationslauf</strong><br>
