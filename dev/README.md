@@ -248,15 +248,15 @@ video, img, .visual-presentation-container {
         <li><strong>Simulations-basierte KI-Entwicklung</strong><br>
         Kreation und Training eines neuronalen Netzwerks in physikalischer Simulation</li>
         <li><strong>Editor für Kreaturenbau</strong><br>
-        Erstellen und Modifizieren von Kreaturen - Hinzufügen und Einstellen von Gliedern und Gelenken.</li>
+        Erstellen und Modifizieren von Kreaturen - Hinzufügen und Einstellen von Gliedern und Gelenken</li>
         <li><strong>Steuerung</strong><br>
         Editor-Kamera kann mit Mausbewegung und Maustasten gesteuert werden, zur Kreaturenerstellung wird die Maus verwendet.</li>
     </ul>
     <div class = "controls">
-    Kamera: Mausbewegung und Drücken, Scrollen.<br>
-    Bauen neuer Glieder: Starten mit Linksklick, Verlängerung mit Mausbewegung. Bauen Abschließen: erneuter Linksklick.<br>
-    Bauen Abbrechen: rechte Maustaste.<br>
-    Rotations-Einstellungs-Modus: "R".<br>
+    Kamera: Mausbewegung und Drücken, Scrollen<br>
+    Bauen neuer Glieder: Starten mit Linksklick, Verlängerung mit Mausbewegung. Bauen Abschließen: erneuter Linksklick<br>
+    Bauen Abbrechen: rechte Maustaste<br>
+    Rotations-Einstellungs-Modus: "R"<br>
     Weitere Anleitung: <a href ="NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">Thesis</a>
     </div>
     <!-- Dieser AI-Playground ist die Methode meiner Bachelor-Thesis des siebten Semesters. Es ermöglicht Benutzern, eine Kreatur aus Gliedern und Gelenken nach Belieben in einem Editor zu bauen, sowie Rotationslimits der Glieder anzupassen. Im zweiten Schritt startet eine Simulation, bei dem der Kreatur ein vollständig verbundenes künstliches Neuronales Netzwerk zugeteilt wird. Daten über aktuelle Pose und Position werden als Sensoren oder Inputs in das Netz eingespeist, Outputs sind die angestrebten Winkel der Gelenke. Über Generationen hinweg werden die Kreatur und ihre Mutationen je nach räumlichem Fortschritt belohnt, selektiert und die besten Gene in die nächste Generation weitergetragen, wo sie wieder mutieren. Somit lernen die Bauten zu laufen.  
@@ -297,8 +297,10 @@ video, img, .visual-presentation-container {
         <li><strong>User Interface</strong><br> Design und Implementierung der Benutzeroberfläche.</li>
     </ul>
     <div class="controls">
-        Steuerung: W, A, S, D zum Laufen, Maustasten und Q, E zum Angreifen, I öffnet Inventar.<br>
-        Fähigkeitskarten kombinieren per Drag and Drop.
+        W, A, S, D zum Laufen<br>
+        Maustasten, Q, E zum Angreifen<br>
+        Inventar: I<br>
+        Fähigkeitskarten kombinieren: Drag and Drop
     </div>
     <!-- "Conflux - TheLastHope" entstand in einem sechsköpfigen Team. Im Kurs "Gamedesign Workshop" des sechsten Semesters programmierte ich den Großteil des Unity-Spiels, wie Spielmechanik, Physik-, Animations-, Sound- und KI-Controller, sowie UserInterfaces und Spielbalance. Begonnen mit Themenwahl, Abstimmung über Spielideenvorstellung und einer gemeinsamen Vision und Moodboard, einigten wir uns auf ein Rouge-like, dessen Story sich an H.P.Lovecrafts "Cthulhu-Mythos" orientiert. Der Spieler als Auserwählter utilisiert die 4 Elemente von Gott und Teufel kombinatorisch, um gegen die drohende Instabilisierung des Gleichgewichts durch Cthulhu der Erde anzukämpfen. Es folgten Gameplaypillars und -Loops, USP-Definition, Wireframes für Menüs und Fähigkeitskarten, Bedienungsprofile, Klassendiagramme, Sounddesign, Kanban-Boards und Priorisierungslisten, während in SCRUM-Meetings sorgfältig protokolliert und reviewed wurde. Hierbei half die bereits vorhandene Erfahrung im professionellen Umfeld bei <a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a>.  
     Das Projekt endete mit UserTests inklusive Fragebögen, sowie dem Gewinnen der Projektauszeichnung bei der "IndieNight" an der Hochschule Furtwangen.  
