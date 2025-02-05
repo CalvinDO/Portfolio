@@ -189,9 +189,7 @@ video, img, .visual-presentation-container {
     <strong>2,5</strong> Jahre <strong>Werkstudent</strong><br>
     <br>
     <strong>Unity (C#), FMOD (Audio-Integration)</strong><br>
-    <br>
     <em>Strukturiert - Interdisziplinär - Kooperativ</em><br>
-    <br>
     <strong>SCRUM, Atlassian Confluence, Plastic SCM, Mantis</strong><br>
     <br>
     <ul class = "task-list">
