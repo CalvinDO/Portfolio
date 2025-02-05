@@ -204,9 +204,11 @@ video, img, .visual-presentation-container {
     <br>
     <ul class = "task-list">
       <li><strong>Fahrzeug-Setup</strong><br>
-      Integration von >80 Fahrzeugmodellen mit funktionsspezifischen Logikbausteinen (Rotationslimits, Getriebe- und Motorsimulation, Terrainsimulation, FMOD-Audio).</li>
+      Integration von >80 Fahrzeugmodellen mit funktionsspezifischen Logikbausteinen<br>
+      -> Rotationslimits, Getriebe- und Motorsimulation, Terrainsimulation, FMOD-Audio</li>
       <li><strong>Debug-UI-Entwicklung</strong><br>
-      Erstellung eines dynamischen und generischen Debug-Tools für Missionen, Fahrzeug-Spawning, Parameter-Anpassungen</li>
+      Erstellung eines dynamischen und generischen Debug-Tools<br>
+      -> für Missionen, Fahrzeug-Spawning, Parameter-Anpassungen</li>
       <li><strong>Navigationsdisplay</strong><br>
       Anzeige des Pfades in der Minimap.</li>
     </ul>
@@ -244,13 +246,14 @@ video, img, .visual-presentation-container {
     </div>
     <br>
     <ul class="task-list">
-        <li><strong>Evolutionäre Algorithmen</strong><br> Selektion, Rekombination und Mutation zum Lernen von Kreaturenbewegungen über Generationen hinweg</li>
+        <li><strong>Evolutionäre Algorithmen</strong><br> Selektion, Rekombination und Mutation<br>
+        -> Lernen von Kreaturenbewegungen über Generationen hinweg</li>
         <li><strong>Simulations-basierte KI-Entwicklung</strong><br>
-        Kreation und Training eines neuronalen Netzwerks in physikalischer Simulation</li>
+        Kreation und Training eines neuronalen Netzwerks<br>
+        -> Instanzen laufen in physikalischer Simulation</li>
         <li><strong>Editor für Kreaturenbau</strong><br>
-        Erstellen und Modifizieren von Kreaturen - Hinzufügen und Einstellen von Gliedern und Gelenken</li>
-        <li><strong>Steuerung</strong><br>
-        Editor-Kamera kann mit Mausbewegung und Maustasten gesteuert werden, zur Kreaturenerstellung wird die Maus verwendet.</li>
+        Erstellen und Modifizieren von Kreaturen<br>
+        -> Hinzufügen und Einstellen von Gliedern und Gelenken</li>
     </ul>
     <div class = "controls">
     Kamera: Mausbewegung und Drücken, Scrollen<br>
