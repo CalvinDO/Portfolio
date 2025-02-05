@@ -14,18 +14,17 @@
 # Motivation
 
 <style>
-
   .details-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0px; /* Abstand zwischen den Items */
-    justify-content: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Zwei Spalten */
+      gap: 20px;
   }
 
   .details-container details {
-    width: calc(33.33% - 10px); /* Standard: 3 Elemente pro Zeile */
-    box-sizing: border-box;
-    padding: 0px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
   }
 
   @media (max-width: 768px) {
@@ -33,7 +32,6 @@
       grid-template-columns: 1fr; /* Eine Spalte auf kleineren Bildschirmen */
     }
   }
-
 </style>
 
 <div class = "details-container">
