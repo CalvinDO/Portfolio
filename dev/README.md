@@ -26,45 +26,45 @@
     border-radius: 5px;
     background-color: #f9f9f9;
 }
+
+@media (max-width: 768px) {
+  .details-container {
+    grid-template-columns: 1fr; /* Eine Spalte auf kleineren Bildschirmen */
+  }
+}
 </style>
 
 <div class = "details-container">
   <details>
     <summary><strong>KLICKEN</strong> Seit mein Vater, ein Professor für Computerspiele, mich bereits in sehr frühem Alter von 3 Jahren vorsichtig an dieses Medium herangeführt hat, interessierte ich mich nicht nur für das Spielen, sondern auch ähnlich stark für die Entwicklung von Games.</summary>
     Ich zeichnete zusätzliche Level für Super Mario oder entwarf neue Spiele, das könnte man als meine ersten Schritte im Gamedesign bezeichnen. Später verbrachte ich viel Zeit mit der Kombination der elementaren Redstone-Elemente von Minecraft um logische Schaltungen, Rechensysteme, Binärzähler und Segmentanzeigen zu konstruieren. Auch bereitete mir die Modifikation des Spiels durch selbst gestaltete Resourcepacks viel Freude.  
-  </details>  
-  <br>
+  </details>
 
   <details>
     <summary><strong>KLICKEN</strong> Im Alter von 9 Jahren begann mein Interesse am 3D–Modelling, was sich durch Architektur-Projekte in Google SketchUp und diverses Modeling in Sculpt3D wiederspiegelte. Mit 10 Jahren folgten kleinere Text-Games,</summary>
     die ich mit Batch – meiner ersten Programmiersprache - und dem Windows Editor umsetzte. Mit einem Leuchtturm von Fischer-Technik machte ich zu dieser Zeit auch erste Erfahrungen mit Ablaufsteuerungen. Am Nintendo-DS erstellte ich Zeichentrickanimationen über das Touchpad und kleine Stop-Motion-Trickfilme. Mit 11 Jahren begann ich mit der grafischen Bildbearbeitung mit Paint, mit 13 Jahren intensivierte ich dieses Hobby mit GIMP.
-  </details>  
-  <br>
+  </details>
 
   <details>
     <summary><strong>KLICKEN</strong> Etwa zur selben Zeit befreite mich TypeScript aus der Unflexibilität von Batch, was mir die dynamische Generierung zweidimensionaler Bilder auf einem Canvas ermöglichte.</summary>
     Im Rahmen des mehrmals besuchten Kinder-Uni Feriencamps in Furtwangen machte ich erste Erfahrungen mit Processing und programmierte Pong. Jedes Erlernen eines neuen programmiertechnischen Werkzeuges verstärkte die Erkenntnis der Möglichkeit, dadurch meine Ideen in einem digitalem Medium festzuhalten, und sie von mir oder anderen, interaktiv oder passiv, später wieder abrufbar zu machen, was wiederum meine Motivation immer weiter steigen ließ.
-  </details>  
-  <br>
+  </details>
 
   <details>
     <summary><strong>KLICKEN</strong> Ich erkannte durch die Programmierung die Relevanz der Mathematik in verschiedenen Bereichen und begann mit experimenteller Programmierung</summary>
     für verschiedene Fächer am technischen Gymnasium, wo auch meine erste formale Ausbildung in Informatik begann. Mit 15 Jahren entwickelte ich eine regelrechte Begeisterung für die Möglichkeiten der Vektorrechnung und fraktaler Geometrie. Zusammen mit einem Lehrer und einem Mitschüler, mit dem ich einen Übersetzer für eine ausgedachte Geheimsprache programmierte, gründete ich eine Informatik-AG. In dieser wagten wir uns an die voll umfassende Programmierung neuronaler Netzwerke zum Experimentieren mit künstlicher Intelligenz, besonders bezogen auf Echtzeit-Bildverarbeitung eines Live-Kamerabildes.  
-  </details>  
-  <br>
+  </details>
 
   <details>
     <summary><strong>KLICKEN</strong> Im Rahmen der freiwilligen Aufgaben des Programmieren-Moduls des ersten Semesters </summary>
     meines abgeschlossenen Studiums entwickelte ich mit Java einen ewigen Kalender, Game-Of-Life und Tic-Tac-Toe. Letzteres baute ich zusätzlich mit einem zufällig spielenden Computergegner aus, der zum Trainieren einer künstlichen Intelligenz genutzt werden soll.
-  </details>  
-  <br>
+  </details>
 
   <details>
     <summary><strong>KLICKEN</strong> Beim GlobalGameJam 2020 im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines VR-Spiels mit.</summary>
     <p>Meine Hauptaufgaben lagen bei Gamedesign und Sound (<a href="#fuwashima-soundtrack-zum-globalgamejam2020">Fuwashima</a>).<br>
     Dieses Event weckte bei mir erneut das Interesse an der 3D-Programmierung und dem 3D-Modeling, weshalb ich mich in Unity und Blender weiter vertiefte.</p>
   </details>
-  <br>
 
   <details>
     <summary><strong>KLICKEN</strong> Seit Oktober 2019 studierte ich 7 Semester lang Medieninformatik an der Hochschule Furtwangen.</summary>
