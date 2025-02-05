@@ -14,24 +14,26 @@
 # Motivation
 
 <style>
-.details-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Zwei Spalten */
-    gap: 20px;
-}
 
-.details-container details {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
-
-@media (max-width: 768px) {
   .details-container {
-    grid-template-columns: 1fr; /* Eine Spalte auf kleineren Bildschirmen */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px; /* Abstand zwischen den Items */
+    justify-content: center;
   }
-}
+
+  .details-container details {
+    width: calc(33.33% - 10px); /* Standard: 3 Elemente pro Zeile */
+    box-sizing: border-box;
+    padding: 0px;
+  }
+
+  @media (max-width: 768px) {
+    .details-container {
+      grid-template-columns: 1fr; /* Eine Spalte auf kleineren Bildschirmen */
+    }
+  }
+
 </style>
 
 <div class = "details-container">
@@ -117,7 +119,7 @@ h1#header-coding ~ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 0px; /* Abstand zwischen den Items */
-  justify-content: center; /* Elemente normal anordnen */
+  justify-content: center;
   margin: 0 auto;
 }
 
