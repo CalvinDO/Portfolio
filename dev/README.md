@@ -147,14 +147,11 @@ video, img, .visual-presentation-container {
     <strong>6</strong> Monate <strong>Praktikant</strong><br>
     <strong>2,5</strong> Jahre <strong>Werkstudent</strong><br>
     <br>
-    <strong>Meine Arbeitsweise</strong><br>
     Strukturiert - Interdisziplinär - Kooperativ<br>
-    <strong>SCRUM, Atlassian Confluence, Versionskontrolle, Bugtracking (Mantis)</strong><br>
+    <strong>SCRUM, Atlassian Confluence, Plastic SCM, Mantis</strong><br>
     <br>
-    <strong>Meine Skills</strong><br>
     <strong>Unity (C#), FMOD (Audio-Integration)</strong><br>
     <br>
-    <strong>Meine Aufgaben</strong>
     <ul class = "task-list">
       <li><strong>Fahrzeug-Setup</strong><br>
       Integration von >80 Fahrzeugmodellen mit funktionsspezifischen Logikbausteinen (Rotationslimits, Getriebe- und Motorsimulation, Terrainsimulation, FMOD-Audio).</li>
