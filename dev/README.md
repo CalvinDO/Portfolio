@@ -113,6 +113,14 @@ h1#header-coding ~ h1 {
   text-align: center;
 }
 
+.flex-item h2 {
+    height: 80px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 @media (max-width: 1225px) {
   .flex-item {
     width: calc(50% - 10px); /* 2 Elemente pro Zeile */
@@ -143,7 +151,7 @@ video, img, .visual-presentation-container {
 
 <div class = "flex-container">
   <div class = "flex-item">
-    <h2 id ="bau-simulator">Bau-Simulator <br> <br> <br></h2>
+    <h2 id ="bau-simulator">Bau-Simulator</h2>
     <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
     <a href="https://store.steampowered.com/app/1273400/BauSimulator">
     <video width="100%" controls loop>
@@ -203,7 +211,7 @@ video, img, .visual-presentation-container {
   </div>
 
   <div class = "flex-item">
-    <h2 id ="the-last-hope">The Last Hope <br> <br> <br></h2>
+    <h2 id ="the-last-hope">The Last Hope</h2>
     <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
     <a href="https://simmer.io/@DerCalvino/thelasthope">
       <video width="100%" controls loop>
@@ -220,7 +228,7 @@ video, img, .visual-presentation-container {
     Laufen erfolgt mit W A S D, Angreifen mit den Maustasten, Q und E. I öffnet das Inventar. Drag and Drop von einer Fähigkeitskarte auf eine andere ermöglicht das Kombinieren.
   </div>
   <div class = "flex-item">
-    <h2 id ="realtime-beerphong">Realtime-BeerPhong <br><br><br></h2>
+    <h2 id ="realtime-beerphong">Realtime-BeerPhong</h2>
     <div style="display: flex; justify-content: space-between;">
       <a href="https://calvindo.github.io/Realtime-BeerPhong/aFrame.html">
       <div style="position: relative;">
@@ -241,7 +249,7 @@ video, img, .visual-presentation-container {
   </div>
 
   <div class = "flex-item">
-    <h2 id = "morbus-animi">Morbus-Animi <br> <br><br></h2>
+    <h2 id = "morbus-animi">Morbus-Animi</h2>
     <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
     <a href="https://simmer.io/@DerCalvino/morbus-animi-final">
     <video width="100%" controls loop>
