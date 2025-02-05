@@ -295,14 +295,14 @@ video, img, .visual-presentation-container {
     <br>
     <ul class="task-list">
         <li><strong>Spielmechanik & Physik</strong><br> Programmierung der Spielphysik und Mechaniken<br>
-        Beschwörungs- und Zauberkampfsystem, Spielbalance
+        -> Beschwörungs- und Zauberkampfsystem, Spielbalance
         </li>
         <li><strong>KI-Controller</strong><br> Logik von KI-Gegnern (Unity-NavMesh)<br>
-        Bewegungssteuerung, intelligentes Angreifen</li>
+        -> Bewegungssteuerung, intelligentes Angreifen</li>
         <li><strong>Sound & Animation</strong><br>
         Integration von Soundeffekten und Animationen</li>
         <li><strong>User Interface</strong><br> Design und Implementierung der Benutzeroberfläche<br>
-        Kombination von Fähigkeitskarten</li>
+        -> Kombination von Fähigkeitskarten</li>
     </ul>
     <div class="controls">
         W, A, S, D zum Laufen<br>
