@@ -70,6 +70,23 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
 <hr/>  
 <hr/>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var innerSections = document.querySelectorAll('.inner'); // Holt alle Elemente mit der Klasse .inner
+    console.log(innerSections);
+    // Überprüft, ob es überhaupt Elemente gibt
+    if(innerSections.length > 0) {
+        // Schleife über jedes gefundene Element
+        innerSections.forEach(function(innerSection) {
+            // Setzt die Breite jedes Elements auf 80% oder 1200px
+            innerSection.style.setProperty('width', '85.4102%', 'important');  // Oder '1200px', je nach Bedarf
+            innerSection.style.setProperty('max-width', 'none', 'important'); // Entfernt max-width
+            innerSection.style.setProperty('min-width', 'none', 'important');  // oder '1200px', je nach Bedarf
+        });
+    }
+});
+</script>
+
 <style>
 
 h1#header-coding,
@@ -83,7 +100,7 @@ h1#header-coding ~ h1 {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* Abstand zwischen den Items */
+  gap: 0px; /* Abstand zwischen den Items */
   justify-content: center; /* Elemente normal anordnen */
   margin: 0 auto;
 }
@@ -545,20 +562,3 @@ Die Motive lehnten ausschließlich an Tribal-Tattoos an.
   Dies ist der Inhalt des dritten ausklappbaren Divs.
 </details>
 -->
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    var innerSections = document.querySelectorAll('.inner'); // Holt alle Elemente mit der Klasse .inner
-    console.log(innerSections);
-    // Überprüft, ob es überhaupt Elemente gibt
-    if(innerSections.length > 0) {
-        // Schleife über jedes gefundene Element
-        innerSections.forEach(function(innerSection) {
-            // Setzt die Breite jedes Elements auf 80% oder 1200px
-            innerSection.style.setProperty('width', '61.8%', 'important');  // Oder '1200px', je nach Bedarf
-            innerSection.style.setProperty('max-width', 'none', 'important'); // Entfernt max-width
-            innerSection.style.setProperty('min-width', 'none', 'important');  // oder '1200px', je nach Bedarf
-        });
-    }
-});
-</script>
