@@ -236,7 +236,7 @@ video, img, .visual-presentation-container {
       AI-Playground
     </h4>
     <div class="skills">
-        <strong>Unity (C#), NEAT (Neuroevolution of Augmenting Topologies)</strong><br>
+        <strong>Unity (C#), <a href = "https://en.wikipedia.org/wiki/Neuroevolution_of_augmenting_topologies">NEAT</a></strong><br>
         <em>Forschungsorientiert - Innovativ - Selbstständig</em><br>
         <strong>Git, Roadmap, Kanban-Board</strong><br>
     </div>
