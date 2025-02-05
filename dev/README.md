@@ -212,24 +212,40 @@ video, img, .visual-presentation-container {
     Meine restliche Arbeit am Bau-Simulator bestand zum Einen aus der Programmierung eines zentralen Debug-UserInterfaces, mit dem neben allen Departments vor allem die Tester der Quality-Assurance das Command-System grafisch aufbereitet und effizient benutzen können. Darunter fällt das Springen zu und Erledigen von Missionen, Spawnen von Fahrzeugen, Cargo und Props, Einstellen globaler Parameter und weitere Steuerung des Spielgeschehens auf vielen Ebenen. Für die Realisierung des Aufbaus und Designs wählte ich einen dynamisch-generischen Ansatz, der das gesamte Command-System des Spiels als Konstellation von Knöpfen, Reglern und Eingabefeldern, geordnet unter mehreren Hierarchieebenen, generiert. Somit verringerte sich der Wartungsbedarf, da neu registrierte Kommandos direkt richtig in dem Debug-UI dargestellt werden.  
     Zum Anderen bestand meine Arbeit auch aus der Programmierung einer Anzeige des Navigations-Pfades in der Minimap, um Spieler anschaulich zu ihrem Ziel in der Welt zu leiten. Hier halfen mir meine Kenntnisse der Projektion von Räumen höherer Dimensionen in Räume niederer, die ich bereits in dem Kurs "Mathematik und Simulation" erlernte -- Link zum entsprechenden Projekt --   -->
   </div>
-  <div class = "flex-item">
-    <h2 id = "neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen">Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen</h2>
-    <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-    <a href="https://simmer.io/@DerCalvino/neuroevolutionbenutzerdefiniertermehrbeinigerkreaturen">
-      <video width="100%" controls loop>
-          <source src="BachelorThesis.mp4" alt="BachelorThesis" type="video/mp4"/>
-          Ihr Browser unterstützt den Video-Tag nicht
-      </video>
-    </a>
-    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-      Klicken zum Spielen
-    </div>
+  <div class="flex-item">
+    <h2 id="neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen">Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen</h2>
+    <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+        <a href="https://simmer.io/@DerCalvino/neuroevolutionbenutzerdefiniertermehrbeinigerkreaturen">
+            <video width="100%" controls loop>
+                <source src="BachelorThesis.mp4" alt="BachelorThesis" type="video/mp4"/>
+                Ihr Browser unterstützt den Video-Tag nicht
+            </video>
+        </a>
+        <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
+            Klicken zum Spielen
+        </div>
     </div>
     <h3><a href="NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">Bachelor Thesis - Zur PDF</a></h3>
-    Dieser AI-Playground ist die Methode meiner Bachelor-Thesis des siebten Semesters. Es ermöglicht Benutzern, eine Kreatur aus Gliedern und Gelenken nach Belieben in einem Editor zu bauen, sowie Rotationslimits der Glieder anzupassen. Im zweiten Schritt startet eine Simulation, bei dem der Kreatur ein vollständig verbundenes künstliches Neuronales Netzwerk zugeteilt wird. Daten über aktuelle Pose und Position werden als Sensoren oder Inputs in das Netz eingespeist, Outputs sind die angestrebten Winkel der Gelenke. Über Generationen hinweg werden die Kreatur und ihre Mutationen je nach räumlichem Fortschritt belohnt, selektiert und die besten Gene in die nächste Generation weitergetragen, wo sie wieder mutieren. Somit lernen die Bauten zu laufen.  
+    <p><strong>AI-Playground:</strong> Erstellen und trainieren Sie benutzerdefinierte Kreaturen mit der Neuroevolution-Methode. In einem Editor können Glieder und Gelenke angepasst werden, um die Kreatur nach Belieben zu gestalten. Eine Simulation mit einem künstlichen neuronalen Netzwerk steuert die Bewegungen der Kreaturen über Generationen hinweg.</p>
+    <h4>Verwendete Technologien und Methoden:</h4>
+    <ul class="skills">
+        <li><strong>Unity (C#), NEAT (Neuroevolution of Augmenting Topologies)</strong></li>
+        <li><strong>Evolutionäre Algorithmen</strong> - Selektion, Rekombination und Mutation zur Verbesserung der Kreaturenbewegungen.</li>
+        <li><strong>Simulations-basierte KI-Entwicklung</strong> - Kreation und Training eines neuronalen Netzwerks zur Bewegungskontrolle.</li>
+    </ul>
+    <h4>Wichtige Funktionen:</h4>
+    <ul class="task-list">
+        <li><strong>Editor für Kreaturenbau</strong><br>
+        Erstellen und Modifizieren von Kreaturen durch Hinzufügen von Gliedern und Gelenken.</li>
+        <li><strong>Simulationslauf</strong><br>
+        Neuroevolution durch Generationen: Mutationen und Selektion führen zu immer besseren Laufmustern.</li>
+        <li><strong>Steuerung</strong><br>
+        Editor-Kamera kann mit Mausbewegung und Maustasten gesteuert werden, zur Kreaturenerstellung wird die Maus verwendet.</li>
+    </ul>
+    <!-- Dieser AI-Playground ist die Methode meiner Bachelor-Thesis des siebten Semesters. Es ermöglicht Benutzern, eine Kreatur aus Gliedern und Gelenken nach Belieben in einem Editor zu bauen, sowie Rotationslimits der Glieder anzupassen. Im zweiten Schritt startet eine Simulation, bei dem der Kreatur ein vollständig verbundenes künstliches Neuronales Netzwerk zugeteilt wird. Daten über aktuelle Pose und Position werden als Sensoren oder Inputs in das Netz eingespeist, Outputs sind die angestrebten Winkel der Gelenke. Über Generationen hinweg werden die Kreatur und ihre Mutationen je nach räumlichem Fortschritt belohnt, selektiert und die besten Gene in die nächste Generation weitergetragen, wo sie wieder mutieren. Somit lernen die Bauten zu laufen.  
     Zugrunde liegen Evolutionäre Algorithmen, die Probleme ähnlich biologischer Organismen lösen, da genetische Operatoren wie Selektion, Rekombination und Mutation die Evolution durch Reproduktion der stärksten Gene steuern. In meiner Bachelor-Arbeit nutzte ich die topologische Flexibilität von NEAT (Neuroevolution of Augumenting Topologies) um die Kreaturen durch evolvierende Genome zu bewegen. Untersucht habe ich, welche Berechnungsmethode und Parameter-Konfiguration des NEAT-Algorithmus' zu der weitesten Laufdistanz verschiedener Kreaturen führt, ohne Laufmuster vorzugeben. Ich wollte eine Anwendung entwickeln, die ohne weitere Eingriffe des Nutzers zu Laufmustern seiner erstellten Kreaturen führt. Durch diese Arbeit entwickelte ich die Fähigkeit, künstliche Intelligenzen auf Basis von evolutionär veränderten Neuronalen Netzen zu programmieren und trainieren, sowie einen InGame-Editor in Unity zu programmieren.  
-    Die Kamera kann im Editor mit Mausbewegung und Drücken sowie Scrollen der mittleren Maustaste gesteuert werden. Bauen neuer Glieder wird mit Linksklick gestartet und mit Mausbewegung verlängert. Ein erneuter Linksklick schließt das Bauen ab, während die rechte Maustaste das Bauen abbricht. Den Rotations-Einstellungs-Modus schalten Sie mit "R" um. Weitere Anleitung finden Sie in der <a href = "NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">Thesis</a>
-  </div>
+    Die Kamera kann im Editor mit Mausbewegung und Drücken sowie Scrollen der mittleren Maustaste gesteuert werden. Bauen neuer Glieder wird mit Linksklick gestartet und mit Mausbewegung verlängert. Ein erneuter Linksklick schließt das Bauen ab, während die rechte Maustaste das Bauen abbricht. Den Rotations-Einstellungs-Modus schalten Sie mit "R" um. Weitere Anleitung finden Sie in der <a href = "NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">Thesis</a> -->
+</div>
 
   <div class = "flex-item">
     <h2 id ="the-last-hope">The Last Hope</h2>
