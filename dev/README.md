@@ -156,9 +156,12 @@ video, img, .visual-presentation-container {
     <br>
     <strong>Meine Aufgaben</strong>
     <ul class = "task-list">
-      <li><strong>Fahrzeug-Setup</strong>: Integration von >80 Fahrzeugmodellen mit funktionsspezifischen Logikbausteinen (Rotationslimits, Getriebe- und Motorsimulation, Terrainsimulation, FMOD-Audio).</li>
-      <li><strong>Debug-UI-Entwicklung</strong>: Erstellung eines dynamischen und generischen Debug-Tools für Missionen, Fahrzeug-Spawning, Parameter-Anpassungen</li>
-      <li><strong>Navigationsdisplay</strong>: Anzeige des Pfades in der Minimap.</li>
+      <li><strong>Fahrzeug-Setup</strong><br>
+      Integration von >80 Fahrzeugmodellen mit funktionsspezifischen Logikbausteinen (Rotationslimits, Getriebe- und Motorsimulation, Terrainsimulation, FMOD-Audio).</li>
+      <li><strong>Debug-UI-Entwicklung</strong><br>
+      Erstellung eines dynamischen und generischen Debug-Tools für Missionen, Fahrzeug-Spawning, Parameter-Anpassungen</li>
+      <li><strong>Navigationsdisplay</strong><br>
+      Anzeige des Pfades in der Minimap.</li>
     </ul>
     <!-- Im Dev-Team bei <a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a> arbeitete ich mit insgesamt 25 Mitarbeitern und weiteren Outsourcern vom Winter 2020 bis zum Frühling 2023. Begonnen als Praktikant im Büro für das dritte Semester, behielt mich das Unternehmen überzeugt als Werkstudent bis zum Bachelor-Abschluss. So sammelte ich zwei weitere Jahre lang Erfahrung in der Programmierung eines kommerziellen Mid-Tier Games. Neben strukturellem Arbeiten mit agilem Projektmanagement, wie SCRUM-Sprintmeetings, Atlassian Confluence, Versionskontrolle, Bugtracking mit Mantis in einem größeren Team und Orientierung nach Vorgaben eines kommerziellen Publishers (<a href = "https://www.astragon.de/">Astragon</a>), sowie Synergie mit Grafiker- und QA-Departments vertiefte ich mich in fortgeschrittene Programmierung mit Unity und C#. Desweiteren lernte ich FMOD als Audio-Integrationssoftware für Unity kennen.  
     Meine Hauptbeschäftigung bestand aus dem Fahrzeug-Setup, bei dem ich Modelle der Grafiker mit Logikbausteinen der Programmierer zu funktionsfähigen Baumaschinen integrierte. Da jedes der >80 Fahrzeuge sich in seinen Funktionen unterscheidet, wie beispielsweise Rotationslimits von Schaufeln und Armen oder Schaltpunkte der Motoren- und Getriebesimulation, zeichnete sich das Fahrzeug-Setup größtenteils durch Parametrierung der Logik-Assets aus. Ein weiterer Bestandteil war die intensive Kommunikation mit dem Grafik-Team, falls Meshes der Modelle ausgetauscht oder ergänzt werden mussten. Besonders im Bereich des Hydraulik-, Fahrkabinen-, Licht-, und Spiegel-Setups war die interdisziplinäre Kooperation mit dem Art-Department essentiell. Viele Ressourcen flossen auch in das Aufsetzen der Terrainsimulation, um Schuttfüllungen in verschiedenen Werkzeugen wie Schaufeln und Kipper von Mulden zu realisieren. Auch zum Fahrzeug-Setup gehörte die auditive Simulation des Baugeschehens, bei dem ich den Umgang mit Banks in FMOD lernte.  
