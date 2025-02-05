@@ -181,8 +181,8 @@ video, img, .visual-presentation-container {
     </div>
     <h4>
     <strong><a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a></strong> <br>
-    <strong>Winter 2020 - Frühling 2023</strong> <br>
     <strong>25-köpfiges</strong> Team + Outsourcer<br>
+    <strong>Winter 2020 - Frühling 2023</strong> <br>
     <strong>Publisher:</strong> <a href = "https://www.astragon.de/">Astragon</a></h4><br>
     <strong>6</strong> Monate <strong>Praktikant</strong><br>
     <strong>2,5</strong> Jahre <strong>Werkstudent</strong><br>
