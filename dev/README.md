@@ -240,8 +240,9 @@ video, img, .visual-presentation-container {
     </div>
     <h4>Wichtige Funktionen:</h4>
     <ul class="task-list">
-        <li><strong>Evolutionäre Algorithmen</strong> - Selektion, Rekombination und Mutation zur Verbesserung der Kreaturenbewegungen.</li>
-        <li><strong>Simulations-basierte KI-Entwicklung</strong> - Kreation und Training eines neuronalen Netzwerks zur Bewegungskontrolle.</li>
+        <li><strong>Evolutionäre Algorithmen</strong><br> Selektion, Rekombination und Mutation zur Verbesserung der Kreaturenbewegungen.</li>
+        <li><strong>Simulations-basierte KI-Entwicklung</strong><br>
+        Kreation und Training eines neuronalen Netzwerks zur Bewegungskontrolle.</li>
         <li><strong>Editor für Kreaturenbau</strong><br>
         Erstellen und Modifizieren von Kreaturen durch Hinzufügen von Gliedern und Gelenken.</li>
         <li><strong>Simulationslauf</strong><br>
