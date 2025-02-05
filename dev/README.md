@@ -241,6 +241,7 @@ video, img, .visual-presentation-container {
         <em>Forschungsorientiert - Innovativ - Selbstständig</em><br>
         <strong>Git, Roadmap, Kanban-Board</strong><br>
     </div>
+    <br>
     <ul class="task-list">
         <li><strong>Evolutionäre Algorithmen</strong><br> Selektion, Rekombination und Mutation zum Lernen von Kreaturenbewegungen über Generationen hinweg</li>
         <li><strong>Simulations-basierte KI-Entwicklung</strong><br>
