@@ -174,7 +174,8 @@ video, img, .visual-presentation-container {
 
 <div class = "flex-container">
   <div class = "flex-item">
-    <h2 id ="bau-simulator">Bau-Simulator</h2>
+    <h2 id ="bau-simulator">Bau-Simulator<br>
+    (Kommerziell)</h2>
     <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
     <a href="https://store.steampowered.com/app/1273400/BauSimulator">
     <video width="100%" controls loop>
