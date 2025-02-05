@@ -278,6 +278,7 @@ video, img, .visual-presentation-container {
         </div>
     </div>  
     <h4>
+        <strong>Gamedesign-Workhop</strong><br>
         <strong>6-köpfiges Team</strong><br>
         <strong>Sommer 2022</strong><br>
         <strong>IndieNight-Auszeichnung</strong>
