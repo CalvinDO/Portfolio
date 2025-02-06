@@ -335,8 +335,8 @@ video, img, .visual-presentation-container {
     3-köpfiges Team
     </h4>
     <div class = "skills">
-      <strong>WebAR, JavaScript, GLSL, Three.js</strong>
-      <em>Innovativ – Kollaborativ – Experimentell</em>
+      <strong>WebAR, JavaScript, GLSL, Three.js</strong><br>
+      <em>Innovativ – Kollaborativ – Experimentell</em><br>
       <strong>Shaderprogrammierung, Physiksimulation, UI/UX</strong>
     </div>
     <h3>Aufgaben & Beiträge</h3>
