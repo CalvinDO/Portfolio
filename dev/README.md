@@ -319,8 +319,7 @@ video, img, .visual-presentation-container {
     <div style="display: flex; justify-content: space-between;">
       <a href="https://calvindo.github.io/Realtime-BeerPhong/aFrame.html">
         <div style="position: relative;">
-          <img src="BeerPhong.jpeg" width="100%" style = "width: 30%;
-          height: auto;">
+          <img src="BeerPhong.jpeg" width="100%">
           <div style="position: absolute; top: 24%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5;">Klicken zum Spielen</div>
         </div>
       </a>  
