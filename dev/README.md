@@ -290,7 +290,7 @@ video, img, .visual-presentation-container {
     <div class="skills">
         <strong>Unity (C#), Spielmechanik, KI, Animationen, UI-Design</strong><br>
         <em>Kreativ - Kooperativ - Interdisziplinär</em><br>
-        <strong>Gameplay-Design, Wireframes, User Tests, Klassendiagramme, Sounddesign, SCRUM, Kanban-Board</strong><br>
+        <strong>Gameplay-Design, Wireframes, User Tests, Klassendiagramme, Sounddesign, SCRUM, Kanban-Board, Git</strong><br>
     </div>
     <br>
     <ul class="task-list">
@@ -344,7 +344,7 @@ video, img, .visual-presentation-container {
     <div class = "skills">
       <strong>WebAR, JavaScript, GLSL, Three.js</strong><br>
       <em>Innovativ – Kollaborativ – Experimentell</em><br>
-      <strong>Dokumentation, UI/UX, Sprint-Meetings</strong>
+      <strong>Dokumentation, UI/UX, Sprint-Meetings, Git</strong>
     </div>
     <br>
     <ul>
