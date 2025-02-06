@@ -332,7 +332,7 @@ video, img, .visual-presentation-container {
     </div>
     <h3>Mobile Web-AR Partyspiel – Shaderprogrammierung</h3>
     <p><strong>Team-Projekt (3 Personen) – Sommer 2022</strong></p>
-    <div style="background-color: #f4f4f4; padding: 10px; border-radius: 8px;">
+    <div class = "skills">
       <p><strong>WebAR, JavaScript, GLSL, Three.js</strong></p>
       <p><em>Innovativ – Kollaborativ – Experimentell</em></p>
       <p><strong>Shaderprogrammierung, Physiksimulation, UI/UX</strong></p>
