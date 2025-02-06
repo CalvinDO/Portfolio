@@ -326,7 +326,7 @@ video, img, .visual-presentation-container {
       <a href="BeerPhongMarker.png" download>
         <div style="position: relative;">
           <img src="BeerPhongMarker.png" style="width: 100%; height: auto; max-width: 100%;">
-          <div style="position: absolute; bottom: 50%; left: 20%; transform: translateX(-50%); color: black; font-size: 2em; opacity: 0.5;">
+          <div style="position: absolute; top: 16%; left: 20%; transform: translateX(-50%); color: black; font-size: 2em; opacity: 0.5;">
           Klicken<br>
           zum<br>
           Download
