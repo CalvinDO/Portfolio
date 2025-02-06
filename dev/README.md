@@ -343,6 +343,10 @@ video, img, .visual-presentation-container {
       <li><strong>Physik & Wurfmechanik:</strong> Implementierung der Ballflugbahn inkl. Aufprall- und Abprall-Logik mit Touchscreen-Gestensteuerung</li>
       <li><strong>Augmented Reality & Web-Integration:</strong> Nutzung von WebAR zur Platzierung des Spieltisches über einen AR-Marker mit Three.js</li>
     </ul>
+    <div class="controls">
+        Smartphone-Kamera auf Marker richten<br>
+        Swipen zum Werfen<br>
+    </div>
     <!-- Dieses webbasierte Mobile-Game erfordert einen AR-Marker, über dem auf dem Smartphone ein Beerpong-Tisch mit Bechern als Ziele generiert wird. Der Spieler bewegt sich um den Tisch herum, um aus einer günstigen Abwurfposition heraus den Ball mit einem Swipe auf dem Touchscreen so in die Spielszene zu werfen, dass er direkt oder nach Aufkommen auf der Platte in einem Becher landet.  
     Die Umsetzung innerhalb des Kurses "Echtzeit-Computergrafik" im sechsten Semester erfolgte mit WebAR, JavaScript und GLSL. In einem dreiköpfigen Team machten wir uns mit Programmierung von Vertex- und Fragmentshadern vertraut, sowie mit Umgebungsvariablen von WebAR und "Three.js". -->
   </div>
