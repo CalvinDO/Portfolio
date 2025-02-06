@@ -315,24 +315,36 @@ video, img, .visual-presentation-container {
     Laufen erfolgt mit W A S D, Angreifen mit den Maustasten, Q und E. I öffnet das Inventar. Drag and Drop von einer Fähigkeitskarte auf eine andere ermöglicht das Kombinieren. -->
   </div>
   <div class = "flex-item">
-    <h2 id ="realtime-beerphong">Realtime-BeerPhong</h2>
+    <h2 id="realtime-beerpong">Realtime-BeerPhong</h2>
     <div style="display: flex; justify-content: space-between;">
       <a href="https://calvindo.github.io/Realtime-BeerPhong/aFrame.html">
-      <div style="position: relative;">
-        <img src="BeerPhong.jpeg" width="100%">
-        <div style="position: absolute; top: 24%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5;">Klicken zum Spielen</div>
-      </div>
+        <div style="position: relative;">
+          <img src="BeerPhong.jpeg" width="100%">
+          <div style="position: absolute; top: 24%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5;">Klicken zum Spielen</div>
+        </div>
       </a>  
       <a href="BeerPhongMarker.png" download>
-      <div style="position: relative;">
-        <img src="BeerPhongMarker.png" width="100%">
-        <div style="position: absolute; bottom: 20%; left: 50%; transform: translateX(-50%); color: black; font-size: 2em; opacity: 0.5;">Klicken zum Download</div>
-      </div>
+        <div style="position: relative;">
+          <img src="BeerPhongMarker.png" width="100%">
+          <div style="position: absolute; bottom: 20%; left: 50%; transform: translateX(-50%); color: black; font-size: 2em; opacity: 0.5;">Klicken zum Download</div>
+        </div>
       </a>
     </div>
-    <h3>Mobile Web-AR Partyspiel - Shaderprogrammierung</h3>
-    Dieses webbasierte Mobile-Game erfordert einen AR-Marker, über dem auf dem Smartphone ein Beerpong-Tisch mit Bechern als Ziele generiert wird. Der Spieler bewegt sich um den Tisch herum, um aus einer günstigen Abwurfposition heraus den Ball mit einem Swipe auf dem Touchscreen so in die Spielszene zu werfen, dass er direkt oder nach Aufkommen auf der Platte in einem Becher landet.  
-    Die Umsetzung innerhalb des Kurses "Echtzeit-Computergrafik" im sechsten Semester erfolgte mit WebAR, JavaScript und GLSL. In einem dreiköpfigen Team machten wir uns mit Programmierung von Vertex- und Fragmentshadern vertraut, sowie mit Umgebungsvariablen von WebAR und "Three.js".
+    <h3>Mobile Web-AR Partyspiel – Shaderprogrammierung</h3>
+    <p><strong>Team-Projekt (3 Personen) – Sommer 2022</strong></p>
+    <div style="background-color: #f4f4f4; padding: 10px; border-radius: 8px;">
+      <p><strong>WebAR, JavaScript, GLSL, Three.js</strong></p>
+      <p><em>Innovativ – Kollaborativ – Experimentell</em></p>
+      <p><strong>Shaderprogrammierung, Physiksimulation, UI/UX</strong></p>
+    </div>
+    <h3>Aufgaben & Beiträge</h3>
+    <ul>
+      <li><strong>Shader-Programmierung:</strong> Erstellung von Vertex- und Fragment-Shadern für AR-Rendering (Beleuchtung, Materialeffekte, visuelle Optimierung)</li>
+      <li><strong>Physik & Wurfmechanik:</strong> Implementierung der Ballflugbahn inkl. Aufprall- und Abprall-Logik mit Touchscreen-Gestensteuerung</li>
+      <li><strong>Augmented Reality & Web-Integration:</strong> Nutzung von WebAR zur Platzierung des Spieltisches über einen AR-Marker mit Three.js</li>
+    </ul>
+    <!-- Dieses webbasierte Mobile-Game erfordert einen AR-Marker, über dem auf dem Smartphone ein Beerpong-Tisch mit Bechern als Ziele generiert wird. Der Spieler bewegt sich um den Tisch herum, um aus einer günstigen Abwurfposition heraus den Ball mit einem Swipe auf dem Touchscreen so in die Spielszene zu werfen, dass er direkt oder nach Aufkommen auf der Platte in einem Becher landet.  
+    Die Umsetzung innerhalb des Kurses "Echtzeit-Computergrafik" im sechsten Semester erfolgte mit WebAR, JavaScript und GLSL. In einem dreiköpfigen Team machten wir uns mit Programmierung von Vertex- und Fragmentshadern vertraut, sowie mit Umgebungsvariablen von WebAR und "Three.js". -->
   </div>
 
   <div class = "flex-item">
