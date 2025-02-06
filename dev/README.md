@@ -331,13 +331,13 @@ video, img, .visual-presentation-container {
       </a>
     </div>
     <h4>
-    Mobile Web-AR Partyspiel
+    Mobile Web-AR Partyspiel<br>
     3-köpfiges Team
     </h4>
     <div class = "skills">
-      <p><strong>WebAR, JavaScript, GLSL, Three.js</strong></p>
-      <p><em>Innovativ – Kollaborativ – Experimentell</em></p>
-      <p><strong>Shaderprogrammierung, Physiksimulation, UI/UX</strong></p>
+      <strong>WebAR, JavaScript, GLSL, Three.js</strong>
+      <em>Innovativ – Kollaborativ – Experimentell</em>
+      <strong>Shaderprogrammierung, Physiksimulation, UI/UX</strong>
     </div>
     <h3>Aufgaben & Beiträge</h3>
     <ul>
