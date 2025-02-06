@@ -335,15 +335,17 @@ video, img, .visual-presentation-container {
       </a>
     </div>
     <h4>
-    Mobile Web-AR Partyspiel<br>
-    3-köpfiges Team
+    Echtzeit-Computergrafik<br>
+    3-köpfiges Team<br>
+    Sommer 2022<br>
+    Mobile Web-AR Partyspiel
     </h4>
+    <br>
     <div class = "skills">
       <strong>WebAR, JavaScript, GLSL, Three.js</strong><br>
       <em>Innovativ – Kollaborativ – Experimentell</em><br>
       <strong>Shaderprogrammierung, Physiksimulation, UI/UX</strong>
     </div>
-    <h3>Aufgaben & Beiträge</h3>
     <ul>
       <li><strong>Shader-Programmierung:</strong> Erstellung von Vertex- und Fragment-Shadern für AR-Rendering (Beleuchtung, Materialeffekte, visuelle Optimierung)</li>
       <li><strong>Physik & Wurfmechanik:</strong> Implementierung der Ballflugbahn inkl. Aufprall- und Abprall-Logik mit Touchscreen-Gestensteuerung</li>
