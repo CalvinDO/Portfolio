@@ -344,8 +344,9 @@ video, img, .visual-presentation-container {
     <div class = "skills">
       <strong>WebAR, JavaScript, GLSL, Three.js</strong><br>
       <em>Innovativ – Kollaborativ – Experimentell</em><br>
-      <strong>Shaderprogrammierung, Physiksimulation, UI/UX</strong>
+      <strong>Dokumentation, UI/UX, Sprint-Meetings</strong>
     </div>
+    <br>
     <ul>
       <li><strong>Shader-Programmierung:</strong> Erstellung von Vertex- und Fragment-Shadern für AR-Rendering (Beleuchtung, Materialeffekte, visuelle Optimierung)</li>
       <li><strong>Physik & Wurfmechanik:</strong> Implementierung der Ballflugbahn inkl. Aufprall- und Abprall-Logik mit Touchscreen-Gestensteuerung</li>
