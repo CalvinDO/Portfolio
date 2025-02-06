@@ -281,10 +281,10 @@ video, img, .visual-presentation-container {
         </div>
     </div>  
     <h4>
-        <strong>Gamedesign-Workhop</strong><br>
-        <strong>6-köpfiges Team</strong><br>
-        <strong>Sommer 2022</strong><br>
-        <strong>IndieNight-Auszeichnung</strong>
+        Gamedesign-Workhop<br>
+        6-köpfiges Team<br>
+        Sommer 2022<br>
+        IndieNight-Auszeichnung
     </h4>
     <br>
     <div class="skills">
@@ -330,8 +330,10 @@ video, img, .visual-presentation-container {
         </div>
       </a>
     </div>
-    <h3>Mobile Web-AR Partyspiel – Shaderprogrammierung</h3>
-    <p><strong>Team-Projekt (3 Personen) – Sommer 2022</strong></p>
+    <h4>
+    Mobile Web-AR Partyspiel
+    3-köpfiges Team
+    </h4>
     <div class = "skills">
       <p><strong>WebAR, JavaScript, GLSL, Three.js</strong></p>
       <p><em>Innovativ – Kollaborativ – Experimentell</em></p>
