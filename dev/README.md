@@ -320,16 +320,32 @@ video, img, .visual-presentation-container {
       <a href="https://calvindo.github.io/Realtime-BeerPhong/aFrame.html">
         <div style="position: relative;">
           <img src="BeerPhong.jpeg" style="width: 100%; height: auto; max-width: 100%;">
-          <div style="position: absolute; top: 24%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5;">Klicken zum Spielen</div>
+          <div style="
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2em;
+            opacity: 0.5;
+            text-align: center;">
+            Klicken zum Spielen
+          </div>
         </div>
       </a>  
       <a href="BeerPhongMarker.png" download>
         <div style="position: relative;">
           <img src="BeerPhongMarker.png" style="width: 100%; height: auto; max-width: 100%;">
-          <div style="position: absolute; top: 24%; left: 22%; transform: translateX(-24%); color: black; font-size: 2em; opacity: 0.5;">
-          Klicken<br>
-          zum<br>
-          Download
+          <div style="
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+            font-size: 2em;
+            opacity: 0.5;
+            text-align: center;">
+            Klicken<br>zum<br>Download
           </div>
         </div>
       </a>
