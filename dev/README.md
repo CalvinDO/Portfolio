@@ -339,7 +339,7 @@ video, img, .visual-presentation-container {
           <div style="
             position: absolute;
             top: 50%;
-            left: 22%;
+            left: 25%;
             transform: translate(-50%, -50%);
             color: black;
             font-size: 2em;
