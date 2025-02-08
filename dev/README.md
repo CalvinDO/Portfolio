@@ -405,7 +405,7 @@ video, img, .visual-presentation-container {
     </h4>
     <br>
     <div class="skills">
-        <strong>Unity (C#), NavMesh<strong><br>
+        <strong>Unity (C#), NavMesh</strong><br>
         <em>Teamorientiert - Strukturiert - Erzählstark</em><br>
         <strong>Style Guides, Dokumentation, Roadmap, Kanban, SCRUM, Git</strong>
     </div>
