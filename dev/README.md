@@ -435,8 +435,8 @@ video, img, .visual-presentation-container {
     Die Steuerung wird im Spiel erklärt. -->
   </div>
   <div class="flex-item">
-    <h2 id="gesetzestext-generator">Gesetzestext-Generator(Rekursives Neuronales Netzwerk)</h2>
-    <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+    <h2 id="gesetzestext-generator">Gesetzestext-Generator (Rekursives Neuronales Netzwerk)</h2>
+    <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="https://colab.research.google.com/github/CalvinDO/AITextGenerator/blob/main/LawLanguageRNN/textGenerator.ipynb">
         <img src="TextGenerator.png" width="100%">
       </a>
@@ -444,12 +444,42 @@ video, img, .visual-presentation-container {
         Klicken zum Anwenden
       </div>
     </div>  
-    Das Bürgergesetzbuch als Trainingsdaten eingespeist, "erfindet" mein Gesetzestext-Generator neue Paragraphen am laufenden Band. Dieses Freizeitprojekt ist eine --darüber hinausgehung-- des Kurses "Introduction to Deep Learning" im fünften Semester, in dem ich bereits Logistische Regression mit BCE und Softmax, Backpropagation und Convolutional Neural Networks erlernte.  
+    <h4>
+      Solo-Projekt<br>
+      Selbststudium<br>
+      Winter 2021 / 2022<br>
+      AI-Experiment
+    </h4>
+    <br>
+    <div class="skills">
+        <strong>Python, Keras (TensorFlow), Jupyter Notebook, Language Model, Recurrent Neural Networks (RNN), GRU</strong><br>
+        <em>Forschungsorientiert - Innovativ - Selbstständig</em><br>
+        <strong>Google Colab, Git</strong><br>
+    </div>
+    <br>
+    <ul class="task-list">
+        <li><strong>Trainingsdatensatz & Vorverarbeitung</strong><br>
+        Erstellung eines Textmodells mit Bürgergesetzbuch als Trainingsdaten<br>
+         -> Umwandlung des Textes in sequenzielle Eingaben und Zielzeichen</li>
+        <li><strong>Neuronale Netzwerk-Architektur</strong><br>
+        Implementierung eines GRU-basierten RNNs in Keras<br>
+         -> Architektur aus Embedding, GRU und Dense-Schichten</li>
+        <li><strong>Textgenerierung</strong><br>
+        Erzeugung von neuen Paragraphen basierend auf einem Startzeichen<br>
+         -> Anpassung der Vorhersage durch Temperatur</li>
+        <li><strong>Zukünftige Erweiterungen</strong><br>
+        Testen von LSTM und GPT für verbesserte Textgenerierung<br>
+          -> Vergleich der Performance und Effizienz</li>
+    </ul>
+    <div class="controls">
+        Code-Blöcke in Colab ausführen, Kommentare beachten
+    </div>
+    <!-- Das Bürgergesetzbuch als Trainingsdaten eingespeist, "erfindet" mein Gesetzestext-Generator neue Paragraphen am laufenden Band. Dieses Freizeitprojekt ist eine --darüber hinausgehung-- des Kurses "Introduction to Deep Learning" im fünften Semester, in dem ich bereits Logistische Regression mit BCE und Softmax, Backpropagation und Convolutional Neural Networks erlernte.  
     Das gesamte Projekt wurde in einem Jupyter Notebook mit Python entwickelt. Zuerst werden die Trainingsdaten für das Language Model, hier das Gesetzbuch als String mit 1,8 Millionen Zeichen, geladen, und einzigartige Zeichen im Text analysiert. Diesen werden IDs zugeordnet und der Text in eine Sequenz von solchen umgewandelt. In Input- und Target-Sequenzen aufgeteilt, stellt das Target das nächste Zeichen der Sequenz dar.
     Für die Architektur wählte ich das Keras Model von Tensorflow mit einem GRU (Gated Recurrent Unit) Layer als Hauptkomponente. Vorrangeschaltet ist ein Embedding-Layer, in dem eine beliebig lange Input-Sequenz zu einem dichten Vektor umgewandelt wird, während eine vollständig verbundene Dense-Schicht den finalen Output berechnet - der Wahrscheinlichkeit für das nächste Zeichen.  
     Nach der Erstellung des Modells wird es mit dem vorbereiteten Datenset trainiert. Ich habe die SparseCategoricalCrossentropy-Loss-Funktion verwendet, um den Fehler zwischen den Vorhersagen und den Zielzeichen zu messen. An diesem Loss lernt das Modell, und versucht, ihn zu minimieren. Auch habe ich einen Checkpoint-Mechanismus zur Persistenz eingerichtet.  
     Das Modell generiert nun auf Basis eines gegebenen Startzeichens mit einem One Step Model Zeichen für Zeichen neuen Text. Bei jedem Schritt trifft das Modell eine Vorhersage für das nächste Zeichen, wobei die Wahrscheinlichkeiten für mögliche Zeichen mittels der Temperatur angepasst werden können. Dies beeinflusst, wie zufällig oder deterministisch die generierten Zeichen sind.  
-    Geplant ist Implementierung von und Testen der Performance von LSTM als weitere RNN-Struktur am Bürgergesetzbuch, sowie GPT als generativer Transformer wegen Self-Attention- und Parallelisierungsmechanismen. Auch würde die Verwendung einer Wörterbuch-Datenbank würde Effizienz in dem Use Case des Gesetzesbuchs deutlich steigern, allerdings zu weniger komischen Neologismen führen.
+    Geplant ist Implementierung von und Testen der Performance von LSTM als weitere RNN-Struktur am Bürgergesetzbuch, sowie GPT als generativer Transformer wegen Self-Attention- und Parallelisierungsmechanismen. Auch würde die Verwendung einer Wörterbuch-Datenbank würde Effizienz in dem Use Case des Gesetzesbuchs deutlich steigern, allerdings zu weniger komischen Neologismen führen. -->
   </div>
 </div>
 
