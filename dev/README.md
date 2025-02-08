@@ -347,7 +347,7 @@ video, img, .visual-presentation-container {
             font-size: 2em;
             opacity: 0.5;
             text-align: center;">
-            Klicken<br>zum<br>Download
+            Klicken<br>zum<br>Marker
           </div>
         </div>
       </a>
