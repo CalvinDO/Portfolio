@@ -364,11 +364,14 @@ video, img, .visual-presentation-container {
     </div>
     <br>
     <ul class = "task-list">
-      <li><strong>Shader-Programmierung</strong> Erstellung von Vertex- und Fragment-Shadern für AR-Rendering<br>
+      <li><strong>Shader-Programmierung</strong><br>
+      Erstellung von Vertex- und Fragment-Shadern für AR-Rendering<br>
       -> Beleuchtung, Materialeffekte, visuelle Optimierung</li>
-      <li><strong>Physik & Wurfmechanik</strong> Implementierung der Ballflugbahn<br>
+      <li><strong>Physik & Wurfmechanik</strong><br>
+      Implementierung der Ballflugbahn<br>
       -> Aufprall- und Abprall-Logik, Touchscreen-Gestensteuerung</li>
-      <li><strong>Augmented Reality & Web-Integration</strong> Nutzung von WebAR & Three.js<br>
+      <li><strong>Augmented Reality & Web-Integration</strong><br>
+      Nutzung von WebAR & Three.js<br>
       -> Platzierung des Spieltisches über einen AR-Marker</li>
     </ul>
     <div class="controls">
