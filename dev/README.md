@@ -422,7 +422,7 @@ video, img, .visual-presentation-container {
         -> Anpassungsfähige Verfolgungs- und Fluchtmechaniken</li>
         <li><strong>Modulare Asset-Programmierung</strong><br>
         Erstellung parametrischer Assets zur flexiblen Anpassung durch andere Abteilungen<br>
-        -> Dynamische Elemente für Story, Level, Puzzle, Effekt & Sound</li>
+        -> Dynamische Elemente: Story, Level, Puzzle, Effekt, Sound</li>
         <li><strong>Details & Technische Tiefe</strong><br>
         Diverses Coding zur Steigerung der Immersion und Interaktivität<br>
         -> Bone-Rigs mit Multi-Aim Constraints & Weights</li>
