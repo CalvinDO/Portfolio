@@ -421,8 +421,8 @@ video, img, .visual-presentation-container {
         Programmierung und Balancing der Gegner-KI (Unity NavMesh)<br>
         -> Anpassungsfähige Verfolgungs- und Fluchtmechaniken</li>
         <li><strong>Modulare Asset-Programmierung</strong><br>
-        Erschaffung parametrischer Assets für Story- und Gameplay-Logik<br>
-        -> Dynamische Story-, Puzzle-, Effekt- & Sound Elemente</li>
+        Erstellung parametrischer Assets zur flexiblen Anpassung durch andere Abteilungen<br>
+        -> Dynamische Elemente für Story, Level, Puzzle, Effekt & Sound</li>
         <li><strong>Details & Technische Tiefe</strong><br>
         Diverses Coding zur Steigerung der Immersion und Interaktivität<br>
         -> Bone-Rigs mit Multi-Aim Constraints & Weights</li>
