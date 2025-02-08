@@ -288,16 +288,18 @@ video, img, .visual-presentation-container {
     </h4>
     <br>
     <div class="skills">
-        <strong>Unity (C#), Spielmechanik, KI, Animationen, UI-Design</strong><br>
+        <strong>Unity (C#), NavMesh</strong><br>
         <em>Kreativ - Kooperativ - Interdisziplinär</em><br>
-        <strong>Gameplay-Design, Wireframes, User Tests, Klassendiagramme, Sounddesign, SCRUM, Kanban-Board, Git</strong><br>
+        <strong>Gameplay-Design, Wireframes, User Tests, Klassendiagramme, Sounddesign, Kanban-Board, SCRUM, Git</strong><br>
     </div>
     <br>
     <ul class="task-list">
-        <li><strong>Spielmechanik & Physik</strong><br> Programmierung der Spielphysik und Mechaniken<br>
+        <li><strong>Spielmechanik & Physik</strong><br>
+        Programmierung der Spielphysik und Mechaniken<br>
         -> Beschwörungs- und Zauberkampfsystem, Spielbalance
         </li>
-        <li><strong>KI-Controller</strong><br> Logik von KI-Gegnern (Unity-NavMesh)<br>
+        <li><strong>KI-Controller</strong><br>
+        Logik von KI-Gegnern (Unity-NavMesh)<br>
         -> Bewegungssteuerung, intelligentes Angreifen</li>
         <li><strong>Sound & Animation</strong><br>
         Integration von Soundeffekten und Animationen</li>
@@ -382,22 +384,55 @@ video, img, .visual-presentation-container {
     Die Umsetzung innerhalb des Kurses "Echtzeit-Computergrafik" im sechsten Semester erfolgte mit WebAR, JavaScript und GLSL. In einem dreiköpfigen Team machten wir uns mit Programmierung von Vertex- und Fragmentshadern vertraut, sowie mit Umgebungsvariablen von WebAR und "Three.js". -->
   </div>
 
-  <div class = "flex-item">
-    <h2 id = "morbus-animi">Morbus-Animi</h2>
-    <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-    <a href="https://simmer.io/@DerCalvino/morbus-animi-final">
-    <video width="100%" controls loop>
-        <source src="Morbus-Animi.mp4" alt="Morbus-Animi" type="video/mp4"/>
-        Ihr Browser unterstützt den Video-Tag nicht
-    </video>
-    </a>
-    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-    Klicken zum Spielen
-    </div>
+  <div class="flex-item">
+    <h2 id="morbus-animi">Morbus Animi</h2>
+    <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+        <a href="https://simmer.io/@DerCalvino/morbus-animi-final">
+            <video width="100%" controls loop>
+                <source src="Morbus-Animi.mp4" alt="Morbus-Animi" type="video/mp4"/>
+                Ihr Browser unterstützt den Video-Tag nicht
+            </video>
+        </a>
+        <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
+            Klicken zum Spielen
+        </div>
     </div>  
-    Mit zwei Grafikerinnen, einem VFX-Spezialist, einem Storyteller, einem anderen Programmierer und mir entwickelten wir im vierten und fünften Semester im Rahmen des Projektstudiums dieses psychische Horrorspiel. Auch bei der Organisation dieses Projekts half die Erfahrung mit dem SCRUM-System im kommerziellen Umfeld bei <a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a>.<br>
+    <h4>
+        Projektstudium<br>
+        6-köpfiges Team<br>
+        Frühling 2021 - Frühling 2022<br>
+        IndieNight-Erstplatziert
+    </h4>
+    <br>
+    <div class="skills">
+        <strong>Unity (C#), NavMesh<strong><br>
+        <em>Teamorientiert - Strukturiert - Erzählstark</em><br>
+        <strong>Style Guides, Dokumentation, Roadmap, Kanban, SCRUM, Git</strong>
+    </div>
+    <br>
+    <ul class="task-list">
+        <li><strong>Fortgeschrittener Camera-Controller</strong><br>
+        Programmierung eines intelligenten Third-Person-Kamerasystems<br>
+        -> Verdeckung, Bewegung, Hindernis-Vermeidung
+        <li><strong>Spielmechanik & Physik</strong><br>
+        Entwicklung eines Jump-and-Run<br>
+        -> Schwingen, Greifen, Hangeln, Parkour</li>
+        <li><strong>KI-Gegner & Steuerung</strong><br>
+        Programmierung und Balancing der Gegner-KI (Unity NavMesh)<br>
+        -> Anpassungsfähige Verfolgungs- und Fluchtmechaniken</li>
+        <li><strong>Modulare Asset-Programmierung</strong><br>
+        Erschaffung parametrischer Assets für Story- und Gameplay-Logik<br>
+        -> Dynamische Story-, Puzzle-, Effekt- & Sound Elemente</li>
+        <li><strong>Details & Technische Tiefe</strong><br>
+        Diverses Coding zur Steigerung der Immersion und Interaktivität<br>
+        -> Bone-Rigs mit Multi-Aim Constraints & Weights</li>
+    </ul>
+    <div class="controls">
+        Steuerung wird im Spiel erklärt.
+    </div>
+    <!-- Mit zwei Grafikerinnen, einem VFX-Spezialist, einem Storyteller, einem anderen Programmierer und mir entwickelten wir im vierten und fünften Semester im Rahmen des Projektstudiums dieses psychische Horrorspiel. Auch bei der Organisation dieses Projekts half die Erfahrung mit dem SCRUM-System im kommerziellen Umfeld bei <a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a>.<br>
     Ich übernahm bis auf Inventar, Collectables und Menü-GUI das Coding der Skripte, um Spielmechanik, Physik-, Animations-, Sound- und KI-Controller, sowie UserInterfaces und Spielbalance zu realisieren. Besonders die Programmierung des Jump-and-Runs, mit Schwingen und Greifen sowie Hängen an Kanten, lag in meinem Fokus und lieferte eingängige Lernerfahrungen. Gleiches gilt für Entwicklung und Balancing des KI-Gegners mit Unity NavMesh. Auch mit dem Coding modularer Assets bereicherte ich das Projekt und die Kooperation, da andere Abteilungen diese parametrisierten, um Spielgeschehen wie Story-Fortschritt, Puzzle-Logik, Effekte und Sounds zu steuern. Mit diesem Titel gewannen wir den ersten Platz der Projektausstellung bei der "IndieNight" an der Hochschule Furtwangen. <br>
-    Die Steuerung wird im Spiel erklärt.
+    Die Steuerung wird im Spiel erklärt. -->
   </div>
 </div>
 
