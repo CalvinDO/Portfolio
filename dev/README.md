@@ -414,15 +414,15 @@ video, img, .visual-presentation-container {
         <li><strong>Fortgeschrittener Camera-Controller</strong><br>
         Programmierung eines intelligenten Third-Person-Kamerasystems<br>
         -> Verdeckung, Bewegung, Hindernis-Vermeidung</li>
+        <li><strong>Modulare Asset-Programmierung</strong><br>
+        Erstellung parametrischer Assets zur flexiblen Anpassung durch andere Abteilungen<br>
+        -> Dynamische Elemente: Story, Level, Puzzle, Effekt, Sound</li>
         <li><strong>Spielmechanik & Physik</strong><br>
         Entwicklung eines Jump-and-Run<br>
         -> Schwingen, Greifen, Hangeln, Parkour</li>
         <li><strong>KI-Gegner & Steuerung</strong><br>
         Programmierung und Balancing der Gegner-KI (Unity NavMesh)<br>
         -> Anpassungsfähige Verfolgungs- und Fluchtmechaniken</li>
-        <li><strong>Modulare Asset-Programmierung</strong><br>
-        Erstellung parametrischer Assets zur flexiblen Anpassung durch andere Abteilungen<br>
-        -> Dynamische Elemente: Story, Level, Puzzle, Effekt, Sound</li>
         <li><strong>Details & Technische Tiefe</strong><br>
         Diverses Coding zur Steigerung der Immersion und Interaktivität<br>
         -> Bone-Rigs mit Multi-Aim Constraints & Weights</li>
