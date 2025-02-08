@@ -413,7 +413,7 @@ video, img, .visual-presentation-container {
     <ul class="task-list">
         <li><strong>Fortgeschrittener Camera-Controller</strong><br>
         Programmierung eines intelligenten Third-Person-Kamerasystems<br>
-        -> Verdeckung, Bewegung, Hindernis-Vermeidung
+        -> Verdeckung, Bewegung, Hindernis-Vermeidung</li>
         <li><strong>Spielmechanik & Physik</strong><br>
         Entwicklung eines Jump-and-Run<br>
         -> Schwingen, Greifen, Hangeln, Parkour</li>
