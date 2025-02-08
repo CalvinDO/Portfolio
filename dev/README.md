@@ -363,10 +363,13 @@ video, img, .visual-presentation-container {
       <strong>Dokumentation, UI/UX, Sprint-Meetings, Git</strong>
     </div>
     <br>
-    <ul>
-      <li><strong>Shader-Programmierung:</strong> Erstellung von Vertex- und Fragment-Shadern für AR-Rendering (Beleuchtung, Materialeffekte, visuelle Optimierung)</li>
-      <li><strong>Physik & Wurfmechanik:</strong> Implementierung der Ballflugbahn inkl. Aufprall- und Abprall-Logik mit Touchscreen-Gestensteuerung</li>
-      <li><strong>Augmented Reality & Web-Integration:</strong> Nutzung von WebAR zur Platzierung des Spieltisches über einen AR-Marker mit Three.js</li>
+    <ul class = "task-list">
+      <li><strong>Shader-Programmierung</strong> Erstellung von Vertex- und Fragment-Shadern für AR-Rendering<br>
+      -> Beleuchtung, Materialeffekte, visuelle Optimierung</li>
+      <li><strong>Physik & Wurfmechanik</strong> Implementierung der Ballflugbahn<br>
+      -> Aufprall- und Abprall-Logik, Touchscreen-Gestensteuerung</li>
+      <li><strong>Augmented Reality & Web-Integration</strong> Nutzung von WebAR & Three.js<br>
+      -> Platzierung des Spieltisches über einen AR-Marker</li>
     </ul>
     <div class="controls">
         Smartphone-Kamera auf Marker richten<br>
