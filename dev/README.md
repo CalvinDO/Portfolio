@@ -670,52 +670,129 @@ video, img, .visual-presentation-container {
     Als das Projekt im vierten Semester innerhalb des Kurses "Prototyping Interaktiver Medien-Apps und Games" entstand, war FUDGE noch nicht ausgereift genug, um die Labyrinth-Elemente effizient im nativen Editor anzuordnen. Dieses Problem löste ich, indem ich einen eigenen Blender-Map-Importer entwickelte, Der die Objektpositionen und Rotationen aus einer Collada-Datei ausliest.  
     Laufen erfolgt mit W A S D. Gedreht wird die Raumstation durch Shift, Control, Q und E. -->
     </div>
-</div>
-
-
-## Eisladen
-
-<div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-  <a href="https://calvindo.github.io/GiS/Eisladen/">
-    <img src="Eisladen.png" width="100%">
-  </a>
-  <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-    Klicken zum Spielen
+  <div class="flex-item">
+    <h2 id="eisladen">Eisladen</h2>
+    <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+      <a href="https://calvindo.github.io/GiS/Eisladen/">
+        <img src="Eisladen.png" width="100%">
+      </a>
+      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
+        Klicken zum Spielen
+      </div>
+    </div>
+    <h4>
+      Solo-Projekt<br>
+      Zweites Semester<br>
+      Webentwicklung
+    </h4>
+    <br>
+    <div class="skills">
+      <strong>HTML, CSS, JavaScript</strong><br>
+      <em>Interaktiv - Kreativ - Spielerisch</em><br>
+      <strong>CanvasRenderingContext2D, Arcade-Greifer, Interaktive Elemente</strong>
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Arcade-Greifer</strong><br>
+        Entwicklung eines Arcade-Greifers, der mit den Pfeiltasten und der Leertaste gesteuert wird<br>
+      </li>
+      <li><strong>Toppings hinzufügen</strong><br>
+        Interaktive Toppings können durch Klicken aus Behältern auf die Eiskugeln gestreut werden<br>
+      </li>
+      <li><strong>Selbstgemachte Grafiken</strong><br>
+        Alle Grafiken und Logiken sind mit HTML-CanvasRenderingContext2D erstellt<br>
+      </li>
+    </ul>
+    <div class="controls">
+      Steuerung im Spiel beschrieben.
+    </div>
+      <!-- Der Eisladen ist eine spielerische Lösung der Aufgabe, eine Website zu entwickeln, auf der Nutzer Eislieferungen aufgeben können --und der Verkäufer sie über einen Server bearbeiten kann--. Als letzte Prüfung des Kurses "Grundlagen interaktiver Systeme" im zweiten Semester ging ich weit über die Fragestellung hinaus und realisierte die Zusammenstellung der Delikatessen mit einem Arcade-Greifer, gesteuert über Pfeiltasten und der Leertaste. Auch Toppings können durch Klicken interaktiv aus Behältern über ein Förderband auf die Eiskugeln gestreut werden.  
+      Außer der Eisbehälter ist jede Grafik und Logik selbstgemacht, mit Zeichenmethoden des HTML-CanvasRenderingContext2Ds. -->
+  </div>
+  <div class="flex-item">
+    <h2 id="dischoverhfu">DiscHoverHFU</h2>
+    <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+      <a href="https://calvindo.github.io/DiscHoverHFU/Code/DiscHoverHFU.html">
+        <img src="DiscHoverHFU.png" width="100%">
+      </a>
+      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
+        Klicken zum Spielen
+      </div>
+    </div>
+    <h4>
+      Team-Projekt<br>
+      Zweites Semester<br>
+      User Experience Design
+    </h4>
+    <br>
+    <div class="skills">
+      <strong>TypeScript, HTML, CSS, WebXR</strong><br>
+      <em>Teamorientiert - Innovativ - Praktisch</em><br>
+      <strong>Wireframes, Sitemaps, Visuelle Guides</strong>
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Interaktive Schnitzeljagd</strong><br>
+        Entwicklung eines 360°-Point-and-Click Adventures für die Erstie-Rallye der Hochschule<br>
+      </li>
+      <li><strong>Panorama-Touren</strong><br>
+        Erstellung interaktiver Panorama-Touren durch die Hochschule mit WebXR und eigenen Programmierungen<br>
+      </li>
+      <li><strong>Datenstruktur & Interaktionen</strong><br>
+        Verwendung von JSON für Gegenstände, deren Namen und Interaktionsgeräusche<br>
+      </li>
+    </ul>
+    <div class="controls">
+      Drehen & Entdecken: Maus gedrückthalten & Bewegen<br>
+      Menü öffnen/schließen: E
+    </div>
+      <!-- Ziel dieses 360°-Point-And-Click Adventures ist die spielerische Umsetzung der "Erstie-Rallye" - einer Schnitzeljagd an der HFU für Neulinge. Im Rahmen des Kurses "User Experience Design" im zweiten Semester entwickelt, sahen wir die Notwendigkeit einer digitalen Version der Rallye wegen den Einschränkungen durch die Corona-Pandemie. Zu zweit planten wir mit Sitemaps, Wireframes, Visuellen- und Soundstyleguides, entwickelten mit TypeScript, HTML und CSS.  
+      Durch Gedrückthalten und Bewegung der Maus kann der Spieler sich in den Räumen der HFU drehen und somit Ausrüstung der Hochschule entdecken. Mit der "E"-Taste öffnet sich das Menü, in dem auf die OpenStreetMap-Karte gewechselt und in dieser zu den Räumen navigiert werden kann.  
+      Die Umsetzung erfolgte mit zweidimensionalen Panorama-Bildern, die durch WebXR-Polyfill und eigene Programmierung zu interaktiven Panorama-Touren wurden. Als Datenstruktur für Winkelkoordinaten der 104 Gegenstände, sowie deren Namen und Geräusch der Interaktion, wurde JSON verwendet. -->
+  </div>
+  <div class="flex-item">
+    <h2 id="fraktal">Fraktal</h2>
+    <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+    <a href="Code/Fraktal/start.html">
+      <img src="Fraktal.PNG" alt="Fraktal" width="100%">
+    </a>
+    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
+      Klicken zum Spielen
+    </div>
+    </div>
+    <h4>
+      Solo-Projekt<br>
+      Selbststudium<br>
+      Mathematik-Visualisierung
+    </h4>
+    <br>
+    <div class="skills">
+      <strong>JavaScript, Rekursion, CanvasRenderingContext2D</strong><br>
+      <em>Experimentell - Mathematisch - Ästhetisch</em><br>
+      <strong>Fraktale, Iteration, Farbverläufe</strong>
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Fraktale Visualisierung</strong><br>
+        Entwicklung einer Applikation zur Visualisierung von rekursiven Strukturen in Fraktalen<br>
+      </li>
+      <li><strong>Farbwinkelberechnung</strong><br>
+        Farbwinkel abhängig von Iterationsstufe und Ordnung der Fraktalstrukturen berechnet<br>
+      </li>
+      <li><strong>Technische Experimente</strong><br>
+        Experimente mit maximaler Browserauflösung und verschiedenen Iterationsparametern<br>
+      </li>
+    </ul>
+    <div class="controls">
+      Parameter können verändert werden, um die Darstellung zu beeinflussen.
+    </div>
+    <!-- Die Idee für diese Applikation kam mir auf, als ich die Möglichkeiten der grafischen Visualisierung durch Rekursion begriff. Das klare Endergebnis konnte ich mir, je nach Anzahl von Iteratifonen, noch nicht vorstellen, weshalb ich es sofort ausprobierte, mit dem Ziel, mich von meinem eigenen Programm zum Staunen zu bewegen.  
+    Instanzierte Bälle mit "create-children" Objektmethoden schafften dies bereits. Es folgten einige Experimente mit der maximal umsetzbaren Auflösung verschiedener Browser, um ein fertig gerendertes Bild von 10000 mal 10000 Pixeln zu erhalten, welches sich stark vergrößern lässt, um die repetitiven Strukturen nahtlos entdecken zu können.  
+    Daraufhin, ebenfalls ohne eine konkrete Vorstellung des Ergebnisses, begann ich den Farbwinkel abhängig von der Iterationsstufe und der Ordnung der zirkular positionierten Kreise sowohl relativ, als auch absolut zu berechnen. Auch hier war ich von der Ästhetik der visualisierten Mathematik überrascht und begeistert.  
+      Auf der Seite können Sie einige Parameter der Berechnung verändern. -->
   </div>
 </div>
 
-Der Eisladen ist eine spielerische Lösung der Aufgabe, eine Website zu entwickeln, auf der Nutzer Eislieferungen aufgeben können --und der Verkäufer sie über einen Server bearbeiten kann--. Als letzte Prüfung des Kurses "Grundlagen interaktiver Systeme" im zweiten Semester ging ich weit über die Fragestellung hinaus und realisierte die Zusammenstellung der Delikatessen mit einem Arcade-Greifer, gesteuert über Pfeiltasten und der Leertaste. Auch Toppings können durch Klicken interaktiv aus Behältern über ein Förderband auf die Eiskugeln gestreut werden.  
-Außer der Eisbehälter ist jede Grafik und Logik selbstgemacht, mit Zeichenmethoden des HTML-CanvasRenderingContext2Ds.
-
-## DiscHoverHFU
-
-<div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-  <a href="https://calvindo.github.io/DiscHoverHFU/Code/DiscHoverHFU.html">
-    <img src="DiscHoverHFU.png" width="100%">
-  </a>
-  <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-    Klicken zum Spielen
-  </div>
-</div>
-
-Ziel dieses 360°-Point-And-Click Adventures ist die spielerische Umsetzung der "Erstie-Rallye" - einer Schnitzeljagd an der HFU für Neulinge. Im Rahmen des Kurses "User Experience Design" im zweiten Semester entwickelt, sahen wir die Notwendigkeit einer digitalen Version der Rallye wegen den Einschränkungen durch die Corona-Pandemie. Zu zweit planten wir mit Sitemaps, Wireframes, Visuellen- und Soundstyleguides, entwickelten mit TypeScript, HTML und CSS.  
-Durch Gedrückthalten und Bewegung der Maus kann der Spieler sich in den Räumen der HFU drehen und somit Ausrüstung der Hochschule entdecken. Mit der "E"-Taste öffnet sich das Menü, in dem auf die OpenStreetMap-Karte gewechselt und in dieser zu den Räumen navigiert werden kann.  
-Die Umsetzung erfolgte mit zweidimensionalen Panorama-Bildern, die durch WebXR-Polyfill und eigene Programmierung zu interaktiven Panorama-Touren wurden. Als Datenstruktur für Winkelkoordinaten der 104 Gegenstände, sowie deren Namen und Geräusch der Interaktion, wurde JSON verwendet.
-
-## Fraktal
-
-<div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-  <a href="Code/Fraktal/start.html">
-    <img src="Fraktal.PNG" alt="Fraktal" width="100%">
-  </a>
-  <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-    Klicken zum Spielen
-  </div>
-</div>  
-Die Idee für diese Applikation kam mir auf, als ich die Möglichkeiten der grafischen Visualisierung durch Rekursion begriff. Das klare Endergebnis konnte ich mir, je nach Anzahl von Iteratifonen, noch nicht vorstellen, weshalb ich es sofort ausprobierte, mit dem Ziel, mich von meinem eigenen Programm zum Staunen zu bewegen.  
-Instanzierte Bälle mit "create-children" Objektmethoden schafften dies bereits. Es folgten einige Experimente mit der maximal umsetzbaren Auflösung verschiedener Browser, um ein fertig gerendertes Bild von 10000 mal 10000 Pixeln zu erhalten, welches sich stark vergrößern lässt, um die repetitiven Strukturen nahtlos entdecken zu können.  
-Daraufhin, ebenfalls ohne eine konkrete Vorstellung des Ergebnisses, begann ich den Farbwinkel abhängig von der Iterationsstufe und der Ordnung der zirkular positionierten Kreise sowohl relativ, als auch absolut zu berechnen. Auch hier war ich von der Ästhetik der visualisierten Mathematik überrascht und begeistert.  
-Auf der Seite können Sie einige Parameter der Berechnung verändern.
 
 ## Fraktal Animation
 
