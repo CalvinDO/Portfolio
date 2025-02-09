@@ -546,7 +546,7 @@ video, img, .visual-presentation-container {
           </ul>
       </li>
       <li><strong>Textgenerierung</strong><br>
-          Erzeugung von neuen Paragraphen basierend auf einem Startzeichen<br>
+          Erzeugung von neuen Paragraphen basierend auf beliebigen Startzeichen<br>
           <ul>
               <li>Anpassung der Vorhersage durch Temperatur</li>
           </ul>
