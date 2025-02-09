@@ -711,7 +711,7 @@ video, img, .visual-presentation-container {
           </li>
         </ul>
       </li>
-      <li><strong>Backend-Server</strong><br>
+      <li><strong>Backend</strong><br>
         Verkäufer kann in seinem Bereich Bestellungen bearbeiten 
         <ul>
           <li>
