@@ -340,17 +340,26 @@ video, img, .visual-presentation-container {
     </div>
     <br>
     <ul class="task-list">
-        <li><strong>Spielmechanik & Physik</strong><br>
-        Programmierung der Spielphysik und Mechaniken<br>
-        -> Beschwörungs- und Zauberkampfsystem, Spielbalance
-        </li>
-        <li><strong>KI-Controller</strong><br>
-        Logik von KI-Gegnern (Unity-NavMesh)<br>
-        -> Bewegungssteuerung, intelligentes Angreifen</li>
-        <li><strong>Sound & Animation</strong><br>
-        Integration von Soundeffekten und Animationen</li>
-        <li><strong>User Interface</strong><br> Design und Implementierung der Benutzeroberfläche<br>
-        -> Kombination von Fähigkeitskarten</li>
+      <li><strong>Spielmechanik & Physik</strong><br>
+          Programmierung der Spielphysik und Mechaniken<br>
+          <ul>
+              <li>Beschwörungs- und Zauberkampfsystem, Spielbalance</li>
+          </ul>
+      </li>
+      <li><strong>KI-Controller</strong><br>
+          Logik von KI-Gegnern (Unity-NavMesh)<br>
+          <ul>
+              <li>Bewegungssteuerung, intelligentes Angreifen</li>
+          </ul>
+      </li>
+      <li><strong>Sound & Animation</strong><br>
+          Integration von Soundeffekten und Animationen</li>
+      <li><strong>User Interface</strong><br> 
+          Design und Implementierung der Benutzeroberfläche<br>
+          <ul>
+              <li>Kombination von Fähigkeitskarten</li>
+          </ul>
+      </li>
     </ul>
     <div class="controls">
         W, A, S, D zum Laufen<br>
@@ -411,16 +420,25 @@ video, img, .visual-presentation-container {
       <strong>Dokumentation, UI/UX, Sprint-Meetings, Git</strong>
     </div>
     <br>
-    <ul class = "task-list">
+    <ul class="task-list">
       <li><strong>Shader-Programmierung</strong><br>
-      Erstellung von Vertex- und Fragment-Shadern für AR-Rendering<br>
-      -> Beleuchtung, Materialeffekte, visuelle Optimierung</li>
+          Erstellung von Vertex- und Fragment-Shadern für AR-Rendering<br>
+          <ul>
+              <li>Beleuchtung, Materialeffekte, visuelle Optimierung</li>
+          </ul>
+      </li>
       <li><strong>Physik & Wurfmechanik</strong><br>
-      Implementierung der Ballflugbahn<br>
-      -> Aufprall- und Abprall-Logik, Touchscreen-Gestensteuerung</li>
+          Implementierung der Ballflugbahn<br>
+          <ul>
+              <li>Aufprall- und Abprall-Logik, Touchscreen-Gestensteuerung</li>
+          </ul>
+      </li>
       <li><strong>Augmented Reality & Web-Integration</strong><br>
-      Nutzung von WebAR & Three.js<br>
-      -> Platzierung des Spieltisches über einen AR-Marker</li>
+          Nutzung von WebAR & Three.js<br>
+          <ul>
+              <li>Platzierung des Spieltisches über einen AR-Marker</li>
+          </ul>
+      </li>
     </ul>
     <div class="controls">
         Smartphone-Kamera auf Marker richten<br>
@@ -457,21 +475,36 @@ video, img, .visual-presentation-container {
     </div>
     <br>
     <ul class="task-list">
-        <li><strong>Fortgeschrittener Camera-Controller</strong><br>
-        Programmierung eines intelligenten Third-Person-Kamerasystems<br>
-        -> Verdeckung, Bewegung, Hindernis-Vermeidung</li>
-        <li><strong>Modulare Asset-Programmierung</strong><br>
-        Erstellung parametrischer Assets zur flexiblen Anpassung durch andere Abteilungen<br>
-        -> Dynamische Elemente: Story, Level, Puzzle, Effekt, Sound</li>
-        <li><strong>Spielmechanik & Physik</strong><br>
-        Entwicklung eines Jump-and-Run<br>
-        -> Schwingen, Greifen, Hangeln, Parkour</li>
-        <li><strong>KI-Gegner & Steuerung</strong><br>
-        Programmierung und Balancing der Gegner-KI (Unity NavMesh)<br>
-        -> Anpassungsfähige Verfolgungs- und Fluchtmechaniken</li>
-        <li><strong>Details & Technische Tiefe</strong><br>
-        Diverses Coding zur Steigerung der Immersion und Interaktivität<br>
-        -> Bone-Rigs mit Multi-Aim Constraints & Weights</li>
+      <li><strong>Fortgeschrittener Camera-Controller</strong><br>
+          Programmierung eines intelligenten Third-Person-Kamerasystems<br>
+          <ul>
+              <li>Verdeckung, Bewegung, Hindernis-Vermeidung</li>
+          </ul>
+      </li>
+      <li><strong>Modulare Asset-Programmierung</strong><br>
+          Erstellung parametrischer Assets zur flexiblen Anpassung durch andere Abteilungen<br>
+          <ul>
+              <li>Dynamische Elemente: Story, Level, Puzzle, Effekt, Sound</li>
+          </ul>
+      </li>
+      <li><strong>Spielmechanik & Physik</strong><br>
+          Entwicklung eines Jump-and-Run<br>
+          <ul>
+              <li>Schwingen, Greifen, Hangeln, Parkour</li>
+          </ul>
+      </li>
+      <li><strong>KI-Gegner & Steuerung</strong><br>
+          Programmierung und Balancing der Gegner-KI (Unity NavMesh)<br>
+          <ul>
+              <li>Anpassungsfähige Verfolgungs- und Fluchtmechaniken</li>
+          </ul>
+      </li>
+      <li><strong>Details & Technische Tiefe</strong><br>
+          Diverses Coding zur Steigerung der Immersion und Interaktivität<br>
+          <ul>
+              <li>Bone-Rigs mit Multi-Aim Constraints & Weights</li>
+          </ul>
+      </li>
     </ul>
     <div class="controls">
         Steuerung wird im Spiel erklärt.
@@ -504,18 +537,30 @@ video, img, .visual-presentation-container {
     </div>
     <br>
     <ul class="task-list">
-        <li><strong>Trainingsdatensatz & Vorverarbeitung</strong><br>
-        Erstellung eines Textmodells mit Bürgergesetzbuch als Trainingsdaten<br>
-         -> Umwandlung des Textes in sequenzielle Eingaben und Zielzeichen</li>
-        <li><strong>Neuronale Netzwerk-Architektur</strong><br>
-        Implementierung eines GRU-basierten RNNs in Keras<br>
-         -> Architektur aus Embedding, GRU und Dense-Schichten</li>
-        <li><strong>Textgenerierung</strong><br>
-        Erzeugung von neuen Paragraphen basierend auf einem Startzeichen<br>
-         -> Anpassung der Vorhersage durch Temperatur</li>
-        <li><strong>Zukünftige Erweiterungen</strong><br>
-        Testen von LSTM und GPT für verbesserte Textgenerierung<br>
-          -> Vergleich der Performance und Effizienz</li>
+      <li><strong>Trainingsdatensatz & Vorverarbeitung</strong><br>
+          Erstellung eines Textmodells mit Bürgergesetzbuch als Trainingsdaten<br>
+          <ul>
+              <li>Umwandlung des Textes in sequenzielle Eingaben und Zielzeichen</li>
+          </ul>
+      </li>
+      <li><strong>Neuronale Netzwerk-Architektur</strong><br>
+          Implementierung eines GRU-basierten RNNs in Keras<br>
+          <ul>
+              <li>Architektur aus Embedding, GRU und Dense-Schichten</li>
+          </ul>
+      </li>
+      <li><strong>Textgenerierung</strong><br>
+          Erzeugung von neuen Paragraphen basierend auf einem Startzeichen<br>
+          <ul>
+              <li>Anpassung der Vorhersage durch Temperatur</li>
+          </ul>
+      </li>
+      <li><strong>Zukünftige Erweiterungen</strong><br>
+          Testen von LSTM und GPT für verbesserte Textgenerierung<br>
+          <ul>
+              <li>Vergleich der Performance und Effizienz</li>
+          </ul>
+      </li>
     </ul>
     <div class="controls">
         Code-Blöcke in Colab ausführen, Kommentare beachten
