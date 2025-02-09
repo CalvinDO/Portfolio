@@ -691,7 +691,7 @@ video, img, .visual-presentation-container {
     </h4>
     <br>
     <div class="skills">
-      <strong>HTML, CSS, JSON, TypeScript, Node.js, MongoDB</strong><br>
+      <strong>HTML, CSS, JSON, TypeScript, LocalStorage, Node.js, MongoDB</strong><br>
       <em>Interaktiv - Kreativ - Progressiv</em><br>
       <strong>Wireframe, Git</strong>
     </div>
@@ -760,20 +760,30 @@ video, img, .visual-presentation-container {
     </h4>
     <br>
     <div class="skills">
-      <strong>TypeScript, HTML, CSS, WebXR</strong><br>
-      <em>Teamorientiert - Innovativ - Praktisch</em><br>
+      <strong>TypeScript, HTML, CSS, LocalStorage, OpenStreetMap, WebXR,</strong><br>
+      <em>Interdisziplinär - Innovativ - Praktisch</em><br>
       <strong>Wireframes, Sitemaps, Visuelle Guides</strong>
     </div>
     <br>
     <ul class="task-list">
       <li><strong>Interaktive Schnitzeljagd</strong><br>
-        Entwicklung eines 360°-Point-and-Click Adventures für die Erstie-Rallye der Hochschule<br>
+        Erstie-Rallye der Hochschule als 360-Point-and-Click Adventure
       </li>
       <li><strong>Panorama-Touren</strong><br>
-        Erstellung interaktiver Panorama-Touren durch die Hochschule mit WebXR und eigenen Programmierungen<br>
+        Erstellung interaktiver Panorama-Touren durch die Hochschule
+        <ul>
+          <li>
+            Programmierung mit WebXR und eigenen Methoden
+          </li>
+        </ul>
       </li>
       <li><strong>Datenstruktur & Interaktionen</strong><br>
-        Verwendung von JSON für Gegenstände, deren Namen und Interaktionsgeräusche<br>
+        Verwendung von JSON für 104 Collectibles in 
+        <ul>
+          <li>
+            Name, Position, Interaktionsgeräusche
+          </li>
+        </ul>
       </li>
     </ul>
     <div class="controls">
