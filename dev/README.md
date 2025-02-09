@@ -493,7 +493,7 @@ video, img, .visual-presentation-container {
   </div>
   <h4>
     Team-Projekt<br>
-    2-köpfiges Team<br>
+    3-köpfiges Team<br>
     Frühling 2022<br>
     Blender-Addon
   </h4>
@@ -507,7 +507,11 @@ video, img, .visual-presentation-container {
   <ul class="task-list">
     <li><strong>Parametrisierte Baumgenerierung</strong><br>
       Entwicklung eines Addons zur Generierung prozeduraler Bäume<br>
-      -> Einstellbare Ast-Abspaltungen, Ausrichtung, Radius, Zufallsfaktoren
+      <ul>
+        <li>
+          Einstellbare Ast-Abspaltungen, Ausrichtung, Radius, Zufallsfaktoren
+        </li>
+      </ul> 
     </li>
     <li><strong>Rekursion & Vektorrechnung</strong><br>
       Vertiefung und Erweiterung des technischen Vokabulars<br>
