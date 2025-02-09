@@ -166,6 +166,18 @@ video, img, .visual-presentation-container {
     line-height: 2.1; /* Der Wert 1.8 kann angepasst werden, um den Abstand zu verändern */
 }
 
+.task-list ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.task-list ul li::before {
+  content: "→ "; /* Pfeil als Bullet-Point */
+  color: black;
+  font-weight: bold;
+}
+
+
 </style>
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -505,22 +517,26 @@ video, img, .visual-presentation-container {
   </div>
   <br>
   <ul class="task-list">
-    <li><strong>Parametrisierte Baumgenerierung</strong><br>
-      Entwicklung eines Addons zur Generierung prozeduraler Bäume<br>
-      <ul>
-        <li>
-          Einstellbare Ast-Abspaltungen, Ausrichtung, Radius, Zufallsfaktoren
-        </li>
-      </ul> 
-    </li>
-    <li><strong>Rekursion & Vektorrechnung</strong><br>
-      Vertiefung und Erweiterung des technischen Vokabulars<br>
-      -> Rodrigues-Rotationsformel, Kreuzprodukt, rekursive Python-Programmierung
-    </li>
-    <li><strong>Blender-Addon-Integration</strong><br>
-      Realisierung als Addon in Blender mit User-Interface<br>
-      -> Nutzung der Blender-API
-    </li>
+      <li><strong>Parametrisierte Baumgenerierung</strong><br>
+        Entwicklung eines Addons zur Generierung prozeduraler Bäume
+        <ul>
+          <li>Einstellbare Ast-Abspaltungen, Ausrichtung, Radius, Zufallsfaktoren</li>
+        </ul> 
+      </li>
+      <li><strong>Rekursion & Vektorrechnung</strong><br>
+        Vertiefung und Erweiterung des technischen Vokabulars
+        <ul>
+          <li>Rodrigues-Rotationsformel</li>
+          <li>Kreuzprodukt</li>
+          <li>Rekursive Python-Programmierung</li>
+        </ul>
+      </li>
+      <li><strong>Blender-Addon-Integration</strong><br>
+        Realisierung als Addon in Blender mit User-Interface
+        <ul>
+          <li>Nutzung der Blender-API</li>
+        </ul>
+      </li>
   </ul>
   <div class="controls">
     "Addon.py" importieren, "Generate Tree"-Button im Scene-Tab des Property-Windows klicken
