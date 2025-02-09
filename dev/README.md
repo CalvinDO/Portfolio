@@ -510,7 +510,7 @@ video, img, .visual-presentation-container {
     Die Steuerung wird im Spiel erklärt. -->
   </div>
   <div class="flex-item">
-    <h2 id="gesetzestext-generator">Gesetzestext-Generator (Rekursives Neuronales Netzwerk)</h2>
+    <h2 id="gesetzestext-generator">Gesetzestext-Generator</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="https://colab.research.google.com/github/CalvinDO/AITextGenerator/blob/main/LawLanguageRNN/textGenerator.ipynb">
         <img src="TextGenerator.png" width="100%">
