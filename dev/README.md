@@ -641,27 +641,32 @@ video, img, .visual-presentation-container {
     <br>
     <div class="skills">
         <strong>TypeScript, FUDGE, Blender</strong><br>
-        <em>Innovativ - Technisch - Kreativ</em><br>
-        <strong>Git, SCRUM, Blender-Map-Importer</strong>
+        <em>Innovativ - Inkubierend - Kreativ</em><br>
+        <strong>Designdokument, Git</strong>
     </div>
     <br>
     <ul class="task-list">
-        <li><strong>3D-Labyrinth-Mechanik</strong><br>
-            Entwicklung eines Labyrinth-Spiels mit drehbarer Raumstation<br>
+        <li><strong>Konzeption und Prototyping</strong><br>
+            Labyrinth-Spiel mit drehbarer Raumstation<br>
             <ul>
-                <li>Kontrolle der Raumstation durch Rotation und minimale Sprünge</li>
+                <li>Bewegung zum Ziel durch Rotation der Raumstation</li>
             </ul>
         </li>
         <li><strong>Technische Umsetzung</strong><br>
-            Einsatz der FUDGE-Engine und Entwicklung eines eigenen Blender-Map-Importers<br>
+            Einsatz der Pre-Alpha-Engine FUDGE<br>
             <ul>
-                <li>Import von Objektpositionen und Rotationen aus Collada-Dateien</li>
+              <li>Entwicklung mit didaktischem Framework</li>
+            </ul>
+            Entwicklung eines eigenen Blender-Map-Importers
+            <ul>
+              <li>Import von Objektpositionen und Rotationen aus Collada-Dateien</li>
             </ul>
         </li>
     </ul>
     <div class="controls">
       Bewegung: W A S D<br>
-      Rotation: Q, E, Shift, Control
+      Rotation: Q, E, Shift, Control<br>
+      Hopsen: Leertaste
     </div>
     <!-- Dieses 3D-Labyrinth Spiel habe ich mit TypeScript und <a href = "https://github.com/hs-furtwangen/FUDGE">FUDGE</a> programmiert, einer Node-basierten didaktischen Engine und Editor für webbasierte Spiele.  
     Der Spieler kann mit dem Character nicht fliegen und nur minimal springen, allerdings die gesamte Raumstation um seine Position herum auf verschiedenen Achsen drehen, um bei konstanter Schwerkraft einen Weg (oder Fall) durch das Labyrinth zu ermöglichen.  
