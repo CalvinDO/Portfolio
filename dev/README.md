@@ -326,7 +326,7 @@ video, img, .visual-presentation-container {
         Gamedesign-Workhop<br>
         6-köpfiges Team<br>
         Sommer - Herbst 2022<br>
-        IndieNight-Auszeichnung
+        Rouge-like, IndieNight-Auszeichnung
     </h4>
     <br>
     <div class="skills">
@@ -461,7 +461,7 @@ video, img, .visual-presentation-container {
         Projektstudium<br>
         6-köpfiges Team<br>
         Frühling 2021 - Frühling 2022<br>
-        IndieNight-Erstplatziert
+        Horrorspiel, IndieNight-Erstplatziert
     </h4>
     <br>
     <div class="skills">
@@ -691,24 +691,46 @@ video, img, .visual-presentation-container {
     </h4>
     <br>
     <div class="skills">
-      <strong>HTML, CSS, JavaScript</strong><br>
-      <em>Interaktiv - Kreativ - Spielerisch</em><br>
-      <strong>CanvasRenderingContext2D, Arcade-Greifer, Interaktive Elemente</strong>
+      <strong>HTML, CSS, TypeScript, Node.js, MongoDB</strong><br>
+      <em>Interaktiv - Kreativ - Progressiv</em><br>
+      <strong>Wireframe, Git</strong>
     </div>
     <br>
     <ul class="task-list">
-      <li><strong>Arcade-Greifer</strong><br>
-        Entwicklung eines Arcade-Greifers, der mit den Pfeiltasten und der Leertaste gesteuert wird<br>
+      <li><strong>Spielerische Umsetzung einer Web-Shop Aufgabe</strong><br>
+        Arcade-Greifer
+        <ul>
+          <li>
+            Eisbehälter, aus denen Eis entnommen wird
+          </li>
+        </ul>
       </li>
       <li><strong>Toppings hinzufügen</strong><br>
-        Interaktive Toppings können durch Klicken aus Behältern auf die Eiskugeln gestreut werden<br>
+        <ul>
+          <li>
+        Interaktive Toppings können durch Klicken aus Behältern auf die Eiskugeln gestreut werden
+          </li>
+        </ul>
       </li>
-      <li><strong>Selbstgemachte Grafiken</strong><br>
-        Alle Grafiken und Logiken sind mit HTML-CanvasRenderingContext2D erstellt<br>
+      <li><strong>Selbstgemacht & Ohne Game-Engine</strong><br>
+        Grafiken mit HTML-CanvasRenderingContext2D
+        <ul>
+          <li>
+            Komposition von Zeichenbefehlen zu Rädern, Boxen, Werkzeugen
+          </li>
+        </ul>
+        Logiken mit TypeScript
+        <ul>
+          <li>
+            Programmierung von Physik, Animation und Spielmechanik
+          </li>
+        </ul>
       </li>
     </ul>
     <div class="controls">
-      Steuerung im Spiel beschrieben.
+      Greifer Bewegen: Pfeiltasten<br>
+      Greifer Öffnen/Schließen: Leertaste<br>
+      Toppings Öffnen/Schließen: Klicken
     </div>
       <!-- Der Eisladen ist eine spielerische Lösung der Aufgabe, eine Website zu entwickeln, auf der Nutzer Eislieferungen aufgeben können --und der Verkäufer sie über einen Server bearbeiten kann--. Als letzte Prüfung des Kurses "Grundlagen interaktiver Systeme" im zweiten Semester ging ich weit über die Fragestellung hinaus und realisierte die Zusammenstellung der Delikatessen mit einem Arcade-Greifer, gesteuert über Pfeiltasten und der Leertaste. Auch Toppings können durch Klicken interaktiv aus Behältern über ein Förderband auf die Eiskugeln gestreut werden.  
       Außer der Eisbehälter ist jede Grafik und Logik selbstgemacht, mit Zeichenmethoden des HTML-CanvasRenderingContext2Ds. -->
