@@ -267,7 +267,7 @@ video, img, .visual-presentation-container {
         <i class="fas fa-file-pdf"></i> Bachelor Thesis
       </a><br>
       Solo-Projekt + Hochschul-Coaching<br>
-      Winter 2022 / 2023<br>
+      Herbst 2022 - Frühling 2023<br>
       AI-Playground
     </h4>
     <br>
@@ -325,7 +325,7 @@ video, img, .visual-presentation-container {
     <h4>
         Gamedesign-Workhop<br>
         6-köpfiges Team<br>
-        Sommer 2022<br>
+        Sommer - Herbst 2022<br>
         IndieNight-Auszeichnung
     </h4>
     <br>
@@ -406,7 +406,7 @@ video, img, .visual-presentation-container {
     <h4>
     Echtzeit-Computergrafik<br>
     3-köpfiges Team<br>
-    Sommer 2022<br>
+    Herbst 2022<br>
     Mobile Web-AR Partyspiel
     </h4>
     <br>
@@ -522,7 +522,7 @@ video, img, .visual-presentation-container {
     <h4>
       Introduction to Deep Learning<br>
       Solo-Selbststudium<br>
-      Winter 2021 / 2022<br>
+      Frühling 2022<br>
       AI-Experiment
     </h4>
     <br>
@@ -679,9 +679,10 @@ video, img, .visual-presentation-container {
       </div>
     </div>
     <h4>
+      Grundlagen Interaktiver Systeme<br>
       Solo-Projekt<br>
-      Zweites Semester<br>
-      Webentwicklung
+      Herbst 2020<br>
+      Spielerischer Web-Shop
     </h4>
     <br>
     <div class="skills">
@@ -718,9 +719,10 @@ video, img, .visual-presentation-container {
       </div>
     </div>
     <h4>
-      Team-Projekt<br>
-      Zweites Semester<br>
-      User Experience Design
+      User Experience Design<br>
+      Duo-Team<br>
+      Herbst 2020<br>
+      360* Point-and-Click
     </h4>
     <br>
     <div class="skills">
@@ -759,14 +761,15 @@ video, img, .visual-presentation-container {
     </div>
     </div>
     <h4>
+      Akademische Vorbereitung<br>
       Solo-Projekt<br>
       Selbststudium<br>
       Mathematik-Visualisierung
     </h4>
     <br>
     <div class="skills">
-      <strong>JavaScript, Rekursion, CanvasRenderingContext2D</strong><br>
-      <em>Experimentell - Mathematisch - Ästhetisch</em><br>
+      <strong>TypeScript, CanvasRenderingContext2D, Rekursion</strong><br>
+      <em>Experimentell - Mathematisch - Selbstständig</em><br>
       <strong>Fraktale, Iteration, Farbverläufe</strong>
     </div>
     <br>
