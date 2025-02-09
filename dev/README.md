@@ -711,6 +711,14 @@ video, img, .visual-presentation-container {
           </li>
         </ul>
       </li>
+      <li><strong>Backend-Server</strong><br>
+        Verkäufer kann in seinem Bereich Bestellungen bearbeiten 
+        <ul>
+          <li>
+           MongoDB-Server
+          </li>
+        </ul>
+      </li>
       <li><strong>Ohne Game-Engine oder Editor</strong><br>
         Grafiken mit HTML-CanvasRenderingContext2D
         <ul>
@@ -789,7 +797,7 @@ video, img, .visual-presentation-container {
     <h4>
       Akademische Vorbereitung<br>
       Solo-Projekt<br>
-      Selbststudium<br>
+      Sommer 2019<br>
       Mathematik-Visualisierung
     </h4>
     <br>
