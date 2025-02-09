@@ -230,18 +230,14 @@ video, img, .visual-presentation-container {
     <li><strong>Fahrzeug-Setup</strong><br>
         Integration von über 80 Fahrzeugmodellen mit funktionsspezifischen Logikbausteinen
         <ul>
-            <li>Rotationslimits</li>
-            <li>Getriebe- und Motorsimulation</li>
-            <li>Terrainsimulation</li>
+            <li>Rotationslimits, Getriebe- und Motorsimulation, Terrainsimulation</li>
             <li>FMOD-Audio</li>
         </ul>
     </li>
     <li><strong>Debug-UI-Entwicklung</strong><br>
         Erstellung eines dynamischen und generischen Debug-Tools für
         <ul>
-            <li>Missionen</li>
-            <li>Fahrzeug-Spawning</li>
-            <li>Parameter-Anpassungen</li>
+            <li>Missionen, Fahrzeug-Spawning, Settings</li>
         </ul>
     </li>
     <li><strong>Navigationsdisplay</strong><br>
@@ -605,9 +601,8 @@ video, img, .visual-presentation-container {
       <li><strong>Rekursion & Vektorrechnung</strong><br>
         Vertiefung und Erweiterung des technischen Vokabulars
         <ul>
-          <li>Rodrigues-Rotationsformel</li>
-          <li>Kreuzprodukt</li>
           <li>Rekursive Python-Programmierung</li>
+          <li>Rodrigues-Rotationsformel, Kreuzprodukt, ...</li>
         </ul>
       </li>
       <li><strong>Blender-Addon-Integration</strong><br>
