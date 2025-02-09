@@ -704,15 +704,14 @@ video, img, .visual-presentation-container {
             Eisbehälter, aus denen Eis entnommen wird
           </li>
         </ul>
-      </li>
-      <li><strong>Toppings hinzufügen</strong><br>
+        Toppings hinzufügen
         <ul>
           <li>
-        Interaktive Toppings können durch Klicken aus Behältern auf die Eiskugeln gestreut werden
+            Interaktive Toppings können durch Klicken aus Behältern auf die Eiskugeln gestreut werden
           </li>
         </ul>
       </li>
-      <li><strong>Selbstgemacht & Ohne Game-Engine</strong><br>
+      <li><strong>OhneEngine oder Editor</strong><br>
         Grafiken mit HTML-CanvasRenderingContext2D
         <ul>
           <li>
