@@ -619,30 +619,59 @@ video, img, .visual-presentation-container {
   Bei der objektorientierten Programmierung lernte ich die Rodrigues-Rotationsformel kennen und wandte andere Vektorrechnung wie das Kreuzprodukt an. Auch mit Blender-eigenen Umgebungsvariablen und Python machte ich mich vertraut. Die Instanzierung der Astaustriebe ähnelt dem Projekt [Fraktal](#fraktal)  
   Die Programmierung erfolgte im fünften Semester im Rahmen des Kurses "Datenverarbeitung in der Medienproduktion". -->
   </div>
+  <div class="flex-item">
+    <h2 id="discombobulated-space-station">Discombobulated Space Station</h2>
+    <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+        <a href="https://calvindo.github.io/PRIMA/">
+            <video width="100%" controls loop>
+                <source src="DiscombobulatedSpaceStation.mp4" alt="DiscombobulatedSpaceStation" type="video/mp4"/>
+                Ihr Browser unterstützt den Video-Tag nicht
+            </video>
+        </a>
+        <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
+            Klicken zum Spielen
+        </div>
+    </div>  
+    <h4>
+        Solo-Projekt<br>
+        Selbststudium<br>
+        Sommer 2022<br>
+        3D-Labyrinth-Spiel
+    </h4>
+    <br>
+    <div class="skills">
+        <strong>TypeScript, FUDGE, Blender</strong><br>
+        <em>Innovativ - Technisch - Kreativ</em><br>
+        <strong>Git, SCRUM, Blender-Map-Importer</strong>
+    </div>
+    <br>
+    <ul class="task-list">
+        <li><strong>3D-Labyrinth-Mechanik</strong><br>
+            Entwicklung eines Labyrinth-Spiels mit drehbarer Raumstation<br>
+            <ul>
+                <li>Kontrolle der Raumstation durch Rotation und minimale Sprünge</li>
+            </ul>
+        </li>
+        <li><strong>Technische Umsetzung</strong><br>
+            Einsatz der FUDGE-Engine und Entwicklung eines eigenen Blender-Map-Importers<br>
+            <ul>
+                <li>Import von Objektpositionen und Rotationen aus Collada-Dateien</li>
+            </ul>
+        </li>
+        <li><strong>Steuerung & Interaktivität</strong><br>
+            Programmierung der Steuerung mit W A S D für Bewegung und Shift, Control, Q, E für Rotation<br>
+        </li>
+    </ul>
+    <div class="controls">
+        Steuerung wird im Spiel erklärt.
+    </div>
+    <!-- Dieses 3D-Labyrinth Spiel habe ich mit TypeScript und <a href = "https://github.com/hs-furtwangen/FUDGE">FUDGE</a> programmiert, einer Node-basierten didaktischen Engine und Editor für webbasierte Spiele.  
+    Der Spieler kann mit dem Character nicht fliegen und nur minimal springen, allerdings die gesamte Raumstation um seine Position herum auf verschiedenen Achsen drehen, um bei konstanter Schwerkraft einen Weg (oder Fall) durch das Labyrinth zu ermöglichen.  
+    Als das Projekt im vierten Semester innerhalb des Kurses "Prototyping Interaktiver Medien-Apps und Games" entstand, war FUDGE noch nicht ausgereift genug, um die Labyrinth-Elemente effizient im nativen Editor anzuordnen. Dieses Problem löste ich, indem ich einen eigenen Blender-Map-Importer entwickelte, Der die Objektpositionen und Rotationen aus einer Collada-Datei ausliest.  
+    Laufen erfolgt mit W A S D. Gedreht wird die Raumstation durch Shift, Control, Q und E. -->
+    </div>
 </div>
 
-## Baumgenerator
-
-
-
-
-## Discombobulated Space Station
-
-<div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-  <a href="https://calvindo.github.io/PRIMA/">
-    <video width="100%" controls loop>
-        <source src="DiscombobulatedSpaceStation.mp4" alt="DiscombobulatedSpaceStation" type="video/mp4"/>
-        Ihr Browser unterstützt den Video-Tag nicht
-    </video>
-  </a>
-  <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-    Klicken zum Spielen
-  </div>
-</div>  
-Dieses 3D-Labyrinth Spiel habe ich mit TypeScript und <a href = "https://github.com/hs-furtwangen/FUDGE">FUDGE</a> programmiert, einer Node-basierten didaktischen Engine und Editor für webbasierte Spiele.  
-Der Spieler kann mit dem Character nicht fliegen und nur minimal springen, allerdings die gesamte Raumstation um seine Position herum auf verschiedenen Achsen drehen, um bei konstanter Schwerkraft einen Weg (oder Fall) durch das Labyrinth zu ermöglichen.  
-Als das Projekt im vierten Semester innerhalb des Kurses "Prototyping Interaktiver Medien-Apps und Games" entstand, war FUDGE noch nicht ausgereift genug, um die Labyrinth-Elemente effizient im nativen Editor anzuordnen. Dieses Problem löste ich, indem ich einen eigenen Blender-Map-Importer entwickelte, Der die Objektpositionen und Rotationen aus einer Collada-Datei ausliest.  
-Laufen erfolgt mit W A S D. Gedreht wird die Raumstation durch Shift, Control, Q und E.
 
 ## Eisladen
 
