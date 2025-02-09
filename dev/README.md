@@ -166,15 +166,27 @@ video, img, .visual-presentation-container {
     line-height: 2.1; /* Der Wert 1.8 kann angepasst werden, um den Abstand zu verändern */
 }
 
+.task-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
 .task-list ul {
-  list-style: none;
-  padding-left: 20px;
+    list-style: none;
+    padding-left: 0; /* Entfernt zusätzlichen Einzug */
+}
+
+.task-list ul li {
+    display: flex;
+    align-items: flex-start;
 }
 
 .task-list ul li::before {
-  content: "→ "; /* Pfeil als Bullet-Point */
-  color: black;
-  font-weight: bold;
+    content: "➜"; /* Pfeil-Symbol */
+    color: black;
+    font-weight: bold;
+    margin-right: 8px; /* Abstand zwischen Pfeil und Text */
+    flex-shrink: 0; /* Verhindert, dass der Pfeil skaliert wird */
 }
 
 
