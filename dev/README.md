@@ -691,7 +691,7 @@ video, img, .visual-presentation-container {
     </h4>
     <br>
     <div class="skills">
-      <strong>HTML, CSS, TypeScript, Node.js, MongoDB</strong><br>
+      <strong>HTML, CSS, JSON, TypeScript, Node.js, MongoDB</strong><br>
       <em>Interaktiv - Kreativ - Progressiv</em><br>
       <strong>Wireframe, Git</strong>
     </div>
@@ -711,7 +711,7 @@ video, img, .visual-presentation-container {
           </li>
         </ul>
       </li>
-      <li><strong>OhneEngine oder Editor</strong><br>
+      <li><strong>Ohne Game-Engine oder Editor</strong><br>
         Grafiken mit HTML-CanvasRenderingContext2D
         <ul>
           <li>
@@ -748,7 +748,7 @@ video, img, .visual-presentation-container {
       User Experience Design<br>
       Duo-Team<br>
       Herbst 2020<br>
-      360* Point-and-Click
+      360° Point-and-Click
     </h4>
     <br>
     <div class="skills">
