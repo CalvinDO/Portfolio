@@ -520,8 +520,8 @@ video, img, .visual-presentation-container {
       </div>
     </div>  
     <h4>
-      Solo-Projekt<br>
-      Selbststudium<br>
+      Introduction to Deep Learning<br>
+      Solo-Selbststudium<br>
       Winter 2021 / 2022<br>
       AI-Experiment
     </h4>
@@ -579,7 +579,7 @@ video, img, .visual-presentation-container {
     </div>
   </div>
   <h4>
-    Team-Projekt<br>
+    Datenverarbeitung in der Medienproduktion<br>
     3-köpfiges Team<br>
     Frühling 2022<br>
     Blender-Addon
@@ -633,9 +633,9 @@ video, img, .visual-presentation-container {
         </div>
     </div>  
     <h4>
+        Prototyping Interaktiver Medien-Apps & Games<br>
         Solo-Projekt<br>
-        Selbststudium<br>
-        Sommer 2022<br>
+        Herbst 2022<br>
         3D-Labyrinth-Spiel
     </h4>
     <br>
@@ -658,12 +658,10 @@ video, img, .visual-presentation-container {
                 <li>Import von Objektpositionen und Rotationen aus Collada-Dateien</li>
             </ul>
         </li>
-        <li><strong>Steuerung & Interaktivität</strong><br>
-            Programmierung der Steuerung mit W A S D für Bewegung und Shift, Control, Q, E für Rotation<br>
-        </li>
     </ul>
     <div class="controls">
-        Steuerung wird im Spiel erklärt.
+      Bewegung: W A S D<br>
+      Rotation: Q, E, Shift, Control
     </div>
     <!-- Dieses 3D-Labyrinth Spiel habe ich mit TypeScript und <a href = "https://github.com/hs-furtwangen/FUDGE">FUDGE</a> programmiert, einer Node-basierten didaktischen Engine und Editor für webbasierte Spiele.  
     Der Spieler kann mit dem Character nicht fliegen und nur minimal springen, allerdings die gesamte Raumstation um seine Position herum auf verschiedenen Achsen drehen, um bei konstanter Schwerkraft einen Weg (oder Fall) durch das Labyrinth zu ermöglichen.  
