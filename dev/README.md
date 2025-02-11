@@ -48,28 +48,33 @@
   </details>
 
   <details>
-    <summary><strong>KLICKEN</strong> Etwa zur selben Zeit befreite mich TypeScript aus der Unflexibilität von Batch, was mir die dynamische Generierung zweidimensionaler Bilder auf einem Canvas ermöglichte.</summary>
+    <summary><strong>KLICKEN</strong><br>
+    Etwa zur selben Zeit befreite mich TypeScript aus der Unflexibilität von Batch, was mir die dynamische Generierung zweidimensionaler Bilder auf einem Canvas ermöglichte.</summary>
     Im Rahmen des mehrmals besuchten Kinder-Uni Feriencamps in Furtwangen machte ich erste Erfahrungen mit Processing und programmierte Pong. Jedes Erlernen eines neuen programmiertechnischen Werkzeuges verstärkte die Erkenntnis der Möglichkeit, dadurch meine Ideen in einem digitalem Medium festzuhalten, und sie von mir oder anderen, interaktiv oder passiv, später wieder abrufbar zu machen, was wiederum meine Motivation immer weiter steigen ließ.
   </details>
 
   <details>
-    <summary><strong>KLICKEN</strong> Ich erkannte durch die Programmierung die Relevanz der Mathematik in verschiedenen Bereichen und begann mit experimenteller Programmierung</summary>
+    <summary><strong>KLICKEN</strong><br>
+    Ich erkannte durch die Programmierung die Relevanz der Mathematik in verschiedenen Bereichen und begann mit experimenteller Programmierung</summary>
     für verschiedene Fächer am technischen Gymnasium, wo auch meine erste formale Ausbildung in Informatik begann. Mit 15 Jahren entwickelte ich eine regelrechte Begeisterung für die Möglichkeiten der Vektorrechnung und <a href = "#fraktal">fraktaler Geometrie</a>. Zusammen mit einem Lehrer und einem Mitschüler, mit dem ich einen Übersetzer für eine ausgedachte Geheimsprache programmierte, gründete ich eine Informatik-AG. In dieser wagten wir uns an die voll umfassende Programmierung neuronaler Netzwerke zum Experimentieren mit künstlicher Intelligenz, besonders bezogen auf Echtzeit-Bildverarbeitung eines Live-Kamerabildes.  
   </details>
 
   <details>
-    <summary><strong>KLICKEN</strong> Im Rahmen der freiwilligen Aufgaben des Programmieren-Moduls des ersten Semesters </summary>
+    <summary><strong>KLICKEN</strong><br>
+    Im Rahmen der freiwilligen Aufgaben des Programmieren-Moduls des ersten Semesters </summary>
     meines abgeschlossenen Studiums entwickelte ich mit Java einen ewigen Kalender, Game-Of-Life und Tic-Tac-Toe. Letzteres baute ich zusätzlich mit einem zufällig spielenden Computergegner aus, der zum Trainieren einer künstlichen Intelligenz genutzt werden soll.
   </details>
 
   <details>
-    <summary><strong>KLICKEN</strong> Beim GlobalGameJam 2020 im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines VR-Spiels mit.</summary>
+    <summary><strong>KLICKEN</strong><br>
+    Beim GlobalGameJam 2020 im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines VR-Spiels mit.</summary>
     <p>Meine Hauptaufgaben lagen bei Gamedesign und Sound (<a href="#fuwashima-soundtrack-zum-globalgamejam2020">Fuwashima</a>).<br>
     Dieses Event weckte bei mir erneut das Interesse an der 3D-Programmierung und dem 3D-Modeling, weshalb ich mich in Unity und Blender weiter vertiefte.</p>
   </details>
 
   <details>
-    <summary><strong>KLICKEN</strong> Seit Oktober 2019 studierte ich 7 Semester lang Medieninformatik an der Hochschule Furtwangen.</summary>
+    <summary><strong>KLICKEN</strong><br>
+    Seit Oktober 2019 studierte ich 7 Semester lang Medieninformatik an der Hochschule Furtwangen.</summary>
     <p>Nach dem ersten Semester erhielt ich von meinen Professoren für Mathematik und Informatik Anfragen als Tutor tätig zu werden und war als solcher für das Modul "Programmierung" eingestellt. <br>
     Ich beendete das zweite Semester mit einer <a href="#dischoverhfu">360°-Panorama-Verkörperung</a> der Schnitzeljagd an der Hochschule Furtwangen, sowie einer <a href="#eisladen">Eisladen-Website</a> mit Server, realisiert als Browsergame. <br>  
     Das Praktikum als drittes Semester absolvierte ich bei <a href="https://www.weltenbauer-se.com/de" target="_blank">weltenbauer. Software Entwicklung GmbH</a>, wo ich am <a href="#bau-simulator">Bau-Simulator</a> im Developer-Team mitarbeitete. Das Unternehmen behielt mich gleich 2 weitere Jahre als Werkstudent, bis zum Ende des Studiums.<br>
