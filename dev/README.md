@@ -835,8 +835,8 @@ video, img, .visual-presentation-container {
     </div>
     <br>
     <ul class="task-list">
-      <li><strong>Fraktale Visualisierung</strong><br>
-        <span>Entwicklung einer Applikation zur Visualisierung von rekursiven Strukturen in Fraktalen</span>
+      <li><strong>Ohne konkrete Vorstellung</strong><br>
+        <span>Experimentelle Entwicklung einer Applikation zur Visualisierung von rekursiven Strukturen in Fraktalen</span>
           <ul>
             <li>
               Bälle mit rekursiven "create-children"-Objektmethoden
@@ -847,12 +847,20 @@ video, img, .visual-presentation-container {
         <span>Kolorierung abhängig von Iterationsstufe und Ordnung der Fraktalstrukturen berechnet</span>
         <ul>
           <li>
-            Visualisierung und Ästhetik der Mathematik
+            Ästhetik durch prozedurale Algorithmen
           </li>
         </ul>
       </li>
       <li><strong>Technische Experimente</strong><br>
         <span>Experimente mit maximaler Browserauflösung und verschiedenen Iterationsparametern</span>
+          <ul>
+            <li>
+              Zoom eines 10.000 x 10.000 Pixel Bild, um repetitive Strukturen nahtlos entdecken zu können
+            </li>
+            <li>
+              Veränderung der Winkel und Anzahl Kinder pro Ball
+            <li>
+          </ul>
       </li>
     </ul>
     <div class="controls">
@@ -891,7 +899,6 @@ video, img, .visual-presentation-container {
     Hieraus wird sich in naher Zukunft noch eine Simulation eines ganzen Rasters dieser Massen entwickeln, um Stoff zu simulieren (Cloth-Simulation).
   </div>
 </div>
-
 
 ## Fraktal Animation
 
