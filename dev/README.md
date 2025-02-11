@@ -36,12 +36,14 @@
 
 <div class = "details-container">
   <details>
-    <summary><strong>KLICKEN</strong> Seit mein Vater, ein Professor für Computerspiele, mich bereits in sehr frühem Alter von 3 Jahren vorsichtig an dieses Medium herangeführt hat, interessierte ich mich nicht nur für das Spielen, sondern auch ähnlich stark für die Entwicklung von Games.</summary>
+    <summary><strong>KLICKEN</strong><br>
+    Seit mein Vater, ein Professor für Computerspiele, mich bereits in sehr frühem Alter von 3 Jahren vorsichtig an dieses Medium herangeführt hat, interessierte ich mich nicht nur für das Spielen, sondern auch ähnlich stark für die Entwicklung von Games.</summary>
     Ich zeichnete zusätzliche Level für Super Mario oder entwarf neue Spiele, das könnte man als meine ersten Schritte im Gamedesign bezeichnen. Später verbrachte ich viel Zeit mit der Kombination der elementaren Redstone-Elemente von Minecraft um logische Schaltungen, Rechensysteme, Binärzähler und Segmentanzeigen zu konstruieren. Auch bereitete mir die Modifikation des Spiels durch selbst gestaltete Resourcepacks viel Freude.  
   </details>
 
   <details>
-    <summary><strong>KLICKEN</strong> Im Alter von 9 Jahren begann mein Interesse am 3D–Modelling, was sich durch Architektur-Projekte in Google SketchUp und diverses Modeling in Sculpt3D wiederspiegelte. Mit 10 Jahren folgten kleinere Text-Games,</summary>
+    <summary><strong>KLICKEN</strong><br>
+    Im Alter von 9 Jahren begann mein Interesse am 3D–Modelling, was sich durch Architektur-Projekte in Google SketchUp und diverses Modeling in Sculpt3D wiederspiegelte. Mit 10 Jahren folgten kleinere Text-Games,</summary>
     die ich mit Batch – meiner ersten Programmiersprache - und dem Windows Editor umsetzte. Mit einem Leuchtturm von Fischer-Technik machte ich zu dieser Zeit auch erste Erfahrungen mit Ablaufsteuerungen. Am Nintendo-DS erstellte ich Zeichentrickanimationen über das Touchpad und kleine Stop-Motion-Trickfilme. Mit 11 Jahren begann ich mit der grafischen Bildbearbeitung mit Paint, mit 13 Jahren intensivierte ich dieses Hobby mit GIMP.
   </details>
 
