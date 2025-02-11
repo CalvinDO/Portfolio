@@ -197,7 +197,7 @@ video, img, .visual-presentation-container {
     flex-shrink: 0; /* Verhindert, dass der Pfeil skaliert wird */
 }
 
-.task-list li strong + br + span {
+.task-list li span {
     display: block;
     margin-left: 10px;
 }
