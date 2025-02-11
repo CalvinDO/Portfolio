@@ -795,7 +795,7 @@ video, img, .visual-presentation-container {
         </ul>
       </li>
       <li><strong>Datenstruktur & Interaktionen</strong><br>
-        <span>Verwendung von JSON für 104 Collectibles in xyz Räumen</span>
+        <span>Verwendung von JSON für 104 Collectibles in 27 Räumen</span>
         <ul>
           <li>
             Name, Position, Interaktionsgeräusche
