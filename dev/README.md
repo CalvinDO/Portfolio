@@ -181,9 +181,6 @@ video, img, .visual-presentation-container {
     align-items: flex-start;
 }
 
-.task-list > li {
-    padding-left: 20px;
-}
 
 .task-list ul li::before {
     content: "➜"; /* Pfeil-Symbol */
@@ -193,6 +190,10 @@ video, img, .visual-presentation-container {
     flex-shrink: 0; /* Verhindert, dass der Pfeil skaliert wird */
 }
 
+.task-list li strong + br + span {
+    display: block;
+    text-indent: 20px;
+}
 
 </style>
 
@@ -232,20 +233,20 @@ video, img, .visual-presentation-container {
     <br>
     <ul class="task-list">
     <li><strong>Fahrzeug-Setup</strong><br>
-        Integration von über 80 Fahrzeugmodellen mit funktionsspezifischen Logikbausteinen
+        <span>Integration von über 80 Fahrzeugmodellen mit funktionsspezifischen Logikbausteinen</span>
         <ul>
             <li>Rotationslimits, Getriebe- und Motorsimulation, Terrainsimulation</li>
             <li>FMOD-Audio</li>
         </ul>
     </li>
     <li><strong>Debug-UI-Entwicklung</strong><br>
-        Erstellung eines dynamischen und generischen Debug-Tools für
+        <span>Erstellung eines dynamischen und generischen Debug-Tools für</span>
         <ul>
             <li>Missionen, Fahrzeug-Spawning, Settings</li>
         </ul>
     </li>
     <li><strong>Navigationsdisplay</strong><br>
-        Anzeige des Pfades in der Minimap.
+        <span>Anzeige des Pfades in der Minimap.</span>
     </li>
     </ul>
     <!-- Im Dev-Team bei <a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a> arbeitete ich mit insgesamt 25 Mitarbeitern und weiteren Outsourcern vom Winter 2020 bis zum Frühling 2023. Begonnen als Praktikant im Büro für das dritte Semester, behielt mich das Unternehmen überzeugt als Werkstudent bis zum Bachelor-Abschluss. So sammelte ich zwei weitere Jahre lang Erfahrung in der Programmierung eines kommerziellen Mid-Tier Games. Neben strukturellem Arbeiten mit agilem Projektmanagement, wie SCRUM-Sprintmeetings, Atlassian Confluence, Versionskontrolle, Bugtracking mit Mantis in einem größeren Team und Orientierung nach Vorgaben eines kommerziellen Publishers (<a href = "https://www.astragon.de/">Astragon</a>), sowie Synergie mit Grafiker- und QA-Departments vertiefte ich mich in fortgeschrittene Programmierung mit Unity und C#. Desweiteren lernte ich FMOD als Audio-Integrationssoftware für Unity kennen.  
