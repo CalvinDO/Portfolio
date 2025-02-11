@@ -484,31 +484,30 @@ video, img, .visual-presentation-container {
     <br>
     <ul class="task-list">
       <li><strong>Fortgeschrittener Camera-Controller</strong><br>
-          Programmierung eines intelligenten Third-Person-Kamerasystems<br>
+          <span>Programmierung eines intelligenten Third-Person-Kamerasystems</span>
           <ul>
               <li>Verdeckung, Bewegung, Hindernis-Vermeidung</li>
           </ul>
       </li>
       <li><strong>Modulare Asset-Programmierung</strong><br>
-          Erstellung parametrischer Assets zur flexiblen Anpassung durch andere Abteilungen<br>
+          <span>Erstellung parametrischer Assets zur flexiblen Anpassung durch andere Abteilungen</span>
           <ul>
               <li>Dynamische Elemente: Story, Level, Puzzle, Effekt, Sound</li>
           </ul>
       </li>
       <li><strong>Spielmechanik & Physik</strong><br>
-          Entwicklung eines Jump-and-Run<br>
+          <span>Entwicklung eines Jump-and-Run</span>
           <ul>
               <li>Schwingen, Greifen, Hangeln, Parkour</li>
           </ul>
       </li>
       <li><strong>KI-Gegner & Steuerung</strong><br>
-          Programmierung und Balancing der Gegner-KI (Unity NavMesh)<br>
-          <ul>
+          <span>Programmierung und Balancing der Gegner-KI (Unity NavMesh)</span>
               <li>Anpassungsfähige Verfolgungs- und Fluchtmechaniken</li>
           </ul>
       </li>
       <li><strong>Details & Technische Tiefe</strong><br>
-          Diverses Coding zur Steigerung der Immersion und Interaktivität<br>
+          <span>Diverses Coding zur Steigerung der Immersion und Interaktivität</span>
           <ul>
               <li>Bone-Rigs mit Multi-Aim Constraints & Weights</li>
           </ul>
@@ -546,25 +545,25 @@ video, img, .visual-presentation-container {
     <br>
     <ul class="task-list">
       <li><strong>Trainingsdatensatz & Vorverarbeitung</strong><br>
-          Erstellung eines Textmodells mit Bürgergesetzbuch als Trainingsdaten<br>
+          <span>Erstellung eines Textmodells mit Bürgergesetzbuch als Trainingsdaten</span>
           <ul>
               <li>Umwandlung des Textes in sequenzielle Eingaben und Zielzeichen</li>
           </ul>
       </li>
       <li><strong>Neuronale Netzwerk-Architektur</strong><br>
-          Implementierung eines GRU-basierten RNNs in Keras<br>
+          <span>Implementierung eines GRU-basierten RNNs in Keras</span>
           <ul>
               <li>Architektur aus Embedding, GRU und Dense-Schichten</li>
           </ul>
       </li>
       <li><strong>Textgenerierung</strong><br>
-          Erzeugung von neuen Paragraphen basierend auf beliebigen Startzeichen<br>
+          <span>Erzeugung von neuen Paragraphen basierend auf beliebigen Startzeichen</span>
           <ul>
               <li>Anpassung der Vorhersage durch Temperatur</li>
           </ul>
       </li>
       <li><strong>Zukünftige Erweiterungen</strong><br>
-          Testen von LSTM und GPT für verbesserte Textgenerierung<br>
+          <span>Testen von LSTM und GPT für verbesserte Textgenerierung</span>
           <ul>
               <li>Vergleich der Performance und Effizienz</li>
           </ul>
@@ -605,20 +604,20 @@ video, img, .visual-presentation-container {
   <br>
   <ul class="task-list">
       <li><strong>Parametrisierte Baumgenerierung</strong><br>
-        Entwicklung eines Addons zur Generierung prozeduraler Bäume
+        <span>Entwicklung eines Addons zur Generierung prozeduraler Bäume</span>
         <ul>
           <li>Einstellbare Ast-Abspaltungen, Ausrichtung, Radius, Zufallsfaktoren</li>
         </ul> 
       </li>
       <li><strong>Rekursion & Vektorrechnung</strong><br>
-        Vertiefung und Erweiterung des technischen Vokabulars
+        <span>Vertiefung und Erweiterung des technischen Vokabulars</span>
         <ul>
           <li>Rekursive Python-Programmierung</li>
           <li>Rodrigues-Rotationsformel, Kreuzprodukt, ...</li>
         </ul>
       </li>
       <li><strong>Blender-Addon-Integration</strong><br>
-        Realisierung als Addon in Blender mit User-Interface
+        <span>Realisierung als Addon in Blender mit User-Interface</span>
         <ul>
           <li>Nutzung der Blender-API</li>
         </ul>
@@ -659,17 +658,17 @@ video, img, .visual-presentation-container {
     <br>
     <ul class="task-list">
         <li><strong>Konzeption und Prototyping</strong><br>
-            Labyrinth-Spiel mit drehbarer Raumstation<br>
+            <span>Labyrinth-Spiel mit drehbarer Raumstation</span>
             <ul>
                 <li>Bewegung zum Ziel durch Rotation der Raumstation</li>
             </ul>
         </li>
         <li><strong>Technische Umsetzung</strong><br>
-            Einsatz der Pre-Alpha-Engine FUDGE<br>
+            <span>Einsatz der Pre-Alpha-Engine FUDGE</span>
             <ul>
               <li>Entwicklung mit didaktischem Framework</li>
             </ul>
-            Entwicklung eines eigenen Blender-Map-Importers
+            <span>Entwicklung eines eigenen Blender-Map-Importers</span>
             <ul>
               <li>Import von Objektpositionen und Rotationen aus Collada-Dateien</li>
             </ul>
@@ -710,13 +709,13 @@ video, img, .visual-presentation-container {
     <br>
     <ul class="task-list">
       <li><strong>Spielerische Umsetzung einer Web-Shop Aufgabe</strong><br>
-        Arcade-Greifer
+        <span>Arcade-Greifer</span>
         <ul>
           <li>
             Eisbehälter, aus denen Eis entnommen wird
           </li>
         </ul>
-        Toppings hinzufügen
+        <span>Toppings hinzufügen</span>
         <ul>
           <li>
             Interaktive Toppings können durch Klicken aus Behältern auf die Eiskugeln gestreut werden
@@ -724,7 +723,7 @@ video, img, .visual-presentation-container {
         </ul>
       </li>
       <li><strong>Backend</strong><br>
-        Verkäufer kann in seinem Bereich Bestellungen bearbeiten 
+        <span>Verkäufer kann in seinem Bereich Bestellungen bearbeiten</span>
         <ul>
           <li>
            MongoDB-Server
@@ -732,13 +731,13 @@ video, img, .visual-presentation-container {
         </ul>
       </li>
       <li><strong>Ohne Game-Engine oder Editor</strong><br>
-        Grafiken mit HTML-CanvasRenderingContext2D
+        <span>Grafiken mit HTML-CanvasRenderingContext2D</span>
         <ul>
           <li>
             Komposition von Zeichenbefehlen zu Rädern, Boxen, Werkzeugen
           </li>
         </ul>
-        Logiken mit TypeScript
+        <span>Logiken mit TypeScript</span>
         <ul>
           <li>
             Programmierung von Physik, Animation und Spielmechanik
@@ -779,7 +778,7 @@ video, img, .visual-presentation-container {
     <br>
     <ul class="task-list">
       <li><strong>Interaktive Schnitzeljagd</strong><br>
-        Erstie-Rallye der Hochschule als 360-Point-and-Click Adventure
+        <span>Erstie-Rallye der Hochschule als 360-Point-and-Click Adventure</span>
         <ul>
           <li>
             Leiten des Nutzers durch die Anwendung
@@ -787,7 +786,7 @@ video, img, .visual-presentation-container {
         </ul>
       </li>
       <li><strong>Panorama-Touren</strong><br>
-        Erstellung interaktiver Panorama-Touren durch die Hochschule
+        <span>Erstellung interaktiver Panorama-Touren durch die Hochschule</span>
         <ul>
           <li>
             Programmierung mit WebXR und eigenen Methoden
@@ -795,7 +794,7 @@ video, img, .visual-presentation-container {
         </ul>
       </li>
       <li><strong>Datenstruktur & Interaktionen</strong><br>
-        Verwendung von JSON für 104 Collectibles in 
+        <span>Verwendung von JSON für 104 Collectibles in xyz Räumen</span>
         <ul>
           <li>
             Name, Position, Interaktionsgeräusche
@@ -836,13 +835,13 @@ video, img, .visual-presentation-container {
     <br>
     <ul class="task-list">
       <li><strong>Fraktale Visualisierung</strong><br>
-        Entwicklung einer Applikation zur Visualisierung von rekursiven Strukturen in Fraktalen<br>
+        <span>Entwicklung einer Applikation zur Visualisierung von rekursiven Strukturen in Fraktalen</span>
       </li>
       <li><strong>Farbwinkelberechnung</strong><br>
-        Farbwinkel abhängig von Iterationsstufe und Ordnung der Fraktalstrukturen berechnet<br>
+        <span>Farbwinkel abhängig von Iterationsstufe und Ordnung der Fraktalstrukturen berechnet</span>
       </li>
       <li><strong>Technische Experimente</strong><br>
-        Experimente mit maximaler Browserauflösung und verschiedenen Iterationsparametern<br>
+        <span>Experimente mit maximaler Browserauflösung und verschiedenen Iterationsparametern</span>
       </li>
     </ul>
     <div class="controls">
