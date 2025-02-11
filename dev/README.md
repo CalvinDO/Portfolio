@@ -199,7 +199,7 @@ video, img, .visual-presentation-container {
 
 .task-list li strong + br + span {
     display: block;
-    text-indent: 20px;
+    margin-left: 10px;
 }
 
 </style>
