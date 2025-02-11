@@ -243,7 +243,7 @@ video, img, .visual-presentation-container {
         <span>Integration von über 80 Fahrzeugmodellen mit funktionsspezifischen Logikbausteinen</span>
         <ul>
             <li>Rotationslimits, Getriebe- und Motorsimulation, Terrainsimulation</li>
-            <li>FMOD-Audio</li>
+            <li>Fahrzeugaudio mit FMOD</li>
         </ul>
     </li>
     <li><strong>Debug-UI-Entwicklung</strong><br>
@@ -291,19 +291,19 @@ video, img, .visual-presentation-container {
     <br>
     <ul class="task-list">
     <li><strong>Evolutionäre Algorithmen</strong><br>
-        Selektion, Rekombination und Mutation
+        <span>Selektion, Rekombination und Mutation</span>
         <ul>
             <li>Lernen von Kreaturenbewegungen über Generationen hinweg</li>
         </ul>
     </li>
     <li><strong>Simulations-basierte KI-Entwicklung</strong><br>
-        Kreation und Training eines neuronalen Netzwerks
+        <span>Kreation und Training eines neuronalen Netzwerks</span>
         <ul>
             <li>Instanzen laufen in physikalischer Simulation</li>
         </ul>
     </li>
     <li><strong>Editor für Kreaturenbau</strong><br>
-        Erstellen und Modifizieren von Kreaturen
+        <span>Erstellen und Modifizieren von Kreaturen</span>
         <ul>
             <li>Hinzufügen und Einstellen von Gliedern und Gelenken</li>
         </ul>
@@ -349,21 +349,21 @@ video, img, .visual-presentation-container {
     <br>
     <ul class="task-list">
       <li><strong>Spielmechanik & Physik</strong><br>
-          Programmierung der Spielphysik und Mechaniken<br>
+          <span>Programmierung der Spielphysik und Mechaniken</span>
           <ul>
               <li>Beschwörungs- und Zauberkampfsystem, Spielbalance</li>
           </ul>
       </li>
       <li><strong>KI-Controller</strong><br>
-          Logik von KI-Gegnern (Unity-NavMesh)<br>
+          <span>Logik von KI-Gegnern (Unity-NavMesh)</span>
           <ul>
               <li>Bewegungssteuerung, intelligentes Angreifen</li>
           </ul>
       </li>
       <li><strong>Sound & Animation</strong><br>
-          Integration von Soundeffekten und Animationen</li>
+          <span>Integration von Soundeffekten und Animationen</span></li>
       <li><strong>User Interface</strong><br> 
-          Design und Implementierung der Benutzeroberfläche<br>
+          <span>Design und Implementierung der Benutzeroberfläche</span><br>
           <ul>
               <li>Kombination von Fähigkeitskarten</li>
           </ul>
@@ -430,19 +430,19 @@ video, img, .visual-presentation-container {
     <br>
     <ul class="task-list">
       <li><strong>Shader-Programmierung</strong><br>
-          Erstellung von Vertex- und Fragment-Shadern für AR-Rendering<br>
+          <span>Erstellung von Vertex- und Fragment-Shadern für AR-Rendering</span>
           <ul>
               <li>Beleuchtung, Materialeffekte, visuelle Optimierung</li>
           </ul>
       </li>
       <li><strong>Physik & Wurfmechanik</strong><br>
-          Implementierung der Ballflugbahn<br>
+          <span>Implementierung der Ballflugbahn</span>
           <ul>
               <li>Aufprall- und Abprall-Logik, Touchscreen-Gestensteuerung</li>
           </ul>
       </li>
       <li><strong>Augmented Reality & Web-Integration</strong><br>
-          Nutzung von WebAR & Three.js<br>
+          <span>Nutzung von WebAR & Three.js</span>
           <ul>
               <li>Platzierung des Spieltisches über einen AR-Marker</li>
           </ul>
