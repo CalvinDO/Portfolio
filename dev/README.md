@@ -503,6 +503,7 @@ video, img, .visual-presentation-container {
       </li>
       <li><strong>KI-Gegner & Steuerung</strong><br>
           <span>Programmierung und Balancing der Gegner-KI (Unity NavMesh)</span>
+          <ul>
               <li>Anpassungsfähige Verfolgungs- und Fluchtmechaniken</li>
           </ul>
       </li>
