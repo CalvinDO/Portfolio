@@ -719,7 +719,7 @@ video, img, .visual-presentation-container {
         <span>Toppings hinzufügen</span>
         <ul>
           <li>
-            Interaktive Toppings können durch Klicken aus Behältern auf die Eiskugeln gestreut werden
+            Interaktive Toppings können aus Behältern auf die Eiskugeln über Förderbänder gestreut werden
           </li>
         </ul>
       </li>
@@ -727,7 +727,7 @@ video, img, .visual-presentation-container {
         <span>Verkäufer kann in seinem Bereich Bestellungen bearbeiten</span>
         <ul>
           <li>
-           MongoDB-Server
+           MongoDB-Server mit Atlas (Wartungsarbeiten eingestellt)
           </li>
         </ul>
       </li>
@@ -837,9 +837,19 @@ video, img, .visual-presentation-container {
     <ul class="task-list">
       <li><strong>Fraktale Visualisierung</strong><br>
         <span>Entwicklung einer Applikation zur Visualisierung von rekursiven Strukturen in Fraktalen</span>
+          <ul>
+            <li>
+              Bälle mit rekursiven "create-children"-Objektmethoden
+            </li>
+          </ul>
       </li>
       <li><strong>Farbwinkelberechnung</strong><br>
-        <span>Farbwinkel abhängig von Iterationsstufe und Ordnung der Fraktalstrukturen berechnet</span>
+        <span>Kolorierung abhängig von Iterationsstufe und Ordnung der Fraktalstrukturen berechnet</span>
+        <ul>
+          <li>
+            Visualisierung und Ästhetik der Mathematik
+          </li>
+        </ul>
       </li>
       <li><strong>Technische Experimente</strong><br>
         <span>Experimente mit maximaler Browserauflösung und verschiedenen Iterationsparametern</span>
