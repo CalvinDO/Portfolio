@@ -766,15 +766,18 @@ video, img, .visual-presentation-container {
     <div class="skills">
       <strong>TypeScript, HTML, CSS, LocalStorage, OpenStreetMap, WebXR,</strong><br>
       <em>Interdisziplinär - Innovativ - Praktisch</em><br>
-      <strong>Wireframes, Sitemaps, Visuelle Guides</strong>
+      <strong>Wireframes, Sitemaps, User Journey, Visuelle Guides</strong>
     </div>
     <br>
     <ul class="task-list">
       <li><strong>Interaktive Schnitzeljagd</strong><br>
         Erstie-Rallye der Hochschule als 360-Point-and-Click Adventure
-      </li>
         <ul>
-          <>
+          <li>
+            Leiten des Nutzers durch die Anwendung
+          </li>
+        </ul>
+      </li>
       <li><strong>Panorama-Touren</strong><br>
         Erstellung interaktiver Panorama-Touren durch die Hochschule
         <ul>
