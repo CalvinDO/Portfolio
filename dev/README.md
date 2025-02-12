@@ -928,6 +928,7 @@ video, img, .visual-presentation-container {
             </li>
             <li>
               Epizykloide mit gebrochen-zahligen Faktoren
+            </li>
             <li>
               Mandala-ähnliche Ästhetik durch Formeln der Mathematik
             </li>
