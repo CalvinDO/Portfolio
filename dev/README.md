@@ -864,7 +864,7 @@ video, img, .visual-presentation-container {
       </li>
     </ul>
     <div class="controls">
-      Parameter können verändert werden, um die Darstellung zu beeinflussen.
+      Parameter können verändert werden, um die Darstellung zu beeinflussen
     </div>
     <!-- Die Idee für diese Applikation kam mir auf, als ich die Möglichkeiten der grafischen Visualisierung durch Rekursion begriff. Das klare Endergebnis konnte ich mir, je nach Anzahl von Iteratifonen, noch nicht vorstellen, weshalb ich es sofort ausprobierte, mit dem Ziel, mich von meinem eigenen Programm zum Staunen zu bewegen.  
     Instanzierte Bälle mit "create-children" Objektmethoden schafften dies bereits. Es folgten einige Experimente mit der maximal umsetzbaren Auflösung verschiedener Browser, um ein fertig gerendertes Bild von 10000 mal 10000 Pixeln zu erhalten, welches sich stark vergrößern lässt, um die repetitiven Strukturen nahtlos entdecken zu können.  
@@ -880,10 +880,61 @@ video, img, .visual-presentation-container {
       <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
         Klicken zum Spielen
       </div>
-    </div>  
-    Dieses Projekt ist durch eine Präsentationsarbeit im Fach Mathematik der 13. Klasse entstanden. Meine Mitschüler und ich durften uns entweder aus vorgegebenen, oder eigens ausgesuchten fortgeschrittenen Themen der Mathematik widmen. Für letzteres wählte ich aus meiner schon bestehenden Kenntnis einiger mathematischer/physikalischer Phänomene die der Kardioide aus.  
+    </div>
+    <h4>
+      Schulvortrag<br>
+      Solo-Projekt<br>
+      Frühling 2019<br>
+      Herzkurve-Playground
+    </h4>
+    <br>
+    <div class="skills">
+      <strong>TypeScript, CanvasRenderingContext2D, Kreisberechnung, Algebra</strong><br>
+      <em>Präsentativ - Mathematisch - Selbstständig</em><br>
+      <strong></strong>
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Fortgeschrittene Präsentation im Mathematikunterricht</strong><br>
+        <span>Muster durch zirkulare Multiplikationstabellen</span>
+          <ul>
+            <li>
+              Physikalischer Zusammenhang mit Lichtreflexionen
+            </li>
+            <li>
+              Ähnlichkeit zum Mandelbrot-Fraktal
+            </li>
+            <li>
+              Erklärung in meinem vertonten Video
+            </li>
+          </ul>
+      </li>
+      <li><strong>Programmiertechnische Umsetzung</strong><br>
+        <span>Interaktive Anwendung zur Parametrisierung des Kardioids </span>
+        <ul>
+          <li>
+            Einstellung von Faktor, Auflösung, Linienstärke
+          </li>
+        </ul>
+      </li>
+      <li><strong>Erforschen von Mustern durch Zahlen</strong><br>
+        <span>Experimentelles Entdecken weiterer mathematischer Phänome</span>
+          <ul>
+            <li>
+              Große Faktoren führen zu visuellen Überraschungen
+            </li>
+            <li>
+              Mandala-ähnliche Ästhetik ohne Künstler
+            </li>
+          </ul>
+      </li>
+    </ul>
+    <div class="controls">
+      Parameter können verändert werden, um die Darstellung zu beeinflussen
+    </div> 
+    <!-- Dieses Projekt ist durch eine Präsentationsarbeit im Fach Mathematik der 13. Klasse entstanden. Meine Mitschüler und ich durften uns entweder aus vorgegebenen, oder eigens ausgesuchten fortgeschrittenen Themen der Mathematik widmen. Für letzteres wählte ich aus meiner schon bestehenden Kenntnis einiger mathematischer/physikalischer Phänomene die der Kardioide aus.  
     Um die Beschreibung der dahinter liegenden Mathematik zu vermeiden, verweise ich an dieser Stelle auf das Endresultat innerhalb des Mathematik-Projekts, welches aus diesem vertonten [Video](#video) bestand.   
-    Um den Mitschülern die Thematik näher zu bringen und dafür zu faszinieren, programmierte ich diese Anwendung. Bei höheren Werten des in der Applikation auch von Ihnen einstellbaren Parameters "Faktor", sowie dem ab dann interressanten Parameter "Lines", ist für mich bis heute der eindeutige Zusammenhang der eingestellten Werte mit den entstehenden Mustern zugegebenermaßen nicht eindeutig erklärbar.
+    Um den Mitschülern die Thematik näher zu bringen und dafür zu faszinieren, programmierte ich diese Anwendung. Bei höheren Werten des in der Applikation auch von Ihnen einstellbaren Parameters "Faktor", sowie dem ab dann interressanten Parameter "Lines", ist für mich bis heute der eindeutige Zusammenhang der eingestellten Werte mit den entstehenden Mustern zugegebenermaßen nicht eindeutig erklärbar. -->
   </div>
   <div class="flex-item">
     <h2 id="rubber-band">Rubber band</h2>
