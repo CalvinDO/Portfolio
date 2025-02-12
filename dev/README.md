@@ -943,8 +943,8 @@ video, img, .visual-presentation-container {
     Um den Mitschülern die Thematik näher zu bringen und dafür zu faszinieren, programmierte ich diese Anwendung. Bei höheren Werten des in der Applikation auch von Ihnen einstellbaren Parameters "Faktor", sowie dem ab dann interressanten Parameter "Lines", ist für mich bis heute der eindeutige Zusammenhang der eingestellten Werte mit den entstehenden Mustern zugegebenermaßen nicht eindeutig erklärbar. -->
   </div>
   <div class="flex-item">
-    <h2 id="rubber-band">Rubber band</h2>
-    <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+    <h2 id="rubber-band">Rubber Band</h2>
+    <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="Code/RubberBand/start.html">
         <img src="Rubber.PNG" width="100%">
       </a>
@@ -952,8 +952,50 @@ video, img, .visual-presentation-container {
         Klicken zum Spielen
       </div>
     </div>
-    Grundlage für diese Physik-Simulation war die in Echtzeit stattfindende Anwendung physikalischem Verhaltens auf Körper, die von dem Mauszeiger beeinflusst werden. Durch simple Vektoradition erschuf ich damit schon ein System dreier gekoppelter Massen, deren Verhalten annähernd Gummibändern ähneln.  
-    Hieraus wird sich in naher Zukunft noch eine Simulation eines ganzen Rasters dieser Massen entwickeln, um Stoff zu simulieren (Cloth-Simulation).
+    <h4>
+      Physik-Simulation<br>
+      Solo-Projekt<br>
+      In Entwicklung<br>
+      Echtzeit-Interaktion
+    </h4>
+    <br>
+    <div class="skills">
+      <strong>TypeScript, Vektoraddition, Physik-Engines</strong><br>
+      <em>Experimentell - Dynamisch - Interaktiv</em><br>
+      <strong>Massensysteme, Gummiband-Effekte, Echtzeitsimulation</strong>
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Dynamische Physik-Interaktion</strong><br>
+        <span>Simulation von Massen, die sich in Echtzeit durch Krafteinwirkung verändern</span>
+        <ul>
+          <li>
+            Mausgesteuerte Kräfte beeinflussen die Bewegung
+          </li>
+        </ul>
+      </li>
+      <li><strong>Gummiband-ähnliche Bewegung</strong><br>
+        <span>Verknüpfte Massen reagieren elastisch auf Veränderungen</span>
+        <ul>
+          <li>
+            Koppelung durch einfache Vektoraddition
+          </li>
+        </ul>
+      </li>
+      <li><strong>Erweiterbarkeit zur Stoff-Simulation</strong><br>
+        <span>Grundlage für eine zukünftige Simulation von flexiblen Stoffen</span>
+        <ul>
+          <li>
+            Planung eines Rastersystems für realistische Materialverformung
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="controls">
+      Bewegen & Interagieren: Mauszeiger nutzen
+    </div>
+    <!-- Grundlage für diese Physik-Simulation war die in Echtzeit stattfindende Anwendung physikalischem Verhaltens auf Körper, die von dem Mauszeiger beeinflusst werden. Durch simple Vektoradition erschuf ich damit schon ein System dreier gekoppelter Massen, deren Verhalten annähernd Gummibändern ähneln.  
+    Hieraus wird sich in naher Zukunft noch eine Simulation eines ganzen Rasters dieser Massen entwickeln, um Stoff zu simulieren (Cloth-Simulation). -->
   </div>
 </div>
 
