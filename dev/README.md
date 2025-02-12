@@ -812,6 +812,27 @@ video, img, .visual-presentation-container {
       Die Umsetzung erfolgte mit zweidimensionalen Panorama-Bildern, die durch WebXR-Polyfill und eigene Programmierung zu interaktiven Panorama-Touren wurden. Als Datenstruktur für Winkelkoordinaten der 104 Gegenstände, sowie deren Namen und Geräusch der Interaktion, wurde JSON verwendet. -->
   </div>
   <div class="flex-item">
+    <h2 id="fraktal">Fraktal Animation</h2>
+    <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+      <a href="Code/FraktalAnimation/start.html">
+        <img src="Animation.PNG" width="100%">
+      </a>
+      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
+        Klicken zum Spielen
+      </div>
+    </div>
+    <h4>
+      Erweiterung des Projekts Fraktal
+      Sommer 2019<br>
+    </h4>
+    <br>
+    <div class="controls">
+      Parameter können verändert werden, um die Darstellung zu beeinflussen
+    </div>
+    <!-- Zugrunde liegt das zuvor beschriebene Projekt [Fraktal](#fraktal). Diesmal mit dem Ziel, einige Parameter der Berechnung, die sich als Dezimalbrüche darstellen lassen, wie beispielsweise der Farbwinkel, zeitlich zu modulieren, um eine zusätzliche Dimension zu schaffen, die ebenso zu etlichen neuen Beobachtungen und weiteren Experimenten führen sollte.  
+    Bemerkenswert ist unter anderem der Zusammenhang, wie sich die Veränderung des Divisors eines Vollkreises, der die Positionierung der "children" eines jeden Balls bestimmt, auf die Bewegung und das Muster der Anordnung bis hin zu den kleinsten Bällen auswirkt, ebenso wie die entstehende Farbkonstellation -->
+  </div>
+  <div class="flex-item">
     <h2 id="fraktal">Fraktal</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
     <a href="Code/Fraktal/start.html">
@@ -1001,19 +1022,6 @@ video, img, .visual-presentation-container {
     Hieraus wird sich in naher Zukunft noch eine Simulation eines ganzen Rasters dieser Massen entwickeln, um Stoff zu simulieren (Cloth-Simulation). -->
   </div>
 </div>
-
-## Fraktal Animation
-
-<div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-  <a href="Code/FraktalAnimation/start.html">
-    <img src="Animation.PNG" width="100%">
-  </a>
-  <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-    Klicken zum Spielen
-  </div>
-</div>  
-Zugrunde liegt das zuvor beschriebene Projekt [Fraktal](#fraktal). Diesmal mit dem Ziel, einige Parameter der Berechnung, die sich als Dezimalbrüche darstellen lassen, wie beispielsweise der Farbwinkel, zeitlich zu modulieren, um eine zusätzliche Dimension zu schaffen, die ebenso zu etlichen neuen Beobachtungen und weiteren Experimenten führen sollte.  
-Bemerkenswert ist unter anderem der Zusammenhang, wie sich die Veränderung des Divisors eines Vollkreises, der die Positionierung der "children" eines jeden Balls bestimmt, auf die Bewegung und das Muster der Anordnung bis hin zu den kleinsten Bällen auswirkt, ebenso wie die entstehende Farbkonstellation
 
 <hr/>  
 <hr/>
