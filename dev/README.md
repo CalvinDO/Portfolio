@@ -983,7 +983,7 @@ video, img, .visual-presentation-container {
     <div class="skills">
       <strong>TypeScript, Vektoraddition</strong><br>
       <em>Experimentell - Physikalisch - Selbstständig</em><br>
-      <strong>Massensysteme, Gummiband-Effekte, Echtzeitsimulation</strong>
+      <strong>Git</strong>
     </div>
     <br>
     <ul class="task-list">
@@ -1027,6 +1027,63 @@ video, img, .visual-presentation-container {
 <hr/>
 
 # Modelling
+
+
+<div class = "flex-container">
+  <div class="flex-item">
+    <h2 id="turret">Turret for Tower-Defense-Game</h2>
+    <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+      <iframe width="100%" height="300em" src="https://www.youtube.com/embed/VAOCARtbn54"
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>  
+    </div>
+    <h4>
+      Freizeit-Experiment<br>
+      Solo-Projekt<br>
+      Herbst 2019<br>
+      Hard-Surface-Modeling
+    </h4>
+    <br>
+    <div class="skills">
+      <strong>Blender, Hard-Surface-Modeling</strong><br>
+      <em>Kollaborativ - Autodidaktisch - Individualisiert</em><br>
+      <strong></strong>
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Erstes Blender 3D-Modellierungsprojekt</strong><br>
+        <span>Eigenständige Entwicklung eines Geschützturms für ein Tower-Defense-Game</span>
+        <ul>
+          <li>
+            Keine vorgefertigten Tutorials für Kernstrukturen genutzt
+          </li>
+        </ul>
+      </li>
+      <li><strong>Hard-Surface-Techniken</strong><br>
+        <span>Verwendung aller elementaren Edit-Mode-Tools in Blender</span>
+        <ul>
+          <li>
+            Fokus auf detaillierte Geometrie und saubere Topologie
+          </li>
+        </ul>
+      </li>
+      <li><strong>Integration ins Spiel</strong><br>
+        <span>Das finale Modell wurde erfolgreich in das Spiel eines Kollegen eingebunden</span>
+        <ul>
+          <li>
+            Optimierung für Performance und In-Game-Nutzung
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="controls">
+      Video ansehen für unerfahrenen Modellierungsprozess & Endergebnis
+    </div>
+    <!-- Dies ist mein erstes 3D-Mesh-Modellierungsprojekt, daher wird in diesem Video teilweise unerfahrener Workflow wiedergegeben. Die Idee dazu kam mir, als ich einem Kollegen beim Programmieren eines 3D-Tower-Defense Spiels zuschaute.  
+    Abgesehen von dem Kugellager und den Läufen, bediente ich mich keines Tutorials, um die Modelliertechniken herauszufinden, da ich ein möglichst individualisiertes Gatling-Geschütz erschaffen wollte. Ich verwendete hier alle elementaren Tools, die der Edit-Mode von Blender für Hard-Surface-Modeling zu bieten hat.  
+    Das Endresultat ist in dem Tower-Defense-Game meines Kollegen integriert -->
+  </div>
+</div>
 
 ## Turret for Tower-Defense-Game
 
