@@ -859,7 +859,7 @@ video, img, .visual-presentation-container {
             </li>
             <li>
               Veränderung der Winkel und Anzahl Kinder pro Ball
-            <li>
+            </li>
           </ul>
       </li>
     </ul>
