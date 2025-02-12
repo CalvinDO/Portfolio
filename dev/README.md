@@ -953,32 +953,35 @@ video, img, .visual-presentation-container {
       </div>
     </div>
     <h4>
-      Physik-Simulation<br>
+      Freizeit-Experiment<br>
       Solo-Projekt<br>
-      In Entwicklung<br>
-      Echtzeit-Interaktion
+      Frühling 2019<br>
+      Physik-Simulation
     </h4>
     <br>
     <div class="skills">
-      <strong>TypeScript, Vektoraddition, Physik-Engines</strong><br>
-      <em>Experimentell - Dynamisch - Interaktiv</em><br>
+      <strong>TypeScript, Vektoraddition</strong><br>
+      <em>Experimentell - Physikalisch - Selbstständig</em><br>
       <strong>Massensysteme, Gummiband-Effekte, Echtzeitsimulation</strong>
     </div>
     <br>
     <ul class="task-list">
       <li><strong>Dynamische Physik-Interaktion</strong><br>
-        <span>Simulation von Massen, die sich in Echtzeit durch Krafteinwirkung verändern</span>
+        <span>Simulation von Massen mit Krafteinwirkung</span>
         <ul>
           <li>
-            Mausgesteuerte Kräfte beeinflussen die Bewegung
+            Koppelung durch einfache Vektoraddition
+          </li>
+          <li>
+            Mausgesteuerte Kinematische Masse beeinflusst die Bewegung
           </li>
         </ul>
       </li>
       <li><strong>Gummiband-ähnliche Bewegung</strong><br>
-        <span>Verknüpfte Massen reagieren elastisch auf Veränderungen</span>
+        <span>Verknüpfte Massen reagieren auf Veränderungen</span>
         <ul>
           <li>
-            Koppelung durch einfache Vektoraddition
+            Elastizität    
           </li>
         </ul>
       </li>
@@ -992,7 +995,7 @@ video, img, .visual-presentation-container {
       </li>
     </ul>
     <div class="controls">
-      Bewegen & Interagieren: Mauszeiger nutzen
+      Kinematische Masse steuern: Mausbewegung
     </div>
     <!-- Grundlage für diese Physik-Simulation war die in Echtzeit stattfindende Anwendung physikalischem Verhaltens auf Körper, die von dem Mauszeiger beeinflusst werden. Durch simple Vektoradition erschuf ich damit schon ein System dreier gekoppelter Massen, deren Verhalten annähernd Gummibändern ähneln.  
     Hieraus wird sich in naher Zukunft noch eine Simulation eines ganzen Rasters dieser Massen entwickeln, um Stoff zu simulieren (Cloth-Simulation). -->
