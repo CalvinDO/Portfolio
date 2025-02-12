@@ -1068,7 +1068,7 @@ video, img, .visual-presentation-container {
         </ul>
       </li>
       <li><strong>Integration ins Spiel</strong><br>
-        <span>Das finale Modell wurde erfolgreich in das Spiel eines Kollegen eingebunden</span>
+        <span>Einbinden des Modells in das Spiel eines Kollegen</span>
         <ul>
           <li>
             Optimierung für Performance und In-Game-Nutzung
@@ -1083,16 +1083,15 @@ video, img, .visual-presentation-container {
     Abgesehen von dem Kugellager und den Läufen, bediente ich mich keines Tutorials, um die Modelliertechniken herauszufinden, da ich ein möglichst individualisiertes Gatling-Geschütz erschaffen wollte. Ich verwendete hier alle elementaren Tools, die der Edit-Mode von Blender für Hard-Surface-Modeling zu bieten hat.  
     Das Endresultat ist in dem Tower-Defense-Game meines Kollegen integriert -->
   </div>
+  <div class="flex-item">
+    <h2 id="turret">Truhe</h2>
+    <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+      <img src="Truhe.png" alt="Truhe" width="100%"/>
+    </div>
+    Dieses Projekt geht aus einer Computergrafik-Aufgabe hervor, deren Anforderung die Modellierung (Mesh ohne Material) einer symmetrischen Truhe, mitsamt eines Deckels und eines Rahmens war.  
+    Ich ging darüber hinaus, in dem ich aus der primitiven Geometrie Details wie Edelsteine durch Loop-Cuts, Extrudes und Insets erzeugte. Die Marmortexturen erzeugte ich prozedural über Noise-Nodes, die Holztextur ebenso über Noise, Musgrave und Voronoi Nodes, sowie Vektorkurven und Color-Burn-Nodes.
+  </div>
 </div>
-
-## Turret for Tower-Defense-Game
-
-<iframe width="100%" height="300em" src="https://www.youtube.com/embed/VAOCARtbn54"
-frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>  
-Dies ist mein erstes 3D-Mesh-Modellierungsprojekt, daher wird in diesem Video teilweise unerfahrener Workflow wiedergegeben. Die Idee dazu kam mir, als ich einem Kollegen beim Programmieren eines 3D-Tower-Defense Spiels zuschaute.  
-Abgesehen von dem Kugellager und den Läufen, bediente ich mich keines Tutorials, um die Modelliertechniken herauszufinden, da ich ein möglichst individualisiertes Gatling-Geschütz erschaffen wollte. Ich verwendete hier alle elementaren Tools, die der Edit-Mode von Blender für Hard-Surface-Modeling zu bieten hat.  
-Das Endresultat ist in dem Tower-Defense-Game meines Kollegen integriert
 
 ## Truhe
 
