@@ -891,7 +891,7 @@ video, img, .visual-presentation-container {
     <div class="skills">
       <strong>TypeScript, CanvasRenderingContext2D, Kreisberechnung, Algebra</strong><br>
       <em>Präsentativ - Mathematisch - Selbstständig</em><br>
-      <strong></strong>
+      <strong>Git</strong>
     </div>
     <br>
     <ul class="task-list">
@@ -910,10 +910,13 @@ video, img, .visual-presentation-container {
           </ul>
       </li>
       <li><strong>Programmiertechnische Umsetzung</strong><br>
-        <span>Interaktive Anwendung zur Parametrisierung des Kardioids </span>
+        <span>Interaktive Anwendung zur Parametrisierung der Epizykloide </span>
         <ul>
           <li>
             Einstellung von Faktor, Auflösung, Linienstärke
+          </li>
+          <li>
+            Fließender Übergang vom Kardioid zum Nephroid zum Trefoil zu beliebigen k-blättrigen Epizykloiden
           </li>
         </ul>
       </li>
@@ -924,7 +927,9 @@ video, img, .visual-presentation-container {
               Große Faktoren führen zu visuellen Überraschungen
             </li>
             <li>
-              Mandala-ähnliche Ästhetik ohne Künstler
+              Epizykloide mit gebrochen-zahligen Faktoren
+            <li>
+              Mandala-ähnliche Ästhetik durch Formeln der Mathematik
             </li>
           </ul>
       </li>
