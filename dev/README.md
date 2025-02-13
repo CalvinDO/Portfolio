@@ -852,7 +852,7 @@ video, img, .visual-presentation-container {
     <div class="skills">
       <strong>TypeScript, CanvasRenderingContext2D, Rekursion</strong><br>
       <em>Experimentell - Mathematisch - Selbstständig</em><br>
-      <strong>Fraktale, Iteration, Farbverläufe</strong>
+      <strong>Git</strong>
     </div>
     <br>
     <ul class="task-list">
@@ -1028,7 +1028,6 @@ video, img, .visual-presentation-container {
 
 # Modelling
 
-
 <div class = "flex-container">
   <div class="flex-item">
     <h2 id="turret">Turret for Tower-Defense-Game</h2>
@@ -1048,12 +1047,12 @@ video, img, .visual-presentation-container {
     <div class="skills">
       <strong>Blender, Hard-Surface-Modeling</strong><br>
       <em>Kollaborativ - Autodidaktisch - Individualisiert</em><br>
-      <strong></strong>
+      <!-- <strong></strong> -->
     </div>
     <br>
     <ul class="task-list">
       <li><strong>Erstes Blender 3D-Modellierungsprojekt</strong><br>
-        <span>Eigenständige Entwicklung eines Geschützturms für ein Tower-Defense-Game</span>
+        <span>Entwicklung eines Geschützturms für ein Tower-Defense-Game</span>
         <ul>
           <li>
             Keine vorgefertigten Tutorials für Kernstrukturen genutzt
@@ -1089,16 +1088,51 @@ video, img, .visual-presentation-container {
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <img src="Truhe.png" alt="Truhe" width="100%"/>
     </div>
-    Dieses Projekt geht aus einer Computergrafik-Aufgabe hervor, deren Anforderung die Modellierung (Mesh ohne Material) einer symmetrischen Truhe, mitsamt eines Deckels und eines Rahmens war.  
-    Ich ging darüber hinaus, in dem ich aus der primitiven Geometrie Details wie Edelsteine durch Loop-Cuts, Extrudes und Insets erzeugte. Die Marmortexturen erzeugte ich prozedural über Noise-Nodes, die Holztextur ebenso über Noise, Musgrave und Voronoi Nodes, sowie Vektorkurven und Color-Burn-Nodes.
+    <h4>
+      Private Kursaufgabe<br>
+      Solo-Projekt<br>
+      Herbst 201<br>
+      Hard-Surface-Modeling
+    </h4>
+    <br>
+    <div class="skills">
+      <strong>Blender, Hard-Surface-Modeling</strong><br>
+      <em>Dekorativ - Lernfreudig - Selbstständig
+      <strong></strong>
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Aufgabe war Mesh ohne Material</strong><br>
+        <span>Symetrische Truhe mit Deckel und Rahmen</span>
+        <ul>
+          <li>
+            Weit über die Aufgabe hinausgegangen
+          </li>
+        </ul>
+      </li>
+      <li><strong>Eigene Idee von Material, Edelsteinen und Hörnern</strong><br>
+        <span>Erzeugen von Details aus der primitiven Geometrie</span>
+        <ul>
+          <li>
+            Durch Loop-Cuts, Extrudes und Insets
+          </li>
+        </ul>
+        <span>Marmor- und Holztextur</span>
+        <ul>
+          <li>
+            Noise-, Musgrave- und Voronoi-Nodes, Vektorkurven und Color-Burn-Nodes.
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="controls">
+      Video ansehen für unerfahrenen Modellierungsprozess & Endergebnis
+    </div>
+    <!-- Dieses Projekt geht aus einer Computergrafik-Aufgabe hervor, deren Anforderung die Modellierung (Mesh ohne Material) einer symmetrischen Truhe, mitsamt eines Deckels und eines Rahmens war.  
+    Ich ging darüber hinaus, in dem ich aus der primitiven Geometrie Details wie Edelsteine durch Loop-Cuts, Extrudes und Insets erzeugte. Die Marmortexturen erzeugte ich prozedural über Noise-Nodes, die Holztextur ebenso über Noise, Musgrave und Voronoi Nodes, sowie Vektorkurven und Color-Burn-Nodes. -->
   </div>
 </div>
 
-## Truhe
-
-<img src="Truhe.png" alt="Truhe" width="100%"/>  
-Dieses Projekt geht aus einer Computergrafik-Aufgabe hervor, deren Anforderung die Modellierung (Mesh ohne Material) einer symmetrischen Truhe, mitsamt eines Deckels und eines Rahmens war.  
-Ich ging darüber hinaus, in dem ich aus der primitiven Geometrie Details wie Edelsteine durch Loop-Cuts, Extrudes und Insets erzeugte. Die Marmortexturen erzeugte ich prozedural über Noise-Nodes, die Holztextur ebenso über Noise, Musgrave und Voronoi Nodes, sowie Vektorkurven und Color-Burn-Nodes.
 
 ## Deren Schloss
 
