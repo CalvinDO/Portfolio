@@ -771,36 +771,36 @@ video, img, .visual-presentation-container {
       360° Point-and-Click
     </h4>
     <br>
+    <br>
     <div class="skills">
-      <strong>TypeScript, HTML, CSS, LocalStorage, OpenStreetMap, WebXR,</strong><br>
-      <em>Interdisziplinär - Innovativ - Praktisch</em><br>
-      <strong>Wireframes, Sitemaps, User Journey, Visuelle Guides</strong>
+      <strong>TypeScript, CanvasRenderingContext2D, Rekursion</strong><br>
+      <em>Experimentell - Mathematisch - Selbstständig</em><br>
+      <strong>Fraktale, Iteration, Farbverläufe</strong>
     </div>
     <br>
     <ul class="task-list">
-      <li><strong>Interaktive Schnitzeljagd</strong><br>
-        <span>Erstie-Rallye der Hochschule als 360-Point-and-Click Adventure</span>
+      <li><strong>Ohne konkrete Vorstellung</strong><br>
+        <span>Experimentelle Entwicklung einer Applikation zur Visualisierung von rekursiven Strukturen in Fraktalen</span>
+          <ul>
+            <li>
+              Bälle mit rekursiven "create-children"-Objektmethoden
+            </li>
+          </ul>
+      </li>
+      <li><strong>Farbwinkelberechnung</strong><br>
+        <span>Kolorierung abhängig von Iterationsstufe und Ordnung der Fraktalstrukturen berechnet</span>
         <ul>
           <li>
-            Leiten des Nutzers durch die Anwendung
+            Ästhetik durch prozedurale Algorithmen
           </li>
         </ul>
       </li>
-      <li><strong>Panorama-Touren</strong><br>
-        <span>Erstellung interaktiver Panorama-Touren durch die Hochschule</span>
-        <ul>
-          <li>
-            Programmierung mit WebXR und eigenen Methoden
-          </li>
-        </ul>
-      </li>
-      <li><strong>Datenstruktur & Interaktionen</strong><br>
-        <span>Verwendung von JSON für 104 Collectibles in 27 Räumen</span>
-        <ul>
-          <li>
-            Name, Position, Interaktionsgeräusche
-          </li>
-        </ul>
+      <li><strong>Technische Experimente</strong><br>
+        <span>Experimente mit maximaler Browserauflösung und verschiedenen Iterationsparametern</span>
+          <ul>
+            <li>
+            </li>
+          </ul>
       </li>
     </ul>
     <div class="controls">
@@ -812,8 +812,8 @@ video, img, .visual-presentation-container {
       Die Umsetzung erfolgte mit zweidimensionalen Panorama-Bildern, die durch WebXR-Polyfill und eigene Programmierung zu interaktiven Panorama-Touren wurden. Als Datenstruktur für Winkelkoordinaten der 104 Gegenstände, sowie deren Namen und Geräusch der Interaktion, wurde JSON verwendet. -->
   </div>
   <div class="flex-item">
-    <h2 id="fraktal">Fraktal Animation</h2>
-    <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+    <h2 id="fraktal-animation">Fraktal Animation</h2>
+    <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="Code/FraktalAnimation/start.html">
         <img src="Animation.PNG" width="100%">
       </a>
@@ -822,12 +822,41 @@ video, img, .visual-presentation-container {
       </div>
     </div>
     <h4>
-      Erweiterung des Projekts Fraktal
+      Erweiterung von Fraktal<br>
+      Solo-Projekt<br>
       Sommer 2019<br>
+      Animierte Fraktale
     </h4>
     <br>
+    <div class="skills">
+      <strong>TypeScript, CanvasRenderingContext2D, Rekursion, Animation</strong><br>
+      <em>Erweiternd - Aufbauend - Mathematisch</em><br>
+      <strong>Fraktale, Farbmodulation, Iterative Algorithmen</strong>
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Zusätzliche Dimension durch Bewegung</strong><br>
+        <span>Erforschung der zeitlichen Modulation von Parametern</span>
+        <ul>
+          <li>
+            Farbwinkel und Kreispositionen werden dynamisch verändert
+          </li>
+          <li>
+            Einfluss des Divisors eines Vollkreises auf Musterbildung
+          </li>
+        </ul>
+      </li>
+      <li><strong>Neue Beobachtungen und Experimente</strong><br>
+        <span>Unvorhersehbare visuelle Effekte durch kontinuierliche Transformation</span>
+        <ul>
+          <li>
+            Übergänge von Farbkonstellationen und Strukturen im kleinsten Detail erkennbar
+          </li>
+        </ul>
+      </li>
+    </ul>
     <div class="controls">
-      Parameter können verändert werden, um die Darstellung zu beeinflussen
+      Parameter können verändert werden, um die Animation zu beeinflussen
     </div>
     <!-- Zugrunde liegt das zuvor beschriebene Projekt [Fraktal](#fraktal). Diesmal mit dem Ziel, einige Parameter der Berechnung, die sich als Dezimalbrüche darstellen lassen, wie beispielsweise der Farbwinkel, zeitlich zu modulieren, um eine zusätzliche Dimension zu schaffen, die ebenso zu etlichen neuen Beobachtungen und weiteren Experimenten führen sollte.  
     Bemerkenswert ist unter anderem der Zusammenhang, wie sich die Veränderung des Divisors eines Vollkreises, der die Positionierung der "children" eines jeden Balls bestimmt, auf die Bewegung und das Muster der Anordnung bis hin zu den kleinsten Bällen auswirkt, ebenso wie die entstehende Farbkonstellation -->
