@@ -1033,9 +1033,10 @@ video, img, .visual-presentation-container {
   <div class="flex-item">
     <h2 id="turret">Turret for Tower-Defense-Game</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-      <iframe width="100%" height="300em" src="https://www.youtube.com/embed/VAOCARtbn54"
+      <img src="Turret.PNG" width="100%">
+      <!-- <iframe width="100%" height="300em" src="https://www.youtube.com/embed/VAOCARtbn54"
       frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-      </iframe>  
+      </iframe>   -->
     </div>
     <h4>
       Freizeit-Experiment<br>
