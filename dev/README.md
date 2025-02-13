@@ -1070,7 +1070,7 @@ video, img, .visual-presentation-container {
       Freizeit-Experiment<br>
       Solo-Projekt<br>
       Herbst 2019<br>
-      Hard-Surface-Modeling
+      Asset für Tower-Defense-Game
     </h4>
     <br>
     <div class="skills">
@@ -1117,8 +1117,8 @@ video, img, .visual-presentation-container {
     <h4>
       Private Kursaufgabe<br>
       Solo-Projekt<br>
-      Herbst 201<br>
-      Hard-Surface-Modeling
+      Frühling 2020<br>
+      Gestaltung mit Nodes und Spin-Tool
     </h4>
     <br>
     <div class="skills">
@@ -1157,12 +1157,12 @@ video, img, .visual-presentation-container {
   <div class="flex-item">
     <h2 id="schloss">Deren Schloss</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-      <img src="Truhe.png" alt="Truhe" width="100%"/>
+      <img src="Schloss.png" alt="Schloss" width="100%"/> 
     </div>
     <h4>
       Private Kursaufgabe<br>
       Solo-Projekt<br>
-      Herbst 201<br>
+      Frühling 2020<br>
       Hard-Surface-Modeling
     </h4>
     <br>
