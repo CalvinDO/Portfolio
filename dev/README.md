@@ -1105,9 +1105,6 @@ video, img, .visual-presentation-container {
         </ul>
       </li>
     </ul>
-    <div class="controls">
-      Video ansehen für unerfahrenen Modellierungsprozess & Endergebnis
-    </div>
     <!-- Dies ist mein erstes 3D-Mesh-Modellierungsprojekt, daher wird in diesem Video teilweise unerfahrener Workflow wiedergegeben. Die Idee dazu kam mir, als ich einem Kollegen beim Programmieren eines 3D-Tower-Defense Spiels zuschaute.  
     Abgesehen von dem Kugellager und den Läufen, bediente ich mich keines Tutorials, um die Modelliertechniken herauszufinden, da ich ein möglichst individualisiertes Gatling-Geschütz erschaffen wollte. Ich verwendete hier alle elementaren Tools, die der Edit-Mode von Blender für Hard-Surface-Modeling zu bieten hat.  
     Das Endresultat ist in dem Tower-Defense-Game meines Kollegen integriert -->
@@ -1126,16 +1123,16 @@ video, img, .visual-presentation-container {
     <br>
     <div class="skills">
       <strong>Blender, Hard-Surface-Modeling</strong><br>
-      <em>Dekorativ - Lernfreudig - Selbstständig
-      <strong></strong>
+      <em>Dekorativ - Lernfreudig - Selbstständig<em><br>
+      <!-- <strong></strong> -->
     </div>
     <br>
     <ul class="task-list">
-      <li><strong>Aufgabe war Mesh ohne Material</strong><br>
+      <li><strong>Mesh ohne Material als Aufgabe</strong><br>
         <span>Symetrische Truhe mit Deckel und Rahmen</span>
         <ul>
           <li>
-            Weit über die Aufgabe hinausgegangen
+            Weit darüber hinausgegangen
           </li>
         </ul>
       </li>
@@ -1149,14 +1146,11 @@ video, img, .visual-presentation-container {
         <span>Marmor- und Holztextur</span>
         <ul>
           <li>
-            Noise-, Musgrave- und Voronoi-Nodes, Vektorkurven und Color-Burn-Nodes.
+            Noise-, Musgrave-, Voronoi-, Color-Burn-Nodes und  Vektorkurven .
           </li>
         </ul>
       </li>
     </ul>
-    <div class="controls">
-      Video ansehen für unerfahrenen Modellierungsprozess & Endergebnis
-    </div>
     <!-- Dieses Projekt geht aus einer Computergrafik-Aufgabe hervor, deren Anforderung die Modellierung (Mesh ohne Material) einer symmetrischen Truhe, mitsamt eines Deckels und eines Rahmens war.  
     Ich ging darüber hinaus, in dem ich aus der primitiven Geometrie Details wie Edelsteine durch Loop-Cuts, Extrudes und Insets erzeugte. Die Marmortexturen erzeugte ich prozedural über Noise-Nodes, die Holztextur ebenso über Noise, Musgrave und Voronoi Nodes, sowie Vektorkurven und Color-Burn-Nodes. -->
   </div>
