@@ -1122,7 +1122,7 @@ video, img, .visual-presentation-container {
     </h4>
     <br>
     <div class="skills">
-      <strong>Blender, Hard-Surface-Modeling</strong><br>
+      <strong>Blender, Hard-Surface-Modeling, Prozedurale Texturen</strong><br>
       <em>Dekorativ - Lernfreudig - Selbstständig</em><br>
       <!-- <strong></strong> -->
     </div>
@@ -1155,7 +1155,7 @@ video, img, .visual-presentation-container {
     Ich ging darüber hinaus, in dem ich aus der primitiven Geometrie Details wie Edelsteine durch Loop-Cuts, Extrudes und Insets erzeugte. Die Marmortexturen erzeugte ich prozedural über Noise-Nodes, die Holztextur ebenso über Noise, Musgrave und Voronoi Nodes, sowie Vektorkurven und Color-Burn-Nodes. -->
   </div>
   <div class="flex-item">
-    <h2 id="schloss">Deren Schloss</h2>
+    <h2 id="deren-schloss">Deren Schloss</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <img src="Schloss.png" alt="Schloss" width="100%"/> 
     </div>
@@ -1167,38 +1167,38 @@ video, img, .visual-presentation-container {
     </h4>
     <br>
     <div class="skills">
-      <strong>Blender, Hard-Surface-Modeling</strong><br>
-      <em>Dekorativ - Lernfreudig - Selbstständig</em><br>
+      <strong>Blender, Boolean-Modifier, Bézierkurven, Prozedurale Texturen</strong><br>
+      <em>Präzise - Strukturiert - Mathematisch</em><br>
       <!-- <strong></strong> -->
     </div>
     <br>
     <ul class="task-list">
-      <li><strong>Mesh ohne Material als Aufgabe</strong><br>
-        <span>Symetrische Truhe mit Deckel und Rahmen</span>
+      <li><strong>Konstruktiver Modellierungsansatz</strong><br>
+        <span>Ausstanzung eines Schlosses aus einem Würfel mit Boolean-Modifier</span>
         <ul>
           <li>
-            Weit darüber hinausgegangen
+            Kombination von Inset-Techniken für optimierte Geometrie
           </li>
         </ul>
       </li>
-      <li><strong>Eigene Idee von Material, Edelsteinen und Hörnern</strong><br>
-        <span>Erzeugen von Details aus der primitiven Geometrie</span>
+      <li><strong>Erweiterte Detailgestaltung</strong><br>
+        <span>Verwendung von Bézierkurven zur Modellierung komplexer Formen</span>
         <ul>
           <li>
-            Durch Loop-Cuts, Extrudes und Insets
+            Gesteigerte Präzision durch parametrische Kontrolle
           </li>
         </ul>
-        <span>Marmor- und Holztextur</span>
+      </li>
+      <li><strong>Prozedurale Texturierung</strong><br>
+        <span>Normalenlänge als Basis für realistische Materialstruktur</span>
         <ul>
           <li>
-            Noise-, Musgrave-, Voronoi-, Color-Burn-Nodes und  Vektorkurven .
+            Bump-Nodes mit Noise-Texturen zur Steuerung von Displacements
           </li>
         </ul>
       </li>
     </ul>
-    <!-- Dieses Projekt geht aus einer Computergrafik-Aufgabe hervor, deren Anforderung die Modellierung (Mesh ohne Material) einer symmetrischen Truhe, mitsamt eines Deckels und eines Rahmens war.  
-    Ich ging darüber hinaus, in dem ich aus der primitiven Geometrie Details wie Edelsteine durch Loop-Cuts, Extrudes und Insets erzeugte. Die Marmortexturen erzeugte ich prozedural über Noise-Nodes, die Holztextur ebenso über Noise, Musgrave und Voronoi Nodes, sowie Vektorkurven und Color-Burn-Nodes. -->
-  </div>
+</div>
 </div>
 
 ## Deren Schloss
