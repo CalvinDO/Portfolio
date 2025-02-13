@@ -1123,7 +1123,7 @@ video, img, .visual-presentation-container {
     <br>
     <div class="skills">
       <strong>Blender, Hard-Surface-Modeling</strong><br>
-      <em>Dekorativ - Lernfreudig - Selbstständig<em><br>
+      <em>Dekorativ - Lernfreudig - Selbstständig</em><br>
       <!-- <strong></strong> -->
     </div>
     <br>
