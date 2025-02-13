@@ -771,36 +771,36 @@ video, img, .visual-presentation-container {
       360° Point-and-Click
     </h4>
     <br>
-    <br>
     <div class="skills">
-      <strong>TypeScript, CanvasRenderingContext2D, Rekursion</strong><br>
-      <em>Experimentell - Mathematisch - Selbstständig</em><br>
-      <strong>Fraktale, Iteration, Farbverläufe</strong>
+      <strong>TypeScript, HTML, CSS, LocalStorage, OpenStreetMap, WebXR,</strong><br>
+      <em>Interdisziplinär - Innovativ - Praktisch</em><br>
+      <strong>Wireframes, Sitemaps, User Journey, Visuelle Guides</strong>
     </div>
     <br>
     <ul class="task-list">
-      <li><strong>Ohne konkrete Vorstellung</strong><br>
-        <span>Experimentelle Entwicklung einer Applikation zur Visualisierung von rekursiven Strukturen in Fraktalen</span>
-          <ul>
-            <li>
-              Bälle mit rekursiven "create-children"-Objektmethoden
-            </li>
-          </ul>
-      </li>
-      <li><strong>Farbwinkelberechnung</strong><br>
-        <span>Kolorierung abhängig von Iterationsstufe und Ordnung der Fraktalstrukturen berechnet</span>
+      <li><strong>Interaktive Schnitzeljagd</strong><br>
+        <span>Erstie-Rallye der Hochschule als 360-Point-and-Click Adventure</span>
         <ul>
           <li>
-            Ästhetik durch prozedurale Algorithmen
+            Leiten des Nutzers durch die Anwendung
           </li>
         </ul>
       </li>
-      <li><strong>Technische Experimente</strong><br>
-        <span>Experimente mit maximaler Browserauflösung und verschiedenen Iterationsparametern</span>
-          <ul>
-            <li>
-            </li>
-          </ul>
+      <li><strong>Panorama-Touren</strong><br>
+        <span>Erstellung interaktiver Panorama-Touren durch die Hochschule</span>
+        <ul>
+          <li>
+            Programmierung mit WebXR und eigenen Methoden
+          </li>
+        </ul>
+      </li>
+      <li><strong>Datenstruktur & Interaktionen</strong><br>
+        <span>Verwendung von JSON für 104 Collectibles in 27 Räumen</span>
+        <ul>
+          <li>
+            Name, Position, Interaktionsgeräusche
+          </li>
+        </ul>
       </li>
     </ul>
     <div class="controls">
@@ -1110,7 +1110,52 @@ video, img, .visual-presentation-container {
     Das Endresultat ist in dem Tower-Defense-Game meines Kollegen integriert -->
   </div>
   <div class="flex-item">
-    <h2 id="turret">Truhe</h2>
+    <h2 id="truhe">Truhe</h2>
+    <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+      <img src="Truhe.png" alt="Truhe" width="100%"/>
+    </div>
+    <h4>
+      Private Kursaufgabe<br>
+      Solo-Projekt<br>
+      Herbst 201<br>
+      Hard-Surface-Modeling
+    </h4>
+    <br>
+    <div class="skills">
+      <strong>Blender, Hard-Surface-Modeling</strong><br>
+      <em>Dekorativ - Lernfreudig - Selbstständig</em><br>
+      <!-- <strong></strong> -->
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Mesh ohne Material als Aufgabe</strong><br>
+        <span>Symetrische Truhe mit Deckel und Rahmen</span>
+        <ul>
+          <li>
+            Weit darüber hinausgegangen
+          </li>
+        </ul>
+      </li>
+      <li><strong>Eigene Idee von Material, Edelsteinen und Hörnern</strong><br>
+        <span>Erzeugen von Details aus der primitiven Geometrie</span>
+        <ul>
+          <li>
+            Durch Loop-Cuts, Extrudes und Insets
+          </li>
+        </ul>
+        <span>Marmor- und Holztextur</span>
+        <ul>
+          <li>
+            Noise-, Musgrave-, Voronoi-, Color-Burn-Nodes und  Vektorkurven .
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <!-- Dieses Projekt geht aus einer Computergrafik-Aufgabe hervor, deren Anforderung die Modellierung (Mesh ohne Material) einer symmetrischen Truhe, mitsamt eines Deckels und eines Rahmens war.  
+    Ich ging darüber hinaus, in dem ich aus der primitiven Geometrie Details wie Edelsteine durch Loop-Cuts, Extrudes und Insets erzeugte. Die Marmortexturen erzeugte ich prozedural über Noise-Nodes, die Holztextur ebenso über Noise, Musgrave und Voronoi Nodes, sowie Vektorkurven und Color-Burn-Nodes. -->
+  </div>
+  <div class="flex-item">
+    <h2 id="schloss">Deren Schloss</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <img src="Truhe.png" alt="Truhe" width="100%"/>
     </div>
