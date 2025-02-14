@@ -169,6 +169,39 @@ video, img, .visual-presentation-container {
   margin: 0
 }
 
+.visual-presentation-container {
+  position: relative;
+            cursor: pointer;
+}
+
+.toggle-content {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+}
+.flex-item.expanded .toggle-content {
+    height: auto;
+}
+.toggle-arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    font-size: 2em;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.flex-item.expanded .toggle-arrow {
+    transform: translateX(-50%) rotate(180deg);
+}
+        
 .skills {
     line-height: 2.1; /* Der Wert 1.8 kann angepasst werden, um den Abstand zu verändern */
 }
@@ -204,13 +237,40 @@ video, img, .visual-presentation-container {
 
 </style>
 
+<script>
+  document.querySelectorAll('.flex-item').forEach(item => {
+      const container = item.querySelector('.visual-presentation-container');
+      const content = item.querySelector('.toggle-content');
+      const arrow = item.querySelector('.toggle-arrow');
+      
+      let isMobile = window.matchMedia("(max-width: 768px)").matches;
+      
+      if (isMobile) {
+          arrow.addEventListener('click', () => {
+              item.classList.toggle('expanded');
+          });
+      } else {
+          container.addEventListener('mouseenter', () => {
+              item.classList.add('expanded');
+          });
+          item.addEventListener('mouseleave', (event) => {
+              if (!item.contains(event.relatedTarget)) {
+                  item.classList.remove('expanded');
+              }
+          });
+      }
+  });
+</script>
+
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
 <h1 id = "header-coding">Coding</h1>
 
 <div class = "flex-container">
   <div class = "flex-item">
+    <div class="toggle-content">
     <h2 id ="bau-simulator">Bau-Simulator<br>
+    </div>
     (Kommerziell)</h2>
     <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
     <a href="https://store.steampowered.com/app/1273400/BauSimulator">
@@ -218,11 +278,13 @@ video, img, .visual-presentation-container {
         <source src="ConstructionSimulator.mp4" alt="ConstructionSimulator" type="video/mp4"/>
         Ihr Browser unterstützt den Video-Tag nicht
     </video>
+    <div class="toggle-arrow">▼</div>
     </a>
       <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
       Klicken zum Spielen
       </div>
     </div>
+    <div class="toggle-content">
     <h4>
     <strong><a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a></strong> <br>
     <strong>25-köpfiges</strong> Team + Outsourcer<br>
@@ -256,6 +318,7 @@ video, img, .visual-presentation-container {
         <span>Anzeige des Pfades in der Minimap.</span>
     </li>
     </ul>
+    </div>
     <!-- Im Dev-Team bei <a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a> arbeitete ich mit insgesamt 25 Mitarbeitern und weiteren Outsourcern vom Winter 2020 bis zum Frühling 2023. Begonnen als Praktikant im Büro für das dritte Semester, behielt mich das Unternehmen überzeugt als Werkstudent bis zum Bachelor-Abschluss. So sammelte ich zwei weitere Jahre lang Erfahrung in der Programmierung eines kommerziellen Mid-Tier Games. Neben strukturellem Arbeiten mit agilem Projektmanagement, wie SCRUM-Sprintmeetings, Atlassian Confluence, Versionskontrolle, Bugtracking mit Mantis in einem größeren Team und Orientierung nach Vorgaben eines kommerziellen Publishers (<a href = "https://www.astragon.de/">Astragon</a>), sowie Synergie mit Grafiker- und QA-Departments vertiefte ich mich in fortgeschrittene Programmierung mit Unity und C#. Desweiteren lernte ich FMOD als Audio-Integrationssoftware für Unity kennen.  
     Meine Hauptbeschäftigung bestand aus dem Fahrzeug-Setup, bei dem ich Modelle der Grafiker mit Logikbausteinen der Programmierer zu funktionsfähigen Baumaschinen integrierte. Da jedes der >80 Fahrzeuge sich in seinen Funktionen unterscheidet, wie beispielsweise Rotationslimits von Schaufeln und Armen oder Schaltpunkte der Motoren- und Getriebesimulation, zeichnete sich das Fahrzeug-Setup größtenteils durch Parametrierung der Logik-Assets aus. Ein weiterer Bestandteil war die intensive Kommunikation mit dem Grafik-Team, falls Meshes der Modelle ausgetauscht oder ergänzt werden mussten. Besonders im Bereich des Hydraulik-, Fahrkabinen-, Licht-, und Spiegel-Setups war die interdisziplinäre Kooperation mit dem Art-Department essentiell. Viele Ressourcen flossen auch in das Aufsetzen der Terrainsimulation, um Schuttfüllungen in verschiedenen Werkzeugen wie Schaufeln und Kipper von Mulden zu realisieren. Auch zum Fahrzeug-Setup gehörte die auditive Simulation des Baugeschehens, bei dem ich den Umgang mit Banks in FMOD lernte.  
     Meine restliche Arbeit am Bau-Simulator bestand zum Einen aus der Programmierung eines zentralen Debug-UserInterfaces, mit dem neben allen Departments vor allem die Tester der Quality-Assurance das Command-System grafisch aufbereitet und effizient benutzen können. Darunter fällt das Springen zu und Erledigen von Missionen, Spawnen von Fahrzeugen, Cargo und Props, Einstellen globaler Parameter und weitere Steuerung des Spielgeschehens auf vielen Ebenen. Für die Realisierung des Aufbaus und Designs wählte ich einen dynamisch-generischen Ansatz, der das gesamte Command-System des Spiels als Konstellation von Knöpfen, Reglern und Eingabefeldern, geordnet unter mehreren Hierarchieebenen, generiert. Somit verringerte sich der Wartungsbedarf, da neu registrierte Kommandos direkt richtig in dem Debug-UI dargestellt werden.  
@@ -772,7 +835,7 @@ video, img, .visual-presentation-container {
     </h4>
     <br>
     <div class="skills">
-      <strong>TypeScript, HTML, CSS, LocalStorage, OpenStreetMap, WebXR,</strong><br>
+      <strong>TypeScript, HTML, CSS, LocalStorage, OpenStreetMap, WebXR, AdobeXD</strong><br>
       <em>Interdisziplinär - Innovativ - Wegweisend</em><br>
       <strong>Wireframes, Sitemaps, User Journey, Visuelle Guides, Git</strong>
     </div>
