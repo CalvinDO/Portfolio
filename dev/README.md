@@ -831,7 +831,7 @@ video, img, .visual-presentation-container {
     <div class="skills">
       <strong>TypeScript, CanvasRenderingContext2D, Rekursion, Animation</strong><br>
       <em>Erweiternd - Aufbauend - Mathematisch</em><br>
-      <strong>Fraktale, Farbmodulation, Iterative Algorithmen</strong>
+      <strong>Git</strong>
     </div>
     <br>
     <ul class="task-list">
@@ -928,7 +928,7 @@ video, img, .visual-presentation-container {
         <img src="cardioids.PNG" width="100%">
       </a>
       <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-        Klicken zum Spielen
+        Klicken zum Anwenden
       </div>
     </div>
     <h4>
@@ -1509,7 +1509,7 @@ video, img, .visual-presentation-container {
 <iframe width="100%" height="300em" src="https://www.youtube.com/embed/A68-juE2ves"
 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"                allowfullscreen>
 </iframe>
-Dies ist das unter [Cardioids](##cardioids) angedeutete Lernvideo, welches im Rahmen einer Projektarbeit unter Auswahl eines eigenen Themas entstand. Hier wird ebenso die Funktionsweise meines dazu verfassten Programms ähnlich zu Pseudocode erklärt.
+Dies ist das unter [Cardioids](#cardioids) angedeutete Lernvideo, welches im Rahmen einer Projektarbeit unter Auswahl eines eigenen Themas entstand. Hier wird ebenso die Funktionsweise meines dazu verfassten Programms ähnlich zu Pseudocode erklärt.
 
 <hr/>  
 <hr/>
