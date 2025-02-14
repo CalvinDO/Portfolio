@@ -1198,22 +1198,44 @@ video, img, .visual-presentation-container {
         </ul>
       </li>
     </ul>
-</div>
-</div>
-
-## Deren Schloss
-
-<img src="Schloss.png" alt="Schloss" width="100%"/>  
-Die Anforderung für das Schloss war, aus einem größeren Würfel einen kleineren durch Insets oder dem boolean-Modifier auszustanzen.  
-Um einen höheren Detailgrad zu erreichen, modellierte ich mit Bézierkurven eine etwas aufwendigere Ausstanzform für ein Schloss. Hier generierte ich die prozedurale Textur ebenfalls über die Steuerung der Normalenlänge auf der Oberfläche mittels eines mit Noise-Texturen angesteuerten Bump-Nodes (Displacements)
-
-## Wackelpudding-Simulation
-
-<video width="100%" controls loop>
+    <!-- Die Anforderung für das Schloss war, aus einem größeren Würfel einen kleineren durch Insets oder dem boolean-Modifier auszustanzen.  
+    Um einen höheren Detailgrad zu erreichen, modellierte ich mit Bézierkurven eine etwas aufwendigere Ausstanzform für ein Schloss. Hier generierte ich die prozedurale Textur ebenfalls über die Steuerung der Normalenlänge auf der Oberfläche mittels eines mit Noise-Texturen angesteuerten Bump-Nodes (Displacements) -->
+  </div>
+  <div class="flex-item">
+    <h2 id="deren-schloss">Wackelpudding-Simulation</h2>
+    <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+      <video width="100%" controls loop>
             <source src="Jelly.mp4" alt="Jelly" type="video/mp4"/>
             Ihr Browser unterstützt den Video-Tag nicht
-</video>  
-Hier habe ich weniger gemodelt, sondern eher aus freien Stücken die Möglichkeiten der "Softbody & Collision"-Physiksimulation ausprobiert, und eine kleine Animation gerendert, um ein Verhalten zu simulieren, das Wackelpudding ähnelt.
+      </video>
+    </div>
+    <h4>
+      Freizeit-Experiment<br>
+      Solo-Projekt<br>
+      Frühling 2020<br>
+      Softbody Simulation
+    </h4>
+    <br>
+    <div class="skills">
+      <strong>Blender</strong><br>
+      <em>Präzise - Strukturiert - Mathematisch</em><br>
+      <!-- <strong></strong> -->
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Konstruktiver Modellierungsansatz</strong><br>
+        <span>Ausstanzung eines Schlosses aus einem Würfel mit Boolean-Modifier</span>
+        <ul>
+          <li>
+            Softbody & Collision - Physik Simulation
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <!-- Hier habe ich weniger gemodelt, sondern eher aus freien Stücken die Möglichkeiten der "Softbody & Collision"-Physiksimulation ausprobiert, und eine kleine Animation gerendert, um ein Verhalten zu simulieren, das Wackelpudding ähnelt. -->
+  </div>
+</div>
+
   
 ## Das verrückte U-Boot  
 <video width="100%" controls loop>
