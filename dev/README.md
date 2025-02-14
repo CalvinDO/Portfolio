@@ -1404,7 +1404,7 @@ video, img, .visual-presentation-container {
     <br>
     <div class="skills">
         <strong>Blender, Sculpting, Texture Painting, Partikelsystem</strong><br>
-        <em>Lernbegeistert - Inkubierend - Detailiert</em><br>
+        <em>Lernbegeistert - Strukturiert - Detailiert</em><br>
     </div>
     <br>
     <ul class="task-list">
