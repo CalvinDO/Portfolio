@@ -1442,16 +1442,62 @@ video, img, .visual-presentation-container {
     <!-- Dies ist mein Ergebnis des zweiten Levels der Blender-Tutorialreihe des <a href="https://www.youtube.com/watch?v=TPrnSACiTJ4">Blender Guru</a>s. Das durch proportionales Editing und Scultping erreichte Mesh des Teigs wurde durch Noise-Texturen und Overlay-Variation mit Bump versehen und geshaded, sowie Texture-Painting angewandt, um leicht verbrannte Stellen zu malen.  
     In der Tutorial Reihe wird eine Zuckerglasur verwendet, ich jedoch wünschte mir eine Schokoladenglasur, die ich durch ein Node-Setup, in dem ein Glossy- und Diffuse Shader gemischt werden, erreichte. Auch hier ist etwas Displacement durch eine Noise-Textur meinerseits verwendet worden. Die Streusel wurden mit einem Partikelsystem mittels "Instance-Objects" variierender Häufigkeit auf der Glasur platziert. -->
   </div>
-</div>
-
-## Brennender Affenkopf
-
-<video width="100%" controls loop>
+  <div class="flex-item">
+    <h2 id="burning-monkey">Brennender Affenkopf</h2>
+    <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+        <video width="100%" controls loop>
             <source src="Monkey.mp4" alt="Monkey">
-            Ihr Browser unterstützt das Videoformat nicht
-</video>  
-Dies war mein erstes Blender Projekt überhaupt. Auf diesem Stand hatte ich noch nie Topologie verändert, und somit für eine Mantaflow Feuer&Rauch-Simulation den vorgefertigten Affenkopf "Suzanne" verwendet, und eine Animation gerendert. Die Position der einzelnen Flammen wird durch eine Wolken-Textur über das Objekt bewegt, um einen höheren Grad an Zufall zu erreichen.  
-Ein brennender Affenkopf kommt in dem Donut-Tutorial des <a href="https://www.youtube.com/watch?v=TPrnSACiTJ4">Blender Guru</a>s ganz zu Beginn vor, allerdings gab es zu dessen Entstehungszeit Mantaflow noch nicht. Er demonstrierte das Feuer, um Motivation für Blender zu schaffen. Dieser Teil der ersten Folge war mit Mantaflow allerdings nicht nachahmbar, was mich nicht zur Aufgabe, sondern zur eigenständigen Nachforschung und zum Ausprobieren ermutigte, bis ich einen brennenden Affenkopf erhielt.
+            Ihr Browser unterstützt das Videoformat nicht.
+        </video>  
+    </div>
+    <h4>
+        Private Fortbildung<br>
+        Solo-Projekt<br>
+        Herbst 2019<br>
+        Erste Simulation mit Blender
+    </h4>
+    <br>
+    <div class="skills">
+        <strong>Blender, Mantaflow, Rauch- & Feuersimulation, Shader-Nodes</strong><br>
+        <em>Neugierig - Experimentell - Zielstrebig</em><br>
+    </div>
+    <br>
+    <ul class="task-list">
+        <li><strong>Erste Simulationserfahrung</strong><br>
+            <span>Erprobung der Mantaflow-Engine für Feuer und Rauch</span>
+            <ul>
+                <li>
+                    Anpassung von Dichte, Temperatur und Vorticity für realistisches Flammenverhalten
+                </li>
+            </ul>
+        </li>
+        <li><strong>Prozedurale Feueranimation</strong><br>
+            <span>Steuerung der Flammenbewegung durch eine Wolken-Textur</span>
+            <ul>
+                <li>
+                    Erzeugung zufälliger, dynamischer Feuerverläufe
+                </li>
+                <li>
+                    Kombination mit Shader-Nodes für intensivere Leuchteffekte
+                </li>
+            </ul>
+        </li>
+        <li><strong>Eigenständige Problemlösung</strong><br>
+            <span>Weiterentwicklung eines ursprünglichen Tutorials</span>
+            <ul>
+                <li>
+                    Anpassung an neue Mantaflow-Technologie
+                </li>
+                <li>
+                    Eigenständiges Experimentieren für ein verbessertes Endergebnis
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <!-- Dies war mein erstes Blender Projekt überhaupt. Auf diesem Stand hatte ich noch nie Topologie verändert, und somit für eine Mantaflow Feuer&Rauch-Simulation den vorgefertigten Affenkopf "Suzanne" verwendet, und eine Animation gerendert. Die Position der einzelnen Flammen wird durch eine Wolken-Textur über das Objekt bewegt, um einen höheren Grad an Zufall zu erreichen.  
+    Ein brennender Affenkopf kommt in dem Donut-Tutorial des <a href="https://www.youtube.com/watch?v=TPrnSACiTJ4">Blender Guru</a>s ganz zu Beginn vor, allerdings gab es zu dessen Entstehungszeit Mantaflow noch nicht. Er demonstrierte das Feuer, um Motivation für Blender zu schaffen. Dieser Teil der ersten Folge war mit Mantaflow allerdings nicht nachahmbar, was mich nicht zur Aufgabe, sondern zur eigenständigen Nachforschung und zum Ausprobieren ermutigte, bis ich einen brennenden Affenkopf erhielt. -->
+  </div>
+</div>
 
 <hr/>  
 <hr/>
