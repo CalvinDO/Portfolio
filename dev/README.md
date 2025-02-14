@@ -815,10 +815,13 @@ video, img, .visual-presentation-container {
     <h2 id="fraktal-animation">Fraktal Animation</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="Code/FraktalAnimation/start.html">
-        <img src="Animation.PNG" width="100%">
+        <video width="100%" controls loop poster="FraktalAnimation.PNG">
+                <source src="FraktalAnimation.mp4" alt="Morbus-Animi" type="video/mp4"/>
+                Ihr Browser unterstützt den Video-Tag nicht
+        </video>
       </a>
       <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-        Klicken zum Spielen
+        Klicken zum Anwenden
       </div>
     </div>
     <h4>
@@ -868,7 +871,7 @@ video, img, .visual-presentation-container {
       <img src="Fraktal.PNG" alt="Fraktal" width="100%">
     </a>
     <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-      Klicken zum Spielen
+      Klicken zum Anwenden
     </div>
     </div>
     <h4>
