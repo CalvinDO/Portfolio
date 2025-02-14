@@ -1067,7 +1067,7 @@ video, img, .visual-presentation-container {
       </iframe>   -->
     </div>
     <h4>
-      Freizeit-Experiment<br>
+      Freizeitgestaltung<br>
       Solo-Projekt<br>
       Herbst 2019<br>
       Asset für Tower-Defense-Game
@@ -1345,23 +1345,104 @@ video, img, .visual-presentation-container {
     </ul>
     <!-- Die Grundidee für diesen Schild ist der Vorarbeitung eines Computergrafik-Vorlesungsskriptes, welches nun allerdings ersetzt wurde, zu verdanken. Hier hätte die Anforderung aus dem Modellieren eines Schildes, und dem Ausschneiden von Bereichen mit dem Boolean-Modifier bestanden.  
     Ich ging durch die Modellierung komplexerer Details, sowie frei gestaltete Verzierungen durch Bézierkurven darüber hinaus. Auch hier verwendete ich Kombinationen aus Noise-Texturen, um detaillierte Shader zu erreichen. Die Animation ermöglichte mir die Mantaflow-Fluidsimulation. Hier benutze ich ebenso für das Wasser, als auch für die Schaum, Sprüh, Blasen und Fluid-Partikel einzelne Shader, die ich durch Node-Setups erreichte. Für das Wasser bestimmte ich die Mischung von einem "Diffuse"- und "Glossy"-Shader mit dem "Fresnel"-Linseneffekt, mischte dies mit einem "Glass"-Shader, und dies wiederrum mit mit einem "Transparent"-Shader. Für die anderen Partikel wurden die Mischungsverhältnisse der Shader verändert, oder mit dem zuvor genannten "Blasen-Node-Setup" kombiniert. -->
-    </div>
-</div>
-
-## Korallenriff
-
-<video width="100%" controls loop>
+  </div>
+  <div class="flex-item">
+    <h2 id="korallenriff">Korallenriff</h2>
+    <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+        <video width="100%" controls loop>
             <source src="CoralReef.mp4" alt="CoralReef">
-            Ihr Browser unterstützt das Videoformat nicht
-</video>
-Dieses Projekt geht aus der aktuellsten Computergrafik-Aufgabe hervor. Das Modeling erfolgte über die Extrusion eines "Control-Cage", auf dem der Catmull-Clark-Algorithmus angewendet wurde Allerdings wurden auch hier keine Materialien gefordert, sondern es sollte der Umgang mit dem Displacement-Modifier verinnerlicht werden.  
-Diesen ersetzte ich durch einen entsprechenden Displacement-Node, durch den ich nicht nur Oberflächenberechnungen der versetzten Stellen verändern kann, um beispielsweise unterschiedliche Farben oder Rauigkeitswerte zu erreichen, sondern auch generell mehr Kombinations- und Steuerungsmöglichkeiten durch weitere Nodes, wie beispielsweise Noise-Nodes, hatte.
-
-## Donut
-
-<img src="Donut.png" alt="Donut" width="100%">  
-Dies ist mein Ergebnis des zweiten Levels der Blender-Tutorialreihe des <a href="https://www.youtube.com/watch?v=TPrnSACiTJ4">Blender Guru</a>s. Das durch proportionales Editing und Scultping erreichte Mesh des Teigs wurde durch Noise-Texturen und Overlay-Variation mit Bump versehen und geshaded, sowie Texture-Painting angewandt, um leicht verbrannte Stellen zu malen.  
-In der Tutorial Reihe wird eine Zuckerglasur verwendet, ich jedoch wünschte mir eine Schokoladenglasur, die ich durch ein Node-Setup, in dem ein Glossy- und Diffuse Shader gemischt werden, erreichte. Auch hier ist etwas Displacement durch eine Noise-Textur meinerseits verwendet worden. Die Streusel wurden mit einem Partikelsystem mittels "Instance-Objects" variierender Häufigkeit auf der Glasur platziert.
+            Ihr Browser unterstützt das Videoformat nicht.
+        </video> 
+    </div>
+    <h4>
+        Computergrafik<br>
+        Solo-Projekt<br>
+        Sommer 2020<br>
+        Animierte Nesseltiere
+    </h4>
+    <br>
+    <div class="skills">
+        <strong>Blender, Catmull-Clark-Subdivision, Displacement-Nodes, Noise-Texturen</strong><br>
+        <em>Ästhetisch - Engagiert - Selbstständig</em><br>
+    </div>
+    <br>
+    <ul class="task-list">
+        <li><strong>Organische Modellierung</strong><br>
+            <span>Extrusion eines Control-Cages</span>
+            <ul>
+                <li>
+                    Glättung und Detailsteigerung durch Catmull-Clark-Subdivision
+                </li>
+            </ul>
+        </li>
+        <li><strong>Dynamische Oberflächengestaltung</strong><br>
+            <span>Node-basiertes Displacement</span>
+            <ul>
+                <li>
+                    Anpassung von Farben und Rauigkeitswerten für realistischere Texturen
+                </li>
+                <li>
+                    Kombination mit Noise-Nodes für zusätzliche Steuerungsmöglichkeiten
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <!-- Dieses Projekt geht aus der aktuellsten Computergrafik-Aufgabe hervor. Das Modeling erfolgte über die Extrusion eines "Control-Cage", auf dem der Catmull-Clark-Algorithmus angewendet wurde Allerdings wurden auch hier keine Materialien gefordert, sondern es sollte der Umgang mit dem Displacement-Modifier verinnerlicht werden.  
+    Diesen ersetzte ich durch einen entsprechenden Displacement-Node, durch den ich nicht nur Oberflächenberechnungen der versetzten Stellen verändern kann, um beispielsweise unterschiedliche Farben oder Rauigkeitswerte zu erreichen, sondern auch generell mehr Kombinations- und Steuerungsmöglichkeiten durch weitere Nodes, wie beispielsweise Noise-Nodes, hatte. -->
+  </div>
+  <div class="flex-item">
+    <h2 id="donut">Donut</h2>
+    <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+        <img src="Donut.png" alt="Donut" width="100%">
+    </div>
+    <h4>
+        Private Fortbildung<br>
+        Solo-Projekt<br>
+        Herbst 2019<br>
+        <a href="https://www.youtube.com/watch?v=TPrnSACiTJ4">Tutorial</a>-Ergebnis
+    </h4>
+    <br>
+    <div class="skills">
+        <strong>Blender, Sculpting, Texture Painting, Partikelsystem</strong><br>
+        <em>Lernbegeistert - Inkubierend - Detailiert</em><br>
+    </div>
+    <br>
+    <ul class="task-list">
+        <li><strong>Prozedurale Texturierung</strong><br>
+            <span>Modellierung des Teigs mit Sculpting und proportionalem Editing</span>
+            <ul>
+                <li>
+                    Oberflächenverfeinerung durch Noise-Texturen und Bump-Overlays
+                </li>
+                <li>
+                    Anpassung von Glanz- und Rauigkeitseffekten für realistische Materialien
+                </li>
+            </ul>
+        </li>
+        <li><strong>Individuelle Materialgestaltung</strong><br>
+            <span>Ersetzung der Zuckerglasur durch eine individuell entwickelte Schokoladenglasur</span>
+            <ul>
+                <li>
+                    Mischung von Glossy- und Diffuse-Shadern für realistischen Glanzeffekt
+                </li>
+                <li>
+                    Zusätzliche Displacement-Anpassungen mit Noise-Texturen
+                </li>
+            </ul>
+        </li>
+        <li><strong>Streusel mit Partikelsystem</strong><br>
+            <span>Platzierung variierender Instanz-Objekte auf der Glasur</span>
+            <ul>
+                <li>
+                    Zufällige Verteilung für natürliche Anordnung
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <!-- Dies ist mein Ergebnis des zweiten Levels der Blender-Tutorialreihe des <a href="https://www.youtube.com/watch?v=TPrnSACiTJ4">Blender Guru</a>s. Das durch proportionales Editing und Scultping erreichte Mesh des Teigs wurde durch Noise-Texturen und Overlay-Variation mit Bump versehen und geshaded, sowie Texture-Painting angewandt, um leicht verbrannte Stellen zu malen.  
+    In der Tutorial Reihe wird eine Zuckerglasur verwendet, ich jedoch wünschte mir eine Schokoladenglasur, die ich durch ein Node-Setup, in dem ein Glossy- und Diffuse Shader gemischt werden, erreichte. Auch hier ist etwas Displacement durch eine Noise-Textur meinerseits verwendet worden. Die Streusel wurden mit einem Partikelsystem mittels "Instance-Objects" variierender Häufigkeit auf der Glasur platziert. -->
+  </div>
+</div>
 
 ## Brennender Affenkopf
 
