@@ -1173,8 +1173,8 @@ video, img, .visual-presentation-container {
     </div>
     <br>
     <ul class="task-list">
-      <li><strong>Konstruktiver Modellierungsansatz</strong><br>
-        <span>Ausstanzung eines Schlosses aus einem Würfel mit Boolean-Modifier</span>
+      <li><strong>Erlernen neuer Modelliertechniken</strong><br>
+        <span>Ausstanzung aus einem Würfel mit Boolean-Modifier</span>
         <ul>
           <li>
             Kombination von Inset-Techniken für optimierte Geometrie
@@ -1238,7 +1238,7 @@ video, img, .visual-presentation-container {
     <!-- Hier habe ich weniger gemodelt, sondern eher aus freien Stücken die Möglichkeiten der "Softbody & Collision"-Physiksimulation ausprobiert, und eine kleine Animation gerendert, um ein Verhalten zu simulieren, das Wackelpudding ähnelt. -->
   </div>
   <div class="flex-item">
-    <h2 id="verruecktes-uboot">Das verrückte U-Boot</h2>
+    <h2 id="uboot">Das verrückte U-Boot</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
         <video width="100%" controls loop>
             <source src="submarine.mp4" alt="submarine" type="video/mp4">
@@ -1293,17 +1293,60 @@ video, img, .visual-presentation-container {
     <!-- Die Anforderungen der Computergrafik-Aufgabe, die mich zu dieser Animation inspirierte, bestand darin, rein durch Skalierung, Rotation und Verschiebung von Objekten, sowie die Anwendung einfacher Materialien ein U-Boot zusammenzustellen. Der Anforderung, nur mit der Komposition primitiver Körper zu arbeiten, widersetzte ich mich nicht sondern nahm sie als Herausforderung an.  
     Die Positionierung der Spirale aus Blasen erreichte ich durch Rotation langer Blasenreihen unter proportionalem Bearbeiten. Ähnlich erschuf ich auch die Greifarme des U-Boots. Die Textur der Blasen gestaltete ich durch die Mischung einer Noise-Textur und Transparenz. Die volumetrische Beleuchtung erreichte ich durch die Addition eines lichtstreuenden, und eines licht-Absorbierenden Shaders mit unterschiedlicher Dichte. Die Bewegungsabläufe erreichte ich durch Keyframes und interpolierten Kurven. Dies war mein erstes Modellierungsprojekt mit einer zeitlich beschränkten Vorgabe. -->
   </div>
-</div>
-
-
-## Schild
-
-<video width="100%" controls loop>
+  <div class="flex-item">
+    <h2 id="schild">Schild</h2>
+    <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+        <video width="100%" controls loop>
             <source src="SchildWater.mp4" alt="SchildWater">
-            Ihr Browser unterstützt das Videoformat nicht
-</video>
-Die Grundidee für diesen Schild ist der Vorarbeitung eines Computergrafik-Vorlesungsskriptes, welches nun allerdings ersetzt wurde, zu verdanken. Hier hätte die Anforderung aus dem Modellieren eines Schildes, und dem Ausschneiden von Bereichen mit dem Boolean-Modifier bestanden.  
-Ich ging durch die Modellierung komplexerer Details, sowie frei gestaltete Verzierungen durch Bézierkurven darüber hinaus. Auch hier verwendete ich Kombinationen aus Noise-Texturen, um detaillierte Shader zu erreichen. Die Animation ermöglichte mir die Mantaflow-Fluidsimulation. Hier benutze ich ebenso für das Wasser, als auch für die Schaum, Sprüh, Blasen und Fluid-Partikel einzelne Shader, die ich durch Node-Setups erreichte. Für das Wasser bestimmte ich die Mischung von einem "Diffuse"- und "Glossy"-Shader mit dem "Fresnel"-Linseneffekt, mischte dies mit einem "Glass"-Shader, und dies wiederrum mit mit einem "Transparent"-Shader. Für die anderen Partikel wurden die Mischungsverhältnisse der Shader verändert, oder mit dem zuvor genannten "Blasen-Node-Setup" kombiniert.
+            Ihr Browser unterstützt das Videoformat nicht.
+        </video>
+    </div>
+    <h4>
+        Private Kursaufgabe<br>
+        Solo-Projekt<br>
+        Frühling 2020<br>
+        Individuelle Verzierung
+    </h4>
+    <br>
+    <div class="skills">
+        <strong>Blender, Boolean-Modifier, Bézierkurven, Mantaflow-Fluidsimulation, Shader-Nodes</strong><br>
+        <em>Expressionistisch - Physikbasiert - Selbstständig</em><br>
+        <!-- <strong></strong> -->
+    </div>
+    <br>
+    <ul class="task-list">
+        <li><strong>Detailverliebt</strong><br>
+            <span>Modellierung mit dem Boolean-Modifier</span>
+            <ul>
+                <li>
+                    Zusätzliche Verzierung durch Bézierkurven für feinere Details
+                </li>
+            </ul>
+        </li>
+        <li><strong>Erweiterte Materialgestaltung</strong><br>
+            <span>Kombination aus Noise-Texturen für prozedurale Shader</span>
+            <ul>
+              <li>
+                  Mischung aus Diffuse, Glossy, Glass und Fresnel-Shader für realistische Wasseroptik
+              </li>
+              <li>
+                  Separate Nodes für Wasser, Schaum, Sprühnebel und Blasen
+              </li>
+            </ul>
+        </li>
+        <li><strong>Physikbasierte Animation</strong><br>
+            <span>Simulation von Flüssigkeit mit Mantaflow</span>
+            <ul>
+                <li>
+                  Technisch versierte Nutzung von Domain und Flow
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <!-- Die Grundidee für diesen Schild ist der Vorarbeitung eines Computergrafik-Vorlesungsskriptes, welches nun allerdings ersetzt wurde, zu verdanken. Hier hätte die Anforderung aus dem Modellieren eines Schildes, und dem Ausschneiden von Bereichen mit dem Boolean-Modifier bestanden.  
+    Ich ging durch die Modellierung komplexerer Details, sowie frei gestaltete Verzierungen durch Bézierkurven darüber hinaus. Auch hier verwendete ich Kombinationen aus Noise-Texturen, um detaillierte Shader zu erreichen. Die Animation ermöglichte mir die Mantaflow-Fluidsimulation. Hier benutze ich ebenso für das Wasser, als auch für die Schaum, Sprüh, Blasen und Fluid-Partikel einzelne Shader, die ich durch Node-Setups erreichte. Für das Wasser bestimmte ich die Mischung von einem "Diffuse"- und "Glossy"-Shader mit dem "Fresnel"-Linseneffekt, mischte dies mit einem "Glass"-Shader, und dies wiederrum mit mit einem "Transparent"-Shader. Für die anderen Partikel wurden die Mischungsverhältnisse der Shader verändert, oder mit dem zuvor genannten "Blasen-Node-Setup" kombiniert. -->
+    </div>
+</div>
 
 ## Korallenriff
 
