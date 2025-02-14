@@ -773,8 +773,8 @@ video, img, .visual-presentation-container {
     <br>
     <div class="skills">
       <strong>TypeScript, HTML, CSS, LocalStorage, OpenStreetMap, WebXR,</strong><br>
-      <em>Interdisziplinär - Innovativ - Praktisch</em><br>
-      <strong>Wireframes, Sitemaps, User Journey, Visuelle Guides</strong>
+      <em>Interdisziplinär - Innovativ - Wegweisend</em><br>
+      <strong>Wireframes, Sitemaps, User Journey, Visuelle Guides, Git</strong>
     </div>
     <br>
     <ul class="task-list">
