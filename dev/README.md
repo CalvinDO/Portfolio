@@ -269,9 +269,9 @@ video, img, .visual-presentation-container {
 <div class = "flex-container">
   <div class = "flex-item">
     <div class="toggle-content">
-    <h2 id ="bau-simulator">Bau-Simulator<br>
+      <h2 id ="bau-simulator">Bau-Simulator<br>
+      (Kommerziell)</h2>
     </div>
-    (Kommerziell)</h2>
     <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
     <a href="https://store.steampowered.com/app/1273400/BauSimulator">
     <video width="100%" controls loop>
@@ -285,39 +285,39 @@ video, img, .visual-presentation-container {
       </div>
     </div>
     <div class="toggle-content">
-    <h4>
-    <strong><a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a></strong> <br>
-    <strong>25-köpfiges</strong> Team + Outsourcer<br>
-    <strong>Herbst 2020 - Frühling 2023</strong> <br>
-    <strong>Publisher:</strong> <a href = "https://www.astragon.de/">Astragon</a></h4>
-    <br>
-    <strong>6</strong> Monate <strong>Praktikant</strong><br>
-    <strong>2,5</strong> Jahre <strong>Werkstudent</strong><br>
-    <br>
-    <div class = "skills">
-    <strong>Unity (C#), FMOD (Audio-Integration)</strong><br>
-    <em>Strukturiert - Interdisziplinär - Kooperativ</em><br>
-    <strong>SCRUM, Atlassian Confluence, Plastic SCM, Mantis</strong><br>
-    </div>
-    <br>
-    <ul class="task-list">
-    <li><strong>Fahrzeug-Setup</strong><br>
-        <span>Integration von über 80 Fahrzeugmodellen mit funktionsspezifischen Logikbausteinen</span>
-        <ul>
-            <li>Rotationslimits, Getriebe- und Motorsimulation, Terrainsimulation</li>
-            <li>Fahrzeugaudio mit FMOD</li>
-        </ul>
-    </li>
-    <li><strong>Debug-UI-Entwicklung</strong><br>
-        <span>Erstellung eines dynamischen und generischen Debug-Tools für</span>
-        <ul>
-            <li>Missionen, Fahrzeug-Spawning, Settings</li>
-        </ul>
-    </li>
-    <li><strong>Navigationsdisplay</strong><br>
-        <span>Anzeige des Pfades in der Minimap.</span>
-    </li>
-    </ul>
+      <h4>
+      <strong><a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a></strong> <br>
+      <strong>25-köpfiges</strong> Team + Outsourcer<br>
+      <strong>Herbst 2020 - Frühling 2023</strong> <br>
+      <strong>Publisher:</strong> <a href = "https://www.astragon.de/">Astragon</a></h4>
+      <br>
+      <strong>6</strong> Monate <strong>Praktikant</strong><br>
+      <strong>2,5</strong> Jahre <strong>Werkstudent</strong><br>
+      <br>
+      <div class = "skills">
+      <strong>Unity (C#), FMOD (Audio-Integration)</strong><br>
+      <em>Strukturiert - Interdisziplinär - Kooperativ</em><br>
+      <strong>SCRUM, Atlassian Confluence, Plastic SCM, Mantis</strong><br>
+      </div>
+      <br>
+      <ul class="task-list">
+      <li><strong>Fahrzeug-Setup</strong><br>
+          <span>Integration von über 80 Fahrzeugmodellen mit funktionsspezifischen Logikbausteinen</span>
+          <ul>
+              <li>Rotationslimits, Getriebe- und Motorsimulation, Terrainsimulation</li>
+              <li>Fahrzeugaudio mit FMOD</li>
+          </ul>
+      </li>
+      <li><strong>Debug-UI-Entwicklung</strong><br>
+          <span>Erstellung eines dynamischen und generischen Debug-Tools für</span>
+          <ul>
+              <li>Missionen, Fahrzeug-Spawning, Settings</li>
+          </ul>
+      </li>
+      <li><strong>Navigationsdisplay</strong><br>
+          <span>Anzeige des Pfades in der Minimap.</span>
+      </li>
+      </ul>
     </div>
     <!-- Im Dev-Team bei <a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a> arbeitete ich mit insgesamt 25 Mitarbeitern und weiteren Outsourcern vom Winter 2020 bis zum Frühling 2023. Begonnen als Praktikant im Büro für das dritte Semester, behielt mich das Unternehmen überzeugt als Werkstudent bis zum Bachelor-Abschluss. So sammelte ich zwei weitere Jahre lang Erfahrung in der Programmierung eines kommerziellen Mid-Tier Games. Neben strukturellem Arbeiten mit agilem Projektmanagement, wie SCRUM-Sprintmeetings, Atlassian Confluence, Versionskontrolle, Bugtracking mit Mantis in einem größeren Team und Orientierung nach Vorgaben eines kommerziellen Publishers (<a href = "https://www.astragon.de/">Astragon</a>), sowie Synergie mit Grafiker- und QA-Departments vertiefte ich mich in fortgeschrittene Programmierung mit Unity und C#. Desweiteren lernte ich FMOD als Audio-Integrationssoftware für Unity kennen.  
     Meine Hauptbeschäftigung bestand aus dem Fahrzeug-Setup, bei dem ich Modelle der Grafiker mit Logikbausteinen der Programmierer zu funktionsfähigen Baumaschinen integrierte. Da jedes der >80 Fahrzeuge sich in seinen Funktionen unterscheidet, wie beispielsweise Rotationslimits von Schaufeln und Armen oder Schaltpunkte der Motoren- und Getriebesimulation, zeichnete sich das Fahrzeug-Setup größtenteils durch Parametrierung der Logik-Assets aus. Ein weiterer Bestandteil war die intensive Kommunikation mit dem Grafik-Team, falls Meshes der Modelle ausgetauscht oder ergänzt werden mussten. Besonders im Bereich des Hydraulik-, Fahrkabinen-, Licht-, und Spiegel-Setups war die interdisziplinäre Kooperation mit dem Art-Department essentiell. Viele Ressourcen flossen auch in das Aufsetzen der Terrainsimulation, um Schuttfüllungen in verschiedenen Werkzeugen wie Schaufeln und Kipper von Mulden zu realisieren. Auch zum Fahrzeug-Setup gehörte die auditive Simulation des Baugeschehens, bei dem ich den Umgang mit Banks in FMOD lernte.  
