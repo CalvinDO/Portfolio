@@ -1118,7 +1118,7 @@ video, img, .visual-presentation-container {
       Private Kursaufgabe<br>
       Solo-Projekt<br>
       Frühling 2020<br>
-      Gestaltung mit Nodes und Spin-Tool
+      Spielerische Gestaltung
     </h4>
     <br>
     <div class="skills">
@@ -1163,7 +1163,7 @@ video, img, .visual-presentation-container {
       Private Kursaufgabe<br>
       Solo-Projekt<br>
       Frühling 2020<br>
-      Hard-Surface-Modeling
+      Verzierung der Truhe
     </h4>
     <br>
     <div class="skills">
@@ -1219,7 +1219,7 @@ video, img, .visual-presentation-container {
     <div class="skills">
         <strong>Blender, Softbody Physics, Animation</strong><br>
         <em>Experimentell - Lernfreudig - Selbstständig</em><br>
-        <strong>Materialeigenschaften, Kollisionen, Rendering</strong>
+        <!-- <strong></strong> -->
     </div>
     <br>
     <ul class="task-list">
@@ -1235,21 +1235,66 @@ video, img, .visual-presentation-container {
             </ul>
         </li>
     </ul>
-    <div class="controls">
-        Simulationseinstellungen anpassbar für unterschiedliche Materialverhalten
-    </div>
     <!-- Hier habe ich weniger gemodelt, sondern eher aus freien Stücken die Möglichkeiten der "Softbody & Collision"-Physiksimulation ausprobiert, und eine kleine Animation gerendert, um ein Verhalten zu simulieren, das Wackelpudding ähnelt. -->
+  </div>
+  <div class="flex-item">
+    <h2 id="verruecktes-uboot">Das verrückte U-Boot</h2>
+    <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+        <video width="100%" controls loop>
+            <source src="submarine.mp4" alt="submarine" type="video/mp4">
+            Ihr Browser unterstützt den Video-Tag nicht.
+        </video>  
+    </div>
+    <h4>
+        Computergrafik<br>
+        Solo-Projekt<br>
+        Sommer 2020<br>
+        Lebhafte Unterwassermaschine
+    </h4>
+    <br>
+    <div class="skills">
+        <strong>Blender, Object-Mode-Only, Keyframe-Animation, Materialgestaltung</strong><br>
+        <em>Expressionistisch - Engagiert - Selbstständig</em><br>
+        <!-- <strong></strong> -->
+    </div>
+    <br>
+    <ul class="task-list">
+        <li><strong>Modellierung aus Grundformen</strong><br>
+            <span>Zusammensetzung eines U-Boots aus Skalierung, Rotation und Verschiebung primitiver Körper</span>
+            <ul>
+                <li>
+                    Herausforderungen durch Einschränkungen als kreativen Anreiz genutzt
+                </li>
+                <li>
+                    Anordnung durch Rotationen und proportionale Bearbeitung
+                </li>
+            </ul>
+        </li>
+        <li><strong>Unterwasser-Atmosphäre</strong><br>
+            <span>Volumetrische Beleuchtung mit Lichtstreuung und Absorption</span>
+            <ul>
+                <li>
+                    Kombination verschiedener Shader für Tiefeneffekte
+                </li>
+                <li>
+                    Mischung aus Noise-Textur und Transparenz für Blasen
+                </li>
+            </ul>
+        </li>
+        <li><strong>Animation</strong><br>
+            <span>Keyframes und Interpolation</span>
+            <ul>
+                <li>
+                    Sanfte, geschwungene Bewegungen durch Kurvenpfade
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <!-- Die Anforderungen der Computergrafik-Aufgabe, die mich zu dieser Animation inspirierte, bestand darin, rein durch Skalierung, Rotation und Verschiebung von Objekten, sowie die Anwendung einfacher Materialien ein U-Boot zusammenzustellen. Der Anforderung, nur mit der Komposition primitiver Körper zu arbeiten, widersetzte ich mich nicht sondern nahm sie als Herausforderung an.  
+    Die Positionierung der Spirale aus Blasen erreichte ich durch Rotation langer Blasenreihen unter proportionalem Bearbeiten. Ähnlich erschuf ich auch die Greifarme des U-Boots. Die Textur der Blasen gestaltete ich durch die Mischung einer Noise-Textur und Transparenz. Die volumetrische Beleuchtung erreichte ich durch die Addition eines lichtstreuenden, und eines licht-Absorbierenden Shaders mit unterschiedlicher Dichte. Die Bewegungsabläufe erreichte ich durch Keyframes und interpolierten Kurven. Dies war mein erstes Modellierungsprojekt mit einer zeitlich beschränkten Vorgabe. -->
   </div>
 </div>
 
-## Das verrückte U-Boot
-
-<video width="100%" controls loop>
-            <source src="submarine.mp4" alt="submarine" type="video/mp4">
-            Ihr Browser unterstützt den Video-Tag nicht
-</video>  
-Die Anforderungen der Computergrafik-Aufgabe, die mich zu dieser Animation inspirierte, bestand darin, rein durch Skalierung, Rotation und Verschiebung von Objekten, sowie die Anwendung einfacher Materialien ein U-Boot zusammenzustellen. Der Anforderung, nur mit der Komposition primitiver Körper zu arbeiten, widersetzte ich mich nicht sondern nahm sie als Herausforderung an.  
-Die Positionierung der Spirale aus Blasen erreichte ich durch Rotation langer Blasenreihen unter proportionalem Bearbeiten. Ähnlich erschuf ich auch die Greifarme des U-Boots. Die Textur der Blasen gestaltete ich durch die Mischung einer Noise-Textur und Transparenz. Die volumetrische Beleuchtung erreichte ich durch die Addition eines lichtstreuenden, und eines licht-Absorbierenden Shaders mit unterschiedlicher Dichte. Die Bewegungsabläufe erreichte ich durch Keyframes und interpolierten Kurven. Dies war mein erstes Modellierungsprojekt mit einer zeitlich beschränkten Vorgabe.
 
 ## Schild
 
