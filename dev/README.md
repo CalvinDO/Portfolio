@@ -1168,7 +1168,7 @@ video, img, .visual-presentation-container {
     <br>
     <div class="skills">
       <strong>Blender, Boolean-Modifier, Bézierkurven, Prozedurale Texturen</strong><br>
-      <em>Präzise - Strukturiert - Mathematisch</em><br>
+      <em>Erweiternd - Kreativ - Selbstständig</em><br>
       <!-- <strong></strong> -->
     </div>
     <br>
@@ -1202,42 +1202,48 @@ video, img, .visual-presentation-container {
     Um einen höheren Detailgrad zu erreichen, modellierte ich mit Bézierkurven eine etwas aufwendigere Ausstanzform für ein Schloss. Hier generierte ich die prozedurale Textur ebenfalls über die Steuerung der Normalenlänge auf der Oberfläche mittels eines mit Noise-Texturen angesteuerten Bump-Nodes (Displacements) -->
   </div>
   <div class="flex-item">
-    <h2 id="deren-schloss">Wackelpudding-Simulation</h2>
+    <h2 id="wackelpudding-simulation">Wackelpudding-Simulation</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-      <video width="100%" controls loop>
+        <video width="100%" controls loop>
             <source src="Jelly.mp4" alt="Jelly" type="video/mp4"/>
-            Ihr Browser unterstützt den Video-Tag nicht
-      </video>
+            Ihr Browser unterstützt den Video-Tag nicht.
+        </video>
     </div>
     <h4>
-      Freizeit-Experiment<br>
-      Solo-Projekt<br>
-      Frühling 2020<br>
-      Softbody Simulation
+        Freizeit-Experiment<br>
+        Solo-Projekt<br>
+        Frühling 2020<br>
+        Softbody Simulation
     </h4>
     <br>
     <div class="skills">
-      <strong>Blender</strong><br>
-      <em>Präzise - Strukturiert - Mathematisch</em><br>
-      <!-- <strong></strong> -->
+        <strong>Blender, Softbody Physics, Animation</strong><br>
+        <em>Experimentell - Lernfreudig - Selbstständig</em><br>
+        <strong>Materialeigenschaften, Kollisionen, Rendering</strong>
     </div>
     <br>
     <ul class="task-list">
-      <li><strong>Konstruktiver Modellierungsansatz</strong><br>
-        <span>Ausstanzung eines Schlosses aus einem Würfel mit Boolean-Modifier</span>
-        <ul>
-          <li>
-            Softbody & Collision - Physik Simulation
-          </li>
-        </ul>
-      </li>
+        <li><strong>Softbody-Kollisionssystem</strong><br>
+            <span>Simulation physikalisch realistischer Verformungen</span>
+            <ul>
+                <li>
+                    Anpassung von Federkräften und Dämpfung
+                </li>
+                <li>
+                    Rendering mit Materialeigenschaften für eine geleeartige Optik
+                </li>
+            </ul>
+        </li>
     </ul>
+    <div class="controls">
+        Simulationseinstellungen anpassbar für unterschiedliche Materialverhalten
+    </div>
     <!-- Hier habe ich weniger gemodelt, sondern eher aus freien Stücken die Möglichkeiten der "Softbody & Collision"-Physiksimulation ausprobiert, und eine kleine Animation gerendert, um ein Verhalten zu simulieren, das Wackelpudding ähnelt. -->
   </div>
 </div>
 
-  
-## Das verrückte U-Boot  
+## Das verrückte U-Boot
+
 <video width="100%" controls loop>
             <source src="submarine.mp4" alt="submarine" type="video/mp4">
             Ihr Browser unterstützt den Video-Tag nicht
