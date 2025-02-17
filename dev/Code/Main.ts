@@ -35,7 +35,7 @@ namespace Portfolio {
         }
 
         if (!item.querySelector('.toggle-content')) {
-            console.warn("generated Content not recognized, abort");
+            console.warn("toggle content not found! abort");
             return;
         }
 
@@ -77,14 +77,33 @@ namespace Portfolio {
 
 function generateContentIn(item: HTMLElement) {
 
+    //first toggle
+
     let toggleContentDiv = document.createElement("div");
     toggleContentDiv.classList.add("toggle-content");
-    
+
     let projectHeader: HTMLHeadingElement = <HTMLHeadingElement>item.querySelector("h2");
-    projectHeader.parentNode.replaceChild(toggleContentDiv, projectHeader);
+    projectHeader.parentNode?.replaceChild(toggleContentDiv, projectHeader);
 
     toggleContentDiv.appendChild(projectHeader);
 
+    let visualPresentationContainer: HTMLDivElement = item.querySelector(".visual-presentation-container");
 
+    //second toggle
 
+    let secondToggleContentDiv = document.createElement("div");
+    secondToggleContentDiv.classList.add("toggle-content");
+
+    let nextSibling = visualPresentationContainer.nextElementSibling;
+
+    while (nextSibling) {
+
+        let currentSibling = nextSibling;
+        nextSibling = currentSibling.nextElementSibling;  // das nächste Geschwister-Element
+
+        // Verschiebe das Element in den 'toggle-content' Wrapper
+        toggleContentDiv.appendChild(currentSibling);
+    }
+
+    visualPresentationContainer.parentNode?.appendChild(toggleContentDiv);
 }

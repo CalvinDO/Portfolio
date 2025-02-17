@@ -26,7 +26,7 @@ var Portfolio;
             generateContentIn(item);
         }
         if (!item.querySelector('.toggle-content')) {
-            console.warn("generated Content not recognized, abort");
+            console.warn("toggle content not found! abort");
             return;
         }
         return;
@@ -57,10 +57,24 @@ var Portfolio;
     }
 })(Portfolio || (Portfolio = {}));
 function generateContentIn(item) {
+    //first toggle
+    var _a, _b;
     let toggleContentDiv = document.createElement("div");
     toggleContentDiv.classList.add("toggle-content");
     let projectHeader = item.querySelector("h2");
-    projectHeader.parentNode.replaceChild(toggleContentDiv, projectHeader);
+    (_a = projectHeader.parentNode) === null || _a === void 0 ? void 0 : _a.replaceChild(toggleContentDiv, projectHeader);
     toggleContentDiv.appendChild(projectHeader);
+    let visualPresentationContainer = item.querySelector(".visual-presentation-container");
+    //second toggle
+    let secondToggleContentDiv = document.createElement("div");
+    secondToggleContentDiv.classList.add("toggle-content");
+    let nextSibling = visualPresentationContainer.nextElementSibling;
+    while (nextSibling) {
+        let currentSibling = nextSibling;
+        nextSibling = currentSibling.nextElementSibling; // das nächste Geschwister-Element
+        // Verschiebe das Element in den 'toggle-content' Wrapper
+        toggleContentDiv.appendChild(currentSibling);
+    }
+    (_b = visualPresentationContainer.parentNode) === null || _b === void 0 ? void 0 : _b.appendChild(toggleContentDiv);
 }
 //# sourceMappingURL=Main.js.map
