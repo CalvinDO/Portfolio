@@ -1625,7 +1625,7 @@ Die Motive lehnten ausschließlich an Tribal-Tattoos an.
     console.log("current item: " + item);
   });
 
-  document.querySelectorAll('.flex-item').forEach(item => {
+  document.querySelectorAll('.flex-item')[0].forEach(item => {
       const container = item.querySelector('.visual-presentation-container');
       const content = item.querySelector('.toggle-content');
       const arrow = item.querySelector('.toggle-arrow');
