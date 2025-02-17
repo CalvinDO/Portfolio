@@ -158,10 +158,16 @@ video, img, .visual-presentation-container:not(#multi-display) {
 }
 
 .toggle-content {
-  height: 0;
-  overflow: hidden;
-  transition: height 0.3s ease-out;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: height 0.3s ease-out;
+    overflow: hidden;
+    height: 0;
 }
+
 .flex-item.expanded .toggle-content {
     height: auto;
 }
