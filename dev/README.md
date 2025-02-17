@@ -140,7 +140,7 @@ h1#header-coding ~ h1 {
 }
 
 
-video, img, .visual-presentation-container {
+video, img, .visual-presentation-container:not(#multi-display) {
 
   display: block !important;        /* Macht den <a>-Tag zu einem Blockelement, damit es eine feste Größe haben kann */
 
@@ -152,9 +152,9 @@ video, img, .visual-presentation-container {
   margin: 0
 }
 
-.visual-presentation-container {
+.visual-presentation-container:not(#multi-display) {
   position: relative;
-            cursor: pointer;
+  cursor: pointer;
 }
 
 .toggle-content {
@@ -402,7 +402,7 @@ video, img, .visual-presentation-container {
   </div>
   <div class = "flex-item">
     <h2 id="realtime-beerpong">Realtime-BeerPhong</h2>
-    <div class = "visual-presentation-container" style="display: flex; justify-content: space-between;">
+    <div id = "multi-display" class = "visual-presentation-container" style="display: flex; justify-content: space-between;">
       <a href="https://calvindo.github.io/Realtime-BeerPhong/aFrame.html">
         <div style="position: relative;">
           <img src="BeerPhong.jpeg" style="width: 100%; height: auto; max-width: 100%;">
