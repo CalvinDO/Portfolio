@@ -103,24 +103,12 @@ h1#header-coding ~ h1 {
 .task-list{
   text-align: start;
 }
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0px; /* Abstand zwischen den Items */
-  justify-content: center;
-  margin: 0 auto;
-}
 
-.flex-item {
-  width: calc(33.33% - 10px); /* Standard: 3 Elemente pro Zeile */
-  box-sizing: border-box;
-  padding: 0px;
-  background-color: #f0f0f0;
-  text-align: center;
-}
+
+
 
 .flex-item h2 {
-    height: 160px; /* Adjust height as needed */
+  height: 160px; /* Adjust height as needed */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,6 +128,38 @@ h1#header-coding ~ h1 {
 }
 
 
+.flex-item {
+  width: calc(33.33% - 10px); /* Standard: 3 Elemente pro Zeile */
+  box-sizing: border-box;
+  padding: 0px;
+  background-color: #f0f0f0;
+  text-align: center;
+
+  position: relative; /* Notwendig, damit .toggle-content sich relativ zum flex-item ausrichtet */
+  overflow: visible; /* Erlaubt, dass das ausgeklappte Element überlappt */
+}
+
+.toggle-content {
+    position: absolute;
+    z-index: 10;
+    width: 100%; /* Passt sich der Breite des flex-item an */
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: height 0.3s ease-out;
+    overflow: hidden;
+    height: 0;
+    left: 0; /* Stellt sicher, dass es innerhalb des flex-item bleibt */
+}
+
+.flex-item {
+    position: relative; /* Notwendig, damit .toggle-content sich relativ zum flex-item ausrichtet */
+    overflow: visible; /* Erlaubt, dass das ausgeklappte Element überlappt */
+}
+
+.flex-item.expanded .toggle-content {
+  height: auto;
+}
+
 video, img, .visual-presentation-container:not(#multi-display) {
 
   display: block !important;        /* Macht den <a>-Tag zu einem Blockelement, damit es eine feste Größe haben kann */
@@ -155,21 +175,6 @@ video, img, .visual-presentation-container:not(#multi-display) {
 .visual-presentation-container:not(#multi-display) {
   position: relative;
   cursor: pointer;
-}
-
-.toggle-content {
-    position: absolute;
-    z-index: 10;
-    width: 100%;
-    background: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: height 0.3s ease-out;
-    overflow: hidden;
-    height: 0;
-}
-
-.flex-item.expanded .toggle-content {
-    height: auto;
 }
 .toggle-arrow {
     position: absolute;
