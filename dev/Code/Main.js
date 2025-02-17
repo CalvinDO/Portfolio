@@ -60,7 +60,7 @@ function generateContentIn(item) {
     let toggleContentDiv = document.createElement("div");
     toggleContentDiv.classList.add("toggle-content");
     let projectHeader = item.querySelector("h2");
-    toggleContentDiv.appendChild(projectHeader);
     projectHeader.parentNode.replaceChild(toggleContentDiv, projectHeader);
+    toggleContentDiv.appendChild(projectHeader);
 }
 //# sourceMappingURL=Main.js.map

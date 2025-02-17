@@ -40,7 +40,7 @@ namespace Portfolio {
         }
 
         return;
-        
+
         console.log("content found");
 
         const container: HTMLDivElement = <HTMLDivElement>item.querySelector('.visual-presentation-container');
@@ -81,7 +81,10 @@ function generateContentIn(item: HTMLElement) {
     toggleContentDiv.classList.add("toggle-content");
     
     let projectHeader: HTMLHeadingElement = <HTMLHeadingElement>item.querySelector("h2");
+    projectHeader.parentNode.replaceChild(toggleContentDiv, projectHeader);
+
     toggleContentDiv.appendChild(projectHeader);
 
-    projectHeader.parentNode.replaceChild(toggleContentDiv, projectHeader);
+
+
 }
