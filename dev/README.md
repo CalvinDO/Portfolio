@@ -251,10 +251,14 @@ video, img, .visual-presentation-container {
           });
       } else {
           container.addEventListener('mouseenter', () => {
+              console.log("mouseenter");
+              console.log("in name: " + container.name);
               item.classList.add('expanded');
           });
           item.addEventListener('mouseleave', (event) => {
               if (!item.contains(event.relatedTarget)) {
+                  console.log("mouseleave");
+                  console.log("in name: " + container.name);
                   item.classList.remove('expanded');
               }
           });
