@@ -244,7 +244,7 @@ video, img, .visual-presentation-container {
       const arrow = item.querySelector('.toggle-arrow');
 
       let isMobile = window.matchMedia("(max-width: 768px)").matches;
-
+      console.log("isMobile? " + isMobile);
       if (isMobile) {
           arrow.addEventListener('click', () => {
               item.classList.toggle('expanded');
