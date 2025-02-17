@@ -1625,7 +1625,8 @@ Die Motive lehnten ausschließlich an Tribal-Tattoos an.
     console.log("current item: " + item);
   });
 
-  document.querySelector('.flex-item').forEach(item => {
+  const item = document.querySelector('.flex-item');
+  
       const container = item.querySelector('.visual-presentation-container');
       const content = item.querySelector('.toggle-content');
       const arrow = item.querySelector('.toggle-arrow');
@@ -1650,5 +1651,4 @@ Die Motive lehnten ausschließlich an Tribal-Tattoos an.
               }
           });
       }
-  });
 </script>
