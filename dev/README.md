@@ -402,7 +402,7 @@ video, img, .visual-presentation-container {
   </div>
   <div class = "flex-item">
     <h2 id="realtime-beerpong">Realtime-BeerPhong</h2>
-    <div style="display: flex; justify-content: space-between;">
+    <div class = "visual-presentation-container" style="display: flex; justify-content: space-between;">
       <a href="https://calvindo.github.io/Realtime-BeerPhong/aFrame.html">
         <div style="position: relative;">
           <img src="BeerPhong.jpeg" style="width: 100%; height: auto; max-width: 100%;">
