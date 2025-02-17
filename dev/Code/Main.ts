@@ -26,16 +26,24 @@ namespace Portfolio {
         });
     }
 
-    function handleFlexItem(item): void {
-        const container: HTMLDivElement = <HTMLDivElement>item.querySelector('.visual-presentation-container');
+    function handleFlexItem(item: HTMLElement): void {
+
         const content = item.querySelector('.toggle-content');
 
         if (!content) {
+            generateContentIn(item);
+        }
+
+        if (!item.querySelector('.toggle-content')) {
+            console.warn("generated Content not recognized, abort");
             return;
         }
 
+        return;
+        
         console.log("content found");
 
+        const container: HTMLDivElement = <HTMLDivElement>item.querySelector('.visual-presentation-container');
         const arrow = item.querySelector('.toggle-arrow');
 
         let isMobile = window.matchMedia("(max-width: 768px)").matches;
@@ -65,4 +73,15 @@ namespace Portfolio {
 
         }
     }
+}
+
+function generateContentIn(item: HTMLElement) {
+
+    let toggleContentDiv = document.createElement("div");
+    toggleContentDiv.classList.add("toggle-content");
+    
+    let projectHeader: HTMLHeadingElement = <HTMLHeadingElement>item.querySelector("h2");
+    toggleContentDiv.appendChild(projectHeader);
+
+    projectHeader.parentNode.replaceChild(toggleContentDiv, projectHeader);
 }

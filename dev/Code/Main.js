@@ -21,12 +21,17 @@ var Portfolio;
         });
     }
     function handleFlexItem(item) {
-        const container = item.querySelector('.visual-presentation-container');
         const content = item.querySelector('.toggle-content');
         if (!content) {
+            generateContentIn(item);
+        }
+        if (!item.querySelector('.toggle-content')) {
+            console.warn("generated Content not recognized, abort");
             return;
         }
+        return;
         console.log("content found");
+        const container = item.querySelector('.visual-presentation-container');
         const arrow = item.querySelector('.toggle-arrow');
         let isMobile = window.matchMedia("(max-width: 768px)").matches;
         console.log("isMobile? " + isMobile);
@@ -51,4 +56,11 @@ var Portfolio;
         }
     }
 })(Portfolio || (Portfolio = {}));
+function generateContentIn(item) {
+    let toggleContentDiv = document.createElement("div");
+    toggleContentDiv.classList.add("toggle-content");
+    let projectHeader = item.querySelector("h2");
+    toggleContentDiv.appendChild(projectHeader);
+    projectHeader.parentNode.replaceChild(toggleContentDiv, projectHeader);
+}
 //# sourceMappingURL=Main.js.map
