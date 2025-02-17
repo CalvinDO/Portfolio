@@ -35,13 +35,13 @@ namespace Portfolio {
     } else {
         container.addEventListener('mouseenter', () => {
             console.log("mouseenter");
-            console.log("in name: " + container.nodeName);
+            console.log("in" + container);
             item.classList.add('expanded');
         });
         item.addEventListener('mouseleave', (event) => {
             if (!item.contains(event.relatedTarget)) {
                 console.log("mouseleave");
-                console.log("in name: " + container.nodeName);
+                console.log("in" + container);
                 item.classList.remove('expanded');
             }
         });
