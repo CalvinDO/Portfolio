@@ -81,8 +81,8 @@ function generateContentIn(item) {
         let currentSibling = nextSibling;
         nextSibling = currentSibling.nextElementSibling; // das nächste Geschwister-Element
         // Verschiebe das Element in den 'toggle-content' Wrapper
-        toggleContentDiv.appendChild(currentSibling);
+        secondToggleContentDiv.appendChild(currentSibling);
     }
-    (_b = visualPresentationContainer.parentNode) === null || _b === void 0 ? void 0 : _b.appendChild(toggleContentDiv);
+    (_b = visualPresentationContainer.parentNode) === null || _b === void 0 ? void 0 : _b.appendChild(secondToggleContentDiv);
 }
 //# sourceMappingURL=Main.js.map

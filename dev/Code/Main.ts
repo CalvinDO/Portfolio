@@ -116,8 +116,8 @@ function generateContentIn(item: HTMLElement) {
         nextSibling = currentSibling.nextElementSibling;  // das nächste Geschwister-Element
 
         // Verschiebe das Element in den 'toggle-content' Wrapper
-        toggleContentDiv.appendChild(currentSibling);
+        secondToggleContentDiv.appendChild(currentSibling);
     }
 
-    visualPresentationContainer.parentNode?.appendChild(toggleContentDiv);
+    visualPresentationContainer.parentNode?.appendChild(secondToggleContentDiv);
 }
