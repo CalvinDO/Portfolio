@@ -174,7 +174,7 @@ video, img, .visual-presentation-container {
             cursor: pointer;
 }
 
-.toggle-content {
+/* .toggle-content {
   height: 0;
   overflow: hidden;
   transition: height 0.3s ease-out;
@@ -200,7 +200,7 @@ video, img, .visual-presentation-container {
 }
 .flex-item.expanded .toggle-arrow {
     transform: translateX(-50%) rotate(180deg);
-}
+} */
         
 .skills {
     line-height: 2.1; /* Der Wert 1.8 kann angepasst werden, um den Abstand zu verändern */
@@ -237,14 +237,15 @@ video, img, .visual-presentation-container {
 
 </style>
 
+<!--
 <script>
   document.querySelectorAll('.flex-item').forEach(item => {
       const container = item.querySelector('.visual-presentation-container');
       const content = item.querySelector('.toggle-content');
       const arrow = item.querySelector('.toggle-arrow');
-      
+
       let isMobile = window.matchMedia("(max-width: 768px)").matches;
-      
+
       if (isMobile) {
           arrow.addEventListener('click', () => {
               item.classList.toggle('expanded');
@@ -260,7 +261,7 @@ video, img, .visual-presentation-container {
           });
       }
   });
-</script>
+</script> -->
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
