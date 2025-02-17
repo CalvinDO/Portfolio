@@ -93,23 +93,6 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
 <hr/>  
 <hr/>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    var innerSections = document.querySelectorAll('.inner'); // Holt alle Elemente mit der Klasse .inner
-    console.log(innerSections);
-    // Überprüft, ob es überhaupt Elemente gibt
-    if(innerSections.length > 0) {
-        // Schleife über jedes gefundene Element
-        innerSections.forEach(function(innerSection) {
-            // Setzt die Breite jedes Elements auf 80% oder 1200px
-            innerSection.style.setProperty('width', '85.4102%', 'important');  // Oder '1200px', je nach Bedarf
-            innerSection.style.setProperty('max-width', 'none', 'important'); // Entfernt max-width
-            innerSection.style.setProperty('min-width', 'none', 'important');  // oder '1200px', je nach Bedarf
-        });
-    }
-});
-</script>
-
 <style>
 
 h1#header-coding,
@@ -238,6 +221,21 @@ video, img, .visual-presentation-container {
 </style>
 
 <script>
+  document.addEventListener("DOMContentLoaded", function() {
+      var innerSections = document.querySelectorAll('.inner'); // Holt alle Elemente mit der Klasse .inner
+      console.log(innerSections);
+      // Überprüft, ob es überhaupt Elemente gibt
+      if(innerSections.length > 0) {
+          // Schleife über jedes gefundene Element
+          innerSections.forEach(function(innerSection) {
+              // Setzt die Breite jedes Elements auf 80% oder 1200px
+              innerSection.style.setProperty('width', '85.4102%', 'important');  // Oder '1200px', je nach Bedarf
+              innerSection.style.setProperty('max-width', 'none', 'important'); // Entfernt max-width
+              innerSection.style.setProperty('min-width', 'none', 'important');  // oder '1200px', je nach Bedarf
+          });
+      }
+  });
+
   document.querySelectorAll('.flex-item').forEach(item => {
       const container = item.querySelector('.visual-presentation-container');
       const content = item.querySelector('.toggle-content');
