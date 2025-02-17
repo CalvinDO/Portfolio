@@ -29,31 +29,39 @@ var Portfolio;
             console.warn("toggle content not found! abort");
             return;
         }
-        return;
-        console.log("content found");
+        //console.log("content found");
         const container = item.querySelector('.visual-presentation-container');
         const arrow = item.querySelector('.toggle-arrow');
         let isMobile = window.matchMedia("(max-width: 768px)").matches;
-        console.log("isMobile? " + isMobile);
+        //console.log("isMobile? " + isMobile);
         if (isMobile) {
-            arrow.addEventListener('click', () => {
-                item.classList.toggle('expanded');
-            });
+            setupArrow(arrow, item);
         }
         else {
-            container.addEventListener('mouseenter', () => {
-                console.log("mouseenter");
-                console.log("in" + container);
-                item.classList.add('expanded');
-            });
-            item.addEventListener('mouseleave', (event) => {
-                if (!item.contains(event.relatedTarget)) {
-                    console.log("mouseleave");
-                    console.log("in" + container);
-                    item.classList.remove('expanded');
-                }
-            });
+            setupMouseEnter(container, item);
+            setupMouseLeave(item, container);
         }
+    }
+    function setupMouseLeave(item, container) {
+        item.addEventListener('mouseleave', (event) => {
+            if (!item.contains(event.relatedTarget)) {
+                console.log("mouseleave");
+                console.log("in" + container);
+                item.classList.remove('expanded');
+            }
+        });
+    }
+    function setupMouseEnter(container, item) {
+        container.addEventListener('mouseenter', () => {
+            console.log("mouseenter");
+            console.log("in" + container);
+            item.classList.add('expanded');
+        });
+    }
+    function setupArrow(arrow, item) {
+        arrow.addEventListener('click', () => {
+            item.classList.toggle('expanded');
+        });
     }
 })(Portfolio || (Portfolio = {}));
 function generateContentIn(item) {

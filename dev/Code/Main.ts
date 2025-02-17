@@ -39,39 +39,53 @@ namespace Portfolio {
             return;
         }
 
-        return;
 
-        console.log("content found");
+        //console.log("content found");
 
         const container: HTMLDivElement = <HTMLDivElement>item.querySelector('.visual-presentation-container');
         const arrow = item.querySelector('.toggle-arrow');
 
         let isMobile = window.matchMedia("(max-width: 768px)").matches;
-        console.log("isMobile? " + isMobile);
+        //console.log("isMobile? " + isMobile);
 
         if (isMobile) {
 
-            arrow.addEventListener('click', () => {
-                item.classList.toggle('expanded');
-            });
+            setupArrow(arrow, item);
 
         } else {
 
-            container.addEventListener('mouseenter', () => {
-                console.log("mouseenter");
-                console.log("in" + container);
-                item.classList.add('expanded');
-            });
+            setupMouseEnter(container, item);
 
-            item.addEventListener('mouseleave', (event) => {
-                if (!item.contains(event.relatedTarget)) {
-                    console.log("mouseleave");
-                    console.log("in" + container);
-                    item.classList.remove('expanded');
-                }
-            });
-
+            setupMouseLeave(item, container);
         }
+    }
+
+    function setupMouseLeave(item: HTMLElement, container: HTMLDivElement) {
+
+        item.addEventListener('mouseleave', (event) => {
+
+            if (!item.contains(event.relatedTarget)) {
+                console.log("mouseleave");
+                console.log("in" + container);
+                item.classList.remove('expanded');
+            }
+        });
+    }
+
+    function setupMouseEnter(container: HTMLDivElement, item: HTMLElement) {
+
+        container.addEventListener('mouseenter', () => {
+            console.log("mouseenter");
+            console.log("in" + container);
+            item.classList.add('expanded');
+        });
+    }
+
+    function setupArrow(arrow: Element, item: HTMLElement) {
+
+        arrow.addEventListener('click', () => {
+            item.classList.toggle('expanded');
+        });
     }
 }
 
