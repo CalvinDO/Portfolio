@@ -135,6 +135,12 @@ h1#header-coding ~ h1 {
   font-size: 16px;
   text-align: center;
   z-index: 2; /* Stellt sicher, dass das h2 über dem Bild liegt */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.flex-item:hover h2 {
+  opacity: 1;
 }
 
 @media (max-width: 1225px) {
