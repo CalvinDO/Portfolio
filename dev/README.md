@@ -187,6 +187,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
 
 .flex-item.expanded .toggle-content {
     height: auto;
+    overflow: visible;
 }
 .toggle-arrow {
     position: absolute;
