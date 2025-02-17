@@ -279,7 +279,7 @@ video, img, .visual-presentation-container {
         <source src="ConstructionSimulator.mp4" alt="ConstructionSimulator" type="video/mp4"/>
         Ihr Browser unterstützt den Video-Tag nicht
     </video>
-    <div class="toggle-arrow">▼</div>
+    <!-- <div class="toggle-arrow">▼</div> -->
     </a>
       <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
       Klicken zum Spielen
