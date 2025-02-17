@@ -500,9 +500,9 @@ video, img, .visual-presentation-container:not(#multi-display) {
     Die Umsetzung innerhalb des Kurses "Echtzeit-Computergrafik" im sechsten Semester erfolgte mit WebAR, JavaScript und GLSL. In einem dreiköpfigen Team machten wir uns mit Programmierung von Vertex- und Fragmentshadern vertraut, sowie mit Umgebungsvariablen von WebAR und "Three.js". -->
   </div>
 
-  <div class="flex-item">
+  <div class="flex-item expanded">
     <h2 id="morbus-animi">Morbus Animi</h2>
-    <div class="visual-presentation-container expanded" style="position: relative; display: inline-block; cursor: pointer;">
+    <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
         <a href="https://simmer.io/@DerCalvino/morbus-animi-final">
             <video width="100%" controls loop>
                 <source src="Morbus-Animi.mp4" alt="Morbus-Animi" type="video/mp4"/>

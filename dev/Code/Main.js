@@ -30,7 +30,7 @@ var Portfolio;
             return;
         }
         //console.log("content found");
-        const container = item.querySelector('.visual-presentation-container');
+        //const container: HTMLDivElement = <HTMLDivElement>item.querySelector('.visual-presentation-container');
         const arrow = item.querySelector('.toggle-arrow');
         let isMobile = window.matchMedia("(max-width: 768px)").matches;
         //console.log("isMobile? " + isMobile);
@@ -38,23 +38,20 @@ var Portfolio;
             setupArrow(arrow, item);
         }
         else {
-            setupMouseEnter(container, item);
-            setupMouseLeave(item, container);
+            setupMouseEnter(item);
+            setupMouseLeave(item);
         }
     }
-    function setupMouseLeave(item, container) {
+    function setupMouseLeave(item) {
         item.addEventListener('mouseleave', (event) => {
             if (!item.contains(event.relatedTarget)) {
-                console.log("mouseleave");
-                console.log("in" + container);
                 item.classList.remove('expanded');
             }
         });
     }
-    function setupMouseEnter(container, item) {
-        container.addEventListener('mouseenter', () => {
+    function setupMouseEnter(item) {
+        item.addEventListener('mouseenter', () => {
             console.log("mouseenter");
-            console.log("in" + container);
             item.classList.add('expanded');
         });
     }

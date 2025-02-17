@@ -42,7 +42,7 @@ namespace Portfolio {
 
         //console.log("content found");
 
-        const container: HTMLDivElement = <HTMLDivElement>item.querySelector('.visual-presentation-container');
+        //const container: HTMLDivElement = <HTMLDivElement>item.querySelector('.visual-presentation-container');
         const arrow = item.querySelector('.toggle-arrow');
 
         let isMobile = window.matchMedia("(max-width: 768px)").matches;
@@ -54,29 +54,26 @@ namespace Portfolio {
 
         } else {
 
-            setupMouseEnter(container, item);
+            setupMouseEnter(item);
 
-            setupMouseLeave(item, container);
+            setupMouseLeave(item);
         }
     }
 
-    function setupMouseLeave(item: HTMLElement, container: HTMLDivElement) {
+    function setupMouseLeave(item: HTMLElement) {
 
         item.addEventListener('mouseleave', (event) => {
 
             if (!item.contains(event.relatedTarget)) {
-                console.log("mouseleave");
-                console.log("in" + container);
                 item.classList.remove('expanded');
             }
         });
     }
 
-    function setupMouseEnter(container: HTMLDivElement, item: HTMLElement) {
+    function setupMouseEnter(item: HTMLElement) {
 
-        container.addEventListener('mouseenter', () => {
+        item.addEventListener('mouseenter', () => {
             console.log("mouseenter");
-            console.log("in" + container);
             item.classList.add('expanded');
         });
     }
