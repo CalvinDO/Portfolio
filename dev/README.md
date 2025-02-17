@@ -174,7 +174,7 @@ video, img, .visual-presentation-container {
             cursor: pointer;
 }
 
-/* .toggle-content {
+.toggle-content {
   height: 0;
   overflow: hidden;
   transition: height 0.3s ease-out;
@@ -200,7 +200,7 @@ video, img, .visual-presentation-container {
 }
 .flex-item.expanded .toggle-arrow {
     transform: translateX(-50%) rotate(180deg);
-} */
+}
         
 .skills {
     line-height: 2.1; /* Der Wert 1.8 kann angepasst werden, um den Abstand zu verändern */
@@ -237,7 +237,6 @@ video, img, .visual-presentation-container {
 
 </style>
 
-<!--
 <script>
   document.querySelectorAll('.flex-item').forEach(item => {
       const container = item.querySelector('.visual-presentation-container');
@@ -261,7 +260,7 @@ video, img, .visual-presentation-container {
           });
       }
   });
-</script> -->
+</script>
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
@@ -279,7 +278,7 @@ video, img, .visual-presentation-container {
         <source src="ConstructionSimulator.mp4" alt="ConstructionSimulator" type="video/mp4"/>
         Ihr Browser unterstützt den Video-Tag nicht
     </video>
-    <!-- <div class="toggle-arrow">▼</div> -->
+    <div class="toggle-arrow">▼</div>
     </a>
       <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
       Klicken zum Spielen
