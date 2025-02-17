@@ -238,7 +238,7 @@ video, img, .visual-presentation-container {
 
   console.log("test");
 
-  console.log(document.querySelectorAll('.flex-item'));
+  console.log("all flex items: " + document.querySelectorAll('.flex-item'));
 
   document.querySelectorAll('.flex-item').forEach(item => {
       const container = item.querySelector('.visual-presentation-container');
