@@ -33,6 +33,7 @@ namespace FraktalAnimation {
     }
 
     function update(_event: Event): void {
+
         let inputs: NodeListOf<HTMLInputElement> = document.querySelectorAll("input");
 
         childrenAmount = parseInt(inputs[0].value);
@@ -49,6 +50,7 @@ namespace FraktalAnimation {
         rotationSpeed = parseFloat(inputs[10].value);
         spreadFactor = parseFloat(inputs[11].value);
         currentSpread = spreadFactor;
+
         crc2.clearRect(-crc2.canvas.width, -crc2.canvas.height, crc2.canvas.width, crc2.canvas.height);
         drawBackground();
 
@@ -63,12 +65,15 @@ namespace FraktalAnimation {
 
 
     function drawBackground(): void {
+
         crc2.fillStyle = backgroundColor;
         crc2.fillRect(-crc2.canvas.width, -crc2.canvas.height, crc2.canvas.width * 2, crc2.canvas.height * 2);
     }
 
     function animate() {
-        console.log("" + Math.random() * 3581321);
+
+        //console.log("" + Math.random() * 3581321);
+
         frame++;
         radius = startRadius + zoomDepth + Math.sin(frame / zoomSpeed * 2 * Math.PI) * zoomDepth;
         rotationAngle = -Math.sin(frame / zoomSpeed * 2 * Math.PI) * rotationSpeed / 20;
