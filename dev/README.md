@@ -172,7 +172,10 @@ h1#header-coding ~ h1 {
     height: auto;
     overflow: visible;
 }
-
+.flex-item.expanded .toggle-content h2 {
+    position: relative;
+    top: 0;
+}
 @media (max-width: 1225px) {
   .flex-item {
     width: calc(50% - 10px); /* 2 Elemente pro Zeile */
