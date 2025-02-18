@@ -160,12 +160,12 @@ h1#header-coding ~ h1 {
     padding: 10px; /* Platz für den Rahmen */
     
     text-align: center;
-    
+
     height: auto;
     overflow: visible !important;
 }
 
-.flex-item.expanded .toggle-content h2 {
+.flex-item.expanded #heading-toggle-content  {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Professioneller Schatten */
     border: 2px solid rgb(102, 102, 102); /* Stilvolle Farbe für den Rahmen */
     border-radius: 10px;
