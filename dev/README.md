@@ -113,7 +113,7 @@ h1#header-coding ~ h1 {
 }
 
 .flex-item {
-  width: calc(33.33% - 10px); /* Standard: 3 Elemente pro Zeile */
+  width: calc(33.33%); /* Standard: 3 Elemente pro Zeile */
   box-sizing: border-box;
   padding: 0px;
   background-color: #f0f0f0;
@@ -150,7 +150,8 @@ h1#header-coding ~ h1 {
 }
 
 .flex-item.expanded {
-    background: white; /* Hebt sich gut ab */
+    width: calc(33.33% + 6.18%);
+    background: white;
 }
 
 .flex-item.expanded .toggle-content:not(.heading-toggle-content) {
