@@ -144,16 +144,22 @@ h1#header-coding ~ h1 {
 */
 
 .toggle-content {
-    position: absolute;
-    z-index: 10;
-    width: 100%; /* Passt sich der Breite des flex-item an */
+    position: relative; /* Ändert von absolute zu relative */
+    width: 100%;
     background: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    height: 0;
-    transition: height 0.3s ease-in-out;
-    left: 0; /* Stellt sicher, dass es innerhalb des flex-item bleibt */
+    padding-bottom: 10px; /* Fügt etwas Abstand zum Video hinzu */
 }
+
+.toggle-content h2 {
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    max-width: 90%; /* Verhindert zu breite Überschriften */
+}
+
+
 
 .flex-item.expanded .toggle-content {
     height: auto;
