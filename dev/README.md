@@ -159,8 +159,13 @@ h1#header-coding ~ h1 {
     left: 0; /* Stellt sicher, dass es innerhalb des flex-item bleibt */
 }
 
-.toggle-content.expanded h2{
-  height: auto;
+.toggle-content h2 {
+    position: absolute;
+    top: -100%; /* Schiebt die Überschrift nach oben, abhängig von der Höhe */
+    width: 100%;
+    text-align: center;
+    background: white;
+    padding: 5px 0;
 }
 
 .flex-item.expanded .toggle-content {
