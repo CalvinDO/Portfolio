@@ -1,8 +1,8 @@
 var Portfolio;
 (function (Portfolio) {
     let overlay = document.querySelector('#overlay');
+    setWidth();
     function init() {
-        setWidth();
         overlay = document.querySelector('#overlay');
         document.querySelectorAll('.flex-item').forEach(handleFlexItem);
     }
@@ -69,7 +69,6 @@ var Portfolio;
         let toggleContentDiv = document.createElement("div");
         toggleContentDiv.classList.add("toggle-content");
         toggleContentDiv.classList.add("heading-toggle-content");
-        console.log("fahrt");
         let projectHeader = item.querySelector("h2");
         (_a = projectHeader.parentNode) === null || _a === void 0 ? void 0 : _a.replaceChild(toggleContentDiv, projectHeader);
         toggleContentDiv.appendChild(projectHeader);
