@@ -119,33 +119,11 @@ h1#header-coding ~ h1 {
   background-color: #f0f0f0;
   text-align: center;
 
+  border-radius: 10px;
+
   position: relative; /* Notwendig, damit .toggle-content sich relativ zum flex-item ausrichtet */
   overflow: visible; /* Erlaubt, dass das ausgeklappte Element überlappt */
 }
-/* 
-.flex-item h2 {
-  position: absolute;
-  top: -50px;
-  left: 0;
-  width: 100%;
-  height: auto; 
-  background: rgba(0, 0, 0, 0.7); 
-  color: white;
-  text-align: center;
-  z-index: 2; 
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}  
-
-
-.flex-item.expanded h2 {
-  opacity: 1;
-}
-*/
-
-/* .toggle-content h2{
-  top: -50px;
-} */
 
 .toggle-content {
     position: absolute;
@@ -168,6 +146,13 @@ h1#header-coding ~ h1 {
     padding: 0;
     margin: 0;
     transform: translateY(-100%);
+}
+
+.flex-item.expanded {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Professioneller Schatten */
+    border: 2px solid #007bff; /* Stilvolle Farbe für den Rahmen */
+    padding: 10px; /* Platz für den Rahmen */
+    background: white; /* Hebt sich gut ab */
 }
 
 .flex-item.expanded .toggle-content {
