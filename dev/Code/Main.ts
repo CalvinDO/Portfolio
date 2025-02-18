@@ -2,7 +2,7 @@ namespace Portfolio {
 
     init();
 
-    let overlay: HTMLDivElement;
+    let overlay: HTMLDivElement = document.querySelector('#overlay');
 
     function init() {
 

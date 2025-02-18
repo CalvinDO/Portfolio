@@ -1,7 +1,7 @@
 var Portfolio;
 (function (Portfolio) {
     init();
-    let overlay;
+    let overlay = document.querySelector('#overlay');
     function init() {
         setWidth();
         overlay = document.querySelector('#overlay');
