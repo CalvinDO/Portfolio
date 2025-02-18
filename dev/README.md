@@ -265,7 +265,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-<div class="overlay"></div>
+<div id="overlay"></div>
 
 <h1 id = "header-coding">Coding</h1>
 

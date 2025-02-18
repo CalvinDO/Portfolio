@@ -8,7 +8,7 @@ namespace Portfolio {
 
         setWidth();
 
-        overlay = document.querySelector('.overlay');
+        overlay = <HTMLDivElement>document.querySelector('#overlay');
 
         document.querySelectorAll('.flex-item').forEach(handleFlexItem);
     }

@@ -4,7 +4,7 @@ var Portfolio;
     let overlay;
     function init() {
         setWidth();
-        overlay = document.querySelector('.overlay');
+        overlay = document.querySelector('#overlay');
         document.querySelectorAll('.flex-item').forEach(handleFlexItem);
     }
     function setWidth() {
