@@ -159,8 +159,10 @@ h1#header-coding ~ h1 {
     border-radius: 10px;
     padding: 10px; /* Platz für den Rahmen */
     
+    text-align: center;
+    
     height: auto;
-    overflow: visible;
+    overflow: visible !important;
 }
 
 .flex-item.expanded .toggle-content h2 {
@@ -170,7 +172,7 @@ h1#header-coding ~ h1 {
     padding: 10px; /* Platz für den Rahmen */
     
     height: auto;
-    overflow: visible;
+    overflow: visible !important;
 }
 
 @media (max-width: 1225px) {
