@@ -133,19 +133,9 @@ h1#header-coding ~ h1 {
     left: 0; /* Stellt sicher, dass es innerhalb des flex-item bleibt */
 }
 
-.toggle-content:not(.heading-toggle-content){
-    background: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
 .heading-toggle-content {
-    position: absolute;
     top: 0;
-    width: 100%;
-    text-align: center;
-    background: white;
-    padding: 0;
-    margin: 0;
+
     transform: translateY(-100%);
 }
 
@@ -153,27 +143,16 @@ h1#header-coding ~ h1 {
     background: white; /* Hebt sich gut ab */
 }
 
-.flex-item.expanded .toggle-content:not(.heading-toggle-content) {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Professioneller Schatten */
-    border: 2px solid rgb(102, 102, 102); /* Stilvolle Farbe für den Rahmen */
-    border-radius: 10px;
-    padding: 10px; /* Platz für den Rahmen */
-    
-    text-align: center;
+.flex-item.expanded .toggle-content{
+  padding: 0;
+  margin: 0;
 
-    height: auto;
-    overflow: visible !important;
-}
+  background: white;
 
-.flex-item.expanded .heading-toggle-content  {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Professioneller Schatten */
-    border: 2px solid rgb(102, 102, 102); /* Stilvolle Farbe für den Rahmen */
-    border-radius: 4px;
-    box-sizing: border-box;
-    padding: 0; /* Platz für den Rahmen */
-    margin: 0;
-    height: auto;
-    overflow: visible !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Professioneller Schatten */
+  border: 2px solid rgb(102, 102, 102); /* Stilvolle Farbe für den Rahmen */
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 @media (max-width: 1225px) {
