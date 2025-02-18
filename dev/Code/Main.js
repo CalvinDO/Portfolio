@@ -1,8 +1,10 @@
 var Portfolio;
 (function (Portfolio) {
     init();
+    let overlay;
     function init() {
         setWidth();
+        overlay = document.querySelector('.overlay');
         document.querySelectorAll('.flex-item').forEach(handleFlexItem);
     }
     function setWidth() {
@@ -48,12 +50,14 @@ var Portfolio;
                 item.classList.remove('expanded');
             }
         });
+        overlay.style.opacity = "1";
     }
     function setupMouseEnter(item) {
         item.addEventListener('mouseenter', () => {
             console.log("mouseenter");
             item.classList.add('expanded');
         });
+        overlay.style.opacity = "0";
     }
     function setupArrow(arrow, item) {
         arrow.addEventListener('click', () => {

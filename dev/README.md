@@ -160,6 +160,19 @@ h1#header-coding ~ h1 {
     margin: 0;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+        
 @media (max-width: 1225px) {
   .flex-item {
     width: calc(50% - 10px); /* 2 Elemente pro Zeile */
@@ -251,6 +264,8 @@ video, img, .visual-presentation-container:not(#multi-display) {
 </style>
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+<div class="overlay"></div>
 
 <h1 id = "header-coding">Coding</h1>
 

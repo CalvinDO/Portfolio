@@ -2,12 +2,15 @@ namespace Portfolio {
 
     init();
 
+    let overlay: HTMLDivElement
+
     function init() {
 
         setWidth();
 
-        document.querySelectorAll('.flex-item').forEach(handleFlexItem);
+        overlay = document.querySelector('.overlay');
 
+        document.querySelectorAll('.flex-item').forEach(handleFlexItem);
     }
 
     function setWidth(): void {
@@ -68,6 +71,8 @@ namespace Portfolio {
                 item.classList.remove('expanded');
             }
         });
+
+        overlay.style.opacity = "1";
     }
 
     function setupMouseEnter(item: HTMLElement) {
@@ -76,6 +81,8 @@ namespace Portfolio {
             console.log("mouseenter");
             item.classList.add('expanded');
         });
+
+        overlay.style.opacity = "0";
     }
 
     function setupArrow(arrow: Element, item: HTMLElement) {
@@ -94,7 +101,7 @@ function generateContentIn(item: HTMLElement) {
     toggleContentDiv.classList.add("toggle-content");
     toggleContentDiv.classList.add("heading-toggle-content");
     console.log("fahrt");
-    
+
     let projectHeader: HTMLHeadingElement = <HTMLHeadingElement>item.querySelector("h2");
     projectHeader.parentNode?.replaceChild(toggleContentDiv, projectHeader);
 
@@ -120,3 +127,4 @@ function generateContentIn(item: HTMLElement) {
 
     visualPresentationContainer.parentNode?.appendChild(secondToggleContentDiv);
 }
+
