@@ -63,24 +63,26 @@ namespace Portfolio {
 
     function setupMouseLeave(item: HTMLElement) {
 
-        item.addEventListener('mouseleave', (event) => {
-
-            if (!item.contains(event.relatedTarget)) {
-                item.classList.remove('expanded');
-            }
-        });
-
-        overlay.style.opacity = "0";
+        item.addEventListener('mouseleave', onMouseLeave.bind(item));
     }
 
     function setupMouseEnter(item: HTMLElement) {
 
-        item.addEventListener('mouseenter', () => {
-            console.log("mouseenter");
-            item.classList.add('expanded');
-        });
+        item.addEventListener('mouseenter', onMouseEnter.bind(item));
+    }
+
+    function onMouseLeave(this: HTMLElement) {
+
+        this.classList.remove('expanded');
+        overlay.style.opacity = "0";
+    }
+
+    function onMouseEnter(this: HTMLElement) {
+
+        this.classList.add('expanded');
         overlay.style.opacity = "1";
     }
+
 
     function setupArrow(arrow: Element, item: HTMLElement) {
 
