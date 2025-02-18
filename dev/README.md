@@ -175,6 +175,7 @@ h1#header-coding ~ h1 {
 
 video, img, .visual-presentation-container:not(#multi-display) {
 
+  border: 0;
   display: block !important;        /* Macht den <a>-Tag zu einem Blockelement, damit es eine feste Größe haben kann */
 
   width: 100%  !important;          /* Bild skaliert auf die Breite des Containers */
@@ -190,6 +191,9 @@ video, img, .visual-presentation-container:not(#multi-display) {
   cursor: pointer;
 }
 
+#multi-display{
+  border: 0;
+}
 
 .toggle-arrow {
     position: absolute;
