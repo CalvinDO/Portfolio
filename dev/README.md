@@ -155,6 +155,7 @@ h1#header-coding ~ h1 {
     border-radius: 4px;
     box-sizing: border-box;
     height: auto;
+    transition: height 0.3s ease-in-out;
     overflow: visible !important;
     padding: 0; /* Änderung: Vereinheitlicht */
     margin: 0;
