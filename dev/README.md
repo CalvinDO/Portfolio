@@ -161,21 +161,20 @@ h1#header-coding ~ h1 {
 
 .toggle-content h2 {
     position: absolute;
-    top: -100%; /* Schiebt die Überschrift nach oben, abhängig von der Höhe */
+    top: 0;
     width: 100%;
     text-align: center;
     background: white;
-    padding: 5px 0;
+    padding: 0;
+    margin: 0;
+    transform: translateY(-100%);
 }
 
 .flex-item.expanded .toggle-content {
     height: auto;
     overflow: visible;
 }
-.flex-item.expanded .toggle-content h2 {
-    position: relative;
-    top: 0;
-}
+
 @media (max-width: 1225px) {
   .flex-item {
     width: calc(50% - 10px); /* 2 Elemente pro Zeile */
@@ -520,7 +519,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
     Die Umsetzung innerhalb des Kurses "Echtzeit-Computergrafik" im sechsten Semester erfolgte mit WebAR, JavaScript und GLSL. In einem dreiköpfigen Team machten wir uns mit Programmierung von Vertex- und Fragmentshadern vertraut, sowie mit Umgebungsvariablen von WebAR und "Three.js". -->
   </div>
 
-  <div class="flex-item expanded">
+  <div class="flex-item">
     <h2 id="morbus-animi">Morbus Animi</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
         <a href="https://simmer.io/@DerCalvino/morbus-animi-final">
