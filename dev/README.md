@@ -247,7 +247,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
 
 <div class = "flex-container">
   <div class = "flex-item">
-    <div id = "heading-toggle-content" class="toggle-content">
+    <div class="toggle-content heading-toggle-content">
       <h2 id ="bau-simulator">Bau-Simulator<br>
       (Kommerziell)</h2>
     </div>
