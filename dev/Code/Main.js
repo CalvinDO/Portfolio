@@ -3,7 +3,7 @@ var Portfolio;
     let overlay = document.querySelector('#overlay');
     setWidth();
     function init() {
-        overlay = document.querySelector('#overlay');
+        //overlay = <HTMLDivElement>document.querySelector('#overlay');
         document.querySelectorAll('.flex-item').forEach(handleFlexItem);
     }
     function setWidth() {
@@ -49,14 +49,14 @@ var Portfolio;
                 item.classList.remove('expanded');
             }
         });
-        overlay.style.opacity = "1";
+        //overlay.style.opacity = "1";
     }
     function setupMouseEnter(item) {
         item.addEventListener('mouseenter', () => {
             console.log("mouseenter");
             item.classList.add('expanded');
         });
-        overlay.style.opacity = "0";
+        //overlay.style.opacity = "0";
     }
     function setupArrow(arrow, item) {
         arrow.addEventListener('click', () => {
