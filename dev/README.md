@@ -151,29 +151,15 @@ h1#header-coding ~ h1 {
     background: white;
 }
 
-.flex-item.expanded .toggle-content:not(.heading-toggle-content) {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Professioneller Schatten */
-    border: 2px solid rgb(102, 102, 102); /* Stilvolle Farbe für den Rahmen */
+.flex-item.expanded .toggle-content {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgb(102, 102, 102);
     border-radius: 4px;
     box-sizing: border-box;
-    padding: 0; /* Platz für den Rahmen */
-    margin: 0;
-    
-    text-align: center;
-
     height: auto;
     overflow: visible !important;
-}
-
-.flex-item.expanded .heading-toggle-content  {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Professioneller Schatten */
-    border: 2px solid rgb(102, 102, 102); /* Stilvolle Farbe für den Rahmen */
-    border-radius: 4px;
-    box-sizing: border-box;
-    padding: 0; /* Platz für den Rahmen */
+    padding: 0; /* Änderung: Vereinheitlicht */
     margin: 0;
-    height: auto;
-    overflow: visible !important;
 }
 
 @media (max-width: 1225px) {
