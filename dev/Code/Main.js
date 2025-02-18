@@ -1,6 +1,5 @@
 var Portfolio;
 (function (Portfolio) {
-    init();
     let overlay = document.querySelector('#overlay');
     function init() {
         setWidth();
@@ -64,28 +63,29 @@ var Portfolio;
             item.classList.toggle('expanded');
         });
     }
-})(Portfolio || (Portfolio = {}));
-function generateContentIn(item) {
-    //first toggle
-    var _a, _b;
-    let toggleContentDiv = document.createElement("div");
-    toggleContentDiv.classList.add("toggle-content");
-    toggleContentDiv.classList.add("heading-toggle-content");
-    console.log("fahrt");
-    let projectHeader = item.querySelector("h2");
-    (_a = projectHeader.parentNode) === null || _a === void 0 ? void 0 : _a.replaceChild(toggleContentDiv, projectHeader);
-    toggleContentDiv.appendChild(projectHeader);
-    let visualPresentationContainer = item.querySelector(".visual-presentation-container");
-    //second toggle
-    let secondToggleContentDiv = document.createElement("div");
-    secondToggleContentDiv.classList.add("toggle-content");
-    let nextSibling = visualPresentationContainer.nextElementSibling;
-    while (nextSibling) {
-        let currentSibling = nextSibling;
-        nextSibling = currentSibling.nextElementSibling; // das nächste Geschwister-Element
-        // Verschiebe das Element in den 'toggle-content' Wrapper
-        secondToggleContentDiv.appendChild(currentSibling);
+    function generateContentIn(item) {
+        //first toggle
+        var _a, _b;
+        let toggleContentDiv = document.createElement("div");
+        toggleContentDiv.classList.add("toggle-content");
+        toggleContentDiv.classList.add("heading-toggle-content");
+        console.log("fahrt");
+        let projectHeader = item.querySelector("h2");
+        (_a = projectHeader.parentNode) === null || _a === void 0 ? void 0 : _a.replaceChild(toggleContentDiv, projectHeader);
+        toggleContentDiv.appendChild(projectHeader);
+        let visualPresentationContainer = item.querySelector(".visual-presentation-container");
+        //second toggle
+        let secondToggleContentDiv = document.createElement("div");
+        secondToggleContentDiv.classList.add("toggle-content");
+        let nextSibling = visualPresentationContainer.nextElementSibling;
+        while (nextSibling) {
+            let currentSibling = nextSibling;
+            nextSibling = currentSibling.nextElementSibling; // das nächste Geschwister-Element
+            // Verschiebe das Element in den 'toggle-content' Wrapper
+            secondToggleContentDiv.appendChild(currentSibling);
+        }
+        (_b = visualPresentationContainer.parentNode) === null || _b === void 0 ? void 0 : _b.appendChild(secondToggleContentDiv);
     }
-    (_b = visualPresentationContainer.parentNode) === null || _b === void 0 ? void 0 : _b.appendChild(secondToggleContentDiv);
-}
+    window.addEventListener('load', init);
+})(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=Main.js.map

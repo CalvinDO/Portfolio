@@ -1,7 +1,5 @@
 namespace Portfolio {
 
-    init();
-
     let overlay: HTMLDivElement = document.querySelector('#overlay');
 
     function init() {
@@ -91,40 +89,43 @@ namespace Portfolio {
             item.classList.toggle('expanded');
         });
     }
-}
 
-function generateContentIn(item: HTMLElement) {
 
-    //first toggle
+    function generateContentIn(item: HTMLElement) {
 
-    let toggleContentDiv = document.createElement("div");
-    toggleContentDiv.classList.add("toggle-content");
-    toggleContentDiv.classList.add("heading-toggle-content");
-    console.log("fahrt");
+        //first toggle
 
-    let projectHeader: HTMLHeadingElement = <HTMLHeadingElement>item.querySelector("h2");
-    projectHeader.parentNode?.replaceChild(toggleContentDiv, projectHeader);
+        let toggleContentDiv = document.createElement("div");
+        toggleContentDiv.classList.add("toggle-content");
+        toggleContentDiv.classList.add("heading-toggle-content");
+        console.log("fahrt");
 
-    toggleContentDiv.appendChild(projectHeader);
+        let projectHeader: HTMLHeadingElement = <HTMLHeadingElement>item.querySelector("h2");
+        projectHeader.parentNode?.replaceChild(toggleContentDiv, projectHeader);
 
-    let visualPresentationContainer: HTMLDivElement = item.querySelector(".visual-presentation-container");
+        toggleContentDiv.appendChild(projectHeader);
 
-    //second toggle
+        let visualPresentationContainer: HTMLDivElement = item.querySelector(".visual-presentation-container");
 
-    let secondToggleContentDiv = document.createElement("div");
-    secondToggleContentDiv.classList.add("toggle-content");
+        //second toggle
 
-    let nextSibling = visualPresentationContainer.nextElementSibling;
+        let secondToggleContentDiv = document.createElement("div");
+        secondToggleContentDiv.classList.add("toggle-content");
 
-    while (nextSibling) {
+        let nextSibling = visualPresentationContainer.nextElementSibling;
 
-        let currentSibling = nextSibling;
-        nextSibling = currentSibling.nextElementSibling;  // das nächste Geschwister-Element
+        while (nextSibling) {
 
-        // Verschiebe das Element in den 'toggle-content' Wrapper
-        secondToggleContentDiv.appendChild(currentSibling);
+            let currentSibling = nextSibling;
+            nextSibling = currentSibling.nextElementSibling;  // das nächste Geschwister-Element
+
+            // Verschiebe das Element in den 'toggle-content' Wrapper
+            secondToggleContentDiv.appendChild(currentSibling);
+        }
+
+        visualPresentationContainer.parentNode?.appendChild(secondToggleContentDiv);
+
     }
 
-    visualPresentationContainer.parentNode?.appendChild(secondToggleContentDiv);
+    window.addEventListener('load', init);
 }
-
