@@ -160,7 +160,7 @@ h1#header-coding ~ h1 {
     margin: 0;
 }
 
-.overlay {
+#overlay {
   position: fixed;
   top: 0;
   left: 0;
