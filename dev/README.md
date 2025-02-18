@@ -139,9 +139,7 @@ h1#header-coding ~ h1 {
 }
 
 .heading-toggle-content {
-    position: absolute;
     top: 0;
-    width: 100%;
     text-align: center;
     background: white;
     transform: translateY(-100%);
