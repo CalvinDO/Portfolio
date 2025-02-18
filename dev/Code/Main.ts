@@ -92,6 +92,7 @@ function generateContentIn(item: HTMLElement) {
 
     let toggleContentDiv = document.createElement("div");
     toggleContentDiv.classList.add("toggle-content");
+    toggleContentDiv.id = "heading-toggle-content";
 
     let projectHeader: HTMLHeadingElement = <HTMLHeadingElement>item.querySelector("h2");
     projectHeader.parentNode?.replaceChild(toggleContentDiv, projectHeader);

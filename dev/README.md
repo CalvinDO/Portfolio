@@ -127,12 +127,15 @@ h1#header-coding ~ h1 {
     position: absolute;
     z-index: 10;
     width: 100%; /* Passt sich der Breite des flex-item an */
-    background: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     height: 0;
     transition: height 0.3s ease-in-out;
     left: 0; /* Stellt sicher, dass es innerhalb des flex-item bleibt */
+}
+
+.toggle-content:not(#heading-toggle-content){
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .toggle-content h2 {
@@ -150,7 +153,17 @@ h1#header-coding ~ h1 {
     background: white; /* Hebt sich gut ab */
 }
 
-.flex-item.expanded .toggle-content {
+.flex-item.expanded .toggle-content:not(#heading-toggle-content) {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Professioneller Schatten */
+    border: 2px solid rgb(102, 102, 102); /* Stilvolle Farbe für den Rahmen */
+    border-radius: 10px;
+    padding: 10px; /* Platz für den Rahmen */
+    
+    height: auto;
+    overflow: visible;
+}
+
+.flex-item.expanded .toggle-content h2 {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Professioneller Schatten */
     border: 2px solid rgb(102, 102, 102); /* Stilvolle Farbe für den Rahmen */
     border-radius: 10px;
@@ -252,7 +265,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
 
 <div class = "flex-container">
   <div class = "flex-item">
-    <div class="toggle-content">
+    <div id = "heading-toggle-content" class="toggle-content">
       <h2 id ="bau-simulator">Bau-Simulator<br>
       (Kommerziell)</h2>
     </div>
