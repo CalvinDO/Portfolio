@@ -144,18 +144,15 @@ h1#header-coding ~ h1 {
     width: 100%;
     text-align: center;
     background: white;
-    padding: 0;
-    margin: 0;
     transform: translateY(-100%);
 }
 
 .flex-item.expanded {
-    width: calc(33.33% + 6.18%);
     background: white;
 }
 
 .flex-item.expanded .toggle-content:not(.heading-toggle-content) {
-   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Professioneller Schatten */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Professioneller Schatten */
     border: 2px solid rgb(102, 102, 102); /* Stilvolle Farbe für den Rahmen */
     border-radius: 4px;
     box-sizing: border-box;
