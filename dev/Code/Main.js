@@ -66,7 +66,7 @@ function generateContentIn(item) {
     var _a, _b;
     let toggleContentDiv = document.createElement("div");
     toggleContentDiv.classList.add("toggle-content");
-    toggleContentDiv.id = "heading-toggle-content";
+    toggleContentDiv.classList.add("heading-toggle-content");
     let projectHeader = item.querySelector("h2");
     (_a = projectHeader.parentNode) === null || _a === void 0 ? void 0 : _a.replaceChild(toggleContentDiv, projectHeader);
     toggleContentDiv.appendChild(projectHeader);
