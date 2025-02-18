@@ -122,23 +122,42 @@ h1#header-coding ~ h1 {
   position: relative; /* Notwendig, damit .toggle-content sich relativ zum flex-item ausrichtet */
   overflow: visible; /* Erlaubt, dass das ausgeklappte Element überlappt */
 }
-
+/* 
 .flex-item h2 {
   position: absolute;
   top: -50px;
   left: 0;
   width: 100%;
-  height: auto; /* Keine feste Höhe, damit der Text sich anpasst */
-  background: rgba(0, 0, 0, 0.7); /* Dunkler Hintergrund für bessere Lesbarkeit */
+  height: auto; 
+  background: rgba(0, 0, 0, 0.7); 
   color: white;
   text-align: center;
-  z-index: 2; /* Stellt sicher, dass das h2 über dem Bild liegt */
+  z-index: 2; 
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-}
+}  
+
 
 .flex-item.expanded h2 {
   opacity: 1;
+}
+*/
+
+.toggle-content {
+    position: absolute;
+    z-index: 10;
+    width: 100%; /* Passt sich der Breite des flex-item an */
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 0;
+    transition: height 0.3s ease-in-out;
+    left: 0; /* Stellt sicher, dass es innerhalb des flex-item bleibt */
+}
+
+.flex-item.expanded .toggle-content {
+    height: auto;
+    overflow: visible;
 }
 
 @media (max-width: 1225px) {
@@ -171,22 +190,8 @@ video, img, .visual-presentation-container:not(#multi-display) {
   cursor: pointer;
 }
 
-.toggle-content {
-    position: absolute;
-    z-index: 10;
-    width: 100%; /* Passt sich der Breite des flex-item an */
-    background: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    height: 0;
-    transition: height 0.3s ease-in-out;
-    left: 0; /* Stellt sicher, dass es innerhalb des flex-item bleibt */
-}
 
-.flex-item.expanded .toggle-content {
-    height: auto;
-    overflow: visible;
-}
+
 .toggle-arrow {
     position: absolute;
     bottom: 10px;
