@@ -155,7 +155,7 @@ h1#header-coding ~ h1 {
 }
 
 .flex-item.expanded .toggle-content {
-    height: auto;
+    height: fit-content; /* Passt die Höhe an den Inhalt (h4) an */
     overflow: visible;
 }
 
