@@ -125,14 +125,12 @@ h1#header-coding ~ h1 {
 
 .flex-item h2 {
   position: absolute;
-  top: 0;
+  top: -50px;
   left: 0;
   width: 100%;
   height: auto; /* Keine feste Höhe, damit der Text sich anpasst */
   background: rgba(0, 0, 0, 0.7); /* Dunkler Hintergrund für bessere Lesbarkeit */
   color: white;
-  padding: 10px;
-  font-size: 16px;
   text-align: center;
   z-index: 2; /* Stellt sicher, dass das h2 über dem Bild liegt */
   opacity: 0;
