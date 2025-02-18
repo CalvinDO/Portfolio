@@ -180,6 +180,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
     transition: height 0.3s ease-out;
     overflow: hidden;
     height: 0;
+    transition: height 0.3s ease-in-out;
     left: 0; /* Stellt sicher, dass es innerhalb des flex-item bleibt */
 }
 
