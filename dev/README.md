@@ -137,7 +137,7 @@ h1#header-coding ~ h1 {
   transition: opacity 0.3s ease-in-out;
 }
 
-.flex-item:hover h2 {
+.flex-item.expanded h2 {
   opacity: 1;
 }
 
