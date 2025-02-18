@@ -147,15 +147,16 @@ h1#header-coding ~ h1 {
 }
 
 .flex-item.expanded {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Professioneller Schatten */
-    border: 2px solid rgb(102, 102, 102); /* Stilvolle Farbe für den Rahmen */
-    border-radius: 10px;
-    padding: 10px; /* Platz für den Rahmen */
     background: white; /* Hebt sich gut ab */
 }
 
 .flex-item.expanded .toggle-content {
-    height: fit-content; /* Passt die Höhe an den Inhalt (h4) an */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Professioneller Schatten */
+    border: 2px solid rgb(102, 102, 102); /* Stilvolle Farbe für den Rahmen */
+    border-radius: 10px;
+    padding: 10px; /* Platz für den Rahmen */
+    
+    height: auto;
     overflow: visible;
 }
 
