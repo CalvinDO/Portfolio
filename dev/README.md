@@ -177,7 +177,6 @@ video, img, .visual-presentation-container:not(#multi-display) {
     width: 100%; /* Passt sich der Breite des flex-item an */
     background: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: height 0.3s ease-out;
     overflow: hidden;
     height: 0;
     transition: height 0.3s ease-in-out;
