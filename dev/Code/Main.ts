@@ -6,7 +6,7 @@ namespace Portfolio {
 
     function init() {
 
-        //overlay = <HTMLDivElement>document.querySelector('#overlay');
+        overlay = <HTMLDivElement>document.querySelector('#overlay');
 
         document.querySelectorAll('.flex-item').forEach(handleFlexItem);
     }
@@ -70,7 +70,7 @@ namespace Portfolio {
             }
         });
 
-        //overlay.style.opacity = "1";
+        overlay.style.opacity = "0";
     }
 
     function setupMouseEnter(item: HTMLElement) {
@@ -79,8 +79,7 @@ namespace Portfolio {
             console.log("mouseenter");
             item.classList.add('expanded');
         });
-
-        //overlay.style.opacity = "0";
+        overlay.style.opacity = "1";
     }
 
     function setupArrow(arrow: Element, item: HTMLElement) {
