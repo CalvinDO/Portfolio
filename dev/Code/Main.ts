@@ -75,7 +75,6 @@ namespace Portfolio {
 
         this.classList.remove('expanded');
         overlay.style.opacity = "0";
-        console.log(overlay.style.opacity);
     }
 
     function onMouseEnter(this: HTMLElement) {

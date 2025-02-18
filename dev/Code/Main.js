@@ -3,7 +3,7 @@ var Portfolio;
     let overlay = document.querySelector('#overlay');
     setWidth();
     function init() {
-        //overlay = <HTMLDivElement>document.querySelector('#overlay');
+        overlay = document.querySelector('#overlay');
         document.querySelectorAll('.flex-item').forEach(handleFlexItem);
     }
     function setWidth() {
@@ -44,19 +44,18 @@ var Portfolio;
         }
     }
     function setupMouseLeave(item) {
-        item.addEventListener('mouseleave', (event) => {
-            if (!item.contains(event.relatedTarget)) {
-                item.classList.remove('expanded');
-            }
-        });
-        //overlay.style.opacity = "1";
+        item.addEventListener('mouseleave', onMouseLeave.bind(item));
     }
     function setupMouseEnter(item) {
-        item.addEventListener('mouseenter', () => {
-            console.log("mouseenter");
-            item.classList.add('expanded');
-        });
-        //overlay.style.opacity = "0";
+        item.addEventListener('mouseenter', onMouseEnter.bind(item));
+    }
+    function onMouseLeave() {
+        this.classList.remove('expanded');
+        overlay.style.opacity = "0";
+    }
+    function onMouseEnter() {
+        this.classList.add('expanded');
+        overlay.style.opacity = "1";
     }
     function setupArrow(arrow, item) {
         arrow.addEventListener('click', () => {
