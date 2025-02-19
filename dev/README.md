@@ -149,6 +149,11 @@ h1#header-coding ~ h1 {
     background: white;
 }
 
+.flex-item:not(.expanded) {
+    filter: blur(5px);
+    opacity: 0.5;
+}
+
 .flex-item.expanded .toggle-content {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border: 2px solid rgb(102, 102, 102);
