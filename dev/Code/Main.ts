@@ -11,6 +11,8 @@ namespace Portfolio {
         document.querySelectorAll('.flex-item').forEach(handleFlexItem);
     }
 
+
+
     function setWidth(): void {
         document.addEventListener("DOMContentLoaded", function () {
             let innerSections = document.querySelectorAll<HTMLElement>('.inner'); // Holt alle Elemente mit der Klasse .inner
@@ -71,16 +73,31 @@ namespace Portfolio {
         item.addEventListener('mouseenter', onMouseEnter.bind(item));
     }
 
+
     function onMouseLeave(this: HTMLElement) {
 
         this.classList.remove('expanded');
         overlay.style.opacity = "0";
+
+        document.querySelectorAll('.flex-item').forEach(otherItem => {
+            if (otherItem !== this) {
+                (<HTMLElement>otherItem).style.filter = "none";
+                (<HTMLElement>otherItem).style.opacity = "1";
+            }
+        });
     }
 
     function onMouseEnter(this: HTMLElement) {
 
         this.classList.add('expanded');
         overlay.style.opacity = "1";
+
+        document.querySelectorAll('.flex-item').forEach(otherItem => {
+            if (otherItem !== this) {
+                (<HTMLElement>otherItem).style.filter = "blur(5px)";
+                (<HTMLElement>otherItem).style.opacity = "0.5";
+            }
+        });
     }
 
 
