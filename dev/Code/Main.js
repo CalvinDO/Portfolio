@@ -52,10 +52,22 @@ var Portfolio;
     function onMouseLeave() {
         this.classList.remove('expanded');
         overlay.style.opacity = "0";
+        document.querySelectorAll('.flex-item').forEach(otherItem => {
+            if (otherItem !== this) {
+                otherItem.style.filter = "none !important";
+                otherItem.style.opacity = "1 !important";
+            }
+        });
     }
     function onMouseEnter() {
         this.classList.add('expanded');
         overlay.style.opacity = "1";
+        document.querySelectorAll('.flex-item').forEach(otherItem => {
+            if (otherItem !== this) {
+                otherItem.style.filter = "blur(5px) !important";
+                otherItem.style.opacity = "0.5 !important";
+            }
+        });
     }
     function setupArrow(arrow, item) {
         arrow.addEventListener('click', () => {

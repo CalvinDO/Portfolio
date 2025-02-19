@@ -80,10 +80,12 @@ namespace Portfolio {
         overlay.style.opacity = "0";
 
         document.querySelectorAll('.flex-item').forEach(otherItem => {
+            
             if (otherItem !== this) {
+                
                 (<HTMLElement>otherItem).style.filter = "none !important";
                 (<HTMLElement>otherItem).style.opacity = "1 !important";
-                console.log("deblur stuff");
+                
             }
         });
     }
@@ -94,10 +96,12 @@ namespace Portfolio {
         overlay.style.opacity = "1";
 
         document.querySelectorAll('.flex-item').forEach(otherItem => {
+            
             if (otherItem !== this) {
+                
                 (<HTMLElement>otherItem).style.filter = "blur(5px) !important";
                 (<HTMLElement>otherItem).style.opacity = "0.5 !important";
-                console.log("blur stuff");
+                
             }
         });
     }
