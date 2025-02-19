@@ -85,7 +85,7 @@ namespace Portfolio {
                 
                 (<HTMLElement>otherItem).style.filter = "none !important";
                 (<HTMLElement>otherItem).style.opacity = "1 !important";
-                
+                console.log("deblur");
             }
         });
     }
@@ -101,7 +101,8 @@ namespace Portfolio {
                 
                 (<HTMLElement>otherItem).style.filter = "blur(5px) !important";
                 (<HTMLElement>otherItem).style.opacity = "0.5 !important";
-                
+                console.log("blur");
+
             }
         });
     }
