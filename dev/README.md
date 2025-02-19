@@ -36,76 +36,39 @@
 
 <div class = "details-container">
   <details>
-    <summary>Game Design und Entwicklung, frühe Erfahrungen mit Computerspielen, Minecraft-Modifikationen, Redstone-Schaltungen, Level-Design und Spielmodifikationen</summary>
-    - Interesse an Computerspielen von klein auf<br>
-    - Design eigener Level für Super Mario<br>
-    - Minecraft-Redstone-Schaltungen<br>
-    - Erste Schritte im Gamedesign<br>
-    - Modifikationen und Ressourcenpakete in Minecraft<br>
-    <strong>KLICKEN</strong><br>
+    <summary>Game Design und Entwicklung, frühe Erfahrungen mit Computerspielen, Minecraft-Modifikationen, Redstone-Schaltungen, Level-Design und Spielmodifikationen <strong>KLICKEN</strong></summary>
     Seit mein Vater, ein Professor für Computerspiele, mich bereits in sehr frühem Alter von 3 Jahren vorsichtig an dieses Medium herangeführt hat, interessierte ich mich nicht nur für das Spielen, sondern auch ähnlich stark für die Entwicklung von Games. Ich zeichnete zusätzliche Level für Super Mario oder entwarf neue Spiele, das könnte man als meine ersten Schritte im Gamedesign bezeichnen. Später verbrachte ich viel Zeit mit der Kombination der elementaren Redstone-Elemente von Minecraft um logische Schaltungen, Rechensysteme, Binärzähler und Segmentanzeigen zu konstruieren. Auch bereitete mir die Modifikation des Spiels durch selbst gestaltete Resourcepacks viel Freude.
-  </details>
+</details>
 
-  <details>
-      <summary>3D-Modellierung und erste Programmierschritte, Text-Games, Grafikbearbeitung, Batch-Programmierung und erste Erfahrungen mit GIMP</summary>
-      - Interesse an 3D-Modellierung mit Google SketchUp und Sculpt3D<br>
-      - Erste Programmierversuche mit Batch und Windows Editor<br>
-      - Leuchtturm-Projekt mit Fischer-Technik<br>
-      - Zeichentrick-Animationen und Stop-Motion<br>
-      - Einstieg in die grafische Bildbearbeitung mit GIMP<br>
-      <strong>KLICKEN</strong><br>
-      Im Alter von 9 Jahren begann mein Interesse am 3D–Modelling, was sich durch Architektur-Projekte in Google SketchUp und diverses Modeling in Sculpt3D wiederspiegelte. Mit 10 Jahren folgten kleinere Text-Games, die ich mit Batch – meiner ersten Programmiersprache - und dem Windows Editor umsetzte. Mit einem Leuchtturm von Fischer-Technik machte ich zu dieser Zeit auch erste Erfahrungen mit Ablaufsteuerungen. Am Nintendo-DS erstellte ich Zeichentrickanimationen über das Touchpad und kleine Stop-Motion-Trickfilme. Mit 11 Jahren begann ich mit der grafischen Bildbearbeitung mit Paint, mit 13 Jahren intensivierte ich dieses Hobby mit GIMP.
-  </details>
+<details>
+    <summary>3D-Modellierung und erste Programmierschritte, Text-Games, Grafikbearbeitung, Batch-Programmierung und erste Erfahrungen mit GIMP <strong>KLICKEN</strong></summary>
+    Im Alter von 9 Jahren begann mein Interesse am 3D–Modelling, was sich durch Architektur-Projekte in Google SketchUp und diverses Modeling in Sculpt3D wiederspiegelte. Mit 10 Jahren folgten kleinere Text-Games, die ich mit Batch – meiner ersten Programmiersprache - und dem Windows Editor umsetzte. Mit einem Leuchtturm von Fischer-Technik machte ich zu dieser Zeit auch erste Erfahrungen mit Ablaufsteuerungen. Am Nintendo-DS erstellte ich Zeichentrickanimationen über das Touchpad und kleine Stop-Motion-Trickfilme. Mit 11 Jahren begann ich mit der grafischen Bildbearbeitung mit Paint, mit 13 Jahren intensivierte ich dieses Hobby mit GIMP.
+</details>
 
-  <details>
-      <summary>TypeScript, Programmierung und Processing, erste Erfahrungen mit künstlicher Intelligenz und Bildverarbeitung</summary>
-      - Umstieg auf TypeScript für dynamische Bilderzeugung<br>
-      - Erste Erfahrungen mit Processing und Pong-Programmierung<br>
-      - Interesse an digitaler Medienerstellung<br>
-      - Erste Berührung mit künstlicher Intelligenz und Echtzeit-Bildverarbeitung<br>
-      <strong>KLICKEN</strong><br>
-      Etwa zur selben Zeit befreite mich TypeScript aus der Unflexibilität von Batch, was mir die dynamische Generierung zweidimensionaler Bilder auf einem Canvas ermöglichte. Im Rahmen des mehrmals besuchten Kinder-Uni Feriencamps in Furtwangen machte ich erste Erfahrungen mit Processing und programmierte Pong. Jedes Erlernen eines neuen programmiertechnischen Werkzeuges verstärkte die Erkenntnis der Möglichkeit, dadurch meine Ideen in einem digitalem Medium festzuhalten, und sie von mir oder anderen, interaktiv oder passiv, später wieder abrufbar zu machen, was wiederum meine Motivation immer weiter steigen ließ.
-  </details>
+<details>
+    <summary>TypeScript, Programmierung und Processing, erste Erfahrungen mit künstlicher Intelligenz und Bildverarbeitung <strong>KLICKEN</strong></summary>
+    Etwa zur selben Zeit befreite mich TypeScript aus der Unflexibilität von Batch, was mir die dynamische Generierung zweidimensionaler Bilder auf einem Canvas ermöglichte. Im Rahmen des mehrmals besuchten Kinder-Uni Feriencamps in Furtwangen machte ich erste Erfahrungen mit Processing und programmierte Pong. Jedes Erlernen eines neuen programmiertechnischen Werkzeuges verstärkte die Erkenntnis der Möglichkeit, dadurch meine Ideen in einem digitalem Medium festzuhalten, und sie von mir oder anderen, interaktiv oder passiv, später wieder abrufbar zu machen, was wiederum meine Motivation immer weiter steigen ließ.
+</details>
 
-  <details>
-      <summary>Mathematik in der Programmierung, neuronale Netzwerke, fraktale Geometrie und künstliche Intelligenz</summary>
-      - Interesse an Vektorrechnung und fraktaler Geometrie<br>
-      - Programmierung neuronaler Netzwerke für künstliche Intelligenz<br>
-      - Erste formale Ausbildung in Informatik<br>
-      - Experimentelle Programmierung für verschiedene Fächer<br>
-      <strong>KLICKEN</strong><br>
-      Ich erkannte durch die Programmierung die Relevanz der Mathematik in verschiedenen Bereichen und begann mit experimenteller Programmierung für verschiedene Fächer am technischen Gymnasium, wo auch meine erste formale Ausbildung in Informatik begann. Mit 15 Jahren entwickelte ich eine regelrechte Begeisterung für die Möglichkeiten der Vektorrechnung und fraktaler Geometrie. Zusammen mit einem Lehrer und einem Mitschüler, mit dem ich einen Übersetzer für eine ausgedachte Geheimsprache programmierte, gründete ich eine Informatik-AG. In dieser wagten wir uns an die voll umfassende Programmierung neuronaler Netzwerke zum Experimentieren mit künstlicher Intelligenz, besonders bezogen auf Echtzeit-Bildverarbeitung eines Live-Kamerabildes.
-  </details>
+<details>
+    <summary>Mathematik in der Programmierung, neuronale Netzwerke, fraktale Geometrie und künstliche Intelligenz <strong>KLICKEN</strong></summary>
+    Ich erkannte durch die Programmierung die Relevanz der Mathematik in verschiedenen Bereichen und begann mit experimenteller Programmierung für verschiedene Fächer am technischen Gymnasium, wo auch meine erste formale Ausbildung in Informatik begann. Mit 15 Jahren entwickelte ich eine regelrechte Begeisterung für die Möglichkeiten der Vektorrechnung und fraktaler Geometrie. Zusammen mit einem Lehrer und einem Mitschüler, mit dem ich einen Übersetzer für eine ausgedachte Geheimsprache programmierte, gründete ich eine Informatik-AG. In dieser wagten wir uns an die voll umfassende Programmierung neuronaler Netzwerke zum Experimentieren mit künstlicher Intelligenz, besonders bezogen auf Echtzeit-Bildverarbeitung eines Live-Kamerabildes.
+</details>
 
-  <details>
-      <summary>Java-Entwicklungen, Kalender, Game-Of-Life, Tic-Tac-Toe mit KI</summary>
-      - Entwicklung eines ewigen Kalenders und von Game-Of-Life in Java<br>
-      - Umsetzung eines Tic-Tac-Toe-Spiels mit KI<br>
-      - Erste Erfahrungen in der Softwareentwicklung im Studium<br>
-      <strong>KLICKEN</strong><br>
-      Im Rahmen der freiwilligen Aufgaben des Programmieren-Moduls des ersten Semesters meines abgeschlossenen Studiums entwickelte ich mit Java einen ewigen Kalender, Game-Of-Life und Tic-Tac-Toe. Letzteres baute ich zusätzlich mit einem zufällig spielenden Computergegner aus, der zum Trainieren einer künstlichen Intelligenz genutzt werden soll.
-  </details>
+<details>
+    <summary>Java-Entwicklungen, Kalender, Game-Of-Life, Tic-Tac-Toe mit KI <strong>KLICKEN</strong></summary>
+    Im Rahmen der freiwilligen Aufgaben des Programmieren-Moduls des ersten Semesters meines abgeschlossenen Studiums entwickelte ich mit Java einen ewigen Kalender, Game-Of-Life und Tic-Tac-Toe. Letzteres baute ich zusätzlich mit einem zufällig spielenden Computergegner aus, der zum Trainieren einer künstlichen Intelligenz genutzt werden soll.
+</details>
 
-  <details>
-      <summary>GlobalGameJam 2020, VR-Spielentwicklung, Gamedesign und Sounddesign</summary>
-      - Mitwirkung in einem Team bei der Entwicklung eines VR-Spiels<br>
-      - Hauptaufgaben in Gamedesign und Sounddesign<br>
-      - Interesse an 3D-Programmierung und 3D-Modellierung<br>
-      - Weiterentwicklung in Unity und Blender<br>
-      <strong>KLICKEN</strong><br>
-      Beim GlobalGameJam 2020 im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines VR-Spiels mit. Meine Hauptaufgaben lagen bei Gamedesign und Sound (Fuwashima). Dieses Event weckte bei mir erneut das Interesse an der 3D-Programmierung und dem 3D-Modeling, weshalb ich mich in Unity und Blender weiter vertiefte.
-  </details>
+<details>
+    <summary>GlobalGameJam 2020, VR-Spielentwicklung, Gamedesign und Sounddesign <strong>KLICKEN</strong></summary>
+    Beim GlobalGameJam 2020 im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines VR-Spiels mit. Meine Hauptaufgaben lagen bei Gamedesign und Sound (Fuwashima). Dieses Event weckte bei mir erneut das Interesse an der 3D-Programmierung und dem 3D-Modeling, weshalb ich mich in Unity und Blender weiter vertiefte.
+</details>
 
-  <details>
-      <summary>Studium der Medieninformatik, Tutorentätigkeit, Praktikum und Werkstudentenstelle</summary>
-      - Studium der Medieninformatik an der Hochschule Furtwangen<br>
-      - Tutorentätigkeit in Mathematik und Informatik<br>
-      - Praktikum bei Weltenbauer Software Entwicklung GmbH<br>
-      - Weiterbeschäftigung als Werkstudent und Projektstudium<br>
-      - Entwicklung erfolgreicher Spiele im Team<br>
-      <strong>KLICKEN</strong><br>
-      Seit Oktober 2019 studierte ich 7 Semester lang Medieninformatik an der Hochschule Furtwangen. Nach dem ersten Semester erhielt ich von meinen Professoren für Mathematik und Informatik Anfragen als Tutor tätig zu werden und war als solcher für das Modul "Programmierung" eingestellt. Ich beendete das zweite Semester mit einer 360°-Panorama-Verkörperung der Schnitzeljagd an der Hochschule Furtwangen, sowie einer Eisladen-Website mit Server, realisiert als Browsergame. Das Praktikum als drittes Semester absolvierte ich bei weltenbauer. Software Entwicklung GmbH, wo ich am Bau-Simulator im Developer-Team mitarbeitete. Das Unternehmen behielt mich gleich 2 weitere Jahre als Werkstudent, bis zum Ende des Studiums. Im vierten und fünften Semester, dem Projektstudium, entwickelte ich in einem sechsköpfigen Team aus engagierten Studenten das tiefgründige psychologische Horror-Spiel Morbus-Animi, das den ersten Platz der IndieNight-Nominierung gewann. Im sechsten Semester folgten Spiele wie TheLastHope, einem Rogue-like nach H.P. Lovecraft, entwickelt mit fünf anderen talentierten Studenten, oder BeerPhong, einer mobilen browserbasierten AR-Version des berühmten Partyspiels.
-  </details>
+<details>
+    <summary>Studium der Medieninformatik, Tutorentätigkeit, Praktikum und Werkstudentenstelle <strong>KLICKEN</strong></summary>
+    Seit Oktober 2019 studierte ich 7 Semester lang Medieninformatik an der Hochschule Furtwangen. Nach dem ersten Semester erhielt ich von meinen Professoren für Mathematik und Informatik Anfragen als Tutor tätig zu werden und war als solcher für das Modul "Programmierung" eingestellt. Ich beendete das zweite Semester mit einer 360°-Panorama-Verkörperung der Schnitzeljagd an der Hochschule Furtwangen, sowie einer Eisladen-Website mit Server, realisiert als Browsergame. Das Praktikum als drittes Semester absolvierte ich bei weltenbauer. Software Entwicklung GmbH, wo ich am Bau-Simulator im Developer-Team mitarbeitete. Das Unternehmen behielt mich gleich 2 weitere Jahre als Werkstudent, bis zum Ende des Studiums. Im vierten und fünften Semester, dem Projektstudium, entwickelte ich in einem sechsköpfigen Team aus engagierten Studenten das tiefgründige psychologische Horror-Spiel Morbus-Animi, das den ersten Platz der IndieNight-Nominierung gewann. Im sechsten Semester folgten Spiele wie TheLastHope, einem Rogue-like nach H.P. Lovecraft, entwickelt mit fünf anderen talentierten Studenten, oder BeerPhong, einer mobilen browserbasierten AR-Version des berühmten Partyspiels.
+</details>
 </div>
 <br>
 
