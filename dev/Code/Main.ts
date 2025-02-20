@@ -18,7 +18,7 @@ namespace Portfolio {
 
         let detail: HTMLDetailsElement = detailsFlexItem.querySelector("details");
 
-        detailsFlexItem.addEventListener('click', () => { detail.open = true })
+        detailsFlexItem.addEventListener('click', () => { detail.open = true; console.log("set detail open"); })
     }
 
     function setWidth(): void {
