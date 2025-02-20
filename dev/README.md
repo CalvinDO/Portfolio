@@ -117,7 +117,7 @@
       <summary>Alter: 17-18<br>
       <ul>
         <li>
-          Selbststudium - Game-Of-Life & Tic-Tac-Toe mit Java
+          Erstsemester-Selbststudium - Game-Of-Life & Tic-Tac-Toe
         </li>
         <li>
           GGJ VR-Spiel - Gamedesign und Sound (Fuwashima)
@@ -133,7 +133,7 @@
   </details>
 
   <details>
-      <summary>Alter: 18-19<br>
+      <summary>Alter: 18-20<br>
       <ul>
         <li>
           Angestellt als Tutor für Programmierung
@@ -151,11 +151,12 @@
       <strong>KLICKEN</strong>
       </summary>
       <summary>Studium der Medieninformatik, Tutorentätigkeit, Praktikum und Werkstudentenstelle <br> <strong>KLICKEN</strong></summary>
-      Seit Oktober 2019 studierte ich 7 Semester lang Medieninformatik an der Hochschule Furtwangen. Nach dem ersten Semester erhielt ich von meinen Professoren für Mathematik und Informatik Anfragen als Tutor tätig zu werden und war als solcher für das Modul "Programmierung" eingestellt. Ich beendete das zweite Semester mit einer 360°-Panorama-Verkörperung der Schnitzeljagd an der Hochschule Furtwangen, sowie einer Eisladen-Website mit Server, realisiert als Browsergame. Das Praktikum als drittes Semester absolvierte ich bei weltenbauer. Software Entwicklung GmbH, wo ich am Bau-Simulator im Developer-Team mitarbeitete. Das Unternehmen behielt mich gleich 2 weitere Jahre als Werkstudent, bis zum Ende des Studiums. Im vierten und fünften Semester, dem Projektstudium, entwickelte ich in einem sechsköpfigen Team aus engagierten Studenten das tiefgründige psychologische Horror-Spiel Morbus-Animi, das den ersten Platz der IndieNight-Nominierung gewann. Im sechsten Semester folgten Spiele wie TheLastHope, einem Rogue-like nach H.P. Lovecraft, entwickelt mit fünf anderen talentierten Studenten, oder BeerPhong, einer mobilen browserbasierten AR-Version des berühmten Partyspiels.
+      Ab Oktober 2019 studierte ich 7 Semester lang Medieninformatik an der Hochschule Furtwangen. Nach dem ersten Semester erhielt ich von meinen Professoren für Mathematik und Informatik Anfragen als Tutor tätig zu werden und war als solcher für das Modul "Programmierung" eingestellt. Ich beendete das zweite Semester mit einer 360°-Panorama-Verkörperung der Schnitzeljagd an der Hochschule Furtwangen, sowie einer Eisladen-Website mit Server, realisiert als Browsergame. Das Praktikum als drittes Semester absolvierte ich bei weltenbauer. Software Entwicklung GmbH, wo ich am Bau-Simulator im Developer-Team mitarbeitete. Das Unternehmen behielt mich gleich 2 weitere Jahre als Werkstudent, bis zum Ende des Studiums. Im vierten und fünften Semester, dem Projektstudium, entwickelte ich in einem sechsköpfigen Team aus engagierten Studenten das tiefgründige psychologische Horror-Spiel Morbus-Animi, das den ersten Platz der IndieNight-Nominierung gewann. Im sechsten Semester folgten Spiele wie TheLastHope, einem Rogue-like nach H.P. Lovecraft, entwickelt mit fünf anderen talentierten Studenten, oder BeerPhong, einer mobilen browserbasierten AR-Version des berühmten Partyspiels.
   </details>
 </div>
 <br>
 
+Alter: 21  
 Ich schloss das Studium mit meiner [Bachelor-Thesis "Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen"](#neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen) ab, bei dem in einem Editor Knochen-Gelenk-Konstruktionen erstellt werden, die durch Mutationen über Generationen hinweg Laufmuster von Grund auf lernen.  
 <br>
 Auf dieser Seite sammle ich einige meiner Arbeiten, um einen Beleg für meinen Enthusiasmus und Lernfähigkeit zu liefern und Interesse für ein Angebot als Spieleprogrammierer zu wecken. Mittlerweile hat sich eine Spezifikation des Spielgenres herauskristallisiert, in dem ich gerne arbeite: Spiele, die ohne Gewaltdarstellungen dem Spieler eine eher friedliche, meditative Erfahrung bieten. Wenn Mehrspielermodi vorhanden sind, sollten die Spieler konstruktiv und kooperativ zusammenarbeiten. Optimalerweise kämpft der Spieler im Spiel gegen nichts, und kommt im Spielverlauf zu intuitiven Einsichten über tiefgreifende Themen und Philosophien.  
