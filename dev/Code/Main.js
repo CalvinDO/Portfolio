@@ -36,7 +36,6 @@ var Portfolio;
     function handleFlexItem(item) {
         const content = item.querySelector('.toggle-content');
         if (!content) {
-            return;
             generateContentIn(item);
         }
         if (!item.querySelector('.toggle-content')) {
@@ -93,14 +92,14 @@ var Portfolio;
             }
         });
     }
-    function setupArrow(arrow, item) {
+    function setupArrow(arrow, flexItem) {
         arrow.addEventListener('click', () => {
-            item.classList.toggle('expanded');
+            flexItem.classList.toggle('expanded');
         });
     }
     function generateContentIn(item) {
         //first toggle
-        var _a, _b;
+        var _a, _b, _c;
         let toggleContentDiv = document.createElement("div");
         toggleContentDiv.classList.add("toggle-content");
         toggleContentDiv.classList.add("heading-toggle-content");
@@ -110,15 +109,19 @@ var Portfolio;
         let visualPresentationContainer = item.querySelector(".visual-presentation-container");
         //second toggle
         let secondToggleContentDiv = document.createElement("div");
-        secondToggleContentDiv.classList.add("toggle-content");
-        let nextSibling = visualPresentationContainer.nextElementSibling;
+        secondToggleContentDiv.classList.add("toggle-content second-toggle-content");
+        let oldH4 = item.querySelector("h4");
+        (_b = visualPresentationContainer.parentNode) === null || _b === void 0 ? void 0 : _b.replaceChild(secondToggleContentDiv, oldH4);
+        secondToggleContentDiv.appendChild(oldH4);
+        let thirdToggleContentDiv = document.createElement("div");
+        thirdToggleContentDiv.classList.add("toggle-content third-toggle-content");
+        let nextSibling = secondToggleContentDiv.nextElementSibling;
         while (nextSibling) {
             let currentSibling = nextSibling;
-            nextSibling = currentSibling.nextElementSibling; // das nächste Geschwister-Element
-            // Verschiebe das Element in den 'toggle-content' Wrapper
-            secondToggleContentDiv.appendChild(currentSibling);
+            nextSibling = currentSibling.nextElementSibling;
+            thirdToggleContentDiv.appendChild(currentSibling);
         }
-        (_b = visualPresentationContainer.parentNode) === null || _b === void 0 ? void 0 : _b.appendChild(secondToggleContentDiv);
+        (_c = visualPresentationContainer.parentNode) === null || _c === void 0 ? void 0 : _c.appendChild(thirdToggleContentDiv);
     }
     window.addEventListener('load', init);
 })(Portfolio || (Portfolio = {}));

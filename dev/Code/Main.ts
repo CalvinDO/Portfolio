@@ -51,7 +51,6 @@ namespace Portfolio {
         const content = item.querySelector('.toggle-content');
 
         if (!content) {
-            return;
             generateContentIn(item);
         }
 
@@ -137,10 +136,10 @@ namespace Portfolio {
     }
 
 
-    function setupArrow(arrow: Element, item: HTMLElement) {
+    function setupArrow(arrow: Element, flexItem: HTMLElement) {
 
         arrow.addEventListener('click', () => {
-            item.classList.toggle('expanded');
+            flexItem.classList.toggle('expanded');
         });
     }
 
@@ -164,20 +163,26 @@ namespace Portfolio {
         //second toggle
 
         let secondToggleContentDiv = document.createElement("div");
-        secondToggleContentDiv.classList.add("toggle-content");
+        secondToggleContentDiv.classList.add("toggle-content second-toggle-content");
+        let oldH4: HTMLHeadingElement = <HTMLHeadingElement>item.querySelector("h4");
+        visualPresentationContainer.parentNode?.replaceChild(secondToggleContentDiv, oldH4);
+        secondToggleContentDiv.appendChild(oldH4);
 
-        let nextSibling = visualPresentationContainer.nextElementSibling;
+
+        let thirdToggleContentDiv = document.createElement("div");
+        thirdToggleContentDiv.classList.add("toggle-content third-toggle-content");
+
+        let nextSibling = secondToggleContentDiv.nextElementSibling;
 
         while (nextSibling) {
 
             let currentSibling = nextSibling;
-            nextSibling = currentSibling.nextElementSibling;  // das nächste Geschwister-Element
+            nextSibling = currentSibling.nextElementSibling;
 
-            // Verschiebe das Element in den 'toggle-content' Wrapper
-            secondToggleContentDiv.appendChild(currentSibling);
+            thirdToggleContentDiv.appendChild(currentSibling);
         }
 
-        visualPresentationContainer.parentNode?.appendChild(secondToggleContentDiv);
+        visualPresentationContainer.parentNode?.appendChild(thirdToggleContentDiv);
     }
 
     window.addEventListener('load', init);

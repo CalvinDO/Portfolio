@@ -414,7 +414,8 @@ video, img, .visual-presentation-container:not(#multi-display) {
       <strong><a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a></strong> <br>
       <strong>25-köpfiges</strong> Team + Outsourcer<br>
       <strong>Herbst 2020 - Frühling 2023</strong> <br>
-      <strong>Publisher:</strong> <a href = "https://www.astragon.de/">Astragon</a></h4>
+      <strong>Publisher:</strong> <a href = "https://www.astragon.de/">Astragon</a>
+      </h4>
     </div>
       <br>
     <div class = "toggle-content third-toggle-content">
