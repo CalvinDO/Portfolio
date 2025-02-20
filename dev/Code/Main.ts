@@ -149,8 +149,7 @@ namespace Portfolio {
         //first toggle
 
         let toggleContentDiv = document.createElement("div");
-        toggleContentDiv.classList.add("toggle-content");
-        toggleContentDiv.classList.add("heading-toggle-content");
+        toggleContentDiv.classList.add("toggle-content", "heading-toggle-content");
 
 
         let projectHeader: HTMLHeadingElement = <HTMLHeadingElement>item.querySelector("h2");
@@ -163,7 +162,7 @@ namespace Portfolio {
         //second toggle
 
         let secondToggleContentDiv = document.createElement("div");
-        secondToggleContentDiv.classList.add("toggle-content second-toggle-content");
+        secondToggleContentDiv.classList.add("toggle-content", "second-toggle-content");
         let oldH4: HTMLHeadingElement = <HTMLHeadingElement>item.querySelector("h4");
         visualPresentationContainer.parentNode?.replaceChild(secondToggleContentDiv, oldH4);
         secondToggleContentDiv.appendChild(oldH4);

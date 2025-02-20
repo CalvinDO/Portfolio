@@ -101,15 +101,14 @@ var Portfolio;
         //first toggle
         var _a, _b, _c;
         let toggleContentDiv = document.createElement("div");
-        toggleContentDiv.classList.add("toggle-content");
-        toggleContentDiv.classList.add("heading-toggle-content");
+        toggleContentDiv.classList.add("toggle-content", "heading-toggle-content");
         let projectHeader = item.querySelector("h2");
         (_a = projectHeader.parentNode) === null || _a === void 0 ? void 0 : _a.replaceChild(toggleContentDiv, projectHeader);
         toggleContentDiv.appendChild(projectHeader);
         let visualPresentationContainer = item.querySelector(".visual-presentation-container");
         //second toggle
         let secondToggleContentDiv = document.createElement("div");
-        secondToggleContentDiv.classList.add("toggle-content second-toggle-content");
+        secondToggleContentDiv.classList.add("toggle-content", "second-toggle-content");
         let oldH4 = item.querySelector("h4");
         (_b = visualPresentationContainer.parentNode) === null || _b === void 0 ? void 0 : _b.replaceChild(secondToggleContentDiv, oldH4);
         secondToggleContentDiv.appendChild(oldH4);
