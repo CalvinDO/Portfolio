@@ -39,6 +39,9 @@
   text-align: center;
   position: relative;
   bottom: 25px;
+
+  pointer-events: none;
+  user-select: none;
 }
 
 details[open] ~ .klicken {
