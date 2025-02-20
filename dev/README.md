@@ -236,6 +236,12 @@ h1#header-coding ~ h1 {
   background: none;
 }
 
+.heading-toggle-content h4{
+  margin: 0 !important;
+  padding: 0;
+  background: none;
+}
+
 .second-toggle-content {
   bottom: 0;
 }
