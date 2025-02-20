@@ -36,7 +36,21 @@
 
 <div class = "details-container">
   <details>
-    <summary>Game Design und Entwicklung, frühe Erfahrungen mit Computerspielen, Minecraft-Modifikationen, Redstone-Schaltungen, Level-Design und Spielmodifikationen <br> <strong>KLICKEN</strong></summary>
+    <summary>Alter: 3-9<br>
+    <ul>
+      <li>
+        Erste PC-Games gespielt
+      </li>
+       <li>
+        Level-Design & Game Design auf Papier
+      </li>
+       <li>
+        Minecraft-Modifikationen & -Redstone-Schaltungen
+      </li>
+    </ul>
+    <br>
+    <strong>KLICKEN</strong>
+    </summary>
     Seit mein Vater, ein Professor für Computerspiele, mich bereits in sehr frühem Alter von 3 Jahren vorsichtig an dieses Medium herangeführt hat, interessierte ich mich nicht nur für das Spielen, sondern auch ähnlich stark für die Entwicklung von Games. Ich zeichnete zusätzliche Level für Super Mario oder entwarf neue Spiele, das könnte man als meine ersten Schritte im Gamedesign bezeichnen. Später verbrachte ich viel Zeit mit der Kombination der elementaren Redstone-Elemente von Minecraft um logische Schaltungen, Rechensysteme, Binärzähler und Segmentanzeigen zu konstruieren. Auch bereitete mir die Modifikation des Spiels durch selbst gestaltete Resourcepacks viel Freude.
 </details>
 
