@@ -81,17 +81,32 @@
         Dynamische 2D-Generierung
       </li>
        <li>
-        Erste Erfahrungen mit künstlicher Intelligenz
+        
       </li>
     </ul>
     <strong>KLICKEN</strong>
     </summary>
-    <summary>TypeScript, Programmierung und Processing, erste Erfahrungen mit künstlicher Intelligenz und Bildverarbeitung <br> <strong>KLICKEN</strong></summary>
     Etwa zur selben Zeit befreite mich TypeScript aus der Unflexibilität von Batch, was mir die dynamische Generierung zweidimensionaler Bilder auf einem Canvas ermöglichte. Im Rahmen des mehrmals besuchten Kinder-Uni Feriencamps in Furtwangen machte ich erste Erfahrungen mit Processing und programmierte Pong. Jedes Erlernen eines neuen programmiertechnischen Werkzeuges verstärkte die Erkenntnis der Möglichkeit, dadurch meine Ideen in einem digitalem Medium festzuhalten, und sie von mir oder anderen, interaktiv oder passiv, später wieder abrufbar zu machen, was wiederum meine Motivation immer weiter steigen ließ.
 </details>
 
 <details>
-    <summary>Mathematik in der Programmierung, neuronale Netzwerke, fraktale Geometrie und künstliche Intelligenz <br> <strong>KLICKEN</strong></summary>
+    <summary>Alter: 13-15<br>
+    <ul>
+      <li>
+        Experimentelle Mathematik-Programmierung
+      </li>
+       <li>
+        Begeisterung für Vektorrechnung und fraktale Geometrie
+      </li>
+      <li>
+        Gründung der Informatik-AG am Gymnasium
+      </li>
+       <li>
+        Programmierung künstlicher Intellligenz zur Bildverarbeitung
+      </li>
+    </ul>
+    <strong>KLICKEN</strong>
+    </summary>
     Ich erkannte durch die Programmierung die Relevanz der Mathematik in verschiedenen Bereichen und begann mit experimenteller Programmierung für verschiedene Fächer am technischen Gymnasium, wo auch meine erste formale Ausbildung in Informatik begann. Mit 15 Jahren entwickelte ich eine regelrechte Begeisterung für die Möglichkeiten der Vektorrechnung und fraktaler Geometrie. Zusammen mit einem Lehrer und einem Mitschüler, mit dem ich einen Übersetzer für eine ausgedachte Geheimsprache programmierte, gründete ich eine Informatik-AG. In dieser wagten wir uns an die voll umfassende Programmierung neuronaler Netzwerke zum Experimentieren mit künstlicher Intelligenz, besonders bezogen auf Echtzeit-Bildverarbeitung eines Live-Kamerabildes.
 </details>
 
