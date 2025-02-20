@@ -11,7 +11,13 @@ var Portfolio;
         document.querySelectorAll('.details-flex-item').forEach(handleDetailsFlexItem);
     }
     function setupProjectFlexItems() {
-        document.querySelectorAll('.flex-item').forEach(handleFlexItem);
+        document.querySelectorAll('.flex-item').forEach(setupFlexItem);
+        document.querySelectorAll('.toggle-content').forEach(toggleContent => { addClickExpand.bind(toggleContent.parentElement); });
+        document.querySelectorAll('.toggle-arrow').forEach(toggleArrow => { addClickExpand.bind(toggleArrow.parentElement.parentElement); });
+    }
+    function addClickExpand(toggleTrigger) {
+        //this= parent flex-item
+        toggleTrigger.addEventListener('click', () => this.classList.toggle('expand'));
     }
     function handleDetailsFlexItem(detailsFlexItem) {
         let detail = detailsFlexItem.querySelector("details");
@@ -33,7 +39,7 @@ var Portfolio;
             }
         });
     }
-    function handleFlexItem(item) {
+    function setupFlexItem(item) {
         const content = item.querySelector('.toggle-content');
         if (!content) {
             generateContentIn(item);

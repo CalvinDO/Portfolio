@@ -19,8 +19,16 @@ namespace Portfolio {
     }
 
     function setupProjectFlexItems() {
-        document.querySelectorAll('.flex-item').forEach(handleFlexItem);
+        document.querySelectorAll('.flex-item').forEach(setupFlexItem);
+        document.querySelectorAll('.toggle-content').forEach(toggleContent => { addClickExpand.bind(toggleContent.parentElement) });
+        document.querySelectorAll('.toggle-arrow').forEach(toggleArrow => { addClickExpand.bind(toggleArrow.parentElement.parentElement) });
     }
+
+    function addClickExpand(this: HTMLElement, toggleTrigger: HTMLDivElement): void {
+        //this= parent flex-item
+        toggleTrigger.addEventListener('click', () => this.classList.toggle('expand'));
+    }
+
 
     function handleDetailsFlexItem(detailsFlexItem: HTMLElement): void {
 
@@ -46,7 +54,7 @@ namespace Portfolio {
         });
     }
 
-    function handleFlexItem(item: HTMLElement): void {
+    function setupFlexItem(item: HTMLElement): void {
 
         const content = item.querySelector('.toggle-content');
 
@@ -188,5 +196,3 @@ namespace Portfolio {
 
     window.addEventListener('load', init);
 }
-
-
