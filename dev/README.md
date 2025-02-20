@@ -221,7 +221,7 @@ h1#header-coding ~ h1 {
   overflow: visible; /* Erlaubt, dass das ausgeklappte Element überlappt */
 }
 
-.toggle-content{
+.toggle-content {
   height: auto;
   position: absolute;
   z-index: 10;
@@ -230,10 +230,16 @@ h1#header-coding ~ h1 {
   left: 0;
 }
 
+.second-toggle-content {
+
+}
+
 .third-toggle-content {
   /*overflow: hidden;*/
   height: 0;
 }
+
+
 
 /* .toggle-content:not(.third-toggle-content) {
 } */
@@ -249,6 +255,7 @@ h1#header-coding ~ h1 {
   padding: 0; /* Änderung: Vereinheitlicht */
   margin: 0;
 }
+
 .toggle-content:not(.heading-toggle-content){
   background: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -408,11 +415,11 @@ video, img, .visual-presentation-container:not(#multi-display) {
       <strong>25-köpfiges</strong> Team + Outsourcer<br>
       <strong>Herbst 2020 - Frühling 2023</strong> <br>
       <strong>Publisher:</strong> <a href = "https://www.astragon.de/">Astragon</a></h4>
+    </div>
       <br>
+    <div class = "toggle-content third-toggle-content">
       <strong>6</strong> Monate <strong>Praktikant</strong><br>
       <strong>2,5</strong> Jahre <strong>Werkstudent</strong><br>
-    </div>
-    <div class = "toggle-content third-toggle-content">
       <br>
       <div class = "skills">
       <strong>Unity (C#), FMOD (Audio-Integration)</strong><br>
