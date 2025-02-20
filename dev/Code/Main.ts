@@ -169,7 +169,7 @@ namespace Portfolio {
 
 
         let thirdToggleContentDiv = document.createElement("div");
-        thirdToggleContentDiv.classList.add("toggle-content third-toggle-content");
+        thirdToggleContentDiv.classList.add("toggle-content", "third-toggle-content");
 
         let nextSibling = secondToggleContentDiv.nextElementSibling;
 

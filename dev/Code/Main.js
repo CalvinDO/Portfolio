@@ -113,7 +113,7 @@ var Portfolio;
         (_b = visualPresentationContainer.parentNode) === null || _b === void 0 ? void 0 : _b.replaceChild(secondToggleContentDiv, oldH4);
         secondToggleContentDiv.appendChild(oldH4);
         let thirdToggleContentDiv = document.createElement("div");
-        thirdToggleContentDiv.classList.add("toggle-content third-toggle-content");
+        thirdToggleContentDiv.classList.add("toggle-content", "third-toggle-content");
         let nextSibling = secondToggleContentDiv.nextElementSibling;
         while (nextSibling) {
             let currentSibling = nextSibling;
