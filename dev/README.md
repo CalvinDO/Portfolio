@@ -38,7 +38,7 @@
   display: block; /* Damit es zentrierbar ist */
   text-align: center;
   position: relative;
-  bottom: 15%;
+  bottom: 25px;
 }
 
 details[open] ~ .klicken {
