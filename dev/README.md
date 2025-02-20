@@ -221,14 +221,22 @@ h1#header-coding ~ h1 {
   overflow: visible; /* Erlaubt, dass das ausgeklappte Element überlappt */
 }
 
-.toggle-content:not(.third-toggle-content) {
+.toggle-content{
+  height: auto;
   position: absolute;
   z-index: 10;
-  width: 100%; /* Passt sich der Breite des flex-item an */
-  overflow: hidden;
-  height: 0;
-  left: 0; /* Stellt sicher, dass es innerhalb des flex-item bleibt */
+  width: 100%; 
+  overflow: show;
+  left: 0;
 }
+
+.third-toggle-content {
+  /*overflow: hidden;*/
+  height: 0;
+}
+
+/* .toggle-content:not(.third-toggle-content) {
+} */
 
 .flex-item.expanded .toggle-content {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
