@@ -26,6 +26,8 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
+
+    height: 100%;
 }
 
 @media (max-width: 768px) {
@@ -48,6 +50,7 @@
 details[open] ~ .klicken {
     display: none;
 }
+
 
 </style>
 
