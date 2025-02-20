@@ -35,7 +35,7 @@
 
 
   details:not([open]) .klicken{
-    width: auto !important;
+    height: auto !important;
     bottom: 20px !important; 
     position: relative;
   }
