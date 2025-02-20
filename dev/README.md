@@ -410,10 +410,10 @@ video, img, .visual-presentation-container:not(#multi-display) {
         Ihr Browser unterstützt den Video-Tag nicht
     </video>
     </a>
-    <div class="toggle-arrow">▼</div>
       <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
       Klicken zum Spielen
       </div>
+    <div class="toggle-arrow">▼</div>
     </div>
     <div class="toggle-content second-toggle-content">
       <h4>

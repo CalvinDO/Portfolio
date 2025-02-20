@@ -62,7 +62,7 @@ var Portfolio;
         let toggleArrowDiv = document.createElement("div");
         toggleArrowDiv.classList.add("toggle-arrow");
         toggleArrowDiv.innerHTML = "▼";
-        item.querySelector(".visual-presentation-container a:last-of-type").insertAdjacentElement('afterend', toggleArrowDiv);
+        item.querySelector(".visual-presentation-container").insertAdjacentElement('beforeend', toggleArrowDiv);
     }
     function setupMouseLeave(item) {
         item.addEventListener('mouseleave', onMouseLeave.bind(item));
