@@ -147,7 +147,6 @@
       </ul>
       <strong>KLICKEN</strong>
       </summary>
-      <summary>Studium der Medieninformatik, Tutorentätigkeit, Praktikum und Werkstudentenstelle <br> <strong>KLICKEN</strong></summary>
       Ab Oktober 2019 studierte ich 7 Semester lang Medieninformatik an der Hochschule Furtwangen. Nach dem ersten Semester erhielt ich von meinen Professoren für Mathematik und Informatik Anfragen als Tutor tätig zu werden und war als solcher für das Modul "Programmierung" eingestellt. Ich beendete das zweite Semester mit einer 360°-Panorama-Verkörperung der Schnitzeljagd an der Hochschule Furtwangen, sowie einer Eisladen-Website mit Server, realisiert als Browsergame. Das Praktikum als drittes Semester absolvierte ich bei weltenbauer. Software Entwicklung GmbH, wo ich am Bau-Simulator im Developer-Team mitarbeitete. Das Unternehmen behielt mich gleich 2 weitere Jahre als Werkstudent, bis zum Ende des Studiums. Im vierten und fünften Semester, dem Projektstudium, entwickelte ich in einem sechsköpfigen Team aus engagierten Studenten das tiefgründige psychologische Horror-Spiel Morbus-Animi, das den ersten Platz der IndieNight-Nominierung gewann. Im sechsten Semester folgten Spiele wie TheLastHope, einem Rogue-like nach H.P. Lovecraft, entwickelt mit fünf anderen talentierten Studenten, oder BeerPhong, einer mobilen browserbasierten AR-Version des berühmten Partyspiels.
   </details>
 </div>
