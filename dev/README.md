@@ -231,7 +231,7 @@ h1#header-coding ~ h1 {
 }
 
 .second-toggle-content {
-  top: -0%;
+  bottom: 0;
 }
 
 .third-toggle-content {
