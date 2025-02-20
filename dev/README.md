@@ -230,6 +230,12 @@ h1#header-coding ~ h1 {
   left: 0;
 }
 
+.heading-toggle-content {
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
 .second-toggle-content {
   bottom: 0;
 }
