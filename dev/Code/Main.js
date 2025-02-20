@@ -83,7 +83,7 @@ var Portfolio;
         if (!arrow) {
             insertArrowIn(item);
         }
-        let isMobile = window.matchMedia("(max-width: 768px)").matches;
+        let isMobile = window.matchMedia("(max-width: 890px)").matches;
         //console.log("isMobile? " + isMobile);
         if (isMobile) {
             setupArrow(arrow, item);

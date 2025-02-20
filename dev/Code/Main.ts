@@ -38,14 +38,14 @@ namespace Portfolio {
             return;
         }
 
-        
+
         document.querySelectorAll('.flex-item').forEach((otherItem: HTMLElement) => {
-            
+
             if (otherItem !== this) {
-                
+
                 (<HTMLElement>otherItem).style.filter = "blur(5px) !important";
                 (<HTMLElement>otherItem).style.opacity = "0.5 !important";
-                
+
                 if (otherItem.classList.contains('expanded')) {
                     dexpandProjectFlexItem(otherItem);
                 }
@@ -118,7 +118,7 @@ namespace Portfolio {
         if (!arrow) {
             insertArrowIn(item);
         }
-        let isMobile = window.matchMedia("(max-width: 768px)").matches;
+        let isMobile = window.matchMedia("(max-width: 890px)").matches;
         //console.log("isMobile? " + isMobile);
 
         if (isMobile) {
