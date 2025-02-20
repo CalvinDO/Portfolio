@@ -14,6 +14,7 @@
 # Motivation
 
 <style>
+  
 .details-container {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Zwei Spalten */
@@ -93,13 +94,13 @@ details[open] ~ .klicken {
 
   <div class = "details-flex-item">
     <details>
-        <summary>Alter: 13-15<br>
+        <summary>Alter: 13-14<br>
         <ul>
           <li>
-            Dynamische 2D-Generierung mit TypeScript 
+            Pong mit Processing
           </li>
           <li>
-            Pong mit Processing
+            Dynamische 2D-Generierung mit TypeScript 
           </li>
         </ul>
         </summary>
@@ -110,11 +111,8 @@ details[open] ~ .klicken {
 
   <div class = "details-flex-item">
     <details>
-        <summary>Alter: 13-16<br>
+        <summary>Alter: 14-16<br>
         <ul>
-          <li>
-            Experimentelle Mathematik-Programmierung
-          </li>
           <li>
             Begeisterung für Vektorrechnung und fraktale Geometrie
           </li>
