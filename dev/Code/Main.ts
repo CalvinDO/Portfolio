@@ -56,7 +56,7 @@ namespace Portfolio {
         //const container: HTMLDivElement = <HTMLDivElement>item.querySelector('.visual-presentation-container');
         const arrow = item.querySelector('.toggle-arrow');
         if (!arrow) {
-            buildArrowIn(item);
+            insertArrowIn(item);
         }
         let isMobile = window.matchMedia("(max-width: 768px)").matches;
         //console.log("isMobile? " + isMobile);
@@ -73,7 +73,7 @@ namespace Portfolio {
         }
     }
 
-    function buildArrowIn(item: HTMLElement) {
+    function insertArrowIn(item: HTMLElement) {
 
         let toggleArrowDiv = document.createElement("div");
         toggleArrowDiv.classList.add("toggle-arrow");
