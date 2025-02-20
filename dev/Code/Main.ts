@@ -183,6 +183,8 @@ namespace Portfolio {
         }
 
         visualPresentationContainer.parentNode?.appendChild(thirdToggleContentDiv);
+
+        console.log("setup 3 toggle contents");
     }
 
     window.addEventListener('load', init);

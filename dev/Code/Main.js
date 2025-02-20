@@ -122,6 +122,7 @@ var Portfolio;
             thirdToggleContentDiv.appendChild(currentSibling);
         }
         (_c = visualPresentationContainer.parentNode) === null || _c === void 0 ? void 0 : _c.appendChild(thirdToggleContentDiv);
+        console.log("setup 3 toggle contents");
     }
     window.addEventListener('load', init);
 })(Portfolio || (Portfolio = {}));
