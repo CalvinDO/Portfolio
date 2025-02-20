@@ -41,7 +41,7 @@
   display: block; /* Damit es zentrierbar ist */
   text-align: center;
   position: relative;
-  bottom: 25px;
+  bottom: 50px;
 
   pointer-events: none;
   user-select: none;
