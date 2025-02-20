@@ -17,6 +17,7 @@ var Portfolio;
     }
     function addClickExpand(toggleTrigger) {
         //this= parent flex-item
+        console.log("parent or parent parent:", this);
         toggleTrigger.addEventListener('click', () => {
             expandProjectFlexItem(this);
         });
