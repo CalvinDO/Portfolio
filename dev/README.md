@@ -75,13 +75,10 @@
       <summary>Alter: 13-15<br>
       <ul>
         <li>
-          Programmierung mit TypeScript und Processing
+          Dynamische 2D-Generierung mit TypeScript 
         </li>
         <li>
-          Dynamische 2D-Generierung
-        </li>
-        <li>
-          
+          Pong mit Processing
         </li>
       </ul>
       <strong>KLICKEN</strong>
