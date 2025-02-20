@@ -9,9 +9,16 @@ namespace Portfolio {
         overlay = <HTMLDivElement>document.querySelector('#overlay');
 
         document.querySelectorAll('.flex-item').forEach(handleFlexItem);
+
+        document.querySelectorAll('.details-flex-item').forEach(handleDetailsFlexItem);
     }
 
 
+    function handleDetailsFlexItem(detailsFlexItem: HTMLElement): void {
+
+        let detail: HTMLDetailsElement = detailsFlexItem.querySelector("details");
+        detailsFlexItem.addEventListener('click', () => { detail.open = true })
+    }
 
     function setWidth(): void {
         document.addEventListener("DOMContentLoaded", function () {
@@ -80,9 +87,9 @@ namespace Portfolio {
         overlay.style.opacity = "0";
 
         document.querySelectorAll('.flex-item').forEach(otherItem => {
-            
+
             if (otherItem !== this) {
-                
+
                 (<HTMLElement>otherItem).style.filter = "none !important";
                 (<HTMLElement>otherItem).style.opacity = "1 !important";
                 console.log("deblur");
@@ -96,9 +103,9 @@ namespace Portfolio {
         overlay.style.opacity = "1";
 
         document.querySelectorAll('.flex-item').forEach(otherItem => {
-            
+
             if (otherItem !== this) {
-                
+
                 (<HTMLElement>otherItem).style.filter = "blur(5px) !important";
                 (<HTMLElement>otherItem).style.opacity = "0.5 !important";
                 console.log("blur");
@@ -154,3 +161,4 @@ namespace Portfolio {
 
     window.addEventListener('load', init);
 }
+
