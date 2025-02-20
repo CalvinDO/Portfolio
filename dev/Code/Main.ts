@@ -168,10 +168,7 @@ namespace Portfolio {
         }
 
         visualPresentationContainer.parentNode?.appendChild(secondToggleContentDiv);
-
     }
-
-
 
     window.addEventListener('load', init);
 }
