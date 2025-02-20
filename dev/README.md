@@ -57,7 +57,7 @@
     <summary>Alter: 9-13<br>
     <ul>
       <li>
-        3D-Modellierung, Zeichentrickanimationen & Stop-Motion-Trickfilme
+        3D-Modellierung, Zeichen & Stop-Motion-Trickfilme
       </li>
        <li>
         Text-Games mit Batch
