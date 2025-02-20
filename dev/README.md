@@ -18,7 +18,7 @@
 .details-container {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Zwei Spalten */
-    gap: 20px;
+    gap: 0px;
 }
 
 .details-container details {

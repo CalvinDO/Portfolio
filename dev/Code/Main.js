@@ -19,6 +19,7 @@ var Portfolio;
                 // Schleife über jedes gefundene Element
                 innerSections.forEach(function (innerSection) {
                     // Setzt die Breite jedes Elements auf 80% oder 1200px
+                    innerSection.style.setProperty('padding', '0');
                     innerSection.style.setProperty('width', /*'85.4102%'*/ '100%', 'important');
                     innerSection.style.setProperty('max-width', 'none', 'important');
                     innerSection.style.setProperty('min-width', 'none', 'important');
