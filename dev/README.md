@@ -226,16 +226,16 @@ h1#header-coding ~ h1 {
   position: absolute;
   z-index: 10;
   width: 100%; 
-  overflow: show;
+  overflow: visible;
   left: 0;
 }
 
 .second-toggle-content {
-
+  top: -0%;
 }
 
 .third-toggle-content {
-  /*overflow: hidden;*/
+  overflow: hidden;
   height: 0 !important;
 }
 
