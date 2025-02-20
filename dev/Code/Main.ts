@@ -17,6 +17,7 @@ namespace Portfolio {
     function handleDetailsFlexItem(detailsFlexItem: HTMLElement): void {
 
         let detail: HTMLDetailsElement = detailsFlexItem.querySelector("details");
+
         detailsFlexItem.addEventListener('click', () => { detail.open = true })
     }
 
@@ -54,7 +55,9 @@ namespace Portfolio {
 
         //const container: HTMLDivElement = <HTMLDivElement>item.querySelector('.visual-presentation-container');
         const arrow = item.querySelector('.toggle-arrow');
-
+        if (!arrow) {
+            buildArrowIn(item);
+        }
         let isMobile = window.matchMedia("(max-width: 768px)").matches;
         //console.log("isMobile? " + isMobile);
 
@@ -68,6 +71,15 @@ namespace Portfolio {
 
             setupMouseLeave(item);
         }
+    }
+
+    function buildArrowIn(item: HTMLElement) {
+
+        let toggleArrowDiv = document.createElement("div");
+        toggleArrowDiv.classList.add("toggle-arrow");
+        toggleArrowDiv.innerHTML = "▼";
+
+        item.querySelector(".visual-presentation-container a:last-of-type").insertAdjacentElement('afterend', toggleArrowDiv);
     }
 
     function setupMouseLeave(item: HTMLElement) {
@@ -159,6 +171,9 @@ namespace Portfolio {
 
     }
 
+
+
     window.addEventListener('load', init);
 }
+
 
