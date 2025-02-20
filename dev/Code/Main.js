@@ -5,6 +5,11 @@ var Portfolio;
     function init() {
         overlay = document.querySelector('#overlay');
         document.querySelectorAll('.flex-item').forEach(handleFlexItem);
+        document.querySelectorAll('.details-flex-item').forEach(handleDetailsFlexItem);
+    }
+    function handleDetailsFlexItem(detailsFlexItem) {
+        let detail = detailsFlexItem.querySelector("details");
+        detailsFlexItem.addEventListener('click', () => { detail.open = true; console.log("set detail open"); });
     }
     function setWidth() {
         document.addEventListener("DOMContentLoaded", function () {
@@ -33,6 +38,9 @@ var Portfolio;
         //console.log("content found");
         //const container: HTMLDivElement = <HTMLDivElement>item.querySelector('.visual-presentation-container');
         const arrow = item.querySelector('.toggle-arrow');
+        if (!arrow) {
+            insertArrowIn(item);
+        }
         let isMobile = window.matchMedia("(max-width: 768px)").matches;
         //console.log("isMobile? " + isMobile);
         if (isMobile) {
@@ -42,6 +50,12 @@ var Portfolio;
             setupMouseEnter(item);
             setupMouseLeave(item);
         }
+    }
+    function insertArrowIn(item) {
+        let toggleArrowDiv = document.createElement("div");
+        toggleArrowDiv.classList.add("toggle-arrow");
+        toggleArrowDiv.innerHTML = "▼";
+        item.querySelector(".visual-presentation-container a:last-of-type").insertAdjacentElement('afterend', toggleArrowDiv);
     }
     function setupMouseLeave(item) {
         item.addEventListener('mouseleave', onMouseLeave.bind(item));
