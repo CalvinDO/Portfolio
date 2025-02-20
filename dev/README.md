@@ -287,10 +287,10 @@ h1#header-coding ~ h1 {
   background: white;
 }
 
-.flex-container:hover .flex-item:not(.expanded) {
+/* .flex-container:hover .flex-item:not(.expanded) {
   filter: blur(5px);
   opacity: 0.5;
-}
+} */
 
 
 #overlay {
