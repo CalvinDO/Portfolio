@@ -17,7 +17,34 @@ var Portfolio;
     }
     function addClickExpand(toggleTrigger) {
         //this= parent flex-item
-        toggleTrigger.addEventListener('click', () => this.classList.toggle('expand'));
+        toggleTrigger.addEventListener('click', () => {
+            expandProjectFlexItem(this);
+        });
+    }
+    function expandProjectFlexItem(item) {
+        if (this.classList.contains('expanded')) {
+            dexpandProjectFlexItem(this);
+            return;
+        }
+        this.classList.toggle('expanded', true);
+        document.querySelectorAll('.flex-item').forEach((otherItem) => {
+            if (otherItem !== this) {
+                otherItem.style.filter = "blur(5px) !important";
+                otherItem.style.opacity = "0.5 !important";
+                if (otherItem.classList.contains('expanded')) {
+                    dexpandProjectFlexItem(otherItem);
+                }
+            }
+        });
+    }
+    function dexpandProjectFlexItem(item) {
+        this.classList.toggle('expanded', false);
+        document.querySelectorAll('.flex-item').forEach(otherItem => {
+            if (otherItem !== this) {
+                otherItem.style.filter = "none !important";
+                otherItem.style.opacity = "1 !important";
+            }
+        });
     }
     function handleDetailsFlexItem(detailsFlexItem) {
         let detail = detailsFlexItem.querySelector("details");
@@ -77,26 +104,12 @@ var Portfolio;
         item.addEventListener('mouseenter', onMouseEnter.bind(item));
     }
     function onMouseLeave() {
-        this.classList.remove('expanded');
+        this.classList.remove('hovered');
         overlay.style.opacity = "0";
-        document.querySelectorAll('.flex-item').forEach(otherItem => {
-            if (otherItem !== this) {
-                otherItem.style.filter = "none !important";
-                otherItem.style.opacity = "1 !important";
-                console.log("deblur");
-            }
-        });
     }
     function onMouseEnter() {
-        this.classList.add('expanded');
+        this.classList.add('hovered');
         overlay.style.opacity = "1";
-        document.querySelectorAll('.flex-item').forEach(otherItem => {
-            if (otherItem !== this) {
-                otherItem.style.filter = "blur(5px) !important";
-                otherItem.style.opacity = "0.5 !important";
-                console.log("blur");
-            }
-        });
     }
     function setupArrow(arrow, flexItem) {
         arrow.addEventListener('click', () => {

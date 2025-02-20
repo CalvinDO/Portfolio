@@ -26,7 +26,45 @@ namespace Portfolio {
 
     function addClickExpand(this: HTMLElement, toggleTrigger: HTMLDivElement): void {
         //this= parent flex-item
-        toggleTrigger.addEventListener('click', () => this.classList.toggle('expand'));
+        toggleTrigger.addEventListener('click', () => {
+            expandProjectFlexItem(this);
+        });
+    }
+
+    function expandProjectFlexItem(item: HTMLElement): void {
+
+        if (this.classList.contains('expanded')) {
+            dexpandProjectFlexItem(this);
+            return;
+        }
+
+        this.classList.toggle('expanded', true);
+
+        document.querySelectorAll('.flex-item').forEach((otherItem: HTMLElement) => {
+
+            if (otherItem !== this) {
+
+                (<HTMLElement>otherItem).style.filter = "blur(5px) !important";
+                (<HTMLElement>otherItem).style.opacity = "0.5 !important";
+
+                if (otherItem.classList.contains('expanded')) {
+                    dexpandProjectFlexItem(otherItem);
+                }
+            }
+        });
+    }
+
+    function dexpandProjectFlexItem(item: HTMLElement): void {
+
+        this.classList.toggle('expanded', false);
+        document.querySelectorAll('.flex-item').forEach(otherItem => {
+
+            if (otherItem !== this) {
+
+                (<HTMLElement>otherItem).style.filter = "none !important";
+                (<HTMLElement>otherItem).style.opacity = "1 !important";
+            }
+        });
     }
 
 
@@ -112,35 +150,14 @@ namespace Portfolio {
 
     function onMouseLeave(this: HTMLElement) {
 
-        this.classList.remove('expanded');
+        this.classList.remove('hovered');
         overlay.style.opacity = "0";
-
-        document.querySelectorAll('.flex-item').forEach(otherItem => {
-
-            if (otherItem !== this) {
-
-                (<HTMLElement>otherItem).style.filter = "none !important";
-                (<HTMLElement>otherItem).style.opacity = "1 !important";
-                console.log("deblur");
-            }
-        });
     }
 
     function onMouseEnter(this: HTMLElement) {
 
-        this.classList.add('expanded');
+        this.classList.add('hovered');
         overlay.style.opacity = "1";
-
-        document.querySelectorAll('.flex-item').forEach(otherItem => {
-
-            if (otherItem !== this) {
-
-                (<HTMLElement>otherItem).style.filter = "blur(5px) !important";
-                (<HTMLElement>otherItem).style.opacity = "0.5 !important";
-                console.log("blur");
-
-            }
-        });
     }
 
 
