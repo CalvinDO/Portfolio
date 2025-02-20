@@ -4,16 +4,16 @@ var Portfolio;
     setWidth();
     function init() {
         overlay = document.querySelector('#overlay');
-        setupProjectFlexItems();
         setupDetailsFlexItems();
+        setupProjectFlexItems();
     }
     function setupDetailsFlexItems() {
         document.querySelectorAll('.details-flex-item').forEach(handleDetailsFlexItem);
     }
     function setupProjectFlexItems() {
         document.querySelectorAll('.flex-item').forEach(setupFlexItem);
-        document.querySelectorAll('.toggle-content').forEach(toggleContent => { addClickExpand.bind(toggleContent.parentElement); });
-        document.querySelectorAll('.toggle-arrow').forEach(toggleArrow => { addClickExpand.bind(toggleArrow.parentElement.parentElement); });
+        document.querySelectorAll('.toggle-content').forEach(toggleContent => { console.log("addlistener"); addClickExpand.bind(toggleContent.parentElement); });
+        document.querySelectorAll('.toggle-arrow').forEach(toggleArrow => { console.log("addlistener"); addClickExpand.bind(toggleArrow.parentElement.parentElement); });
     }
     function addClickExpand(toggleTrigger) {
         //this= parent flex-item

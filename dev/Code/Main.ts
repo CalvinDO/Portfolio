@@ -8,9 +8,9 @@ namespace Portfolio {
 
         overlay = <HTMLDivElement>document.querySelector('#overlay');
 
-        setupProjectFlexItems();
-
         setupDetailsFlexItems();
+
+        setupProjectFlexItems();
     }
 
 
@@ -20,8 +20,8 @@ namespace Portfolio {
 
     function setupProjectFlexItems() {
         document.querySelectorAll('.flex-item').forEach(setupFlexItem);
-        document.querySelectorAll('.toggle-content').forEach(toggleContent => { addClickExpand.bind(toggleContent.parentElement) });
-        document.querySelectorAll('.toggle-arrow').forEach(toggleArrow => { addClickExpand.bind(toggleArrow.parentElement.parentElement) });
+        document.querySelectorAll('.toggle-content').forEach(toggleContent => { console.log("addlistener"); addClickExpand.bind(toggleContent.parentElement); });
+        document.querySelectorAll('.toggle-arrow').forEach(toggleArrow => { console.log("addlistener"); addClickExpand.bind(toggleArrow.parentElement.parentElement); });
     }
 
     function addClickExpand(this: HTMLElement, toggleTrigger: HTMLDivElement): void {
