@@ -8,11 +8,19 @@ namespace Portfolio {
 
         overlay = <HTMLDivElement>document.querySelector('#overlay');
 
-        document.querySelectorAll('.flex-item').forEach(handleFlexItem);
+        setupProjectFlexItems();
 
+        setupDetailsFlexItems();
+    }
+
+
+    function setupDetailsFlexItems() {
         document.querySelectorAll('.details-flex-item').forEach(handleDetailsFlexItem);
     }
 
+    function setupProjectFlexItems() {
+        document.querySelectorAll('.flex-item').forEach(handleFlexItem);
+    }
 
     function handleDetailsFlexItem(detailsFlexItem: HTMLElement): void {
 
@@ -43,6 +51,7 @@ namespace Portfolio {
         const content = item.querySelector('.toggle-content');
 
         if (!content) {
+            return;
             generateContentIn(item);
         }
 

@@ -222,47 +222,49 @@ h1#header-coding ~ h1 {
 }
 
 .toggle-content {
-    position: absolute;
-    z-index: 10;
-    width: 100%; /* Passt sich der Breite des flex-item an */
-    overflow: hidden;
-    height: 0;
-    transition: height 0.3s ease-in-out;
-    left: 0; /* Stellt sicher, dass es innerhalb des flex-item bleibt */
-}
-
-.toggle-content:not(.heading-toggle-content){
-    background: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.heading-toggle-content {
-    top: 0;
-    text-align: center;
-    background: white;
-    transform: translateY(-100%);
-}
-
-.flex-item.expanded {
-    background: white;
-}
-
-.flex-container:hover .flex-item:not(.expanded) {
-    filter: blur(5px);
-    opacity: 0.5;
+  position: absolute;
+  z-index: 10;
+  width: 100%; /* Passt sich der Breite des flex-item an */
+  overflow: hidden;
+  height: 0;
+  left: 0; /* Stellt sicher, dass es innerhalb des flex-item bleibt */
 }
 
 .flex-item.expanded .toggle-content {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border: 2px solid rgb(102, 102, 102);
-    border-radius: 4px;
-    box-sizing: border-box;
-    height: auto;
-    /*transition: height 0.3s ease-in-out;*/
-    overflow: visible !important;
-    padding: 0; /* Änderung: Vereinheitlicht */
-    margin: 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgb(102, 102, 102);
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: auto;
+  /*transition: height 0.3s ease-in-out;*/
+  overflow: visible !important;
+  padding: 0; /* Änderung: Vereinheitlicht */
+  margin: 0;
 }
+.toggle-content:not(.heading-toggle-content){
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.heading-toggle-content {
+  top: 0;
+  text-align: center;
+  background: white;
+}
+
+.expanded .heading-toggle-content {
+  transform: translateY(-100%);
+}
+
+.flex-item.expanded {
+  background: white;
+}
+
+.flex-container:hover .flex-item:not(.expanded) {
+  filter: blur(5px);
+  opacity: 0.5;
+}
+
 
 #overlay {
   position: fixed;
@@ -392,7 +394,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
       Klicken zum Spielen
       </div>
     </div>
-    <div class="toggle-content">
+    <div class="toggle-content second-toggle-content">
       <h4>
       <strong><a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a></strong> <br>
       <strong>25-köpfiges</strong> Team + Outsourcer<br>
@@ -401,6 +403,8 @@ video, img, .visual-presentation-container:not(#multi-display) {
       <br>
       <strong>6</strong> Monate <strong>Praktikant</strong><br>
       <strong>2,5</strong> Jahre <strong>Werkstudent</strong><br>
+    </div>
+    <div class = "toggle-content third-toggle-content">
       <br>
       <div class = "skills">
       <strong>Unity (C#), FMOD (Audio-Integration)</strong><br>
@@ -479,7 +483,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
             <li>Hinzufügen und Einstellen von Gliedern und Gelenken</li>
         </ul>
     </li>
-</ul>
+    </ul>
     <div class = "controls">
     Kamera: Mausbewegung und Drücken, Scrollen<br>
     Bauen neuer Glieder: Starten mit Linksklick, Verlängerung mit Mausbewegung. Bauen Abschließen: erneuter Linksklick<br>

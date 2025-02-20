@@ -4,8 +4,14 @@ var Portfolio;
     setWidth();
     function init() {
         overlay = document.querySelector('#overlay');
-        document.querySelectorAll('.flex-item').forEach(handleFlexItem);
+        setupProjectFlexItems();
+        setupDetailsFlexItems();
+    }
+    function setupDetailsFlexItems() {
         document.querySelectorAll('.details-flex-item').forEach(handleDetailsFlexItem);
+    }
+    function setupProjectFlexItems() {
+        document.querySelectorAll('.flex-item').forEach(handleFlexItem);
     }
     function handleDetailsFlexItem(detailsFlexItem) {
         let detail = detailsFlexItem.querySelector("details");
@@ -30,6 +36,7 @@ var Portfolio;
     function handleFlexItem(item) {
         const content = item.querySelector('.toggle-content');
         if (!content) {
+            return;
             generateContentIn(item);
         }
         if (!item.querySelector('.toggle-content')) {
