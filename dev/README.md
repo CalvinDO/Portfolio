@@ -72,6 +72,20 @@
 </details>
 
 <details>
+    <summary>Alter: 13-15<br>
+    <ul>
+      <li>
+        Programmierung mit TypeScript und Processing
+      </li>
+       <li>
+        Dynamische 2D-Generierung
+      </li>
+       <li>
+        Erste Erfahrungen mit künstlicher Intelligenz
+      </li>
+    </ul>
+    <strong>KLICKEN</strong>
+    </summary>
     <summary>TypeScript, Programmierung und Processing, erste Erfahrungen mit künstlicher Intelligenz und Bildverarbeitung <br> <strong>KLICKEN</strong></summary>
     Etwa zur selben Zeit befreite mich TypeScript aus der Unflexibilität von Batch, was mir die dynamische Generierung zweidimensionaler Bilder auf einem Canvas ermöglichte. Im Rahmen des mehrmals besuchten Kinder-Uni Feriencamps in Furtwangen machte ich erste Erfahrungen mit Processing und programmierte Pong. Jedes Erlernen eines neuen programmiertechnischen Werkzeuges verstärkte die Erkenntnis der Möglichkeit, dadurch meine Ideen in einem digitalem Medium festzuhalten, und sie von mir oder anderen, interaktiv oder passiv, später wieder abrufbar zu machen, was wiederum meine Motivation immer weiter steigen ließ.
 </details>
