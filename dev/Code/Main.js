@@ -8,28 +8,32 @@ var Portfolio;
         setupProjectFlexItems();
     }
     function setupDetailsFlexItems() {
-        document.querySelectorAll('.details-flex-item').forEach(handleDetailsFlexItem);
+        document.querySelectorAll('.details-flex-item').forEach((detailsFlexItem) => { handleDetailsFlexItem(detailsFlexItem); });
     }
     function setupProjectFlexItems() {
         document.querySelectorAll('.flex-item').forEach(setupFlexItem);
-        console.log(document.querySelectorAll('.toggle-content'));
-        document.querySelectorAll('.toggle-content').forEach(toggleContent => { console.log("addlistener"); addClickExpand.bind(toggleContent.parentElement); });
-        document.querySelectorAll('.toggle-arrow').forEach(toggleArrow => { console.log("addlistener"); addClickExpand.bind(toggleArrow.parentElement.parentElement); });
+        document.querySelectorAll('.toggle-content').forEach((toggleContent) => {
+            console.log("add listener for toggle-content");
+            addClickExpand(toggleContent.parentElement, toggleContent);
+        });
+        document.querySelectorAll('.toggle-arrow').forEach((toggleArrow) => {
+            console.log("add listener for toggle-arrow");
+            addClickExpand(toggleArrow.parentElement.parentElement, toggleArrow);
+        });
     }
-    function addClickExpand(toggleTrigger) {
-        //this= parent flex-item
-        console.log("parent or parent parent:", this);
+    function addClickExpand(parent, toggleTrigger) {
+        console.log("parent or parent parent:", parent);
         toggleTrigger.addEventListener('click', () => {
-            expandProjectFlexItem(this);
+            expandProjectFlexItem(parent);
         });
     }
     function expandProjectFlexItem(item) {
-        if (this.classList.contains('expanded')) {
-            dexpandProjectFlexItem(this);
+        if (item.classList.contains('expanded')) {
+            dexpandProjectFlexItem(item);
             return;
         }
         document.querySelectorAll('.flex-item').forEach((otherItem) => {
-            if (otherItem !== this) {
+            if (otherItem !== item) {
                 otherItem.style.filter = "blur(5px) !important";
                 otherItem.style.opacity = "0.5 !important";
                 if (otherItem.classList.contains('expanded')) {
@@ -37,13 +41,13 @@ var Portfolio;
                 }
             }
         });
-        this.classList.toggle('expanded', true);
+        item.classList.toggle('expanded', true);
         console.log("expanded an item");
     }
     function dexpandProjectFlexItem(item) {
-        this.classList.toggle('expanded', false);
+        item.classList.toggle('expanded', false);
         document.querySelectorAll('.flex-item').forEach(otherItem => {
-            if (otherItem !== this) {
+            if (otherItem !== item) {
                 otherItem.style.filter = "none !important";
                 otherItem.style.opacity = "1 !important";
             }

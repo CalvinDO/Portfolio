@@ -15,36 +15,42 @@ namespace Portfolio {
 
 
     function setupDetailsFlexItems() {
-        document.querySelectorAll('.details-flex-item').forEach(handleDetailsFlexItem);
+        document.querySelectorAll('.details-flex-item').forEach((detailsFlexItem: HTMLElement) => { handleDetailsFlexItem(detailsFlexItem) });
     }
 
     function setupProjectFlexItems() {
         document.querySelectorAll('.flex-item').forEach(setupFlexItem);
-        console.log(document.querySelectorAll('.toggle-content'));
-        document.querySelectorAll('.toggle-content').forEach(toggleContent => { console.log("addlistener"); addClickExpand.bind(toggleContent.parentElement); });
-        document.querySelectorAll('.toggle-arrow').forEach(toggleArrow => { console.log("addlistener"); addClickExpand.bind(toggleArrow.parentElement.parentElement); });
+
+        document.querySelectorAll('.toggle-content').forEach((toggleContent: HTMLDivElement) => {
+            console.log("add listener for toggle-content");
+            addClickExpand(toggleContent.parentElement, toggleContent);
+        });
+
+        document.querySelectorAll('.toggle-arrow').forEach((toggleArrow: HTMLDivElement) => {
+            console.log("add listener for toggle-arrow");
+            addClickExpand(toggleArrow.parentElement.parentElement, toggleArrow);
+        });
     }
 
-    function addClickExpand(this: HTMLElement, toggleTrigger: HTMLDivElement): void {
-        //this= parent flex-item
+    function addClickExpand(parent: HTMLElement, toggleTrigger: HTMLDivElement): void {
+        console.log("parent or parent parent:", parent);
 
-        console.log("parent or parent parent:", this);
         toggleTrigger.addEventListener('click', () => {
-            expandProjectFlexItem(this);
+            expandProjectFlexItem(parent);
         });
     }
 
     function expandProjectFlexItem(item: HTMLElement): void {
 
-        if (this.classList.contains('expanded')) {
-            dexpandProjectFlexItem(this);
+        if (item.classList.contains('expanded')) {
+            dexpandProjectFlexItem(item);
             return;
         }
 
 
         document.querySelectorAll('.flex-item').forEach((otherItem: HTMLElement) => {
 
-            if (otherItem !== this) {
+            if (otherItem !== item) {
 
                 (<HTMLElement>otherItem).style.filter = "blur(5px) !important";
                 (<HTMLElement>otherItem).style.opacity = "0.5 !important";
@@ -55,17 +61,17 @@ namespace Portfolio {
             }
         });
 
-        this.classList.toggle('expanded', true);
+        item.classList.toggle('expanded', true);
 
         console.log("expanded an item");
     }
 
     function dexpandProjectFlexItem(item: HTMLElement): void {
 
-        this.classList.toggle('expanded', false);
+        item.classList.toggle('expanded', false);
         document.querySelectorAll('.flex-item').forEach(otherItem => {
 
-            if (otherItem !== this) {
+            if (otherItem !== item) {
 
                 (<HTMLElement>otherItem).style.filter = "none !important";
                 (<HTMLElement>otherItem).style.opacity = "1 !important";
