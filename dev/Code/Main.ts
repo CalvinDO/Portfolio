@@ -38,20 +38,23 @@ namespace Portfolio {
             return;
         }
 
-        this.classList.toggle('expanded', true);
-
+        
         document.querySelectorAll('.flex-item').forEach((otherItem: HTMLElement) => {
-
+            
             if (otherItem !== this) {
-
+                
                 (<HTMLElement>otherItem).style.filter = "blur(5px) !important";
                 (<HTMLElement>otherItem).style.opacity = "0.5 !important";
-
+                
                 if (otherItem.classList.contains('expanded')) {
                     dexpandProjectFlexItem(otherItem);
                 }
             }
         });
+
+        this.classList.toggle('expanded', true);
+
+        console.log("expanded an item");
     }
 
     function dexpandProjectFlexItem(item: HTMLElement): void {
@@ -65,6 +68,8 @@ namespace Portfolio {
                 (<HTMLElement>otherItem).style.opacity = "1 !important";
             }
         });
+
+        console.log("dexpanded an item");
     }
 
 

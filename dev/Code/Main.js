@@ -26,7 +26,6 @@ var Portfolio;
             dexpandProjectFlexItem(this);
             return;
         }
-        this.classList.toggle('expanded', true);
         document.querySelectorAll('.flex-item').forEach((otherItem) => {
             if (otherItem !== this) {
                 otherItem.style.filter = "blur(5px) !important";
@@ -36,6 +35,8 @@ var Portfolio;
                 }
             }
         });
+        this.classList.toggle('expanded', true);
+        console.log("expanded an item");
     }
     function dexpandProjectFlexItem(item) {
         this.classList.toggle('expanded', false);
@@ -45,6 +46,7 @@ var Portfolio;
                 otherItem.style.opacity = "1 !important";
             }
         });
+        console.log("dexpanded an item");
     }
     function handleDetailsFlexItem(detailsFlexItem) {
         let detail = detailsFlexItem.querySelector("details");
