@@ -236,7 +236,7 @@ h1#header-coding ~ h1 {
 
 .third-toggle-content {
   /*overflow: hidden;*/
-  height: 0;
+  height: 0 !important;
 }
 
 
