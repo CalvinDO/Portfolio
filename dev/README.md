@@ -287,10 +287,11 @@ h1#header-coding ~ h1 {
 }
 
 .flex-item.expanded .toggle-content {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   border: 2px solid rgb(102, 102, 102);
-  border-radius: 4px;
+  border-radius: 4px; 
   box-sizing: border-box;
+  */
   height: auto;
   overflow: visible !important;
   padding: 0;
