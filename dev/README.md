@@ -379,6 +379,10 @@ video, img, .visual-presentation-container:not(#multi-display) {
   border: 0;
 }
 
+.hovered .primary-info-container, .expanded .primary-info-container{
+  display: none;
+}
+
 .team-size-container {
   overflow: visible;
   position: absolute;
