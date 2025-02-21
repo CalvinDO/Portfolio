@@ -91,6 +91,7 @@ var Portfolio;
     function setupFlexItem(item) {
         const content = item.querySelector('.toggle-content');
         if (!content) {
+            console.log("current content: ", content);
             generateContentIn(item);
         }
         if (!item.querySelector('.toggle-content')) {

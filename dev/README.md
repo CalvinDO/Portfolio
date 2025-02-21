@@ -520,47 +520,47 @@ video, img, .visual-presentation-container:not(#multi-display) {
       <h2 id ="bau-simulator">Bau-Simulator (Kommerziell)</h2>
     </div>
     <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-    <a href="https://store.steampowered.com/app/1273400/BauSimulator">
-    <video width="100%" controls loop>
-        <source src="ConstructionSimulator.mp4" alt="ConstructionSimulator" type="video/mp4"/>
-        Ihr Browser unterstützt den Video-Tag nicht
-    </video>
-    </a>
-    <div class = "klicken-indicator">Klicken zum Spielen</div>
-    <div class = "primary-info-container">
-      <div class="team-size-container">
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
+      <a href="https://store.steampowered.com/app/1273400/BauSimulator">
+      <video width="100%" controls loop>
+          <source src="ConstructionSimulator.mp4" alt="ConstructionSimulator" type="video/mp4"/>
+          Ihr Browser unterstützt den Video-Tag nicht
+      </video>
+      </a>
+      <div class = "klicken-indicator">Klicken zum Spielen</div>
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+        </div>
+        <div class="tags">
+          <span class="tag">Unity(C#)</span>
+          <span class="tag">FMOD(Audio)</span>
+        </div>
       </div>
-      <div class="tags">
-        <span class="tag">Unity(C#)</span>
-        <span class="tag">FMOD(Audio)</span>
-      </div>
-    </div>
-    <div class="toggle-arrow">▼</div>
+      <div class="toggle-arrow">▼</div>
     </div>
     <div class="toggle-content second-toggle-content">
       <h4>
