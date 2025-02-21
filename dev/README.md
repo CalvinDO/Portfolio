@@ -261,7 +261,13 @@ h1#header-coding ~ h1 {
 
 .second-toggle-content {
   bottom: 0;
+  pointer-events: none; 
 }
+
+.second-toggle-content a {
+  pointer-events: auto;
+}
+
 
 .third-toggle-content {
   z-index: 13;
