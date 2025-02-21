@@ -47,7 +47,6 @@ namespace Portfolio {
             return;
         }
 
-
         document.querySelectorAll('.flex-item').forEach((otherItem: HTMLElement) => {
 
             if (otherItem !== item) {
@@ -61,14 +60,20 @@ namespace Portfolio {
             }
         });
 
+
         item.classList.toggle('expanded', true);
 
-        console.log("expanded an item");
+        let secondToggleChildren: HTMLCollection = item.querySelector(".second-toggle-content").children;
+        let headingToggle: HTMLDivElement = item.querySelector(".headingToggle");
+
+        for (let secondToggleChild of secondToggleChildren) {
+            secondToggleChild.classList.toggle('foreign', true);
+            headingToggle.appendChild(secondToggleChild);
+        }
     }
 
     function dexpandProjectFlexItem(item: HTMLElement): void {
 
-        item.classList.toggle('expanded', false);
         document.querySelectorAll('.flex-item').forEach(otherItem => {
 
             if (otherItem !== item) {
@@ -78,7 +83,17 @@ namespace Portfolio {
             }
         });
 
-        console.log("dexpanded an item");
+        item.classList.toggle('expanded', false);
+
+        let foreignChildren: NodeListOf<Element> = item.querySelectorAll(".foreign");
+        let headingToggle: HTMLDivElement = item.querySelector(".headingToggle");
+        let secondToggleDiv: HTMLDivElement = item.querySelector(".second-toggle-content");
+
+        for (let foreignChild of foreignChildren) {
+            foreignChild.classList.toggle('foreign', false);
+            //headingToggle.removeChild(foreignChild);
+            secondToggleDiv.appendChild(foreignChild);
+        }
     }
 
 

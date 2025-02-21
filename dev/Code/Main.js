@@ -42,17 +42,29 @@ var Portfolio;
             }
         });
         item.classList.toggle('expanded', true);
-        console.log("expanded an item");
+        let secondToggleChildren = item.querySelector(".second-toggle-content").children;
+        let headingToggle = item.querySelector(".headingToggle");
+        for (let secondToggleChild of secondToggleChildren) {
+            secondToggleChild.classList.toggle('foreign', true);
+            headingToggle.appendChild(secondToggleChild);
+        }
     }
     function dexpandProjectFlexItem(item) {
-        item.classList.toggle('expanded', false);
         document.querySelectorAll('.flex-item').forEach(otherItem => {
             if (otherItem !== item) {
                 otherItem.style.filter = "none !important";
                 otherItem.style.opacity = "1 !important";
             }
         });
-        console.log("dexpanded an item");
+        item.classList.toggle('expanded', false);
+        let foreignChildren = item.querySelectorAll(".foreign");
+        let headingToggle = item.querySelector(".headingToggle");
+        let secondToggleDiv = item.querySelector(".second-toggle-content");
+        for (let foreignChild of foreignChildren) {
+            foreignChild.classList.toggle('foreign', false);
+            //headingToggle.removeChild(foreignChild);
+            secondToggleDiv.appendChild(foreignChild);
+        }
     }
     function handleDetailsFlexItem(detailsFlexItem) {
         let detail = detailsFlexItem.querySelector("details");
