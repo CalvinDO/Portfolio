@@ -379,6 +379,24 @@ video, img, .visual-presentation-container:not(#multi-display) {
   border: 0;
 }
 
+.team-size-container {
+  overflow: visible;
+  position: absolute;
+  left: 2%;
+  top: 4%;
+
+  display: grid;
+  grid-template-columns: repeat(5, auto); /* 5 Icons pro Zeile */
+  gap: 5px; /* Abstand zwischen den Icons */
+  justify-content: start; /* Links ausgerichtet */
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-size: 24px;
+  color: #F8F9FA;
+}
+
 .tags {
     flex-direction: column;
     display: flex;
@@ -407,6 +425,8 @@ video, img, .visual-presentation-container:not(#multi-display) {
 
     white-space: nowrap;
 }
+
+
 
 .toggle-arrow {
     position: absolute;
@@ -466,6 +486,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
 </style>
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <div id="overlay"></div>
 
@@ -484,6 +505,33 @@ video, img, .visual-presentation-container:not(#multi-display) {
     </video>
     </a>
     <div class = "klicken-indicator">Klicken zum Spielen</div>
+    <div class="team-size-container">
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+      <i class="material-icons">person</i>
+    </div>
     <div class="tags">
       <span class="tag">Unity(C#)</span>
       <span class="tag">FMOD(Audio)</span>
