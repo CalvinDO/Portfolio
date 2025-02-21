@@ -457,8 +457,8 @@ video, img, .visual-presentation-container:not(#multi-display) {
       <strong>Publisher:</strong> <a href = "https://www.astragon.de/">Astragon</a>
       </h4>
     </div>
-      <br>
     <div class = "toggle-content third-toggle-content">
+      <br>
       <strong>6</strong> Monate <strong>Praktikant</strong><br>
       <strong>2,5</strong> Jahre <strong>Werkstudent</strong><br>
       <br>
