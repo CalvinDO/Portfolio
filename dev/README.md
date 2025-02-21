@@ -256,7 +256,7 @@ h1#header-coding ~ h1 {
 .third-toggle-content {
   overflow: hidden;
   height: 0;
-  z-index: 11;
+  z-index: 13;
 }
 
 
