@@ -337,7 +337,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
 .toggle-arrow {
     position: absolute;
     bottom: 10px;
-    left: 50%;
+    right: 85.4102%;
     transform: translateX(-50%) rotate(0deg);
     font-size: 2em;
     color: white;
@@ -349,6 +349,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    z-index: 12;
 }
 .flex-item.expanded .toggle-arrow {
     transform: translateX(-50%) rotate(180deg);
