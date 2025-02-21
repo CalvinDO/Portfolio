@@ -441,9 +441,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
         Ihr Browser unterstützt den Video-Tag nicht
     </video>
     </a>
-      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-      Klicken zum Spielen
-      </div>
+      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Spielen</div>
     <div class="tags">
       <span class="tag">Unity(C#)</span>
       <span class="tag">FMOD(Audio)</span>
@@ -502,9 +500,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
                 Ihr Browser unterstützt den Video-Tag nicht
             </video>
         </a>
-        <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-            Klicken zum Spielen
-        </div>
+        <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Spielen</div>
     </div>
     <h4>
       <a href="NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">
@@ -543,7 +539,8 @@ video, img, .visual-presentation-container:not(#multi-display) {
     </ul>
     <div class = "controls">
     Kamera: Mausbewegung und Drücken, Scrollen<br>
-    Bauen neuer Glieder: Starten mit Linksklick, Verlängerung mit Mausbewegung. Bauen Abschließen: erneuter Linksklick<br>
+    Bauen neuer Glieder: Starten mit Linksklick, Verlängerung mit Mausbewegung<br>
+    Bauen Abschließen: erneuter Linksklick<br>
     Bauen Abbrechen: rechte Maustaste<br>
     Rotations-Einstellungs-Modus: "R"<br>
     Weitere Anleitung: <a href ="NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">Thesis</a>
@@ -562,9 +559,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
                 Ihr Browser unterstützt den Video-Tag nicht
             </video>
         </a>
-        <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-            Klicken zum Spielen
-        </div>
+        <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Spielen</div>
     </div>  
     <h4>
         Gamedesign-Workhop<br>
@@ -625,9 +620,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
             color: white;
             font-size: 2em;
             opacity: 0.5;
-            text-align: center;">
-            Klicken zum Spielen
-          </div>
+            text-align: center;">Klicken zum Spielen</div>
         </div>
       </a>  
       <a href="BeerPhongMarker.png" download>
@@ -697,9 +690,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
                 Ihr Browser unterstützt den Video-Tag nicht
             </video>
         </a>
-        <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-            Klicken zum Spielen
-        </div>
+        <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Spielen</div>
     </div>  
     <h4>
         Projektstudium<br>
@@ -759,9 +750,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
       <a href="https://colab.research.google.com/github/CalvinDO/AITextGenerator/blob/main/LawLanguageRNN/textGenerator.ipynb">
         <img src="TextGenerator.png" width="100%">
       </a>
-      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none; white-space: nowrap;">
-        Klicken zum Anwenden
-      </div>
+      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Anwenden</div>
     </div>  
     <h4>
       Introduction to Deep Learning<br>
@@ -818,9 +807,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
     <a href="Code/TreeGenerator/TreeGenerator.zip" download>
       <img src="TreeGenerator.png" width="100%" />
     </a>
-    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none; white-space: nowrap;">
-      Klicken zum Downloaden
-    </div>
+    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Downloaden</div>
   </div>
   <h4>
     Datenverarbeitung in der Medienproduktion<br>
@@ -872,9 +859,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
                 Ihr Browser unterstützt den Video-Tag nicht
             </video>
         </a>
-        <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-            Klicken zum Spielen
-        </div>
+        <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Spielen</div>
     </div>  
     <h4>
         Prototyping Interaktiver Medien-Apps & Games<br>
@@ -923,9 +908,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
       <a href="https://calvindo.github.io/GiS/Eisladen/">
         <img src="Eisladen.png" width="100%">
       </a>
-      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-        Klicken zum Spielen
-      </div>
+      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Spielen</div>
     </div>
     <h4>
       Grundlagen Interaktiver Systeme<br>
@@ -992,9 +975,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
       <a href="https://calvindo.github.io/DiscHoverHFU/Code/DiscHoverHFU.html">
         <img src="DiscHoverHFU.png" width="100%">
       </a>
-      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-        Klicken zum Spielen
-      </div>
+      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Spielen</div>
     </div>
     <h4>
       User Experience Design<br>
@@ -1052,9 +1033,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
                 Ihr Browser unterstützt den Video-Tag nicht
         </video>
       </a>
-      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-        Klicken zum Anwenden
-      </div>
+      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Anwenden</div>
     </div>
     <h4>
       Erweiterung von Fraktal<br>
@@ -1102,9 +1081,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
     <a href="Code/Fraktal/start.html">
       <img src="Fraktal.PNG" alt="Fraktal" width="100%">
     </a>
-    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-      Klicken zum Anwenden
-    </div>
+    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Anwenden</div>
     </div>
     <h4>
       Akademische Vorbereitung<br>
@@ -1162,9 +1139,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
       <a href="Code/Cardioids/start.html">
         <img src="cardioids.PNG" width="100%">
       </a>
-      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-        Klicken zum Anwenden
-      </div>
+      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Anwenden</div>
     </div>
     <h4>
       Schulvortrag<br>
@@ -1233,9 +1208,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
       <a href="Code/RubberBand/start.html">
         <img src="Rubber.PNG" width="100%">
       </a>
-      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
-        Klicken zum Spielen
-      </div>
+      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Spielen</div>
     </div>
     <h4>
       Freizeit-Experiment<br>
