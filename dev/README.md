@@ -352,6 +352,10 @@ video, img, .visual-presentation-container:not(#multi-display) {
   -webkit-box-shadow: 0 0 0px #ebebeb !important;
 }
 
+.visual-presentation-container a{
+  filter: grayscale(85%);
+}
+
 .klicken-indicator{
   position: absolute;
   top: 50%;
@@ -510,46 +514,46 @@ video, img, .visual-presentation-container:not(#multi-display) {
     </a>
     <div class = "klicken-indicator">Klicken zum Spielen</div>
     <div class = "primary-info-container">
-    <div class="team-size-container">
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-      <i class="material-icons">person</i>
-    </div>
-    <div class="tags">
-      <span class="tag">Unity(C#)</span>
-      <span class="tag">FMOD(Audio)</span>
-    </div>
+      <div class="team-size-container">
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+      </div>
+      <div class="tags">
+        <span class="tag">Unity(C#)</span>
+        <span class="tag">FMOD(Audio)</span>
+      </div>
     </div>
     <div class="toggle-arrow">▼</div>
     </div>
     <div class="toggle-content second-toggle-content">
       <h4>
-      <strong><a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a></strong> <br>
-      <strong>25-köpfiges</strong> Team + Outsourcer<br>
-      <strong>Herbst 2020 - Frühling 2023</strong> <br>
-      <strong>Publisher:</strong> <a href = "https://www.astragon.de/">Astragon</a>
+      <a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a><br>
+      25-köpfiges</strong> Team + Outsourcer<br>
+      Herbst 2020 - Frühling 2023<br>
+      Publisher: <a href = "https://www.astragon.de/">Astragon</a>
       </h4>
     </div>
     <div class = "toggle-content third-toggle-content">
@@ -715,7 +719,9 @@ video, img, .visual-presentation-container:not(#multi-display) {
     Laufen erfolgt mit W A S D, Angreifen mit den Maustasten, Q und E. I öffnet das Inventar. Drag and Drop von einer Fähigkeitskarte auf eine andere ermöglicht das Kombinieren. -->
   </div>
   <div class = "flex-item">
+    <div class="toggle-content heading-toggle-content">
     <h2 id="realtime-beerpong">Realtime-BeerPhong</h2>
+    </div>
     <div id = "multi-display" class = "visual-presentation-container" style="display: flex; justify-content: space-between;">
       <a href="https://calvindo.github.io/Realtime-BeerPhong/aFrame.html">
         <div style="position: relative;">
@@ -730,50 +736,60 @@ video, img, .visual-presentation-container:not(#multi-display) {
         </div>
       </a>
       <div class = "primary-info-container">
-      <div class="tags">
-        <span class="tag">WebAR</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">GLSL</span>
-        <span class="tag">Three.js</span>
+        <div class="team-size-container">
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
       </div>
+        <div class="tags">
+          <span class="tag">WebAR</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">GLSL</span>
+          <span class="tag">Three.js</span>
+        </div>
       </div>
+    <div class="toggle-arrow">▼</div>
     </div>
-    <h4>
-    Echtzeit-Computergrafik<br>
-    3-köpfiges Team<br>
-    Herbst 2022<br>
-    Mobile Web-AR Partyspiel
-    </h4>
-    <br>
-    <div class = "skills">
-      <strong>WebAR, JavaScript, GLSL, Three.js</strong><br>
-      <em>Innovativ – Kollaborativ – Experimentell</em><br>
-      <strong>Dokumentation, UI/UX, Sprint-Meetings, Git</strong>
+    <div class="toggle-content second-toggle-content">
+      <h4>
+      Echtzeit-Computergrafik<br>
+      3-köpfiges Team<br>
+      Herbst 2022<br>
+      Mobile Web-AR Partyspiel
+      </h4>
     </div>
-    <br>
-    <ul class="task-list">
-      <li><strong>Shader-Programmierung</strong><br>
-          <span>Erstellung von Vertex- und Fragment-Shadern für AR-Rendering</span>
-          <ul>
-              <li>Beleuchtung, Materialeffekte, visuelle Optimierung</li>
-          </ul>
-      </li>
-      <li><strong>Physik & Wurfmechanik</strong><br>
-          <span>Implementierung der Ballflugbahn</span>
-          <ul>
-              <li>Aufprall- und Abprall-Logik, Touchscreen-Gestensteuerung</li>
-          </ul>
-      </li>
-      <li><strong>Augmented Reality & Web-Integration</strong><br>
-          <span>Nutzung von WebAR & Three.js</span>
-          <ul>
-              <li>Platzierung des Spieltisches über einen AR-Marker</li>
-          </ul>
-      </li>
-    </ul>
-    <div class="controls">
-        Smartphone-Kamera auf Marker richten<br>
-        Swipen zum Werfen<br>
+    <div class = "toggle-content third-toggle-content">
+      <br>
+      <div class = "skills">
+        <strong>WebAR, JavaScript, GLSL, Three.js</strong><br>
+        <em>Innovativ – Kollaborativ – Experimentell</em><br>
+        <strong>Dokumentation, UI/UX, Sprint-Meetings, Git</strong>
+      </div>
+      <br>
+      <ul class="task-list">
+        <li><strong>Shader-Programmierung</strong><br>
+            <span>Erstellung von Vertex- und Fragment-Shadern für AR-Rendering</span>
+            <ul>
+                <li>Beleuchtung, Materialeffekte, visuelle Optimierung</li>
+            </ul>
+        </li>
+        <li><strong>Physik & Wurfmechanik</strong><br>
+            <span>Implementierung der Ballflugbahn</span>
+            <ul>
+                <li>Aufprall- und Abprall-Logik, Touchscreen-Gestensteuerung</li>
+            </ul>
+        </li>
+        <li><strong>Augmented Reality & Web-Integration</strong><br>
+            <span>Nutzung von WebAR & Three.js</span>
+            <ul>
+                <li>Platzierung des Spieltisches über einen AR-Marker</li>
+            </ul>
+        </li>
+      </ul>
+      <div class="controls">
+          Smartphone-Kamera auf Marker richten<br>
+          Swipen zum Werfen<br>
+      </div>
     </div>
     <!-- Dieses webbasierte Mobile-Game erfordert einen AR-Marker, über dem auf dem Smartphone ein Beerpong-Tisch mit Bechern als Ziele generiert wird. Der Spieler bewegt sich um den Tisch herum, um aus einer günstigen Abwurfposition heraus den Ball mit einem Swipe auf dem Touchscreen so in die Spielszene zu werfen, dass er direkt oder nach Aufkommen auf der Platte in einem Becher landet.  
     Die Umsetzung innerhalb des Kurses "Echtzeit-Computergrafik" im sechsten Semester erfolgte mit WebAR, JavaScript und GLSL. In einem dreiköpfigen Team machten wir uns mit Programmierung von Vertex- und Fragmentshadern vertraut, sowie mit Umgebungsvariablen von WebAR und "Three.js". -->
