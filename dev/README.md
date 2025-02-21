@@ -449,14 +449,14 @@ video, img, .visual-presentation-container:not(#multi-display) {
 .toggle-arrow {
     position: absolute;
     bottom: 0px;
-    right: 6.1%;
+    right: 3.1%;
     transform: translateX(-50%) rotate(0deg);
-    font-size: 2em;
+    font-size: 1.7em;
     color: #F8F9FA;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
