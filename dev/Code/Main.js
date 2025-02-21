@@ -101,27 +101,19 @@ var Portfolio;
         }
         //console.log("content found");
         //const container: HTMLDivElement = <HTMLDivElement>item.querySelector('.visual-presentation-container');
-        const arrow = item.querySelector('.toggle-arrow');
-        if (!arrow) {
+        let arrow = item.querySelector('.toggle-arrow');
+        while (!arrow) {
+            console.log("try generate and find arrow");
             insertArrowIn(item);
+            arrow = item.querySelector('.toggle-arrow');
         }
         let isMobile = window.matchMedia("(max-width: 890px)").matches;
         //console.log("isMobile? " + isMobile);
         setupArrow(arrow, item);
         if (!isMobile) {
-        }
-        /*
-        if (isMobile) {
-
-            setupArrow(arrow, item);
-
-        } else {
-
             setupMouseEnter(item);
-
             setupMouseLeave(item);
         }
-        */
     }
     function insertArrowIn(item) {
         let toggleArrowDiv = document.createElement("div");
