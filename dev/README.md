@@ -331,10 +331,12 @@ video, img, .visual-presentation-container:not(#multi-display) {
 
   width: 100%  !important;          /* Bild skaliert auf die Breite des Containers */
   height: auto  !important;         /* Höhe wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
-  object-fit: fill  !important;  
+  object-fit: fill  !important; 
 
   padding: 0;
-  margin: 0
+  margin: 0;
+  box-shadow: 0 0 0px !important;
+  -webkit-box-shadow: 0 0 0px #ebebeb !important;
 }
 
 .klicken-indicator{
