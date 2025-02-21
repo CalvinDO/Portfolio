@@ -127,11 +127,11 @@ var Portfolio;
     }
     function onMouseLeave() {
         this.classList.remove('hovered');
-        overlay.style.opacity = "0";
+        //overlay.style.opacity = "0";
     }
     function onMouseEnter() {
         this.classList.add('hovered');
-        overlay.style.opacity = "1";
+        //overlay.style.opacity = "1";
     }
     function setupArrow(arrow, flexItem) {
         arrow.addEventListener('click', () => {
