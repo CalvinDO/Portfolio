@@ -393,8 +393,8 @@ video, img, .visual-presentation-container:not(#multi-display) {
 
 .toggle-arrow {
     position: absolute;
-    bottom: 10px;
-    right: 14.59%;
+    bottom: 0px;
+    right: 6.1%;
     transform: translateX(-50%) rotate(0deg);
     font-size: 2em;
     color: white;
