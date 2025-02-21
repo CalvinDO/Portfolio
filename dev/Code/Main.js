@@ -16,10 +16,12 @@ var Portfolio;
             console.log("add listener for toggle-content");
             addClickExpand(toggleContent.parentElement, toggleContent);
         });
-        document.querySelectorAll('.toggle-arrow').forEach((toggleArrow) => {
+        /*
+        document.querySelectorAll('.toggle-arrow').forEach((toggleArrow: HTMLDivElement) => {
             console.log("add listener for toggle-arrow");
             addClickExpand(toggleArrow.parentElement.parentElement, toggleArrow);
         });
+        */
     }
     function addClickExpand(parent, toggleTrigger) {
         console.log("parent or parent parent:", parent);
@@ -105,13 +107,21 @@ var Portfolio;
         }
         let isMobile = window.matchMedia("(max-width: 890px)").matches;
         //console.log("isMobile? " + isMobile);
-        if (isMobile) {
-            setupArrow(arrow, item);
+        setupArrow(arrow, item);
+        if (!isMobile) {
         }
-        else {
+        /*
+        if (isMobile) {
+
+            setupArrow(arrow, item);
+
+        } else {
+
             setupMouseEnter(item);
+
             setupMouseLeave(item);
         }
+        */
     }
     function insertArrowIn(item) {
         let toggleArrowDiv = document.createElement("div");
