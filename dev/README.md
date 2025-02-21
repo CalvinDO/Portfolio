@@ -356,6 +356,14 @@ video, img, .visual-presentation-container:not(#multi-display) {
   filter: grayscale(85%);
 }
 
+.flex-item.hovered .visual-presentation-container a{
+  filter: grayscale(50%);
+}
+
+.flex-item.expanded .visual-presentation-container a{
+  filter: grayscale(0%);
+}
+
 .klicken-indicator{
   position: absolute;
   top: 50%;
@@ -737,10 +745,10 @@ video, img, .visual-presentation-container:not(#multi-display) {
       </a>
       <div class = "primary-info-container">
         <div class="team-size-container">
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-      </div>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+        </div>
         <div class="tags">
           <span class="tag">WebAR</span>
           <span class="tag">JavaScript</span>
@@ -748,7 +756,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
           <span class="tag">Three.js</span>
         </div>
       </div>
-    <div class="toggle-arrow">▼</div>
+      <div class="toggle-arrow">▼</div>
     </div>
     <div class="toggle-content second-toggle-content">
       <h4>
