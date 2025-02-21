@@ -221,7 +221,7 @@ h1#header-coding ~ h1 {
   overflow: visible; /* Erlaubt, dass das ausgeklappte Element überlappt */
 
   border: #2f2f2f;
-  border-style: solid;
+  border-style: none;
   border-width: medium;
 }
 
@@ -250,11 +250,13 @@ h1#header-coding ~ h1 {
   padding: 0;
   background: none;
 
-  font-size: 28px;
+  font-size: 32px;
+  color: #F8F9FA;
 }
 
 .toggle-content.second-toggle-content h4 {
   font-size: 17px;
+  color: #F8F9FA;
 }
 
 .second-toggle-content {
@@ -350,7 +352,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
 }
 
 #klicken-beerphong-special-indicator{
-
+  left: 25%;
 }
 
 .visual-presentation-container:not(#multi-display) {
@@ -643,7 +645,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
       <a href="BeerPhongMarker.png" download>
         <div style="position: relative;">
           <img src="BeerPhongMarker.png" style="width: 100%; height: auto; max-width: 100%;">
-          <div class = "klicken-beerphong-special-indicator">Klicken<br>zum<br>Marker</div>
+          <div id = "klicken-beerphong-special-indicator" class = "klicken-indicator">Klicken<br>zum<br>Marker</div>
         </div>
       </a>
     </div>
