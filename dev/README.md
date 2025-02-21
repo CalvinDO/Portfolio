@@ -347,13 +347,15 @@ video, img, .visual-presentation-container:not(#multi-display) {
 }
 
 .tag {
-    background-color: rgb(107, 78, 155);
+    background-color: rgb(114 9 183);
     color: white;
     font-family: Arial, sans-serif;
     font-size: 14px;
     display: inline-block;
     padding: 8px 12px;
     border-radius: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
 }
 
 .toggle-arrow {
