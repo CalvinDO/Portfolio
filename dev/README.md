@@ -241,7 +241,7 @@ h1#header-coding ~ h1 {
   padding: 0;
   top: 0;
   text-align: center;
-  background: white;
+  background: #E9ECEF;
 }
 
 .heading-toggle-content h2{
