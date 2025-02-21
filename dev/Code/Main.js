@@ -60,11 +60,9 @@ var Portfolio;
         });
         item.classList.toggle('expanded', false);
         let foreignChildren = item.querySelectorAll(".foreign");
-        let headingToggle = item.querySelector(".heading-toggle-content");
         let secondToggleDiv = item.querySelector(".second-toggle-content");
         for (let foreignChild of foreignChildren) {
             foreignChild.classList.toggle('foreign', false);
-            //headingToggle.removeChild(foreignChild);
             secondToggleDiv.appendChild(foreignChild);
         }
     }

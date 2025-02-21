@@ -88,12 +88,10 @@ namespace Portfolio {
         item.classList.toggle('expanded', false);
 
         let foreignChildren: NodeListOf<Element> = item.querySelectorAll(".foreign");
-        let headingToggle: HTMLDivElement = item.querySelector(".heading-toggle-content");
         let secondToggleDiv: HTMLDivElement = item.querySelector(".second-toggle-content");
 
         for (let foreignChild of foreignChildren) {
             foreignChild.classList.toggle('foreign', false);
-            //headingToggle.removeChild(foreignChild);
             secondToggleDiv.appendChild(foreignChild);
         }
     }

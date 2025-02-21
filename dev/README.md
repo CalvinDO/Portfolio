@@ -340,10 +340,11 @@ video, img, .visual-presentation-container:not(#multi-display) {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    align-items: flex-start;
     overflow: visible;
     position: absolute;
-    right: 10%;
-    top: 10%;
+    right: 2%;
+    top: 4%;
 
     pointer-events: none;
     user-select: none;
@@ -359,6 +360,8 @@ video, img, .visual-presentation-container:not(#multi-display) {
     border-radius: 20px;
     font-weight: bold;
     font-family: sans-serif;
+
+    white-space: nowrap;
 }
 
 .toggle-arrow {
@@ -378,6 +381,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
     cursor: pointer;
     z-index: 12;
 }
+
 .flex-item.expanded .toggle-arrow {
     transform: translateX(-50%) rotate(180deg);
 }
