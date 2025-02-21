@@ -232,11 +232,7 @@ h1#header-coding ~ h1 {
   width: 100%; 
   overflow: visible;
   left: 0;
-}
-
-.toggle-content:not(.heading-toggle-content){
   background: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .heading-toggle-content {
@@ -259,7 +255,8 @@ h1#header-coding ~ h1 {
 
 .third-toggle-content {
   overflow: hidden;
-  height: 0 !important;
+  height: 0;
+  z-index: 11;
 }
 
 
