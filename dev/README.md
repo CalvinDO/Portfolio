@@ -226,11 +226,12 @@ h1#header-coding ~ h1 {
 }
 
 .toggle-content {
-  height: auto;
+  overflow: hidden;
+  height: 0;
+
   position: absolute;
   z-index: 10;
   width: 100%; 
-  overflow: visible;
   left: 0;
   background: white;
 }
@@ -255,11 +256,13 @@ h1#header-coding ~ h1 {
 }
 
 .third-toggle-content {
-  overflow: hidden;
-  height: 0;
   z-index: 13;
 }
 
+.flex-item.hovered .toggle-content:not(.third-toggle-content){
+  overflow: visible;
+  height: auto;
+}
 
 .flex-item.expanded .toggle-content {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -276,9 +279,7 @@ h1#header-coding ~ h1 {
   transform: translateY(-100%);
 }
 
-.flex-item.expanded {
-  background: white;
-}
+
 
 /* .flex-container:hover .flex-item:not(.expanded) {
   filter: blur(5px);
