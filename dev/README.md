@@ -403,14 +403,16 @@ video, img, .visual-presentation-container:not(#multi-display) {
 
   display: grid;
   grid-template-columns: repeat(5, auto); /* 5 Icons pro Zeile */
-  gap: 5px; /* Abstand zwischen den Icons */
+  gap: 0px; /* Abstand zwischen den Icons */
   justify-content: start; /* Links ausgerichtet */
 }
 
 .material-icons {
   font-family: "Material Icons";
   font-size: 24px;
-  color: #F8F9FA;
+
+  color: #f8f9fa;
+  text-shadow: -1px 0 #212529, 0 1px #212529, 1px 0 #212529, 0 -1px #212529;
 }
 
 .tags {
