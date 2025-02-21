@@ -64,7 +64,7 @@ namespace Portfolio {
         item.classList.toggle('expanded', true);
 
         let secondToggleChildren: HTMLCollection = item.querySelector(".second-toggle-content").children;
-        let headingToggle: HTMLDivElement = item.querySelector(".headingToggle");
+        let headingToggle: HTMLDivElement = item.querySelector(".heading-toggle-content");
 
         for (let secondToggleChild of secondToggleChildren) {
             secondToggleChild.classList.toggle('foreign', true);
@@ -86,7 +86,7 @@ namespace Portfolio {
         item.classList.toggle('expanded', false);
 
         let foreignChildren: NodeListOf<Element> = item.querySelectorAll(".foreign");
-        let headingToggle: HTMLDivElement = item.querySelector(".headingToggle");
+        let headingToggle: HTMLDivElement = item.querySelector(".heading-toggle-content");
         let secondToggleDiv: HTMLDivElement = item.querySelector(".second-toggle-content");
 
         for (let foreignChild of foreignChildren) {
