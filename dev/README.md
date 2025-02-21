@@ -249,6 +249,12 @@ h1#header-coding ~ h1 {
   z-index: 13;
   padding: 0;
   background: none;
+
+  font-size: 28px;
+}
+
+.toggle-content.second-toggle-content h4 {
+  font-size: 17px;
 }
 
 .second-toggle-content {
@@ -262,6 +268,8 @@ h1#header-coding ~ h1 {
 .flex-item.hovered .toggle-content:not(.third-toggle-content){
   overflow: visible;
   height: auto;
+  background-color:  #343a40;
+  opacity: 0.9;
 }
 
 .flex-item.expanded .toggle-content {
@@ -449,8 +457,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
 <div class = "flex-container">
   <div class = "flex-item">
     <div class="toggle-content heading-toggle-content">
-      <h2 id ="bau-simulator">Bau-Simulator<br>
-      (Kommerziell)</h2>
+      <h2 id ="bau-simulator">Bau-Simulator (Kommerziell)</h2>
     </div>
     <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
     <a href="https://store.steampowered.com/app/1273400/BauSimulator">
