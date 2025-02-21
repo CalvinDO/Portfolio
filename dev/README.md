@@ -233,7 +233,7 @@ h1#header-coding ~ h1 {
   z-index: 10;
   width: 100%; 
   left: 0;
-  background: white;
+  background: #E9ECEF;
 }
 
 .heading-toggle-content {
@@ -422,7 +422,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
 
 .tag {
     background-color: rgb(114 9 183);
-    color: white;
+    color: #F8F9FA;
     font-family: Arial, sans-serif;
     font-size: 14px;
     display: inline-block;
@@ -442,7 +442,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
     right: 6.1%;
     transform: translateX(-50%) rotate(0deg);
     font-size: 2em;
-    color: white;
+    color: #F8F9FA;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     width: 40px;
