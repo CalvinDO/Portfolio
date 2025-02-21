@@ -279,6 +279,12 @@ h1#header-coding ~ h1 {
   background-color:  #343a40;
   opacity: 0.9;
 }
+.flex-item.expanded .toggle-content:not(.third-toggle-content){
+  overflow: visible;
+  height: auto;
+  background-color:  #343a40;
+  opacity: 1;
+}
 
 .flex-item.expanded .toggle-content {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
