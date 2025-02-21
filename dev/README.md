@@ -1305,7 +1305,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
     </div>
     <h4>
       Freizeitgestaltung<br>
-      Solo-Projekt<br>
+      Duo-Team<br>
       Herbst 2019<br>
       Asset für Tower-Defense-Game
     </h4>
