@@ -254,6 +254,10 @@ h1#header-coding ~ h1 {
   color: #F8F9FA;
 }
 
+.heading-toggle-content h4 {
+  color: #F8F9FA;
+}
+
 .toggle-content.second-toggle-content h4 {
   font-size: 17px;
   color: #F8F9FA;
