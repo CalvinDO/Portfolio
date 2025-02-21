@@ -199,7 +199,8 @@ namespace Portfolio {
     function setupArrow(arrow: Element, flexItem: HTMLElement) {
 
         arrow.addEventListener('click', () => {
-            flexItem.classList.toggle('expanded');
+            //flexItem.classList.toggle('expanded');
+            expandProjectFlexItem(flexItem);
         });
     }
 

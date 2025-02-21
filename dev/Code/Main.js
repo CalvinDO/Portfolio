@@ -137,7 +137,8 @@ var Portfolio;
     }
     function setupArrow(arrow, flexItem) {
         arrow.addEventListener('click', () => {
-            flexItem.classList.toggle('expanded');
+            //flexItem.classList.toggle('expanded');
+            expandProjectFlexItem(flexItem);
         });
     }
     function generateContentIn(item) {
