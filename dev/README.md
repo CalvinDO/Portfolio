@@ -36,7 +36,7 @@
   }
 }
 
-
+/* details klicken*/
 .klicken {
   display: block; /* Damit es zentrierbar ist */
   text-align: center;
@@ -327,6 +327,24 @@ video, img, .visual-presentation-container:not(#multi-display) {
   margin: 0
 }
 
+.klicken-indicator{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+  opacity: 0.5;
+  pointer-events: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-align:center;
+}
+
+#klicken-beerphong-special-indicator{
+
+}
+
 .visual-presentation-container:not(#multi-display) {
   position: relative;
   cursor: pointer;
@@ -441,7 +459,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
         Ihr Browser unterstützt den Video-Tag nicht
     </video>
     </a>
-      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Spielen</div>
+      <div class = "klicken-indicator">Klicken zum Spielen</div>
     <div class="tags">
       <span class="tag">Unity(C#)</span>
       <span class="tag">FMOD(Audio)</span>
@@ -500,7 +518,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
                 Ihr Browser unterstützt den Video-Tag nicht
             </video>
         </a>
-        <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Spielen</div>
+        <div class = "klicken-indicator">Klicken zum Spielen</div>
     </div>
     <h4>
       <a href="NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">
@@ -559,7 +577,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
                 Ihr Browser unterstützt den Video-Tag nicht
             </video>
         </a>
-        <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Spielen</div>
+        <div class = "klicken-indicator">Klicken zum Spielen</div>
     </div>  
     <h4>
         Gamedesign-Workhop<br>
@@ -612,31 +630,13 @@ video, img, .visual-presentation-container:not(#multi-display) {
       <a href="https://calvindo.github.io/Realtime-BeerPhong/aFrame.html">
         <div style="position: relative;">
           <img src="BeerPhong.jpeg" style="width: 100%; height: auto; max-width: 100%;">
-          <div style="
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-size: 2em;
-            opacity: 0.5;
-            text-align: center;">Klicken zum Spielen</div>
+          <div class = "klicken-indicator">Klicken zum Spielen</div>
         </div>
       </a>  
       <a href="BeerPhongMarker.png" download>
         <div style="position: relative;">
           <img src="BeerPhongMarker.png" style="width: 100%; height: auto; max-width: 100%;">
-          <div style="
-            position: absolute;
-            top: 50%;
-            left: 25%;
-            transform: translate(-50%, -50%);
-            color: black;
-            font-size: 2em;
-            opacity: 0.5;
-            text-align: center;">
-            Klicken<br>zum<br>Marker
-          </div>
+          <div class = "klicken-beerphong-special-indicator">Klicken<br>zum<br>Marker</div>
         </div>
       </a>
     </div>
@@ -690,7 +690,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
                 Ihr Browser unterstützt den Video-Tag nicht
             </video>
         </a>
-        <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Spielen</div>
+        <div class = "klicken-indicator">Klicken zum Spielen</div>
     </div>  
     <h4>
         Projektstudium<br>
@@ -750,7 +750,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
       <a href="https://colab.research.google.com/github/CalvinDO/AITextGenerator/blob/main/LawLanguageRNN/textGenerator.ipynb">
         <img src="TextGenerator.png" width="100%">
       </a>
-      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Anwenden</div>
+      <div class = "klicken-indicator">Klicken zum Anwenden</div>
     </div>  
     <h4>
       Introduction to Deep Learning<br>
@@ -807,7 +807,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
     <a href="Code/TreeGenerator/TreeGenerator.zip" download>
       <img src="TreeGenerator.png" width="100%" />
     </a>
-    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Downloaden</div>
+    <div class = "klicken-indicator">Klicken zum Downloaden</div>
   </div>
   <h4>
     Datenverarbeitung in der Medienproduktion<br>
@@ -859,7 +859,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
                 Ihr Browser unterstützt den Video-Tag nicht
             </video>
         </a>
-        <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Spielen</div>
+        <div class = "klicken-indicator">Klicken zum Spielen</div>
     </div>  
     <h4>
         Prototyping Interaktiver Medien-Apps & Games<br>
@@ -908,7 +908,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
       <a href="https://calvindo.github.io/GiS/Eisladen/">
         <img src="Eisladen.png" width="100%">
       </a>
-      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Spielen</div>
+      <div class = "klicken-indicator">Klicken zum Spielen</div>
     </div>
     <h4>
       Grundlagen Interaktiver Systeme<br>
@@ -975,7 +975,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
       <a href="https://calvindo.github.io/DiscHoverHFU/Code/DiscHoverHFU.html">
         <img src="DiscHoverHFU.png" width="100%">
       </a>
-      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Spielen</div>
+      <div class = "klicken-indicator">Klicken zum Spielen</div>
     </div>
     <h4>
       User Experience Design<br>
@@ -1033,7 +1033,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
                 Ihr Browser unterstützt den Video-Tag nicht
         </video>
       </a>
-      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Anwenden</div>
+      <div class = "klicken-indicator">Klicken zum Anwenden</div>
     </div>
     <h4>
       Erweiterung von Fraktal<br>
@@ -1081,7 +1081,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
     <a href="Code/Fraktal/start.html">
       <img src="Fraktal.PNG" alt="Fraktal" width="100%">
     </a>
-    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Anwenden</div>
+    <div class = "klicken-indicator">Klicken zum Anwenden</div>
     </div>
     <h4>
       Akademische Vorbereitung<br>
@@ -1139,7 +1139,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
       <a href="Code/Cardioids/start.html">
         <img src="cardioids.PNG" width="100%">
       </a>
-      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Anwenden</div>
+      <div class = "klicken-indicator">Klicken zum Anwenden</div>
     </div>
     <h4>
       Schulvortrag<br>
@@ -1208,7 +1208,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
       <a href="Code/RubberBand/start.html">
         <img src="Rubber.PNG" width="100%">
       </a>
-      <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">Klicken zum Spielen</div>
+      <div class = "klicken-indicator">Klicken zum Spielen</div>
     </div>
     <h4>
       Freizeit-Experiment<br>
