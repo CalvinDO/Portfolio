@@ -483,7 +483,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
         Ihr Browser unterstützt den Video-Tag nicht
     </video>
     </a>
-      <div class = "klicken-indicator">Klicken zum Spielen</div>
+    <div class = "klicken-indicator">Klicken zum Spielen</div>
     <div class="tags">
       <span class="tag">Unity(C#)</span>
       <span class="tag">FMOD(Audio)</span>
@@ -543,6 +543,10 @@ video, img, .visual-presentation-container:not(#multi-display) {
             </video>
         </a>
         <div class = "klicken-indicator">Klicken zum Spielen</div>
+        <div class="tags">
+          <span class="tag">Unity(C#)</span>
+          <span class="tag">NEAT</span>
+        </div>
     </div>
     <h4>
       <a href="NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">
@@ -602,6 +606,10 @@ video, img, .visual-presentation-container:not(#multi-display) {
             </video>
         </a>
         <div class = "klicken-indicator">Klicken zum Spielen</div>
+        <div class="tags">
+          <span class="tag">Unity(C#)</span>
+          <span class="tag">NavMesh</span>
+        </div>
     </div>  
     <h4>
         Gamedesign-Workhop<br>
@@ -663,6 +671,12 @@ video, img, .visual-presentation-container:not(#multi-display) {
           <div id = "klicken-beerphong-special-indicator" class = "klicken-indicator">Klicken<br>zum<br>Marker</div>
         </div>
       </a>
+      <div class="tags">
+        <span class="tag">WebAR</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">GLSL</span>
+        <span class="tag">Three.js</span>
+      </div>
     </div>
     <h4>
     Echtzeit-Computergrafik<br>
@@ -715,6 +729,10 @@ video, img, .visual-presentation-container:not(#multi-display) {
             </video>
         </a>
         <div class = "klicken-indicator">Klicken zum Spielen</div>
+        <div class="tags">
+          <span class="tag">Unity(C#)</span>
+          <span class="tag">NavMesh</span>
+        </div>
     </div>  
     <h4>
         Projektstudium<br>
@@ -775,6 +793,13 @@ video, img, .visual-presentation-container:not(#multi-display) {
         <img src="TextGenerator.png" width="100%">
       </a>
       <div class = "klicken-indicator">Klicken zum Anwenden</div>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">TensorFlow</span>
+        <span class="tag">Jupyter</span>
+        <span class="tag">RNN</span>
+        <span class="tag">GRU</span>
+      </div>      
     </div>  
     <h4>
       Introduction to Deep Learning<br>
@@ -832,6 +857,11 @@ video, img, .visual-presentation-container:not(#multi-display) {
       <img src="TreeGenerator.png" width="100%" />
     </a>
     <div class = "klicken-indicator">Klicken zum Downloaden</div>
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">Blender API</span>
+      <span class="tag">Vektorrechnung</span>
+    </div>   
   </div>
   <h4>
     Datenverarbeitung in der Medienproduktion<br>
