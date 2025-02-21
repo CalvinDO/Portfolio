@@ -68,7 +68,9 @@ var Portfolio;
     }
     function handleDetailsFlexItem(detailsFlexItem) {
         let detail = detailsFlexItem.querySelector("details");
-        detailsFlexItem.addEventListener('click', () => { detail.open = true; console.log("set detail open"); });
+        let summary = detailsFlexItem.querySelector("summary");
+        detailsFlexItem.addEventListener('click', () => { detail.open = detail.open ? false : true; });
+        summary.addEventListener('click', () => { detail.open = detail.open ? false : true; });
     }
     function setWidth() {
         document.addEventListener("DOMContentLoaded", function () {

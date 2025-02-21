@@ -30,7 +30,7 @@
     height: 100%;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 700px) {
   .details-container {
     grid-template-columns: 1fr; /* Eine Spalte auf kleineren Bildschirmen */
   }
@@ -219,6 +219,10 @@ h1#header-coding ~ h1 {
 
   position: relative; /* Notwendig, damit .toggle-content sich relativ zum flex-item ausrichtet */
   overflow: visible; /* Erlaubt, dass das ausgeklappte Element überlappt */
+
+  border: #2f2f2f;
+  border-style: solid;
+  border-width: medium;
 }
 
 .toggle-content {
@@ -230,10 +234,17 @@ h1#header-coding ~ h1 {
   left: 0;
 }
 
+.toggle-content:not(.heading-toggle-content){
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .heading-toggle-content {
   margin: 0;
   padding: 0;
-  background: none;
+  top: 0;
+  text-align: center;
+  background: white;
 }
 
 .heading-toggle-content h2{
@@ -252,31 +263,15 @@ h1#header-coding ~ h1 {
 }
 
 
-
-/* .toggle-content:not(.third-toggle-content) {
-} */
-
 .flex-item.expanded .toggle-content {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   border: 2px solid rgb(102, 102, 102);
   border-radius: 4px;
   box-sizing: border-box;
   height: auto;
-  /*transition: height 0.3s ease-in-out;*/
   overflow: visible !important;
-  padding: 0; /* Änderung: Vereinheitlicht */
+  padding: 0;
   margin: 0;
-}
-
-.toggle-content:not(.heading-toggle-content){
-  background: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.heading-toggle-content {
-  top: 0;
-  text-align: center;
-  background: white;
 }
 
 .expanded .heading-toggle-content {
@@ -313,7 +308,7 @@ h1#header-coding ~ h1 {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .flex-item {
     width: 100%; /* 1 Element pro Zeile */
   }

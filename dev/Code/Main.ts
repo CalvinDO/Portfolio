@@ -100,8 +100,10 @@ namespace Portfolio {
     function handleDetailsFlexItem(detailsFlexItem: HTMLElement): void {
 
         let detail: HTMLDetailsElement = detailsFlexItem.querySelector("details");
+        let summary: HTMLElement = detailsFlexItem.querySelector("summary");
 
-        detailsFlexItem.addEventListener('click', () => { detail.open = true; console.log("set detail open"); })
+        detailsFlexItem.addEventListener('click', () => { detail.open = detail.open ? false : true; })
+        summary.addEventListener('click', () => { detail.open = detail.open ? false : true; })
     }
 
     function setWidth(): void {
