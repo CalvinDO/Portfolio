@@ -245,6 +245,7 @@ h1#header-coding ~ h1 {
 
 .heading-toggle-content h2{
   margin: 0 !important;
+  z-index: 13;
   padding: 0;
   background: none;
 }
@@ -334,6 +335,27 @@ video, img, .visual-presentation-container:not(#multi-display) {
   border: 0;
 }
 
+.tags {
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow: visible;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+
+.tag {
+    background-color: rgb(107, 78, 155);
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
 .toggle-arrow {
     position: absolute;
     bottom: 10px;
@@ -412,6 +434,10 @@ video, img, .visual-presentation-container:not(#multi-display) {
       <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: white; font-size: 2em; opacity: 0.5; pointer-events: none;">
       Klicken zum Spielen
       </div>
+    <div class="tags">
+      <span class="tag">Unity(C#)</span>
+      <span class="tag">FMOD(Audio)</span>
+    </div>
     <div class="toggle-arrow">▼</div>
     </div>
     <div class="toggle-content second-toggle-content">
