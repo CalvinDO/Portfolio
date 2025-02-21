@@ -886,14 +886,14 @@ video, img, .visual-presentation-container:not(#multi-display) {
       </a>
       <div class = "klicken-indicator">Klicken zum Anwenden</div>
       <div class = "primary-info-container">
-      <div class="tags">
-        <span class="tag">Python</span>
-        <span class="tag">TensorFlow</span>
-        <span class="tag">Jupyter</span>
-        <span class="tag">RNN</span>
-        <span class="tag">GRU</span>
-      </div>      
-      <div class = "primary-info-container">
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">TensorFlow</span>
+          <span class="tag">Jupyter</span>
+          <span class="tag">RNN</span>
+          <span class="tag">GRU</span>
+        </div>      
+      </div>
     </div>  
     <h4>
       Introduction to Deep Learning<br>
