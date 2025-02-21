@@ -344,6 +344,9 @@ video, img, .visual-presentation-container:not(#multi-display) {
     position: absolute;
     right: 10%;
     top: 10%;
+
+    pointer-events: none;
+    user-select: none;
 }
 
 .tag {
