@@ -568,7 +568,8 @@ span.toggle-arrow-span {
 <!-- calendar icon -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- clock icon -->
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 <div id="overlay"></div>
 
 <h1 id = "header-coding">Coding</h1>
@@ -613,6 +614,9 @@ span.toggle-arrow-span {
           <i class="material-icons">person</i>
           <i class="material-icons">person</i>
           <i class="material-icons">person</i>
+        </div>
+        <div class = "context-awards">
+          <i class="fa-solid fa-user-tie"></i>
         </div>
         <div class="tags">
           <span class="tag">Unity(C#)</span>
