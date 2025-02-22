@@ -68,7 +68,7 @@ namespace Portfolio {
 
         document.querySelectorAll('.flex-item').forEach((otherItem: HTMLElement) => {
 
-            if (otherItem !== item) {
+            if (otherItem != item) {
 
                 (<HTMLElement>otherItem).style.filter = "blur(5px) !important";
                 (<HTMLElement>otherItem).style.opacity = "0.5 !important";

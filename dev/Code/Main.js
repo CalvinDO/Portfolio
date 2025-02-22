@@ -48,7 +48,7 @@ var Portfolio;
             return;
         }
         document.querySelectorAll('.flex-item').forEach((otherItem) => {
-            if (otherItem !== item) {
+            if (otherItem != item) {
                 otherItem.style.filter = "blur(5px) !important";
                 otherItem.style.opacity = "0.5 !important";
                 console.log("set filter + blur for. ", otherItem);
