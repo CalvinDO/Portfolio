@@ -356,15 +356,15 @@ video, img, .visual-presentation-container:not(#multi-display) {
   -webkit-box-shadow: 0 0 0px #ebebeb !important;
 }
 
-.visual-presentation-container a{
+.visual-presentation-container img, .visual-presentation-container video{
   filter: grayscale(85%);
 }
 
-.flex-item.hovered .visual-presentation-container a{
+.flex-item.hovered .visual-presentation-container img, .flex-item.hovered .visual-presentation-container video{
   filter: grayscale(50%);
 }
 
-.flex-item.expanded .visual-presentation-container a{
+.flex-item.expanded .visual-presentation-container img, .flex-item.expanded .visual-presentation-container video{
   filter: grayscale(0%);
 }
 
@@ -565,7 +565,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
     <div class="toggle-content second-toggle-content">
       <h4>
       <a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a><br>
-      25-köpfiges</strong> Team + Outsourcer<br>
+      25-köpfiges Team + Outsourcer<br>
       Herbst 2020 - Frühling 2023<br>
       Publisher: <a href = "https://www.astragon.de/">Astragon</a>
       </h4>
