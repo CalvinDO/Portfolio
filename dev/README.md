@@ -816,7 +816,7 @@ span.toggle-arrow-span {
       <a href="https://calvindo.github.io/Realtime-BeerPhong/aFrame.html">
         <div style="position: relative;">
           <img src="BeerPhong.jpeg" style="width: 100%; height: auto; max-width: 100%;">
-          <div class = "klicken-indicator">Klicken zum<br>Spielen</div>
+          <div class = "klicken-indicator">Klicken<br>zum<br>Spielen</div>
         </div>
       </a>  
       <a href="BeerPhongMarker.png" download>
