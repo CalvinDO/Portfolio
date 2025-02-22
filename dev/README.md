@@ -502,7 +502,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
 }
 
 .context-awards * {
-    font-size: 22px;
+    font-size: 20px !important;
     color: #3a0ca3;
     text-shadow: -1px 0 #f8f9fa, 0 1px #f8f9fa, 1px 0 #f8f9fa, 0 -1px #f8f9fa;
 }
