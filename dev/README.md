@@ -616,10 +616,13 @@ video, img, .visual-presentation-container:not(#multi-display) {
         </a>
         <div class = "klicken-indicator">Klicken zum Spielen</div>
         <div class = "primary-info-container">
-        <div class="tags">
-          <span class="tag">Unity(C#)</span>
-          <span class="tag">NEAT</span>
-        </div>
+          <div class="team-size-container">
+            <i class="material-icons">person</i>
+          </div>
+          <div class="tags">
+            <span class="tag">Unity(C#)</span>
+            <span class="tag">NEAT</span>
+          </div>
         </div>
     </div>
     <h4>
@@ -681,10 +684,18 @@ video, img, .visual-presentation-container:not(#multi-display) {
         </a>
         <div class = "klicken-indicator">Klicken zum Spielen</div>
         <div class = "primary-info-container">
-        <div class="tags">
-          <span class="tag">Unity(C#)</span>
-          <span class="tag">NavMesh</span>
-        </div>
+          <div class="team-size-container">
+            <i class="material-icons">person</i>
+            <i class="material-icons">person</i>
+            <i class="material-icons">person</i>
+            <i class="material-icons">person</i>
+            <i class="material-icons">person</i>
+            <i class="material-icons">person</i>
+          </div>
+          <div class="tags">
+            <span class="tag">Unity(C#)</span>
+            <span class="tag">NavMesh</span>
+          </div>
         </div>
     </div>  
     <h4>
@@ -820,10 +831,18 @@ video, img, .visual-presentation-container:not(#multi-display) {
         </a>
         <div class = "klicken-indicator">Klicken zum Spielen</div>
         <div class = "primary-info-container">
-        <div class="tags">
-          <span class="tag">Unity(C#)</span>
-          <span class="tag">NavMesh</span>
-        </div>
+          <div class="team-size-container">
+            <i class="material-icons">person</i>
+            <i class="material-icons">person</i>
+            <i class="material-icons">person</i>
+            <i class="material-icons">person</i>
+            <i class="material-icons">person</i>
+            <i class="material-icons">person</i>
+          </div>
+          <div class="tags">
+            <span class="tag">Unity(C#)</span>
+            <span class="tag">NavMesh</span>
+          </div>
         </div>
     </div>  
     <h4>
@@ -886,6 +905,9 @@ video, img, .visual-presentation-container:not(#multi-display) {
       </a>
       <div class = "klicken-indicator">Klicken zum Anwenden</div>
       <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>
+        </div>
         <div class="tags">
           <span class="tag">Python</span>
           <span class="tag">TensorFlow</span>
@@ -952,11 +974,16 @@ video, img, .visual-presentation-container:not(#multi-display) {
     </a>
     <div class = "klicken-indicator">Klicken zum Downloaden</div>
     <div class = "primary-info-container">
-    <div class="tags">
-      <span class="tag">Python</span>
-      <span class="tag">Blender API</span>
-      <span class="tag">Vektorrechnung</span>
-    </div> 
+      <div class="team-size-container">
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+        <i class="material-icons">person</i>
+      </div>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">Blender API</span>
+        <span class="tag">Vektorrechnung</span>
+      </div> 
     </div>  
   </div>
   <h4>
@@ -1011,6 +1038,9 @@ video, img, .visual-presentation-container:not(#multi-display) {
         </a>
         <div class = "klicken-indicator">Klicken zum Spielen</div>
         <div class = "primary-info-container">
+          <div class="team-size-container">
+            <i class="material-icons">person</i>
+          </div>
           <div class = "tags">
             <span class="tag">TypeScript</span>
             <span class="tag">FUDGE</span>
@@ -1066,6 +1096,19 @@ video, img, .visual-presentation-container:not(#multi-display) {
         <img src="Eisladen.png" width="100%">
       </a>
       <div class = "klicken-indicator">Klicken zum Spielen</div>
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>
+        </div>
+        <div class = "tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JSON</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">LocalStorage</span>
+          <span class="tag">MongoDB</span>
+        </div>
+      </div>
     </div>
     <h4>
       Grundlagen Interaktiver Systeme<br>
@@ -1133,6 +1176,22 @@ video, img, .visual-presentation-container:not(#multi-display) {
         <img src="DiscHoverHFU.png" width="100%">
       </a>
       <div class = "klicken-indicator">Klicken zum Spielen</div>
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+        </div>
+        <div class = "tags">
+          <span class="tag">WebXR</span>
+          <span class="tag">AdobeXD</span>
+          <span class="tag">OpenStreetMap</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JSON</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">LocalStorage</span>
+        </div>
+      </div>
     </div>
     <h4>
       User Experience Design<br>
@@ -1142,7 +1201,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
     </h4>
     <br>
     <div class="skills">
-      <strong>TypeScript, HTML, CSS, LocalStorage, OpenStreetMap, WebXR, AdobeXD</strong><br>
+      <strong>TypeScript, HTML, CSS, LocalStorage, OpenStreetMap, JSON, WebXR, AdobeXD</strong><br>
       <em>Interdisziplinär - Innovativ - Wegweisend</em><br>
       <strong>Wireframes, Sitemaps, User Journey, Visuelle Guides, Git</strong>
     </div>
@@ -1191,6 +1250,17 @@ video, img, .visual-presentation-container:not(#multi-display) {
         </video>
       </a>
       <div class = "klicken-indicator">Klicken zum Anwenden</div>
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>
+        </div>
+        <div class = "tags">
+          <span class="tag">TypeScript</span>
+          <span class="tag">CanvasRC2D</span>
+          <span class="tag">Rekursion</span>
+          <span class="tag">Animation</span>
+        </div>
+      </div>
     </div>
     <h4>
       Erweiterung von Fraktal<br>
@@ -1235,10 +1305,20 @@ video, img, .visual-presentation-container:not(#multi-display) {
   <div class="flex-item">
     <h2 id="fraktal">Fraktal</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-    <a href="Code/Fraktal/start.html">
-      <img src="Fraktal.PNG" alt="Fraktal" width="100%">
-    </a>
-    <div class = "klicken-indicator">Klicken zum Anwenden</div>
+      <a href="Code/Fraktal/start.html">
+        <img src="Fraktal.PNG" alt="Fraktal" width="100%">
+      </a>
+      <div class = "klicken-indicator">Klicken zum Anwenden</div>
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>
+        </div>
+        <div class = "tags">
+          <span class="tag">TypeScript</span>
+          <span class="tag">CanvasRC2D</span>
+          <span class="tag">Rekursion</span>
+        </div>
+      </div>
     </div>
     <h4>
       Akademische Vorbereitung<br>
@@ -1297,6 +1377,17 @@ video, img, .visual-presentation-container:not(#multi-display) {
         <img src="cardioids.PNG" width="100%">
       </a>
       <div class = "klicken-indicator">Klicken zum Anwenden</div>
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>
+        </div>
+        <div class = "tags">
+          <span class="tag">TypeScript</span>
+          <span class="tag">CanvasRC2D</span>
+          <span class="tag">Kreisberechnung</span>
+          <span class="tag">Algebra</span>
+        </div>
+      </div>
     </div>
     <h4>
       Schulvortrag<br>
@@ -1366,6 +1457,16 @@ video, img, .visual-presentation-container:not(#multi-display) {
         <img src="Rubber.PNG" width="100%">
       </a>
       <div class = "klicken-indicator">Klicken zum Spielen</div>
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>
+        </div>
+        <div class = "tags">
+          <span class="tag">TypeScript</span>
+          <span class="tag">CanvasRC2D</span>
+          <span class="tag">Vektoraddition</span>
+        </div>
+      </div>
     </div>
     <h4>
       Freizeit-Experiment<br>
@@ -1375,7 +1476,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
     </h4>
     <br>
     <div class="skills">
-      <strong>TypeScript, Vektoraddition</strong><br>
+      <strong>TypeScript, CanvasRenderingContext2D, Vektoraddition</strong><br>
       <em>Experimentell - Physikalisch - Selbstständig</em><br>
       <strong>Git</strong>
     </div>
