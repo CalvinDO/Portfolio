@@ -397,13 +397,23 @@ video, img, .visual-presentation-container:not(#multi-display) {
   border: 0;
 }
 
+.primary-info-container > *{
+  overflow: visible;
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+}
+
+.duration{
+  left: 5%;
+  top: 5%;
+}
+
 .hovered .primary-info-container, .expanded .primary-info-container{
   display: none;
 }
 
 .team-size-container {
-  overflow: visible;
-  position: absolute;
   left: 2%;
   top: 4%;
 
@@ -415,26 +425,21 @@ video, img, .visual-presentation-container:not(#multi-display) {
 
 .material-icons {
   font-family: "Material Icons";
-  font-size: 21px;
-
+  font-size: 21px !important;
   color: #212529;
   text-shadow: -1px 0 #f8f9fa, 0 1px #f8f9fa, 1px 0 #f8f9fa, 0 -1px #f8f9fa;
 }
 
 .tags {
-    flex-direction: row;
-    width: 168px;
-    display: flex;
-    gap: 6.18px;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: flex-end;
-    overflow: visible;
-    position: absolute;
-    right: 2%;
-    top: 4%;
-    pointer-events: none;
-    user-select: none;
+  flex-direction: row;
+  width: 168px;
+  display: flex;
+  gap: 6.18px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+  right: 2%;
+  top: 4%;
 }
 
 .tag {
@@ -450,8 +455,6 @@ video, img, .visual-presentation-container:not(#multi-display) {
 
     white-space: nowrap;
 }
-
-
 
 .toggle-arrow {
     position: absolute;
