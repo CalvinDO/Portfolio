@@ -586,6 +586,7 @@ span.toggle-arrow-span {
           <span class="tag">C#</span>
           <span class="tag">FMOD</span>
         </div>
+        <span class ="duration">2y 6m</span>
       </div>
       <div class="toggle-arrow"><span class = "toggle-arrow-span">▼</span></div>
     </div>
