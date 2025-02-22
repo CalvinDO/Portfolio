@@ -473,6 +473,23 @@ video, img, .visual-presentation-container:not(#multi-display) {
   text-shadow: -1px 0 #f8f9fa, 0 1px #f8f9fa, 1px 0 #f8f9fa, 0 -1px #f8f9fa;
 }
 
+.context-awards {
+  flex-direction: row;
+    width: auto;
+    display: flex;
+    gap: 6.18px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 4%;
+}
+
+.context-awards * {
+    font-size: 22px;
+}
+
 .tags {
   flex-direction: row;
   width: 168px;
