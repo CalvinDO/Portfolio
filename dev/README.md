@@ -689,10 +689,14 @@ span.toggle-arrow-span {
           <div class="team-size-container">
             <i class="material-icons">person</i>
           </div>
+          <div class = "context-awards">
+            <i class=""></i>
+          </div>
           <div class="tags">
             <span class="tag">Unity</span>
             <span class="tag">C#</span>
             <span class="tag">NEAT</span>
+            <span class="tag">AI</span>
           </div>
           <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;6m</span>
         </div>
@@ -991,6 +995,7 @@ span.toggle-arrow-span {
           <span class="tag">Jupyter</span>
           <span class="tag">RNN</span>
           <span class="tag">GRU</span>
+          <span class="tag">AI</span>
         </div>
         <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;10d</span>
       </div>
