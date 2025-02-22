@@ -454,6 +454,11 @@ video, img, .visual-presentation-container:not(#multi-display) {
   display: none;
 }
 
+:root {
+  --person-color: hsl(194 85% 94% / 1);
+  --person-outline-color: #000000;
+}
+
 .team-size-container {
   flex-direction: column;
   display: flex;
@@ -469,15 +474,15 @@ video, img, .visual-presentation-container:not(#multi-display) {
 .material-icons {
   font-family: "Material Icons";
   font-size: 21px !important;
-  color: #212529;
-  text-shadow: -1px 0 #f8f9fa, 0 1px #f8f9fa, 1px 0 #f8f9fa, 0 -1px #f8f9fa;
+  color: var(--person-color);
+  text-shadow: -1px 0 var(--person-outline-color), 0 1px var(--person-outline-color), 1px 0 var(--person-outline-color), 0 -1px var(--person-outline-color);
 }
 
 .context-awards {
   flex-direction: row;
     width: auto;
     display: flex;
-    gap: 6.18px;
+    gap: 25px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -488,6 +493,8 @@ video, img, .visual-presentation-container:not(#multi-display) {
 
 .context-awards * {
     font-size: 22px;
+    color: #3a0ca3;
+    text-shadow: -1px 0 #f8f9fa, 0 1px #f8f9fa, 1px 0 #f8f9fa, 0 -1px #f8f9fa;
 }
 
 .tags {

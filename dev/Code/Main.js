@@ -134,7 +134,7 @@ var Portfolio;
     function insertArrowIn(item) {
         let toggleArrowDiv = document.createElement("div");
         toggleArrowDiv.classList.add("toggle-arrow");
-        toggleArrowDiv.innerHTML = '<span class = "toggle - arrow - span">▼</span>';
+        toggleArrowDiv.innerHTML = '<span class = "toggle-arrow-span">▼</span>';
         item.querySelector(".visual-presentation-container").insertAdjacentElement('beforeend', toggleArrowDiv);
     }
     function setupMouseLeave(item) {
