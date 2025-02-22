@@ -51,6 +51,7 @@ var Portfolio;
             if (otherItem !== item) {
                 otherItem.style.filter = "blur(5px) !important";
                 otherItem.style.opacity = "0.5 !important";
+                console.log("set filter + blur for. ", otherItem);
                 if (otherItem.classList.contains('expanded')) {
                     dexpandProjectFlexItem(otherItem);
                 }
@@ -144,11 +145,11 @@ var Portfolio;
     }
     function onMouseLeave() {
         this.classList.remove('hovered');
-        //overlay.style.opacity = "0";
+        overlay.style.opacity = "0";
     }
     function onMouseEnter() {
         this.classList.add('hovered');
-        //overlay.style.opacity = "1";
+        overlay.style.opacity = "1";
     }
     function setupArrow(arrow, flexItem) {
         arrow.addEventListener('click', () => {

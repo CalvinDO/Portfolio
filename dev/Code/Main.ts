@@ -72,7 +72,7 @@ namespace Portfolio {
 
                 (<HTMLElement>otherItem).style.filter = "blur(5px) !important";
                 (<HTMLElement>otherItem).style.opacity = "0.5 !important";
-
+                console.log("set filter + blur for. ", otherItem);
                 if (otherItem.classList.contains('expanded')) {
                     dexpandProjectFlexItem(otherItem);
                 }
@@ -205,13 +205,13 @@ namespace Portfolio {
     function onMouseLeave(this: HTMLElement) {
 
         this.classList.remove('hovered');
-        //overlay.style.opacity = "0";
+        overlay.style.opacity = "0";
     }
 
     function onMouseEnter(this: HTMLElement) {
 
         this.classList.add('hovered');
-        //overlay.style.opacity = "1";
+        overlay.style.opacity = "1";
     }
 
 
