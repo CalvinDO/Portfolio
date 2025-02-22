@@ -1610,6 +1610,17 @@ span.toggle-arrow-span {
       <!-- <iframe width="100%" height="300em" src="https://www.youtube.com/embed/VAOCARtbn54"
       frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
       </iframe>   -->
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>
+        </div>
+        <div class="tags">
+          <span class="tag">Blender</span>
+          <span class="tag">Hard-Surface-Modeling</span>
+        </div>
+        <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3d</span>
+      </div>
     </div>
     <h4>
       Freizeitgestaltung<br>
@@ -1658,6 +1669,17 @@ span.toggle-arrow-span {
     <h2 id="truhe">Truhe</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <img src="Truhe.png" alt="Truhe" width="100%"/>
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>
+        </div>
+        <div class="tags">
+          <span class="tag">Blender</span>
+          <span class="tag">Hard-Surface-Modeling</span>
+          <span class="tag">Prozedurale Texturen</span>
+        </div>
+        <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3d</span>
+      </div>
     </div>
     <h4>
       Private Kursaufgabe<br>
