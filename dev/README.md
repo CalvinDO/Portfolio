@@ -420,16 +420,17 @@ video, img, .visual-presentation-container:not(#multi-display) {
 }
 
 .tags {
-    flex-direction: column;
+    flex-direction: row;
+    width: 170px;
     display: flex;
-    gap: 10px;
+    gap: 6.18px;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: flex-end;
+    justify-content: flex-end;
     overflow: visible;
     position: absolute;
     right: 2%;
     top: 4%;
-
     pointer-events: none;
     user-select: none;
 }
