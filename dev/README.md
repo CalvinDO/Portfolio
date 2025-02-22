@@ -244,6 +244,7 @@ h1#header-coding ~ h1 {
   background: #E9ECEF;
 
   user-select: none;
+  z-index: 12;
 }
 
 .heading-toggle-content h2{
@@ -525,7 +526,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
 
 .toggle-arrow {
     position: absolute;
-    bottom: 0px;
+    bottom: 6.18px;
     right: 3.1%;
     transform: translateX(-50%) rotate(0deg);
     font-size: 1.7em;
