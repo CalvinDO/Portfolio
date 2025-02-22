@@ -55,6 +55,7 @@ var Portfolio;
             }
         });
         item.classList.toggle('expanded', true);
+        overlay.style.opacity = "1";
         let secondToggleChildren = item.querySelector(".second-toggle-content").children;
         let headingToggle = item.querySelector(".heading-toggle-content");
         for (let secondToggleChild of secondToggleChildren) {
@@ -64,6 +65,7 @@ var Portfolio;
     }
     function dexpandProjectFlexItem(item) {
         item.classList.toggle('expanded', false);
+        overlay.style.opacity = "0";
         let foreignChildren = item.querySelectorAll(".foreign");
         let secondToggleDiv = item.querySelector(".second-toggle-content");
         for (let foreignChild of foreignChildren) {
@@ -136,11 +138,9 @@ var Portfolio;
     }
     function onMouseLeave() {
         this.classList.remove('hovered');
-        overlay.style.opacity = "0";
     }
     function onMouseEnter() {
         this.classList.add('hovered');
-        overlay.style.opacity = "1";
     }
     function setupArrow(arrow, flexItem) {
         arrow.addEventListener('click', () => {

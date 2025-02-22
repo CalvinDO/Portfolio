@@ -76,8 +76,9 @@ namespace Portfolio {
             }
         });
 
-
         item.classList.toggle('expanded', true);
+
+        overlay.style.opacity = "1";
 
         let secondToggleChildren: HTMLCollection = item.querySelector(".second-toggle-content").children;
         let headingToggle: HTMLDivElement = item.querySelector(".heading-toggle-content");
@@ -91,6 +92,8 @@ namespace Portfolio {
     function dexpandProjectFlexItem(item: HTMLElement): void {
 
         item.classList.toggle('expanded', false);
+
+        overlay.style.opacity = "0";
 
         let foreignChildren: NodeListOf<Element> = item.querySelectorAll(".foreign");
         let secondToggleDiv: HTMLDivElement = item.querySelector(".second-toggle-content");
@@ -193,13 +196,12 @@ namespace Portfolio {
     function onMouseLeave(this: HTMLElement) {
 
         this.classList.remove('hovered');
-        overlay.style.opacity = "0";
+
     }
 
     function onMouseEnter(this: HTMLElement) {
 
         this.classList.add('hovered');
-        overlay.style.opacity = "1";
     }
 
 
