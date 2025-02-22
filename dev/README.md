@@ -550,7 +550,8 @@ span.toggle-arrow-span {
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!-- calendar icon -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<!-- clock icon -->
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <div id="overlay"></div>
 
 <h1 id = "header-coding">Coding</h1>
@@ -742,6 +743,7 @@ span.toggle-arrow-span {
             <span class="tag">C#</span>
             <span class="tag">NavMesh</span>
           </div>
+          <span class ="duration">6m <i class="fa fa-calendar"></i></span>
         </div>
     </div>  
     <h4>
@@ -818,6 +820,7 @@ span.toggle-arrow-span {
           <span class="tag">GLSL</span>
           <span class="tag">Three.js</span>
         </div>
+        <span class ="duration">3m <i class="fa fa-calendar"></i></span>
       </div>
       <div class="toggle-arrow">▼</div>
     </div>
@@ -890,6 +893,7 @@ span.toggle-arrow-span {
             <span class="tag">C#</span>
             <span class="tag">NavMesh</span>
           </div>
+          <span class ="duration">1y <i class="fa fa-calendar"></i></span>
         </div>
     </div>  
     <h4>
@@ -961,7 +965,8 @@ span.toggle-arrow-span {
           <span class="tag">Jupyter</span>
           <span class="tag">RNN</span>
           <span class="tag">GRU</span>
-        </div>      
+        </div>
+        <span class ="duration">15d <i class="fa fa-calendar"></i></span>
       </div>
     </div>  
     <h4>
@@ -1031,7 +1036,8 @@ span.toggle-arrow-span {
         <span class="tag">Blender API</span>
         <span class="tag">Vektorrechnung</span>
       </div> 
-    </div>  
+      <span class ="duration">3m <i class="fa fa-calendar"></i></span>
+    </div>
   </div>
   <h4>
     Datenverarbeitung in der Medienproduktion<br>
@@ -1093,6 +1099,7 @@ span.toggle-arrow-span {
             <span class="tag">FUDGE</span>
             <span class="tag">Blender</span>
           </div>
+          <span class ="duration">3m <i class="fa fa-calendar"></i></span>
         </div>
     </div>  
     <h4>
@@ -1155,6 +1162,7 @@ span.toggle-arrow-span {
           <span class="tag">LocalStorage</span>
           <span class="tag">MongoDB</span>
         </div>
+        <span class ="duration">3m <i class="fa fa-calendar"></i></span>
       </div>
     </div>
     <h4>
@@ -1238,6 +1246,7 @@ span.toggle-arrow-span {
           <span class="tag">TypeScript</span>
           <span class="tag">LocalStorage</span>
         </div>
+        <span class ="duration">3m <i class="fa fa-calendar"></i></span>
       </div>
     </div>
     <h4>
@@ -1307,6 +1316,7 @@ span.toggle-arrow-span {
           <span class="tag">Rekursion</span>
           <span class="tag">Animation</span>
         </div>
+        <span class ="duration">2d <i class="fa fa-calendar"></i></span>
       </div>
     </div>
     <h4>
@@ -1365,6 +1375,7 @@ span.toggle-arrow-span {
           <span class="tag">CanvasRC2D</span>
           <span class="tag">Rekursion</span>
         </div>
+        <span class ="duration">2d <i class="fa fa-calendar"></i></span>
       </div>
     </div>
     <h4>
@@ -1434,6 +1445,7 @@ span.toggle-arrow-span {
           <span class="tag">Kreisberechnung</span>
           <span class="tag">Algebra</span>
         </div>
+        <span class ="duration">3h <i class='far fa-clock'></i></span>
       </div>
     </div>
     <h4>
@@ -1513,6 +1525,7 @@ span.toggle-arrow-span {
           <span class="tag">CanvasRC2D</span>
           <span class="tag">Vektoraddition</span>
         </div>
+        <span class ="duration">1h <i class='far fa-clock'></i></span>
       </div>
     </div>
     <h4>
