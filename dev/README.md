@@ -242,6 +242,8 @@ h1#header-coding ~ h1 {
   top: 0;
   text-align: center;
   background: #E9ECEF;
+
+  user-select: none;
 }
 
 .heading-toggle-content h2{
@@ -467,6 +469,20 @@ video, img, .visual-presentation-container:not(#multi-display) {
     justify-content: center;
     cursor: pointer;
     z-index: 12;
+}
+
+/* Wenn .flex-item gehovt wird -> Glow-Effekt */
+.flex-item.hovered .toggle-arrow {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Wenn der Pfeil selbst gehovt wird -> Klar als klickbar erkennbar */
+.toggle-arrow:hover {
+    transform: translateX(-50%) scale(1.16180339);
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
 }
 
 .flex-item.expanded .toggle-arrow {
