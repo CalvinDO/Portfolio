@@ -408,10 +408,10 @@ video, img, .visual-presentation-container:not(#multi-display) {
 }
 
 .hovered .klicken-indicator {
-    opacity: 1;
-    font-size: 2.1em;
+    opacity: 0.93;
+    font-size: 2em;
     font-weight: bold;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6180339);
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6180339);
     transition: all 0.2s ease-in-out;
 }
 
