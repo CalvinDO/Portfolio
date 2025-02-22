@@ -357,11 +357,11 @@ video, img, .visual-presentation-container:not(#multi-display) {
 }
 
 .visual-presentation-container img, .visual-presentation-container video{
-  filter: grayscale(85%);
+  filter: grayscale(50%);
 }
 
 .flex-item.hovered .visual-presentation-container img, .flex-item.hovered .visual-presentation-container video{
-  filter: grayscale(50%);
+  filter: grayscale(30%);
 }
 
 .flex-item.expanded .visual-presentation-container img, .flex-item.expanded .visual-presentation-container video{
@@ -415,8 +415,8 @@ video, img, .visual-presentation-container:not(#multi-display) {
   font-family: "Material Icons";
   font-size: 24px;
 
-  color: #f8f9fa;
-  text-shadow: -1px 0 #212529, 0 1px #212529, 1px 0 #212529, 0 -1px #212529;
+  color: #212529;
+  text-shadow: -1px 0 #f8f9fa, 0 1px #f8f9fa, 1px 0 #f8f9fa, 0 -1px #f8f9fa;
 }
 
 .tags {
