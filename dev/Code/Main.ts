@@ -26,7 +26,7 @@ namespace Portfolio {
 
             video.addEventListener('mouseleave', () => {
                 video.pause();
-                video.currentTime = 0;
+                //video.currentTime = 0;
             });
         });
     }
