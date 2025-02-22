@@ -404,7 +404,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
 
 .klicken-indicator{
   position: absolute;
-  top: 50%;
+  top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -448,7 +448,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
 
 .duration {
   left: 2%;
-  top: 50%;
+  top: 61.8%;
   background-color: rgb(67 97 238);
   color: #F8F9FA;
   font-size: 14px;
@@ -814,6 +814,10 @@ span.toggle-arrow-span {
             <i class="material-icons">person</i>
             <i class="material-icons">person</i>
           </div>
+          <div class = "context-awards">
+            <i class="fa fa-university"></i>
+            <i class="fas fa-award"></i>
+          </div>
           <div class="tags">
             <span class="tag">Unity</span>
             <span class="tag">C#</span>
@@ -890,6 +894,10 @@ span.toggle-arrow-span {
           <i class="material-icons">person</i>
           <i class="material-icons">person</i>
         </div>
+        <div class = "context-awards">
+            <i class="fa fa-university"></i>
+            <i class=""></i>
+          </div>
         <div class="tags">
           <span class="tag">WebAR</span>
           <span class="tag">JavaScript</span>
@@ -898,7 +906,7 @@ span.toggle-arrow-span {
         </div>
         <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3m</span>
       </div>
-      <div class="toggle-arrow">▼</div>
+      <div class="toggle-arrow"><span class = "toggle-arrow-span">▼</span></div>
     </div>
     <div class="toggle-content second-toggle-content">
       <h4>
