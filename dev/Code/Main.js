@@ -9,7 +9,7 @@ var Portfolio;
         setupVideoHover();
     }
     function setupVideoHover() {
-        const videos = document.querySelectorAll('.video');
+        const videos = document.querySelectorAll('video');
         videos.forEach((video) => {
             video.addEventListener('mouseenter', () => {
                 video.play();

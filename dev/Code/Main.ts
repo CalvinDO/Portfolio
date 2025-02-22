@@ -17,7 +17,7 @@ namespace Portfolio {
 
     function setupVideoHover() {
 
-        const videos: NodeListOf<Element> = document.querySelectorAll('.video');
+        const videos: NodeListOf<Element> = document.querySelectorAll('video');
 
         videos.forEach((video: HTMLVideoElement) => {
             video.addEventListener('mouseenter', () => {
