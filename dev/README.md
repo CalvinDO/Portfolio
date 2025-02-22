@@ -421,7 +421,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
 
 .tags {
     flex-direction: row;
-    width: 170px;
+    width: 168px;
     display: flex;
     gap: 6.18px;
     flex-wrap: wrap;
@@ -558,7 +558,8 @@ video, img, .visual-presentation-container:not(#multi-display) {
         </div>
         <div class="tags">
           <span class="tag">Unity(C#)</span>
-          <span class="tag">FMOD(Audio)</span>
+          <span class="tag">C#</span>
+          <span class="tag">FMOD</span>
         </div>
       </div>
       <div class="toggle-arrow">▼</div>
@@ -621,7 +622,8 @@ video, img, .visual-presentation-container:not(#multi-display) {
             <i class="material-icons">person</i>
           </div>
           <div class="tags">
-            <span class="tag">Unity(C#)</span>
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
             <span class="tag">NEAT</span>
           </div>
         </div>
@@ -694,7 +696,8 @@ video, img, .visual-presentation-container:not(#multi-display) {
             <i class="material-icons">person</i>
           </div>
           <div class="tags">
-            <span class="tag">Unity(C#)</span>
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
             <span class="tag">NavMesh</span>
           </div>
         </div>
@@ -841,7 +844,8 @@ video, img, .visual-presentation-container:not(#multi-display) {
             <i class="material-icons">person</i>
           </div>
           <div class="tags">
-            <span class="tag">Unity(C#)</span>
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
             <span class="tag">NavMesh</span>
           </div>
         </div>
