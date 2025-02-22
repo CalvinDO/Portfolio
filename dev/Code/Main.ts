@@ -70,9 +70,6 @@ namespace Portfolio {
 
             if (otherItem != item) {
 
-                (<HTMLElement>otherItem).style.filter = "blur(5px) !important";
-                (<HTMLElement>otherItem).style.opacity = "0.5 !important";
-                console.log("set filter + blur for. ", otherItem);
                 if (otherItem.classList.contains('expanded')) {
                     dexpandProjectFlexItem(otherItem);
                 }
@@ -92,15 +89,6 @@ namespace Portfolio {
     }
 
     function dexpandProjectFlexItem(item: HTMLElement): void {
-
-        document.querySelectorAll('.flex-item').forEach(otherItem => {
-
-            if (otherItem !== item) {
-
-                (<HTMLElement>otherItem).style.filter = "none !important";
-                (<HTMLElement>otherItem).style.opacity = "1 !important";
-            }
-        });
 
         item.classList.toggle('expanded', false);
 

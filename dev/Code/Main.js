@@ -49,9 +49,6 @@ var Portfolio;
         }
         document.querySelectorAll('.flex-item').forEach((otherItem) => {
             if (otherItem != item) {
-                otherItem.style.filter = "blur(5px) !important";
-                otherItem.style.opacity = "0.5 !important";
-                console.log("set filter + blur for. ", otherItem);
                 if (otherItem.classList.contains('expanded')) {
                     dexpandProjectFlexItem(otherItem);
                 }
@@ -66,12 +63,6 @@ var Portfolio;
         }
     }
     function dexpandProjectFlexItem(item) {
-        document.querySelectorAll('.flex-item').forEach(otherItem => {
-            if (otherItem !== item) {
-                otherItem.style.filter = "none !important";
-                otherItem.style.opacity = "1 !important";
-            }
-        });
         item.classList.toggle('expanded', false);
         let foreignChildren = item.querySelectorAll(".foreign");
         let secondToggleDiv = item.querySelector(".second-toggle-content");
