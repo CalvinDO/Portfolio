@@ -382,10 +382,12 @@ video, img, .visual-presentation-container:not(#multi-display) {
   display: inline-block;
   vertical-align: middle;
   text-align:center;
+  white-space: nowrap;
 }
 
 #klicken-beerphong-special-indicator{
   left: 25%;
+  color: black;
 }
 
 .visual-presentation-container:not(#multi-display) {
@@ -404,9 +406,18 @@ video, img, .visual-presentation-container:not(#multi-display) {
   user-select: none;
 }
 
-.duration{
-  left: 5%;
-  top: 5%;
+.duration {
+  left: 2%;
+  top: 50%;
+  background-color: rgb(67 97 238);
+  color: #F8F9FA;
+  font-size: 14px;
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: sans-serif;
+  white-space: nowrap;
 }
 
 .hovered .primary-info-container, .expanded .primary-info-container{
@@ -443,17 +454,17 @@ video, img, .visual-presentation-container:not(#multi-display) {
 }
 
 .tag {
-    background-color: rgb(114 9 183);
-    color: #F8F9FA;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    display: inline-block;
-    padding: 8px 12px;
-    border-radius: 20px;
-    font-weight: bold;
-    font-family: sans-serif;
+  background-color: rgb(114 9 183);
+  color: #F8F9FA;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
 
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .toggle-arrow {
@@ -781,7 +792,7 @@ span.toggle-arrow-span {
       <a href="https://calvindo.github.io/Realtime-BeerPhong/aFrame.html">
         <div style="position: relative;">
           <img src="BeerPhong.jpeg" style="width: 100%; height: auto; max-width: 100%;">
-          <div class = "klicken-indicator">Klicken zum Spielen</div>
+          <div class = "klicken-indicator">Klicken zum<br>Spielen</div>
         </div>
       </a>  
       <a href="BeerPhongMarker.png" download>
