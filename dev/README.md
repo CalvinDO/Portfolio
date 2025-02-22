@@ -358,7 +358,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
   /* -webkit-box-shadow: 0 0 0px #ebebeb !important; */
 }
 
-.visual-presentation-container a:last-of-type::after {
+.primary-info-container::before {
   content: "";
   position: absolute;
   top: 0;
