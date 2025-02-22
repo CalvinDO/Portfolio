@@ -309,12 +309,7 @@ h1#header-coding ~ h1 {
   transform: translateY(-100%);
 }
 
-.flex-item.expanded ~ .flex-item,
-.flex-item.expanded ~ * .flex-item,
-.flex-container:has(.flex-item.expanded) ~ .flex-container .flex-item {
-    filter: blur(5px) !important;
-    opacity: 0.5 !important;
-}
+
 
 /* .flex-container:hover .flex-item:not(.expanded) {
   filter: blur(5px);
@@ -333,6 +328,22 @@ h1#header-coding ~ h1 {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease-in-out;
+}
+
+.flex-item.expanded,
+.flex-container:has(.flex-item.expanded) .flex-item {
+    filter: none !important;
+    opacity: 1 !important;
+}
+
+.flex-container:has(.flex-item.expanded) .flex-item:not(.expanded),
+.flex-item.expanded ~ .flex-item,
+.flex-item.expanded ~ * .flex-item,
+.flex-item.expanded ~ * .flex-container .flex-item,
+.flex-item.expanded,
+.flex-container .flex-item:not(.expanded) {
+    filter: blur(5px) !important;
+    opacity: 0.5 !important;
 }
 
         
