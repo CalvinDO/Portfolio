@@ -544,8 +544,12 @@ span.toggle-arrow-span {
 
 </style>
 
+<!-- pdf icon -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<!-- person icon -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- calendar icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div id="overlay"></div>
 
@@ -597,7 +601,7 @@ span.toggle-arrow-span {
           <span class="tag">C#</span>
           <span class="tag">FMOD</span>
         </div>
-        <span class ="duration">2y 6m</span>
+        <span class ="duration">2y 6m <i class="fa fa-calendar"></i></span>
       </div>
       <div class="toggle-arrow"><span class = "toggle-arrow-span">▼</span></div>
     </div>
@@ -663,6 +667,7 @@ span.toggle-arrow-span {
             <span class="tag">C#</span>
             <span class="tag">NEAT</span>
           </div>
+          <span class ="duration">6m <i class="fa fa-calendar"></i></span>
         </div>
     </div>
     <h4>
