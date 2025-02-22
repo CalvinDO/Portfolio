@@ -415,7 +415,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
 
 .material-icons {
   font-family: "Material Icons";
-  font-size: 24px;
+  font-size: 21px;
 
   color: #212529;
   text-shadow: -1px 0 #f8f9fa, 0 1px #f8f9fa, 1px 0 #f8f9fa, 0 -1px #f8f9fa;
@@ -469,6 +469,12 @@ video, img, .visual-presentation-container:not(#multi-display) {
     justify-content: center;
     cursor: pointer;
     z-index: 12;
+}
+
+span.toggle-arrow-span {
+    position: relative;
+    top: 2px;
+    left: 0.5px;
 }
 
 /* Wenn .flex-item gehovt wird -> Glow-Effekt */
@@ -578,7 +584,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
           <span class="tag">FMOD</span>
         </div>
       </div>
-      <div class="toggle-arrow">▼</div>
+      <div class="toggle-arrow"><span class = "toggle-arrow-span">▼</span></div>
     </div>
     <div class="toggle-content second-toggle-content">
       <h4>
