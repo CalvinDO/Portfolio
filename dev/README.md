@@ -690,7 +690,8 @@ span.toggle-arrow-span {
             <i class="material-icons">person</i>
           </div>
           <div class = "context-awards">
-            <i class=""></i>
+            <i class="fa fa-graduation-cap"></i>
+            <i class="fa fa-university"></i>
           </div>
           <div class="tags">
             <span class="tag">Unity</span>
