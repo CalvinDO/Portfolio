@@ -154,12 +154,15 @@ namespace Portfolio {
 
         setupArrow(arrow, item);
 
+        setupMouseEnter(item);
+
+        setupMouseLeave(item);
+
+        /*
         if (!isMobile) {
 
-            setupMouseEnter(item);
-
-            setupMouseLeave(item);
         }
+        */
     }
 
     function insertArrowIn(item: HTMLElement) {

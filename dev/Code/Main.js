@@ -109,10 +109,13 @@ var Portfolio;
         let isMobile = window.matchMedia("(max-width: 890px)").matches;
         //console.log("isMobile? " + isMobile);
         setupArrow(arrow, item);
+        setupMouseEnter(item);
+        setupMouseLeave(item);
+        /*
         if (!isMobile) {
-            setupMouseEnter(item);
-            setupMouseLeave(item);
+
         }
+        */
     }
     function insertArrowIn(item) {
         let toggleArrowDiv = document.createElement("div");
