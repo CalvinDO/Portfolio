@@ -521,7 +521,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
   font-family: Arial, sans-serif;
   font-size: 14px;
   display: inline-block;
-  padding: 8px 12px;
+  padding: 5px 12px;
   border-radius: 20px;
   font-weight: bold;
   font-family: sans-serif;
