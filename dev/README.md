@@ -407,6 +407,14 @@ video, img, .visual-presentation-container:not(#multi-display) {
   white-space: nowrap;
 }
 
+.hovered .klicken-indicator {
+    opacity: 1;
+    font-size: 2.1em;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6180339);
+    transition: all 0.2s ease-in-out;
+}
+
 #klicken-beerphong-special-indicator{
   left: 25%;
   color: black;
@@ -447,13 +455,15 @@ video, img, .visual-presentation-container:not(#multi-display) {
 }
 
 .team-size-container {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   left: 2%;
   top: 4%;
-
-  display: grid;
-  grid-template-columns: repeat(5, auto); /* 5 Icons pro Zeile */
-  gap: 0px; /* Abstand zwischen den Icons */
-  justify-content: start; /* Links ausgerichtet */
+  gap: 0px;
+  justify-content: start;
+  height: 110px;
 }
 
 .material-icons {
