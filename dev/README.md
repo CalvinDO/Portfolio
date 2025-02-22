@@ -602,7 +602,7 @@ span.toggle-arrow-span {
           <span class="tag">C#</span>
           <span class="tag">FMOD</span>
         </div>
-        <span class ="duration">2y 6m <i class="fa fa-calendar"></i></span>
+        <span class="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;2y 6m</span>
       </div>
       <div class="toggle-arrow"><span class = "toggle-arrow-span">▼</span></div>
     </div>
@@ -668,7 +668,7 @@ span.toggle-arrow-span {
             <span class="tag">C#</span>
             <span class="tag">NEAT</span>
           </div>
-          <span class ="duration">6m <i class="fa fa-calendar"></i></span>
+          <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;6m</span>
         </div>
     </div>
     <h4>
@@ -743,7 +743,7 @@ span.toggle-arrow-span {
             <span class="tag">C#</span>
             <span class="tag">NavMesh</span>
           </div>
-          <span class ="duration">6m <i class="fa fa-calendar"></i></span>
+          <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;6m</span>
         </div>
     </div>  
     <h4>
@@ -820,7 +820,7 @@ span.toggle-arrow-span {
           <span class="tag">GLSL</span>
           <span class="tag">Three.js</span>
         </div>
-        <span class ="duration">3m <i class="fa fa-calendar"></i></span>
+        <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3m</span>
       </div>
       <div class="toggle-arrow">▼</div>
     </div>
@@ -893,7 +893,7 @@ span.toggle-arrow-span {
             <span class="tag">C#</span>
             <span class="tag">NavMesh</span>
           </div>
-          <span class ="duration">1y <i class="fa fa-calendar"></i></span>
+          <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;1y</span>
         </div>
     </div>  
     <h4>
@@ -966,7 +966,7 @@ span.toggle-arrow-span {
           <span class="tag">RNN</span>
           <span class="tag">GRU</span>
         </div>
-        <span class ="duration">15d <i class="fa fa-calendar"></i></span>
+        <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;10d</span>
       </div>
     </div>  
     <h4>
@@ -1036,7 +1036,7 @@ span.toggle-arrow-span {
         <span class="tag">Blender API</span>
         <span class="tag">Vektorrechnung</span>
       </div> 
-      <span class ="duration">3m <i class="fa fa-calendar"></i></span>
+      <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3m</span>
     </div>
   </div>
   <h4>
@@ -1099,7 +1099,7 @@ span.toggle-arrow-span {
             <span class="tag">FUDGE</span>
             <span class="tag">Blender</span>
           </div>
-          <span class ="duration">3m <i class="fa fa-calendar"></i></span>
+          <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3m</span>
         </div>
     </div>  
     <h4>
@@ -1162,7 +1162,7 @@ span.toggle-arrow-span {
           <span class="tag">LocalStorage</span>
           <span class="tag">MongoDB</span>
         </div>
-        <span class ="duration">3m <i class="fa fa-calendar"></i></span>
+        <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3m</span>
       </div>
     </div>
     <h4>
@@ -1246,7 +1246,7 @@ span.toggle-arrow-span {
           <span class="tag">TypeScript</span>
           <span class="tag">LocalStorage</span>
         </div>
-        <span class ="duration">3m <i class="fa fa-calendar"></i></span>
+        <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3m</span>
       </div>
     </div>
     <h4>
@@ -1316,7 +1316,7 @@ span.toggle-arrow-span {
           <span class="tag">Rekursion</span>
           <span class="tag">Animation</span>
         </div>
-        <span class ="duration">2d <i class="fa fa-calendar"></i></span>
+        <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;2d</span>
       </div>
     </div>
     <h4>
@@ -1375,7 +1375,7 @@ span.toggle-arrow-span {
           <span class="tag">CanvasRC2D</span>
           <span class="tag">Rekursion</span>
         </div>
-        <span class ="duration">2d <i class="fa fa-calendar"></i></span>
+        <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;2d</span>
       </div>
     </div>
     <h4>
@@ -1445,7 +1445,7 @@ span.toggle-arrow-span {
           <span class="tag">Kreisberechnung</span>
           <span class="tag">Algebra</span>
         </div>
-        <span class ="duration">3h <i class='far fa-clock'></i></span>
+        <span class ="duration"><i class="far fa-clock"></i>&nbsp;&nbsp;3h</span>
       </div>
     </div>
     <h4>
@@ -1525,7 +1525,7 @@ span.toggle-arrow-span {
           <span class="tag">CanvasRC2D</span>
           <span class="tag">Vektoraddition</span>
         </div>
-        <span class ="duration">1h <i class='far fa-clock'></i></span>
+        <span class ="duration"><i class="far fa-clock"></i>&nbsp;&nbsp;1h</span>
       </div>
     </div>
     <h4>
