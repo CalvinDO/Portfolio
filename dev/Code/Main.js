@@ -6,6 +6,19 @@ var Portfolio;
         overlay = document.querySelector('#overlay');
         setupDetailsFlexItems();
         setupProjectFlexItems();
+        setupVideoHover();
+    }
+    function setupVideoHover() {
+        const videos = document.querySelectorAll('.video');
+        videos.forEach((video) => {
+            video.addEventListener('mouseenter', () => {
+                video.play();
+            });
+            video.addEventListener('mouseleave', () => {
+                video.pause();
+                video.currentTime = 0;
+            });
+        });
     }
     function setupDetailsFlexItems() {
         document.querySelectorAll('.details-flex-item').forEach((detailsFlexItem) => { handleDetailsFlexItem(detailsFlexItem); });

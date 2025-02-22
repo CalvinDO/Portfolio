@@ -11,8 +11,25 @@ namespace Portfolio {
         setupDetailsFlexItems();
 
         setupProjectFlexItems();
+
+        setupVideoHover();
     }
 
+    function setupVideoHover() {
+
+        const videos: NodeListOf<Element> = document.querySelectorAll('.video');
+
+        videos.forEach((video: HTMLVideoElement) => {
+            video.addEventListener('mouseenter', () => {
+                video.play();
+            });
+
+            video.addEventListener('mouseleave', () => {
+                video.pause();
+                video.currentTime = 0;
+            });
+        });
+    }
 
     function setupDetailsFlexItems() {
         document.querySelectorAll('.details-flex-item').forEach((detailsFlexItem: HTMLElement) => { handleDetailsFlexItem(detailsFlexItem) });
@@ -251,3 +268,4 @@ namespace Portfolio {
 
     window.addEventListener('load', init);
 }
+
