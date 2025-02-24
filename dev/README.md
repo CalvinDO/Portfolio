@@ -368,6 +368,22 @@ video, img, .visual-presentation-container:not(#multi-display) {
   /* -webkit-box-shadow: 0 0 0px #ebebeb !important; */
 }
 
+.primary-info-container {
+  margin: 0;
+  padding: 0;
+  background: #E9ECEF;
+  user-select: none;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.primary-info-container > *{
+  pointer-events: none;
+  user-select: none;
+}
+
 .primary-info-container::before {
   content: "";
   position: absolute;
@@ -379,13 +395,6 @@ video, img, .visual-presentation-container:not(#multi-display) {
   background: radial-gradient(circle, rgba(0,0,0,0) 50%, rgba(0,0,0,0.6) 100%);
 }
 
-/* .hovered .primary-info-container::before{
-  background: radial-gradient(circle, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 100%);
-}
-
-.expanded .primary-info-container::before{
-  background: radial-gradient(circle, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%);
-} */
 
 .visual-presentation-container img, .visual-presentation-container video{
   filter: grayscale(50%);
@@ -439,34 +448,17 @@ video, img, .visual-presentation-container:not(#multi-display) {
   border: 0;
 }
 
-.primary-info-container > *{
-  overflow: visible;
-  position: absolute;
-  pointer-events: none;
-  user-select: none;
-}
-
 .duration {
   left: 2%;
-  top: 61.8%;
   background-color: rgb(67 97 238);
   color: #F8F9FA;
   font-size: 14px;
-  display: inline-block;
+  display: none;
   padding: 3px 12px;
   border-radius: 5px;
   font-weight: bold;
   font-family: sans-serif;
   white-space: nowrap;
-}
-
-.hovered .primary-info-container, .expanded .primary-info-container{
-  display: none;
-}
-
-:root {
-  --person-color: hsl(194 85% 94% / 1);
-  --person-outline-color: #000000;
 }
 
 .team-size-container {
@@ -475,13 +467,12 @@ video, img, .visual-presentation-container:not(#multi-display) {
   flex-wrap: wrap;
   align-items: flex-start;
   left: 2%;
-  top: 4%;
   gap: 0px;
   justify-content: start;
-
-  font-size: 20px !important;
+  font-size: 17px !important;
   color: #3a0ca3;
   text-shadow: -1px 0 #f8f9fa, 0 1px #f8f9fa, 1px 0 #f8f9fa, 0 -1px #f8f9fa;
+  width: fit-content;
 }
 
 
@@ -493,9 +484,10 @@ video, img, .visual-presentation-container:not(#multi-display) {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  left: 50%;
+  left: 38.2%;
   transform: translateX(-50%);
-  top: 4%;
+  bottom: 0%;
+  padding: 3px 0px;
 }
 
 .context-awards * {
@@ -506,28 +498,38 @@ video, img, .visual-presentation-container:not(#multi-display) {
 
 .tags {
   flex-direction: row;
-  width: 168px;
+  width: 200px;
   display: flex;
   gap: 6.18px;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-end;
-  right: 2%;
-  top: 4%;
+  right: 0%;
+  bottom: 0%;
+  height: fit-content;
 }
 
 .tag {
   background-color: rgb(114 9 183);
   color: #F8F9FA;
   font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   display: inline-block;
-  padding: 5px 12px;
+  padding: 4px 10px;
   border-radius: 20px;
   font-weight: bold;
   font-family: sans-serif;
-
   white-space: nowrap;
+}
+
+  
+.hovered .primary-info-container, .expanded .primary-info-container{
+  display: none;
+}
+
+:root {
+  --person-color: hsl(194 85% 94% / 1);
+  --person-outline-color: #000000;
 }
 
 .toggle-arrow {
@@ -644,7 +646,7 @@ span.toggle-arrow-span {
           <i class="fa-solid fa-user-tie"></i>
         </div>
         <div class="tags">
-          <span class="tag">Unity(C#)</span>
+          <span class="tag">Unity</span>
           <span class="tag">C#</span>
           <span class="tag">FMOD</span>
         </div>
