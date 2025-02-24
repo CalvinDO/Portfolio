@@ -448,17 +448,25 @@ video, img, .visual-presentation-container:not(#multi-display) {
 }
 
 .team-size-container {
-  flex-direction: column;
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  left: 2%;
-  gap: 0px;
-  justify-content: start;
-  font-size: 17px !important;
+  align-items: center; /* Perfekte vertikale Ausrichtung */
+  gap: 5px; /* Abstand zwischen Icon und Text */
+  font-size: 18px !important;
   color: #3a0ca3;
   text-shadow: -1px 0 #f8f9fa, 0 1px #f8f9fa, 1px 0 #f8f9fa, 0 -1px #f8f9fa;
-  width: fit-content;
+  margin-left: 0.618%;
+}
+
+.team-size-container span {
+  display: flex;
+  align-items: center;
+}
+
+.team-size-container i {
+  font-size: 18px; /* Gleiche Größe wie der Text */
+  line-height: 1; /* Verhindert Höhenabweichungen */
+  display: flex; /* Sorgt für perfekte Zentrierung */
+  align-items: center;
 }
 
 
