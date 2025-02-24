@@ -237,14 +237,14 @@ h1#header-coding ~ h1 {
 }
 
 .heading-toggle-content {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background: #212529;
-    user-select: none;
-    z-index: 12;
-    height: auto;
-    position: relative;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #343a40;
+  user-select: none;
+  z-index: 12;
+  height: auto;
+  position: relative;
 }
 
 .heading-toggle-content h2{
@@ -254,7 +254,7 @@ h1#header-coding ~ h1 {
   background: none;
 
   font-size: 32px;
-  color: #F8F9FA;
+  color: #f8f9fa;
 }
 
 .heading-toggle-content h4 {
@@ -478,7 +478,6 @@ video, img, .visual-presentation-container:not(#multi-display) {
   top: 4%;
   gap: 0px;
   justify-content: start;
-  height: 110px;
 
   font-size: 20px !important;
   color: #3a0ca3;
