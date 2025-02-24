@@ -498,7 +498,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
 
 .tags {
   flex-direction: row;
-  width: 200px;
+  width: 50%;
   display: flex;
   gap: 6.18px;
   flex-wrap: wrap;
