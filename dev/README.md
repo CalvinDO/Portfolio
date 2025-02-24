@@ -479,32 +479,30 @@ video, img, .visual-presentation-container:not(#multi-display) {
   gap: 0px;
   justify-content: start;
   height: 110px;
+
+  font-size: 20px !important;
+  color: #3a0ca3;
+  text-shadow: -1px 0 #f8f9fa, 0 1px #f8f9fa, 1px 0 #f8f9fa, 0 -1px #f8f9fa;
 }
 
-.material-icons {
-  font-family: "Material Icons";
-  font-size: 21px !important;
-  color: var(--person-color);
-  text-shadow: -1px 0 var(--person-outline-color), 0 1px var(--person-outline-color), 1px 0 var(--person-outline-color), 0 -1px var(--person-outline-color);
-}
 
 .context-awards {
   flex-direction: row;
-    width: auto;
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 4%;
+  width: auto;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 4%;
 }
 
 .context-awards * {
-    font-size: 20px !important;
-    color: #3a0ca3;
-    text-shadow: -1px 0 #f8f9fa, 0 1px #f8f9fa, 1px 0 #f8f9fa, 0 -1px #f8f9fa;
+  font-size: 20px !important;
+  color: #3a0ca3;
+  text-shadow: -1px 0 #f8f9fa, 0 1px #f8f9fa, 1px 0 #f8f9fa, 0 -1px #f8f9fa;
 }
 
 .tags {
@@ -642,7 +640,7 @@ span.toggle-arrow-span {
       <div class = "klicken-indicator">Klicken zum Spielen</div>
       <div class = "primary-info-container">
         <div class="team-size-container">
-          <i class='fas fa-users'></i>&nbsp;&nbsp;25
+          <span><i class='fas fa-users'></i>&nbsp;&nbsp;25</span>
         </div>
         <div class = "context-awards">
           <i class="fa-solid fa-user-tie"></i>
@@ -786,7 +784,7 @@ span.toggle-arrow-span {
         <div class = "klicken-indicator">Klicken zum Spielen</div>
         <div class = "primary-info-container">
           <div class="team-size-container">
-          <i class='fas fa-users'></i>&nbsp;&nbsp;6
+          <span><i class='fas fa-users'></i>&nbsp;&nbsp;6</span>
         </div>
           <div class = "context-awards">
             <i class="fa fa-university"></i>
@@ -864,7 +862,7 @@ span.toggle-arrow-span {
       </a>
       <div class = "primary-info-container">
         <div class="team-size-container">
-          <i class='fas fa-users'></i>&nbsp;&nbsp;3
+          <span><i class='fas fa-users'></i>&nbsp;&nbsp;3</span>
         </div>
         <div class = "context-awards">
             <i class="fa fa-university"></i>
@@ -936,7 +934,7 @@ span.toggle-arrow-span {
         <div class = "klicken-indicator">Klicken zum Spielen</div>
         <div class = "primary-info-container">
           <div class="team-size-container">
-          <i class='fas fa-users'></i>&nbsp;&nbsp;6
+          <span><i class='fas fa-users'></i>&nbsp;&nbsp;6</span>
         </div>
           <div class="tags">
             <span class="tag">Unity</span>
