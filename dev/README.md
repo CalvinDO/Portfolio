@@ -237,14 +237,14 @@ h1#header-coding ~ h1 {
 }
 
 .heading-toggle-content {
-  margin: 0;
-  padding: 0;
-  top: 0;
-  text-align: center;
-  background: #E9ECEF;
-
-  user-select: none;
-  z-index: 12;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #E9ECEF;
+    user-select: none;
+    z-index: 12;
+    height: auto;
+    position: relative;
 }
 
 .heading-toggle-content h2{
