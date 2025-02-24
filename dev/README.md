@@ -240,7 +240,7 @@ h1#header-coding ~ h1 {
     margin: 0;
     padding: 0;
     text-align: center;
-    background: #E9ECEF;
+    background: #212529;
     user-select: none;
     z-index: 12;
     height: auto;
@@ -639,7 +639,7 @@ span.toggle-arrow-span {
       <div class = "klicken-indicator">Klicken zum Spielen</div>
       <div class = "primary-info-container">
         <div class="team-size-container">
-          <span><i class='fas fa-users'></i>&nbsp;&nbsp;25</span>
+          <span><i class='fas fa-users'></i>&nbsp;&nbsp;25+</span>
         </div>
         <div class = "context-awards">
           <i class="fa-solid fa-user-tie"></i>
