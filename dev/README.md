@@ -500,6 +500,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
   right: 0%;
   bottom: 0%;
   height: fit-content;
+  margin-right: 0.618%;
 }
 
 .tag {
