@@ -157,6 +157,13 @@ namespace Portfolio {
             arrow = item.querySelector('.toggle-arrow');
         }
 
+        let vignette: HTMLDivElement = item.querySelector(".vignette");
+
+        if (!vignette) {
+            insertVignetteIn(item);
+            movePrimaryInfoBeforeSecondContentIn(item);
+        }
+
         let isMobile = window.matchMedia("(max-width: 890px)").matches;
         //console.log("isMobile? " + isMobile);
 
@@ -171,6 +178,20 @@ namespace Portfolio {
 
         }
         */
+    }
+
+    function movePrimaryInfoBeforeSecondContentIn(item: HTMLElement) {
+
+        let primaryInfo: HTMLDivElement = item.querySelector(".primary-info-container");
+        item.querySelector(".second-toggle-content").insertAdjacentElement('beforebegin', primaryInfo);
+    }
+
+    function insertVignetteIn(item: HTMLElement) {
+
+        let vignette: HTMLDivElement = document.createElement("div");
+        vignette.classList.add("vignette");
+
+        item.querySelector(".klicken-indicator").insertAdjacentElement('beforebegin', vignette);
     }
 
     function insertArrowIn(item: HTMLElement) {

@@ -625,20 +625,20 @@ span.toggle-arrow-span {
       <div class = "klicken-indicator">Klicken zum Spielen</div>
       <div class="toggle-arrow"><span class = "toggle-arrow-span">▼</span></div>
     </div>
-      <div class = "primary-info-container">
-        <div class="team-size-container">
-          <span><i class='fas fa-users'></i>&nbsp;&nbsp;25+</span>
-        </div>
-        <div class = "context-awards">
-          <i class="fa-solid fa-user-tie"></i>
-        </div>
-        <div class="tags">
-          <span class="tag">Unity</span>
-          <span class="tag">C#</span>
-          <span class="tag">FMOD</span>
-        </div>
-        <span class="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;2y 6m</span>
+    <div class = "primary-info-container">
+      <div class="team-size-container">
+        <span><i class='fas fa-users'></i>&nbsp;&nbsp;25+</span>
       </div>
+      <div class = "context-awards">
+        <i class="fa-solid fa-user-tie"></i>
+      </div>
+      <div class="tags">
+        <span class="tag">Unity</span>
+        <span class="tag">C#</span>
+        <span class="tag">FMOD</span>
+      </div>
+      <span class="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;2y 6m</span>
+    </div>
     <div class="toggle-content second-toggle-content">
       <h4>
       <a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a><br>
