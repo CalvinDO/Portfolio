@@ -354,21 +354,6 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 
 
 
-.visual-presentation-container img, .visual-presentation-container video{
-  filter: grayscale(50%);
-  box-shadow: 0 0 200px rgba(0,0,0,0.9) inset !important;
-}
-
-.flex-item.hovered .visual-presentation-container img, .flex-item.hovered .visual-presentation-container video{
-  filter: grayscale(30%);
-  box-shadow: 0 0 200px rgba(0,0,0,0.4) inset !important;
-}
-
-.flex-item.expanded .visual-presentation-container img, .flex-item.expanded .visual-presentation-container video{
-  filter: grayscale(0%);
-  box-shadow: 0 0 200px rgba(0,0,0,0) inset !important;
-}
-
 .klicken-indicator{
   position: absolute;
   top: 43%;
@@ -437,7 +422,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
   user-select: none;
 }
 
-.primary-info-container::before {
+.vignette {
   content: "";
   position: absolute;
   top: 0;
@@ -445,7 +430,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  background: radial-gradient(circle, rgba(0,0,0,0) 50%, rgba(0,0,0,0.6) 100%);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%);
 }
 
 
@@ -522,7 +507,6 @@ video, img, .visual-presentation-container:not(#multi-display) {
   white-space: nowrap;
 }
 
-  
 .hovered .primary-info-container, .expanded .primary-info-container{
   display: none;
 }
@@ -637,7 +621,10 @@ span.toggle-arrow-span {
           Ihr Browser unterstützt den Video-Tag nicht
       </video>
       </a>
+      <div class="vignette"></div>
       <div class = "klicken-indicator">Klicken zum Spielen</div>
+      <div class="toggle-arrow"><span class = "toggle-arrow-span">▼</span></div>
+    </div>
       <div class = "primary-info-container">
         <div class="team-size-container">
           <span><i class='fas fa-users'></i>&nbsp;&nbsp;25+</span>
@@ -652,8 +639,6 @@ span.toggle-arrow-span {
         </div>
         <span class="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;2y 6m</span>
       </div>
-      <div class="toggle-arrow"><span class = "toggle-arrow-span">▼</span></div>
-    </div>
     <div class="toggle-content second-toggle-content">
       <h4>
       <a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a><br>
@@ -784,8 +769,8 @@ span.toggle-arrow-span {
         <div class = "klicken-indicator">Klicken zum Spielen</div>
         <div class = "primary-info-container">
           <div class="team-size-container">
-          <span><i class='fas fa-users'></i>&nbsp;&nbsp;6</span>
-        </div>
+            <span><i class='fas fa-users'></i>&nbsp;&nbsp;6</span>
+          </div>
           <div class = "context-awards">
             <i class="fa fa-university"></i>
             <i class="fas fa-award"></i>
