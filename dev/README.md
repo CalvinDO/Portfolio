@@ -353,48 +353,6 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 }
 
 
-video, img, .visual-presentation-container:not(#multi-display) {
-
-  border: 0;
-  display: block !important;        /* Macht den <a>-Tag zu einem Blockelement, damit es eine feste Größe haben kann */
-
-  width: 100%  !important;          /* Bild skaliert auf die Breite des Containers */
-  height: auto  !important;         /* Höhe wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
-  object-fit: fill  !important; 
-
-  padding: 0;
-  margin: 0;
-  box-shadow: 0 0 0px !important;
-  /* -webkit-box-shadow: 0 0 0px #ebebeb !important; */
-}
-
-.primary-info-container {
-  margin: 0;
-  padding: 0;
-  background: #E9ECEF;
-  user-select: none;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.primary-info-container > *{
-  pointer-events: none;
-  user-select: none;
-}
-
-.primary-info-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  background: radial-gradient(circle, rgba(0,0,0,0) 50%, rgba(0,0,0,0.6) 100%);
-}
-
 
 .visual-presentation-container img, .visual-presentation-container video{
   filter: grayscale(50%);
@@ -448,6 +406,49 @@ video, img, .visual-presentation-container:not(#multi-display) {
   border: 0;
 }
 
+video, img, .visual-presentation-container:not(#multi-display) {
+
+  border: 0;
+  display: block !important;        /* Macht den <a>-Tag zu einem Blockelement, damit es eine feste Größe haben kann */
+
+  width: 100%  !important;          /* Bild skaliert auf die Breite des Containers */
+  height: auto  !important;         /* Höhe wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
+  object-fit: fill  !important; 
+
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 0 0px !important;
+  /* -webkit-box-shadow: 0 0 0px #ebebeb !important; */
+}
+
+.primary-info-container {
+  margin: 0;
+  padding: 0;
+  background: #E9ECEF;
+  user-select: none;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.primary-info-container > *{
+  pointer-events: none;
+  user-select: none;
+}
+
+.primary-info-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(0,0,0,0) 50%, rgba(0,0,0,0.6) 100%);
+}
+
+
 .duration {
   left: 2%;
   background-color: rgb(67 97 238);
@@ -477,6 +478,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
 
 
 .context-awards {
+  position: absolute;
   flex-direction: row;
   width: auto;
   display: flex;
@@ -484,10 +486,8 @@ video, img, .visual-presentation-container:not(#multi-display) {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  left: 38.2%;
+  left: 30%;
   transform: translateX(-50%);
-  bottom: 0%;
-  padding: 3px 0px;
 }
 
 .context-awards * {
@@ -860,6 +860,8 @@ span.toggle-arrow-span {
           <div id = "klicken-beerphong-special-indicator" class = "klicken-indicator">Klicken<br>zum<br>Marker</div>
         </div>
       </a>
+      <div class="toggle-arrow"><span class = "toggle-arrow-span">▼</span></div>
+    </div>
       <div class = "primary-info-container">
         <div class="team-size-container">
           <span><i class='fas fa-users'></i>&nbsp;&nbsp;3</span>
@@ -875,8 +877,6 @@ span.toggle-arrow-span {
         </div>
         <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3m</span>
       </div>
-      <div class="toggle-arrow"><span class = "toggle-arrow-span">▼</span></div>
-    </div>
     <div class="toggle-content second-toggle-content">
       <h4>
       Echtzeit-Computergrafik<br>
