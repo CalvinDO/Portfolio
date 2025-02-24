@@ -113,6 +113,11 @@ var Portfolio;
             insertArrowIn(item);
             arrow = item.querySelector('.toggle-arrow');
         }
+        let vignette = item.querySelector(".vignette");
+        if (!vignette) {
+            insertVignetteIn(item);
+            movePrimaryInfoBeforeSecondContentIn(item);
+        }
         let isMobile = window.matchMedia("(max-width: 890px)").matches;
         //console.log("isMobile? " + isMobile);
         setupArrow(arrow, item);
@@ -123,6 +128,15 @@ var Portfolio;
 
         }
         */
+    }
+    function movePrimaryInfoBeforeSecondContentIn(item) {
+        let primaryInfo = item.querySelector(".primary-info-container");
+        item.querySelector(".second-toggle-content").insertAdjacentElement('beforebegin', primaryInfo);
+    }
+    function insertVignetteIn(item) {
+        let vignette = document.createElement("div");
+        vignette.classList.add("vignette");
+        item.querySelector(".klicken-indicator").insertAdjacentElement('beforebegin', vignette);
     }
     function insertArrowIn(item) {
         let toggleArrowDiv = document.createElement("div");

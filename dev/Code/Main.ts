@@ -193,6 +193,7 @@ namespace Portfolio {
 
         item.querySelector(".klicken-indicator").insertAdjacentElement('beforebegin', vignette);
     }
+    
 
     function insertArrowIn(item: HTMLElement) {
 
