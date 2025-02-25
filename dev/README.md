@@ -516,9 +516,11 @@ video, img, .visual-presentation-container:not(#multi-display) {
   white-space: nowrap;
 }
 
+/*
 .hovered .primary-info-container, .expanded .primary-info-container{
   display: none;
 }
+*/
 
 :root {
   --person-color: hsl(194 85% 94% / 1);
