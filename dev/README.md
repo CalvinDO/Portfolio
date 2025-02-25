@@ -469,6 +469,9 @@ video, img, .visual-presentation-container:not(#multi-display) {
   align-items: center;
 }
 
+.team-size-container i.material-icons {
+    font-size: 20px !important;
+}
 
 .context-awards {
   position: absolute;
