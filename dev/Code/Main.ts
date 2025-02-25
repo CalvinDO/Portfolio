@@ -192,7 +192,7 @@ namespace Portfolio {
         let vignette: HTMLDivElement = document.createElement("div");
         vignette.classList.add("vignette");
 
-        item.querySelector(".klicken-indicator").insertAdjacentElement('beforebegin', vignette);
+        item.querySelector(".visual-presentation-container").insertAdjacentElement('beforeend', vignette);
     }
 
 

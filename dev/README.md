@@ -411,7 +411,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
   padding: 0;
   background: #495057;
   user-select: none;
-  height: 30px;
+  height: 29.66px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1001,7 +1001,7 @@ span.toggle-arrow-span {
       <div class = "klicken-indicator">Klicken zum Anwenden</div>
       <div class = "primary-info-container">
         <div class="team-size-container">
-          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>1
         </div>
         <div class="tags">
           <span class="tag">Python</span>
@@ -1070,9 +1070,7 @@ span.toggle-arrow-span {
     <div class = "klicken-indicator">Klicken zum Downloaden</div>
     <div class = "primary-info-container">
       <div class="team-size-container">
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons">person</i>
+        <span><i class='fas fa-users'></i>&nbsp;&nbsp;3</span>
       </div>
       <div class="tags">
         <span class="tag">Blender API</span>
@@ -1134,7 +1132,7 @@ span.toggle-arrow-span {
         <div class = "klicken-indicator">Klicken zum Spielen</div>
         <div class = "primary-info-container">
           <div class="team-size-container">
-            <i class="material-icons">person</i>
+            <i class="material-icons">person</i>1
           </div>
           <div class = "tags">
             <span class="tag">FUDGE</span>
@@ -1193,7 +1191,7 @@ span.toggle-arrow-span {
       <div class = "klicken-indicator">Klicken zum Spielen</div>
       <div class = "primary-info-container">
         <div class="team-size-container">
-          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>1
         </div>
         <div class = "tags">
           <span class="tag">HTML</span>
@@ -1272,8 +1270,7 @@ span.toggle-arrow-span {
       <div class = "klicken-indicator">Klicken zum Spielen</div>
       <div class = "primary-info-container">
         <div class="team-size-container">
-          <i class="material-icons">person</i>
-          <i class="material-icons">person</i>
+          <span><i class='fas fa-users'></i>&nbsp;&nbsp;2</span>
         </div>
         <div class = "tags">
           <span class="tag">WebXR</span>
@@ -1342,7 +1339,7 @@ span.toggle-arrow-span {
       <div class = "klicken-indicator">Klicken zum Anwenden</div>
       <div class = "primary-info-container">
         <div class="team-size-container">
-          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>1
         </div>
         <div class = "tags">
           <span class="tag">Animation</span>
@@ -1399,7 +1396,7 @@ span.toggle-arrow-span {
       <div class = "klicken-indicator">Klicken zum Anwenden</div>
       <div class = "primary-info-container">
         <div class="team-size-container">
-          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>1
         </div>
         <div class = "tags">
           <span class="tag">Rekursion</span>
@@ -1466,7 +1463,7 @@ span.toggle-arrow-span {
       <div class = "klicken-indicator">Klicken zum Anwenden</div>
       <div class = "primary-info-container">
         <div class="team-size-container">
-          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>1
         </div>
         <div class = "tags">
           <span class="tag">Kreisberechnung</span>
@@ -1545,7 +1542,7 @@ span.toggle-arrow-span {
       <div class = "klicken-indicator">Klicken zum Spielen</div>
       <div class = "primary-info-container">
         <div class="team-size-container">
-          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>1
         </div>
         <div class = "tags">
           <span class="tag">Vektoraddition</span>

@@ -136,7 +136,7 @@ var Portfolio;
     function insertVignetteIn(item) {
         let vignette = document.createElement("div");
         vignette.classList.add("vignette");
-        item.querySelector(".klicken-indicator").insertAdjacentElement('beforebegin', vignette);
+        item.querySelector(".visual-presentation-container").insertAdjacentElement('beforeend', vignette);
     }
     function insertArrowIn(item) {
         let toggleArrowDiv = document.createElement("div");
