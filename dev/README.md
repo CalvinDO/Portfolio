@@ -710,8 +710,6 @@ span.toggle-arrow-span {
             <i class="fa fa-university"></i>
           </div>
           <div class="tags">
-            <span class="tag">Unity</span>
-            <span class="tag">C#</span>
             <span class="tag">NEAT</span>
             <span class="tag">AI</span>
           </div>
@@ -785,8 +783,7 @@ span.toggle-arrow-span {
             <i class="fas fa-award"></i>
           </div>
           <div class="tags">
-            <span class="tag">Unity</span>
-            <span class="tag">C#</span>
+            <span class="tag">Rouge-like</span>
             <span class="tag">NavMesh</span>
           </div>
           <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;6m</span>
@@ -865,8 +862,8 @@ span.toggle-arrow-span {
           </div>
         <div class="tags">
           <span class="tag">WebAR</span>
-          <span class="tag">JavaScript</span>
           <span class="tag">GLSL</span>
+          <span class="tag">JS</span>
           <span class="tag">Three.js</span>
         </div>
         <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3m</span>
@@ -931,8 +928,8 @@ span.toggle-arrow-span {
           <span><i class='fas fa-users'></i>&nbsp;&nbsp;6</span>
         </div>
           <div class="tags">
-            <span class="tag">Unity</span>
-            <span class="tag">C#</span>
+            <span class="tag">Horrorgame</span>
+            <span class="tag">JumpNRun</span>
             <span class="tag">NavMesh</span>
           </div>
           <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;1y</span>
@@ -1004,10 +1001,8 @@ span.toggle-arrow-span {
         <div class="tags">
           <span class="tag">Python</span>
           <span class="tag">TensorFlow</span>
-          <span class="tag">Jupyter</span>
           <span class="tag">RNN</span>
           <span class="tag">GRU</span>
-          <span class="tag">AI</span>
         </div>
         <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;10d</span>
       </div>
@@ -1075,7 +1070,6 @@ span.toggle-arrow-span {
         <i class="material-icons">person</i>
       </div>
       <div class="tags">
-        <span class="tag">Python</span>
         <span class="tag">Blender API</span>
         <span class="tag">Vektorrechnung</span>
       </div> 
@@ -1138,7 +1132,6 @@ span.toggle-arrow-span {
             <i class="material-icons">person</i>
           </div>
           <div class = "tags">
-            <span class="tag">TypeScript</span>
             <span class="tag">FUDGE</span>
             <span class="tag">Blender</span>
           </div>
@@ -1201,8 +1194,6 @@ span.toggle-arrow-span {
           <span class="tag">HTML</span>
           <span class="tag">CSS</span>
           <span class="tag">JSON</span>
-          <span class="tag">TypeScript</span>
-          <span class="tag">LocalStorage</span>
           <span class="tag">MongoDB</span>
         </div>
         <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3m</span>
@@ -1283,11 +1274,6 @@ span.toggle-arrow-span {
           <span class="tag">WebXR</span>
           <span class="tag">AdobeXD</span>
           <span class="tag">OpenStreetMap</span>
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">JSON</span>
-          <span class="tag">TypeScript</span>
-          <span class="tag">LocalStorage</span>
         </div>
         <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3m</span>
       </div>
@@ -1354,9 +1340,6 @@ span.toggle-arrow-span {
           <i class="material-icons">person</i>
         </div>
         <div class = "tags">
-          <span class="tag">TypeScript</span>
-          <span class="tag">CanvasRC2D</span>
-          <span class="tag">Rekursion</span>
           <span class="tag">Animation</span>
         </div>
         <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;2d</span>
@@ -1414,8 +1397,6 @@ span.toggle-arrow-span {
           <i class="material-icons">person</i>
         </div>
         <div class = "tags">
-          <span class="tag">TypeScript</span>
-          <span class="tag">CanvasRC2D</span>
           <span class="tag">Rekursion</span>
         </div>
         <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;2d</span>
@@ -1483,8 +1464,6 @@ span.toggle-arrow-span {
           <i class="material-icons">person</i>
         </div>
         <div class = "tags">
-          <span class="tag">TypeScript</span>
-          <span class="tag">CanvasRC2D</span>
           <span class="tag">Kreisberechnung</span>
           <span class="tag">Algebra</span>
         </div>
@@ -1564,8 +1543,6 @@ span.toggle-arrow-span {
           <i class="material-icons">person</i>
         </div>
         <div class = "tags">
-          <span class="tag">TypeScript</span>
-          <span class="tag">CanvasRC2D</span>
           <span class="tag">Vektoraddition</span>
         </div>
         <span class ="duration"><i class="far fa-clock"></i>&nbsp;&nbsp;1h</span>
