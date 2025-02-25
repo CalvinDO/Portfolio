@@ -618,6 +618,8 @@ span.toggle-arrow-span {
 <!-- user tie -->
 <!-- persons icon -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- umbrella icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 <div id="overlay"></div>
 
@@ -931,7 +933,11 @@ span.toggle-arrow-span {
         <div class = "primary-info-container">
           <div class="team-size-container">
           <span><i class='fas fa-users'></i>&nbsp;&nbsp;6</span>
-        </div>
+          </div>
+          <div class = "context-awards">
+            <i class="fa fa-university"></i>
+            <i class="fas fa-award"></i>
+          </div>
           <div class="tags">
             <span class="tag">Horrorgame</span>
             <span class="tag">JumpNRun</span>
@@ -1003,6 +1009,9 @@ span.toggle-arrow-span {
         <div class="team-size-container">
           <i class="material-icons">person</i>1
         </div>
+        <div class = "context-awards">
+          <i class='fas fa-umbrella-beach'></i>
+        </div>
         <div class="tags">
           <span class="tag">Python</span>
           <span class="tag">TensorFlow</span>
@@ -1072,6 +1081,9 @@ span.toggle-arrow-span {
       <div class="team-size-container">
         <span><i class='fas fa-users'></i>&nbsp;&nbsp;3</span>
       </div>
+      <div class = "context-awards">
+        <i class="fa fa-university"></i>
+      </div>
       <div class="tags">
         <span class="tag">Blender API</span>
         <span class="tag">Vektorrechnung</span>
@@ -1134,6 +1146,9 @@ span.toggle-arrow-span {
           <div class="team-size-container">
             <i class="material-icons">person</i>1
           </div>
+          <div class = "context-awards">
+            <i class="fa fa-university"></i>
+          </div>
           <div class = "tags">
             <span class="tag">FUDGE</span>
             <span class="tag">Blender</span>
@@ -1193,6 +1208,9 @@ span.toggle-arrow-span {
         <div class="team-size-container">
           <i class="material-icons">person</i>1
         </div>
+        <div class = "context-awards">
+            <i class="fa fa-university"></i>
+          </div>
         <div class = "tags">
           <span class="tag">HTML</span>
           <span class="tag">CSS</span>
@@ -1272,6 +1290,10 @@ span.toggle-arrow-span {
         <div class="team-size-container">
           <span><i class='fas fa-users'></i>&nbsp;&nbsp;2</span>
         </div>
+        <div class = "context-awards">
+            <i class="fa fa-university"></i>
+            <i class="fa-solid fa-360-degrees"></i>
+          </div>
         <div class = "tags">
           <span class="tag">WebXR</span>
           <span class="tag">AdobeXD</span>
@@ -1341,6 +1363,9 @@ span.toggle-arrow-span {
         <div class="team-size-container">
           <i class="material-icons">person</i>1
         </div>
+        <div class = "context-awards">
+          <i class='fas fa-umbrella-beach'></i>
+        </div>
         <div class = "tags">
           <span class="tag">Animation</span>
         </div>
@@ -1397,6 +1422,9 @@ span.toggle-arrow-span {
       <div class = "primary-info-container">
         <div class="team-size-container">
           <i class="material-icons">person</i>1
+        </div>
+        <div class = "context-awards">
+          <i class='fas fa-umbrella-beach'></i>
         </div>
         <div class = "tags">
           <span class="tag">Rekursion</span>
@@ -1464,6 +1492,9 @@ span.toggle-arrow-span {
       <div class = "primary-info-container">
         <div class="team-size-container">
           <i class="material-icons">person</i>1
+        </div>
+        <div class = "context-awards">
+         <i class ="fa-solid fa-person-chalkboard"></i>
         </div>
         <div class = "tags">
           <span class="tag">Kreisberechnung</span>
@@ -1543,6 +1574,9 @@ span.toggle-arrow-span {
       <div class = "primary-info-container">
         <div class="team-size-container">
           <i class="material-icons">person</i>1
+        </div>
+        <div class = "context-awards">
+          <i class='fas fa-umbrella-beach'></i>
         </div>
         <div class = "tags">
           <span class="tag">Vektoraddition</span>
