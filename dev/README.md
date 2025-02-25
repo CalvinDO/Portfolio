@@ -452,7 +452,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
   align-items: center; /* Perfekte vertikale Ausrichtung */
   gap: 5px; /* Abstand zwischen Icon und Text */
   font-size: 18px !important;
-  color: #3a0ca3;
+  color: #4361ee;
   text-shadow: -1px 0 #f8f9fa, 0 1px #f8f9fa, 1px 0 #f8f9fa, 0 -1px #f8f9fa;
   margin-left: 0.618%;
 }
