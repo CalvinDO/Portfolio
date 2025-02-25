@@ -116,8 +116,8 @@ var Portfolio;
         let vignette = item.querySelector(".vignette");
         if (!vignette) {
             insertVignetteIn(item);
-            movePrimaryInfoBeforeSecondContentIn(item);
         }
+        movePrimaryInfoIntoHeadingIn(item);
         let isMobile = window.matchMedia("(max-width: 890px)").matches;
         //console.log("isMobile? " + isMobile);
         setupArrow(arrow, item);
@@ -129,9 +129,9 @@ var Portfolio;
         }
         */
     }
-    function movePrimaryInfoBeforeSecondContentIn(item) {
+    function movePrimaryInfoIntoHeadingIn(item) {
         let primaryInfo = item.querySelector(".primary-info-container");
-        item.querySelector(".second-toggle-content").insertAdjacentElement('beforebegin', primaryInfo);
+        item.querySelector(".heading-toggle-content").insertAdjacentElement('beforeend', primaryInfo);
     }
     function insertVignetteIn(item) {
         let vignette = document.createElement("div");

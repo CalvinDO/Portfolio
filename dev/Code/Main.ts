@@ -161,8 +161,9 @@ namespace Portfolio {
 
         if (!vignette) {
             insertVignetteIn(item);
-            movePrimaryInfoBeforeSecondContentIn(item);
         }
+
+        movePrimaryInfoIntoHeadingIn(item);
 
         let isMobile = window.matchMedia("(max-width: 890px)").matches;
         //console.log("isMobile? " + isMobile);
@@ -180,10 +181,10 @@ namespace Portfolio {
         */
     }
 
-    function movePrimaryInfoBeforeSecondContentIn(item: HTMLElement) {
+    function movePrimaryInfoIntoHeadingIn(item: HTMLElement) {
 
         let primaryInfo: HTMLDivElement = item.querySelector(".primary-info-container");
-        item.querySelector(".second-toggle-content").insertAdjacentElement('beforebegin', primaryInfo);
+        item.querySelector(".heading-toggle-content").insertAdjacentElement('beforeend', primaryInfo);
     }
 
     function insertVignetteIn(item: HTMLElement) {
@@ -193,7 +194,7 @@ namespace Portfolio {
 
         item.querySelector(".klicken-indicator").insertAdjacentElement('beforebegin', vignette);
     }
-    
+
 
     function insertArrowIn(item: HTMLElement) {
 
