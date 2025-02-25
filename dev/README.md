@@ -409,7 +409,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
 .primary-info-container {
   margin: 0;
   padding: 0;
-  background: #E9ECEF;
+  background: #495057;
   user-select: none;
   height: 30px;
   display: flex;
