@@ -454,7 +454,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
   font-size: 18px !important;
   color: #4361ee;
   text-shadow: -1px 0 #f8f9fa, 0 1px #f8f9fa, 1px 0 #f8f9fa, 0 -1px #f8f9fa;
-  margin-left: 0.618%;
+  margin-left: 1.618%;
 }
 
 .team-size-container span {
@@ -503,7 +503,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
   right: 0%;
   bottom: 0%;
   height: fit-content;
-  margin-right: 0.618%;
+  margin-right: 3.236%;
 }
 
 .tag {
