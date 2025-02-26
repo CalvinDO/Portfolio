@@ -313,7 +313,7 @@ h1#header-coding ~ h1 {
 }
 
 .expanded .heading-toggle-content {
-  transform: translateY(-100%);
+  transform: translateY(-164.8%);
 }
 
 
