@@ -56,22 +56,15 @@ var Portfolio;
         });
         item.classList.toggle('expanded', true);
         overlay.style.opacity = "1";
-        let secondToggleChildren = item.querySelector(".second-toggle-content").children;
+        let secondToggleDiv = item.querySelector(".second-toggle-content");
         let headingToggle = item.querySelector(".heading-toggle-content");
-        for (let secondToggleChild of secondToggleChildren) {
-            secondToggleChild.classList.toggle('foreign', true);
-            headingToggle.appendChild(secondToggleChild);
-        }
+        headingToggle.insertAdjacentElement('beforeend', secondToggleDiv);
     }
     function dexpandProjectFlexItem(item) {
         item.classList.toggle('expanded', false);
         overlay.style.opacity = "0";
-        let foreignChildren = item.querySelectorAll(".foreign");
         let secondToggleDiv = item.querySelector(".second-toggle-content");
-        for (let foreignChild of foreignChildren) {
-            foreignChild.classList.toggle('foreign', false);
-            secondToggleDiv.appendChild(foreignChild);
-        }
+        item.querySelector(".third-toggle-content").insertAdjacentElement('beforebegin', secondToggleDiv);
     }
     function handleDetailsFlexItem(detailsFlexItem) {
         let detail = detailsFlexItem.querySelector("details");
@@ -125,7 +118,7 @@ var Portfolio;
         setupMouseLeave(item);
         /*
         if (!isMobile) {
-
+    
         }
         */
     }
