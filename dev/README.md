@@ -255,6 +255,8 @@ h1#header-coding ~ h1 {
 
   font-size: 32px;
   color: #f8f9fa;
+
+  white-space: nowrap;
 }
 
 .heading-toggle-content h4 {
@@ -342,13 +344,13 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
         
 @media (max-width: 1225px) {
   .flex-item {
-    width: calc(50% - 10px); /* 2 Elemente pro Zeile */
+    width: calc(50%) !important; /* 2 Elemente pro Zeile */
   }
 }
 
 @media (max-width: 700px) {
   .flex-item {
-    width: 100%; /* 1 Element pro Zeile */
+    width: 100% !important; /* 1 Element pro Zeile */
   }
 }
 
@@ -2185,3 +2187,4 @@ Die Motive lehnten ausschließlich an Tribal-Tattoos an.
 - [Hackathon-Urkunde](CCF18022020_0002.jpg)
 
 <script src="Code/Main.js"></script>
+<script src="Code/ExpandedProject.js"></script>

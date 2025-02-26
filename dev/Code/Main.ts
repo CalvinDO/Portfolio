@@ -1,8 +1,12 @@
 namespace Portfolio {
 
-    let overlay: HTMLDivElement = document.querySelector('#overlay');
+    export let overlay: HTMLDivElement = document.querySelector('#overlay');
+
+    let expandedProject: ExpandedProject;
+
 
     setWidth();
+
 
     function init() {
 
@@ -59,16 +63,18 @@ namespace Portfolio {
         });
     }
 
-    function expandProjectFlexItem(item: HTMLElement): void {
+    function expandProjectFlexItem(_item: HTMLElement): void {
 
-        if (item.classList.contains('expanded')) {
-            dexpandProjectFlexItem(item);
+        expandedProject = new ExpandedProject(_item);
+
+        if (_item.classList.contains('expanded')) {
+            dexpandProjectFlexItem(_item);
             return;
         }
 
         document.querySelectorAll('.flex-item').forEach((otherItem: HTMLElement) => {
 
-            if (otherItem != item) {
+            if (otherItem != _item) {
 
                 if (otherItem.classList.contains('expanded')) {
                     dexpandProjectFlexItem(otherItem);
@@ -76,32 +82,14 @@ namespace Portfolio {
             }
         });
 
-        item.classList.toggle('expanded', true);
-
-        overlay.style.opacity = "1";
-
-        let secondToggleChildren: HTMLCollection = item.querySelector(".second-toggle-content").children;
-        let headingToggle: HTMLDivElement = item.querySelector(".heading-toggle-content");
-
-        for (let secondToggleChild of secondToggleChildren) {
-            secondToggleChild.classList.toggle('foreign', true);
-            headingToggle.appendChild(secondToggleChild);
-        }
+        expandedProject.expand();
     }
 
     function dexpandProjectFlexItem(item: HTMLElement): void {
 
-        item.classList.toggle('expanded', false);
+        expandedProject.dexpand();
 
-        overlay.style.opacity = "0";
-
-        let foreignChildren: NodeListOf<Element> = item.querySelectorAll(".foreign");
-        let secondToggleDiv: HTMLDivElement = item.querySelector(".second-toggle-content");
-
-        for (let foreignChild of foreignChildren) {
-            foreignChild.classList.toggle('foreign', false);
-            secondToggleDiv.appendChild(foreignChild);
-        }
+        expandedProject = null;
     }
 
 
@@ -280,5 +268,26 @@ namespace Portfolio {
     }
 
     window.addEventListener('load', init);
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const target = document.querySelector(".expanded") as HTMLElement;
+        const overlay = document.querySelector(".expandedProject") as HTMLElement;
+
+        function updateOverlayPosition() {
+            if (!target || !overlay) return;
+
+            // Position des Flex-Items abrufen
+            const rect = target.getBoundingClientRect();
+
+            // Overlay absolut zur gesamten Seite positionieren
+            overlay.style.top = `${rect.top + window.scrollY}px`;
+            overlay.style.left = `${rect.left + window.scrollX}px`;
+        }
+
+        // Position einmalig setzen und bei Resize oder Scroll anpassen
+        updateOverlayPosition();
+        window.addEventListener("resize", updateOverlayPosition);
+        window.addEventListener("scroll", updateOverlayPosition);
+    });
 }
 

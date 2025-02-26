@@ -1,9 +1,10 @@
 var Portfolio;
 (function (Portfolio) {
-    let overlay = document.querySelector('#overlay');
+    Portfolio.overlay = document.querySelector('#overlay');
+    let expandedProject;
     setWidth();
     function init() {
-        overlay = document.querySelector('#overlay');
+        Portfolio.overlay = document.querySelector('#overlay');
         setupDetailsFlexItems();
         setupProjectFlexItems();
         setupVideoHover();
@@ -42,36 +43,24 @@ var Portfolio;
             expandProjectFlexItem(parent);
         });
     }
-    function expandProjectFlexItem(item) {
-        if (item.classList.contains('expanded')) {
-            dexpandProjectFlexItem(item);
+    function expandProjectFlexItem(_item) {
+        expandedProject = new Portfolio.ExpandedProject(_item);
+        if (_item.classList.contains('expanded')) {
+            dexpandProjectFlexItem(_item);
             return;
         }
         document.querySelectorAll('.flex-item').forEach((otherItem) => {
-            if (otherItem != item) {
+            if (otherItem != _item) {
                 if (otherItem.classList.contains('expanded')) {
                     dexpandProjectFlexItem(otherItem);
                 }
             }
         });
-        item.classList.toggle('expanded', true);
-        overlay.style.opacity = "1";
-        let secondToggleChildren = item.querySelector(".second-toggle-content").children;
-        let headingToggle = item.querySelector(".heading-toggle-content");
-        for (let secondToggleChild of secondToggleChildren) {
-            secondToggleChild.classList.toggle('foreign', true);
-            headingToggle.appendChild(secondToggleChild);
-        }
+        expandedProject.expand();
     }
     function dexpandProjectFlexItem(item) {
-        item.classList.toggle('expanded', false);
-        overlay.style.opacity = "0";
-        let foreignChildren = item.querySelectorAll(".foreign");
-        let secondToggleDiv = item.querySelector(".second-toggle-content");
-        for (let foreignChild of foreignChildren) {
-            foreignChild.classList.toggle('foreign', false);
-            secondToggleDiv.appendChild(foreignChild);
-        }
+        expandedProject.dexpand();
+        expandedProject = null;
     }
     function handleDetailsFlexItem(detailsFlexItem) {
         let detail = detailsFlexItem.querySelector("details");
@@ -189,5 +178,22 @@ var Portfolio;
         console.log("setup 3 toggle contents");
     }
     window.addEventListener('load', init);
+    document.addEventListener("DOMContentLoaded", () => {
+        const target = document.querySelector(".expanded");
+        const overlay = document.querySelector(".expandedProject");
+        function updateOverlayPosition() {
+            if (!target || !overlay)
+                return;
+            // Position des Flex-Items abrufen
+            const rect = target.getBoundingClientRect();
+            // Overlay absolut zur gesamten Seite positionieren
+            overlay.style.top = `${rect.top + window.scrollY}px`;
+            overlay.style.left = `${rect.left + window.scrollX}px`;
+        }
+        // Position einmalig setzen und bei Resize oder Scroll anpassen
+        updateOverlayPosition();
+        window.addEventListener("resize", updateOverlayPosition);
+        window.addEventListener("scroll", updateOverlayPosition);
+    });
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=Main.js.map
