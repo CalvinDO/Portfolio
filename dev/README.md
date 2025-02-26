@@ -277,6 +277,11 @@ h1#header-coding ~ h1 {
   pointer-events: auto;
 }
 
+.expanded .toggle-content.second-toggle-content {
+  height: 128px !important;
+  top: 100%;
+}
+
 
 .third-toggle-content {
   z-index: 13;

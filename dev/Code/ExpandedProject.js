@@ -14,7 +14,7 @@ var Portfolio;
             this.original.classList.toggle('expanded', true);
             this.original.classList.toggle('expanded-project', true);
             this.element.classList.toggle('expanded', true);
-            Portfolio.overlay.style.opacity = "1";
+            overlay.style.opacity = "1";
             let secondToggleChildren = this.element.querySelector(".second-toggle-content").children;
             let headingToggle = this.element.querySelector(".heading-toggle-content");
             for (let secondToggleChild of secondToggleChildren) {
@@ -25,7 +25,7 @@ var Portfolio;
         dexpand() {
             this.original.classList.toggle('expanded', false);
             this.element = null;
-            Portfolio.overlay.style.opacity = "0";
+            overlay.style.opacity = "0";
         }
     }
     Portfolio.ExpandedProject = ExpandedProject;
