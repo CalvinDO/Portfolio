@@ -456,6 +456,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
   height: 100%;
   pointer-events: none;
   background: radial-gradient(circle, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 100%);
+  transition: all 0.3s ease-in-out;
 }
 
 .hovered .vignette{
