@@ -2,9 +2,9 @@ var Portfolio;
 (function (Portfolio) {
     let overlay = document.querySelector('#overlay');
     setWidth();
-    removeForkme();
     function init() {
         overlay = document.querySelector('#overlay');
+        removeForkme();
         setupDetailsFlexItems();
         setupProjectFlexItems();
         setupVideoHover();
@@ -183,7 +183,7 @@ var Portfolio;
         console.log("setup 3 toggle contents");
     }
     function removeForkme() {
-        let banner = document.querySelector("header a#forkme-banner");
+        let banner = document.querySelector("header a#forkme_banner");
         banner.style.display = "none !important";
     }
     window.addEventListener('load', init);

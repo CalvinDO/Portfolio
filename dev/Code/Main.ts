@@ -3,12 +3,15 @@ namespace Portfolio {
     let overlay: HTMLDivElement = document.querySelector('#overlay');
 
     setWidth();
-    removeForkme();
+
 
 
     function init() {
 
         overlay = <HTMLDivElement>document.querySelector('#overlay');
+
+        removeForkme();
+
 
         setupDetailsFlexItems();
 
@@ -275,7 +278,7 @@ namespace Portfolio {
     }
 
     function removeForkme() {
-        let banner: HTMLElement = document.querySelector("header a#forkme-banner");
+        let banner: HTMLElement = document.querySelector("header a#forkme_banner");
         banner.style.display = "none !important";
     }
 
