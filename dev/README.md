@@ -51,6 +51,14 @@ header a#forkme-banner{
   }
 }
 
+summary{
+  text-align: center;
+}
+
+summary ul{
+  list-style: none;
+}
+
 /* details klicken*/
 .klicken {
 
