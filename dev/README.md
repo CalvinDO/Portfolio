@@ -510,7 +510,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
   right: 0%;
   bottom: 0%;
   height: fit-content;
-  margin-right: 3.236%;
+  margin-right: 6.18px;
 }
 
 .tag {
