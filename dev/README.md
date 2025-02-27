@@ -404,8 +404,8 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 
 .flex-item .visual-presentation-container a {
   filter: grayscale(40%);
+  transition: all 0.3s ease-in-out;
 }
-
 
 .flex-item.hovered .visual-presentation-container a {
   filter: grayscale(26%) !important;
