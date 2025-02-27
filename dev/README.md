@@ -1778,7 +1778,7 @@ span.toggle-arrow-span {
         <div class="tags">
           <span class="tag">Object-Mode</span>
           <span class="tag">Keyframes</span>
-          <span class="tag">Volumetrische Shader</span>
+          <span class="tag">Volumetrics</span>
         </div>
         <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3d</span>
       </div>
@@ -1843,7 +1843,8 @@ span.toggle-arrow-span {
           <i class='fas fa-umbrella-beach'></i>
         </div>
         <div class="tags">
-          <span class="tag">Prozedurale Texturen</span>
+          <span class="tag">Hard-Surface</span>
+          <span class="tag">Prozedural</span>
         </div>
         <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3d</span>
       </div>
@@ -1963,8 +1964,7 @@ span.toggle-arrow-span {
           <i class='fas fa-umbrella-beach'></i>
         </div>
         <div class="tags">
-          <span class="tag">Boolean-Modifier</span>
-          <span class="tag">Bézierkurven</span>
+          <span class="tag">Softbody Physics</span>
         </div>
         <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3d</span>
       </div>
@@ -2012,8 +2012,9 @@ span.toggle-arrow-span {
           <i class='fa fa-university'></i>
         </div>
         <div class="tags">
-          <span class="tag">Boolean-Modifier</span>
-          <span class="tag">Bézierkurven</span>
+          <span class="tag">Catmull-Clark</span>
+          <span class="tag">Displacement</span>
+          <span class="tag">Noise</span>
         </div>
         <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3d</span>
       </div>
@@ -2069,8 +2070,8 @@ span.toggle-arrow-span {
           <i class='fas fa-umbrella-beach'></i>
         </div>
         <div class="tags">
-          <span class="tag">Blender</span>
-          <span class="tag">Hard-Surface</span>
+          <span class="tag">Spielmodell</span>
+          <span class="tag">Realismus</span>
         </div>
         <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3d</span>
       </div>
@@ -2130,8 +2131,9 @@ span.toggle-arrow-span {
           <i class='fas fa-umbrella-beach'></i>
         </div>
         <div class="tags">
-          <span class="tag">Boolean-Modifier</span>
-          <span class="tag">Bézierkurven</span>
+          <span class="tag">Skulpting</span>
+          <span class="tag">Texture-Painting</span>
+          <span class="tag">Partikel</span>
         </div>
         <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3d</span>
       </div>
@@ -2199,8 +2201,8 @@ span.toggle-arrow-span {
           <i class='fas fa-umbrella-beach'></i>
         </div>
         <div class="tags">
-          <span class="tag">Boolean-Modifier</span>
-          <span class="tag">Bézierkurven</span>
+          <span class="tag">Feuersimulation</span>
+          <span class="tag">Mantaflow</span>
         </div>
         <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3d</span>
       </div> 
