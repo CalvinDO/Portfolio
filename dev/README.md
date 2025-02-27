@@ -744,7 +744,7 @@ span.toggle-arrow-span {
         <div class = "klicken-indicator">Klicken zum Spielen</div>
         <div class = "primary-info-container">
           <div class="team-size-container">
-            <i class="material-icons">person</i>
+            <i class="material-icons">person</i>1
           </div>
           <div class = "context-awards">
             <i class="fa fa-graduation-cap"></i>
