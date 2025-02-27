@@ -16,18 +16,20 @@
 <style>
   
 .details-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Zwei Spalten */
-    gap: 0px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Zwei Spalten */
+  gap: 0px;
 }
 
 .details-container details {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
 
-    height: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+
+  height: 100%;
 }
 
 @media (max-width: 700px) {
@@ -38,6 +40,7 @@
 
 /* details klicken*/
 .klicken {
+
   display: block; /* Damit es zentrierbar ist */
   text-align: center;
   position: relative;
@@ -398,6 +401,21 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
   border: 0;
 }
 
+
+.flex-item .visual-presentation-container a {
+  filter: grayscale(40%);
+}
+
+
+.flex-item.hovered .visual-presentation-container a {
+  filter: grayscale(26%) !important;
+}
+
+.flex-item.expanded .visual-presentation-container a {
+  filter: grayscale(0%) !important;
+}
+
+
 video, img, .visual-presentation-container:not(#multi-display) {
 
   border: 0;
@@ -437,7 +455,15 @@ video, img, .visual-presentation-container:not(#multi-display) {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  background: radial-gradient(circle, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.hovered .vignette{
+  background: radial-gradient(circle, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.26) 100%);
+}
+
+.expanded .vignette{
+  background: radial-gradient(circle, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
 }
 
 
