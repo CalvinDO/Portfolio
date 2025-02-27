@@ -225,7 +225,7 @@ h1#header-coding ~ h1 {
   width: calc(33.33%); /* Standard: 3 Elemente pro Zeile */
   box-sizing: border-box;
   padding: 0px;
-  background-color: #f0f0f0;
+  background-color: #000000;
   text-align: center;
 
   position: relative; /* Notwendig, damit .toggle-content sich relativ zum flex-item ausrichtet */
