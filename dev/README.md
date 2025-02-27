@@ -1709,8 +1709,9 @@ span.toggle-arrow-span {
           <i class='fas fa-umbrella-beach'></i>
         </div>
         <div class="tags">
-          <span class="tag">Boolean-Modifier</span>
+          <span class="tag">Blender</span>
           <span class="tag">Bézierkurven</span>
+          <span class="tag">Mantaflow</span>
         </div>
         <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3d</span>
       </div>
@@ -1775,8 +1776,9 @@ span.toggle-arrow-span {
           <i class='fa fa-university'></i>
         </div>
         <div class="tags">
-          <span class="tag">Boolean-Modifier</span>
-          <span class="tag">Bézierkurven</span>
+          <span class="tag">Object-Mode</span>
+          <span class="tag">Keyframes</span>
+          <span class="tag">Volumetrische Shader</span>
         </div>
         <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3d</span>
       </div>
@@ -1789,7 +1791,7 @@ span.toggle-arrow-span {
     </h4>
     <br>
     <div class="skills">
-        <strong>Blender, Object-Mode-Only, Keyframe-Animation, Materialgestaltung</strong><br>
+        <strong>Blender, Object-Mode-Only, Keyframe-Animation, Volumetrische Shader</strong><br>
         <em>Expressionistisch - Engagiert - Selbstständig</em><br>
         <!-- <strong></strong> -->
     </div>

@@ -184,6 +184,7 @@ var Portfolio;
     }
     function removeForkme() {
         let banner = document.querySelector("header a#forkme_banner");
+        console.log(banner);
         banner.style.display = "none !important";
     }
     window.addEventListener('load', init);
