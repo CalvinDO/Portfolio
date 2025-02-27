@@ -1,3 +1,11 @@
+<style>
+
+#forkme-banner{
+  display: none !important;
+}
+
+</style>
+
 # Inhaltsverzeichnis
 
 - [Motivation](#motivation)
