@@ -1,6 +1,6 @@
 <style>
 
-#forkme-banner{
+header a#forkme-banner{
   display: none !important;
 }
 
