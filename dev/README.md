@@ -1,11 +1,3 @@
-<style>
-
-header a#forkme-banner{
-  display: none !important;
-}
-
-</style>
-
 # Inhaltsverzeichnis
 
 - [Motivation](#motivation)
@@ -301,6 +293,10 @@ h1#header-coding ~ h1 {
   pointer-events: auto;
 }
 
+.flex-item.hovered .toggle-content.second-toggle-content {
+  opacity: 0.82;
+}
+
 .expanded .toggle-content.second-toggle-content {
   height: 128px !important;
   top: 100%;
@@ -315,8 +311,9 @@ h1#header-coding ~ h1 {
   overflow: visible;
   height: auto;
   background-color:  #343a40;
-  opacity: 0.9;
 }
+
+
 .flex-item.expanded .toggle-content:not(.third-toggle-content){
   overflow: visible;
   height: auto;

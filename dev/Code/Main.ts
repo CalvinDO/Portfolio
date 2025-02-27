@@ -3,6 +3,8 @@ namespace Portfolio {
     let overlay: HTMLDivElement = document.querySelector('#overlay');
 
     setWidth();
+    removeForkme();
+
 
     function init() {
 
@@ -272,6 +274,10 @@ namespace Portfolio {
         console.log("setup 3 toggle contents");
     }
 
+    function removeForkme() {
+        let banner: HTMLElement = document.querySelector("header a#forkme-banner");
+        banner.style.display = "none !important";
+    }
+
     window.addEventListener('load', init);
 }
-
