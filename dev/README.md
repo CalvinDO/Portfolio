@@ -24,10 +24,9 @@ header a#forkme-banner{
 <style>
   
 .details-container {
-
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Zwei Spalten */
-  gap: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px;
 }
 
 .details-container details {
@@ -40,9 +39,15 @@ header a#forkme-banner{
   height: 100%;
 }
 
+@media (max-width: 1225px) {
+  .details-container {
+    grid-template-columns: 1fr 1fr; /* Zwei Spalte auf kleineren Bildschirmen */
+  }
+}
+
 @media (max-width: 700px) {
   .details-container {
-    grid-template-columns: 1fr; /* Eine Spalte auf kleineren Bildschirmen */
+    grid-template-columns: 1fr; /* Eine Spalte auf Smartphone Bildschirmen */
   }
 }
 
