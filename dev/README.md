@@ -1703,12 +1703,14 @@ span.toggle-arrow-span {
       </iframe>   -->
       <div class = "primary-info-container">
         <div class="team-size-container">
-          <i class="material-icons">person</i>
-          <i class="material-icons">person</i>
+          <span><i class='fas fa-users'></i>&nbsp;&nbsp;2</span>
+        </div>
+        <div class = "context-awards">
+          <i class='fas fa-umbrella-beach'></i>
         </div>
         <div class="tags">
           <span class="tag">Blender</span>
-          <span class="tag">Hard-Surface-Modeling</span>
+          <span class="tag">Hard-Surface</span>
         </div>
         <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3d</span>
       </div>
@@ -1762,11 +1764,12 @@ span.toggle-arrow-span {
       <img src="Truhe.png" alt="Truhe" width="100%"/>
       <div class = "primary-info-container">
         <div class="team-size-container">
-          <i class="material-icons">person</i>
+          <i class="material-icons">person</i>1
+        </div>
+        <div class = "context-awards">
+          <i class='fas fa-umbrella-beach'></i>
         </div>
         <div class="tags">
-          <span class="tag">Blender</span>
-          <span class="tag">Hard-Surface-Modeling</span>
           <span class="tag">Prozedurale Texturen</span>
         </div>
         <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3d</span>
@@ -1816,6 +1819,19 @@ span.toggle-arrow-span {
     <h2 id="deren-schloss">Deren Schloss</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <img src="Schloss.png" alt="Schloss" width="100%"/> 
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>1
+        </div>
+        <div class = "context-awards">
+          <i class='fas fa-umbrella-beach'></i>
+        </div>
+        <div class="tags">
+          <span class="tag">Boolean-Modifier</span>
+          <span class="tag">Bézierkurven</span>
+        </div>
+        <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3d</span>
+      </div>
     </div>
     <h4>
       Private Kursaufgabe<br>
@@ -1866,6 +1882,19 @@ span.toggle-arrow-span {
             <source src="Jelly.mp4" alt="Jelly" type="video/mp4"/>
             Ihr Browser unterstützt den Video-Tag nicht.
         </video>
+        <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>1
+        </div>
+        <div class = "context-awards">
+          <i class='fas fa-umbrella-beach'></i>
+        </div>
+        <div class="tags">
+          <span class="tag">Boolean-Modifier</span>
+          <span class="tag">Bézierkurven</span>
+        </div>
+        <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3d</span>
+      </div>
     </div>
     <h4>
         Freizeit-Experiment<br>
@@ -1898,10 +1927,23 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="uboot">Das verrückte U-Boot</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-        <video width="100%" controls loop>
-            <source src="submarine.mp4" alt="submarine" type="video/mp4">
-            Ihr Browser unterstützt den Video-Tag nicht.
-        </video>  
+      <video width="100%" controls loop>
+          <source src="submarine.mp4" alt="submarine" type="video/mp4">
+          Ihr Browser unterstützt den Video-Tag nicht.
+      </video>
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>1
+        </div>
+        <div class = "context-awards">
+          <i class='fa fa-university'></i>
+        </div>
+        <div class="tags">
+          <span class="tag">Boolean-Modifier</span>
+          <span class="tag">Bézierkurven</span>
+        </div>
+        <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3d</span>
+      </div>
     </div>
     <h4>
         Computergrafik<br>
@@ -1958,6 +2000,19 @@ span.toggle-arrow-span {
             <source src="SchildWater.mp4" alt="SchildWater">
             Ihr Browser unterstützt das Videoformat nicht.
         </video>
+        <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>1
+        </div>
+        <div class = "context-awards">
+          <i class='fas fa-umbrella-beach'></i>
+        </div>
+        <div class="tags">
+          <span class="tag">Boolean-Modifier</span>
+          <span class="tag">Bézierkurven</span>
+        </div>
+        <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3d</span>
+      </div>
     </div>
     <h4>
         Private Kursaufgabe<br>
@@ -2007,10 +2062,23 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="korallenriff">Korallenriff</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-        <video width="100%" controls loop>
-            <source src="CoralReef.mp4" alt="CoralReef">
-            Ihr Browser unterstützt das Videoformat nicht.
-        </video> 
+      <video width="100%" controls loop>
+          <source src="CoralReef.mp4" alt="CoralReef">
+          Ihr Browser unterstützt das Videoformat nicht.
+      </video>
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>1
+        </div>
+        <div class = "context-awards">
+          <i class='fa fa-university'></i>
+        </div>
+        <div class="tags">
+          <span class="tag">Boolean-Modifier</span>
+          <span class="tag">Bézierkurven</span>
+        </div>
+        <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3d</span>
+      </div>
     </div>
     <h4>
         Computergrafik<br>
@@ -2052,6 +2120,20 @@ span.toggle-arrow-span {
     <h2 id="donut">Donut</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
         <img src="Donut.png" alt="Donut" width="100%">
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>1
+        </div>
+        <div class = "context-awards">
+          <i class="fa-solid fa-head-side-gear"></i>
+          <i class='fas fa-umbrella-beach'></i>
+        </div>
+        <div class="tags">
+          <span class="tag">Boolean-Modifier</span>
+          <span class="tag">Bézierkurven</span>
+        </div>
+        <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3d</span>
+      </div>
     </div>
     <h4>
         Private Fortbildung<br>
@@ -2103,10 +2185,24 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="burning-monkey">Brennender Affenkopf</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-        <video width="100%" controls loop>
-            <source src="Monkey.mp4" alt="Monkey">
-            Ihr Browser unterstützt das Videoformat nicht.
-        </video>  
+      <video width="100%" controls loop>
+          <source src="Monkey.mp4" alt="Monkey">
+          Ihr Browser unterstützt das Videoformat nicht.
+      </video>
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>1
+        </div>
+        <div class = "context-awards">
+          <i class="fa-solid fa-head-side-gear"></i>
+          <i class='fas fa-umbrella-beach'></i>
+        </div>
+        <div class="tags">
+          <span class="tag">Boolean-Modifier</span>
+          <span class="tag">Bézierkurven</span>
+        </div>
+        <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;3d</span>
+      </div> 
     </div>
     <h4>
         Private Fortbildung<br>
