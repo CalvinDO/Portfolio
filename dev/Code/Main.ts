@@ -343,8 +343,12 @@ namespace Portfolio {
     function setupHeaderQuote() {
         let header: HTMLElement | null = document.querySelector("header");
 
+        let quoteContainer: HTMLDivElement = document.createElement("div");
+
         let quote: HTMLQuoteElement = document.createElement("blockquote");
         quote.innerHTML = '<blockquote><span>"Calvin Dell’Oro zählt unter den etlichen hundert Studierenden, <br>die ich seit 2008 unterrichtet habe, <br>zu den drei engagiertesten und erfolgreichsten"</span><footer>— <cite class="author"> Prof.Dr.rer.nat.Thomas Schneider</cite>, <cite class="quote-time">2025</cite></footer></blockquote>'
+
+        quoteContainer.appendChild(quote);
 
         header.insertAdjacentElement('beforeend', quote);
     }

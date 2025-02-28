@@ -16,6 +16,16 @@ blockquote {
   color: #F8F9FA;
 }
 
+#project_title, #project_tagline{
+  display: none !important;
+}
+
+.inner{
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-width: none !important;
+}
 
 
 </style>
