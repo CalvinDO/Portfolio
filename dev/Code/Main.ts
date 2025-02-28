@@ -188,7 +188,6 @@ namespace Portfolio {
         const content = item.querySelector('.toggle-content');
 
         if (!content) {
-            console.log("current content: ", content);
             generateContentIn(item);
         }
 
@@ -333,7 +332,6 @@ namespace Portfolio {
 
     function removeForkme() {
         let banner: HTMLElement = document.querySelector("header a#forkme_banner");
-        console.log(banner);
         banner.classList.add("to-remove");
     }
 

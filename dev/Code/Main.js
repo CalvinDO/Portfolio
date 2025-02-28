@@ -135,7 +135,6 @@ var Portfolio;
     function setupFlexItem(item) {
         const content = item.querySelector('.toggle-content');
         if (!content) {
-            console.log("current content: ", content);
             generateContentIn(item);
         }
         if (!item.querySelector('.toggle-content')) {
@@ -227,7 +226,6 @@ var Portfolio;
     }
     function removeForkme() {
         let banner = document.querySelector("header a#forkme_banner");
-        console.log(banner);
         banner.classList.add("to-remove");
     }
     window.addEventListener('load', init);
