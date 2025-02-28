@@ -9,16 +9,34 @@ var Portfolio;
         console.warn(error);
     }
     function init() {
+        overlay = document.querySelector('#overlay');
+        document.addEventListener('click', onClickDoc);
+        /*
         setupOverlay();
+        */
         removeForkme();
         setupDetailsFlexItems();
         setupProjectFlexItems();
         setupVideoHover();
     }
-    function setupOverlay() {
-        overlay = document.querySelector('#overlay');
-        overlay.addEventListener('click', () => console.log("click overlay"));
+    function onClickDoc(_event) {
+        console.log(_event.target);
+        if (_event.target instanceof HTMLElement) {
+            console.log("is html element!");
+        }
+        let expandedProject = document.querySelector(".expanded");
+        if (expandedProject) {
+            if (!expandedProject.contains(_event.target)) {
+                dexpandProjectFlexItem(expandedProject);
+            }
+        }
     }
+    /*
+        function setupOverlay() {
+            
+            overlay.addEventListener('click', () => console.log("click overlay"));
+        }
+    */
     function setupVideoHover() {
         const videos = document.querySelectorAll('video');
         videos.forEach((video) => {
@@ -197,10 +215,6 @@ var Portfolio;
         console.log(banner);
         banner.classList.add("to-remove");
     }
-    function onClick() {
-        removeForkme();
-    }
     window.addEventListener('load', init);
-    window.addEventListener('click', onClick);
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=Main.js.map

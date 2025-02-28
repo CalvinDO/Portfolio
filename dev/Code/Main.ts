@@ -13,10 +13,16 @@ namespace Portfolio {
 
     function init() {
 
+        overlay = <HTMLDivElement>document.querySelector('#overlay');
+
+        document.addEventListener('click', onClickDoc);
+
+
+
+        /*
         setupOverlay();
-
+        */
         removeForkme();
-
 
         setupDetailsFlexItems();
 
@@ -25,10 +31,29 @@ namespace Portfolio {
         setupVideoHover();
     }
 
-    function setupOverlay() {
-        overlay = <HTMLDivElement>document.querySelector('#overlay');
-        overlay.addEventListener('click', () => console.log("click overlay"));
+    function onClickDoc(_event: Event) {
+        
+        console.log(_event.target);
+
+        if (_event.target instanceof HTMLElement) {
+            console.log("is html element!");
+        }
+
+        let expandedProject: HTMLElement = document.querySelector(".expanded");
+
+        if (expandedProject) {
+            if (!expandedProject.contains(<HTMLElement>_event.target)) {
+                dexpandProjectFlexItem(expandedProject);
+            }
+        }
     }
+
+    /*
+        function setupOverlay() {
+            
+            overlay.addEventListener('click', () => console.log("click overlay"));
+        }
+    */
 
     function setupVideoHover() {
 
@@ -293,12 +318,9 @@ namespace Portfolio {
         banner.classList.add("to-remove");
     }
 
-    function onClick() {
-        removeForkme();
-    }
+
 
     window.addEventListener('load', init);
-    window.addEventListener('click', onClick);
 }
 
 
