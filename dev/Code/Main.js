@@ -2,6 +2,12 @@ var Portfolio;
 (function (Portfolio) {
     let overlay = document.querySelector('#overlay');
     setWidth();
+    try {
+        removeForkme();
+    }
+    catch (error) {
+        console.warn(error);
+    }
     function init() {
         setupOverlay();
         removeForkme();

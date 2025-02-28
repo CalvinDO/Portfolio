@@ -4,6 +4,11 @@ namespace Portfolio {
 
     setWidth();
 
+    try {
+        removeForkme();
+    } catch (error) {
+        console.warn(error);
+    }
 
 
     function init() {
