@@ -16,9 +16,7 @@ namespace Portfolio {
         overlay = <HTMLDivElement>document.querySelector('#overlay');
 
         document.addEventListener('click', onClickDoc, { capture: true });
-        document.addEventListener('hover', onHoverDoc, { capture: true });
-
-
+        document.addEventListener('mouseover', onHoverDoc, { capture: true });
 
         /*
         setupOverlay();
@@ -41,7 +39,7 @@ namespace Portfolio {
     }
 
     function preventEventAndDexpand(_event: Event, _hover: boolean) {
-        
+
         if (!(_event.target instanceof HTMLElement)) {
             return
         }
@@ -55,9 +53,16 @@ namespace Portfolio {
                 _event.stopPropagation();
                 _event.preventDefault();
 
+                document.body.style.pointerEvents = "none";
+
                 if (!_hover) {
                     dexpandProjectFlexItem(expandedProject);
+                    document.body.style.pointerEvents = "";
                 }
+
+                setTimeout(() => {
+                    document.body.style.pointerEvents = ""; // Nach kurzer Zeit wieder aktivieren
+                }, 20);
             }
         }
     }
