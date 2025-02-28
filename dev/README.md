@@ -2,7 +2,8 @@
 
 <style>
 
-.blockquote::before {
+  
+.quote-container::before {
   top: 30%;
   left: 30%;
   content: "“";
@@ -11,13 +12,17 @@
   color: #FF5722;
   position: absolute;
   font-family: "Poppins", sans-serif;
+  
+  left: -1.5rem;  /* Adjust this to position the quote mark directly before the text */
+  top: 50%;
+  transform: translateY(-50%);
 }
-
-.quote-container {
+  .quote-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100lvh;
+  justify-content: center;
+  align-items: center;
+  min-height: 100lvh;
+  position: relative;
 }
 
 blockquote {
@@ -25,6 +30,11 @@ blockquote {
   padding: 0;
   border-left: 0;
   color: #F8F9FA;
+  position: relative;
+}
+
+.quote-text {
+  position: relative;
 }
 
 blockquote * {

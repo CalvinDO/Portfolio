@@ -234,7 +234,7 @@ var Portfolio;
     function setupHeaderQuote() {
         let header = document.querySelector("header");
         let quote = document.createElement("blockquote");
-        quote.innerHTML = '<span>"Calvin Dell’Oro zählt unter den etlichen hundert Studierenden, <br>die ich seit 2008 unterrichtet habe, <br>zu den drei engagiertesten und erfolgreichsten"</span><footer>— <cite class="author"> Prof. Dr. rer. nat. Thomas Schneider</cite></footer>';
+        quote.innerHTML = '<span class="quote-text">"Calvin Dell’Oro zählt unter den etlichen hundert Studierenden, <br>die ich seit 2008 unterrichtet habe, <br>zu den drei engagiertesten und erfolgreichsten"</span><footer>— <cite class="author"> Prof. Dr. rer. nat. Thomas Schneider</cite></footer>';
         /*, <cite class="quote-time">2025</cite>*/
         let quoteContainer = document.createElement("div");
         quoteContainer.classList.add("quote-container");
