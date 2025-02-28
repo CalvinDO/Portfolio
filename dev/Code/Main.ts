@@ -16,6 +16,7 @@ namespace Portfolio {
         overlay = <HTMLDivElement>document.querySelector('#overlay');
 
         document.addEventListener('click', onClickDoc, { capture: true });
+        document.addEventListener('hover', onHoverDoc, { capture: true });
 
 
 
@@ -31,8 +32,16 @@ namespace Portfolio {
         setupVideoHover();
     }
 
+    function onHoverDoc(_event: Event) {
+        preventEventAndDexpand(_event, true);
+    }
+
     function onClickDoc(_event: Event) {
-        _event.target
+        preventEventAndDexpand(_event, false);
+    }
+
+    function preventEventAndDexpand(_event: Event, _hover: boolean) {
+        
         if (!(_event.target instanceof HTMLElement)) {
             return
         }
@@ -46,7 +55,9 @@ namespace Portfolio {
                 _event.stopPropagation();
                 _event.preventDefault();
 
-                dexpandProjectFlexItem(expandedProject);
+                if (!_hover) {
+                    dexpandProjectFlexItem(expandedProject);
+                }
             }
         }
     }

@@ -11,6 +11,7 @@ var Portfolio;
     function init() {
         overlay = document.querySelector('#overlay');
         document.addEventListener('click', onClickDoc, { capture: true });
+        document.addEventListener('hover', onHoverDoc, { capture: true });
         /*
         setupOverlay();
         */
@@ -19,8 +20,13 @@ var Portfolio;
         setupProjectFlexItems();
         setupVideoHover();
     }
+    function onHoverDoc(_event) {
+        preventEventAndDexpand(_event, true);
+    }
     function onClickDoc(_event) {
-        _event.target;
+        preventEventAndDexpand(_event, false);
+    }
+    function preventEventAndDexpand(_event, _hover) {
         if (!(_event.target instanceof HTMLElement)) {
             return;
         }
@@ -29,7 +35,9 @@ var Portfolio;
             if (!expandedProject.contains(_event.target)) {
                 _event.stopPropagation();
                 _event.preventDefault();
-                dexpandProjectFlexItem(expandedProject);
+                if (!_hover) {
+                    dexpandProjectFlexItem(expandedProject);
+                }
             }
         }
     }
