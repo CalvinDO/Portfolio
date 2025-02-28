@@ -32,17 +32,20 @@ namespace Portfolio {
     }
 
     function onClickDoc(_event: Event) {
-        
-        console.log(_event.target);
 
-        if (_event.target instanceof HTMLElement) {
-            console.log("is html element!");
+        if (!(_event.target instanceof HTMLElement)) {
+            return
         }
 
         let expandedProject: HTMLElement = document.querySelector(".expanded");
 
         if (expandedProject) {
+
             if (!expandedProject.contains(<HTMLElement>_event.target)) {
+
+                _event.stopPropagation();
+                _event.preventDefault();
+
                 dexpandProjectFlexItem(expandedProject);
             }
         }

@@ -20,13 +20,14 @@ var Portfolio;
         setupVideoHover();
     }
     function onClickDoc(_event) {
-        console.log(_event.target);
-        if (_event.target instanceof HTMLElement) {
-            console.log("is html element!");
+        if (!(_event.target instanceof HTMLElement)) {
+            return;
         }
         let expandedProject = document.querySelector(".expanded");
         if (expandedProject) {
             if (!expandedProject.contains(_event.target)) {
+                _event.stopPropagation();
+                _event.preventDefault();
                 dexpandProjectFlexItem(expandedProject);
             }
         }
