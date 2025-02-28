@@ -2,6 +2,17 @@
 
 <style>
 
+.blockquote::before {
+  top: 30%;
+  left: 30%;
+  content: "“";
+  font-size: 5rem;
+  font-weight: bold;
+  color: #FF5722;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+}
+
 .quote-container {
     display: flex;
     justify-content: center;
