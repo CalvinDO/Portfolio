@@ -10,6 +10,7 @@ namespace Portfolio {
         console.warn(error);
     }
 
+    setupHeaderQuote();
 
     function init() {
 
@@ -337,6 +338,15 @@ namespace Portfolio {
         document.removeChild(banner);
     }
 
+
+    function setupHeaderQuote() {
+        let header: HTMLElement | null = document.querySelector("header");
+
+        let quote: HTMLQuoteElement = document.createElement("blockquote");
+        quote.innerHTML = '"Calvin Dell’Oro zählt unter den etlichen hundert Studierenden, <br>die ich seit 2008 unterrichtet habe, <br>zu den drei engagiertesten und erfolgreichsten"<footer>— <cite class="author" > Prof.Dr.rer.nat.Thomas Schneider < /cite>, <cite class="quote-time">2025</cite ></footer>'
+
+        header.insertAdjacentElement('beforeend', quote);
+    }
 
 
     window.addEventListener('load', init);

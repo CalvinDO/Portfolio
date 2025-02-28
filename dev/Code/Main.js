@@ -8,6 +8,7 @@ var Portfolio;
     catch (error) {
         console.warn(error);
     }
+    setupHeaderQuote();
     function init() {
         overlay = document.querySelector('#overlay');
         document.addEventListener('click', onClickDoc, { capture: true });
@@ -228,6 +229,12 @@ var Portfolio;
         let banner = document.querySelector("header a#forkme_banner");
         banner.classList.add("to-remove");
         document.removeChild(banner);
+    }
+    function setupHeaderQuote() {
+        let header = document.querySelector("header");
+        let quote = document.createElement("blockquote");
+        quote.innerHTML = '"Calvin Dell’Oro zählt unter den etlichen hundert Studierenden, <br>die ich seit 2008 unterrichtet habe, <br>zu den drei engagiertesten und erfolgreichsten"<footer>— <cite class="author" > Prof.Dr.rer.nat.Thomas Schneider < /cite>, <cite class="quote-time">2025</cite ></footer>';
+        header.insertAdjacentElement('beforeend', quote);
     }
     window.addEventListener('load', init);
 })(Portfolio || (Portfolio = {}));

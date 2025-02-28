@@ -1,3 +1,14 @@
+<style>
+
+blockquote {
+  min-height: 100dvh !important;
+  margin-left: 0;
+  padding-left: 0;
+  border-left: 0;
+}
+
+</style>
+
 # Inhaltsverzeichnis
 
 - [Motivation](#motivation)
@@ -2329,7 +2340,8 @@ Die Motive lehnten ausschließlich an Tribal-Tattoos an.
 # Dokumente
 
 - [Daten und Lebenslauf](Lebenslauf.md)
-- [Empfehlungsschreiben](EmpfehlungsschreibenCalvinDellOro.pdf)
+- [Empfehlungsschreiben Prof. Christoph Müller](EmpfehlungsschreibenVonProfChristophMueller.pdf)
+- [Empfehlungsschreiben Prof. Dr. Thomas Schneider](EmpfehlungsschreibenVonProfDrThomasSchneider.pdf)
 - [Bachelorzeugnis](BachelorOfScience.pdf)
 - [Bachelor Notenspiegel](StudiumNotenspiegel.pdf)
 - [Exmatrikulationsbescheinigung](Exmatrikulationsbescheinigung.pdf)
