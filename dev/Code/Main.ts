@@ -15,7 +15,7 @@ namespace Portfolio {
 
         overlay = <HTMLDivElement>document.querySelector('#overlay');
 
-        document.addEventListener('click', onClickDoc);
+        document.addEventListener('click', onClickDoc, { capture: true });
 
 
 
@@ -32,12 +32,12 @@ namespace Portfolio {
     }
 
     function onClickDoc(_event: Event) {
-
+        _event.target
         if (!(_event.target instanceof HTMLElement)) {
             return
         }
 
-        let expandedProject: HTMLElement = document.querySelector(".expanded");
+        let expandedProject: HTMLElement | null | undefined = document.querySelector(".expanded");
 
         if (expandedProject) {
 

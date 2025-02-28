@@ -10,7 +10,7 @@ var Portfolio;
     }
     function init() {
         overlay = document.querySelector('#overlay');
-        document.addEventListener('click', onClickDoc);
+        document.addEventListener('click', onClickDoc, { capture: true });
         /*
         setupOverlay();
         */
@@ -20,6 +20,7 @@ var Portfolio;
         setupVideoHover();
     }
     function onClickDoc(_event) {
+        _event.target;
         if (!(_event.target instanceof HTMLElement)) {
             return;
         }
