@@ -8,6 +8,7 @@ namespace Portfolio {
 
     try {
         removeForkme();
+        setupNavBar();
     } catch (error) {
         console.warn(error);
     }
@@ -350,7 +351,25 @@ namespace Portfolio {
 
         quoteContainer.appendChild(quote);
 
-        header.insertAdjacentElement('beforeend', quote);
+        header.insertAdjacentElement('beforeend', quoteContainer);
+    }
+
+    function setupNavBar() {
+        const navbar = document.getElementById("navbar");
+        const placeholder = document.getElementById("navbar-placeholder");
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (!entry.isIntersecting) {
+                    navbar.classList.add("sticky");
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            },
+            { threshold: 0 }
+        );
+
+        observer.observe(placeholder);
     }
 
 

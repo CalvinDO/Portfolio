@@ -5,6 +5,7 @@ var Portfolio;
     //setWidth();
     try {
         removeForkme();
+        setupNavBar();
     }
     catch (error) {
         console.warn(error);
@@ -236,7 +237,20 @@ var Portfolio;
         let quote = document.createElement("blockquote");
         quote.innerHTML = '<span>"Calvin Dell’Oro zählt unter den etlichen hundert Studierenden, <br>die ich seit 2008 unterrichtet habe, <br>zu den drei engagiertesten und erfolgreichsten"</span><footer>— <cite class="author"> Prof. Dr. rer. nat. Thomas Schneider</cite>, <cite class="quote-time">2025</cite></footer>';
         quoteContainer.appendChild(quote);
-        header.insertAdjacentElement('beforeend', quote);
+        header.insertAdjacentElement('beforeend', quoteContainer);
+    }
+    function setupNavBar() {
+        const navbar = document.getElementById("navbar");
+        const placeholder = document.getElementById("navbar-placeholder");
+        const observer = new IntersectionObserver(([entry]) => {
+            if (!entry.isIntersecting) {
+                navbar.classList.add("sticky");
+            }
+            else {
+                navbar.classList.remove("sticky");
+            }
+        }, { threshold: 0 });
+        observer.observe(placeholder);
     }
     window.addEventListener('load', init);
 })(Portfolio || (Portfolio = {}));

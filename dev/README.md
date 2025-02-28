@@ -31,6 +31,23 @@ h1{
   text-align: center !important;
 }
 
+.navbar {
+  position: relative;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .menu{
   display: flex;
   justify-content: center;
@@ -45,20 +62,28 @@ h1{
 
 .menu li a {
   text-decoration: none;
-  color: white;
+  color: #343A40;
   padding: 10px 15px;
   display: block;
   transition: background 0.3s;
+  border-radius: 5px;
 }
 
 .menu li a:hover {
-    background: #555;
-    border-radius: 5px;
+  background: #343A40;
+  border-radius: 5px;
+  color: #E9ECEF;
+}
+
+#navbar-placeholder {
+    height: 1px;
 }
 
 </style>
 
 # Portfolio
+
+<div id="navbar-placeholder"></div>
 
 <nav class ="navbar">
   <ul class = "menu">
