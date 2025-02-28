@@ -34,7 +34,6 @@ h1{
 .navbar {
   position: relative;
   width: 100%;
-  background-color: #333;
   padding: 10px 0;
   transition: all 0.3s ease;
 }
