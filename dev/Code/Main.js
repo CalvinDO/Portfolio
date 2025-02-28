@@ -227,6 +227,7 @@ var Portfolio;
     function removeForkme() {
         let banner = document.querySelector("header a#forkme_banner");
         banner.classList.add("to-remove");
+        document.removeChild(banner);
     }
     window.addEventListener('load', init);
 })(Portfolio || (Portfolio = {}));
