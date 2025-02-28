@@ -283,5 +283,10 @@ namespace Portfolio {
         banner.style.display = "none !important";
     }
 
+    function onClick() {
+        removeForkme();
+    }
+
     window.addEventListener('load', init);
+    window.addEventListener('click', onClick);
 }
