@@ -8,7 +8,7 @@ namespace Portfolio {
 
     function init() {
 
-        overlay = <HTMLDivElement>document.querySelector('#overlay');
+        setupOverlay();
 
         removeForkme();
 
@@ -18,6 +18,11 @@ namespace Portfolio {
         setupProjectFlexItems();
 
         setupVideoHover();
+    }
+
+    function setupOverlay() {
+        overlay = <HTMLDivElement>document.querySelector('#overlay');
+        overlay.addEventListener('click', () => console.log("click overlay"));
     }
 
     function setupVideoHover() {
@@ -290,3 +295,5 @@ namespace Portfolio {
     window.addEventListener('load', init);
     window.addEventListener('click', onClick);
 }
+
+

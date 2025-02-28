@@ -3,11 +3,15 @@ var Portfolio;
     let overlay = document.querySelector('#overlay');
     setWidth();
     function init() {
-        overlay = document.querySelector('#overlay');
+        setupOverlay();
         removeForkme();
         setupDetailsFlexItems();
         setupProjectFlexItems();
         setupVideoHover();
+    }
+    function setupOverlay() {
+        overlay = document.querySelector('#overlay');
+        overlay.addEventListener('click', () => console.log("click overlay"));
     }
     function setupVideoHover() {
         const videos = document.querySelectorAll('video');
