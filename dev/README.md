@@ -127,8 +127,6 @@ h1{
 
 </style>
 
-# Portfolio
-
 <div id="navbar-placeholder"></div>
 
 <nav class ="navbar">
