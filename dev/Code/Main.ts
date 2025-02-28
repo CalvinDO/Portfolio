@@ -357,7 +357,7 @@ namespace Portfolio {
 
     function setupNavBar() {
         const navbar = document.getElementById("navbar");
-        const placeholder = document.getElementById("navbar-placeholder");
+        const placeholder = <HTMLDivElement>document.getElementById("navbar-placeholder");
 
         const observer = new IntersectionObserver(
             ([entry]) => {
