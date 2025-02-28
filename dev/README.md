@@ -82,18 +82,18 @@ h1{
   list-style: none;
   padding: 0;
   margin: 0;
+  flex-wrap: nowrap;
 }
 
-@media (max-width: 1225px) {
-  .menu li {
-      width: 48%; /* Zwei Listeneinträge nebeneinander bei 48% Breite */
+@media (max-width: 840px) {
+  .menu {
+    flex-wrap: wrap; /* Umbrechen bei kleinerer Bildschirmbreite */
+    justify-content: space-evenly; /* Gleichmäßige Verteilung der Items */
   }
-}
 
-/* Für Bildschirme bis 700px */
-@media (max-width: 700px) {
   .menu li {
-      width: 100%; /* Jeder Listeneintrag nimmt die gesamte Breite ein, also zwei Zeilen */
+    flex: 1 1 100%; /* Jeder Listeneintrag nimmt eine volle Zeile ein */
+    text-align: center; /* Zentrierte Ausrichtung der Links */
   }
 }
 
