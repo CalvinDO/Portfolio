@@ -57,32 +57,16 @@ h1{
 }
 
 @media (max-width: 1225px) {
-    .menu {
-        padding-left: 0;
-        margin-left: 0;
-    }
-
-    .menu li {
-        width: 100%; /* Stellt sicher, dass der Listeneintrag die volle Breite einnimmt */
-        white-space: nowrap; /* Verhindert, dass der Text umbricht */
-        overflow: hidden; /* Verhindert das Hinausrutschen nach rechts */
-        text-overflow: ellipsis; /* Kürzt den Text mit "..." wenn er zu lang ist */
-    }
+  .menu li {
+      width: 48%; /* Zwei Listeneinträge nebeneinander bei 48% Breite */
+  }
 }
 
 /* Für Bildschirme bis 700px */
 @media (max-width: 700px) {
-    .menu {
-        padding-left: 0;
-        margin-left: 0;
-    }
-
-    .menu li {
-        width: 100%; /* Stellt sicher, dass der Listeneintrag die volle Breite einnimmt */
-        white-space: nowrap; /* Verhindert den Umbruch des Textes */
-        overflow: hidden; /* Verhindert, dass Text rechts hinausrutscht */
-        text-overflow: ellipsis; /* Kürzt den Text mit "..." */
-    }
+  .menu li {
+      width: 100%; /* Jeder Listeneintrag nimmt die gesamte Breite ein, also zwei Zeilen */
+  }
 }
 
 .menu li {
@@ -94,6 +78,7 @@ h1{
   color: #343A40;
   padding: 10px 15px;
   display: block;
+  background-color: #F8F9FA;
   transition: background 0.3s;
   border-radius: 5px;
 }
