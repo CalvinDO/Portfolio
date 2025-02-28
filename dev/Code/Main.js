@@ -228,12 +228,12 @@ var Portfolio;
     function removeForkme() {
         let banner = document.querySelector("header a#forkme_banner");
         banner.classList.add("to-remove");
-        document.removeChild(banner);
+        banner.remove();
     }
     function setupHeaderQuote() {
         let header = document.querySelector("header");
         let quote = document.createElement("blockquote");
-        quote.innerHTML = '"Calvin Dell’Oro zählt unter den etlichen hundert Studierenden, <br>die ich seit 2008 unterrichtet habe,<br>zu den drei engagiertesten und erfolgreichsten"<footer>— <cite class="quote-author"> Prof.Dr.rer.nat.Thomas Schneider </cite>, <cite class="quote-time">2025</cite></footer>';
+        quote.innerHTML = '<blockquote><span>"Calvin Dell’Oro zählt unter den etlichen hundert Studierenden, <br>die ich seit 2008 unterrichtet habe, <br>zu den drei engagiertesten und erfolgreichsten"</span><footer>— <cite class="author"> Prof.Dr.rer.nat.Thomas Schneider</cite>, <cite class="quote-time">2025</cite></footer></blockquote>';
         header.insertAdjacentElement('beforeend', quote);
     }
     window.addEventListener('load', init);

@@ -2,12 +2,21 @@
 
 <style>
 
-blockquote {
-  min-height: 100dvh !important;
-  margin-left: 0;
-  padding-left: 0;
-  border-left: 0;
+.quote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
 }
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  border-left: 0;
+  color: #F8F9FA;
+}
+
+
 
 </style>
 
