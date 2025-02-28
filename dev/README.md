@@ -1,3 +1,5 @@
+<script src="Code/Main.js"></script>
+
 <style>
 
 blockquote {
@@ -2349,6 +2351,3 @@ Die Motive lehnten ausschließlich an Tribal-Tattoos an.
 - [Abiturzeugnis](CCF18022020_0001.jpg)
 - [Auszeichnung des Gymnasiums für kulturelles Engagement](CCF18022020_0003.jpg)
 - [Hackathon-Urkunde](CCF18022020_0002.jpg)
-
-<script src="Code/Main.js"></script>
-<script src="Code/ExpandedProject.js"></script>
