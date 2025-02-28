@@ -98,7 +98,7 @@ h1{
 }
 
 .menu li {
-  margin: 0 15px;
+  margin: 0 0.6180339%;
 }
 
 .menu li a {
