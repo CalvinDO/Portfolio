@@ -297,13 +297,14 @@ h1#header-coding ~ h1 {
 }
 
 .flex-item.hovered .toggle-content.second-toggle-content {
-  /*opacity: irrelevant;*/
-  display: none !important;
+  opacity: 0;
+  display: none;
 }
 
 .expanded .toggle-content.second-toggle-content {
   height: 128px !important;
   top: 100%;
+  display: block !important;
 }
 
 
