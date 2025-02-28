@@ -16,6 +16,10 @@ blockquote {
   color: #F8F9FA;
 }
 
+blockquote:first-child{
+  user-select: none;
+}
+
 #project_title, #project_tagline{
   display: none !important;
 }
