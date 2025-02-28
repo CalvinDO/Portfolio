@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100dvh;
+    min-height: 100lvh;
 }
 
 blockquote {
