@@ -1,6 +1,7 @@
 var Portfolio;
 (function (Portfolio) {
     let overlay = document.querySelector('#overlay');
+    setupHeaderQuote();
     setWidth();
     try {
         removeForkme();
@@ -8,7 +9,6 @@ var Portfolio;
     catch (error) {
         console.warn(error);
     }
-    setupHeaderQuote();
     function init() {
         overlay = document.querySelector('#overlay');
         document.addEventListener('click', onClickDoc, { capture: true });

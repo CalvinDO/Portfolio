@@ -1,6 +1,8 @@
 namespace Portfolio {
 
     let overlay: HTMLDivElement = document.querySelector('#overlay');
+    
+    setupHeaderQuote();
 
     setWidth();
 
@@ -10,7 +12,6 @@ namespace Portfolio {
         console.warn(error);
     }
 
-    setupHeaderQuote();
 
     function init() {
 
