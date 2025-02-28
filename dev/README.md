@@ -1750,7 +1750,7 @@ span.toggle-arrow-span {
             </ul>
         </li>
         <li><strong>Physikbasierte Animation</strong><br>
-            <span>Simulation von Flüssigkeit mit Mantaflow</span>
+            <span>Eigenmotivierte Flüssigkeitssimulation mit Mantaflow</span>
             <ul>
                 <li>
                   Technisch versierte Nutzung von Domain und Flow
