@@ -27,6 +27,10 @@ blockquote {
   color: #F8F9FA;
 }
 
+blockquote * {
+    font-size: xx-large;
+}
+
 blockquote:first-child{
   user-select: none;
 }
