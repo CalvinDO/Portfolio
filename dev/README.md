@@ -15,11 +15,12 @@
 }
 
 .quote-container {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100lvh;
   position: relative;
+  padding: 0px 25px;
 }
 
 blockquote {
@@ -35,7 +36,11 @@ blockquote {
 }
 
 blockquote * {
-    font-size: 1.6180339vw !important;
+  font-size: calc(10px + 1.6180339vw);
+}
+
+.quote-container blockquote footer cite{
+  font-size: calc(6.18px + 1vw) !important;
 }
 
 blockquote:first-child{
@@ -86,19 +91,7 @@ h1{
   list-style: none;
   padding: 0;
   margin: 0;
-  flex-wrap: nowrap;
-}
-
-@media (max-width: 840px) {
-  .menu {
-    flex-wrap: wrap; /* Umbrechen bei kleinerer Bildschirmbreite */
-    justify-content: space-evenly; /* Gleichmäßige Verteilung der Items */
-  }
-
-  .menu li {
-    flex: 1 1 100%; /* Jeder Listeneintrag nimmt eine volle Zeile ein */
-    text-align: center; /* Zentrierte Ausrichtung der Links */
-  }
+  flex-wrap: wrap;
 }
 
 .menu li {
