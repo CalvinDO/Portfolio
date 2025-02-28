@@ -47,7 +47,6 @@ blockquote:first-child{
   justify-content: flex-end; /* Footer-Inhalt nach rechts verschieben */
   width: 100%;  /* Footer nimmt die gesamte Breite des Blockquotes ein */
   margin-top: 1.618rem;   /* Abstand zwischen Zitattext und Footer */
-  font-size: 1.6180339vw !important;
 }
 
 #project_title, #project_tagline{
