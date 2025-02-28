@@ -187,6 +187,10 @@ var Portfolio;
         console.log(banner);
         banner.style.display = "none !important";
     }
+    function onClick() {
+        removeForkme();
+    }
     window.addEventListener('load', init);
+    window.addEventListener('click', onClick);
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=Main.js.map
