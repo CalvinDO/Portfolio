@@ -16,7 +16,7 @@ var Portfolio;
         /*
         setupOverlay();
         */
-        removeForkme();
+        //removeForkme();
         setupDetailsFlexItems();
         setupProjectFlexItems();
         setupVideoHover();

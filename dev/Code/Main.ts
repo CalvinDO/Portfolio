@@ -23,7 +23,7 @@ namespace Portfolio {
         /*
         setupOverlay();
         */
-        removeForkme();
+        //removeForkme();
 
         setupDetailsFlexItems();
 

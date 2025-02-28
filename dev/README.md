@@ -27,26 +27,57 @@ blockquote {
   min-width: none !important;
 }
 
+h1{
+  text-align: center !important;
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  transition: background 0.3s;
+}
+
+.menu li a:hover {
+    background: #555;
+    border-radius: 5px;
+}
 
 </style>
 
 # Portfolio
 
-- [Motivation](#motivation)
-- [Coding](#header-coding)
-- [Modelling](#modelling)
-- [Video](#video)
-- [Musik](#musik)
-- [Grafik](#grafik)
-- [Dokumente](#dokumente)
-
+<nav class ="navbar">
+  <ul class = "menu">
+    <li><a href="#motivation">Motivation</a></li>
+    <li><a href="#header-coding">Coding</a></li>
+    <li><a href="#modelling">Modelling</a></li>
+    <li><a href="#video">Video</a></li>
+    <li><a href="#musik">Musik</a></li>
+    <li><a href="#grafik">Grafik</a></li>
+    <li><a href="#dokumente">Dokumente</a></li>
+  </ul>
+</nav>
 <hr/>  
 <hr/>
 
 # Motivation
 
 <style>
-  
+
 .details-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -243,12 +274,12 @@ Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Gru
 <hr/>
 
 <style>
-
+/*
 h1#header-coding,
 h1#header-coding ~ h1 {
     text-align: center;
 }
-
+*/
 .task-list{
   text-align: start;
 }
