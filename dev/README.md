@@ -4,20 +4,17 @@
 
   
 .quote-container::before {
-  top: 30%;
-  left: 30%;
+  right: 3vw !important;
   content: "“";
-  font-size: 5rem;
+  font-size: 20vw;
   font-weight: bold;
   color: #FF5722;
-  position: absolute;
+  position: relative;
   font-family: "Poppins", sans-serif;
-  
-  left: -1.5rem;  /* Adjust this to position the quote mark directly before the text */
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 10vw;
 }
-  .quote-container {
+
+.quote-container {
     display: flex;
   justify-content: center;
   align-items: center;
@@ -43,6 +40,13 @@ blockquote * {
 
 blockquote:first-child{
   user-select: none;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end; /* Footer-Inhalt nach rechts verschieben */
+  width: 100%;  /* Footer nimmt die gesamte Breite des Blockquotes ein */
+  margin-top: 1rem;   /* Abstand zwischen Zitattext und Footer */
 }
 
 #project_title, #project_tagline{
