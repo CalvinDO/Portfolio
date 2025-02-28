@@ -346,7 +346,7 @@ namespace Portfolio {
         let quoteContainer: HTMLDivElement = document.createElement("div");
 
         let quote: HTMLQuoteElement = document.createElement("blockquote");
-        quote.innerHTML = '<span>"Calvin Dell’Oro zählt unter den etlichen hundert Studierenden, <br>die ich seit 2008 unterrichtet habe, <br>zu den drei engagiertesten und erfolgreichsten"</span><footer>— <cite class="author"> Prof.Dr.rer.nat.Thomas Schneider</cite>, <cite class="quote-time">2025</cite></footer>'
+        quote.innerHTML = '<span>"Calvin Dell’Oro zählt unter den etlichen hundert Studierenden, <br>die ich seit 2008 unterrichtet habe, <br>zu den drei engagiertesten und erfolgreichsten"</span><footer>— <cite class="author"> Prof. Dr. rer. nat. Thomas Schneider</cite>, <cite class="quote-time">2025</cite></footer>'
 
         quoteContainer.appendChild(quote);
 
