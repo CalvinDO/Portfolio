@@ -67,6 +67,9 @@ details[open] ~ .klicken {
     display: none;
 }
 
+.to-remove{
+  display: none !important;
+}
 
 </style>
 

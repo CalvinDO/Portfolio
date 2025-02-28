@@ -285,7 +285,7 @@ namespace Portfolio {
     function removeForkme() {
         let banner: HTMLElement = document.querySelector("header a#forkme_banner");
         console.log(banner);
-        banner.style.display = "none !important";
+        banner.classList.add("to-remove");
     }
 
     function onClick() {
