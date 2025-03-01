@@ -378,6 +378,10 @@ h1#header-coding ~ h1 {
   border-width: medium;
 }
 
+#video-flex-container .flex-item{
+  width: 100% !important;
+}
+
 .toggle-content {
   overflow: hidden;
   height: 0;
@@ -1706,7 +1710,7 @@ span.toggle-arrow-span {
     </div>
     <br>
     <ul class="task-list">
-      <li><strong>Fortgeschrittene Präsentation im Mathematikunterricht</strong><br>
+      <li><strong>Fortgeschrittene <a href ="#cardoids-tutorial">Präsentation</a> im Mathematikunterricht</strong><br>
         <span>Muster durch zirkulare Multiplikationstabellen</span>
           <ul>
             <li>
@@ -2399,11 +2403,64 @@ span.toggle-arrow-span {
 # Video
 
 ## Cardioids - Tutorial
-
-<iframe width="100%" height="300em" src="https://www.youtube.com/embed/A68-juE2ves"
-frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"                allowfullscreen>
-</iframe>
-Dies ist das unter [Cardioids](#cardioids) angedeutete Lernvideo, welches im Rahmen einer Projektarbeit unter Auswahl eines eigenen Themas entstand. Hier wird ebenso die Funktionsweise meines dazu verfassten Programms ähnlich zu Pseudocode erklärt.
+<div class = "flex-container" id = "video-flex-container">
+  <div class="flex-item">
+    <h2 id="cardioids-tutorial">Cardioids - Tutorial</h2>
+    <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+      <iframe width="100%" height="300em" src="https://www.youtube.com/embed/A68-juE2ves"
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"                allowfullscreen>
+      </iframe>
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>1
+        </div>
+        <div class = "context-awards">
+         <i class ="fa-solid fa-person-chalkboard"></i>
+        </div>
+        <div class = "tags">
+          <span class="tag">Overwolf</span>
+          <span class="tag">AVS Editor</span>
+        </div>
+        <span class ="duration"><i class="far fa-clock"></i>&nbsp;&nbsp;3h</span>
+      </div>
+    </div>
+    <h4>
+      Schulvortrag<br>
+      Solo-Projekt<br>
+      Frühling 2019<br>
+      <a href="#cardioids">Herzkurve</a>-Erklärvideo
+    </h4>
+    <br>
+    <div class="skills">
+      <strong>Overwolf, AVS Editor</strong><br>
+      <em>Präsentativ - Didaktisch - Selbstständig</em><br>
+      <!-- <strong>Git</strong> -->
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Vertontes Erklärvideo für Mathematikunterricht</strong><br>
+        <span>Entstanden unter Auswahl eigener Themen</span>
+          <ul>
+            <li>
+              Präsentative Aufbereitung
+            </li>
+          </ul>
+      </li>
+      <li><strong>Komplexes mathematisches Thema</strong><br>
+        <span>Erklärung von Grundlagen und Programmcode</span>
+        <ul>
+          <li>
+            Analogien zur alltäglichen Welt
+          </li>
+          <li>
+            Erläuterung des Programms ähnlich Pseudocode
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <!-- Dies ist das unter [Cardioids](#cardioids) angedeutete Lernvideo, welches im Rahmen einer Projektarbeit unter Auswahl eines eigenen Themas entstand. Hier wird ebenso die Funktionsweise meines dazu verfassten Programms ähnlich zu Pseudocode erklärt. -->
+  </div>
+</div>
 
 <hr/>  
 <hr/>
