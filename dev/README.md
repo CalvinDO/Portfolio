@@ -2837,31 +2837,33 @@ span.toggle-arrow-span {
   display: none !important;
 }
 
-.documents-list {
-  padding: 0;
-  text-align: center;
+.documents-wrapper {
+  display: flex;
+  justify-content: center; /* Zentriert den gesamten Inhalt horizontal */
 }
-
-.documents-list li{
-  text-align: left;
-  display: inline-block;
+.documents-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: left; /* Listenelemente linksbündig ausrichten */
 }
 
 </style>
 
 # Dokumente
 
-<ul class = "documents-list">
-  <li><a href="Lebenslauf.md">Daten und Lebenslauf</a></li>
-  <li><a href="EmpfehlungsschreibenVonProfChristophMueller.pdf">Empfehlungsschreiben Prof. Christoph Müller</a></li>
-  <li><a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf">Empfehlungsschreiben Prof. Dr. Thomas Schneider</a></li>
-  <li><a href="BachelorOfScience.pdf">Bachelorzeugnis</a></li>
-  <li><a href="StudiumNotenspiegel.pdf">Bachelor Notenspiegel</a></li>
-  <li><a href="Exmatrikulationsbescheinigung.pdf">Exmatrikulationsbescheinigung</a></li>
-  <li><a href="PraktikumsbestätigungCalvinDellOro.pdf">Praktikumsbestätigung</a></li>
-  <li><a href="CCF18022020_0001.jpg">Abiturzeugnis</a></li>
-  <li><a href="CCF18022020_0003.jpg">Auszeichnung des Gymnasiums für kulturelles Engagement</a></li>
-  <li><a href="CCF18022020_0002.jpg">Hackathon-Urkunde</a></li>
-</ul>
+<div class ="documnets-wrapper">
+  <ul class = "documents-list">
+    <li><a href="Lebenslauf.md">Daten und Lebenslauf</a></li>
+    <li><a href="EmpfehlungsschreibenVonProfChristophMueller.pdf">Empfehlungsschreiben Prof. Christoph Müller</a></li>
+    <li><a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf">Empfehlungsschreiben Prof. Dr. Thomas Schneider</a></li>
+    <li><a href="BachelorOfScience.pdf">Bachelorzeugnis</a></li>
+    <li><a href="StudiumNotenspiegel.pdf">Bachelor Notenspiegel</a></li>
+    <li><a href="Exmatrikulationsbescheinigung.pdf">Exmatrikulationsbescheinigung</a></li>
+    <li><a href="PraktikumsbestätigungCalvinDellOro.pdf">Praktikumsbestätigung</a></li>
+    <li><a href="CCF18022020_0001.jpg">Abiturzeugnis</a></li>
+    <li><a href="CCF18022020_0003.jpg">Auszeichnung des Gymnasiums für kulturelles Engagement</a></li>
+    <li><a href="CCF18022020_0002.jpg">Hackathon-Urkunde</a></li>
+  </ul>
+</div>
 
 <script src = "Code/FooterInserter.js">
