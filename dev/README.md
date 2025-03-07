@@ -548,7 +548,11 @@ h1#header-coding ~ h1 {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease-in-out;
-  z-index: 12;
+  z-index: 0;
+}
+
+.expanded .visual-presentation-container img, .expanded .visual-presentation-container video {
+    z-index: 12 !important;
 }
 
 .flex-item {
