@@ -2032,7 +2032,7 @@ span.toggle-arrow-span {
     Ich ging darüber hinaus, in dem ich aus der primitiven Geometrie Details wie Edelsteine durch Loop-Cuts, Extrudes und Insets erzeugte. Die Marmortexturen erzeugte ich prozedural über Noise-Nodes, die Holztextur ebenso über Noise, Musgrave und Voronoi Nodes, sowie Vektorkurven und Color-Burn-Nodes. -->
   </div>
   <div class="flex-item">
-    <h2 id="deren-schloss">Deren Schloss</h2>
+    <h2 id="deren-schloss">Schloss der Truhe</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <img src="Schloss.png" alt="Schloss" width="100%"/> 
       <div class = "primary-info-container">
