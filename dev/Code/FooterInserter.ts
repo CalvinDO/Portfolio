@@ -1,6 +1,10 @@
 namespace Portfolio {
 
-    setupFooterDocuments();
+    try {
+        setupFooterDocuments();
+    } catch (error) {
+        console.warn(error);
+    }
 
     function setupFooterDocuments() {
 
@@ -9,4 +13,6 @@ namespace Portfolio {
         let documentsList: HTMLUListElement | null = document.querySelector(".documents-list");
         footer.appendChild(documentsList);
     }
+
+    document.addEventListener('load', setupFooterDocuments);
 }
