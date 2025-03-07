@@ -152,12 +152,12 @@ h1{
 
 .details-container details {
 
- padding: 10px;
-border: 1px solid #ccc;
-border-radius: 5px;
-background-color: #fafafa;
-height: 100%;
-color: #212529;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fafafa;
+  height: 100%;
+  color: #212529;
 }
 
 @media (max-width: 1225px) {
@@ -2855,7 +2855,7 @@ span.toggle-arrow-span {
 
 # Dokumente
 
-<div class ="documnets-wrapper">
+<div class ="documents-wrapper">
   <ul class = "documents-list">
     <li><a href="Lebenslauf.md">Daten und Lebenslauf</a></li>
     <li><a href="EmpfehlungsschreibenVonProfChristophMueller.pdf">Empfehlungsschreiben Prof. Christoph Müller</a></li>
