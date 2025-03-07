@@ -31,7 +31,7 @@ blockquote {
   position: relative;
 }
 
-.quote-text {
+.quote-text{
   position: relative;
 }
 
