@@ -152,12 +152,12 @@ h1{
 
 .details-container details {
 
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-
-  height: 100%;
+ padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-color: #fafafa;
+height: 100%;
+color: #212529;
 }
 
 @media (max-width: 1225px) {
