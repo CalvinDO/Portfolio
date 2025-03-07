@@ -2831,15 +2831,31 @@ span.toggle-arrow-span {
 <hr/>  
 <hr/>
 
+<style>
+
+.documents-list {
+  padding: 0;
+  text-align: center;
+}
+
+.documents-list li{
+  text-align: left;
+  display: inline-block;
+}
+
+</style>
+
 # Dokumente
 
-- [Daten und Lebenslauf](Lebenslauf.md)
-- [Empfehlungsschreiben Prof. Christoph Müller](EmpfehlungsschreibenVonProfChristophMueller.pdf)
-- [Empfehlungsschreiben Prof. Dr. Thomas Schneider](EmpfehlungsschreibenVonProfDrThomasSchneider.pdf)
-- [Bachelorzeugnis](BachelorOfScience.pdf)
-- [Bachelor Notenspiegel](StudiumNotenspiegel.pdf)
-- [Exmatrikulationsbescheinigung](Exmatrikulationsbescheinigung.pdf)
-- [Praktikumsbestätigung](PraktikumsbestätigungCalvinDellOro.pdf)
-- [Abiturzeugnis](CCF18022020_0001.jpg)
-- [Auszeichnung des Gymnasiums für kulturelles Engagement](CCF18022020_0003.jpg)
-- [Hackathon-Urkunde](CCF18022020_0002.jpg)
+<ul class = "documents-list">
+  <li><a href="Lebenslauf.md">Daten und Lebenslauf</a></li>
+  <li><a href="EmpfehlungsschreibenVonProfChristophMueller.pdf">Empfehlungsschreiben Prof. Christoph Müller</a></li>
+  <li><a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf">Empfehlungsschreiben Prof. Dr. Thomas Schneider</a></li>
+  <li><a href="BachelorOfScience.pdf">Bachelorzeugnis</a></li>
+  <li><a href="StudiumNotenspiegel.pdf">Bachelor Notenspiegel</a></li>
+  <li><a href="Exmatrikulationsbescheinigung.pdf">Exmatrikulationsbescheinigung</a></li>
+  <li><a href="PraktikumsbestätigungCalvinDellOro.pdf">Praktikumsbestätigung</a></li>
+  <li><a href="CCF18022020_0001.jpg">Abiturzeugnis</a></li>
+  <li><a href="CCF18022020_0003.jpg">Auszeichnung des Gymnasiums für kulturelles Engagement</a></li>
+  <li><a href="CCF18022020_0002.jpg">Hackathon-Urkunde</a></li>
+</ul>
