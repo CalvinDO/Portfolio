@@ -2488,7 +2488,7 @@ span.toggle-arrow-span {
 
 <div class = "flex-container" id = "music-flex-container">
   <div class="flex-item">
-    <h2 id="fuwashima">Fuwashima - GGJ 2020</h2>
+    <h2 id="fuwashima">Fuwashima - Game Jam</h2>
     <div class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <audio controls>
         <source src="Musik/Fuwashima.mp3" type="audio/mp3">
@@ -2519,7 +2519,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
       <strong>FL Studio, Delay & Echo, Arpeggio, GGJ</strong><br>
-      <em>Präsentativ - Didaktisch - Selbstständig</em><br>
+      <em>Expressionistisch - Intensiv - Kooperativ</em><br>
       <!-- <strong>Git</strong> -->
     </div>
     <br>
@@ -2589,8 +2589,8 @@ span.toggle-arrow-span {
     </h4>
     <br>
     <div class="skills">
-      <strong>FL Studio, Delay & Echo, Arpeggio, GGJ</strong><br>
-      <em>Präsentativ - Didaktisch - Selbstständig</em><br>
+      <strong>Dubstep, Speech-Synthese, Audio-Watermark</strong><br>
+      <em>Experimentell - Mathematisch - Explorativ</em><br>
       <!-- <strong>Git</strong> -->
     </div>
     <br>
@@ -2616,7 +2616,7 @@ span.toggle-arrow-span {
     <!-- Bei diesem Audio handelt es sich um ein Gimmick, entworfen für den internationalen "Pi-Day", welches ebenso mein erstes außerhalb der Familie im Alter von 11 Jahren präsentierte Audio-Projekt darstellt. Ich überlegte mir die Idee, einige Nachkommastellen der Kreiszahl Pi musikalisch umzusetzen, ohne Töne und Aufbau nach der Konstante zu gestalten. Dies gelang mir durch das Aufsagen der Stellen von Roboterstimmen. Nach einem "Wobble-Bass", umgesetzt durch zeitliche Modulation des "Cutoffs", folgt eine rein akustisch nicht entzifferbare Sequenz, die das Stück beendet. Es handelt sich hierbei um die auditive Wiedergabe einer Grafik des griechischem Symbols für "Pi". Wenn Sie meinen "Pi-Song" in eine DAW, beispielsweise Audacity, importieren, und sich die Tonspur als Spektrogramm anzeigen lassen, wird es sichtbar. -->
   </div>
   <div class="flex-item">
-    <h2 id="vocalremixtrap">VocalRemixTrap</h2>
+    <h2 id="vocalremixtrap">Vocal-Remix</h2>
     <div class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <audio controls>
         <source src="Musik/VocalRemixTrap.mp3" type="audio/mp3">
@@ -2630,52 +2630,52 @@ span.toggle-arrow-span {
          <i class="fas fa-umbrella-beach"></i>
         </div>
         <div class = "tags">
-          <span class="tag">Dubstep</span>
-          <span class="tag">Speech-Synthese</span>
-          <span class="tag">Audio-Watermark</span>
+          <span class="tag">Trap</span>
+          <span class="tag">Granulizer</span>
+          <span class="tag">EQ-ing</span>
+          <span class="tag">Kompressor</span>
         </div>
         <span class ="duration"><i class="far fa-clock"></i>&nbsp;&nbsp;3h</span>
       </div>
     </div>
     <h4>
-      Pi-Tag<br>
-      Solo-Projekt<br>
-      Frühling 2013<br>
-      Tribut für die Kreiszahl
+      Gimmick im Freundeskreis<br>
+      Duo-Team<br>
+      Sommer 2017<br>
+      Komische Sprachverzerrung
     </h4>
     <br>
     <div class="skills">
-      <strong>FL Studio, Delay & Echo, Arpeggio, GGJ</strong><br>
-      <em>Präsentativ - Didaktisch - Selbstständig</em><br>
+      <strong>Trap, Granulizer, EQ-ing, Kompressor</strong><br>
+      <em>Gemeinschaftlich - Lustig - Detailverliebt</em><br>
       <!-- <strong>Git</strong> -->
     </div>
     <br>
     <ul class="task-list">
-      <li><strong>Gimmick für internationalen Pi-Day</strong><br>
-        <span>Musikalische Verkörperung der Kreiszahl</span>
+      <li><strong>Trap aus Meme-Sprachaufnahmen</strong><br>
+        <span>Humorvolles Pitching</span>
           <ul>
             <li>
-              Dubstep durch Cutoff-Modulation
+              Tonhöhenverschiebung durch Fruity Granulizer
             </li>
             <li>
-              Sprachsynthese durch Roboterstimme für Rap
+              Sprach-Samples als melodisches Instrument
             </li>
           </ul>
-        <span>Implementierung eines auditiven Wasserzeichens</span>
+        <span>Mixing und Mastering</span>
           <ul>
             <li>
-                Tonspur als Spektrogramm in DAW zeigt "π"-Symbol
+                Beratung von als DJ erfahrenen Schwager
+            </li>
+            <li>
+                Kompressoren, Normpegel, Audioqualität 
             </li>
           </ul>
       </li>
     </ul>
-    <!-- Bei diesem Audio handelt es sich um ein Gimmick, entworfen für den internationalen "Pi-Day", welches ebenso mein erstes außerhalb der Familie im Alter von 11 Jahren präsentierte Audio-Projekt darstellt. Ich überlegte mir die Idee, einige Nachkommastellen der Kreiszahl Pi musikalisch umzusetzen, ohne Töne und Aufbau nach der Konstante zu gestalten. Dies gelang mir durch das Aufsagen der Stellen von Roboterstimmen. Nach einem "Wobble-Bass", umgesetzt durch zeitliche Modulation des "Cutoffs", folgt eine rein akustisch nicht entzifferbare Sequenz, die das Stück beendet. Es handelt sich hierbei um die auditive Wiedergabe einer Grafik des griechischem Symbols für "Pi". Wenn Sie meinen "Pi-Song" in eine DAW, beispielsweise Audacity, importieren, und sich die Tonspur als Spektrogramm anzeigen lassen, wird es sichtbar. -->
+    <!-- Bei diesem Stück handelt es sich ebenfalls um ein Gimmick, diesmal im Kreis von engen Freunden. Ich versuchte, aus einigen verschiedenen menschlichen Aufnahmen, die bei uns täglich für Lacher sorgten, einen "Remix" zu erstellen, der an der Musikrichtung des Traps anlehnt. Dabei verwendete ich eine Vielzahl von Plugins, wovon sich das wichtigste, welches für die Stimmverzerrungen verantwortlich ist, "Fruity Granulizer" nennt. Dies ist mein erstes Audioprojekt, in dem ich, unterstützt durch meinen als DJ erfahrenen Schwager, auf Audioqualität, Mischungen (EQ-ing), Normpegel achtete, sowie Kompressoren benutzte. -->
   </div>
 </div>
-
-## VocalRemixTrap
-
-Bei diesem Stück handelt es sich ebenfalls um ein Gimmick, diesmal im Kreis von engen Freunden. Ich versuchte, aus einigen verschiedenen menschlichen Aufnahmen, die bei uns täglich für Lacher sorgten, einen "Remix" zu erstellen, der an der Musikrichtung des Traps anlehnt. Dabei verwendete ich eine Vielzahl von Plugins, wovon sich das wichtigste, welches für die Stimmverzerrungen verantwortlich ist, "Fruity Granulizer" nennt. Dies ist mein erstes Audioprojekt, in dem ich, unterstützt durch meinen als DJ erfahrenen Schwager, auf Audioqualität, Mischungen (EQ-ing), Normpegel achtete, sowie Kompressoren benutzte.
 
 <hr/>  
 <hr/>
