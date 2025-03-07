@@ -2906,6 +2906,9 @@ span.toggle-arrow-span {
   color: #F8F9FA !important;
 }
 
+#dokumente{
+  color: #F8F9FA !important;
+}
 
 </style>
 
