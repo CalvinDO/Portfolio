@@ -348,10 +348,18 @@ details[open] ~ .klicken {
   font-size: 1.5rem;
 }
 
-#abschluss i { color: #3498db; } /* Blau */
-#wunsch i { color: #2ecc71; } /* Grün */
-#jobs i { color: #e67e22; } /* Orange */
-#warum i { color: #9b59b6; } /* Lila */
+#abschluss i {
+  color: #4361ee;
+}
+#wunsch i {
+  color: #3a0ca3;
+}
+#jobs i {
+  color: #f72585;
+}
+#warum i {
+  color: #4cc9f0;
+}
 
 </style>
 
