@@ -2464,14 +2464,19 @@ span.toggle-arrow-span {
 <hr/>  
 <hr/>
 
-
 <style>
 
 .visual-presentation-container audio {
-    height: 115px;
+  height: 115px;
+}
+
+.context-awards img {
+  width: 34px !important;
+  height: auto !important;
 }
 
 </style>
+
 # Musik
 
 <div class = "flex-container" id = "music-flex-container">
