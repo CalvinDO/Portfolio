@@ -2785,7 +2785,7 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="schlafend-im-bus">Tribal</h2>
     <div class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-      <img src="Zeichnungen/Sleep.jpg" alt="Sleep" width="100%"/>
+      <img src="Zeichnungen/Tribal.jpg" alt="Tribal" width="100%">
       <div class = "primary-info-container">
         <div class="team-size-container">
           <i class="material-icons">person</i>1
