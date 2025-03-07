@@ -2887,9 +2887,10 @@ span.toggle-arrow-span {
   text-align: left; /* Listenelemente linksbündig ausrichten */
 }
 
-.documents-wrapper h1{
-  color: 
+.documents-wrapper, .documents-wrapper *{
+  color: #F8F9FA !important;
 }
+
 
 </style>
 
