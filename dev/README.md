@@ -338,11 +338,19 @@ details[open] ~ .klicken {
 
 <div id="motivation-end-container">
 <p>Alter: 21<br>
-Ich schloss das Studium mit meiner <a href="#neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen">Bachelor-Thesis “Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen”</a> ab, bei dem in einem Editor Knochen-Gelenk-Konstruktionen erstellt werden, die durch Mutationen über Generationen hinweg Laufmuster von Grund auf lernen.<br>
-<br>
-Auf dieser Seite sammle ich einige meiner Arbeiten, um einen Beleg für meinen Enthusiasmus und Lernfähigkeit zu liefern und Interesse für ein Angebot als Spieleprogrammierer zu wecken. Mittlerweile hat sich eine Spezifikation des Spielgenres herauskristallisiert, in dem ich gerne arbeite: Spiele, die ohne Gewaltdarstellungen dem Spieler eine eher friedliche, meditative Erfahrung bieten. Wenn Mehrspielermodi vorhanden sind, sollten die Spieler konstruktiv und kooperativ zusammenarbeiten. Optimalerweise kämpft der Spieler im Spiel gegen nichts, und kommt im Spielverlauf zu intuitiven Einsichten über tiefgreifende Themen und Philosophien.<br>
-Puzzle-Games und Aufbau-Strategiespiele sowie Cozy Games, Simulatoren oder Musik-/Sound- und Rhythm-Games kommen besonders in Frage.<br>
-Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Grundlegende 3D-Modelling- und Design-Kenntnisse sind vorhanden, jedoch nicht als Haupttätigkeit bevorzugt. In der Soundgestaltung und Soundtechnik des Spiels kann ich mitwirken, während Programmieren meine Haupttätigkeit darstellt.</p>
+Ich schloss das Studium mit meiner <a href="#neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen">Bachelor-Thesis “Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen”</a> ab, bei dem in einem Editor Knochen-Gelenk-Konstruktionen erstellt werden, die durch Mutationen über Generationen hinweg Laufmuster von Grund auf lernen.
+</p>
+<p>
+Gerne programmiere ich Spiele, die ohne Gewaltdarstellungen dem Spieler eine eher friedliche, meditative Erfahrung bieten. Wenn Mehrspielermodi vorhanden sind, sollten die Spieler konstruktiv und kooperativ zusammenarbeiten.<br>
+Optimalerweise kämpft der Spieler im Spiel gegen nichts und kommt im Spielverlauf zu intuitiven Einsichten über tiefgreifende Themen und Philosophien.
+</p>
+<p>
+Puzzle-Games, Aufbau-Strategiespiele sowie Cozy Games, Simulatoren oder Musik-, Sound- und Rhythm-Games kommen besonders in Frage.<br>
+Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Grundlegende 3D-Modelling- und Design-Kenntnisse sind vorhanden, jedoch nicht als Haupttätigkeit bevorzugt. In der Soundgestaltung und Soundtechnik des Spiels kann ich mitwirken, während Programmieren meine Haupttätigkeit darstellt.
+</p>
+<p>
+Auf dieser Seite sammle ich einige meiner Arbeiten, um einen Beleg für meinen Enthusiasmus und meine Lernfähigkeit zu liefern und Interesse für ein Angebot als Spieleprogrammierer zu wecken.
+</p>
 </div>
 
 <hr/>  
