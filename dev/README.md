@@ -2853,9 +2853,8 @@ span.toggle-arrow-span {
 
 </style>
 
-# Dokumente
-
 <div class ="documents-wrapper">
+  <h1 id = "dokumente">Dokumente</h1>
   <ul class = "documents-list">
     <li><a href="Lebenslauf.md">Daten und Lebenslauf</a></li>
     <li><a href="EmpfehlungsschreibenVonProfChristophMueller.pdf">Empfehlungsschreiben Prof. Christoph Müller</a></li>
