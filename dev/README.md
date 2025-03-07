@@ -65,6 +65,10 @@ blockquote:first-child{
   min-width: none !important;
 }
 
+#main_content_wrap{
+  background: #f8f9fa;
+}
+
 h1{
   text-align: center !important;
 }
@@ -103,7 +107,7 @@ h1{
   color: #343A40;
   padding: 10px 15px;
   display: block;
-  background-color: #F8F9FA;
+  background-color: hsl(0deg 0% 20% / 6%);
   transition: background 0.3s;
   border-radius: 5px;
 }
