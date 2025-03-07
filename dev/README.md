@@ -2468,6 +2468,7 @@ span.toggle-arrow-span {
 
 .visual-presentation-container audio {
   height: 115px;
+  width: 96.18%;
 }
 
 .context-awards img {
@@ -2499,7 +2500,7 @@ span.toggle-arrow-span {
           <span class="tag">Delay & Echo</span>
           <span class="tag">Arpeggio</span>
         </div>
-        <span class ="duration"><i class="far fa-clock"></i>&nbsp;&nbsp;3h</span>
+        <span class ="duration"><i class="far fa-clock"></i>&nbsp;&nbsp;24h</span>
       </div>
     </div>
     <h4>
@@ -2550,14 +2551,80 @@ span.toggle-arrow-span {
     </ul>
     <!-- Dieses Stück komponierte ich als Titelsong im Rahmen des Global-Game-Jams 2020, bei dem ich in einem Team innerhalb von 48 Stunden bei der Entwicklung eines VR-Games mitwirkte. In erster Linie versuchte ich, das Thema des umgesetzten Atomkraftwerk-Supergau-Simulators, in dem der Spieler unter Stress Rätsel lösen muss, durch einen spannenden Aufbau und aggressivem Klang mit entsprechender Stimmung zu unterstützen. Auch versuchte ich, den Effekt von Tonverzerrungen, verursacht durch enorme radioaktive Strahlung, mit der zeitlichen Automation der Delay-Time eines Echo-Delay-Plugins annähernd zu simulieren. Um Originalität zu schaffen, versah ich zurückhaltende Drum-Sounds mit dem prägnanten "Amen-Break", der mir aus der eigenen Schlagzeugpraxis wohl vertraut ist und einen scheinbar gegenläufigen Rhythmus erzeugt. -->
   </div>
+  <div class="flex-item">
+    <h2 id="pisong">PiSong</h2>
+    <div class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+      <audio controls>
+        <source src="Musik/PiSong.mp3" type="audio/mp3">
+        Ihr Browser unterstützt den Audio-Tag nicht
+      </audio>
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>1
+        </div>
+        <div class = "context-awards">
+         <i class="fas fa-pi"></i>
+        </div>
+        <div class = "tags">
+          <span class="tag">Dubstep</span>
+          <span class="tag">Speech-Synthese</span>
+          <span class="tag">Audio-Watermark</span>
+        </div>
+        <span class ="duration"><i class="far fa-clock"></i>&nbsp;&nbsp;3h</span>
+      </div>
+    </div>
+    <h4>
+      Pi-Tag<br>
+      Solo-Projekt<br>
+      Frühling 2013<br>
+      Nuklearer Supergau
+    </h4>
+    <br>
+    <div class="skills">
+      <strong>FL Studio, Delay & Echo, Arpeggio, GGJ</strong><br>
+      <em>Präsentativ - Didaktisch - Selbstständig</em><br>
+      <!-- <strong>Git</strong> -->
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Titelsong für Atomkraftwerk-Simulator</strong><br>
+        <span>Unterstützung des Themas durch auditive Stimmung</span>
+          <ul>
+            <li>
+              Aggressiver Klang und spannender Aufbau
+            </li>
+            <li>
+              Tonverzerrungen durch radioaktive Strahlung 
+            </li>
+            <li>
+              Zeitliche Automation von Delay- und Echo-Plugins
+            </li>
+          </ul>
+        <span>Versehen mit origineller Note</span>
+          <ul>
+            <li>
+                Zurückhaltende Drum-Sounds mit "Amen-Break"
+            </li>
+            <li>
+                "Gegenläufiger" Rythmus, vertraut aus eigener Schlagzeugpraxis
+            </li>
+          </ul>
+      </li>
+      <li><strong>Mitwirken am Gamedesign</strong><br>
+        <span>Verhindern des Supergaus</span>
+        <ul>
+          <li>
+            Lösen von Rätseln unter Stress
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <!--  -->
+  </div>
 </div>
 
 ## PiSong
 
-<audio controls>
-  <source src="Musik/PiSong.mp3" type="audio/mp3">
-  Ihr Browser unterstützt den Audio-Tag nicht
-</audio>
 Bei diesem Audio handelt es sich um ein Gimmick, entworfen für den internationalen "Pi-Day", welches ebenso mein erstes außerhalb der Familie im Alter von 11 Jahren präsentierte Audio-Projekt darstellt. Ich überlegte mir die Idee, einige Nachkommastellen der Kreiszahl Pi musikalisch umzusetzen, ohne Töne und Aufbau nach der Konstante zu gestalten. Dies gelang mir durch das Aufsagen der Stellen von Roboterstimmen. Nach einem "Wobble-Bass", umgesetzt durch zeitliche Modulation des "Cutoffs", folgt eine rein akustisch nicht entzifferbare Sequenz, die das Stück beendet. Es handelt sich hierbei um die auditive Wiedergabe einer Grafik des griechischem Symbols für "Pi". Wenn Sie meinen "Pi-Song" in eine DAW, beispielsweise Audacity, importieren, und sich die Tonspur als Spektrogramm anzeigen lassen, wird es sichtbar.
 
 ## VocalRemixTrap
