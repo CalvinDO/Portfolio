@@ -2,7 +2,6 @@ var Portfolio;
 (function (Portfolio) {
     let overlay = document.querySelector('#overlay');
     setupHeaderQuote();
-    setupFooterDocuments();
     try {
         removeForkme();
         setupNavBar();

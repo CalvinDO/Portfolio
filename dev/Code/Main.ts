@@ -3,7 +3,6 @@ namespace Portfolio {
     let overlay: HTMLDivElement = document.querySelector('#overlay');
 
     setupHeaderQuote();
-    setupFooterDocuments();
 
 
     try {

@@ -2863,3 +2863,5 @@ span.toggle-arrow-span {
   <li><a href="CCF18022020_0003.jpg">Auszeichnung des Gymnasiums für kulturelles Engagement</a></li>
   <li><a href="CCF18022020_0002.jpg">Hackathon-Urkunde</a></li>
 </ul>
+
+<script src = "Code/FooterInserter.js">
