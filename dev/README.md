@@ -2473,7 +2473,7 @@ span.toggle-arrow-span {
 }
 
 .expanded audio {
-    z-index: 14 !important;
+    z-index: 12 !important;
     position: relative;
 }
 
@@ -2524,7 +2524,7 @@ span.toggle-arrow-span {
     </div>
     <br>
     <ul class="task-list">
-      <li><strong>Titelsong für Atomkraftwerk-Simulator</strong><br>
+      <li><strong>Titelsong für Atomkraftwerk-Simulator zu dritt</strong><br>
         <span>Unterstützung des Themas durch auditive Stimmung</span>
           <ul>
             <li>
@@ -2635,7 +2635,7 @@ span.toggle-arrow-span {
           <span class="tag">EQ-ing</span>
           <span class="tag">Kompressor</span>
         </div>
-        <span class ="duration"><i class="far fa-clock"></i>&nbsp;&nbsp;3h</span>
+        <span class ="duration"><i class="far fa-clock"></i>&nbsp;&nbsp;5t</span>
       </div>
     </div>
     <h4>
@@ -2682,23 +2682,151 @@ span.toggle-arrow-span {
 
 # Grafik
 
-## Donald Trump, Kugelschreiberzeichnung
-
-<img src="Zeichnungen/Trump.jpg" alt="Trump" width="100%">
-Vor dem Erstellen dieses Bildes pflegte ich eine starke Abgneigung gegen das Zeichnen organischer Objekte und Lebewesen. Dies ist darauf zurück zu führen, dass es mir sonst, leider nicht nur meiner Einschätzung nach, in außerordentlichem Maße misslang. Eines Tages, im Alter von 16 Jahren, als ich mich vom Lernen für eine Klausur ablenkte, verspürte ich die Lust, genau dies zu ändern. Es stellte für mich eine gewisse Art der Herausforderung an mich selbst dar, besonders in Anbetracht des Versäumnisses der Lernzeit.  
-Ein Bild dieses Präsidenten auf meinem Bildschirm vorgelegt, versuchte ich die Konturen frei auf das Papier zu übertragen. Das Ergebnis überraschte mich sehr.
-
-## Schlafend im Bus, Kugelschreiberzeichnung
-
-<img src="Zeichnungen/Sleep.jpg" alt="Sleep" width="100%"/>
-Mit dem Wissen, auch hier etwas Talent zeigen zu können, zeichnete ich wenige Wochen später einen Klassenkameraden, der im Reisebus zur Klassenfahrt in den Schlaf fiel. Hier reizte mich noch mehr die Herausforderung, in Anbetracht der unruhigen Fahrt, des temporären Ruhezustands des Kollegen, des Zeichnens auf den Oberschenkeln, sowie seinen Abneigung, photografiert zu werden.
-
-## Tribal, Tuschezeichnung
-
-<img src="Zeichnungen/Tribal.jpg" alt="Tribal" width="100%">
-Mit dieser, sich von Kugelschreiberzeichnungen stark unterscheidenden Art des Zeichnens experimentiert ich schon früher, im Alter von etwa 13 Jahren, was allerdings auch auf eine Art der Herausforderung meiner Selbstdisziplin zurückzuführen ist, da ich meine Werkzeuge hierbei stark einschränkte.  
-Anstatt einen Pinsel oder Kaligrafiestift zu verwenden, benutzte ich konsequent eine Art eines Fine-Liners, dessen Spitze ich nie das Papier berühren lies, und somit über einen durch die Oberflächenspannung entstehenden winzigen Tintenkanal äußerst vorsichtig über dem Blatt schweben lassen musste, da direkter Kontakt sofort zu unansehnlichen Färbungen führte.  
-Die Motive lehnten ausschließlich an Tribal-Tattoos an.
+<div class = "flex-container" id = "music-flex-container">
+  <div class="flex-item">
+    <h2 id="donald-trump">Donald Trump - Karikatur</h2>
+    <div class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+      <img src="Zeichnungen/Trump.jpg" alt="Trump" width="100%">
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>1
+        </div>
+        <div class = "context-awards">
+         <i class="fas fa-umbrella-beach"></i>
+        </div>
+        <div class = "tags">
+          <span class="tag">Kugelschreiber</span>
+        </div>
+        <span class ="duration"><i class="far fa-clock"></i>&nbsp;&nbsp;3h</span>
+      </div>
+    </div>
+    <h4>
+      Ablenkung bei Klausurvorbereitung<br>
+      Solo-Projekt<br>
+      Winter 2017<br>
+      Karikatur eines Prominenten
+    </h4>
+    <br>
+    <div class="skills">
+      <strong>Kugelschreiber</strong><br>
+      <em>Satirisch - Herausfordernd - Minimalistisch</em><br>
+      <!-- <strong>Git</strong> -->
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Erste gelungene Zeichnung organischer Objekte</strong><br>
+        <span>Herausforderung wegen Abneigung gegen Zeichnung von Lebewesen</span>
+          <ul>
+            <li>
+              Freies Abzeichnen aus Fotografie des Präsidenten
+            </li>
+          </ul>
+      </li>
+    </ul>
+    <!-- Vor dem Erstellen dieses Bildes pflegte ich eine starke Abgneigung gegen das Zeichnen organischer Objekte und Lebewesen. Dies ist darauf zurück zu führen, dass es mir sonst, leider nicht nur meiner Einschätzung nach, in außerordentlichem Maße misslang. Eines Tages, im Alter von 16 Jahren, als ich mich vom Lernen für eine Klausur ablenkte, verspürte ich die Lust, genau dies zu ändern. Es stellte für mich eine gewisse Art der Herausforderung an mich selbst dar, besonders in Anbetracht des Versäumnisses der Lernzeit.  
+    Ein Bild dieses Präsidenten auf meinem Bildschirm vorgelegt, versuchte ich die Konturen frei auf das Papier zu übertragen. Das Ergebnis überraschte mich sehr. -->
+  </div>
+  <div class="flex-item">
+    <h2 id="schlafend-im-bus">Schlafend im Bus</h2>
+    <div class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+      <img src="Zeichnungen/Sleep.jpg" alt="Sleep" width="100%"/>
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>1
+        </div>
+        <div class = "context-awards">
+         <i class="fas fa-umbrella-beach"></i>
+        </div>
+        <div class = "tags">
+          <span class="tag">Kugelschreiber</span>
+        </div>
+        <span class ="duration"><i class="far fa-clock"></i>&nbsp;&nbsp;2h</span>
+      </div>
+    </div>
+    <h4>
+      Beschäftigung im Bus<br>
+      Solo-Projekt<br>
+      Winter 2017<br>
+      Schoßzeichnung
+    </h4>
+    <br>
+    <div class="skills">
+      <strong>Kugelschreiber</strong><br>
+      <em>Realistisch - Herausfordernd - Provokant</em><br>
+      <!-- <strong>Git</strong> -->
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Zweite Zeichnung nach Entdeckung des Talents</strong><br>
+        <span>Klassenkamerade wollte nicht fotografiert werden</span>
+          <ul>
+            <li>
+              Als Provokation zeichnete ich ihn
+            </li>
+          </ul>
+      </li>
+      <li><strong>Reiz durch Herausforderung</strong><br>
+        <span>Bedingungen erschwerten die Vollbringung des Werks</span>
+          <ul>
+            <li>
+              Unruhige Fahrt
+            </li>
+            <li>
+              Temporärer Ruhezustand
+            </li>
+            <li>
+              Zeichnen auf Oberschenkeln
+            </li>
+          </ul>
+      </li>
+    </ul>
+    <!-- Mit dem Wissen, auch hier etwas Talent zeigen zu können, zeichnete ich wenige Wochen später einen Klassenkameraden, der im Reisebus zur Klassenfahrt in den Schlaf fiel. Hier reizte mich noch mehr die Herausforderung, in Anbetracht der unruhigen Fahrt, des temporären Ruhezustands des Kollegen, des Zeichnens auf den Oberschenkeln, sowie seinen Abneigung, photografiert zu werden. -->
+  </div>
+  <div class="flex-item">
+    <h2 id="schlafend-im-bus">Tribal</h2>
+    <div class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+      <img src="Zeichnungen/Sleep.jpg" alt="Sleep" width="100%"/>
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>1
+        </div>
+        <div class = "context-awards">
+         <i class="fas fa-umbrella-beach"></i>
+        </div>
+        <div class = "tags">
+          <span class="tag">Fine-Liner</span>
+        </div>
+        <span class ="duration"><i class="far fa-clock"></i>&nbsp;&nbsp;2h</span>
+      </div>
+    </div>
+    <h4>
+      Kreative Zeichentechnik<br>
+      Solo-Projekt<br>
+      Winter 2017<br>
+      Tribal-Tattoo
+    </h4>
+    <br>
+    <div class="skills">
+      <strong>Fine-Liner</strong><br>
+      <em>Kreativ - Herausfordernd - Expressionistisch</em><br>
+      <!-- <strong>Git</strong> -->
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Eigene kreative Zeichentechnik mit Fine-Liner</strong><br>
+        <span>Spitze durfte nie das Papier berühren</span>
+          <ul>
+            <li>
+              Schwebender Tintenkanal durch Oberflächenspannung
+            </li>
+          </ul>
+      </li>
+    </ul>
+    <!-- Mit dieser, sich von Kugelschreiberzeichnungen stark unterscheidenden Art des Zeichnens experimentiert ich schon früher, im Alter von etwa 13 Jahren, was allerdings auch auf eine Art der Herausforderung meiner Selbstdisziplin zurückzuführen ist, da ich meine Werkzeuge hierbei stark einschränkte.  
+    Anstatt einen Pinsel oder Kaligrafiestift zu verwenden, benutzte ich konsequent eine Art eines Fine-Liners, dessen Spitze ich nie das Papier berühren lies, und somit über einen durch die Oberflächenspannung entstehenden winzigen Tintenkanal äußerst vorsichtig über dem Blatt schweben lassen musste, da direkter Kontakt sofort zu unansehnlichen Färbungen führte.  
+    Die Motive lehnten ausschließlich an Tribal-Tattoos an. -->
+  </div>
+</div>
 
 <hr/>  
 <hr/>
