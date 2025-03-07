@@ -13,8 +13,8 @@ namespace Portfolio {
     function setupFooterDocuments() {
 
 
-        let documentsList: HTMLUListElement | null = document.querySelector(".documents-list");
-        footer.appendChild(documentsList);
+        let documentsWrapper: HTMLDivElement | null = document.querySelector(".documents-wrapper");
+        footer.appendChild(documentsWrapper);
     }
 
     function handleInteraction(this: HTMLElement, ev: MouseEvent) {
