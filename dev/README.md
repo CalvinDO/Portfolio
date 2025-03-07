@@ -338,6 +338,10 @@ details[open] ~ .klicken {
   gap: 20px;
 }
 
+#motivation-end-container p{
+  margin: 12.5px 0px 12.5px;
+}
+
 .motivation-item {
   display: flex;
   align-items: center;
@@ -366,8 +370,7 @@ details[open] ~ .klicken {
 <div id="motivation-end-container">
     <div class="motivation-item" id="abschluss">
         <i class="fa-solid fa-graduation-cap fa-bounce"></i>
-        <p>Alter: 21<br>
-          Ich schloss das Studium mit meiner <a href="#neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen">
+        <p>Mit 21 Jahren schloss ich das Studium mit meiner <a href="#neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen">
           Bachelor-Thesis “Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen”</a> ab, bei dem in einem Editor Knochen-Gelenk-Konstruktionen erstellt werden, die durch Mutationen über Generationen hinweg Laufmuster von Grund auf lernen.
         </p>
     </div>
