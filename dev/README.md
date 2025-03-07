@@ -2833,6 +2833,10 @@ span.toggle-arrow-span {
 
 <style>
 
+.copyright, .copyright + p {
+  display: none !important;
+}
+
 .documents-list {
   padding: 0;
   text-align: center;

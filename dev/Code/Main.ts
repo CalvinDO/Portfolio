@@ -3,8 +3,8 @@ namespace Portfolio {
     let overlay: HTMLDivElement = document.querySelector('#overlay');
 
     setupHeaderQuote();
+    setupFooterDocuments();
 
-    //setWidth();
 
     try {
         removeForkme();
@@ -353,6 +353,14 @@ namespace Portfolio {
         quoteContainer.appendChild(quote);
 
         header.insertAdjacentElement('beforeend', quoteContainer);
+    }
+
+    function setupFooterDocuments() {
+
+        let footer: HTMLElement | null = document.querySelector("#footer_wrap footer");
+
+        let documentsList: HTMLUListElement | null = document.querySelector(".documents-list");
+        footer.appendChild(documentsList);
     }
 
     function setupNavBar() {

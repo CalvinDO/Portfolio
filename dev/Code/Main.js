@@ -2,7 +2,7 @@ var Portfolio;
 (function (Portfolio) {
     let overlay = document.querySelector('#overlay');
     setupHeaderQuote();
-    //setWidth();
+    setupFooterDocuments();
     try {
         removeForkme();
         setupNavBar();
@@ -240,6 +240,11 @@ var Portfolio;
         quoteContainer.classList.add("quote-container");
         quoteContainer.appendChild(quote);
         header.insertAdjacentElement('beforeend', quoteContainer);
+    }
+    function setupFooterDocuments() {
+        let footer = document.querySelector("#footer_wrap footer");
+        let documentsList = document.querySelector(".documents-list");
+        footer.appendChild(documentsList);
     }
     function setupNavBar() {
         const navbar = document.getElementById("navbar");
