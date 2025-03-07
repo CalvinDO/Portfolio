@@ -14,7 +14,9 @@ var Portfolio;
     function handleInteraction(ev) {
         footer = document.querySelector("#footer_wrap footer");
         if (footer) {
-            setupFooterDocuments();
+            if (!footer.contains(document.querySelector(".documents-wrapper"))) {
+                setupFooterDocuments();
+            }
         }
     }
     document.body.addEventListener('mousemove', handleInteraction);

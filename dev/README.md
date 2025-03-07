@@ -346,7 +346,7 @@ Optimalerweise kämpft der Spieler im Spiel gegen nichts und kommt im Spielverla
 Puzzle-Games, Aufbau-Strategiespiele sowie Cozy Games, Simulatoren oder Musik-, Sound- und Rhythm-Games kommen besonders in Frage.
 </p>
 <p id ="jobs">
-<strong>Programmieren</strong> stellt meine Haupttätigkeit dar. Auch bin ich musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Grundlegende 3D-Modelling- und Design-Kenntnisse sind vorhanden, jedoch nicht als Haupttätigkeit bevorzugt. In der Soundgestaltung und Soundtechnik des Spiels wirke ich gerne mit.
+<strong>Programmieren</strong> stellt meine Haupttätigkeit dar. Ich spiele viele Instrumente, digital wie akustisch. Grundlegende 3D-Modelling- und Design-Kenntnisse sind vorhanden, jedoch nicht als Haupttätigkeit bevorzugt. In der Soundgestaltung und Soundtechnik des Spiels wirke ich gerne mit.
 </p>
 <br>
 <p id ="warum">
