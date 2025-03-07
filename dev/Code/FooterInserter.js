@@ -9,6 +9,8 @@ var Portfolio;
     }
     function setupFooterDocuments() {
         let documentsWrapper = document.querySelector(".documents-wrapper");
+        let documentsHeading = document.querySelector("#dokumente");
+        footer.appendChild(documentsHeading);
         footer.appendChild(documentsWrapper);
     }
     function handleInteraction(ev) {
