@@ -696,9 +696,9 @@ video, img, .visual-presentation-container:not(#multi-display) {
   display: flex;
   align-items: center; /* Perfekte vertikale Ausrichtung */
   gap: 5px; /* Abstand zwischen Icon und Text */
-  font-size: 18px !important;
-  color: #4361ee;
-  text-shadow: -1px 0 #f8f9fa, 0 1px #f8f9fa, 1px 0 #f8f9fa, 0 -1px #f8f9fa;
+  font-size: 19px !important;
+  color: #4cc9f0;
+  /* text-shadow: -1px 0 #f8f9fa, 0 1px #f8f9fa, 1px 0 #f8f9fa, 0 -1px #f8f9fa; */
   margin-left: 1.618%;
 }
 
@@ -708,7 +708,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
 }
 
 .team-size-container i {
-  font-size: 18px; /* Gleiche Größe wie der Text */
+  font-size: 19px; /* Gleiche Größe wie der Text */
   line-height: 1; /* Verhindert Höhenabweichungen */
   display: flex; /* Sorgt für perfekte Zentrierung */
   align-items: center;
@@ -732,7 +732,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
 }
 
 .context-awards * {
-  font-size: 20px !important;
+  font-size: 19px !important;
   color: #3a0ca3;
   text-shadow: -1px 0 #f8f9fa, 0 1px #f8f9fa, 1px 0 #f8f9fa, 0 -1px #f8f9fa;
 }
