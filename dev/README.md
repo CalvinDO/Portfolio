@@ -2910,6 +2910,11 @@ span.toggle-arrow-span {
   color: #F8F9FA !important;
 }
 
+#footer_wrap {
+  position: relative;
+  z-index: -1;
+}
+
 </style>
 
 <h1 id = "dokumente">Dokumente</h1>
