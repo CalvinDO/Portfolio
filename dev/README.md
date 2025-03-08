@@ -1407,7 +1407,7 @@ span.toggle-arrow-span {
     <h2 id="discombobulated-space-station">Discombobulated Space Station</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
         <a href="https://calvindo.github.io/PRIMA/">
-            <video width="100%" controls loop>
+            <video width="100%" poster = "DiscombobulatedSpaceStationThumbnail.jpg" controls loop>
                 <source src="DiscombobulatedSpaceStation.mp4" alt="DiscombobulatedSpaceStation" type="video/mp4"/>
                 Ihr Browser unterstützt den Video-Tag nicht
             </video>
