@@ -341,6 +341,7 @@ details[open] ~ .klicken {
 @media (max-width: 500px){
   #motivation-end-container {
     padding: 0% 9%;
+    padding-left: 5.18%;
   }
 }
 
