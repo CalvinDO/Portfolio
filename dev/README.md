@@ -1043,7 +1043,7 @@ span.toggle-arrow-span {
     <h2 id="the-last-hope">The Last Hope</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
         <a href="https://simmer.io/@DerCalvino/thelasthope">
-            <video width="100%" controls loop>
+            <video width="100%" poster = "TheLastHopeThumbnail.png" controls loop>
                 <source src="TheLastHope.mp4" alt="TheLastHope" type="video/mp4"/>
                 Ihr Browser unterstützt den Video-Tag nicht
             </video>
