@@ -605,7 +605,6 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
   transform: translate(-50%, -50%);
   color: white;
   font-size: 2em;
-  opacity: 0.5;
   pointer-events: none;
   display: inline-block;
   vertical-align: middle;
@@ -613,8 +612,12 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
   white-space: nowrap;
 }
 
+:not(.hovered) .klicken-indicator {
+  opacity: 0;
+}
+
 .hovered .klicken-indicator {
-    opacity: 0.93;
+    opacity: 0.8618;
     font-size: 2em;
     font-weight: bold;
     text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6180339);
