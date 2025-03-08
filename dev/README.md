@@ -2183,7 +2183,7 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="wackelpudding-simulation">Wackelpudding-Simulation</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-        <video width="100%" controls loop>
+        <video width="100%" poster ="Jelly.png" controls loop>
             <source src="Jelly.mp4" alt="Jelly" type="video/mp4"/>
             Ihr Browser unterstützt den Video-Tag nicht.
         </video>
@@ -2231,7 +2231,7 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="korallenriff">Korallenriff</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-      <video width="100%" controls loop>
+      <video width="100%" poster ="CoralReef.png" controls loop>
           <source src="CoralReef.mp4" alt="CoralReef">
           Ihr Browser unterstützt das Videoformat nicht.
       </video>
@@ -2419,7 +2419,7 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="burning-monkey">Brennender Affenkopf</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-      <video width="100%" controls loop>
+      <video width="100%" poster ="Monkey.png" controls loop>
           <source src="Monkey.mp4" alt="Monkey">
           Ihr Browser unterstützt das Videoformat nicht.
       </video>
