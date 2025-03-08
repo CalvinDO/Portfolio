@@ -1995,8 +1995,8 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="uboot">Das verrückte U-Boot</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-      <video width="100%" controls loop>
-          <source src="submarine.mp4" alt="submarine" type="video/mp4">
+      <video width="100%" controls loop preload ="metadata">
+          <source src="submarine.mp4#t=0.01" alt="submarine" type="video/mp4">
           Ihr Browser unterstützt den Video-Tag nicht.
       </video>
       <div class = "primary-info-container">
