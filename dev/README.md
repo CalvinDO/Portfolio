@@ -1557,7 +1557,10 @@ span.toggle-arrow-span {
     <h2 id="dischoverhfu">DiscHoverHFU</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="https://calvindo.github.io/DiscHoverHFU/Code/DiscHoverHFU.html">
-        <img src="DiscHoverHFU.png" width="100%">
+        <video width="100%" poster = "DiscHoverHFUThumbnail.png" controls loop>
+            <source src="DiscHoverHFU.mp4" alt="DiscHoverHFU" type="video/mp4"/>
+            Ihr Browser unterstützt den Video-Tag nicht
+        </video>
       </a>
       <div class = "klicken-indicator">Klicken zum Spielen</div>
       <div class = "primary-info-container">
