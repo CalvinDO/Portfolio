@@ -1472,7 +1472,10 @@ span.toggle-arrow-span {
     <h2 id="eisladen">Eisladen</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="https://calvindo.github.io/GiS/Eisladen/">
-        <img src="Eisladen.png" width="100%">
+        <video width="100%" poster = "EisladenThumbnail.png" controls loop>
+            <source src="Eisladen.mp4" alt="Eisladen" type="video/mp4"/>
+            Ihr Browser unterstützt den Video-Tag nicht
+        </video>
       </a>
       <div class = "klicken-indicator">Klicken zum Spielen</div>
       <div class = "primary-info-container">
