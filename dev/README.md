@@ -1928,8 +1928,8 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="schild">Schild</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-        <video width="100%" controls loop>
-            <source src="SchildWater.mp4" alt="SchildWater">
+        <video width="100%" controls loop preload ="metadata">
+            <source src="SchildWater.mp4#t=0.01" alt="SchildWater">
             Ihr Browser unterstützt das Videoformat nicht.
         </video>
         <div class = "primary-info-container">
