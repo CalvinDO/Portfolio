@@ -376,24 +376,20 @@ details[open] ~ .klicken {
 <div id="motivation-end-container">
     <div class="motivation-item" id="abschluss">
         <i class="fa-solid fa-graduation-cap fa-bounce"></i>
-        <p>Mit 21 Jahren schloss ich das Studium mit meiner <a href="#neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen"> Bachelor-Thesis “Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen”</a> ab, bei dem in einem Editor Knochen-Gelenk-Konstruktionen erstellt werden, die durch Mutationen über Generationen hinweg Laufmuster von Grund auf lernen.
-        </p>
+        <p>Mit 21 Jahren schloss ich das Studium mit meiner <a href="#neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen">Bachelor-Thesis "Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen"</a> ab, bei der in einem Editor Knochen-Gelenk-Konstruktionen erstellt werden, die durch Mutationen über Generationen hinweg Laufmuster von Grund auf lernen.</p>
     </div>
     <div class="motivation-item" id="wunsch">
         <i class="fa-solid fa-flag-checkered fa-shake"></i>
-        <p>Gerne programmiere ich Spiele, die ohne Gewaltdarstellungen dem Spieler eine eher friedliche, meditative Erfahrung bieten. Wenn Mehrspielermodi vorhanden sind, sollten die Spieler konstruktiv und kooperativ zusammenarbeiten.<br>Optimalerweise kämpft der Spieler im Spiel gegen nichts und kommt im Spielverlauf zu intuitiven Einsichten über tiefgreifende Themen und Philosophien.<br>
-        Puzzle-Games, Aufbau-Strategiespiele sowie Cozy Games, Simulatoren oder Musik-, Sound- und Rhythm-Games kommen besonders in Frage.
-        </p>
+        <p>Gerne programmiere ich Spiele ohne Gewaltdarstellungen und biete dem Spieler eine eher friedliche und meditative Erfahrung. Bei Mehrspielermodi sollten die Spieler konstruktiv und kooperativ zusammenarbeiten.<br>Optimalerweise verzichtet das Spiel auf Gegner und vermittelt intuitive Einsichten über tiefgreifende Themen und Philosophien.<br>
+        Puzzle-Games, Aufbau-Strategiespiele sowie Cozy Games, Simulatoren oder Musik-, Sound- und Rhythm-Games kommen besonders infrage.</p>
     </div>
     <div class="motivation-item" id="jobs">
         <i class="fa-solid fa-screwdriver-wrench fa-spin"></i>
-        <p><strong>Programmieren</strong> stellt meine Haupttätigkeit dar. Auch bin ich musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Grundlegende 3D-Modelling- und Design-Kenntnisse sind vorhanden, jedoch nicht als Haupttätigkeit bevorzugt. In der Soundgestaltung und Soundtechnik des Spiels wirke ich gerne mit.
-        </p>
+        <p><strong>Programmieren</strong> stellt meine Haupttätigkeit dar. Daneben bin ich musikalisch begabt und spiele viele Instrumente – digital wie akustisch. Grundlegende 3D-Modelling- und Design-Kenntnisse sind vorhanden, jedoch nicht als Haupttätigkeit bevorzugt. In der Soundgestaltung und Soundtechnik des Spiels wirke ich gerne mit.</p>
     </div>
     <div class="motivation-item" id="warum">
         <i class="fa-solid fa-circle-check fa-beat"></i>
-        <p>Auf dieser Seite sammle ich einige meiner Arbeiten, um einen Beleg für meinen Enthusiasmus und meine Lernfähigkeit zu liefern und Interesse für ein Angebot als Spieleprogrammierer zu wecken.
-        </p>
+        <p>Auf dieser Seite sammle ich einige meiner Arbeiten, um einen Beleg für meinen Enthusiasmus und meine Lernfähigkeit zu liefern und Interesse für ein Angebot als Spieleprogrammierer zu wecken.</p>
     </div>
 </div>
 
