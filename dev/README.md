@@ -375,7 +375,7 @@ details[open] ~ .klicken {
         </p>
     </div>
     <div class="motivation-item" id="wunsch">
-        <i class="fa-solid fa-forward fa-fade"></i>
+        <i class="fa-solid fa-flag-checkered fa-shake"></i>
         <p>Gerne programmiere ich Spiele, die ohne Gewaltdarstellungen dem Spieler eine eher friedliche, meditative Erfahrung bieten. Wenn Mehrspielermodi vorhanden sind, sollten die Spieler konstruktiv und kooperativ zusammenarbeiten.<br>Optimalerweise kämpft der Spieler im Spiel gegen nichts und kommt im Spielverlauf zu intuitiven Einsichten über tiefgreifende Themen und Philosophien.<br>
         Puzzle-Games, Aufbau-Strategiespiele sowie Cozy Games, Simulatoren oder Musik-, Sound- und Rhythm-Games kommen besonders in Frage.
         </p>
@@ -386,7 +386,7 @@ details[open] ~ .klicken {
         </p>
     </div>
     <div class="motivation-item" id="warum">
-        <i class="fa-solid fa-circle-check fa-beat-fade"></i>
+        <i class="fa-solid fa-circle-check fa-beat"></i>
         <p>Auf dieser Seite sammle ich einige meiner Arbeiten, um einen Beleg für meinen Enthusiasmus und meine Lernfähigkeit zu liefern und Interesse für ein Angebot als Spieleprogrammierer zu wecken.
         </p>
     </div>
