@@ -896,7 +896,7 @@ span.toggle-arrow-span {
 <div class = "flex-container">
   <div class = "flex-item">
     <div class="toggle-content heading-toggle-content">
-      <h2 id ="bau-simulator">Bau-Simulator (Kommerziell)</h2>
+      <h2 id ="bau-simulator">Construction Simulator®</h2>
     </div>
     <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="https://store.steampowered.com/app/1273400/BauSimulator">
