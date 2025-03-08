@@ -29,6 +29,7 @@ blockquote {
   border-left: 0;
   color: #F8F9FA;
   position: relative;
+  font-family: "Poppins", sans-serif;
 }
 
 .quote-text{
