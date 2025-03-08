@@ -2947,7 +2947,7 @@ span.toggle-arrow-span {
 
 #footer_wrap {
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 </style>
