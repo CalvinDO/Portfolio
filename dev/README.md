@@ -1763,7 +1763,10 @@ span.toggle-arrow-span {
     <h2 id="cardioids">Cardioids</h2>
     <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="Code/Cardioids/start.html">
-        <img src="cardioids.PNG" width="100%">
+      <video width="100%" controls loop poster="cardioids.PNG">
+                <source src="Cardioids.mp4" alt="Cardioids" type="video/mp4"/>
+                Ihr Browser unterstützt den Video-Tag nicht
+        </video>
       </a>
       <div class = "klicken-indicator">Klicken zum Anwenden</div>
       <div class = "primary-info-container">
@@ -1845,7 +1848,10 @@ span.toggle-arrow-span {
     <h2 id="rubber-band">Rubber Band</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="Code/RubberBand/start.html">
-        <img src="Rubber.PNG" width="100%">
+      <video width="100%" controls loop poster="Rubber.PNG">
+                <source src="RubberBand.mp4" alt="RubberBand" type="video/mp4"/>
+                Ihr Browser unterstützt den Video-Tag nicht
+        </video>
       </a>
       <div class = "klicken-indicator">Klicken zum Spielen</div>
       <div class = "primary-info-container">
