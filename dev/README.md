@@ -900,7 +900,7 @@ span.toggle-arrow-span {
     </div>
     <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="https://store.steampowered.com/app/1273400/BauSimulator">
-      <video width="100%" controls loop>
+      <video width="100%" poster = "ConstructionSimulatorThumbnail.jpg" controls loop>
           <source src="ConstructionSimulator.mp4" alt="ConstructionSimulator" type="video/mp4"/>
           Ihr Browser unterstützt den Video-Tag nicht
       </video>
