@@ -1195,7 +1195,7 @@ span.toggle-arrow-span {
     <h2 id="morbus-animi">Morbus Animi</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
         <a href="https://simmer.io/@DerCalvino/morbus-animi-final">
-            <video width="100%" controls loop>
+            <video width="100%" poster = "MorbusAnimiThumbnail.jpg" controls loop>
                 <source src="Morbus-Animi.mp4" alt="Morbus-Animi" type="video/mp4"/>
                 Ihr Browser unterstützt den Video-Tag nicht
             </video>
