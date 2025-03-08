@@ -332,11 +332,21 @@ details[open] ~ .klicken {
 <style>
 
 #motivation-end-container {
-  padding: 0% 23.604%;
+  padding: 0% 28.604%;
   display: flex;
   flex-direction: column;
+  text-align: justify;
   gap: 20px;
 }
+
+
+@media (max-width: 900px){
+  #motivation-end-container {
+    padding: 0% 23.604%;
+    text-align: start;
+  }
+}
+
 
 @media (max-width: 500px){
   #motivation-end-container {
