@@ -338,6 +338,12 @@ details[open] ~ .klicken {
   gap: 20px;
 }
 
+@media (max-width: 500px){
+  #motivation-end-container {
+    padding: 0% 9%;
+  }
+}
+
 #motivation-end-container p{
   margin: 12.5px 0px 12.5px;
 }
@@ -357,6 +363,7 @@ details[open] ~ .klicken {
   justify-content: center;
   align-items: center;
 }
+
 
 #abschluss i {
   color: #4361ee;
