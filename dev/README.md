@@ -59,13 +59,13 @@ blockquote:first-child{
 
 #startpage-arrow {
   position: absolute;
-  bottom: -3.5vw;
+  bottom: -1vw;
   left: 50%;
-  transform: translateX(-50%) rotate(180deg);
-  /*font-size: calc(40px + 6.180339vw);*/
-  width: 45px;
-  color: #f8f9fa22;
+  transform: translateX(-50%);
+  /* font-size: calc(40px + 6.180339vw); */
   font-family: auto;
+  width: calc(5.6180339vw) !important;
+  opacity: 0.10;
 }
 
 
