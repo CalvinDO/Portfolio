@@ -497,7 +497,7 @@ h1#header-coding ~ h1 {
   gap: 0px; /* Abstand zwischen den Items */
   justify-content: center;
   margin: 0 auto;
-  margin-bottom: 40px !important;
+  margin-bottom: 53px !important;
 }
 
 .flex-item {
