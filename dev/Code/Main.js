@@ -246,6 +246,10 @@ var Portfolio;
         quoteContainer.classList.add("quote-container");
         quoteContainer.appendChild(quote);
         header.insertAdjacentElement('beforeend', quoteContainer);
+        let arrow = document.createElement("span");
+        arrow.innerHTML = "˄";
+        arrow.id = "startpage-arrow";
+        header.insertAdjacentElement('beforeend', arrow);
     }
     function setupFooterDocuments() {
         let footer = document.querySelector("#footer_wrap footer");

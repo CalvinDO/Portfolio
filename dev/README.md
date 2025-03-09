@@ -56,6 +56,18 @@ blockquote:first-child{
   margin-top: 1.618rem;   /* Abstand zwischen Zitattext und Footer */
 }
 
+
+#startpage-arrow {
+  position: absolute;
+  bottom: -3.5vw;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+  font-size: calc(40px + 6.180339vw);
+  color: #f8f9fa22;
+  font-family: auto;
+}
+
+
 #project_title, #project_tagline{
   display: none !important;
 }
@@ -123,6 +135,7 @@ h1{
 #navbar-placeholder {
     height: 1px;
 }
+
 
 </style>
 

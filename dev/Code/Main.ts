@@ -359,6 +359,11 @@ namespace Portfolio {
         quoteContainer.appendChild(quote);
 
         header.insertAdjacentElement('beforeend', quoteContainer);
+        let arrow = document.createElement("span");
+        arrow.innerHTML = "˄";
+        arrow.id = "startpage-arrow";
+
+        header.insertAdjacentElement('beforeend', arrow);
     }
 
     function setupFooterDocuments() {
