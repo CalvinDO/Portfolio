@@ -266,20 +266,20 @@ details[open] ~ .klicken {
         <summary>Alter: <strong>14-16</strong><br>
         <ul>
           <li>
-            Begeisterung für Vektorrechnung und fraktale Geometrie
+            Begeisterung für <strong>Vektorrechnung</strong> und <strong>fraktale Geometrie</strong>
           </li>
           <li>
-            Gründung der Informatik-AG am Gymnasium
+            <strong>Gründung</strong> der <strong>Informatik-AG</strong> am Gymnasium
           </li>
           <li>
-            Programmierung künstlicher Intellligenz zur Bildverarbeitung
+            Programmierung <strong>künstlicher Intellligenz</strong> zur <strong>Bildverarbeitung</strong>
           </li>
           <li>
-            Programmierung Übersetzer für Geheimsprache
+            Programmierung <strong>Übersetzer</strong> für Geheimsprache
           </li>
         </ul>
         </summary>
-        Ich erkannte durch die Programmierung die Relevanz der Mathematik in verschiedenen Bereichen und begann mit experimenteller Programmierung für verschiedene Fächer am technischen Gymnasium, wo auch meine erste formale Ausbildung in Informatik begann. Mit 15 Jahren entwickelte ich eine regelrechte Begeisterung für die Möglichkeiten der Vektorrechnung und fraktaler Geometrie. Zusammen mit einem Lehrer und einem Mitschüler, mit dem ich einen Übersetzer für eine ausgedachte Geheimsprache programmierte, gründete ich eine Informatik-AG. In dieser wagten wir uns an die voll umfassende Programmierung neuronaler Netzwerke zum Experimentieren mit künstlicher Intelligenz, besonders bezogen auf Echtzeit-Bildverarbeitung eines Live-Kamerabildes.
+        Ich erkannte durch die Programmierung die <strong>Relevanz der Mathematik</strong> in verschiedenen Bereichen und begann mit experimenteller Programmierung für verschiedene Fächer am <strong>technischen Gymnasium</strong>, wo auch meine erste formale Ausbildung in Informatik begann. Mit <strong>15 Jahren</strong> entwickelte ich eine regelrechte Begeisterung für die Möglichkeiten der <strong>Vektorrechnung</strong> und <strong>fraktalen Geometrie</strong>. Zusammen mit einem Lehrer und einem Mitschüler, mit dem ich einen <strong>Übersetzer</strong> für eine ausgedachte <strong>Geheimsprache</strong> programmierte, gründete ich eine <strong>Informatik-AG</strong>. In dieser wagten wir uns an die vollumfassende Programmierung <strong>neuronaler Netzwerke</strong>, um mit <strong>künstlicher Intelligenz</strong> zu experimentieren, besonders in der <strong>Echtzeit-Bildverarbeitung</strong> eines Live-Kamerabildes.
     </details>
     <strong class = "klicken">mehr</strong>
   </div>
