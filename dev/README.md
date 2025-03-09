@@ -2982,6 +2982,7 @@ span.toggle-arrow-span {
     <li><a href="CCF18022020_0001.jpg">Abiturzeugnis</a></li>
     <li><a href="CCF18022020_0003.jpg">Auszeichnung des Gymnasiums für kulturelles Engagement</a></li>
     <li><a href="CCF18022020_0002.jpg">Hackathon-Urkunde</a></li>
+    <li><a href="https://jirkadelloro.github.io/Neutrum.pdf">Das geschlechtergerechte Neutrum nach Prof. Dell'Oro-Friedl</a></li>
   </ul>
 </div>
 
