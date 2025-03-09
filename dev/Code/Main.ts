@@ -344,7 +344,7 @@ namespace Portfolio {
         let header: HTMLElement | null = document.querySelector("header");
 
         let quote: HTMLQuoteElement = document.createElement("blockquote");
-        quote.innerHTML = '<span class="quote-text">[...] <strong>Calvin Dell’Oro</strong> zählt unter den etlichen hundert Studierenden,<br>die ich seit 2008 [...] unterrichtet habe,<br>zu den drei <strong>engagiertesten</strong> und <strong>erfolgreichsten</strong>.</span><footer><cite class="author">— <a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf">Prof. Dr. rer. nat. Thomas Schneider</a></cite></footer>'
+        quote.innerHTML = '<span class="quote-text">[...] <strong>Calvin Dell’Oro</strong> zählt unter den etlichen hundert Studierenden,<br>die ich seit 2008 [...] unterrichtet habe,<br>zu den drei <strong>engagiertesten</strong> und <strong>erfolgreichsten</strong>...</span><footer><cite class="author">— <a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf">Prof. Dr. rer. nat. Thomas Schneider</a></cite></footer>'
         /*, <cite class="quote-time">2025</cite>*/
 
         let quoteContainer: HTMLDivElement = document.createElement("div");

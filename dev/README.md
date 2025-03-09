@@ -421,8 +421,7 @@ details[open] ~ .klicken {
     </div>
     <div class="motivation-item" id="jobs">
         <i class="fa-solid fa-screwdriver-wrench fa-spin"></i>
-        <p><strong>Programmieren</strong> stellt meine <strong>Haupttätigkeit</strong> dar. Daneben bin ich <strong>musikalisch begabt</strong> und spiele viele Instrumente – digital wie akustisch.  
-        Grundlegende <strong>3D-Modelling-</strong> und <strong>Design-Kenntnisse</strong> sind vorhanden, jedoch nicht als Haupttätigkeit bevorzugt. In der <strong>Soundgestaltung</strong> und <strong>Soundtechnik</strong> des Spiels wirke ich gerne mit.</p>
+        <p><strong>Programmieren</strong> stellt meine <strong>Haupttätigkeit</strong> dar. Grundlegende <strong>3D-Modelling-</strong> und <strong>Design-Kenntnisse</strong> sind vorhanden, jedoch nicht als Haupttätigkeit bevorzugt. Daneben bin ich <strong>musikalisch begabt</strong> und spiele viele Instrumente – digital wie akustisch. Daher wirke ich gerne in der <strong>Soundgestaltung</strong> und <strong>Soundtechnik</strong> des Spiels mit.</p>
     </div>
     <div class="motivation-item" id="warum">
         <i class="fa-solid fa-circle-check fa-beat"></i>
