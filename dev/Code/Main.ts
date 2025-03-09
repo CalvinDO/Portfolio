@@ -359,8 +359,8 @@ namespace Portfolio {
         quoteContainer.appendChild(quote);
 
         header.insertAdjacentElement('beforeend', quoteContainer);
-        let arrow = document.createElement("span");
-        arrow.innerHTML = "˄";
+        let arrow = document.createElement("img");
+        arrow.src = "startpageArrow.png";
         arrow.id = "startpage-arrow";
 
         header.insertAdjacentElement('beforeend', arrow);
