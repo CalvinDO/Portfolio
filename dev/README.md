@@ -1671,7 +1671,7 @@ span.toggle-arrow-span {
       Erweiterung von Fraktal<br>
       Solo-Projekt<br>
       Sommer 2019<br>
-      Animierte <a href ="fraktal">Fraktale</a>
+      Animierte <a href ="#fraktal">Fraktale</a>
     </h4>
     <br>
     <div class="skills">
@@ -2514,7 +2514,7 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="cardioids-tutorial">Cardioids - Tutorial</h2>
     <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-      <iframe width="100%" height="300em" src="https://www.youtube.com/embed/A68-juE2ves"
+      <iframe width="100%" height="400lvh" src="https://www.youtube.com/embed/A68-juE2ves"
       frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"                allowfullscreen>
       </iframe>
       <div class = "primary-info-container">
