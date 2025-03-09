@@ -212,7 +212,7 @@ details[open] ~ .klicken {
 <div class = "details-container">
   <div class = "details-flex-item">
     <details>
-      <summary>Alter: 3-9<br>
+      <summary>Alter: <strong>3-9</strong><br>
       <ul>
         <li>
           Erste PC-Games gespielt
@@ -232,7 +232,7 @@ details[open] ~ .klicken {
 
   <div class = "details-flex-item">
     <details>
-        <summary>Alter: 9-13<br>
+        <summary>Alter: <strong>9-13</strong><br>
         <ul>
           <li>
             3D-Modellierung, Zeichen & Stop-Motion-Trickfilme
@@ -252,7 +252,7 @@ details[open] ~ .klicken {
 
   <div class = "details-flex-item">
     <details>
-        <summary>Alter: 13-14<br>
+        <summary>Alter: <strong>13-14</strong><br>
         <ul>
           <li>
             Pong mit Processing
@@ -269,7 +269,7 @@ details[open] ~ .klicken {
 
   <div class = "details-flex-item">
     <details>
-        <summary>Alter: 14-16<br>
+        <summary>Alter: <strong>14-16</strong><br>
         <ul>
           <li>
             Begeisterung für Vektorrechnung und fraktale Geometrie
@@ -292,7 +292,7 @@ details[open] ~ .klicken {
 
   <div class = "details-flex-item">
     <details>
-        <summary>Alter: 17-18<br>
+        <summary>Alter: <strong>17-18</strong><br>
         <ul>
           <li>
             Erstsemester-Selbststudium - Game-Of-Life & Tic-Tac-Toe
@@ -313,7 +313,7 @@ details[open] ~ .klicken {
 
   <div class = "details-flex-item">
     <details>
-        <summary>Alter: 18-20<br>
+        <summary>Alter: <strong>18-20</strong><br>
         <ul>
           <li>
             Angestellt als Tutor für Programmierung
@@ -401,7 +401,7 @@ details[open] ~ .klicken {
 <div id="motivation-end-container">
     <div class="motivation-item" id="abschluss">
         <i class="fa-solid fa-graduation-cap fa-bounce"></i>
-        <p>Mit 21 Jahren schloss ich das Studium mit meiner <a href="#neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen">Bachelor-Thesis "Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen"</a> ab, bei der in einem Editor Knochen-Gelenk-Konstruktionen erstellt werden, die durch Mutationen über Generationen hinweg Laufmuster von Grund auf lernen.</p>
+        <p>Mit <strong>21</strong> Jahren schloss ich das Studium mit meiner <a href="#neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen">Bachelor-Thesis "Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen"</a> ab, bei der in einem Editor Knochen-Gelenk-Konstruktionen erstellt werden, die durch Mutationen über Generationen hinweg Laufmuster von Grund auf lernen.</p>
     </div>
     <div class="motivation-item" id="wunsch">
         <i class="fa-solid fa-flag-checkered fa-shake"></i>
