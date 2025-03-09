@@ -17,6 +17,12 @@ var Portfolio;
     }
     */
     function init() {
+        try {
+            setupNavBar();
+        }
+        catch (error) {
+            console.warn("try init setupnavbar, error:", error);
+        }
         overlay = document.querySelector('#overlay');
         document.addEventListener('click', onClickDoc, { capture: true });
         document.addEventListener('mouseover', onHoverDoc, { capture: true });
@@ -255,6 +261,7 @@ var Portfolio;
     function setupNavBar() {
         const navbar = document.querySelector(".navbar");
         const placeholder = document.querySelector("#navbar-placeholder");
+        console.log(navbar, placeholder);
         const observer = new IntersectionObserver(([entry]) => {
             if (!entry.isIntersecting) {
                 navbar.classList.add("sticky");
@@ -266,16 +273,14 @@ var Portfolio;
         observer.observe(placeholder);
     }
     Portfolio.setupNavBar = setupNavBar;
-    /*
-        document.addEventListener("DOMContentLoaded", () => {
-            try {
-                setupNavBar();
-            }
-            catch (error) {
-                console.warn("dom content loaded try setupnavbar, error: ", error);
-            }
-        });
-    */
+    document.addEventListener("DOMContentLoaded", () => {
+        try {
+            setupNavBar();
+        }
+        catch (error) {
+            console.warn("dom content loaded try setupnavbar, error: ", error);
+        }
+    });
     window.addEventListener('load', init);
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=Main.js.map
