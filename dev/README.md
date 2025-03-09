@@ -576,8 +576,12 @@ h1#header-coding ~ h1 {
 .expanded .toggle-content.second-toggle-content {
   height: 128px !important;
   top: 100%;
+  background-color: hsl(210deg 13.95% 83.14%) !important;
 }
 
+.expanded .second-toggle-content h4 {
+    color: #343a40 !important;
+}
 
 .third-toggle-content {
   z-index: 13;
