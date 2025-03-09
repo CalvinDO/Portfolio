@@ -3058,4 +3058,4 @@ span.toggle-arrow-span {
   </ul>
 </div>
 
-<script src = "Code/FooterInserter.js">
+<script src = "Code/FooterInserter.js"></script>
