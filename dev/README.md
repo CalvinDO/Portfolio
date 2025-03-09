@@ -337,7 +337,7 @@ details[open] ~ .klicken {
         </summary>
         Ab Oktober 2019 studierte ich sieben Semester lang <strong>Medieninformatik</strong> an der Hochschule Furtwangen. Nach dem ersten Semester erhielt ich von meinen Professoren für Mathematik und Informatik Anfragen, als <strong>Tutor für Programmierung</strong> tätig zu werden.<br>
         Ich beendete das zweite Semester mit einer <strong>360°-Panorama-Verkörperung</strong> der Schnitzeljagd an der Hochschule Furtwangen sowie einer <strong>Eisladen-Website</strong> mit Server, realisiert als Browsergame.</p>
-        <p>Mein Praktikum im dritten Semester absolvierte ich bei <strong>weltenbauer. Software Entwicklung GmbH</strong>, wo ich im Developer-Team am <strong>Bau-Simulator</strong> mitarbeitete. Das Unternehmen behielt mich anschließend zwei weitere Jahre als Werkstudent.<br>
+        Mein Praktikum im dritten Semester absolvierte ich bei <strong>weltenbauer. Software Entwicklung GmbH</strong>, wo ich im Developer-Team am <strong>Bau-Simulator</strong> mitarbeitete. Das Unternehmen behielt mich anschließend zwei weitere Jahre als Werkstudent.<br>
         Im vierten und fünften Semester, dem <strong>Projektstudium</strong>, entwickelte ich mit einem sechsköpfigen Team das psychologische Horrorspiel <strong>Morbus Animi</strong>, das den ersten Platz der <strong>IndieNight-Nominierung</strong> gewann. Im sechsten Semester folgten weitere Spiele wie <strong>The Last Hope</strong>, ein Rogue-like inspiriert von H.P. Lovecraft, sowie <strong>BeerPhong</strong>, eine browserbasierte AR-Version des bekannten Partyspiels.
     </details>
     <strong class = "klicken">mehr</strong>
