@@ -62,7 +62,7 @@ blockquote:first-child{
   bottom: -3.5vw;
   left: 50%;
   transform: translateX(-50%) rotate(180deg);
-  font-size: calc(40px + 6.180339vw);
+  /*font-size: calc(40px + 6.180339vw);*/
   width: 45px;
   color: #f8f9fa22;
   font-family: auto;
