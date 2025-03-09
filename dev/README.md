@@ -713,7 +713,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 }
 
 
-video, img, .visual-presentation-container:not(#multi-display) {
+.visual-presentation-container video, .visual-presentation-container img, .visual-presentation-container:not(#multi-display) {
 
   border: 0;
   display: block !important;        /* Macht den <a>-Tag zu einem Blockelement, damit es eine feste Größe haben kann */
