@@ -65,7 +65,7 @@ blockquote:first-child{
   /* font-size: calc(40px + 6.180339vw); */
   font-family: auto;
   width: calc(5.6180339vw) !important;
-  opacity: 0.10;
+  opacity: 0.0618;
 
   border: none;
   box-shadow: none;
