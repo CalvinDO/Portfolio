@@ -108,6 +108,8 @@ h1{
 .section-header h1 {
     color: #212529 !important;
     font-size: xxx-large;
+    font-family: "Poppins", sans-serif;
+    margin-top: 30px;
 }
 
 .navbar {
@@ -560,7 +562,7 @@ h1#header-coding ~ h1 {
 .toggle-content.second-toggle-content h4 {
   font-size: 17px;
   color: #F8F9FA;
-  background-color: hsl(210 9% 34% / 1) !important;
+  /*background-color: hsl(210 9% 34% / 1) !important;*/
 }
 
 .second-toggle-content {
@@ -3004,7 +3006,6 @@ span.toggle-arrow-span {
     Die Motive lehnten ausschließlich an Tribal-Tattoos an. -->
   </div>
 </div>
-
 
 <style>
 
