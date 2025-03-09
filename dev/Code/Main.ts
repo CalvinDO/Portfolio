@@ -12,6 +12,11 @@ namespace Portfolio {
         console.warn(error);
     }
 
+    try {
+        init();
+    } catch (error) {
+        console.warn("Init called too fast: " + error);
+    }
 
     function init() {
 
@@ -381,7 +386,7 @@ namespace Portfolio {
     }
 
 
-    window.addEventListener('load', init);
+    //window.addEventListener('load', init);
 }
 
 
