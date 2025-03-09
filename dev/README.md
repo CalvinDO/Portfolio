@@ -158,7 +158,7 @@ details:hover, details:open {
 .details-container details {
 
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 3px solid #ccc;
   border-radius: 5px;
   background-color: hsl(210 16% 96% / 1);
   height: 100%;
