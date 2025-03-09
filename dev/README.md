@@ -88,6 +88,24 @@ h1{
   text-align: center !important;
 }
 
+.section-header {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 200px;
+    color: #212529;
+    line-height: 61px;
+}
+
+.section-header i {
+    font-size: 161px;
+}
+
+.section-header h1 {
+    color: #212529 !important;
+    font-size: xxx-large;
+}
+
 .navbar {
   position: relative;
   width: 100%;
@@ -925,7 +943,10 @@ span.toggle-arrow-span {
 
 <div id="overlay"></div>
 
-<h1 id = "header-coding">Coding</h1>
+<div class="section-header">
+<i class="fas fa-laptop-code"></i>
+<h1 id="header-coding">Coding</h1>
+</div>
 
 <div class = "flex-container">
   <div class = "flex-item">
