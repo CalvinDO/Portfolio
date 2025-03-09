@@ -385,6 +385,7 @@ namespace Portfolio {
 
         const observer = new IntersectionObserver(
             ([entry]) => {
+                console.log(entry.intersectionRect, entry.intersectionRatio);
                 if (!entry.isIntersecting) {
                     navbar.classList.add("sticky");
                 } else {

@@ -263,6 +263,7 @@ var Portfolio;
         const placeholder = document.querySelector("#navbar-placeholder");
         console.log(navbar, placeholder);
         const observer = new IntersectionObserver(([entry]) => {
+            console.log(entry.intersectionRect, entry.intersectionRatio);
             if (!entry.isIntersecting) {
                 navbar.classList.add("sticky");
             }

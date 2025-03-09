@@ -93,12 +93,12 @@ h1{
 }
 
 .section-header {
-    margin-top: 70px;
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 200px;
-    color: #212529;
-    line-height: 61px;
+  margin-top: 145px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 200px;
+  color: #212529;
+  line-height: 61px;
 }
 
 .section-header i {
@@ -113,9 +113,9 @@ h1{
 }
 
 .navbar {
-  position: relative;
+  position: absolute;
   width: 100%;
-  padding: 40px 0;
+  padding-top: 40px;
   padding-bottom: 0;
   margin-bottom: 0px;
   transition: all 0.3s ease;
@@ -162,7 +162,13 @@ h1{
 }
 
 #navbar-placeholder {
-    height: 1px;
+  overflow: hidden;
+  position: inherit;
+  height: 0px;
+  /* one pixel more top to prevent bumping */
+  top: 41px;
+  margin: 0;
+  padding: 0;
 }
 
 
