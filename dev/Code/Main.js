@@ -269,6 +269,7 @@ var Portfolio;
         }, { threshold: 0 });
         observer.observe(placeholder);
     }
+    Portfolio.setupNavBar = setupNavBar;
     window.addEventListener('load', init);
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=Main.js.map

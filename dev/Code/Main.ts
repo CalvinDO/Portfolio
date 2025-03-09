@@ -374,7 +374,7 @@ namespace Portfolio {
         footer.appendChild(documentsList);
     }
 
-    function setupNavBar() {
+    export function setupNavBar() {
         const navbar = document.getElementById("navbar");
         const placeholder = <HTMLDivElement>document.getElementById("navbar-placeholder");
 
