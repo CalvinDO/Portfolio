@@ -234,19 +234,13 @@ details[open] ~ .klicken {
     <details>
         <summary>Alter: <strong>9-13</strong><br>
         <ul>
-          <li>
-            3D-Modellierung, Zeichen & Stop-Motion-Trickfilme
-          </li>
-          <li>
-            Text-Games mit Batch
-          </li>
-          <li>
-            Grafikbearbeitung
-          </li>
+          <li><strong>3D-Modellierung</strong>, Zeichnen & Stop-Motion-<strong>Trickfilme</strong></li>
+          <li><strong>Text-Games</strong> mit Batch</li>
+          <li><strong>Grafikbearbeitung</strong></li>
         </ul>
         </summary>
-        Im Alter von 9 Jahren begann mein Interesse am 3D–Modelling, was sich durch Architektur-Projekte in Google SketchUp und diverses Modeling in Sculpt3D wiederspiegelte. Mit 10 Jahren folgten kleinere Text-Games, die ich mit Batch – meiner ersten Programmiersprache - und dem Windows Editor umsetzte. Mit einem Leuchtturm von Fischer-Technik machte ich zu dieser Zeit auch erste Erfahrungen mit Ablaufsteuerungen. Am Nintendo-DS erstellte ich Zeichentrickanimationen über das Touchpad und kleine Stop-Motion-Trickfilme. Mit 11 Jahren begann ich mit der grafischen Bildbearbeitung mit Paint, mit 13 Jahren intensivierte ich dieses Hobby mit GIMP.
-    </details>
+        Im Alter von <strong>9 Jahren</strong> begann mein Interesse am <strong>3D-Modelling</strong>, was sich durch Architektur-Projekte in Google SketchUp und diverses Modeling in Sculpt3D widerspiegelte. Mit <strong>10 Jahren</strong> folgten kleinere <strong>Text-Games</strong>, die ich mit Batch – meiner ersten Programmiersprache – und dem Windows Editor umsetzte. Mit einem Leuchtturm von Fischer-Technik machte ich zu dieser Zeit erste Erfahrungen mit <strong>Ablaufsteuerungen</strong>. Am Nintendo DS erstellte ich <strong>Zeichentrickanimationen</strong> über das Touchpad und kleine <strong>Stop-Motion-Trickfilme</strong>. Mit <strong>11 Jahren</strong> begann ich mit der <strong>grafischen Bildbearbeitung</strong> mit Paint, mit <strong>13 Jahren</strong> intensivierte ich dieses Hobby mit GIMP.
+        </details>
     <strong class = "klicken">mehr</strong>
   </div>
 
