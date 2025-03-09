@@ -66,6 +66,10 @@ blockquote:first-child{
   font-family: auto;
   width: calc(5.6180339vw) !important;
   opacity: 0.10;
+
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }
 
 
