@@ -386,6 +386,11 @@ details[open] ~ .klicken {
   flex-direction: column;
   text-align: justify;
   gap: 20px;
+
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 
@@ -393,6 +398,9 @@ details[open] ~ .klicken {
   #motivation-end-container {
     padding: 0% 23.604%;
     text-align: start;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 
@@ -401,6 +409,9 @@ details[open] ~ .klicken {
   #motivation-end-container {
     padding: 0% 9%;
     padding-left: 5.18%;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 
