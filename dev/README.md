@@ -40,9 +40,10 @@ blockquote * {
   font-size: calc(10px + 1.6180339vw);
 }
 
-.quote-container blockquote footer cite{
+.quote-container blockquote footer cite, .quote-container a {
   font-size: calc(6.18px + 1vw) !important;
 }
+
 
 blockquote:first-child{
   user-select: none;
