@@ -337,9 +337,9 @@ details[open] ~ .klicken {
         </ul>
         </summary>
         Ab Oktober 2019 studierte ich sieben Semester lang <strong>Medieninformatik</strong> an der Hochschule Furtwangen. Nach dem ersten Semester erhielt ich von meinen Professoris für Mathematik und Informatik Anfragen, als <strong>Tutori für Programmierung</strong> tätig zu werden.<br>
-        Ich beendete das zweite Semester mit einer <strong>360°-Panorama-Verkörperung</strong> der Schnitzeljagd an der Hochschule Furtwangen sowie einer <strong>Eisladen-Website</strong> mit Server, realisiert als Browsergame.</p>
-        Mein Praktikum im dritten Semester absolvierte ich bei <strong>weltenbauer. Software Entwicklung GmbH</strong>, wo ich im Developer-Team am <strong>Bau-Simulator</strong> mitarbeitete. Das Unternehmen behielt mich anschließend zwei weitere Jahre als Werkstudenti.<br>
-        Im vierten und fünften Semester, dem <strong>Projektstudium</strong>, entwickelte ich mit einem sechsköpfigen Team das psychologische <strong>Horrorspiel Morbus Animi</strong>, das den ersten Platz der <strong>IndieNight-Nominierung</strong> gewann. Im sechsten Semester folgten weitere Spiele wie <strong>The Last Hope</strong>, ein <strong>Rogue-like</strong> inspiriert von H.P. Lovecraft, sowie <strong>BeerPhong</strong>, eine browserbasierte <strong>AR</strong>-Version des bekannten Partyspiels.
+        Ich beendete das zweite Semester mit einer <a href ="dischoverhfu"><strong>360°-Panorama-Verkörperung</strong></a> der Schnitzeljagd an der Hochschule Furtwangen sowie einer <a href = "#eisladen"><strong>Eisladen-Website</strong></a> mit Server, realisiert als Browsergame.</p>
+        Mein Praktikum im dritten Semester absolvierte ich bei <a href="https://www.weltenbauer-se.com/de"><strong>weltenbauer. Software Entwicklung GmbH</strong></a>, wo ich im Developer-Team am <strong>Bau-Simulator</strong> mitarbeitete. Das Unternehmen behielt mich anschließend zwei weitere Jahre als Werkstudenti.<br>
+        Im vierten und fünften Semester, dem <strong>Projektstudium</strong>, entwickelte ich mit einem sechsköpfigen Team das psychologische <a href ="morbus-animi"><strong>Horrorspiel Morbus Animi</strong></a>, das den ersten Platz der <strong>IndieNight-Nominierung</strong> gewann. Im sechsten Semester folgten weitere Spiele wie <a href = "the-last-hope"><strong>The Last Hope</strong></a>, ein <strong>Rogue-like</strong> inspiriert von H.P. Lovecraft, oder <a href = "realtime-beerphong"><strong>BeerPhong</strong></a>, eine browserbasierte <strong>AR</strong>-Version des bekannten Partyspiels.
     </details>
     <strong class = "klicken">mehr</strong>
   </div>
@@ -947,7 +947,7 @@ span.toggle-arrow-span {
     <div class="toggle-content second-toggle-content">
       <h4>
       <a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a><br>
-      25-köpfiges Team + Outsourcer<br>
+      25-köpfiges Team + Outsourceris<br>
       Herbst 2020 - Frühling 2023<br>
       Publisher: <a href = "https://www.astragon.de/">Astragon</a>
       </h4>
@@ -1106,7 +1106,7 @@ span.toggle-arrow-span {
           </ul>
       </li>
       <li><strong>KI-Controller</strong><br>
-          <span>Logik von KI-Gegnern (Unity-NavMesh)</span>
+          <span>Logik von KI-Gegneris (Unity-NavMesh)</span>
           <ul>
               <li>Bewegungssteuerung, intelligentes Angreifen</li>
           </ul>
@@ -1114,7 +1114,7 @@ span.toggle-arrow-span {
       <li><strong>Sound & Animation</strong><br>
           <span>Integration von Soundeffekten und Animationen</span></li>
       <li><strong>User Interface</strong><br> 
-          <span>Design und Implementierung der Benutzeroberfläche</span><br>
+          <span>Design und Implementierung der Bedienoberfläche</span><br>
           <ul>
               <li>Kombination von Fähigkeitskarten</li>
           </ul>
@@ -1176,7 +1176,7 @@ span.toggle-arrow-span {
       <br>
       <div class = "skills">
         <strong>WebAR, JavaScript, GLSL, Three.js</strong><br>
-        <em>Innovativ – Kollaborativ – Experimentell</em><br>
+        <em>Innovativ – Kollaborativ – Kreativ</em><br>
         <strong>Dokumentation, UI/UX, Sprint-Meetings, Git</strong>
       </div>
       <br>
@@ -1541,7 +1541,7 @@ span.toggle-arrow-span {
         </ul>
       </li>
       <li><strong>Backend</strong><br>
-        <span>Verkäufer kann in seinem Bereich Bestellungen bearbeiten</span>
+        <span>Verkäuferi kann in eigenem Bereich Bestellungen bearbeiten</span>
         <ul>
           <li>
            MongoDB-Server mit Atlas (Wartungsarbeiten eingestellt)
@@ -1615,7 +1615,7 @@ span.toggle-arrow-span {
         <span>Erstie-Rallye der Hochschule als 360-Point-and-Click Adventure</span>
         <ul>
           <li>
-            Leiten des Nutzers durch die Anwendung
+            Leiten der Nutzeris durch die Anwendung
           </li>
         </ul>
       </li>
@@ -1631,7 +1631,7 @@ span.toggle-arrow-span {
         <span>Verwendung von JSON für 104 Collectibles in 27 Räumen</span>
         <ul>
           <li>
-            Name, Position, Interaktionsgeräusche
+            Name, Position, Interaktionsgeräusch
           </li>
         </ul>
       </li>
@@ -1671,7 +1671,7 @@ span.toggle-arrow-span {
       Erweiterung von Fraktal<br>
       Solo-Projekt<br>
       Sommer 2019<br>
-      Animierte Fraktale
+      Animierte <a href ="fraktal">Fraktale</a>
     </h4>
     <br>
     <div class="skills">
@@ -2171,10 +2171,10 @@ span.toggle-arrow-span {
     <br>
     <ul class="task-list">
       <li><strong>Erlernen neuer Modelliertechniken</strong><br>
-        <span>Ausstanzung aus einem Würfel mit Boolean-Modifier</span>
+        <span>Ausstanzen aus einem Würfel mit Boolean-Modifier</span>
         <ul>
           <li>
-            Kombination von Inset-Techniken für optimierte Geometrie
+            Kombinieren von Inset-Techniken für optimierte Geometrie
           </li>
         </ul>
       </li>
@@ -2356,7 +2356,7 @@ span.toggle-arrow-span {
         </ul>
       </li>
       <li><strong>Integration ins Spiel</strong><br>
-        <span>Einbinden des Modells in das Spiel eines Kollegen</span>
+        <span>Einbinden des Modells in das Spiel eines Kollegis</span>
         <ul>
           <li>
             Optimierung für Performance und In-Game-Nutzung
@@ -2772,7 +2772,7 @@ span.toggle-arrow-span {
         <span>Mixing und Mastering</span>
           <ul>
             <li>
-                Beratung von als DJ erfahrenen Schwager
+                Beratung von erfahrenem DJ
             </li>
             <li>
                 Kompressoren, Normpegel, Audioqualität 
@@ -2811,7 +2811,7 @@ span.toggle-arrow-span {
       Ablenkung bei Klausurvorbereitung<br>
       Solo-Projekt<br>
       Winter 2017<br>
-      Karikatur eines Prominenten
+      Karikatur eines Prominentis
     </h4>
     <br>
     <div class="skills">
@@ -2825,7 +2825,7 @@ span.toggle-arrow-span {
         <span>Herausforderung wegen Abneigung gegen Zeichnung von Lebewesen</span>
           <ul>
             <li>
-              Freies Abzeichnen aus Fotografie des Präsidenten
+              Freies Abzeichnen aus Fotografie des Präsidentis
             </li>
           </ul>
       </li>
@@ -2865,7 +2865,7 @@ span.toggle-arrow-span {
     <br>
     <ul class="task-list">
       <li><strong>Zweite Zeichnung nach Entdeckung des Talents</strong><br>
-        <span>Klassenkamerade wollte nicht fotografiert werden</span>
+        <span>Klassenkameradi wollte nicht fotografiert werden</span>
           <ul>
             <li>
               Als Provokation zeichnete ich ihn
