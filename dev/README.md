@@ -113,7 +113,7 @@ h1{
 .navbar {
   position: relative;
   width: 100%;
-  padding: 10px 0;
+  padding: 16.18px 0;
   transition: all 0.3s ease;
 }
 
@@ -178,7 +178,9 @@ h1{
 <hr/>  
 <hr/>
 
-# Motivation
+<div class="section-header">
+<h1 id="motivation">Motivation</h1>
+</div>
 
 <style>
 
@@ -495,6 +497,7 @@ h1#header-coding ~ h1 {
   gap: 0px; /* Abstand zwischen den Items */
   justify-content: center;
   margin: 0 auto;
+  margin-bottom: 40px !important;
 }
 
 .flex-item {
@@ -3036,7 +3039,9 @@ span.toggle-arrow-span {
 
 </style>
 
+<div class="section-header">
 <h1 id = "dokumente">Dokumente</h1>
+</div>
 <div class ="documents-wrapper">
   <ul class = "documents-list">
     <li><a href="Lebenslauf.md">Daten und Lebenslauf</a></li>
