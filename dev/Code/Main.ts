@@ -392,6 +392,14 @@ namespace Portfolio {
         observer.observe(placeholder);
     }
 
+    document.addEventListener("DOMContentLoaded", () => {
+        try {
+            setupNavBar();
+        }
+        catch (error) {
+            console.warn("dom content loaded try setupnavbar, error: ", error);
+        }
+    });
 
     window.addEventListener('load', init);
 }

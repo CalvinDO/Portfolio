@@ -270,6 +270,14 @@ var Portfolio;
         observer.observe(placeholder);
     }
     Portfolio.setupNavBar = setupNavBar;
+    document.addEventListener("DOMContentLoaded", () => {
+        try {
+            setupNavBar();
+        }
+        catch (error) {
+            console.warn("dom content loaded try setupnavbar, error: ", error);
+        }
+    });
     window.addEventListener('load', init);
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=Main.js.map
