@@ -215,17 +215,17 @@ details[open] ~ .klicken {
       <summary>Alter: <strong>3-9</strong><br>
       <ul>
         <li>
-          Erste PC-Games gespielt
+          Erste <strong>PC-Games</strong> gespielt
         </li>
         <li>
-          Level-Design & Game Design auf Papier
+          Level- & Game-<strong>Design</strong> auf <strong>Papier</strong>
         </li>
         <li>
-          Minecraft-Modifikationen & -Redstone-Schaltungen
+          Minecraft-<strong>Modifikationen</strong> & -Redstone-<strong>Schaltungen</strong>
         </li>
       </ul>
       </summary>
-      Seit mein Vater, ein Professor für Computerspiele, mich bereits in sehr frühem Alter von 3 Jahren vorsichtig an dieses Medium herangeführt hat, interessierte ich mich nicht nur für das Spielen, sondern auch ähnlich stark für die Entwicklung von Games. Ich zeichnete zusätzliche Level für Super Mario oder entwarf neue Spiele, das könnte man als meine ersten Schritte im Gamedesign bezeichnen. Später verbrachte ich viel Zeit mit der Kombination der elementaren Redstone-Elemente von Minecraft um logische Schaltungen, Rechensysteme, Binärzähler und Segmentanzeigen zu konstruieren. Auch bereitete mir die Modifikation des Spiels durch selbst gestaltete Resourcepacks viel Freude.
+      Seit mein Vater, ein Professor für <strong>Computerspiele</strong>, mich bereits mit <strong>drei Jahren</strong> vorsichtig an dieses Medium herangeführt hat, interessierte ich mich nicht nur für das <strong>Spielen</strong>, sondern ebenso für die <strong>Entwicklung von Games</strong>. Ich zeichnete zusätzliche <strong>Level für Super Mario</strong> oder entwarf <strong>neue Spiele</strong> – meine ersten Schritte im <strong>Game-Design</strong>. Später verbrachte ich viel Zeit damit, die <strong>Redstone-Elemente</strong> in <strong>Minecraft</strong> zu kombinieren, um <strong>logische Schaltungen</strong>, <strong>Rechensysteme</strong>, <strong>Binärzähler</strong> und <strong>Segmentanzeigen</strong> zu konstruieren. Auch die <strong>Modifikation des Spiels</strong> durch eigene <strong>Resourcepacks</strong> bereitete mir große Freude.
     </details>
     <strong class = "klicken">mehr</strong>
   </div>
