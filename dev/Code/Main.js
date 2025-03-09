@@ -17,6 +17,7 @@ var Portfolio;
     }
     */
     function init() {
+        setupNavBar();
         overlay = document.querySelector('#overlay');
         document.addEventListener('click', onClickDoc, { capture: true });
         document.addEventListener('mouseover', onHoverDoc, { capture: true });
@@ -78,7 +79,6 @@ var Portfolio;
     function setupProjectFlexItems() {
         document.querySelectorAll('.flex-item').forEach(setupFlexItem);
         document.querySelectorAll('.toggle-content').forEach((toggleContent) => {
-            console.log("add listener for toggle-content");
             addClickExpand(toggleContent.parentElement, toggleContent);
         });
         /*
@@ -89,7 +89,6 @@ var Portfolio;
         */
     }
     function addClickExpand(parent, toggleTrigger) {
-        console.log("parent or parent parent:", parent);
         toggleTrigger.addEventListener('click', () => {
             expandProjectFlexItem(parent);
         });
@@ -153,7 +152,6 @@ var Portfolio;
         //const container: HTMLDivElement = <HTMLDivElement>item.querySelector('.visual-presentation-container');
         let arrow = item.querySelector('.toggle-arrow');
         while (!arrow) {
-            console.log("try generate and find arrow");
             insertArrowIn(item);
             arrow = item.querySelector('.toggle-arrow');
         }
@@ -230,7 +228,6 @@ var Portfolio;
             thirdToggleContentDiv.appendChild(currentSibling);
         }
         (_c = visualPresentationContainer.parentNode) === null || _c === void 0 ? void 0 : _c.appendChild(thirdToggleContentDiv);
-        console.log("setup 3 toggle contents");
     }
     function removeForkme() {
         let banner = document.querySelector("header a#forkme_banner");

@@ -22,6 +22,8 @@ namespace Portfolio {
 
     function init() {
 
+        setupNavBar();
+
         overlay = <HTMLDivElement>document.querySelector('#overlay');
 
         document.addEventListener('click', onClickDoc, { capture: true });
@@ -107,7 +109,6 @@ namespace Portfolio {
         document.querySelectorAll('.flex-item').forEach(setupFlexItem);
 
         document.querySelectorAll('.toggle-content').forEach((toggleContent: HTMLDivElement) => {
-            console.log("add listener for toggle-content");
             addClickExpand(toggleContent.parentElement, toggleContent);
         });
 
@@ -120,7 +121,6 @@ namespace Portfolio {
     }
 
     function addClickExpand(parent: HTMLElement, toggleTrigger: HTMLDivElement): void {
-        console.log("parent or parent parent:", parent);
 
         toggleTrigger.addEventListener('click', () => {
             expandProjectFlexItem(parent);
@@ -212,7 +212,6 @@ namespace Portfolio {
         let arrow: HTMLDivElement = item.querySelector('.toggle-arrow');
 
         while (!arrow) {
-            console.log("try generate and find arrow");
             insertArrowIn(item);
             arrow = item.querySelector('.toggle-arrow');
         }
@@ -336,7 +335,6 @@ namespace Portfolio {
 
         visualPresentationContainer.parentNode?.appendChild(thirdToggleContentDiv);
 
-        console.log("setup 3 toggle contents");
     }
 
     function removeForkme() {
