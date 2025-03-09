@@ -9,12 +9,13 @@ var Portfolio;
     catch (error) {
         console.warn(error);
     }
+    /*
     try {
         init();
-    }
-    catch (error) {
+    } catch (error) {
         console.warn("Init called too fast: " + error);
     }
+    */
     function init() {
         overlay = document.querySelector('#overlay');
         document.addEventListener('click', onClickDoc, { capture: true });
@@ -264,6 +265,6 @@ var Portfolio;
         }, { threshold: 0 });
         observer.observe(placeholder);
     }
-    //window.addEventListener('load', init);
+    window.addEventListener('load', init);
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=Main.js.map
