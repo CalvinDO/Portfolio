@@ -113,7 +113,9 @@ h1{
 .navbar {
   position: relative;
   width: 100%;
-  padding: 16.18px 0;
+  padding: 40px 0;
+  padding-bottom: 0;
+  margin-bottom: 0px;
   transition: all 0.3s ease;
 }
 
@@ -175,8 +177,6 @@ h1{
     <li><a href="#dokumente">Dokumente</a></li>
   </ul>
 </nav>
-<hr/>  
-<hr/>
 
 <div class="section-header">
 <h1 id="motivation">Motivation</h1>
