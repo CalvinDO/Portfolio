@@ -410,7 +410,7 @@ details[open] ~ .klicken {
 <div id="motivation-end-container">
     <div class="motivation-item" id="abschluss">
         <i class="fa-solid fa-graduation-cap fa-bounce"></i>
-        <p>Mit <strong>21 Jahren</strong> schloss ich das <strong>Studium</strong> mit meiner <a href="#neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen"><strong>Bachelor-Thesis</strong> "Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen"</a> ab, bei der in einem Editor <strong>Knochen-Gelenk-Konstruktionen</strong> erstellt werden, die durch <strong>Mutationen</strong> über Generationen hinweg <strong>Laufmuster</strong> von Grund auf lernen.</p>
+        <p>Mit <strong>21 Jahren</strong> schloss ich das <strong>Studium</strong> mit meiner <a href="#neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen"><strong>Bachelor-Thesis</strong> "Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen"</a> ab. In einem Editor werden <strong>Knochen-Gelenk-Konstruktionen</strong> erstellt, die durch <strong>Mutationen</strong> über Generationen hinweg <strong>Laufmuster</strong> von Grund auf lernen.</p>
     </div>
     <div class="motivation-item" id="wunsch">
         <i class="fa-solid fa-flag-checkered fa-shake"></i>
