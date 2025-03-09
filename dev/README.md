@@ -292,7 +292,7 @@ details[open] ~ .klicken {
           </li>
         </ul>
         </summary>
-        Ich erkannte durch die Programmierung die <strong>Relevanz der Mathematik</strong> in verschiedenen Bereichen und begann mit experimenteller Programmierung für verschiedene Fächer am <strong>technischen Gymnasium</strong>, wo auch meine erste formale Ausbildung in Informatik begann. Mit <strong>15 Jahren</strong> entwickelte ich eine regelrechte Begeisterung für die Möglichkeiten der <strong>Vektorrechnung</strong> und <strong>fraktalen Geometrie</strong>. Zusammen mit einem Lehrer und einem Mitschüler, mit dem ich einen <strong>Übersetzer</strong> für eine ausgedachte <strong>Geheimsprache</strong> programmierte, gründete ich eine <strong>Informatik-AG</strong>. In dieser wagten wir uns an die Programmierung <strong>neuronaler Netzwerke</strong>, um mit <strong>künstlicher Intelligenz</strong> zu experimentieren, besonders in der <strong>Echtzeit-Bildverarbeitung</strong> eines Live-Kamerabildes.
+        Ich erkannte durch die Programmierung die <strong>Relevanz der Mathematik</strong> in verschiedenen Bereichen und begann mit experimenteller Programmierung für verschiedene Fächer am <strong>technischen Gymnasium</strong>, wo auch meine erste formale Ausbildung in Informatik begann. Mit <strong>15 Jahren</strong> entwickelte ich eine regelrechte Begeisterung für die Möglichkeiten der <strong>Vektorrechnung</strong> und <strong>fraktalen Geometrie</strong>. Zusammen mit einem Lehreri und einem Mitschüleri, mit dem ich einen <strong>Übersetzer</strong> für eine ausgedachte <strong>Geheimsprache</strong> programmierte, gründete ich eine <strong>Informatik-AG</strong>. In dieser wagten wir uns an die Programmierung <strong>neuronaler Netzwerke</strong>, um mit <strong>künstlicher Intelligenz</strong> zu experimentieren, besonders in der <strong>Echtzeit-Bildverarbeitung</strong> eines Live-Kamerabildes.
     </details>
     <strong class = "klicken">mehr</strong>
   </div>
@@ -313,7 +313,7 @@ details[open] ~ .klicken {
         </ul>
         </summary>
         Im Rahmen der freiwilligen Aufgaben des Programmiermoduls des ersten Semesters meines abgeschlossenen Studiums entwickelte ich mit Java einen ewigen Kalender, <strong>Game of Life</strong> und <strong>Tic-Tac-Toe</strong>. Letzteres baute ich mit einem zufällig spielenden Computergegner aus, der zum Trainieren einer künstlichen Intelligenz genutzt werden soll.<br>
-        Beim <strong>Global Game Jam 2020</strong> im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines VR-Spiels mit. Meine Hauptaufgaben lagen im <strong>Gamedesign</strong> und <strong>Sound</strong> (Fuwashima). Dieses Event weckte bei mir erneut das Interesse an der <strong>3D-Programmierung</strong> und dem <strong>3D-Modeling</strong>, weshalb ich mich intensiver mit <strong>Unity</strong> und <strong>Blender</strong> beschäftigte.
+        Beim <strong>Global Game Jam 2020</strong> im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines <a href = "#fuwashima">VR-Spiels</a> mit. Meine Hauptaufgaben lagen im <strong>Gamedesign</strong> und <a href = "#fuwashima"><strong>Sound</strong></a>. Dieses Event weckte bei mir erneut das Interesse an der <strong>3D-Programmierung</strong> und dem <strong>3D-Modeling</strong>, weshalb ich mich intensiver mit <strong>Unity</strong> und <strong>Blender</strong> beschäftigte.
     </details>
     <strong class = "klicken">mehr</strong>
   </div>
@@ -323,7 +323,7 @@ details[open] ~ .klicken {
         <summary>Alter: <strong>18-20</strong><br>
         <ul>
           <li>
-            Angestellt als <strong>Tutor für Programmierung</strong>
+            Angestellt als <strong>Tutori für Programmierung</strong>
           </li>
           <li>
             <strong>360°</strong>-Point-and-Click & Eisladen-<strong>Browsergame</strong>
@@ -336,9 +336,9 @@ details[open] ~ .klicken {
           </li>
         </ul>
         </summary>
-        Ab Oktober 2019 studierte ich sieben Semester lang <strong>Medieninformatik</strong> an der Hochschule Furtwangen. Nach dem ersten Semester erhielt ich von meinen Professoren für Mathematik und Informatik Anfragen, als <strong>Tutor für Programmierung</strong> tätig zu werden.<br>
+        Ab Oktober 2019 studierte ich sieben Semester lang <strong>Medieninformatik</strong> an der Hochschule Furtwangen. Nach dem ersten Semester erhielt ich von meinen Professoris für Mathematik und Informatik Anfragen, als <strong>Tutori für Programmierung</strong> tätig zu werden.<br>
         Ich beendete das zweite Semester mit einer <strong>360°-Panorama-Verkörperung</strong> der Schnitzeljagd an der Hochschule Furtwangen sowie einer <strong>Eisladen-Website</strong> mit Server, realisiert als Browsergame.</p>
-        Mein Praktikum im dritten Semester absolvierte ich bei <strong>weltenbauer. Software Entwicklung GmbH</strong>, wo ich im Developer-Team am <strong>Bau-Simulator</strong> mitarbeitete. Das Unternehmen behielt mich anschließend zwei weitere Jahre als Werkstudent.<br>
+        Mein Praktikum im dritten Semester absolvierte ich bei <strong>weltenbauer. Software Entwicklung GmbH</strong>, wo ich im Developer-Team am <strong>Bau-Simulator</strong> mitarbeitete. Das Unternehmen behielt mich anschließend zwei weitere Jahre als Werkstudenti.<br>
         Im vierten und fünften Semester, dem <strong>Projektstudium</strong>, entwickelte ich mit einem sechsköpfigen Team das psychologische <strong>Horrorspiel Morbus Animi</strong>, das den ersten Platz der <strong>IndieNight-Nominierung</strong> gewann. Im sechsten Semester folgten weitere Spiele wie <strong>The Last Hope</strong>, ein <strong>Rogue-like</strong> inspiriert von H.P. Lovecraft, sowie <strong>BeerPhong</strong>, eine browserbasierte <strong>AR</strong>-Version des bekannten Partyspiels.
     </details>
     <strong class = "klicken">mehr</strong>
@@ -425,7 +425,7 @@ details[open] ~ .klicken {
     </div>
     <div class="motivation-item" id="warum">
         <i class="fa-solid fa-circle-check fa-beat"></i>
-        <p>Auf dieser Seite sammle ich einige meiner <strong>Arbeiten</strong>, um einen <strong>Beleg</strong> für meinen <strong>Enthusiasmus</strong> und meine <strong>Lernfähigkeit</strong> zu liefern und Interesse für ein Angebot als <strong>Spieleprogrammierer</strong> zu wecken.</p>
+        <p>Auf dieser Seite sammle ich einige meiner <strong>Arbeiten</strong>, um einen <strong>Beleg</strong> für meinen <strong>Enthusiasmus</strong> und meine <strong>Lernfähigkeit</strong> zu liefern und Interesse für ein Angebot als <strong>Spieleprogrammiereri</strong> zu wecken.</p>
     </div>
 </div>
 
@@ -954,8 +954,8 @@ span.toggle-arrow-span {
     </div>
     <div class = "toggle-content third-toggle-content">
       <br>
-      <strong>6</strong> Monate <strong>Praktikant</strong><br>
-      <strong>2,5</strong> Jahre <strong>Werkstudent</strong><br>
+      <strong>6</strong> Monate <strong>Praktikum</strong><br>
+      <strong>2,5</strong> Jahre <strong>Werkstudium</strong><br>
       <br>
       <div class = "skills">
       <strong>Unity (C#), FMOD (Audio-Integration)</strong><br>
