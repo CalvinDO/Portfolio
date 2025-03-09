@@ -2643,7 +2643,10 @@ span.toggle-arrow-span {
 
 </style>
 
-# Musik
+<div class="section-header">
+<i class="fa-solid fa-music"></i>
+<h1 id="musik">Musik</h1>
+</div>
 
 <div class = "flex-container" id = "music-flex-container">
   <div class="flex-item">
@@ -2839,7 +2842,10 @@ span.toggle-arrow-span {
 <hr/>  
 <hr/>
 
-# Grafik
+<div class="section-header">
+<i class="fa-solid fa-palette"></i>
+<h1 id="grafik">Grafik</h1>
+</div>
 
 <div class = "flex-container" id = "music-flex-container">
   <div class="flex-item">
