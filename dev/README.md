@@ -338,7 +338,7 @@ details[open] ~ .klicken {
         Ab Oktober 2019 studierte ich sieben Semester lang <strong>Medieninformatik</strong> an der Hochschule Furtwangen. Nach dem ersten Semester erhielt ich von meinen Professoren für Mathematik und Informatik Anfragen, als <strong>Tutor für Programmierung</strong> tätig zu werden.<br>
         Ich beendete das zweite Semester mit einer <strong>360°-Panorama-Verkörperung</strong> der Schnitzeljagd an der Hochschule Furtwangen sowie einer <strong>Eisladen-Website</strong> mit Server, realisiert als Browsergame.</p>
         Mein Praktikum im dritten Semester absolvierte ich bei <strong>weltenbauer. Software Entwicklung GmbH</strong>, wo ich im Developer-Team am <strong>Bau-Simulator</strong> mitarbeitete. Das Unternehmen behielt mich anschließend zwei weitere Jahre als Werkstudent.<br>
-        Im vierten und fünften Semester, dem <strong>Projektstudium</strong>, entwickelte ich mit einem sechsköpfigen Team das psychologische Horrorspiel <strong>Morbus Animi</strong>, das den ersten Platz der <strong>IndieNight-Nominierung</strong> gewann. Im sechsten Semester folgten weitere Spiele wie <strong>The Last Hope</strong>, ein Rogue-like inspiriert von H.P. Lovecraft, sowie <strong>BeerPhong</strong>, eine browserbasierte AR-Version des bekannten Partyspiels.
+        Im vierten und fünften Semester, dem <strong>Projektstudium</strong>, entwickelte ich mit einem sechsköpfigen Team das psychologische <strong>Horrorspiel Morbus Animi</strong>, das den ersten Platz der <strong>IndieNight-Nominierung</strong> gewann. Im sechsten Semester folgten weitere Spiele wie <strong>The Last Hope</strong>, ein <strong>Rogue-like</strong> inspiriert von H.P. Lovecraft, sowie <strong>BeerPhong</strong>, eine browserbasierte <strong>AR</strong>-Version des bekannten Partyspiels.
     </details>
     <strong class = "klicken">mehr</strong>
   </div>
@@ -410,20 +410,22 @@ details[open] ~ .klicken {
 <div id="motivation-end-container">
     <div class="motivation-item" id="abschluss">
         <i class="fa-solid fa-graduation-cap fa-bounce"></i>
-        <p>Mit <strong>21</strong> Jahren schloss ich das Studium mit meiner <a href="#neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen">Bachelor-Thesis "Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen"</a> ab, bei der in einem Editor Knochen-Gelenk-Konstruktionen erstellt werden, die durch Mutationen über Generationen hinweg Laufmuster von Grund auf lernen.</p>
+        <p>Mit <strong>21 Jahren</strong> schloss ich das <strong>Studium</strong> mit meiner <a href="#neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen"><strong>Bachelor-Thesis</strong> "Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen"</a> ab, bei der in einem Editor <strong>Knochen-Gelenk-Konstruktionen</strong> erstellt werden, die durch <strong>Mutationen</strong> über Generationen hinweg <strong>Laufmuster</strong> von Grund auf lernen.</p>
     </div>
     <div class="motivation-item" id="wunsch">
         <i class="fa-solid fa-flag-checkered fa-shake"></i>
-        <p>Gerne programmiere ich Spiele ohne Gewaltdarstellungen und biete dem Spieler eine eher friedliche und meditative Erfahrung. Bei Mehrspielermodi sollten die Spieler konstruktiv und kooperativ zusammenarbeiten.<br>Optimalerweise verzichtet das Spiel auf Gegner und vermittelt intuitive Einsichten über tiefgreifende Themen und Philosophien.<br>
-        Puzzle-Games, Aufbau-Strategiespiele sowie Cozy Games, Simulatoren oder Musik-, Sound- und Rhythm-Games kommen besonders infrage.</p>
+        <p>Gerne programmiere ich <strong>Spiele ohne Gewaltdarstellungen</strong> und biete dem Spieler eine eher <strong>friedliche</strong> und <strong>meditative Erfahrung</strong>. Bei Mehrspielermodi sollten die Spieler <strong>konstruktiv</strong> und <strong>kooperativ</strong> zusammenarbeiten.<br>  
+        Optimalerweise verzichtet das Spiel auf Gegner und vermittelt <strong>intuitive Einsichten</strong> über tiefgreifende Themen und <strong>Philosophien</strong>.<br>  
+        <strong>Puzzle-Games</strong>, <strong>Aufbau-Strategiespiele</strong> sowie <strong>Cozy-</strong> oder <strong>Educational-Games</strong>, <strong>Simulatoren</strong> oder <strong>Musik-, Sound- und Rhythm-Games</strong> kommen besonders infrage.</p>
     </div>
     <div class="motivation-item" id="jobs">
         <i class="fa-solid fa-screwdriver-wrench fa-spin"></i>
-        <p><strong>Programmieren</strong> stellt meine Haupttätigkeit dar. Daneben bin ich musikalisch begabt und spiele viele Instrumente – digital wie akustisch. Grundlegende 3D-Modelling- und Design-Kenntnisse sind vorhanden, jedoch nicht als Haupttätigkeit bevorzugt. In der Soundgestaltung und Soundtechnik des Spiels wirke ich gerne mit.</p>
+        <p><strong>Programmieren</strong> stellt meine <strong>Haupttätigkeit</strong> dar. Daneben bin ich <strong>musikalisch begabt</strong> und spiele viele Instrumente – digital wie akustisch.  
+        Grundlegende <strong>3D-Modelling-</strong> und <strong>Design-Kenntnisse</strong> sind vorhanden, jedoch nicht als Haupttätigkeit bevorzugt. In der <strong>Soundgestaltung</strong> und <strong>Soundtechnik</strong> des Spiels wirke ich gerne mit.</p>
     </div>
     <div class="motivation-item" id="warum">
         <i class="fa-solid fa-circle-check fa-beat"></i>
-        <p>Auf dieser Seite sammle ich einige meiner Arbeiten, um einen Beleg für meinen Enthusiasmus und meine Lernfähigkeit zu liefern und Interesse für ein Angebot als Spieleprogrammierer zu wecken.</p>
+        <p>Auf dieser Seite sammle ich einige meiner <strong>Arbeiten</strong>, um einen <strong>Beleg</strong> für meinen <strong>Enthusiasmus</strong> und meine <strong>Lernfähigkeit</strong> zu liefern und Interesse für ein Angebot als <strong>Spieleprogrammierer</strong> zu wecken.</p>
     </div>
 </div>
 
