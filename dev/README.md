@@ -151,15 +151,21 @@ h1{
     gap: 0px;
 }
 
+details:hover, details:open {
+    background-color: hsl(210 16% 94% / 1);
+}
+
 .details-container details {
 
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #fafafa;
+  background-color: hsl(210 16% 96% / 1);
   height: 100%;
   color: #212529;
 }
+
+
 
 @media (max-width: 1225px) {
   .details-container {
