@@ -152,7 +152,7 @@ h1{
 }
 
 details:hover, details:open {
-    background-color: hsl(210 16% 94% / 1);
+    background-color: hsl(210 16% 94% / 1) !important;
 }
 
 .details-container details {
@@ -180,11 +180,23 @@ details:hover, details:open {
 }
 
 summary{
+  font-weight: 549;
   text-align: center;
+  line-height: 27px;
+}
+
+strong{
+
+  font-weight: 600;
 }
 
 summary ul{
   list-style: none;
+}
+
+summary ul::before {
+    white-space: pre;
+    content: " \A";
 }
 
 /* details klicken*/
@@ -225,7 +237,7 @@ details[open] ~ .klicken {
         </li>
       </ul>
       </summary>
-      Seit mein Vater, ein Professor für <strong>Computerspiele</strong>, mich bereits mit drei Jahren vorsichtig an dieses Medium herangeführt hat, interessierte ich mich nicht nur für das <strong>Spielen</strong>, sondern ebenso für die <strong>Entwicklung</strong> von Games. Ich zeichnete zusätzliche Level für Super Mario oder entwarf neue Spiele – meine <strong>ersten Schritte</strong> im <strong>Game-Design</strong>. Später verbrachte ich viel Zeit damit, die Redstone-Elemente in Minecraft zu kombinieren, um <strong>logische Schaltungen</strong>, <strong>Rechensysteme</strong>, <strong>Binärzähler</strong> und <strong>Segmentanzeigen</strong> zu konstruieren. Auch die <strong>Modifikation</strong> des Spiels durch <strong>eigene Resourcepacks</strong> bereitete mir große Freude.
+      Seit mein Vater, ein Professor für <strong>Computerspiele</strong>, mich bereits mit <strong>drei Jahren</strong> vorsichtig an dieses Medium herangeführt hat, interessierte ich mich nicht nur für das <strong>Spielen</strong>, sondern ebenso für die <strong>Entwicklung</strong> von Games. Ich zeichnete zusätzliche Level für Super Mario oder entwarf neue Spiele – meine <strong>ersten Schritte</strong> im <strong>Game-Design</strong>. Später verbrachte ich viel Zeit damit, die Redstone-Elemente in Minecraft zu kombinieren, um <strong>logische Schaltungen</strong>, <strong>Rechensysteme</strong>, <strong>Binärzähler</strong> und <strong>Segmentanzeigen</strong> zu konstruieren. Auch die <strong>Modifikation</strong> des Spiels durch <strong>eigene Resourcepacks</strong> bereitete mir große Freude.
     </details>
     <strong class = "klicken">mehr</strong>
   </div>
@@ -239,7 +251,7 @@ details[open] ~ .klicken {
           <li><strong>Grafikbearbeitung</strong></li>
         </ul>
         </summary>
-        Im Alter von <strong>9 Jahren</strong> begann mein Interesse am <strong>3D-Modelling</strong>, was sich durch Architektur-Projekte in Google SketchUp und diverses Modeling in Sculpt3D widerspiegelte. Mit <strong>10 Jahren</strong> folgten kleinere <strong>Text-Games</strong>, die ich mit Batch – meiner ersten Programmiersprache – und dem Windows Editor umsetzte. Mit einem Leuchtturm von Fischer-Technik machte ich zu dieser Zeit erste Erfahrungen mit <strong>Ablaufsteuerungen</strong>. Am Nintendo DS erstellte ich <strong>Zeichentrickanimationen</strong> über das Touchpad und kleine <strong>Stop-Motion-Trickfilme</strong>. Mit <strong>11 Jahren</strong> begann ich mit der <strong>grafischen Bildbearbeitung</strong> mit Paint, mit <strong>13 Jahren</strong> intensivierte ich dieses Hobby mit GIMP.
+        Im Alter von <strong>9 Jahren</strong> begann mein Interesse am <strong>3D-Modelling</strong>, was sich durch Architektur-Projekte in Google SketchUp und diverses Modeling in Sculpt3D widerspiegelte. Mit <strong>10 Jahren</strong> folgten kleinere <strong>Text-Games</strong>, die ich mit Batch – meiner ersten Programmiersprache – und dem Windows Editor umsetzte. Mit einem Leuchtturm von Fischer-Technik machte ich zu dieser Zeit erste Erfahrungen mit <strong>Ablaufsteuerungen</strong>. Am Nintendo DS erstellte ich <strong>Zeichentrickanimationen</strong> über das Touchpad und kleine <strong>Stop-Motion-Trickfilme</strong>. Mit <strong>11 Jahren</strong> begann ich mit der <strong>grafischen Bildbearbeitung</strong> mit Paint, mit <strong>13 Jahren</strong> intensivierte ich dieses Hobby mit <strong>GIMP</strong>.
       </details>
     <strong class = "klicken">mehr</strong>
   </div>
@@ -256,7 +268,7 @@ details[open] ~ .klicken {
           </li>
         </ul>
         </summary>
-        Etwa zur selben Zeit befreite mich <strong>TypeScript</strong> aus der Unflexibilität von Batch, was mir die <strong>dynamische Generierung zweidimensionaler Bilder</strong> auf einem Canvas ermöglichte. Im Rahmen des mehrmals besuchten <strong>Kinder-Uni Feriencamps</strong> in Furtwangen machte ich erste Erfahrungen mit <strong>Processing</strong> und programmierte <strong>Pong</strong>. Jedes Erlernen eines neuen programmiertechnischen Werkzeugs verstärkte die Erkenntnis der Möglichkeit, meine Ideen in einem digitalen Medium festzuhalten und sie – interaktiv oder passiv – später wieder abrufbar zu machen, was meine <strong>Motivation</strong> immer weiter steigen ließ.
+        Etwa zur selben Zeit befreite mich <strong>TypeScript</strong> aus der Unflexibilität von Batch, was mir die <strong>dynamische Generierung zweidimensionaler Bilder</strong> auf einem Canvas ermöglichte. Im Rahmen des mehrmals besuchten Kinder-Uni Feriencamps in Furtwangen machte ich erste Erfahrungen mit <strong>Processing</strong> und programmierte <strong>Pong</strong>. Jedes Erlernen eines neuen programmiertechnischen Werkzeugs verstärkte die Erkenntnis der Möglichkeit, meine Ideen in einem digitalen Medium festzuhalten und sie – interaktiv oder passiv – später wieder abrufbar zu machen, was meine <strong>Motivation</strong> immer weiter steigen ließ.
     </details>
     <strong class = "klicken">mehr</strong>
   </div>
@@ -279,7 +291,7 @@ details[open] ~ .klicken {
           </li>
         </ul>
         </summary>
-        Ich erkannte durch die Programmierung die <strong>Relevanz der Mathematik</strong> in verschiedenen Bereichen und begann mit experimenteller Programmierung für verschiedene Fächer am <strong>technischen Gymnasium</strong>, wo auch meine erste formale Ausbildung in Informatik begann. Mit <strong>15 Jahren</strong> entwickelte ich eine regelrechte Begeisterung für die Möglichkeiten der <strong>Vektorrechnung</strong> und <strong>fraktalen Geometrie</strong>. Zusammen mit einem Lehrer und einem Mitschüler, mit dem ich einen <strong>Übersetzer</strong> für eine ausgedachte <strong>Geheimsprache</strong> programmierte, gründete ich eine <strong>Informatik-AG</strong>. In dieser wagten wir uns an die vollumfassende Programmierung <strong>neuronaler Netzwerke</strong>, um mit <strong>künstlicher Intelligenz</strong> zu experimentieren, besonders in der <strong>Echtzeit-Bildverarbeitung</strong> eines Live-Kamerabildes.
+        Ich erkannte durch die Programmierung die <strong>Relevanz der Mathematik</strong> in verschiedenen Bereichen und begann mit experimenteller Programmierung für verschiedene Fächer am <strong>technischen Gymnasium</strong>, wo auch meine erste formale Ausbildung in Informatik begann. Mit <strong>15 Jahren</strong> entwickelte ich eine regelrechte Begeisterung für die Möglichkeiten der <strong>Vektorrechnung</strong> und <strong>fraktalen Geometrie</strong>. Zusammen mit einem Lehrer und einem Mitschüler, mit dem ich einen <strong>Übersetzer</strong> für eine ausgedachte <strong>Geheimsprache</strong> programmierte, gründete ich eine <strong>Informatik-AG</strong>. In dieser wagten wir uns an die Programmierung <strong>neuronaler Netzwerke</strong>, um mit <strong>künstlicher Intelligenz</strong> zu experimentieren, besonders in der <strong>Echtzeit-Bildverarbeitung</strong> eines Live-Kamerabildes.
     </details>
     <strong class = "klicken">mehr</strong>
   </div>
@@ -289,18 +301,18 @@ details[open] ~ .klicken {
         <summary>Alter: <strong>17-18</strong><br>
         <ul>
           <li>
-            Erstsemester-Selbststudium - Game-Of-Life & Tic-Tac-Toe
+            <strong>Erstsemester</strong>-Selbststudium - <strong>Game-Of-Life & Tic-Tac-Toe</strong>
           </li>
           <li>
-            GGJ VR-Spiel - Gamedesign und Sound (Fuwashima)
+            <strong>GGJ VR-Spiel</strong> - Gamedesign und Sound (Fuwashima)
           </li>
           <li>
-            Private Fortbildung - Unity und Blender
+            Private Fortbildung - <strong>Unity</strong> und <strong>Blender</strong>
           </li>
         </ul>
         </summary>
-        Im Rahmen der freiwilligen Aufgaben des Programmieren-Moduls des ersten Semesters meines abgeschlossenen Studiums entwickelte ich mit Java einen ewigen Kalender, Game-Of-Life und Tic-Tac-Toe. Letzteres baute ich zusätzlich mit einem zufällig spielenden Computergegner aus, der zum Trainieren einer künstlichen Intelligenz genutzt werden soll.<br>
-        Beim GlobalGameJam 2020 im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines VR-Spiels mit. Meine Hauptaufgaben lagen bei Gamedesign und Sound (Fuwashima). Dieses Event weckte bei mir erneut das Interesse an der 3D-Programmierung und dem 3D-Modeling, weshalb ich mich in Unity und Blender weiter vertiefte.
+        Im Rahmen der freiwilligen Aufgaben des Programmiermoduls des ersten Semesters meines abgeschlossenen Studiums entwickelte ich mit Java einen ewigen Kalender, <strong>Game of Life</strong> und <strong>Tic-Tac-Toe</strong>. Letzteres baute ich mit einem zufällig spielenden Computergegner aus, der zum Trainieren einer künstlichen Intelligenz genutzt werden soll.<br>
+        Beim <strong>Global Game Jam 2020</strong> im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines VR-Spiels mit. Meine Hauptaufgaben lagen im <strong>Gamedesign</strong> und <strong>Sound</strong> (Fuwashima). Dieses Event weckte bei mir erneut das Interesse an der <strong>3D-Programmierung</strong> und dem <strong>3D-Modeling</strong>, weshalb ich mich intensiver mit <strong>Unity</strong> und <strong>Blender</strong> beschäftigte.
     </details>
     <strong class = "klicken">mehr</strong>
   </div>
@@ -310,20 +322,23 @@ details[open] ~ .klicken {
         <summary>Alter: <strong>18-20</strong><br>
         <ul>
           <li>
-            Angestellt als Tutor für Programmierung
+            Angestellt als <strong>Tutor für Programmierung</strong>
           </li>
           <li>
-            360°-Point-and-Click & Eisladen-Browsergame
+            <strong>360°</strong>-Point-and-Click & Eisladen-<strong>Browsergame</strong>
           </li>
           <li>
-            Praktikum & Werkstudium - Bau-Simulator bei weltenbauer.
+            <strong>Praktikum</strong> & <strong>Werkstudium</strong> - <strong>Bau-Simulator</strong> bei <strong>weltenbauer.</strong>
           </li>
           <li>
-            Horrorgame Morbus-Animi, Rouge-like Browsergame, AR-Bierpong
+            <strong>Horrorgame Morbus-Animi</strong>, <strong>Fantasy Rouge-like</strong>, <strong>AR-Bierpong Browsergame</strong>
           </li>
         </ul>
         </summary>
-        Ab Oktober 2019 studierte ich 7 Semester lang Medieninformatik an der Hochschule Furtwangen. Nach dem ersten Semester erhielt ich von meinen Professoren für Mathematik und Informatik Anfragen als Tutor tätig zu werden und war als solcher für das Modul "Programmierung" eingestellt. Ich beendete das zweite Semester mit einer 360°-Panorama-Verkörperung der Schnitzeljagd an der Hochschule Furtwangen, sowie einer Eisladen-Website mit Server, realisiert als Browsergame. Das Praktikum als drittes Semester absolvierte ich bei weltenbauer. Software Entwicklung GmbH, wo ich am Bau-Simulator im Developer-Team mitarbeitete. Das Unternehmen behielt mich gleich 2 weitere Jahre als Werkstudent, bis zum Ende des Studiums. Im vierten und fünften Semester, dem Projektstudium, entwickelte ich in einem sechsköpfigen Team aus engagierten Studenten das tiefgründige psychologische Horror-Spiel Morbus-Animi, das den ersten Platz der IndieNight-Nominierung gewann. Im sechsten Semester folgten Spiele wie TheLastHope, einem Rogue-like nach H.P. Lovecraft, entwickelt mit fünf anderen talentierten Studenten, oder BeerPhong, einer mobilen browserbasierten AR-Version des berühmten Partyspiels.
+        Ab Oktober 2019 studierte ich sieben Semester lang <strong>Medieninformatik</strong> an der Hochschule Furtwangen. Nach dem ersten Semester erhielt ich von meinen Professoren für Mathematik und Informatik Anfragen, als <strong>Tutor für Programmierung</strong> tätig zu werden.<br>
+        Ich beendete das zweite Semester mit einer <strong>360°-Panorama-Verkörperung</strong> der Schnitzeljagd an der Hochschule Furtwangen sowie einer <strong>Eisladen-Website</strong> mit Server, realisiert als Browsergame.</p>
+        <p>Mein Praktikum im dritten Semester absolvierte ich bei <strong>weltenbauer. Software Entwicklung GmbH</strong>, wo ich im Developer-Team am <strong>Bau-Simulator</strong> mitarbeitete. Das Unternehmen behielt mich anschließend zwei weitere Jahre als Werkstudent.<br>
+        Im vierten und fünften Semester, dem <strong>Projektstudium</strong>, entwickelte ich mit einem sechsköpfigen Team das psychologische Horrorspiel <strong>Morbus Animi</strong>, das den ersten Platz der <strong>IndieNight-Nominierung</strong> gewann. Im sechsten Semester folgten weitere Spiele wie <strong>The Last Hope</strong>, ein Rogue-like inspiriert von H.P. Lovecraft, sowie <strong>BeerPhong</strong>, eine browserbasierte AR-Version des bekannten Partyspiels.
     </details>
     <strong class = "klicken">mehr</strong>
   </div>
