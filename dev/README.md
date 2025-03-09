@@ -127,7 +127,8 @@ h1{
   left: 0;
   z-index: 1000;
   width: 100%;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /*box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);*/
+  padding-top: 0;
 }
 
 .menu{
@@ -137,6 +138,7 @@ h1{
   padding: 0;
   margin: 0;
   flex-wrap: wrap;
+  background: #f8f9fa;
 }
 
 .menu li {
