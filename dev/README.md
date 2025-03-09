@@ -1589,6 +1589,7 @@ span.toggle-arrow-span {
             <i class="fa-solid fa-360-degrees"></i>
           </div>
         <div class = "tags">
+          <span class="tag">360°</span>
           <span class="tag">WebXR</span>
           <span class="tag">AdobeXD</span>
           <span class="tag">OpenStreetMap</span>
