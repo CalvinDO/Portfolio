@@ -240,7 +240,7 @@ details[open] ~ .klicken {
         </ul>
         </summary>
         Im Alter von <strong>9 Jahren</strong> begann mein Interesse am <strong>3D-Modelling</strong>, was sich durch Architektur-Projekte in Google SketchUp und diverses Modeling in Sculpt3D widerspiegelte. Mit <strong>10 Jahren</strong> folgten kleinere <strong>Text-Games</strong>, die ich mit Batch – meiner ersten Programmiersprache – und dem Windows Editor umsetzte. Mit einem Leuchtturm von Fischer-Technik machte ich zu dieser Zeit erste Erfahrungen mit <strong>Ablaufsteuerungen</strong>. Am Nintendo DS erstellte ich <strong>Zeichentrickanimationen</strong> über das Touchpad und kleine <strong>Stop-Motion-Trickfilme</strong>. Mit <strong>11 Jahren</strong> begann ich mit der <strong>grafischen Bildbearbeitung</strong> mit Paint, mit <strong>13 Jahren</strong> intensivierte ich dieses Hobby mit GIMP.
-        </details>
+      </details>
     <strong class = "klicken">mehr</strong>
   </div>
 
@@ -249,14 +249,14 @@ details[open] ~ .klicken {
         <summary>Alter: <strong>13-14</strong><br>
         <ul>
           <li>
-            Pong mit Processing
+            <strong>Pong</strong> mit Processing
           </li>
           <li>
-            Dynamische 2D-Generierung mit TypeScript 
+            <strong>Dynamische 2D-Generierung</strong> mit TypeScript 
           </li>
         </ul>
         </summary>
-        Etwa zur selben Zeit befreite mich TypeScript aus der Unflexibilität von Batch, was mir die dynamische Generierung zweidimensionaler Bilder auf einem Canvas ermöglichte. Im Rahmen des mehrmals besuchten Kinder-Uni Feriencamps in Furtwangen machte ich erste Erfahrungen mit Processing und programmierte Pong. Jedes Erlernen eines neuen programmiertechnischen Werkzeuges verstärkte die Erkenntnis der Möglichkeit, dadurch meine Ideen in einem digitalem Medium festzuhalten, und sie von mir oder anderen, interaktiv oder passiv, später wieder abrufbar zu machen, was wiederum meine Motivation immer weiter steigen ließ.
+        Etwa zur selben Zeit befreite mich <strong>TypeScript</strong> aus der Unflexibilität von Batch, was mir die <strong>dynamische Generierung zweidimensionaler Bilder</strong> auf einem Canvas ermöglichte. Im Rahmen des mehrmals besuchten <strong>Kinder-Uni Feriencamps</strong> in Furtwangen machte ich erste Erfahrungen mit <strong>Processing</strong> und programmierte <strong>Pong</strong>. Jedes Erlernen eines neuen programmiertechnischen Werkzeugs verstärkte die Erkenntnis der Möglichkeit, meine Ideen in einem digitalen Medium festzuhalten und sie – interaktiv oder passiv – später wieder abrufbar zu machen, was meine <strong>Motivation</strong> immer weiter steigen ließ.
     </details>
     <strong class = "klicken">mehr</strong>
   </div>
