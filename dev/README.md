@@ -557,6 +557,7 @@ h1#header-coding ~ h1 {
 .toggle-content.second-toggle-content h4 {
   font-size: 17px;
   color: #F8F9FA;
+  background-color: hsl(210 9% 34% / 1) !important;
 }
 
 .second-toggle-content {
