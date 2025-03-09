@@ -3005,8 +3005,6 @@ span.toggle-arrow-span {
   </div>
 </div>
 
-<hr/>  
-<hr/>
 
 <style>
 
