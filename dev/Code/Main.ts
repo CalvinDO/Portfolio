@@ -22,8 +22,6 @@ namespace Portfolio {
 
     function init() {
 
-        setupNavBar();
-
         overlay = <HTMLDivElement>document.querySelector('#overlay');
 
         document.addEventListener('click', onClickDoc, { capture: true });
@@ -373,8 +371,8 @@ namespace Portfolio {
     }
 
     export function setupNavBar() {
-        const navbar = document.getElementById("navbar");
-        const placeholder = <HTMLDivElement>document.getElementById("navbar-placeholder");
+        const navbar = document.querySelector(".navbar");
+        const placeholder = <HTMLDivElement>document.querySelector("#navbar-placeholder");
 
         const observer = new IntersectionObserver(
             ([entry]) => {
@@ -389,16 +387,16 @@ namespace Portfolio {
 
         observer.observe(placeholder);
     }
-
-    document.addEventListener("DOMContentLoaded", () => {
-        try {
-            setupNavBar();
-        }
-        catch (error) {
-            console.warn("dom content loaded try setupnavbar, error: ", error);
-        }
-    });
-
+    /*
+        document.addEventListener("DOMContentLoaded", () => {
+            try {
+                setupNavBar();
+            }
+            catch (error) {
+                console.warn("dom content loaded try setupnavbar, error: ", error);
+            }
+        });
+    */
     window.addEventListener('load', init);
 }
 

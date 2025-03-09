@@ -17,7 +17,6 @@ var Portfolio;
     }
     */
     function init() {
-        setupNavBar();
         overlay = document.querySelector('#overlay');
         document.addEventListener('click', onClickDoc, { capture: true });
         document.addEventListener('mouseover', onHoverDoc, { capture: true });
@@ -254,8 +253,8 @@ var Portfolio;
         footer.appendChild(documentsList);
     }
     function setupNavBar() {
-        const navbar = document.getElementById("navbar");
-        const placeholder = document.getElementById("navbar-placeholder");
+        const navbar = document.querySelector(".navbar");
+        const placeholder = document.querySelector("#navbar-placeholder");
         const observer = new IntersectionObserver(([entry]) => {
             if (!entry.isIntersecting) {
                 navbar.classList.add("sticky");
@@ -267,14 +266,16 @@ var Portfolio;
         observer.observe(placeholder);
     }
     Portfolio.setupNavBar = setupNavBar;
-    document.addEventListener("DOMContentLoaded", () => {
-        try {
-            setupNavBar();
-        }
-        catch (error) {
-            console.warn("dom content loaded try setupnavbar, error: ", error);
-        }
-    });
+    /*
+        document.addEventListener("DOMContentLoaded", () => {
+            try {
+                setupNavBar();
+            }
+            catch (error) {
+                console.warn("dom content loaded try setupnavbar, error: ", error);
+            }
+        });
+    */
     window.addEventListener('load', init);
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=Main.js.map
