@@ -1985,7 +1985,10 @@ span.toggle-arrow-span {
 <hr/>
   
   
-# Modelling
+<div class="section-header">
+<i class="fa-solid fa-dice-d6"></i>
+<h1 id="modelling">Modelling</h1>
+</div>
   
   
 <div class = "flex-container">
@@ -2554,7 +2557,10 @@ span.toggle-arrow-span {
 <hr/>  
 <hr/>
 
-# Video
+<div class="section-header">
+<i class="fa-solid fa-film"></i>
+<h1 id="video">Video</h1>
+</div>
 
 <div class = "flex-container" id = "video-flex-container">
   <div class="flex-item">
