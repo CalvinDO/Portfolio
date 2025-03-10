@@ -2,11 +2,14 @@
 
 <style>
 
-  
+div#header_wrap {
+  background: #212529;
+}
+
 .quote-container::before {
   right: 3vw !important;
   content: "“";
-  font-size: 20vw;
+  font-size: 16.18vw;
   font-weight: bold;
   color: #FF5722;
   position: relative;
@@ -139,6 +142,12 @@ h1{
   padding-top: 0;
 }
 
+.navbar.sticky .menu {
+    background: #212529;
+    transition: 0.3s all ease-in-out;
+}
+
+
 .navbar.hidden {
   display: none !important;
 }
@@ -182,12 +191,20 @@ h1{
   transition: background 0.3s;
 }
 
+.navbar.sticky .menu li a {
+    color: #F8F9FA;
+}
+
 .menu li a:hover {
+  text-decoration: none;
   background: #343A40;
   color: #E9ECEF;
 }
 
-
+.navbar.sticky .menu li a:hover {
+  background: #E9ECEF; 
+  color: #343A40;
+}
 
 
 </style>
