@@ -115,12 +115,14 @@ var Portfolio;
         let secondToggleDiv = item.querySelector(".second-toggle-content");
         let headingToggle = item.querySelector(".heading-toggle-content");
         headingToggle.insertAdjacentElement('beforeend', secondToggleDiv);
+        headingToggle.insertAdjacentElement('afterbegin', item.querySelector(".toggle-arrow"));
     }
     function dexpandProjectFlexItem(item) {
         item.classList.toggle('expanded', false);
         overlay.style.opacity = "0";
         let secondToggleDiv = item.querySelector(".second-toggle-content");
         item.querySelector(".third-toggle-content").insertAdjacentElement('beforebegin', secondToggleDiv);
+        item.querySelector(".klicken-indicator").insertAdjacentElement('afterend', item.querySelector(".toggle-arrow"));
     }
     function handleDetailsFlexItem(detailsFlexItem) {
         let detail = detailsFlexItem.querySelector("details");
@@ -188,7 +190,7 @@ var Portfolio;
     function insertArrowIn(item) {
         let toggleArrowDiv = document.createElement("div");
         toggleArrowDiv.classList.add("toggle-arrow");
-        toggleArrowDiv.innerHTML = '<span class = "toggle-arrow-span">▼</span>';
+        toggleArrowDiv.innerHTML = '<span class = "toggle-arrow-span"><i class="fas fa-times"></i></span>';
         item.querySelector(".visual-presentation-container").insertAdjacentElement('beforeend', toggleArrowDiv);
     }
     function setupMouseLeave(item) {

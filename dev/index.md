@@ -998,7 +998,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 /* Wenn .flex-item gehovt wird -> Glow-Effekt */
 
 .flex-item.hovered .toggle-arrow {
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    /*box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);*/
     background: rgba(0, 0, 0, 0.1618);
 }
 
@@ -1134,7 +1134,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
       </a>
       <div class="vignette"></div>
       <div class = "klicken-indicator">Klicken zum Spielen</div>
-      <div class="toggle-arrow"><span class = "toggle-arrow-span">▼</span></div>
+      <div class="toggle-arrow"><span class = "toggle-arrow-span"><i class="fas fa-times"></i></span></div>
     </div>
     <div class = "primary-info-container">
       <div class="team-size-container">
@@ -1353,7 +1353,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
           <div id = "klicken-beerphong-special-indicator" class = "klicken-indicator">Klicken<br>zum<br>Marker</div>
         </div>
       </a>
-      <div class="toggle-arrow"><span class = "toggle-arrow-span">▼</span></div>
+      <div class="toggle-arrow"><span class = "toggle-arrow-span"><i class="fas fa-times"></i></span></div>
     </div>
       <div class = "primary-info-container">
         <div class="team-size-container">

@@ -155,6 +155,7 @@ namespace Portfolio {
         let headingToggle: HTMLDivElement = item.querySelector(".heading-toggle-content");
 
         headingToggle.insertAdjacentElement('beforeend', secondToggleDiv);
+        headingToggle.insertAdjacentElement('afterbegin', item.querySelector(".toggle-arrow"));
     }
 
 
@@ -166,6 +167,8 @@ namespace Portfolio {
 
         let secondToggleDiv: HTMLElement = item.querySelector(".second-toggle-content");
         item.querySelector(".third-toggle-content").insertAdjacentElement('beforebegin', secondToggleDiv);
+
+        item.querySelector(".klicken-indicator").insertAdjacentElement('afterend', item.querySelector(".toggle-arrow"));
     }
 
 
@@ -262,7 +265,7 @@ namespace Portfolio {
 
         let toggleArrowDiv = document.createElement("div");
         toggleArrowDiv.classList.add("toggle-arrow");
-        toggleArrowDiv.innerHTML = '<span class = "toggle-arrow-span">▼</span>';
+        toggleArrowDiv.innerHTML = '<span class = "toggle-arrow-span"><i class="fas fa-times"></i></span>';
 
         item.querySelector(".visual-presentation-container").insertAdjacentElement('beforeend', toggleArrowDiv);
     }
