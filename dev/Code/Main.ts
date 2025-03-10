@@ -476,6 +476,9 @@ namespace Portfolio {
 
 
 function turnPage() {
-    throw new Error("Function not implemented.");
+    window.scrollTo({
+        top: (<HTMLElement>document.querySelector("#main_content")).offsetTop, // Hier scrollen wir die Seite zu der Position des nächsten Abschnitts
+        behavior: 'smooth', // Sanftes Scrollen
+    });
 }
 

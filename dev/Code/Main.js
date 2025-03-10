@@ -334,6 +334,9 @@ var Portfolio;
     window.addEventListener('load', init);
 })(Portfolio || (Portfolio = {}));
 function turnPage() {
-    throw new Error("Function not implemented.");
+    window.scrollTo({
+        top: document.querySelector("#main_content").offsetTop,
+        behavior: 'smooth', // Sanftes Scrollen
+    });
 }
 //# sourceMappingURL=Main.js.map
