@@ -246,12 +246,9 @@ var Portfolio;
         header.addEventListener('click', handleClickHeader);
     }
     function handleClickHeader(ev) {
-        console.log(ev.clientY);
-        console.log(this.getBoundingClientRect());
         let rect = this.getBoundingClientRect();
         let clickToScrollArea = rect.bottom - rect.height / 3;
         //console.log("rectheight / 3: " + rect.height / 3, " - rectbottom: " + rect.bottom);
-        console.log(clickToScrollArea);
         if (ev.clientY > clickToScrollArea) {
             turnPage();
         }
@@ -293,7 +290,6 @@ var Portfolio;
             threshold: 0
         });
         const upperObserver = new IntersectionObserver(([entry]) => {
-            console.log(entry.boundingClientRect);
             if (entry.boundingClientRect.top >= 0) {
                 //console.log("remove sticky");
                 navbar.classList.remove("sticky");
