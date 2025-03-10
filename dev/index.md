@@ -964,7 +964,6 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     position: absolute;
     bottom: 0%;
     left: 50%;
-    transform: translateX(-50%) rotate(0deg);
     font-size: 1.7em;
     color: #F8F9FA;
     background: rgba(0, 0, 0, 0);
@@ -977,6 +976,14 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     z-index: 12;
 }
 
+.expanded .toggle-arrow {
+    width: 48px;
+    height: 48px;
+    top: 0;
+    left: 100%;
+    transform: translateX(-100%);
+}
+
 .toggle-arrow-span {
     display: none;
     position: relative;
@@ -985,7 +992,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 }
 
 .expanded .toggle-arrow-span {
-    display: inline-block !important;
+    display: initial !important;
 }
 
 /* Wenn .flex-item gehovt wird -> Glow-Effekt */
