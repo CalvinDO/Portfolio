@@ -3149,8 +3149,9 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 .documents-wrapper {
   display: flex;
   justify-content: center; /* Zentriert den gesamten Inhalt horizontal */
-  margin-bottom: 20px;
+  margin-bottom: 55px;
 }
+
 .documents-list {
   list-style-type: none;
   padding: 0;
@@ -3159,6 +3160,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 
 .documents-wrapper, .documents-wrapper *{
   color: #F8F9FA !important;
+  font-size: large;
 }
 
 #dokumente{
@@ -3171,7 +3173,8 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 }
 
 footer .section-header {
-  margin-top: 50px;
+    margin-top: 120px;
+    margin-bottom: 55px;
 }
 
 </style>
