@@ -264,7 +264,7 @@ var Portfolio;
         console.log(navbar, placeholder);
         const observer = new IntersectionObserver(([entry]) => {
             console.log(entry.boundingClientRect);
-            if (entry.boundingClientRect.top < 0) {
+            if (entry.boundingClientRect.top <= 0) {
                 navbar.classList.add("sticky");
             }
             else {

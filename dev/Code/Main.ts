@@ -386,7 +386,7 @@ namespace Portfolio {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 console.log(entry.boundingClientRect);
-                if (entry.boundingClientRect.top < 0) {
+                if (entry.boundingClientRect.top <= 0) {
                     navbar.classList.add("sticky");
                 } else {
                     navbar.classList.remove("sticky");
