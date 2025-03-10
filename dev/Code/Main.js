@@ -97,9 +97,11 @@ var Portfolio;
     }
     function setupProjectFlexItems() {
         document.querySelectorAll('.flex-item').forEach(setupFlexItem);
-        document.querySelectorAll('.toggle-content').forEach((toggleContent) => {
-            addClickExpand(toggleContent.parentElement, toggleContent);
-        });
+        /*
+                document.querySelectorAll('.toggle-content').forEach((toggleContent: HTMLDivElement) => {
+                    addClickExpand(toggleContent.parentElement, toggleContent);
+                });
+        */
         /*
         document.querySelectorAll('.toggle-arrow').forEach((toggleArrow: HTMLDivElement) => {
             console.log("add listener for toggle-arrow");
@@ -107,11 +109,16 @@ var Portfolio;
         });
         */
     }
-    function addClickExpand(parent, toggleTrigger) {
-        toggleTrigger.addEventListener('click', () => {
-            expandProjectFlexItem(parent);
-        });
-    }
+    /*
+        function addClickExpand(parent: HTMLElement, toggleTrigger: HTMLDivElement): void {
+            
+            toggleTrigger.addEventListener('click', () => {
+    
+    
+                expandProjectFlexItem(parent);
+            });
+        }
+    */
     function expandProjectFlexItem(item) {
         console.log("expand");
         if (item.classList.contains('expanded')) {
