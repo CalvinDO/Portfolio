@@ -243,7 +243,11 @@ var Portfolio;
         let header = document.querySelector("header");
         let quoteContainer = setupHeaderQuote();
         setupHeaderArrow(header, quoteContainer);
-        header.addEventListener('click', (event) => console.log(event));
+        header.addEventListener('click', handleClickHeader);
+    }
+    function handleClickHeader(ev) {
+        console.log(ev.clientY);
+        console.log(this.clientHeight, this.getClientRects(), this.getBoundingClientRect());
     }
     function setupHeaderQuote() {
         let quote = document.createElement("blockquote");

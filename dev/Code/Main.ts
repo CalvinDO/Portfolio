@@ -357,7 +357,12 @@ namespace Portfolio {
 
         setupHeaderArrow(header, quoteContainer);
 
-        header.addEventListener('click', (event) => console.log(event));
+        header.addEventListener('click', handleClickHeader);
+    }
+
+    function handleClickHeader(this: HTMLElement, ev: MouseEvent): void {
+        console.log(ev.clientY);
+        console.log(this.clientHeight, this.getClientRects(), this.getBoundingClientRect());
     }
 
     function setupHeaderQuote() {
