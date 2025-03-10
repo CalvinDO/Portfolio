@@ -967,7 +967,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     transform: translateX(-50%) rotate(0deg);
     font-size: 1.7em;
     color: #F8F9FA;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0);
     width: 100%;
     height: 100%;
     display: flex;
@@ -985,22 +985,25 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 }
 
 .expanded .toggle-arrow-span {
-    display: inline-block;
+    display: inline-block !important;
 }
 
 /* Wenn .flex-item gehovt wird -> Glow-Effekt */
+
 .flex-item.hovered .toggle-arrow {
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.1618);
 }
 
 /* Wenn der Pfeil selbst gehovt wird -> Klar als klickbar erkennbar */
+/*
 .toggle-arrow:hover {
     transform: translateX(-50%) scale(1.16180339);
     opacity: 1;
     background: rgba(0, 0, 0, 0.9);
     box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
 }
+*/
 
 .flex-item.expanded .toggle-arrow {
     transform: translateX(-50%) rotate(180deg);
