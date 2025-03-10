@@ -555,6 +555,11 @@ h1#header-coding ~ h1 {
   border-width: medium;
 }
 
+/* !FONT TRYOUT!*/
+.flex-item *:not(i) {
+    /* font-family: "Poppins", sans-serif !important; */
+}
+
 #video-flex-container .flex-item{
   width: 100% !important;
 }
