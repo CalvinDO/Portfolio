@@ -131,6 +131,16 @@ h1{
   padding-top: 0;
 }
 
+#navbar-placeholder {
+  overflow: hidden;
+  position: inherit;
+  height: 0px;
+  /* currently not one pixel more top to prevent bumping, because rect <0 */
+  top: 40px;
+  margin: 0;
+  padding: 0;
+}
+
 .menu{
   display: flex;
   justify-content: center;
@@ -161,15 +171,7 @@ h1{
   color: #E9ECEF;
 }
 
-#navbar-placeholder {
-  overflow: hidden;
-  position: inherit;
-  height: 0px;
-  /* one pixel more top to prevent bumping */
-  top: 41px;
-  margin: 0;
-  padding: 0;
-}
+
 
 
 </style>
