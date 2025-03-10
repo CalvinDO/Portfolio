@@ -1027,6 +1027,7 @@ span.toggle-arrow-span {
 
 <style>
 
+
 #main_content .quote-container::before {
   color: #00a8dd !important;
 }
@@ -1044,7 +1045,9 @@ span.toggle-arrow-span {
     color: #212529 !important;
 }
 
-
+.quote-container + .section-header {
+  margin-top: 45px;
+}
 
 </style>
 
