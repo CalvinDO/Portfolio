@@ -448,7 +448,19 @@ details[open] ~ .klicken {
       <img src="startpageArrow.png" class="klicken">
   </div>
 </div>
+
 <br>
+
+<style>
+
+#ausfuehrlicher-lebenslauf {
+    text-align: center;
+    font-style: italic;
+}
+
+</style>
+
+<p id="ausfuehrlicher-lebenslauf"><a href="Lebenslauf.md">Ausführlicher Lebenslauf</a></p>
 
 <style>
 
