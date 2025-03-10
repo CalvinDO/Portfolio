@@ -572,14 +572,14 @@ h1#header-coding ~ h1 {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 0px; /* Abstand zwischen den Items */
+  gap: 18px;
   justify-content: center;
   margin: 0 auto;
   margin-bottom: 53px !important;
 }
 
 .flex-item {
-  width: calc(33.33%); /* Standard: 3 Elemente pro Zeile */
+  width: calc(-37px + 33.333333%); /* Standard: 3 Elemente pro Zeile */
   box-sizing: border-box;
   padding: 0px;
   background-color: #212529;
@@ -745,7 +745,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
         
 @media (max-width: 1225px) {
   .flex-item {
-    width: calc(50%) !important; /* 2 Elemente pro Zeile */
+      width: calc(-25px + 50%) !important;
   }
 }
 
