@@ -416,7 +416,7 @@ namespace Portfolio {
 
         const observerForHiding = new MutationObserver(() => {
             const root = document.documentElement;  // :root
-            const navbar: HTMLElement = document.querySelector('navbar.sticky');  // Die Navbar mit der Klasse .sticky
+            const navbar: HTMLElement = document.querySelector('.navbar');  // Die Navbar mit der Klasse .sticky
 
             // Überprüft, ob es ein .expanded-Element gibt
             if (root.querySelector('.expanded')) {
