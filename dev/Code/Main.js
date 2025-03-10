@@ -1,7 +1,7 @@
 var Portfolio;
 (function (Portfolio) {
     let overlay = document.querySelector('#overlay');
-    setupHeaderQuote();
+    setupHeader();
     try {
         removeForkme();
         setupNavBar();
@@ -239,14 +239,22 @@ var Portfolio;
         banner.classList.add("to-remove");
         banner.remove();
     }
-    function setupHeaderQuote() {
+    function setupHeader() {
         let header = document.querySelector("header");
+        let quoteContainer = setupHeaderQuote();
+        setupHeaderArrow(header, quoteContainer);
+        header.addEventListener('click', (event) => console.log(event));
+    }
+    function setupHeaderQuote() {
         let quote = document.createElement("blockquote");
         quote.innerHTML = '<span class="quote-text">[...] <strong>Calvin Dell’Oro</strong> zählt unter den etlichen hundert Studierenden,<br>die ich seit 2008 [...] unterrichtet habe,<br>zu den drei <strong>engagiertesten</strong> und <strong>erfolgreichsten</strong>...</span><footer><cite class="author">— <a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf">Prof. Dr. rer. nat. Thomas Schneider</a></cite></footer>';
         /*, <cite class="quote-time">2025</cite>*/
         let quoteContainer = document.createElement("div");
         quoteContainer.classList.add("quote-container");
         quoteContainer.appendChild(quote);
+        return quoteContainer;
+    }
+    function setupHeaderArrow(header, quoteContainer) {
         header.insertAdjacentElement('beforeend', quoteContainer);
         let arrow = document.createElement("img");
         arrow.src = "startpageArrow.png";
