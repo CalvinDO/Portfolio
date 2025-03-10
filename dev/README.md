@@ -558,9 +558,6 @@ details[open] ~ .klicken {
     </div>
 </div>
 
-<hr/>  
-<hr/>
-
 <style>
 /*
 h1#header-coding,
@@ -2124,10 +2121,6 @@ span.toggle-arrow-span {
   </div>
 </div>
 
-<hr/>  
-<hr/>
-  
-  
 <div class="section-header">
 <i class="fa-solid fa-dice-d6"></i>
 <h1 id="modelling">Modelling</h1>
@@ -2697,9 +2690,6 @@ span.toggle-arrow-span {
   </div>
 </div>
 
-<hr/>  
-<hr/>
-
 <div class="section-header">
 <i class="fa-solid fa-film"></i>
 <h1 id="video">Video</h1>
@@ -2763,9 +2753,6 @@ span.toggle-arrow-span {
     <!-- Dies ist das unter [Cardioids](#cardioids) angedeutete Lernvideo, welches im Rahmen einer Projektarbeit unter Auswahl eines eigenen Themas entstand. Hier wird ebenso die Funktionsweise meines dazu verfassten Programms ähnlich zu Pseudocode erklärt. -->
   </div>
 </div>
-
-<hr/>  
-<hr/>
 
 <style>
 
@@ -2981,9 +2968,6 @@ span.toggle-arrow-span {
     <!-- Bei diesem Stück handelt es sich ebenfalls um ein Gimmick, diesmal im Kreis von engen Freunden. Ich versuchte, aus einigen verschiedenen menschlichen Aufnahmen, die bei uns täglich für Lacher sorgten, einen "Remix" zu erstellen, der an der Musikrichtung des Traps anlehnt. Dabei verwendete ich eine Vielzahl von Plugins, wovon sich das wichtigste, welches für die Stimmverzerrungen verantwortlich ist, "Fruity Granulizer" nennt. Dies ist mein erstes Audioprojekt, in dem ich, unterstützt durch meinen als DJ erfahrenen Schwager, auf Audioqualität, Mischungen (EQ-ing), Normpegel achtete, sowie Kompressoren benutzte. -->
   </div>
 </div>
-
-<hr/>  
-<hr/>
 
 <div class="section-header">
 <i class="fa-solid fa-palette"></i>
