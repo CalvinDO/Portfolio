@@ -21,6 +21,7 @@
   min-height: 100lvh;
   position: relative;
   padding: 0px 25px;
+  padding-right: 11vw;
 }
 
 blockquote {
@@ -41,7 +42,7 @@ blockquote a {
 }
 
 blockquote * {
-  font-size: calc(10px + 1.6180339vw);
+  font-size: calc(20px + 0.6180339vw);
 }
 
 .quote-container blockquote footer cite, .quote-container a {
