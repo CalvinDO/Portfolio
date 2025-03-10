@@ -283,6 +283,24 @@ var Portfolio;
         });
         lowerObserver.observe(placeholder);
         upperObserver.observe(topPlaceholder);
+        const observerForHiding = new MutationObserver(() => {
+            const root = document.documentElement; // :root
+            const navbar = document.querySelector('navbar.sticky'); // Die Navbar mit der Klasse .sticky
+            // Überprüft, ob es ein .expanded-Element gibt
+            if (root.querySelector('.expanded')) {
+                if (navbar)
+                    navbar.classList.toggle('hidden', true); // Navbar ausblenden
+            }
+            else {
+                if (navbar)
+                    navbar.classList.toggle('hidden', false); // Navbar wieder einblenden
+            }
+        });
+        // Beginnt die Überwachung auf Änderungen im DOM
+        observerForHiding.observe(document.documentElement, {
+            childList: true,
+            subtree: true // Überwacht auch tiefere Elemente im DOM
+        });
     }
     Portfolio.setupNavBar = setupNavBar;
     document.addEventListener("DOMContentLoaded", () => {

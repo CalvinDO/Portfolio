@@ -131,6 +131,10 @@ h1{
   padding-top: 0;
 }
 
+.navbar.hidden {
+  display: none !important;
+}
+
 .navbar-placeholder {
   overflow: hidden;
   position: inherit;
