@@ -1064,6 +1064,9 @@ span.toggle-arrow-span {
 
 #main_content .quote-container::before {
   color: #00a8dd !important;
+  font-size: calc(16.18vw * 0.618);
+  bottom: 1.618vw;
+  right: calc(3vw * 0.618) !important;
 }
 
 #main_content .quote-container {
@@ -1077,6 +1080,10 @@ span.toggle-arrow-span {
 
 #main_content blockquote a {
     color: #212529 !important;
+}
+
+#main_content blockquote * {
+    font-size: calc((20px + 0.6180339vw)* 0.618);
 }
 
 .quote-container + .section-header {
