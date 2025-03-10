@@ -49,7 +49,7 @@ blockquote * {
 }
 
 .quote-container blockquote footer cite, .quote-container a {
-  font-size: calc(6.18px + 1vw) !important;
+    font-size: clamp(9px, calc((6.18px + 1vw)* 0.618), 20px) !important;
 }
 
 
