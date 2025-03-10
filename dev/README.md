@@ -32,6 +32,10 @@ blockquote {
   font-family: "Poppins", sans-serif;
 }
 
+blockquote a {
+  color: #F8F9FA;
+}
+
 .quote-text{
   position: relative;
 }
@@ -1020,6 +1024,34 @@ span.toggle-arrow-span {
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 <div id="overlay"></div>
+
+<style>
+
+#main_content .quote-container {
+  min-height: 0;
+  margin-top: 62px;
+}
+
+#main_content blockquote {
+    color: #212529 !important;
+}
+
+#main_content blockquote a {
+    color: #212529 !important;
+}
+
+
+
+</style>
+
+<div class="quote-container"><blockquote>
+  <span class="quote-text">Er arbeitete sehr <strong>effizient</strong>, <strong>routiniert</strong> und <strong>zuverlässig</strong><br>
+  </span>
+  <footer>
+    <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf">René Nold, Geschäftsführer, weltenbauer Software Entwicklung GmbH</a></cite>
+  </footer>
+  </blockquote>
+</div>
 
 <div class="section-header">
 <i class="fas fa-laptop-code"></i>
