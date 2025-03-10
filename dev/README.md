@@ -70,6 +70,9 @@ blockquote:first-child{
   border: none;
   box-shadow: none;
   -webkit-box-shadow: none;
+
+  user-select: none;
+  pointer-events: none;
 }
 
 
