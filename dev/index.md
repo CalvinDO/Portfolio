@@ -962,15 +962,14 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 
 .toggle-arrow {
     position: absolute;
-    bottom: 6.18px;
-    right: 3.1%;
+    bottom: 0%;
+    left: 50%;
     transform: translateX(-50%) rotate(0deg);
     font-size: 1.7em;
     color: #F8F9FA;
     background: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -978,10 +977,15 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     z-index: 12;
 }
 
-span.toggle-arrow-span {
+.toggle-arrow-span {
+    display: none;
     position: relative;
     top: 2px;
     left: 0.5px;
+}
+
+.expanded .toggle-arrow-span {
+    display: inline-block;
 }
 
 /* Wenn .flex-item gehovt wird -> Glow-Effekt */
