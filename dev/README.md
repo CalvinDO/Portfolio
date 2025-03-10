@@ -131,14 +131,20 @@ h1{
   padding-top: 0;
 }
 
-#navbar-placeholder {
+.navbar-placeholder {
   overflow: hidden;
   position: inherit;
   height: 0px;
-  /* currently not one pixel more top to prevent bumping, because rect <0 */
-  top: 40px;
   margin: 0;
   padding: 0;
+}
+
+#navbar-top-placeholder {
+  top: 38px;
+}
+
+#navbar-placeholder {
+  top: 39px;
 }
 
 .menu {
@@ -174,7 +180,9 @@ h1{
 
 </style>
 
-<div id="navbar-placeholder"></div>
+<div class = "navbar-placeholder" id="navbar-top-placeholder"></div>
+
+<div class = "navbar-placeholder" id="navbar-placeholder"></div>
 
 <nav class ="navbar">
   <ul class = "menu">

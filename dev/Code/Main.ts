@@ -379,11 +379,12 @@ namespace Portfolio {
     export function setupNavBar() {
 
         const navbar = document.querySelector(".navbar");
+
         const placeholder = <HTMLDivElement>document.querySelector("#navbar-placeholder");
+        const topPlaceholder = <HTMLDivElement>document.querySelector("#navbar-top-placeholder");
 
-        console.log(navbar, placeholder);
 
-        const observer = new IntersectionObserver(
+        const lowerObserver = new IntersectionObserver(
             ([entry]) => {
                 console.log(entry.boundingClientRect);
                 if (entry.boundingClientRect.top <= 0) {
@@ -397,7 +398,20 @@ namespace Portfolio {
             }
         );
 
-        observer.observe(placeholder);
+        const upperObserver = new IntersectionObserver(
+            ([entry]) => {
+                console.log(entry.boundingClientRect);
+                if (entry.boundingClientRect.top >= 0) {
+                    navbar.classList.remove("sticky");
+                }
+            },
+            {
+                threshold: 0
+            }
+        );
+
+        lowerObserver.observe(placeholder);
+        upperObserver.observe(topPlaceholder);
     }
 
     document.addEventListener("DOMContentLoaded", () => {

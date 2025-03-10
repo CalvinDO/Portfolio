@@ -261,8 +261,8 @@ var Portfolio;
     function setupNavBar() {
         const navbar = document.querySelector(".navbar");
         const placeholder = document.querySelector("#navbar-placeholder");
-        console.log(navbar, placeholder);
-        const observer = new IntersectionObserver(([entry]) => {
+        const topPlaceholder = document.querySelector("#navbar-top-placeholder");
+        const lowerObserver = new IntersectionObserver(([entry]) => {
             console.log(entry.boundingClientRect);
             if (entry.boundingClientRect.top <= 0) {
                 navbar.classList.add("sticky");
@@ -273,7 +273,16 @@ var Portfolio;
         }, {
             threshold: 0
         });
-        observer.observe(placeholder);
+        const upperObserver = new IntersectionObserver(([entry]) => {
+            console.log(entry.boundingClientRect);
+            if (entry.boundingClientRect.top >= 0) {
+                navbar.classList.remove("sticky");
+            }
+        }, {
+            threshold: 0
+        });
+        lowerObserver.observe(placeholder);
+        upperObserver.observe(topPlaceholder);
     }
     Portfolio.setupNavBar = setupNavBar;
     document.addEventListener("DOMContentLoaded", () => {
