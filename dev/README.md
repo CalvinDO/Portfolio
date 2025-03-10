@@ -118,7 +118,7 @@ h1{
   padding-top: 40px;
   padding-bottom: 0;
   margin-bottom: 0px;
-  transition: all 0.3s ease;
+  /*transition: all 0.3s ease;*/
 }
 
 .navbar.sticky {
