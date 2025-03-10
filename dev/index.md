@@ -1010,10 +1010,6 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
 }
 */
-
-.flex-item.expanded .toggle-arrow {
-    transform: translateX(-50%) rotate(180deg);
-}
         
 .skills {
     line-height: 2.1; /* Der Wert 1.8 kann angepasst werden, um den Abstand zu verändern */
