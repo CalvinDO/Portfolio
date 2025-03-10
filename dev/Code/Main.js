@@ -215,9 +215,15 @@ var Portfolio;
         item.addEventListener('mouseenter', onMouseEnter.bind(item));
     }
     function onMouseLeave() {
+        if (document.documentElement.querySelector('.expanded') && !this.classList.contains(".expanded")) {
+            return;
+        }
         this.classList.remove('hovered');
     }
     function onMouseEnter() {
+        if (document.documentElement.querySelector('.expanded') && !this.classList.contains(".expanded")) {
+            return;
+        }
         this.classList.add('hovered');
     }
     function setupArrow(arrow, flexItem) {

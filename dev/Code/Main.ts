@@ -305,11 +305,18 @@ namespace Portfolio {
 
     function onMouseLeave(this: HTMLElement) {
 
-        this.classList.remove('hovered');
+        if (document.documentElement.querySelector('.expanded') && !this.classList.contains(".expanded")) {
+            return;
+        }
 
+        this.classList.remove('hovered');
     }
 
     function onMouseEnter(this: HTMLElement) {
+
+        if (document.documentElement.querySelector('.expanded') && !this.classList.contains(".expanded")) {
+            return;
+        }
 
         this.classList.add('hovered');
     }
