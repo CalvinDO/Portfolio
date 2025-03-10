@@ -222,8 +222,12 @@ var Portfolio;
     }
     function setupArrow(arrow, flexItem) {
         arrow.addEventListener('click', () => {
-            //flexItem.classList.toggle('expanded');
-            expandProjectFlexItem(flexItem);
+            if (arrow.classList.contains("is-x")) {
+                dexpandProjectFlexItem(flexItem);
+            }
+            else {
+                expandProjectFlexItem(flexItem);
+            }
         });
     }
     function generateContentIn(item) {

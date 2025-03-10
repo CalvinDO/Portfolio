@@ -318,8 +318,11 @@ namespace Portfolio {
     function setupArrow(arrow: Element, flexItem: HTMLElement) {
 
         arrow.addEventListener('click', () => {
-            //flexItem.classList.toggle('expanded');
-            expandProjectFlexItem(flexItem);
+            if (arrow.classList.contains("is-x")) {
+                dexpandProjectFlexItem(flexItem);
+            } else {
+                expandProjectFlexItem(flexItem);
+            }
         });
     }
 
