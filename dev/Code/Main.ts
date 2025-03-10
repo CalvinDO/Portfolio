@@ -392,7 +392,10 @@ namespace Portfolio {
                     navbar.classList.remove("sticky");
                 }
             },
-            { threshold: 0 }
+            {
+                rootMargin: "-1px 0px 0px 0px", // Beobachtung beginnt etwas früher
+                threshold: 0
+            }
         );
 
         observer.observe(placeholder);
