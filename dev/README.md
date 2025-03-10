@@ -216,14 +216,23 @@ details:hover, details:open {
     background-color: hsl(210 16% 94% / 1) !important;
 }
 
-.details-container details {
+details[open] summary::after {
+    content: "";
+    margin: 30px;
+    display: block;
+}
 
-  padding: 10px;
-  border: 3px solid #ccc;
-  border-radius: 5px;
-  background-color: hsl(210 16% 96% / 1);
-  height: 100%;
-  color: #212529;
+.details-container details {
+    padding: 10px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    background-color: hsl(210 16% 96% / 1);
+    height: 100%;
+    color: #212529;
 }
 
 
@@ -243,7 +252,10 @@ details:hover, details:open {
 summary{
   font-weight: 549;
   text-align: center;
-  line-height: 27px;
+}
+
+summary li {
+    margin: 10px auto;
 }
 
 strong{
@@ -251,8 +263,9 @@ strong{
   font-weight: 600;
 }
 
-summary ul{
+summary ul {
   list-style: none;
+  font-size: large;
 }
 
 summary ul::before {
