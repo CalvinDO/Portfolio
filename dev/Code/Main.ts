@@ -361,12 +361,12 @@ namespace Portfolio {
     }
 
     function handleClickHeader(this: HTMLElement, ev: MouseEvent): void {
-        console.log(ev.clientY, ev.screenY);
+        console.log(ev.clientY);
         console.log(this.getBoundingClientRect());
         let rect = this.getBoundingClientRect();
 
-        let remainingHeight = rect.height / 3 + rect.top;
-        console.log("rectheight / 3: " + rect.height / 3, "recttop: " + rect.top);
+        let remainingHeight = rect.height / 3 - rect.bottom;
+        console.log("rectheight / 3: " + rect.height / 3, " - rectbottom: " + rect.bottom);
         console.log(remainingHeight);
 
 
