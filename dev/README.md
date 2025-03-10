@@ -286,7 +286,7 @@ details[open] ~ .klicken {
         </li>
       </ul>
       </summary>
-      Seit mein Vater – ein Professor für <strong>Computerspiele</strong> – mich bereits mit <strong>drei Jahren</strong> vorsichtig an dieses Medium herangeführt hat, interessierte ich mich nicht nur für das <strong>Spielen</strong>, sondern ebenso für die <strong>Entwicklung</strong> von Games. Ich zeichnete zusätzliche Level für Super Mario oder entwarf neue Spiele &mdash; meine <strong>ersten Schritte</strong> im <strong>Game-Design</strong>. Später verbrachte ich viel Zeit damit, die Redstone-Elemente in Minecraft zu kombinieren, um <strong>logische Schaltungen</strong>, <strong>Rechensysteme</strong>, <strong>Binärzähler</strong> und <strong>Segmentanzeigen</strong> zu konstruieren. Auch die <strong>Modifikation</strong> des Spiels durch <strong>eigene Resourcepacks</strong> bereitete mir große Freude.
+      Seit mein Vater – ein Professori für <strong>Computerspiele</strong> – mich bereits mit <strong>drei Jahren</strong> vorsichtig an dieses Medium herangeführt hat, interessierte ich mich nicht nur für das <strong>Spielen</strong>, sondern ebenso für die <strong>Entwicklung</strong> von Games. Ich zeichnete zusätzliche Level für Super Mario oder entwarf neue Spiele &mdash; meine <strong>ersten Schritte</strong> im <strong>Game-Design</strong>. Später verbrachte ich viel Zeit damit, die Redstone-Elemente in Minecraft zu kombinieren, um <strong>logische Schaltungen</strong>, <strong>Rechensysteme</strong>, <strong>Binärzähler</strong> und <strong>Segmentanzeigen</strong> zu konstruieren. Auch die <strong>Modifikation</strong> des Spiels durch <strong>eigene Resourcepacks</strong> bereitete mir große Freude.
     </details>
     <strong class="klicken">mehr</strong>
   </div>
@@ -340,7 +340,7 @@ details[open] ~ .klicken {
             </li>
           </ul>
           </summary>
-          Ich erkannte durch die Programmierung die <strong>Relevanz der Mathematik</strong> in verschiedenen Bereichen und begann mit experimenteller Programmierung für verschiedene Fächer am <strong>technischen Gymnasium</strong>, wo auch meine erste formale Ausbildung in Informatik begann. Mit <strong>15 Jahren</strong> entwickelte ich eine regelrechte Begeisterung für die Möglichkeiten der <strong>Vektorrechnung</strong> und <strong>fraktalen Geometrie</strong>. Zusammen mit einem Lehrer und einem Mitschüler, mit dem ich einen <strong>Übersetzer</strong> für eine ausgedachte <strong>Geheimsprache</strong> programmierte, gründete ich eine <strong>Informatik-AG</strong>. In dieser wagten wir uns an die Programmierung <strong>neuronaler Netzwerke</strong>, um mit <strong>künstlicher Intelligenz</strong> zu experimentieren, besonders in der <strong>Echtzeit-Bildverarbeitung</strong> eines Live-Kamerabildes.
+          Ich erkannte durch die Programmierung die <strong>Relevanz der Mathematik</strong> in verschiedenen Bereichen und begann mit experimenteller Programmierung für verschiedene Fächer am <strong>technischen Gymnasium</strong>, wo auch meine erste formale Ausbildung in Informatik begann. Mit <strong>15 Jahren</strong> entwickelte ich eine regelrechte Begeisterung für die Möglichkeiten der <strong>Vektorrechnung</strong> und <strong>fraktalen Geometrie</strong>. Zusammen mit einem Lehreri und einem Mitschüleri, mit dem ich einen <strong>Übersetzer</strong> für eine ausgedachte <strong>Geheimsprache</strong> programmierte, gründete ich eine <strong>Informatik-AG</strong>. In dieser wagten wir uns an die Programmierung <strong>neuronaler Netzwerke</strong>, um mit <strong>künstlicher Intelligenz</strong> zu experimentieren, besonders in der <strong>Echtzeit-Bildverarbeitung</strong> eines Live-Kamerabildes.
       </details>
       <strong class="klicken">mehr</strong>
   </div>
@@ -371,7 +371,7 @@ details[open] ~ .klicken {
           <summary>Alter: <strong>18–20</strong><br>
           <ul>
             <li>
-              Angestellt als <strong>Tutor</strong> für Programmierung
+              Angestellt als <strong>Tutori</strong> für Programmierung
             </li>
             <li>
               <strong>360°</strong>-Point-and-Click &amp; Eisladen-<strong>Browsergame</strong>
@@ -386,7 +386,7 @@ details[open] ~ .klicken {
           </summary>
           Ab Oktober 2019 studierte ich sieben Semester lang <strong>Medieninformatik</strong> an der Hochschule Furtwangen. Nach dem ersten Semester erhielt ich von meinen Professoren für Mathematik und Informatik Anfragen, als <strong>Tutor</strong> für Programmierung tätig zu werden.<br>
           Ich beendete das zweite Semester mit einer <a href="dischoverhfu"><strong>360°-Panorama-Verkörperung</strong></a> der Schnitzeljagd an der Hochschule Furtwangen sowie einer <a href="#eisladen"><strong>Eisladen-Website</strong></a> mit Server, realisiert als Browsergame.</p>
-          Mein Praktikum im dritten Semester absolvierte ich bei <a href="https://www.weltenbauer-se.com/de"><strong>weltenbauer. Software Entwicklung GmbH</strong></a>, wo ich im Developer-Team am <strong>Bau-Simulator</strong> mitarbeitete. Das Unternehmen behielt mich anschließend zwei weitere Jahre als Werkstudent.<br>
+          Mein Praktikum im dritten Semester absolvierte ich bei <a href="https://www.weltenbauer-se.com/de"><strong>weltenbauer. Software Entwicklung GmbH</strong></a>, wo ich im Development-Team am <strong>Bau-Simulator</strong> mitarbeitete. Das Unternehmen behielt mich anschließend zwei weitere Jahre als Werkstudenti.<br>
           Im vierten und fünften Semester, dem <strong>Projektstudium</strong>, entwickelte ich mit einem sechsköpfigen Team das psychologische <a href="morbus-animi"><strong>Horrorspiel Morbus Animi</strong></a>. Im sechsten Semester folgten weitere Spiele wie <a href="the-last-hope"><strong>The Last Hope</strong></a>, ein <strong>Roguelike</strong>, oder <a href="realtime-beerphong"><strong>BeerPhong</strong></a>, eine browserbasierte <strong>AR</strong>-Version des bekannten Partyspiels.
       </details>
       <strong class="klicken">mehr</strong>
@@ -470,22 +470,23 @@ details[open] ~ .klicken {
 <div id="motivation-end-container">
     <div class="motivation-item" id="abschluss">
         <i class="fa-solid fa-graduation-cap fa-bounce"></i>
-        <p>Mit <strong>21 Jahren</strong> schloss ich das <strong>Studium</strong> mit meiner <a href="#neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen"><strong>Bachelor-Thesis</strong> "Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen"</a> ab. In einem Editor werden <strong>Knochen-Gelenk-Konstruktionen</strong> erstellt, die durch <strong>Mutationen</strong> über Generationen hinweg <strong>Laufmuster</strong> von Grund auf lernen.</p>
+        <p>Mit <strong>21 Jahren</strong> schloss ich das <strong>Studium</strong> mit meiner <a href="#neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen"><strong>Bachelor-Thesis</strong> "Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen"</a> ab. In einem Editor werden <strong>Knochen–Gelenk–Konstruktionen</strong> erstellt, die durch <strong>Mutationen</strong> über Generationen hinweg <strong>Laufmuster</strong> von Grund auf lernen.</p>
     </div>
     <div class="motivation-item" id="wunsch">
         <i class="fa-solid fa-flag-checkered fa-shake"></i>
-        <p>Gerne programmiere ich <strong>Spiele ohne Gewaltdarstellungen</strong> und biete dem Spieler eine eher <strong>friedliche</strong> und <strong>meditative Erfahrung</strong>. Bei Mehrspielermodi sollten die Spieler <strong>konstruktiv</strong> und <strong>kooperativ</strong> zusammenarbeiten.<br>  
-        Optimalerweise verzichtet das Spiel auf Gegner und vermittelt <strong>intuitive Einsichten</strong> über tiefgreifende Themen und <strong>Philosophien</strong>. <strong>Puzzle-Games</strong>, <strong>Aufbau-Strategiespiele</strong> sowie <strong>Cozy-</strong> oder <strong>Educational-Games</strong>, <strong>Simulatoren</strong> oder <strong>Musik-, Sound- und Rhythm-Games</strong> kommen besonders infrage.</p>
+        <p>Gerne programmiere ich <strong>Spiele ohne Gewaltdarstellungen</strong> und biete dem Spieleri eine eher <strong>friedliche</strong> und <strong>meditative Erfahrung</strong>. Bei Mehrspielermodi sollten alle <strong>konstruktiv</strong> und <strong>kooperativ</strong> zusammenarbeiten.<br>  
+        Optimalerweise verzichtet das Spiel auf Gegner und vermittelt <strong>intuitive Einsichten</strong> über tiefgreifende Themen und <strong>Philosophien</strong>. <strong>Puzzle-Games</strong>, <strong>Aufbau-Strategiespiele</strong> sowie <strong>Cozy–</strong> oder <strong>Educational-Games</strong>, <strong>Simulatoren</strong> oder <strong>Musik–, Sound– und Rhythm-Games</strong> kommen besonders infrage.</p>
     </div>
     <div class="motivation-item" id="jobs">
         <i class="fa-solid fa-screwdriver-wrench fa-spin"></i>
-        <p><strong>Programmieren</strong> stellt meine <strong>Haupttätigkeit</strong> dar. Grundlegende <strong>3D-Modelling-</strong> und <strong>Design-Kenntnisse</strong> sind vorhanden, jedoch nicht als Haupttätigkeit bevorzugt. Daneben bin ich <strong>musikalisch begabt</strong> und spiele viele Instrumente – digital wie akustisch. Daher wirke ich gerne in der <strong>Soundgestaltung</strong> und <strong>Soundtechnik</strong> des Spiels mit.</p>
+        <p><strong>Programmieren</strong> stellt meine <strong>Haupttätigkeit</strong> dar. Grundlegende <strong>3D-Modelling–</strong> und <strong>Design-Kenntnisse</strong> sind vorhanden, jedoch nicht als Haupttätigkeit bevorzugt. Daneben bin ich <strong>musikalisch begabt</strong> und spiele viele Instrumente – digital wie akustisch. Daher wirke ich gerne in der <strong>Soundgestaltung</strong> und <strong>Soundtechnik</strong> des Spiels mit.</p>
     </div>
     <div class="motivation-item" id="warum">
         <i class="fa-solid fa-circle-check fa-beat"></i>
         <p>Auf dieser Seite sammle ich einige meiner <strong>Arbeiten</strong>, um einen <strong>Beleg</strong> für meinen <strong>Enthusiasmus</strong> und meine <strong>Lernfähigkeit</strong> zu liefern und Interesse für ein Angebot als <strong>Spieleprogrammiereri</strong> zu wecken.</p>
     </div>
 </div>
+
 
 <hr/>  
 <hr/>
