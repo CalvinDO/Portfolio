@@ -192,12 +192,13 @@ h1{
 }
 
 .navbar.sticky .menu li a {
-    color: #F8F9FA;
+  color: #F8F9FA;
+  background: #212529;
 }
 
 .menu li a:hover {
   text-decoration: none;
-  background: #343A40;
+  background: #212529;
   color: #E9ECEF;
 }
 
