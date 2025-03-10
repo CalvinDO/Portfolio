@@ -41,6 +41,8 @@ namespace Portfolio {
 
         setupProjectFlexItems();
 
+        setupFlexItemsPreview();
+
         setupVideoOverlayHover();
     }
 
@@ -153,6 +155,8 @@ namespace Portfolio {
 
     function expandProjectFlexItem(item: HTMLElement): void {
 
+        console.log("expand");
+
         if (item.classList.contains('expanded')) {
             dexpandProjectFlexItem(item);
             return;
@@ -183,6 +187,8 @@ namespace Portfolio {
 
 
     function dexpandProjectFlexItem(item: HTMLElement): void {
+
+        console.log("dexpand");
 
         item.classList.toggle('expanded', false);
 
@@ -518,5 +524,18 @@ function turnPage() {
         top: (<HTMLElement>document.querySelector("#main_content")).offsetTop, // Hier scrollen wir die Seite zu der Position des nächsten Abschnitts
         behavior: 'smooth', // Sanftes Scrollen
     });
+}
+
+function setupFlexItemsPreview() {
+
+    for (let container of document.querySelectorAll(".flex-container")) {
+
+        container.childNodes.forEach((value: HTMLElement, index: number) => {
+
+            if (index > 2) {
+                value.classList.toggle("excess");
+            }
+        });
+    }
 }
 

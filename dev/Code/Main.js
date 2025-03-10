@@ -32,6 +32,7 @@ var Portfolio;
         //removeForkme();
         setupDetailsFlexItems();
         setupProjectFlexItems();
+        setupFlexItemsPreview();
         setupVideoOverlayHover();
     }
     function onHoverDoc(_event) {
@@ -112,6 +113,7 @@ var Portfolio;
         });
     }
     function expandProjectFlexItem(item) {
+        console.log("expand");
         if (item.classList.contains('expanded')) {
             dexpandProjectFlexItem(item);
             return;
@@ -133,6 +135,7 @@ var Portfolio;
         headingToggle.insertAdjacentElement('afterbegin', arrow);
     }
     function dexpandProjectFlexItem(item) {
+        console.log("dexpand");
         item.classList.toggle('expanded', false);
         overlay.style.opacity = "0";
         let secondToggleDiv = item.querySelector(".second-toggle-content");
@@ -363,5 +366,14 @@ function turnPage() {
         top: document.querySelector("#main_content").offsetTop,
         behavior: 'smooth', // Sanftes Scrollen
     });
+}
+function setupFlexItemsPreview() {
+    for (let container of document.querySelectorAll(".flex-container")) {
+        container.childNodes.forEach((value, index) => {
+            if (index > 2) {
+                value.classList.toggle("excess");
+            }
+        });
+    }
 }
 //# sourceMappingURL=Main.js.map
