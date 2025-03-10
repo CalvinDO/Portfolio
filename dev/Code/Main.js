@@ -263,8 +263,8 @@ var Portfolio;
         const placeholder = document.querySelector("#navbar-placeholder");
         const topPlaceholder = document.querySelector("#navbar-top-placeholder");
         const lowerObserver = new IntersectionObserver(([entry]) => {
-            console.log(entry.boundingClientRect);
             if (entry.boundingClientRect.top <= 0) {
+                console.log("add sticky");
                 navbar.classList.add("sticky");
             }
             else {
@@ -276,6 +276,7 @@ var Portfolio;
         const upperObserver = new IntersectionObserver(([entry]) => {
             console.log(entry.boundingClientRect);
             if (entry.boundingClientRect.top >= 0) {
+                console.log("remove sticky");
                 navbar.classList.remove("sticky");
             }
         }, {

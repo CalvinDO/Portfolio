@@ -386,8 +386,8 @@ namespace Portfolio {
 
         const lowerObserver = new IntersectionObserver(
             ([entry]) => {
-                console.log(entry.boundingClientRect);
                 if (entry.boundingClientRect.top <= 0) {
+                    console.log("add sticky");
                     navbar.classList.add("sticky");
                 } else {
                     navbar.classList.remove("sticky");
@@ -402,6 +402,7 @@ namespace Portfolio {
             ([entry]) => {
                 console.log(entry.boundingClientRect);
                 if (entry.boundingClientRect.top >= 0) {
+                    console.log("remove sticky");
                     navbar.classList.remove("sticky");
                 }
             },
