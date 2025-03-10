@@ -94,7 +94,7 @@ h1{
 
 .section-header {
   margin-top: 145px;
-  margin-bottom: 50px;
+  margin-bottom: 62px;
   text-align: center;
   font-size: 200px;
   color: #212529;
