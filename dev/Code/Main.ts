@@ -393,7 +393,6 @@ namespace Portfolio {
                 }
             },
             {
-                rootMargin: "-20px 0px 0px 0px", // Beobachtung beginnt etwas früher
                 threshold: 0
             }
         );

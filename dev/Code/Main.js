@@ -271,7 +271,6 @@ var Portfolio;
                 navbar.classList.remove("sticky");
             }
         }, {
-            rootMargin: "-20px 0px 0px 0px",
             threshold: 0
         });
         observer.observe(placeholder);
