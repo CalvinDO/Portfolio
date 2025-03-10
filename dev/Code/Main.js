@@ -369,11 +369,21 @@ function turnPage() {
 }
 function setupFlexItemsPreview() {
     for (let container of document.querySelectorAll(".flex-container")) {
-        container.childNodes.forEach((value, index) => {
-            if (index > 2) {
-                value.classList.toggle("excess", true);
-            }
-        });
+        for (let item of container.childNodes) {
+            console.log(item);
+            /*
+            container.childNodes.forEach((value: HTMLElement, index: number) => {
+
+                if (index > 2) {
+                    value.classList.toggle("excess", true);
+                }
+            });
+            */
+        }
+        console.log("children:");
+        for (let item of container.children) {
+            console.log(item);
+        }
     }
 }
 //# sourceMappingURL=Main.js.map

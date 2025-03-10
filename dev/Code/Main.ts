@@ -530,12 +530,20 @@ function setupFlexItemsPreview() {
 
     for (let container of document.querySelectorAll(".flex-container")) {
 
-        container.childNodes.forEach((value: HTMLElement, index: number) => {
+        for (let item of container.childNodes) {
+            console.log(item);
+            /*
+            container.childNodes.forEach((value: HTMLElement, index: number) => {
 
-            if (index > 2) {
-                value.classList.toggle("excess", true);
-            }
-        });
+                if (index > 2) {
+                    value.classList.toggle("excess", true);
+                }
+            });
+            */
+        }
+        console.log("children:");
+        for (let item of container.children) {
+            console.log(item);
+        }
     }
 }
-
