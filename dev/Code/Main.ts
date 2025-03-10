@@ -41,7 +41,7 @@ namespace Portfolio {
 
         setupProjectFlexItems();
 
-        setupVideoHover();
+        setupVideoOverlayHover();
     }
 
     function onHoverDoc(_event: Event) {
@@ -88,11 +88,14 @@ namespace Portfolio {
         }
     */
 
-    function setupVideoHover() {
+    function setupVideoOverlayHover() {
 
-        const videos: NodeListOf<Element> = document.querySelectorAll('video');
+        const items: NodeListOf<Element> = document.querySelectorAll('.flex-item');
 
-        videos.forEach((video: HTMLVideoElement) => {
+        items.forEach((item: HTMLElement) => {
+
+            let video: HTMLVideoElement = item.querySelector("video");
+
             video.addEventListener('mouseenter', () => {
                 video.play();
             });
@@ -101,7 +104,22 @@ namespace Portfolio {
                 video.pause();
                 //video.currentTime = 0;
             });
+
+            let arrow: HTMLElement = item.querySelector(".toggle-arrow");
+
+            if (!arrow.classList.contains("is-x")) {
+                arrow.addEventListener('mouseenter', () => {
+                    video.play();
+                });
+
+                arrow.addEventListener('mouseleave', () => {
+                    video.pause();
+                    //video.currentTime = 0;
+                });
+            }
         });
+
+
     }
 
     function setupDetailsFlexItems() {
@@ -155,7 +173,9 @@ namespace Portfolio {
         let headingToggle: HTMLDivElement = item.querySelector(".heading-toggle-content");
 
         headingToggle.insertAdjacentElement('beforeend', secondToggleDiv);
-        headingToggle.insertAdjacentElement('afterbegin', item.querySelector(".toggle-arrow"));
+        let arrow = item.querySelector(".toggle-arrow");
+        arrow.classList.toggle("is-x", true);
+        headingToggle.insertAdjacentElement('afterbegin', arrow);
     }
 
 
@@ -168,7 +188,9 @@ namespace Portfolio {
         let secondToggleDiv: HTMLElement = item.querySelector(".second-toggle-content");
         item.querySelector(".third-toggle-content").insertAdjacentElement('beforebegin', secondToggleDiv);
 
-        item.querySelector(".klicken-indicator").insertAdjacentElement('afterend', item.querySelector(".toggle-arrow"));
+        let arrow = item.querySelector(".toggle-arrow");
+        item.querySelector(".klicken-indicator").insertAdjacentElement('afterend', arrow);
+        arrow.classList.toggle("is-x", true);
     }
 
 

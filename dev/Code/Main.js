@@ -32,7 +32,7 @@ var Portfolio;
         //removeForkme();
         setupDetailsFlexItems();
         setupProjectFlexItems();
-        setupVideoHover();
+        setupVideoOverlayHover();
     }
     function onHoverDoc(_event) {
         preventEventAndDexpand(_event, true);
@@ -66,9 +66,10 @@ var Portfolio;
             overlay.addEventListener('click', () => console.log("click overlay"));
         }
     */
-    function setupVideoHover() {
-        const videos = document.querySelectorAll('video');
-        videos.forEach((video) => {
+    function setupVideoOverlayHover() {
+        const items = document.querySelectorAll('.flex-item');
+        items.forEach((item) => {
+            let video = item.querySelector("video");
             video.addEventListener('mouseenter', () => {
                 video.play();
             });
@@ -76,6 +77,16 @@ var Portfolio;
                 video.pause();
                 //video.currentTime = 0;
             });
+            let arrow = item.querySelector(".toggle-arrow");
+            if (!arrow.classList.contains("is-x")) {
+                arrow.addEventListener('mouseenter', () => {
+                    video.play();
+                });
+                arrow.addEventListener('mouseleave', () => {
+                    video.pause();
+                    //video.currentTime = 0;
+                });
+            }
         });
     }
     function setupDetailsFlexItems() {
@@ -115,14 +126,18 @@ var Portfolio;
         let secondToggleDiv = item.querySelector(".second-toggle-content");
         let headingToggle = item.querySelector(".heading-toggle-content");
         headingToggle.insertAdjacentElement('beforeend', secondToggleDiv);
-        headingToggle.insertAdjacentElement('afterbegin', item.querySelector(".toggle-arrow"));
+        let arrow = item.querySelector(".toggle-arrow");
+        arrow.classList.toggle("is-x", true);
+        headingToggle.insertAdjacentElement('afterbegin', arrow);
     }
     function dexpandProjectFlexItem(item) {
         item.classList.toggle('expanded', false);
         overlay.style.opacity = "0";
         let secondToggleDiv = item.querySelector(".second-toggle-content");
         item.querySelector(".third-toggle-content").insertAdjacentElement('beforebegin', secondToggleDiv);
-        item.querySelector(".klicken-indicator").insertAdjacentElement('afterend', item.querySelector(".toggle-arrow"));
+        let arrow = item.querySelector(".toggle-arrow");
+        item.querySelector(".klicken-indicator").insertAdjacentElement('afterend', arrow);
+        arrow.classList.toggle("is-x", true);
     }
     function handleDetailsFlexItem(detailsFlexItem) {
         let detail = detailsFlexItem.querySelector("details");
