@@ -1095,7 +1095,7 @@ span.toggle-arrow-span {
 </div>
 
 <div class="section-header">
-<i class="fas fa-laptop-code"></i>
+<i class="fa-solid fa-code"></i>
 <h1 id="header-coding">Coding</h1>
 </div>
 
