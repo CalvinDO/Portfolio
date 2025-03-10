@@ -141,18 +141,18 @@ h1{
   padding: 0;
 }
 
-.menu{
+.menu {
   display: flex;
   justify-content: center;
   list-style: none;
   padding: 0;
   margin: 0;
   flex-wrap: wrap;
-  background: #f8f9fa;
+  /* background: #f8f9fa; */
 }
 
 .menu li {
-  margin: 0 0.6180339%;
+  /*margin: 0 0.6180339%;*/
 }
 
 .menu li a {
@@ -160,14 +160,12 @@ h1{
   color: #343A40;
   padding: 10px 15px;
   display: block;
-  background-color: hsl(0deg 0% 20% / 6%);
+  background-color: hsl(210deg 5.56% 92.94%);
   transition: background 0.3s;
-  border-radius: 5px;
 }
 
 .menu li a:hover {
   background: #343A40;
-  border-radius: 5px;
   color: #E9ECEF;
 }
 
