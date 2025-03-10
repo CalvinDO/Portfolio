@@ -198,8 +198,8 @@ namespace Portfolio {
         item.querySelector(".third-toggle-content").insertAdjacentElement('beforebegin', secondToggleDiv);
 
         let arrow = item.querySelector(".toggle-arrow");
-        item.querySelector(".klicken-indicator").insertAdjacentElement('afterend', arrow);
-        arrow.classList.toggle("is-x", true);
+        item.querySelector(".vignette").insertAdjacentElement('beforebegin', arrow);
+        arrow.classList.toggle("is-x", false);
     }
 
 
