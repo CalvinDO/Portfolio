@@ -432,6 +432,8 @@ details[open] ~ .klicken {
   margin-top: 0px;
   padding-top: 25px;
   padding-bottom: 25px;
+
+  font-size: large;
 }
 
 
@@ -499,7 +501,7 @@ details[open] ~ .klicken {
     </div>
     <div class="motivation-item" id="wunsch">
         <i class="fa-solid fa-flag-checkered fa-shake"></i>
-        <p>Gerne programmiere ich <strong>Spiele ohne Gewaltdarstellungen</strong> und biete dem Spieleri eine eher <strong>friedliche</strong> und <strong>meditative Erfahrung</strong>. Bei Mehrspielermodi sollten alle <strong>konstruktiv</strong> und <strong>kooperativ</strong> zusammenarbeiten.<br>  
+        <p>Gerne programmiere ich <strong>Spiele ohne Gewaltdarstellungen</strong> und biete Spieleris eine eher <strong>friedliche</strong> und <strong>meditative Erfahrung</strong>. Bei Mehrspielermodi sollten alle <strong>konstruktiv</strong> und <strong>kooperativ</strong> zusammenarbeiten.<br>  
         Optimalerweise verzichtet das Spiel auf Gegner und vermittelt <strong>intuitive Einsichten</strong> über tiefgreifende Themen und <strong>Philosophien</strong>. <strong>Puzzle-Games</strong>, <strong>Aufbau-Strategiespiele</strong> sowie <strong>Cozy–</strong> oder <strong>Educational-Games</strong>, <strong>Simulatoren</strong> oder <strong>Musik–, Sound– und Rhythm-Games</strong> kommen besonders infrage.</p>
     </div>
     <div class="motivation-item" id="jobs">
