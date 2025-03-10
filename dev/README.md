@@ -642,6 +642,10 @@ h1#header-coding ~ h1 {
   transform: translateY(-164.8%);
 }
 
+.expanded .third-toggle-content {
+  padding-bottom: 22px;
+}
+
 
 
 /* .flex-container:hover .flex-item:not(.expanded) {
@@ -943,7 +947,8 @@ span.toggle-arrow-span {
 
 .task-list {
     list-style: none;
-    padding-left: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .task-list ul {
@@ -968,6 +973,11 @@ span.toggle-arrow-span {
 .task-list li span {
     display: block;
     margin-left: 10px;
+}
+
+.controls {
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 </style>
