@@ -487,7 +487,6 @@ details[open] ~ .klicken {
     </div>
 </div>
 
-
 <hr/>  
 <hr/>
 
@@ -1015,8 +1014,8 @@ span.toggle-arrow-span {
     <div class="toggle-content second-toggle-content">
       <h4>
       <a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a><br>
-      25-köpfiges Team + Outsourceris<br>
-      Herbst 2020 - Frühling 2023<br>
+      25‑köpfiges Team + Outsourceris<br>
+      Herbst 2020 – Frühling 2023<br>
       Publisher: <a href = "https://www.astragon.de/">Astragon</a>
       </h4>
     </div>
@@ -1027,7 +1026,7 @@ span.toggle-arrow-span {
       <br>
       <div class = "skills">
       <strong>Unity (C#), FMOD (Audio-Integration)</strong><br>
-      <em>Strukturiert - Interdisziplinär - Kooperativ</em><br>
+      <em>Strukturiert – Interdisziplinär – Kooperativ</em><br>
       <strong>SCRUM, Atlassian Confluence, Plastic SCM, Mantis</strong><br>
       </div>
       <br>
@@ -1085,13 +1084,13 @@ span.toggle-arrow-span {
         <i class="fas fa-file-pdf"></i> Bachelor Thesis
       </a><br>
       Solo-Projekt<br>
-      Herbst 2022 - Frühling 2023<br>
+      Herbst 2022 – Frühling 2023<br>
       AI-Playground
     </h4>
     <br>
     <div class="skills">
         <strong>Unity (C#), <a href = "https://en.wikipedia.org/wiki/Neuroevolution_of_augmenting_topologies">NEAT</a></strong><br>
-        <em>Forschungsorientiert - Innovativ - Selbstständig</em><br>
+        <em>Forschungsorientiert – Innovativ – Selbstständig</em><br>
         <strong>Git, Roadmap, Kanban-Board</strong><br>
     </div>
     <br>
@@ -1156,13 +1155,13 @@ span.toggle-arrow-span {
     <h4>
         Gamedesign-Workhop<br>
         6-köpfiges Team<br>
-        Sommer - Herbst 2022<br>
+        Sommer – Herbst 2022<br>
         Rouge-like, IndieNight-Auszeichnung
     </h4>
     <br>
     <div class="skills">
         <strong>Unity (C#), NavMesh</strong><br>
-        <em>Kreativ - Kooperativ - Interdisziplinär</em><br>
+        <em>Kreativ – Kooperativ – Interdisziplinär</em><br>
         <strong>Gameplay-Design, Wireframes, User Tests, Klassendiagramme, Sounddesign, Kanban-Board, SCRUM, Git</strong><br>
     </div>
     <br>
@@ -1306,13 +1305,13 @@ span.toggle-arrow-span {
     <h4>
         Projektstudium<br>
         6-köpfiges Team<br>
-        Frühling 2021 - Frühling 2022<br>
+        Frühling 2021 – Frühling 2022<br>
         Horrorspiel, IndieNight-Erstplatziert
     </h4>
     <br>
     <div class="skills">
         <strong>Unity (C#), NavMesh</strong><br>
-        <em>Teamorientiert - Strukturiert - Erzählstark</em><br>
+        <em>Teamorientiert – Strukturiert – Erzählstark</em><br>
         <strong>Style Guides, Dokumentation, Roadmap, Kanban, SCRUM, Git</strong>
     </div>
     <br>
@@ -1387,7 +1386,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
         <strong>Python, Keras (TensorFlow), Jupyter Notebook, Language Model, Recurrent Neural Networks (RNN), GRU</strong><br>
-        <em>Forschungsorientiert - Innovativ - Selbstständig</em><br>
+        <em>Forschungsorientiert – Innovativ – Selbstständig</em><br>
         <strong>Google Colab, Git</strong><br>
     </div>
     <br>
@@ -1457,7 +1456,7 @@ span.toggle-arrow-span {
   <br>
   <div class="skills">
     <strong>Python, Blender API, Vektorrechnung</strong><br>
-    <em>Kollaborativ – Systematisch - Flexibel</em><br>
+    <em>Kollaborativ – Systematisch – Flexibel</em><br>
     <strong>Roadmap, Kanban, Git</strong>
   </div>
   <br>
@@ -1522,7 +1521,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
         <strong>TypeScript, FUDGE, Blender</strong><br>
-        <em>Innovativ - Inkubierend - Kreativ</em><br>
+        <em>Innovativ – Inkubierend – Kreativ</em><br>
         <strong>Designdokument, Git</strong>
     </div>
     <br>
@@ -1589,7 +1588,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
       <strong>HTML, CSS, JSON, TypeScript, LocalStorage, Node.js, MongoDB</strong><br>
-      <em>Interaktiv - Kreativ - Progressiv</em><br>
+      <em>Interaktiv – Kreativ – Progressiv</em><br>
       <strong>Wireframe, Git</strong>
     </div>
     <br>
@@ -1675,7 +1674,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
       <strong>TypeScript, HTML, CSS, LocalStorage, OpenStreetMap, JSON, WebXR, AdobeXD</strong><br>
-      <em>Interdisziplinär - Innovativ - Wegweisend</em><br>
+      <em>Interdisziplinär – Innovativ – Wegweisend</em><br>
       <strong>Wireframes, Sitemaps, User Journey, Visuelle Guides, Git</strong>
     </div>
     <br>
@@ -1745,7 +1744,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
       <strong>TypeScript, CanvasRenderingContext2D, Rekursion, Animation</strong><br>
-      <em>Erweiternd - Aufbauend - Mathematisch</em><br>
+      <em>Erweiternd – Aufbauend – Mathematisch</em><br>
       <strong>Git</strong>
     </div>
     <br>
@@ -1805,7 +1804,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
       <strong>TypeScript, CanvasRenderingContext2D, Rekursion</strong><br>
-      <em>Experimentell - Mathematisch - Selbstständig</em><br>
+      <em>Experimentell – Mathematisch – Selbstständig</em><br>
       <strong>Git</strong>
     </div>
     <br>
@@ -1879,7 +1878,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
       <strong>TypeScript, CanvasRenderingContext2D, Kreisberechnung, Algebra</strong><br>
-      <em>Präsentativ - Mathematisch - Selbstständig</em><br>
+      <em>Präsentativ – Mathematisch – Selbstständig</em><br>
       <strong>Git</strong>
     </div>
     <br>
@@ -1963,7 +1962,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
       <strong>TypeScript, CanvasRenderingContext2D, Vektoraddition</strong><br>
-      <em>Experimentell - Physikalisch - Selbstständig</em><br>
+      <em>Experimentell – Physikalisch – Selbstständig</em><br>
       <strong>Git</strong>
     </div>
     <br>
@@ -2046,7 +2045,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
         <strong>Blender, Boolean-Modifier, Bézierkurven, Mantaflow-Fluidsimulation, Shader-Nodes</strong><br>
-        <em>Expressionistisch - Physikbasiert - Selbstständig</em><br>
+        <em>Expressionistisch – Physikbasiert – Selbstständig</em><br>
         <!-- <strong></strong> -->
     </div>
     <br>
@@ -2113,7 +2112,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
         <strong>Blender, Object-Mode-Only, Keyframe-Animation, Volumetrische Shader</strong><br>
-        <em>Expressionistisch - Engagiert - Selbstständig</em><br>
+        <em>Expressionistisch – Engagiert – Selbstständig</em><br>
         <!-- <strong></strong> -->
     </div>
     <br>
@@ -2179,7 +2178,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
       <strong>Blender, Hard-Surface-Modeling, Prozedurale Texturen</strong><br>
-      <em>Dekorativ - Lernfreudig - Selbstständig</em><br>
+      <em>Dekorativ – Lernfreudig – Selbstständig</em><br>
       <!-- <strong></strong> -->
     </div>
     <br>
@@ -2237,7 +2236,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
       <strong>Blender, Boolean-Modifier, Bézierkurven, Prozedurale Texturen</strong><br>
-      <em>Erweiternd - Kreativ - Selbstständig</em><br>
+      <em>Erweiternd – Kreativ – Selbstständig</em><br>
       <!-- <strong></strong> -->
     </div>
     <br>
@@ -2299,7 +2298,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
         <strong>Blender, Softbody Physics, Animation</strong><br>
-        <em>Experimentell - Lernfreudig - Selbstständig</em><br>
+        <em>Experimentell – Lernfreudig – Selbstständig</em><br>
         <!-- <strong></strong> -->
     </div>
     <br>
@@ -2349,7 +2348,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
         <strong>Blender, Catmull-Clark-Subdivision, Displacement-Nodes, Noise-Texturen</strong><br>
-        <em>Ästhetisch - Engagiert - Selbstständig</em><br>
+        <em>Ästhetisch – Engagiert – Selbstständig</em><br>
     </div>
     <br>
     <ul class="task-list">
@@ -2406,7 +2405,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
       <strong>Blender, Hard-Surface-Modeling</strong><br>
-      <em>Kollaborativ - Autodidaktisch - Individualisiert</em><br>
+      <em>Kollaborativ – Autodidaktisch – Individualisiert</em><br>
       <!-- <strong></strong> -->
     </div>
     <br>
@@ -2468,7 +2467,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
         <strong>Blender, Sculpting, Texture Painting, Partikelsystem</strong><br>
-        <em>Lernbegeistert - Strukturiert - Detailiert</em><br>
+        <em>Lernbegeistert – Strukturiert – Detailiert</em><br>
     </div>
     <br>
     <ul class="task-list">
@@ -2537,7 +2536,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
         <strong>Blender, Mantaflow, Rauch- & Feuersimulation, Shader-Nodes</strong><br>
-        <em>Neugierig - Experimentell - Zielstrebig</em><br>
+        <em>Neugierig – Experimentell – Zielstrebig</em><br>
     </div>
     <br>
     <ul class="task-list">
@@ -2615,7 +2614,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
       <strong>Overwolf, AVS Editor</strong><br>
-      <em>Präsentativ - Didaktisch - Selbstständig</em><br>
+      <em>Präsentativ – Didaktisch – Selbstständig</em><br>
       <!-- <strong>Git</strong> -->
     </div>
     <br>
@@ -2704,7 +2703,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
       <strong>FL Studio, Delay & Echo, Arpeggio, GGJ</strong><br>
-      <em>Expressionistisch - Intensiv - Kooperativ</em><br>
+      <em>Schnell – Intensiv – Kooperativ</em><br>
       <!-- <strong>Git</strong> -->
     </div>
     <br>
@@ -2775,7 +2774,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
       <strong>Dubstep, Speech-Synthese, Audio-Watermark</strong><br>
-      <em>Experimentell - Mathematisch - Explorativ</em><br>
+      <em>Experimentell – Mathematisch – Explorativ</em><br>
       <!-- <strong>Git</strong> -->
     </div>
     <br>
@@ -2832,7 +2831,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
       <strong>Trap, Granulizer, EQ-ing, Kompressor</strong><br>
-      <em>Gemeinschaftlich - Lustig - Detailverliebt</em><br>
+      <em>Gemeinschaftlich – Lustig – Detailverliebt</em><br>
       <!-- <strong>Git</strong> -->
     </div>
     <br>
@@ -2897,7 +2896,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
       <strong>Kugelschreiber</strong><br>
-      <em>Satirisch - Herausfordernd - Minimalistisch</em><br>
+      <em>Satirisch – Herausfordernd – Minimalistisch</em><br>
       <!-- <strong>Git</strong> -->
     </div>
     <br>
@@ -2940,7 +2939,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
       <strong>Kugelschreiber</strong><br>
-      <em>Realistisch - Herausfordernd - Provokant</em><br>
+      <em>Realistisch – Herausfordernd – Provokant</em><br>
       <!-- <strong>Git</strong> -->
     </div>
     <br>
@@ -2996,7 +2995,7 @@ span.toggle-arrow-span {
     <br>
     <div class="skills">
       <strong>Fine-Liner</strong><br>
-      <em>Kreativ - Herausfordernd - Expressionistisch</em><br>
+      <em>Kreativ – Herausfordernd – Expressionistisch</em><br>
       <!-- <strong>Git</strong> -->
     </div>
     <br>
