@@ -246,8 +246,15 @@ var Portfolio;
         header.addEventListener('click', handleClickHeader);
     }
     function handleClickHeader(ev) {
-        console.log(ev.clientY);
-        console.log(this.clientHeight, this.getClientRects(), this.getBoundingClientRect());
+        console.log(ev.clientY, ev.screenY);
+        console.log(this.getBoundingClientRect());
+        let rect = this.getBoundingClientRect();
+        let remainingHeight = rect.height / 3 + rect.top;
+        console.log("rectheight / 3: " + rect.height / 3, "recttop: " + rect.top);
+        console.log(remainingHeight);
+        if (ev.clientY < remainingHeight) {
+            turnPage();
+        }
     }
     function setupHeaderQuote() {
         let quote = document.createElement("blockquote");
@@ -326,4 +333,7 @@ var Portfolio;
     });
     window.addEventListener('load', init);
 })(Portfolio || (Portfolio = {}));
+function turnPage() {
+    throw new Error("Function not implemented.");
+}
 //# sourceMappingURL=Main.js.map
