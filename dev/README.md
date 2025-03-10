@@ -540,20 +540,20 @@ details[open] ~ .klicken {
 
 <div id="motivation-end-container">
     <div class="motivation-item" id="abschluss">
-        <i class="fa-solid fa-graduation-cap fa-bounce"></i>
+        <i class="fa-solid fa-graduation-cap"></i>
         <p>Mit <strong>21 Jahren</strong> schloss ich das <strong>Studium</strong> mit meiner <a href="#neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen"><strong>Bachelor-Thesis</strong> "Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen"</a> ab. In einem Editor werden <strong>Knochen–Gelenk–Konstruktionen</strong> erstellt, die durch <strong>Mutationen</strong> über Generationen hinweg <strong>Laufmuster</strong> von Grund auf lernen.</p>
     </div>
     <div class="motivation-item" id="wunsch">
-        <i class="fa-solid fa-flag-checkered fa-shake"></i>
+        <i class="fa-solid fa-flag-checkered"></i>
         <p>Gerne programmiere ich <strong>Spiele ohne Gewaltdarstellungen</strong> und biete Spieleris eine eher <strong>friedliche</strong> und <strong>meditative Erfahrung</strong>. Bei Mehrspielermodi sollten alle <strong>konstruktiv</strong> und <strong>kooperativ</strong> zusammenarbeiten.<br>  
         Optimalerweise verzichtet das Spiel auf Gegner und vermittelt <strong>intuitive Einsichten</strong> über tiefgreifende Themen und <strong>Philosophien</strong>. <strong>Puzzle-Games</strong>, <strong>Aufbau-Strategiespiele</strong> sowie <strong>Cozy–</strong> oder <strong>Educational-Games</strong>, <strong>Simulatoren</strong> oder <strong>Musik–, Sound– und Rhythm-Games</strong> kommen besonders infrage.</p>
     </div>
     <div class="motivation-item" id="jobs">
-        <i class="fa-solid fa-screwdriver-wrench fa-spin"></i>
+        <i class="fa-solid fa-screwdriver-wrench"></i>
         <p><strong>Programmieren</strong> stellt meine <strong>Haupttätigkeit</strong> dar. Grundlegende <strong>3D-Modelling–</strong> und <strong>Design-Kenntnisse</strong> sind vorhanden, jedoch nicht als Haupttätigkeit bevorzugt. Daneben bin ich <strong>musikalisch begabt</strong> und spiele viele Instrumente – digital wie akustisch. Daher wirke ich gerne in der <strong>Soundgestaltung</strong> und <strong>Soundtechnik</strong> des Spiels mit.</p>
     </div>
     <div class="motivation-item" id="warum">
-        <i class="fa-solid fa-circle-check fa-beat"></i>
+        <i class="fa-solid fa-circle-check"></i>
         <p>Auf dieser Seite sammle ich einige meiner <strong>Arbeiten</strong>, um einen <strong>Beleg</strong> für meinen <strong>Enthusiasmus</strong> und meine <strong>Lernfähigkeit</strong> zu liefern und Interesse für ein Angebot als <strong>Spieleprogrammiereri</strong> zu wecken.</p>
     </div>
 </div>
