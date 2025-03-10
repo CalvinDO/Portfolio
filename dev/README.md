@@ -1027,6 +1027,10 @@ span.toggle-arrow-span {
 
 <style>
 
+#main_content .quote-container::before {
+  color: #00a8dd !important;
+}
+
 #main_content .quote-container {
   min-height: 0;
   margin-top: 62px;
