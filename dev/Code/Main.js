@@ -70,22 +70,24 @@ var Portfolio;
         const items = document.querySelectorAll('.flex-item');
         items.forEach((item) => {
             let video = item.querySelector("video");
-            video.addEventListener('mouseenter', () => {
-                video.play();
-            });
-            video.addEventListener('mouseleave', () => {
-                video.pause();
-                //video.currentTime = 0;
-            });
-            let arrow = item.querySelector(".toggle-arrow");
-            if (!arrow.classList.contains("is-x")) {
-                arrow.addEventListener('mouseenter', () => {
+            if (video) {
+                video.addEventListener('mouseenter', () => {
                     video.play();
                 });
-                arrow.addEventListener('mouseleave', () => {
+                video.addEventListener('mouseleave', () => {
                     video.pause();
                     //video.currentTime = 0;
                 });
+                let arrow = item.querySelector(".toggle-arrow");
+                if (!arrow.classList.contains("is-x")) {
+                    arrow.addEventListener('mouseenter', () => {
+                        video.play();
+                    });
+                    arrow.addEventListener('mouseleave', () => {
+                        video.pause();
+                        //video.currentTime = 0;
+                    });
+                }
             }
         });
     }

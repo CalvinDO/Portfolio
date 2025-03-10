@@ -96,26 +96,29 @@ namespace Portfolio {
 
             let video: HTMLVideoElement = item.querySelector("video");
 
-            video.addEventListener('mouseenter', () => {
-                video.play();
-            });
+            if (video) {
 
-            video.addEventListener('mouseleave', () => {
-                video.pause();
-                //video.currentTime = 0;
-            });
-
-            let arrow: HTMLElement = item.querySelector(".toggle-arrow");
-
-            if (!arrow.classList.contains("is-x")) {
-                arrow.addEventListener('mouseenter', () => {
+                video.addEventListener('mouseenter', () => {
                     video.play();
                 });
 
-                arrow.addEventListener('mouseleave', () => {
+                video.addEventListener('mouseleave', () => {
                     video.pause();
                     //video.currentTime = 0;
                 });
+
+                let arrow: HTMLElement = item.querySelector(".toggle-arrow");
+
+                if (!arrow.classList.contains("is-x")) {
+                    arrow.addEventListener('mouseenter', () => {
+                        video.play();
+                    });
+
+                    arrow.addEventListener('mouseleave', () => {
+                        video.pause();
+                        //video.currentTime = 0;
+                    });
+                }
             }
         });
 
