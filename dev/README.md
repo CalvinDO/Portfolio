@@ -232,14 +232,13 @@ h1{
 <style>
 
 .details-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 55px;
+  column-gap: 25px;
+  padding: 0 25px;
 }
 
-details:hover, details:open {
-    background-color: hsl(210 16% 94% / 1) !important;
-}
 
 details[open] summary::after {
     content: "";
@@ -253,24 +252,30 @@ details[open] summary::after {
     padding-left: 20px;
     padding-right: 20px;
     text-align: justify;
-    border: 3px solid #ccc;
+    border: 3px solid transparent;
     border-radius: 5px;
-    background-color: hsl(210 16% 96% / 1);
+    background-color:hsl(210, 0%, 88.60%);
     height: 100%;
     color: #212529;
 }
 
+details:hover, details:open {
+  background-color: #DEE2E6;
+}
 
 
 @media (max-width: 1225px) {
   .details-container {
     grid-template-columns: 1fr 1fr; /* Zwei Spalte auf kleineren Bildschirmen */
+    column-gap: 12.5px;
+    padding: 0 12.5px;
   }
 }
 
 @media (max-width: 700px) {
   .details-container {
     grid-template-columns: 1fr; /* Eine Spalte auf Smartphone Bildschirmen */
+    padding: 0;
   }
 }
 
@@ -289,7 +294,7 @@ strong{
 }
 
 summary ul {
-  list-style: none;
+  text-align: left;
   font-size: large;
 }
 
@@ -300,14 +305,15 @@ summary ul::before {
 
 /* details klicken*/
 .klicken {
-
-  display: block; /* Damit es zentrierbar ist */
-  text-align: center;
+  display: block;
+  justify-self: center;
   position: relative;
-  bottom: 50px;
-
+  bottom: 45px;
   pointer-events: none;
   user-select: none;
+  width: 20px;
+  border: 0;
+  box-shadow: none;
 }
 
 details[open] ~ .klicken {
@@ -338,7 +344,7 @@ details[open] ~ .klicken {
       </summary>
       Seit mein Vater – ein Professori für <strong>Computerspiele</strong> – mich bereits mit <strong>drei Jahren</strong> vorsichtig an dieses Medium herangeführt hat, interessierte ich mich nicht nur für das <strong>Spielen</strong>, sondern ebenso für die <strong>Entwicklung</strong> von Games. Ich zeichnete zusätzliche Level für Super Mario oder entwarf neue Spiele &mdash; meine <strong>ersten Schritte</strong> im <strong>Game-Design</strong>. Später verbrachte ich viel Zeit damit, die Redstone-Elemente in Minecraft zu kombinieren, um <strong>logische Schaltungen</strong>, <strong>Rechensysteme</strong>, <strong>Binärzähler</strong> und <strong>Segmentanzeigen</strong> zu konstruieren. Auch die <strong>Modifikation</strong> des Spiels durch <strong>eigene Resourcepacks</strong> bereitete mir große Freude.
     </details>
-    <strong class="klicken">mehr</strong>
+    <img src="startpageArrow.png" class="klicken">
   </div>
   
   <div class="details-flex-item">
@@ -352,7 +358,7 @@ details[open] ~ .klicken {
           </summary>
           Im Alter von <strong>9 Jahren</strong> begann mein Interesse am <strong>3D-Modelling</strong>, was sich durch Architektur-Projekte in Google SketchUp und diverses Modeling in Sculpt3D widerspiegelte. Mit <strong>10 Jahren</strong> folgten kleinere <strong>Text-Games</strong>, die ich mit Batch – meiner ersten Programmiersprache – und dem Windows Editor umsetzte. Mit einem Leuchtturm von Fischer-Technik machte ich zu dieser Zeit erste Erfahrungen mit <strong>Ablaufsteuerungen</strong>. Am Nintendo DS erstellte ich <strong>Zeichentrickanimationen</strong> über das Touchpad und kleine <strong>Stop-Motion-Trickfilme</strong>. Mit <strong>11 Jahren</strong> begann ich mit der <strong>grafischen Bildbearbeitung</strong> mit Paint, mit <strong>13 Jahren</strong> intensivierte ich dieses Hobby mit <strong>GIMP</strong>.
       </details>
-      <strong class="klicken">mehr</strong>
+      <img src="startpageArrow.png" class="klicken">
   </div>
 
   <div class="details-flex-item">
@@ -369,7 +375,7 @@ details[open] ~ .klicken {
           </summary>
           Etwa zur selben Zeit befreite mich <strong>TypeScript</strong> aus der Unflexibilität von Batch, was mir die <strong>dynamische Generierung zweidimensionaler Bilder</strong> auf einem Canvas ermöglichte. Im Rahmen des mehrmals besuchten Kinder-Uni-Feriencamps in Furtwangen machte ich erste Erfahrungen mit <strong>Processing</strong> und programmierte <strong>Pong</strong>. Jedes Erlernen eines neuen programmiertechnischen Werkzeugs verstärkte die Erkenntnis der Möglichkeit, meine Ideen in einem digitalen Medium festzuhalten und sie – interaktiv oder passiv – später wieder abrufbar zu machen, was meine <strong>Motivation</strong> immer weiter steigen ließ.
       </details>
-      <strong class="klicken">mehr</strong>
+      <img src="startpageArrow.png" class="klicken">
   </div>
 
   <div class="details-flex-item">
@@ -392,7 +398,7 @@ details[open] ~ .klicken {
           </summary>
           Ich erkannte durch die Programmierung die <strong>Relevanz der Mathematik</strong> in verschiedenen Bereichen und begann mit experimenteller Programmierung für verschiedene Fächer am <strong>technischen Gymnasium</strong>, wo auch meine erste formale Ausbildung in Informatik begann. Mit <strong>15 Jahren</strong> entwickelte ich eine regelrechte Begeisterung für die Möglichkeiten der <strong>Vektorrechnung</strong> und <strong>fraktalen Geometrie</strong>. Zusammen mit einem Lehreri und einem Mitschüleri, mit dem ich einen <strong>Übersetzer</strong> für eine ausgedachte <strong>Geheimsprache</strong> programmierte, gründete ich eine <strong>Informatik-AG</strong>. In dieser wagten wir uns an die Programmierung <strong>neuronaler Netzwerke</strong>, um mit <strong>künstlicher Intelligenz</strong> zu experimentieren, besonders in der <strong>Echtzeit-Bildverarbeitung</strong> eines Live-Kamerabildes.
       </details>
-      <strong class="klicken">mehr</strong>
+      <img src="startpageArrow.png" class="klicken">
   </div>
 
   <div class="details-flex-item">
@@ -413,7 +419,7 @@ details[open] ~ .klicken {
           Im Rahmen der freiwilligen Aufgaben des Programmiermoduls des ersten Semesters meines abgeschlossenen Studiums entwickelte ich mit Java einen ewigen Kalender, <strong>Game of Life</strong> und <strong>Tic-Tac-Toe</strong>. Letzteres baute ich mit einem zufällig spielenden Computergegner aus, der zum Trainieren einer künstlichen Intelligenz genutzt werden soll.<br>
           Beim <strong>Global Game Jam 2020</strong> im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines <a href="#fuwashima">VR-Spiels</a> mit. Meine Hauptaufgaben lagen im <strong>Gamedesign</strong> und <a href="#fuwashima"><strong>Sound</strong></a>. Dieses Event weckte bei mir erneut das Interesse an der <strong>3D-Programmierung</strong> und dem <strong>3D-Modeling</strong>, weshalb ich mich intensiver mit <strong>Unity</strong> und <strong>Blender</strong> beschäftigte.
       </details>
-      <strong class="klicken">mehr</strong>
+      <img src="startpageArrow.png" class="klicken">
   </div>
 
   <div class="details-flex-item">
@@ -439,7 +445,7 @@ details[open] ~ .klicken {
           Mein Praktikum im dritten Semester absolvierte ich bei <a href="https://www.weltenbauer-se.com/de"><strong>weltenbauer. Software Entwicklung GmbH</strong></a>, wo ich im Development-Team am <strong>Bau-Simulator</strong> mitarbeitete. Das Unternehmen behielt mich anschließend zwei weitere Jahre als Werkstudenti.<br>
           Im vierten und fünften Semester, dem <strong>Projektstudium</strong>, entwickelte ich mit einem sechsköpfigen Team das psychologische <a href="morbus-animi"><strong>Horrorspiel Morbus Animi</strong></a>. Im sechsten Semester folgten weitere Spiele wie <a href="the-last-hope"><strong>The Last Hope</strong></a>, ein <strong>Roguelike</strong>, oder <a href="realtime-beerphong"><strong>BeerPhong</strong></a>, eine browserbasierte <strong>AR</strong>-Version des bekannten Partyspiels.
       </details>
-      <strong class="klicken">mehr</strong>
+      <img src="startpageArrow.png" class="klicken">
   </div>
 </div>
 <br>
