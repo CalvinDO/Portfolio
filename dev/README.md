@@ -3061,6 +3061,7 @@ span.toggle-arrow-span {
 .documents-wrapper {
   display: flex;
   justify-content: center; /* Zentriert den gesamten Inhalt horizontal */
+  margin-bottom: 20px;
 }
 .documents-list {
   list-style-type: none;
@@ -3079,6 +3080,10 @@ span.toggle-arrow-span {
 #footer_wrap {
   position: relative;
   z-index: 0;
+}
+
+footer .section-header {
+  margin-top: 50px;
 }
 
 </style>
