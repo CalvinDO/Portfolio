@@ -3143,7 +3143,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 <style>
 
 .copyright, .copyright + p {
-  display: none !important;
+  /*display: none !important;*/
 }
 
 .documents-wrapper {

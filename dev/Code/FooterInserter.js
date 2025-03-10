@@ -11,8 +11,8 @@ var Portfolio;
         let documentsWrapper = document.querySelector(".documents-wrapper");
         let documentsHeading = document.querySelector("#dokumente");
         let documentsHeadingSection = documentsHeading.parentElement;
-        footer.appendChild(documentsHeadingSection);
-        footer.appendChild(documentsWrapper);
+        footer.insertAdjacentElement('afterbegin', documentsHeadingSection);
+        footer.insertAdjacentElement('afterbegin', documentsWrapper);
     }
     function handleInteraction(ev) {
         footer = document.querySelector("#footer_wrap footer");
