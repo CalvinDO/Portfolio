@@ -769,18 +769,16 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
   vertical-align: middle;
   text-align:center;
   white-space: nowrap;
-}
-
-:not(.hovered) .klicken-indicator {
   opacity: 0;
 }
 
-.hovered .klicken-indicator {
-    opacity: 0.8618;
-    font-size: 2em;
-    font-weight: bold;
-    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6180339);
-    transition: all 0.2s ease-in-out;
+.expanded.hovered .klicken-indicator {
+  opacity: 1;
+
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6180339);
+  transition: all 0.2s ease-in-out;
 }
 
 #klicken-beerphong-special-indicator{
@@ -974,6 +972,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     justify-content: center;
     cursor: pointer;
     z-index: 12;
+    transform: translateX(-50%);
 }
 
 .expanded .toggle-arrow {
