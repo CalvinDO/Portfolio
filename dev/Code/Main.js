@@ -275,7 +275,7 @@ var Portfolio;
         });
         const upperObserver = new IntersectionObserver(([entry]) => {
             console.log(entry.boundingClientRect);
-            if (entry.boundingClientRect.top >= 3) {
+            if (entry.boundingClientRect.top >= 2) {
                 navbar.classList.remove("sticky");
             }
         }, {
