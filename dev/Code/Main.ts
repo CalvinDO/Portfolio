@@ -533,7 +533,7 @@ function setupFlexItemsPreview() {
         container.childNodes.forEach((value: HTMLElement, index: number) => {
 
             if (index > 2) {
-                value.classList.toggle("excess");
+                value.classList.toggle("excess", true);
             }
         });
     }

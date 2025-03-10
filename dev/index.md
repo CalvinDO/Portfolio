@@ -593,6 +593,10 @@ h1#header-coding ~ h1 {
   border-width: medium;
 }
 
+.excess {
+  display: none;
+}
+
 /* !FONT TRYOUT!*/
 .flex-item *:not(i) {
     /* font-family: "Poppins", sans-serif !important; */

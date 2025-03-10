@@ -371,7 +371,7 @@ function setupFlexItemsPreview() {
     for (let container of document.querySelectorAll(".flex-container")) {
         container.childNodes.forEach((value, index) => {
             if (index > 2) {
-                value.classList.toggle("excess");
+                value.classList.toggle("excess", true);
             }
         });
     }
