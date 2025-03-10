@@ -443,7 +443,7 @@ details[open] ~ .klicken {
           </summary>
           Ab Oktober 2019 studierte ich sieben Semester lang <strong>Medieninformatik</strong> an der Hochschule Furtwangen. Nach dem ersten Semester erhielt ich von meinen Professoren für Mathematik und Informatik Anfragen, als <strong>Tutor</strong> für Programmierung tätig zu werden.<br>
           Ich beendete das zweite Semester mit einer <a href="dischoverhfu"><strong>360°-Panorama-Verkörperung</strong></a> der Schnitzeljagd an der Hochschule Furtwangen sowie einer <a href="#eisladen"><strong>Eisladen-Website</strong></a> mit Server, realisiert als Browsergame.
-          Mein Praktikum im dritten Semester absolvierte ich bei <a href="https://www.weltenbauer-se.com/de"><strong>weltenbauer. Software Entwicklung GmbH</strong></a>, wo ich im Development-Team am <strong>Bau-Simulator</strong> mitarbeitete. Das Unternehmen behielt mich anschließend zwei weitere Jahre als Werkstudenti.<br>
+          Mein Praktikum im dritten Semester absolvierte ich bei <a href="https://www.weltenbauer-se.com/de" target = "_blank"><strong>weltenbauer. Software Entwicklung GmbH</strong></a>, wo ich im Development-Team am <strong>Bau-Simulator</strong> mitarbeitete. Das Unternehmen behielt mich anschließend zwei weitere Jahre als Werkstudenti.<br>
           Im vierten und fünften Semester, dem <strong>Projektstudium</strong>, entwickelte ich mit einem sechsköpfigen Team das psychologische <a href="morbus-animi"><strong>Horrorspiel Morbus Animi</strong></a>. Im sechsten Semester folgten weitere Spiele wie <a href="the-last-hope"><strong>The Last Hope</strong></a>, ein <strong>Roguelike</strong>, oder <a href="realtime-beerphong"><strong>BeerPhong</strong></a>, eine browserbasierte <strong>AR</strong>-Version des bekannten Partyspiels.
       </details>
       <img src="startpageArrow.png" class="klicken">
@@ -461,7 +461,7 @@ details[open] ~ .klicken {
 
 </style>
 
-<p id="ausfuehrlicher-lebenslauf"><a href="Lebenslauf.md">Ausführlicher Lebenslauf</a></p>
+<p id="ausfuehrlicher-lebenslauf"><a href="Lebenslauf.md" target = "_blank">Ausführlicher Lebenslauf</a></p>
 
 <style>
 
@@ -1096,7 +1096,7 @@ span.toggle-arrow-span {
   <span class="quote-text">Er arbeitete sehr <strong>effizient</strong>, <strong>routiniert</strong> und <strong>zuverlässig</strong>.<br>
   </span>
   <footer>
-    <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf">René Nold, Geschäftsführer, weltenbauer Software Entwicklung GmbH</a></cite>
+    <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf" target = "_blank">René Nold, Geschäftsführer, weltenbauer Software Entwicklung GmbH</a></cite>
   </footer>
   </blockquote>
 </div>
@@ -1112,7 +1112,7 @@ span.toggle-arrow-span {
       <h2 id ="bau-simulator">Construction Simulator®</h2>
     </div>
     <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-      <a href="https://store.steampowered.com/app/1273400/BauSimulator">
+      <a href="https://store.steampowered.com/app/1273400/BauSimulator" target = "_blank">
       <video width="100%" poster = "ConstructionSimulatorThumbnail.jpg" controls loop>
           <source src="ConstructionSimulator.mp4" alt="ConstructionSimulator" type="video/mp4"/>
           Ihr Browser unterstützt den Video-Tag nicht
@@ -1138,10 +1138,10 @@ span.toggle-arrow-span {
     </div>
     <div class="toggle-content second-toggle-content">
       <h4>
-      <a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a><br>
+      <a href="https://www.weltenbauer-se.com/de" target = "_blank">weltenbauer. Software Entwicklung GmbH</a><br>
       25‑köpfiges Team + Outsourceris<br>
       Herbst 2020 – Frühling 2023<br>
-      Publisher: <a href = "https://www.astragon.de/">Astragon</a>
+      Publisher: <a href = "https://www.astragon.de/" target = "_blank">Astragon</a>
       </h4>
     </div>
     <div class = "toggle-content third-toggle-content">
@@ -1182,7 +1182,7 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen">Neuroevolution</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-        <a href="https://simmer.io/@DerCalvino/neuroevolutionbenutzerdefiniertermehrbeinigerkreaturen">
+        <a href="https://simmer.io/@DerCalvino/neuroevolutionbenutzerdefiniertermehrbeinigerkreaturen" target = "_blank">
             <video width="100%" poster ="NeuroevolutionThumbnail.jpg" controls loop>
                 <source src="BachelorThesis.mp4" alt="BachelorThesis" type="video/mp4"/>
                 Ihr Browser unterstützt den Video-Tag nicht
@@ -1205,7 +1205,7 @@ span.toggle-arrow-span {
         </div>
     </div>
     <h4>
-      <a href="NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">
+      <a href="NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf"  target = "_blank">
         <i class="fas fa-file-pdf"></i> Bachelor Thesis
       </a><br>
       Solo-Projekt<br>
@@ -1214,7 +1214,7 @@ span.toggle-arrow-span {
     </h4>
     <br>
     <div class="skills">
-        <strong>Unity (C#), <a href = "https://en.wikipedia.org/wiki/Neuroevolution_of_augmenting_topologies">NEAT</a></strong><br>
+        <strong>Unity (C#), <a href = "https://en.wikipedia.org/wiki/Neuroevolution_of_augmenting_topologies"  target = "_blank">NEAT</a></strong><br>
         <em>Forschungsorientiert – Innovativ – Selbstständig</em><br>
         <strong>Git, Roadmap, Kanban-Board</strong><br>
     </div>
@@ -1245,7 +1245,7 @@ span.toggle-arrow-span {
     Bauen Abschließen: erneuter Linksklick<br>
     Bauen Abbrechen: rechte Maustaste<br>
     Rotations-Einstellungs-Modus: "R"<br>
-    Weitere Anleitung: <a href ="NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">Thesis</a>
+    Weitere Anleitung: <a href ="NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf"  target = "_blank">Thesis</a>
     </div>
     <!-- Dieser AI-Playground ist die Methode meiner Bachelor-Thesis des siebten Semesters. Es ermöglicht Benutzern, eine Kreatur aus Gliedern und Gelenken nach Belieben in einem Editor zu bauen, sowie Rotationslimits der Glieder anzupassen. Im zweiten Schritt startet eine Simulation, bei dem der Kreatur ein vollständig verbundenes künstliches Neuronales Netzwerk zugeteilt wird. Daten über aktuelle Pose und Position werden als Sensoren oder Inputs in das Netz eingespeist, Outputs sind die angestrebten Winkel der Gelenke. Über Generationen hinweg werden die Kreatur und ihre Mutationen je nach räumlichem Fortschritt belohnt, selektiert und die besten Gene in die nächste Generation weitergetragen, wo sie wieder mutieren. Somit lernen die Bauten zu laufen.  
     Zugrunde liegen Evolutionäre Algorithmen, die Probleme ähnlich biologischer Organismen lösen, da genetische Operatoren wie Selektion, Rekombination und Mutation die Evolution durch Reproduktion der stärksten Gene steuern. In meiner Bachelor-Arbeit nutzte ich die topologische Flexibilität von NEAT (Neuroevolution of Augumenting Topologies) um die Kreaturen durch evolvierende Genome zu bewegen. Untersucht habe ich, welche Berechnungsmethode und Parameter-Konfiguration des NEAT-Algorithmus' zu der weitesten Laufdistanz verschiedener Kreaturen führt, ohne Laufmuster vorzugeben. Ich wollte eine Anwendung entwickeln, die ohne weitere Eingriffe des Nutzers zu Laufmustern seiner erstellten Kreaturen führt. Durch diese Arbeit entwickelte ich die Fähigkeit, künstliche Intelligenzen auf Basis von evolutionär veränderten Neuronalen Netzen zu programmieren und trainieren, sowie einen InGame-Editor in Unity zu programmieren.  
@@ -1255,7 +1255,7 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="the-last-hope">The Last Hope</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-        <a href="https://simmer.io/@DerCalvino/thelasthope">
+        <a href="https://simmer.io/@DerCalvino/thelasthope"  target = "_blank">
             <video width="100%" poster = "TheLastHopeThumbnail.png" controls loop>
                 <source src="TheLastHope.mp4" alt="TheLastHope" type="video/mp4"/>
                 Ihr Browser unterstützt den Video-Tag nicht
@@ -1327,7 +1327,7 @@ span.toggle-arrow-span {
     <h2 id="realtime-beerpong">Realtime-BeerPhong</h2>
     </div>
     <div id = "multi-display" class = "visual-presentation-container" style="display: flex; justify-content: space-between;">
-      <a href="https://calvindo.github.io/Realtime-BeerPhong/aFrame.html">
+      <a href="https://calvindo.github.io/Realtime-BeerPhong/aFrame.html"  target = "_blank">
         <div style="position: relative;">
           <img src="BeerPhong.jpeg" style="width: 100%; height: auto; max-width: 100%;">
           <div class = "klicken-indicator">Klicken<br>zum<br>Spielen</div>
@@ -1404,7 +1404,7 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="morbus-animi">Morbus Animi</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-        <a href="https://simmer.io/@DerCalvino/morbus-animi-final">
+        <a href="https://simmer.io/@DerCalvino/morbus-animi-final"  target = "_blank">
             <video width="100%" poster = "MorbusAnimiThumbnail.jpg" controls loop>
                 <source src="Morbus-Animi.mp4" alt="Morbus-Animi" type="video/mp4"/>
                 Ihr Browser unterstützt den Video-Tag nicht
@@ -1482,7 +1482,7 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="gesetzestext-generator">Gesetzestext-Generator</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-      <a href="https://colab.research.google.com/github/CalvinDO/AITextGenerator/blob/main/LawLanguageRNN/textGenerator.ipynb">
+      <a href="https://colab.research.google.com/github/CalvinDO/AITextGenerator/blob/main/LawLanguageRNN/textGenerator.ipynb"  target = "_blank">
         <img src="TextGenerator.png" width="100%">
       </a>
       <div class = "klicken-indicator">Klicken zum Anwenden</div>
@@ -1616,7 +1616,7 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="discombobulated-space-station">Discombobulated Space Station</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-        <a href="https://calvindo.github.io/PRIMA/">
+        <a href="https://calvindo.github.io/PRIMA/"  target = "_blank">
             <video width="100%" poster = "DiscombobulatedSpaceStationThumbnail.jpg" controls loop>
                 <source src="DiscombobulatedSpaceStation.mp4" alt="DiscombobulatedSpaceStation" type="video/mp4"/>
                 Ihr Browser unterstützt den Video-Tag nicht
@@ -1681,7 +1681,7 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="eisladen">Eisladen</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-      <a href="https://calvindo.github.io/GiS/Eisladen/">
+      <a href="https://calvindo.github.io/GiS/Eisladen/"  target = "_blank">
         <video width="100%" poster = "EisladenThumbnail.png" controls loop>
             <source src="Eisladen.mp4" alt="Eisladen" type="video/mp4"/>
             Ihr Browser unterstützt den Video-Tag nicht
@@ -1766,7 +1766,7 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="dischoverhfu">DiscHoverHFU</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-      <a href="https://calvindo.github.io/DiscHoverHFU/Code/DiscHoverHFU.html">
+      <a href="https://calvindo.github.io/DiscHoverHFU/Code/DiscHoverHFU.html"  target = "_blank">
         <video width="100%" poster = "DiscHoverHFUThumbnail.png" controls loop>
             <source src="DiscHoverHFU.mp4" alt="DiscHoverHFU" type="video/mp4"/>
             Ihr Browser unterstützt den Video-Tag nicht
@@ -1840,7 +1840,7 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="fraktal-animation">Fraktal Animation</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-      <a href="Code/FraktalAnimation/start.html">
+      <a href="Code/FraktalAnimation/start.html" target = "_blank">
         <video width="100%" controls loop poster="FraktalAnimation.PNG">
                 <source src="FraktalAnimation.mp4" alt="Morbus-Animi" type="video/mp4"/>
                 Ihr Browser unterstützt den Video-Tag nicht
@@ -1903,7 +1903,7 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="fraktal">Fraktal</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-      <a href="Code/Fraktal/start.html">
+      <a href="Code/Fraktal/start.html" target = "_blank">
         <img src="Fraktal.PNG" alt="Fraktal" width="100%">
       </a>
       <div class = "klicken-indicator">Klicken zum Anwenden</div>
@@ -1973,7 +1973,7 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="cardioids">Cardioids</h2>
     <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-      <a href="Code/Cardioids/start.html">
+      <a href="Code/Cardioids/start.html" target = "_blank">
       <video width="100%" controls loop poster="cardioids.PNG">
                 <source src="Cardioids.mp4" alt="Cardioids" type="video/mp4"/>
                 Ihr Browser unterstützt den Video-Tag nicht
@@ -2058,7 +2058,7 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="rubber-band">Rubber Band</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-      <a href="Code/RubberBand/start.html">
+      <a href="Code/RubberBand/start.html" target = "_blank">
       <video width="100%" controls loop poster="Rubber.PNG">
                 <source src="RubberBand.mp4" alt="RubberBand" type="video/mp4"/>
                 Ihr Browser unterstützt den Video-Tag nicht
@@ -2583,7 +2583,7 @@ span.toggle-arrow-span {
         Private Fortbildung<br>
         Solo-Projekt<br>
         Herbst 2019<br>
-        <a href="https://www.youtube.com/watch?v=TPrnSACiTJ4">Tutorial</a>-Ergebnis
+        <a href="https://www.youtube.com/watch?v=TPrnSACiTJ4" target = "_blank">Tutorial</a>-Ergebnis
     </h4>
     <br>
     <div class="skills">
@@ -3168,17 +3168,17 @@ footer .section-header {
 </div>
 <div class ="documents-wrapper">
   <ul class = "documents-list">
-    <li><a href="Lebenslauf.md">Daten und Lebenslauf</a></li>
-    <li><a href="EmpfehlungsschreibenVonProfChristophMueller.pdf">Empfehlungsschreiben Prof. Christoph Müller</a></li>
-    <li><a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf">Empfehlungsschreiben Prof. Dr. Thomas Schneider</a></li>
-    <li><a href="BachelorOfScience.pdf">Bachelorzeugnis</a></li>
-    <li><a href="StudiumNotenspiegel.pdf">Bachelor Notenspiegel</a></li>
-    <li><a href="Exmatrikulationsbescheinigung.pdf">Exmatrikulationsbescheinigung</a></li>
-    <li><a href="PraktikumsbestätigungCalvinDellOro.pdf">Praktikumsbestätigung</a></li>
-    <li><a href="CCF18022020_0001.jpg">Abiturzeugnis</a></li>
-    <li><a href="CCF18022020_0003.jpg">Auszeichnung des Gymnasiums für kulturelles Engagement</a></li>
-    <li><a href="CCF18022020_0002.jpg">Hackathon-Urkunde</a></li>
-    <li><a href="https://jirkadelloro.github.io/Neutrum.pdf">Das geschlechtergerechte Neutrum nach Prof. Dell'Oro-Friedl</a></li>
+    <li><a href="Lebenslauf.md" target = "_blank">Daten und Lebenslauf</a></li>
+    <li><a href="EmpfehlungsschreibenVonProfChristophMueller.pdf" target = "_blank">Empfehlungsschreiben Prof. Christoph Müller</a></li>
+    <li><a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf" target = "_blank">Empfehlungsschreiben Prof. Dr. Thomas Schneider</a></li>
+    <li><a href="BachelorOfScience.pdf" target = "_blank">Bachelorzeugnis</a></li>
+    <li><a href="StudiumNotenspiegel.pdf" target = "_blank">Bachelor Notenspiegel</a></li>
+    <li><a href="Exmatrikulationsbescheinigung.pdf" target = "_blank">Exmatrikulationsbescheinigung</a></li>
+    <li><a href="PraktikumsbestätigungCalvinDellOro.pdf" target = "_blank">Praktikumsbestätigung</a></li>
+    <li><a href="CCF18022020_0001.jpg" target = "_blank">Abiturzeugnis</a></li>
+    <li><a href="CCF18022020_0003.jpg" target = "_blank">Auszeichnung des Gymnasiums für kulturelles Engagement</a></li>
+    <li><a href="CCF18022020_0002.jpg" target = "_blank">Hackathon-Urkunde</a></li>
+    <li><a href="https://jirkadelloro.github.io/Neutrum.pdf" target = "_blank">Das geschlechtergerechte Neutrum nach Prof. Dell'Oro-Friedl</a></li>
   </ul>
 </div>
 
