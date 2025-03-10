@@ -134,11 +134,11 @@ namespace Portfolio {
     function setupProjectFlexItems() {
         document.querySelectorAll('.flex-item').forEach(setupFlexItem);
 
-        /*
-                document.querySelectorAll('.toggle-content').forEach((toggleContent: HTMLDivElement) => {
-                    addClickExpand(toggleContent.parentElement, toggleContent);
-                });
-        */
+
+        document.querySelectorAll('.second-toggle-content').forEach((toggleContent: HTMLDivElement) => {
+            addClickExpand(toggleContent.parentElement, toggleContent);
+        });
+
         /*
         document.querySelectorAll('.toggle-arrow').forEach((toggleArrow: HTMLDivElement) => {
             console.log("add listener for toggle-arrow");
@@ -146,24 +146,26 @@ namespace Portfolio {
         });
         */
     }
-    /*
-        function addClickExpand(parent: HTMLElement, toggleTrigger: HTMLDivElement): void {
-            
-            toggleTrigger.addEventListener('click', () => {
-    
-    
-                expandProjectFlexItem(parent);
-            });
-        }
-    */
+
+    function addClickExpand(parent: HTMLElement, toggleTrigger: HTMLDivElement): void {
+
+        toggleTrigger.addEventListener('click', () => {
+            expandProjectFlexItem(parent);
+        });
+    }
+
     function expandProjectFlexItem(item: HTMLElement): void {
 
-        console.log("expand");
 
         if (item.classList.contains('expanded')) {
+
+            console.log("already expanded, ");
+
             dexpandProjectFlexItem(item);
             return;
         }
+
+        console.log("expand");
 
         document.querySelectorAll('.flex-item').forEach((otherItem: HTMLElement) => {
 
