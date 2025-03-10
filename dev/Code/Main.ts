@@ -365,12 +365,14 @@ namespace Portfolio {
         console.log(this.getBoundingClientRect());
         let rect = this.getBoundingClientRect();
 
-        let remainingHeight = rect.height / 3 - rect.bottom;
-        console.log("rectheight / 3: " + rect.height / 3, " - rectbottom: " + rect.bottom);
-        console.log(remainingHeight);
+        let clickToScrollArea = rect.bottom - rect.height / 3;
+
+        //console.log("rectheight / 3: " + rect.height / 3, " - rectbottom: " + rect.bottom);
+
+        console.log(clickToScrollArea);
 
 
-        if (ev.clientY < remainingHeight) {
+        if (ev.clientY > clickToScrollArea) {
             turnPage();
         }
     }
