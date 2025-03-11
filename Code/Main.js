@@ -1,7 +1,7 @@
 var Portfolio;
 (function (Portfolio) {
     let overlay = document.querySelector('#overlay');
-    setupHeaderQuote();
+    setupHeader();
     try {
         removeForkme();
         setupNavBar();
@@ -9,7 +9,20 @@ var Portfolio;
     catch (error) {
         console.warn(error);
     }
+    /*
+    try {
+        init();
+    } catch (error) {
+        console.warn("Init called too fast: " + error);
+    }
+    */
     function init() {
+        try {
+            setupNavBar();
+        }
+        catch (error) {
+            console.warn("try init setupnavbar, error:", error);
+        }
         overlay = document.querySelector('#overlay');
         document.addEventListener('click', onClickDoc, { capture: true });
         document.addEventListener('mouseover', onHoverDoc, { capture: true });
@@ -19,7 +32,8 @@ var Portfolio;
         //removeForkme();
         setupDetailsFlexItems();
         setupProjectFlexItems();
-        setupVideoHover();
+        setupFlexItemsPreview();
+        setupVideoOverlayHover();
     }
     function onHoverDoc(_event) {
         preventEventAndDexpand(_event, true);
@@ -53,16 +67,29 @@ var Portfolio;
             overlay.addEventListener('click', () => console.log("click overlay"));
         }
     */
-    function setupVideoHover() {
-        const videos = document.querySelectorAll('video');
-        videos.forEach((video) => {
-            video.addEventListener('mouseenter', () => {
-                video.play();
-            });
-            video.addEventListener('mouseleave', () => {
-                video.pause();
-                //video.currentTime = 0;
-            });
+    function setupVideoOverlayHover() {
+        const items = document.querySelectorAll('.flex-item');
+        items.forEach((item) => {
+            let video = item.querySelector("video");
+            if (video) {
+                video.addEventListener('mouseenter', () => {
+                    video.play();
+                });
+                video.addEventListener('mouseleave', () => {
+                    video.pause();
+                    //video.currentTime = 0;
+                });
+                let arrow = item.querySelector(".toggle-arrow");
+                if (!arrow.classList.contains("is-x")) {
+                    arrow.addEventListener('mouseenter', () => {
+                        video.play();
+                    });
+                    arrow.addEventListener('mouseleave', () => {
+                        video.pause();
+                        //video.currentTime = 0;
+                    });
+                }
+            }
         });
     }
     function setupDetailsFlexItems() {
@@ -70,8 +97,7 @@ var Portfolio;
     }
     function setupProjectFlexItems() {
         document.querySelectorAll('.flex-item').forEach(setupFlexItem);
-        document.querySelectorAll('.toggle-content').forEach((toggleContent) => {
-            console.log("add listener for toggle-content");
+        document.querySelectorAll('.second-toggle-content').forEach((toggleContent) => {
             addClickExpand(toggleContent.parentElement, toggleContent);
         });
         /*
@@ -82,16 +108,17 @@ var Portfolio;
         */
     }
     function addClickExpand(parent, toggleTrigger) {
-        console.log("parent or parent parent:", parent);
         toggleTrigger.addEventListener('click', () => {
             expandProjectFlexItem(parent);
         });
     }
     function expandProjectFlexItem(item) {
         if (item.classList.contains('expanded')) {
+            console.log("already expanded, ");
             dexpandProjectFlexItem(item);
             return;
         }
+        console.log("expand");
         document.querySelectorAll('.flex-item').forEach((otherItem) => {
             if (otherItem != item) {
                 if (otherItem.classList.contains('expanded')) {
@@ -104,12 +131,19 @@ var Portfolio;
         let secondToggleDiv = item.querySelector(".second-toggle-content");
         let headingToggle = item.querySelector(".heading-toggle-content");
         headingToggle.insertAdjacentElement('beforeend', secondToggleDiv);
+        let arrow = item.querySelector(".toggle-arrow");
+        arrow.classList.toggle("is-x", true);
+        headingToggle.insertAdjacentElement('afterbegin', arrow);
     }
     function dexpandProjectFlexItem(item) {
+        console.log("dexpand");
         item.classList.toggle('expanded', false);
         overlay.style.opacity = "0";
         let secondToggleDiv = item.querySelector(".second-toggle-content");
         item.querySelector(".third-toggle-content").insertAdjacentElement('beforebegin', secondToggleDiv);
+        let arrow = item.querySelector(".toggle-arrow");
+        item.querySelector(".vignette").insertAdjacentElement('beforebegin', arrow);
+        arrow.classList.toggle("is-x", false);
     }
     function handleDetailsFlexItem(detailsFlexItem) {
         let detail = detailsFlexItem.querySelector("details");
@@ -146,7 +180,6 @@ var Portfolio;
         //const container: HTMLDivElement = <HTMLDivElement>item.querySelector('.visual-presentation-container');
         let arrow = item.querySelector('.toggle-arrow');
         while (!arrow) {
-            console.log("try generate and find arrow");
             insertArrowIn(item);
             arrow = item.querySelector('.toggle-arrow');
         }
@@ -178,7 +211,7 @@ var Portfolio;
     function insertArrowIn(item) {
         let toggleArrowDiv = document.createElement("div");
         toggleArrowDiv.classList.add("toggle-arrow");
-        toggleArrowDiv.innerHTML = '<span class = "toggle-arrow-span">▼</span>';
+        toggleArrowDiv.innerHTML = '<span class = "toggle-arrow-span"><i class="fas fa-times"></i></span>';
         item.querySelector(".visual-presentation-container").insertAdjacentElement('beforeend', toggleArrowDiv);
     }
     function setupMouseLeave(item) {
@@ -188,15 +221,25 @@ var Portfolio;
         item.addEventListener('mouseenter', onMouseEnter.bind(item));
     }
     function onMouseLeave() {
+        if (document.documentElement.querySelector('.expanded') && !this.classList.contains(".expanded")) {
+            return;
+        }
         this.classList.remove('hovered');
     }
     function onMouseEnter() {
+        if (document.documentElement.querySelector('.expanded') && !this.classList.contains(".expanded")) {
+            return;
+        }
         this.classList.add('hovered');
     }
     function setupArrow(arrow, flexItem) {
         arrow.addEventListener('click', () => {
-            //flexItem.classList.toggle('expanded');
-            expandProjectFlexItem(flexItem);
+            if (arrow.classList.contains("is-x")) {
+                dexpandProjectFlexItem(flexItem);
+            }
+            else {
+                expandProjectFlexItem(flexItem);
+            }
         });
     }
     function generateContentIn(item) {
@@ -223,22 +266,41 @@ var Portfolio;
             thirdToggleContentDiv.appendChild(currentSibling);
         }
         (_c = visualPresentationContainer.parentNode) === null || _c === void 0 ? void 0 : _c.appendChild(thirdToggleContentDiv);
-        console.log("setup 3 toggle contents");
     }
     function removeForkme() {
         let banner = document.querySelector("header a#forkme_banner");
         banner.classList.add("to-remove");
         banner.remove();
     }
-    function setupHeaderQuote() {
+    function setupHeader() {
         let header = document.querySelector("header");
+        let quoteContainer = setupHeaderQuote();
+        setupHeaderArrow(header, quoteContainer);
+        header.addEventListener('click', handleClickHeader);
+    }
+    function handleClickHeader(ev) {
+        let rect = this.getBoundingClientRect();
+        let clickToScrollArea = rect.bottom - rect.height / 3;
+        //console.log("rectheight / 3: " + rect.height / 3, " - rectbottom: " + rect.bottom);
+        if (ev.clientY > clickToScrollArea) {
+            turnPage();
+        }
+    }
+    function setupHeaderQuote() {
         let quote = document.createElement("blockquote");
-        quote.innerHTML = '<span class="quote-text">[...] <strong>Calvin Dell’Oro</strong> zählt unter den etlichen hundert Studierenden,<br>die ich seit 2008 [...] unterrichtet habe,<br>zu den drei <strong>engagiertesten</strong> und <strong>erfolgreichsten</strong>.</span><footer><cite class="author">— Prof. Dr. rer. nat. Thomas Schneider</cite></footer>';
+        quote.innerHTML = '<span class="quote-text"><strong>Calvin Dell’Oro</strong> [zählt] unter den etlichen hundert Studierenden,<br>die ich seit 2008 [...] unterrichtet habe,<br>zu den drei <strong>engagiertesten</strong> und <strong>erfolgreichsten</strong>.</span><footer><cite class="author">— <a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf" target = "_blank">Prof. Dr. rer. nat. Thomas Schneider</a></cite></footer>';
         /*, <cite class="quote-time">2025</cite>*/
         let quoteContainer = document.createElement("div");
         quoteContainer.classList.add("quote-container");
         quoteContainer.appendChild(quote);
+        return quoteContainer;
+    }
+    function setupHeaderArrow(header, quoteContainer) {
         header.insertAdjacentElement('beforeend', quoteContainer);
+        let arrow = document.createElement("img");
+        arrow.src = "startpageArrow.png";
+        arrow.id = "startpage-arrow";
+        header.insertAdjacentElement('beforeend', arrow);
     }
     function setupFooterDocuments() {
         let footer = document.querySelector("#footer_wrap footer");
@@ -246,18 +308,78 @@ var Portfolio;
         footer.appendChild(documentsList);
     }
     function setupNavBar() {
-        const navbar = document.getElementById("navbar");
-        const placeholder = document.getElementById("navbar-placeholder");
-        const observer = new IntersectionObserver(([entry]) => {
-            if (!entry.isIntersecting) {
+        const navbar = document.querySelector(".navbar");
+        const placeholder = document.querySelector("#navbar-placeholder");
+        const topPlaceholder = document.querySelector("#navbar-top-placeholder");
+        const lowerObserver = new IntersectionObserver(([entry]) => {
+            if (entry.boundingClientRect.top <= 0) {
+                //console.log("add sticky");
                 navbar.classList.add("sticky");
             }
             else {
                 navbar.classList.remove("sticky");
             }
-        }, { threshold: 0 });
-        observer.observe(placeholder);
+        }, {
+            threshold: 0
+        });
+        const upperObserver = new IntersectionObserver(([entry]) => {
+            if (entry.boundingClientRect.top >= 0) {
+                //console.log("remove sticky");
+                navbar.classList.remove("sticky");
+            }
+        }, {
+            threshold: 0
+        });
+        lowerObserver.observe(placeholder);
+        upperObserver.observe(topPlaceholder);
+        const observerForHiding = new MutationObserver(() => {
+            const root = document.documentElement; // :root
+            const navbar = document.querySelector('.navbar'); // Die Navbar mit der Klasse .sticky
+            // Überprüft, ob es ein .expanded-Element gibt
+            if (root.querySelector('.expanded')) {
+                if (navbar)
+                    navbar.classList.toggle('hidden', true); // Navbar ausblenden
+            }
+            else {
+                if (navbar)
+                    navbar.classList.toggle('hidden', false); // Navbar wieder einblenden
+            }
+        });
+        // Beginnt die Überwachung auf Änderungen im DOM
+        observerForHiding.observe(document.documentElement, {
+            childList: true,
+            subtree: true // Überwacht auch tiefere Elemente im DOM
+        });
     }
+    Portfolio.setupNavBar = setupNavBar;
+    document.addEventListener("DOMContentLoaded", () => {
+        try {
+            setupNavBar();
+        }
+        catch (error) {
+            console.warn("dom content loaded try setupnavbar, error: ", error);
+        }
+    });
     window.addEventListener('load', init);
 })(Portfolio || (Portfolio = {}));
+function turnPage() {
+    window.scrollTo({
+        top: document.querySelector("#main_content").offsetTop,
+        behavior: 'smooth', // Sanftes Scrollen
+    });
+}
+function setupFlexItemsPreview() {
+    for (let container of document.querySelectorAll(".flex-container")) {
+        for (let item of container.children) {
+            /*
+            container.childNodes.forEach((value: HTMLElement, index: number) => {
+
+                if (index > 2) {
+                    value.classList.toggle("excess", true);
+                }
+            });
+            */
+        }
+    }
+}
 //# sourceMappingURL=Main.js.map

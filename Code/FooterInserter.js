@@ -10,8 +10,9 @@ var Portfolio;
     function setupFooterDocuments() {
         let documentsWrapper = document.querySelector(".documents-wrapper");
         let documentsHeading = document.querySelector("#dokumente");
-        footer.appendChild(documentsHeading);
-        footer.appendChild(documentsWrapper);
+        let documentsHeadingSection = documentsHeading.parentElement;
+        footer.insertAdjacentElement('afterbegin', documentsHeadingSection);
+        documentsHeadingSection.insertAdjacentElement('afterend', documentsWrapper);
     }
     function handleInteraction(ev) {
         footer = document.querySelector("#footer_wrap footer");

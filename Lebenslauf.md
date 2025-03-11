@@ -1,6 +1,6 @@
 # Daten und Lebenslauf
 
-<img src="Calvin1.jpeg" align="right" width="24.5%"/>
+<img src="Calvin1.jpeg" style="float: right; width: 24.5%;" />
 
 ## Adresse
 

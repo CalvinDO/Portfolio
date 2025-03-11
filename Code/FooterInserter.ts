@@ -15,9 +15,10 @@ namespace Portfolio {
         let documentsWrapper: HTMLDivElement | null = document.querySelector(".documents-wrapper");
 
         let documentsHeading: HTMLHeadingElement | null = document.querySelector("#dokumente");
+        let documentsHeadingSection: HTMLDivElement = <HTMLDivElement>documentsHeading.parentElement;
 
-        footer.appendChild(documentsHeading);
-        footer.appendChild(documentsWrapper);
+        footer.insertAdjacentElement('afterbegin', documentsHeadingSection);
+        documentsHeadingSection.insertAdjacentElement('afterend', documentsWrapper);
 
     }
 

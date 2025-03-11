@@ -2,8 +2,7 @@ namespace Portfolio {
 
     let overlay: HTMLDivElement = document.querySelector('#overlay');
 
-    setupHeaderQuote();
-
+    setupHeader();
 
     try {
         removeForkme();
@@ -12,8 +11,21 @@ namespace Portfolio {
         console.warn(error);
     }
 
+    /*
+    try {
+        init();
+    } catch (error) {
+        console.warn("Init called too fast: " + error);
+    }
+    */
 
     function init() {
+
+        try {
+            setupNavBar();
+        } catch (error) {
+            console.warn("try init setupnavbar, error:", error);
+        }
 
         overlay = <HTMLDivElement>document.querySelector('#overlay');
 
@@ -29,7 +41,9 @@ namespace Portfolio {
 
         setupProjectFlexItems();
 
-        setupVideoHover();
+        setupFlexItemsPreview();
+
+        setupVideoOverlayHover();
     }
 
     function onHoverDoc(_event: Event) {
@@ -76,20 +90,41 @@ namespace Portfolio {
         }
     */
 
-    function setupVideoHover() {
+    function setupVideoOverlayHover() {
 
-        const videos: NodeListOf<Element> = document.querySelectorAll('video');
+        const items: NodeListOf<Element> = document.querySelectorAll('.flex-item');
 
-        videos.forEach((video: HTMLVideoElement) => {
-            video.addEventListener('mouseenter', () => {
-                video.play();
-            });
+        items.forEach((item: HTMLElement) => {
 
-            video.addEventListener('mouseleave', () => {
-                video.pause();
-                //video.currentTime = 0;
-            });
+            let video: HTMLVideoElement = item.querySelector("video");
+
+            if (video) {
+
+                video.addEventListener('mouseenter', () => {
+                    video.play();
+                });
+
+                video.addEventListener('mouseleave', () => {
+                    video.pause();
+                    //video.currentTime = 0;
+                });
+
+                let arrow: HTMLElement = item.querySelector(".toggle-arrow");
+
+                if (!arrow.classList.contains("is-x")) {
+                    arrow.addEventListener('mouseenter', () => {
+                        video.play();
+                    });
+
+                    arrow.addEventListener('mouseleave', () => {
+                        video.pause();
+                        //video.currentTime = 0;
+                    });
+                }
+            }
         });
+
+
     }
 
     function setupDetailsFlexItems() {
@@ -99,8 +134,8 @@ namespace Portfolio {
     function setupProjectFlexItems() {
         document.querySelectorAll('.flex-item').forEach(setupFlexItem);
 
-        document.querySelectorAll('.toggle-content').forEach((toggleContent: HTMLDivElement) => {
-            console.log("add listener for toggle-content");
+
+        document.querySelectorAll('.second-toggle-content').forEach((toggleContent: HTMLDivElement) => {
             addClickExpand(toggleContent.parentElement, toggleContent);
         });
 
@@ -113,7 +148,6 @@ namespace Portfolio {
     }
 
     function addClickExpand(parent: HTMLElement, toggleTrigger: HTMLDivElement): void {
-        console.log("parent or parent parent:", parent);
 
         toggleTrigger.addEventListener('click', () => {
             expandProjectFlexItem(parent);
@@ -122,10 +156,16 @@ namespace Portfolio {
 
     function expandProjectFlexItem(item: HTMLElement): void {
 
+
         if (item.classList.contains('expanded')) {
+
+            console.log("already expanded, ");
+
             dexpandProjectFlexItem(item);
             return;
         }
+
+        console.log("expand");
 
         document.querySelectorAll('.flex-item').forEach((otherItem: HTMLElement) => {
 
@@ -145,10 +185,15 @@ namespace Portfolio {
         let headingToggle: HTMLDivElement = item.querySelector(".heading-toggle-content");
 
         headingToggle.insertAdjacentElement('beforeend', secondToggleDiv);
+        let arrow = item.querySelector(".toggle-arrow");
+        arrow.classList.toggle("is-x", true);
+        headingToggle.insertAdjacentElement('afterbegin', arrow);
     }
 
 
     function dexpandProjectFlexItem(item: HTMLElement): void {
+
+        console.log("dexpand");
 
         item.classList.toggle('expanded', false);
 
@@ -156,6 +201,10 @@ namespace Portfolio {
 
         let secondToggleDiv: HTMLElement = item.querySelector(".second-toggle-content");
         item.querySelector(".third-toggle-content").insertAdjacentElement('beforebegin', secondToggleDiv);
+
+        let arrow = item.querySelector(".toggle-arrow");
+        item.querySelector(".vignette").insertAdjacentElement('beforebegin', arrow);
+        arrow.classList.toggle("is-x", false);
     }
 
 
@@ -205,7 +254,6 @@ namespace Portfolio {
         let arrow: HTMLDivElement = item.querySelector('.toggle-arrow');
 
         while (!arrow) {
-            console.log("try generate and find arrow");
             insertArrowIn(item);
             arrow = item.querySelector('.toggle-arrow');
         }
@@ -253,7 +301,7 @@ namespace Portfolio {
 
         let toggleArrowDiv = document.createElement("div");
         toggleArrowDiv.classList.add("toggle-arrow");
-        toggleArrowDiv.innerHTML = '<span class = "toggle-arrow-span">▼</span>';
+        toggleArrowDiv.innerHTML = '<span class = "toggle-arrow-span"><i class="fas fa-times"></i></span>';
 
         item.querySelector(".visual-presentation-container").insertAdjacentElement('beforeend', toggleArrowDiv);
     }
@@ -271,11 +319,18 @@ namespace Portfolio {
 
     function onMouseLeave(this: HTMLElement) {
 
-        this.classList.remove('hovered');
+        if (document.documentElement.querySelector('.expanded') && !this.classList.contains(".expanded")) {
+            return;
+        }
 
+        this.classList.remove('hovered');
     }
 
     function onMouseEnter(this: HTMLElement) {
+
+        if (document.documentElement.querySelector('.expanded') && !this.classList.contains(".expanded")) {
+            return;
+        }
 
         this.classList.add('hovered');
     }
@@ -284,8 +339,11 @@ namespace Portfolio {
     function setupArrow(arrow: Element, flexItem: HTMLElement) {
 
         arrow.addEventListener('click', () => {
-            //flexItem.classList.toggle('expanded');
-            expandProjectFlexItem(flexItem);
+            if (arrow.classList.contains("is-x")) {
+                dexpandProjectFlexItem(flexItem);
+            } else {
+                expandProjectFlexItem(flexItem);
+            }
         });
     }
 
@@ -329,7 +387,6 @@ namespace Portfolio {
 
         visualPresentationContainer.parentNode?.appendChild(thirdToggleContentDiv);
 
-        console.log("setup 3 toggle contents");
     }
 
     function removeForkme() {
@@ -340,18 +397,50 @@ namespace Portfolio {
     }
 
 
-    function setupHeaderQuote() {
+    function setupHeader() {
+
         let header: HTMLElement | null = document.querySelector("header");
 
-        let quote: HTMLQuoteElement = document.createElement("blockquote");
-        quote.innerHTML = '<span class="quote-text">[...] <strong>Calvin Dell’Oro</strong> zählt unter den etlichen hundert Studierenden,<br>die ich seit 2008 [...] unterrichtet habe,<br>zu den drei <strong>engagiertesten</strong> und <strong>erfolgreichsten</strong>.</span><footer><cite class="author">— Prof. Dr. rer. nat. Thomas Schneider</cite></footer>'
-        /*, <cite class="quote-time">2025</cite>*/
+        let quoteContainer: HTMLDivElement = setupHeaderQuote();
 
+
+        setupHeaderArrow(header, quoteContainer);
+
+        header.addEventListener('click', handleClickHeader);
+    }
+
+    function handleClickHeader(this: HTMLElement, ev: MouseEvent): void {
+
+        let rect = this.getBoundingClientRect();
+
+        let clickToScrollArea = rect.bottom - rect.height / 3;
+
+        //console.log("rectheight / 3: " + rect.height / 3, " - rectbottom: " + rect.bottom);
+
+
+
+        if (ev.clientY > clickToScrollArea) {
+            turnPage();
+        }
+    }
+
+    function setupHeaderQuote() {
+        let quote: HTMLQuoteElement = document.createElement("blockquote");
+        quote.innerHTML = '<span class="quote-text"><strong>Calvin Dell’Oro</strong> [zählt] unter den etlichen hundert Studierenden,<br>die ich seit 2008 [...] unterrichtet habe,<br>zu den drei <strong>engagiertesten</strong> und <strong>erfolgreichsten</strong>.</span><footer><cite class="author">— <a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf" target = "_blank">Prof. Dr. rer. nat. Thomas Schneider</a></cite></footer>';
+        /*, <cite class="quote-time">2025</cite>*/
         let quoteContainer: HTMLDivElement = document.createElement("div");
         quoteContainer.classList.add("quote-container");
         quoteContainer.appendChild(quote);
+        return quoteContainer;
+    }
 
+    function setupHeaderArrow(header: HTMLElement, quoteContainer: HTMLDivElement) {
         header.insertAdjacentElement('beforeend', quoteContainer);
+        let arrow = document.createElement("img");
+        arrow.src = "startpageArrow.png";
+        arrow.id = "startpage-arrow";
+
+        header.insertAdjacentElement('beforeend', arrow);
     }
 
     function setupFooterDocuments() {
@@ -362,26 +451,100 @@ namespace Portfolio {
         footer.appendChild(documentsList);
     }
 
-    function setupNavBar() {
-        const navbar = document.getElementById("navbar");
-        const placeholder = <HTMLDivElement>document.getElementById("navbar-placeholder");
+    export function setupNavBar() {
 
-        const observer = new IntersectionObserver(
+        const navbar = document.querySelector(".navbar");
+
+        const placeholder = <HTMLDivElement>document.querySelector("#navbar-placeholder");
+        const topPlaceholder = <HTMLDivElement>document.querySelector("#navbar-top-placeholder");
+
+
+        const lowerObserver = new IntersectionObserver(
             ([entry]) => {
-                if (!entry.isIntersecting) {
+                if (entry.boundingClientRect.top <= 0) {
+                    //console.log("add sticky");
                     navbar.classList.add("sticky");
                 } else {
                     navbar.classList.remove("sticky");
                 }
             },
-            { threshold: 0 }
+            {
+                threshold: 0
+            }
         );
 
-        observer.observe(placeholder);
+        const upperObserver = new IntersectionObserver(
+            ([entry]) => {
+
+                if (entry.boundingClientRect.top >= 0) {
+                    //console.log("remove sticky");
+                    navbar.classList.remove("sticky");
+                }
+            },
+            {
+                threshold: 0
+            }
+        );
+
+        lowerObserver.observe(placeholder);
+        upperObserver.observe(topPlaceholder);
+
+
+        const observerForHiding = new MutationObserver(() => {
+            const root = document.documentElement;  // :root
+            const navbar: HTMLElement = document.querySelector('.navbar');  // Die Navbar mit der Klasse .sticky
+
+            // Überprüft, ob es ein .expanded-Element gibt
+            if (root.querySelector('.expanded')) {
+                if (navbar) navbar.classList.toggle('hidden', true); // Navbar ausblenden
+            } else {
+                if (navbar) navbar.classList.toggle('hidden', false);  // Navbar wieder einblenden
+            }
+        });
+
+        // Beginnt die Überwachung auf Änderungen im DOM
+        observerForHiding.observe(document.documentElement, {
+            childList: true,  // Überwacht das Hinzufügen/Entfernen von Kindern
+            subtree: true     // Überwacht auch tiefere Elemente im DOM
+        });
+
     }
 
+    document.addEventListener("DOMContentLoaded", () => {
+
+        try {
+            setupNavBar();
+        }
+        catch (error) {
+            console.warn("dom content loaded try setupnavbar, error: ", error);
+        }
+    });
 
     window.addEventListener('load', init);
 }
 
 
+function turnPage() {
+    window.scrollTo({
+        top: (<HTMLElement>document.querySelector("#main_content")).offsetTop, // Hier scrollen wir die Seite zu der Position des nächsten Abschnitts
+        behavior: 'smooth', // Sanftes Scrollen
+    });
+}
+
+function setupFlexItemsPreview() {
+
+    for (let container of document.querySelectorAll(".flex-container")) {
+
+        for (let item of container.children) {
+
+            /*
+            container.childNodes.forEach((value: HTMLElement, index: number) => {
+
+                if (index > 2) {
+                    value.classList.toggle("excess", true);
+                }
+            });
+            */
+        }
+    }
+}
