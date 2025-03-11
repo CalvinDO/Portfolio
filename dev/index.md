@@ -1147,7 +1147,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 </div>
 
 <div class = "flex-container">
-  <div class = "flex-item">
+  <div class = "flex-item excess">
     <div class="toggle-content heading-toggle-content">
       <h2 id ="bau-simulator">Construction Simulator®</h2>
     </div>
@@ -1219,7 +1219,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     Meine restliche Arbeit am Bau-Simulator bestand zum Einen aus der Programmierung eines zentralen Debug-UserInterfaces, mit dem neben allen Departments vor allem die Tester der Quality-Assurance das Command-System grafisch aufbereitet und effizient benutzen können. Darunter fällt das Springen zu und Erledigen von Missionen, Spawnen von Fahrzeugen, Cargo und Props, Einstellen globaler Parameter und weitere Steuerung des Spielgeschehens auf vielen Ebenen. Für die Realisierung des Aufbaus und Designs wählte ich einen dynamisch-generischen Ansatz, der das gesamte Command-System des Spiels als Konstellation von Knöpfen, Reglern und Eingabefeldern, geordnet unter mehreren Hierarchieebenen, generiert. Somit verringerte sich der Wartungsbedarf, da neu registrierte Kommandos direkt richtig in dem Debug-UI dargestellt werden.  
     Zum Anderen bestand meine Arbeit auch aus der Programmierung einer Anzeige des Navigations-Pfades in der Minimap, um Spieler anschaulich zu ihrem Ziel in der Welt zu leiten. Hier halfen mir meine Kenntnisse der Projektion von Räumen höherer Dimensionen in Räume niederer, die ich bereits in dem Kurs "Mathematik und Simulation" erlernte -- Link zum entsprechenden Projekt --   -->
   </div>
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen">Neuroevolution</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
         <a href="https://simmer.io/@DerCalvino/neuroevolutionbenutzerdefiniertermehrbeinigerkreaturen" target = "_blank">
@@ -1292,7 +1292,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     Die Kamera kann im Editor mit Mausbewegung und Drücken sowie Scrollen der mittleren Maustaste gesteuert werden. Bauen neuer Glieder wird mit Linksklick gestartet und mit Mausbewegung verlängert. Ein erneuter Linksklick schließt das Bauen ab, während die rechte Maustaste das Bauen abbricht. Den Rotations-Einstellungs-Modus schalten Sie mit "R" um. Weitere Anleitung finden Sie in der <a href = "NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">Thesis</a> -->
   </div>
 
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="the-last-hope">The Last Hope</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
         <a href="https://simmer.io/@DerCalvino/thelasthope"  target = "_blank">
@@ -1362,7 +1362,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     Das Projekt endete mit UserTests inklusive Fragebögen, sowie dem Gewinnen der Projektauszeichnung bei der "IndieNight" an der Hochschule Furtwangen.  
     Laufen erfolgt mit W A S D, Angreifen mit den Maustasten, Q und E. I öffnet das Inventar. Drag and Drop von einer Fähigkeitskarte auf eine andere ermöglicht das Kombinieren. -->
   </div>
-  <div class = "flex-item">
+  <div class = "flex-item excess">
     <div class="toggle-content heading-toggle-content">
     <h2 id="realtime-beerpong">Realtime-BeerPhong</h2>
     </div>
@@ -1441,7 +1441,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     Die Umsetzung innerhalb des Kurses "Echtzeit-Computergrafik" im sechsten Semester erfolgte mit WebAR, JavaScript und GLSL. In einem dreiköpfigen Team machten wir uns mit Programmierung von Vertex- und Fragmentshadern vertraut, sowie mit Umgebungsvariablen von WebAR und "Three.js". -->
   </div>
 
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="morbus-animi">Morbus Animi</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
         <a href="https://simmer.io/@DerCalvino/morbus-animi-final"  target = "_blank">
@@ -1519,7 +1519,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     Ich übernahm bis auf Inventar, Collectables und Menü-GUI das Coding der Skripte, um Spielmechanik, Physik-, Animations-, Sound- und KI-Controller, sowie UserInterfaces und Spielbalance zu realisieren. Besonders die Programmierung des Jump-and-Runs, mit Schwingen und Greifen sowie Hängen an Kanten, lag in meinem Fokus und lieferte eingängige Lernerfahrungen. Gleiches gilt für Entwicklung und Balancing des KI-Gegners mit Unity NavMesh. Auch mit dem Coding modularer Assets bereicherte ich das Projekt und die Kooperation, da andere Abteilungen diese parametrisierten, um Spielgeschehen wie Story-Fortschritt, Puzzle-Logik, Effekte und Sounds zu steuern. Mit diesem Titel gewannen wir den ersten Platz der Projektausstellung bei der "IndieNight" an der Hochschule Furtwangen. <br>
     Die Steuerung wird im Spiel erklärt. -->
   </div>
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="gesetzestext-generator">Gesetzestext-Generator</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="https://colab.research.google.com/github/CalvinDO/AITextGenerator/blob/main/LawLanguageRNN/textGenerator.ipynb"  target = "_blank">
@@ -1591,7 +1591,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     Das Modell generiert nun auf Basis eines gegebenen Startzeichens mit einem One Step Model Zeichen für Zeichen neuen Text. Bei jedem Schritt trifft das Modell eine Vorhersage für das nächste Zeichen, wobei die Wahrscheinlichkeiten für mögliche Zeichen mittels der Temperatur angepasst werden können. Dies beeinflusst, wie zufällig oder deterministisch die generierten Zeichen sind.  
     Geplant ist Implementierung von und Testen der Performance von LSTM als weitere RNN-Struktur am Bürgergesetzbuch, sowie GPT als generativer Transformer wegen Self-Attention- und Parallelisierungsmechanismen. Auch würde die Verwendung einer Wörterbuch-Datenbank würde Effizienz in dem Use Case des Gesetzesbuchs deutlich steigern, allerdings zu weniger komischen Neologismen führen. -->
   </div>
-  <div class="flex-item">
+  <div class = "flex-item excess">
   <h2 id="baumgenerator">Baumgenerator</h2>
   <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
     <a href="Code/TreeGenerator/TreeGenerator.zip" download>
@@ -1653,7 +1653,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
   Bei der objektorientierten Programmierung lernte ich die Rodrigues-Rotationsformel kennen und wandte andere Vektorrechnung wie das Kreuzprodukt an. Auch mit Blender-eigenen Umgebungsvariablen und Python machte ich mich vertraut. Die Instanzierung der Astaustriebe ähnelt dem Projekt [Fraktal](#fraktal)  
   Die Programmierung erfolgte im fünften Semester im Rahmen des Kurses "Datenverarbeitung in der Medienproduktion". -->
   </div>
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="discombobulated-space-station">Discombobulated Space Station</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
         <a href="https://calvindo.github.io/PRIMA/"  target = "_blank">
@@ -1718,7 +1718,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     Als das Projekt im vierten Semester innerhalb des Kurses "Prototyping Interaktiver Medien-Apps und Games" entstand, war FUDGE noch nicht ausgereift genug, um die Labyrinth-Elemente effizient im nativen Editor anzuordnen. Dieses Problem löste ich, indem ich einen eigenen Blender-Map-Importer entwickelte, Der die Objektpositionen und Rotationen aus einer Collada-Datei ausliest.  
     Laufen erfolgt mit W A S D. Gedreht wird die Raumstation durch Shift, Control, Q und E. -->
     </div>
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="eisladen">Eisladen</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="https://calvindo.github.io/GiS/Eisladen/"  target = "_blank">
@@ -1803,7 +1803,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
       <!-- Der Eisladen ist eine spielerische Lösung der Aufgabe, eine Website zu entwickeln, auf der Nutzer Eislieferungen aufgeben können --und der Verkäufer sie über einen Server bearbeiten kann--. Als letzte Prüfung des Kurses "Grundlagen interaktiver Systeme" im zweiten Semester ging ich weit über die Fragestellung hinaus und realisierte die Zusammenstellung der Delikatessen mit einem Arcade-Greifer, gesteuert über Pfeiltasten und der Leertaste. Auch Toppings können durch Klicken interaktiv aus Behältern über ein Förderband auf die Eiskugeln gestreut werden.  
       Außer der Eisbehälter ist jede Grafik und Logik selbstgemacht, mit Zeichenmethoden des HTML-CanvasRenderingContext2Ds. -->
   </div>
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="dischoverhfu">DiscHoverHFU</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="https://calvindo.github.io/DiscHoverHFU/Code/DiscHoverHFU.html"  target = "_blank">
@@ -1877,7 +1877,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
       Durch Gedrückthalten und Bewegung der Maus kann der Spieler sich in den Räumen der HFU drehen und somit Ausrüstung der Hochschule entdecken. Mit der "E"-Taste öffnet sich das Menü, in dem auf die OpenStreetMap-Karte gewechselt und in dieser zu den Räumen navigiert werden kann.  
       Die Umsetzung erfolgte mit zweidimensionalen Panorama-Bildern, die durch WebXR-Polyfill und eigene Programmierung zu interaktiven Panorama-Touren wurden. Als Datenstruktur für Winkelkoordinaten der 104 Gegenstände, sowie deren Namen und Geräusch der Interaktion, wurde JSON verwendet. -->
   </div>
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="fraktal-animation">Fraktal Animation</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="Code/FraktalAnimation/start.html" target = "_blank">
@@ -1940,7 +1940,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     <!-- Zugrunde liegt das zuvor beschriebene Projekt [Fraktal](#fraktal). Diesmal mit dem Ziel, einige Parameter der Berechnung, die sich als Dezimalbrüche darstellen lassen, wie beispielsweise der Farbwinkel, zeitlich zu modulieren, um eine zusätzliche Dimension zu schaffen, die ebenso zu etlichen neuen Beobachtungen und weiteren Experimenten führen sollte.  
     Bemerkenswert ist unter anderem der Zusammenhang, wie sich die Veränderung des Divisors eines Vollkreises, der die Positionierung der "children" eines jeden Balls bestimmt, auf die Bewegung und das Muster der Anordnung bis hin zu den kleinsten Bällen auswirkt, ebenso wie die entstehende Farbkonstellation -->
   </div>
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="fraktal">Fraktal</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="Code/Fraktal/start.html" target = "_blank">
@@ -2010,7 +2010,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     Daraufhin, ebenfalls ohne eine konkrete Vorstellung des Ergebnisses, begann ich den Farbwinkel abhängig von der Iterationsstufe und der Ordnung der zirkular positionierten Kreise sowohl relativ, als auch absolut zu berechnen. Auch hier war ich von der Ästhetik der visualisierten Mathematik überrascht und begeistert.  
       Auf der Seite können Sie einige Parameter der Berechnung verändern. -->
   </div>
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="cardioids">Cardioids</h2>
     <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="Code/Cardioids/start.html" target = "_blank">
@@ -2095,7 +2095,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     Um die Beschreibung der dahinter liegenden Mathematik zu vermeiden, verweise ich an dieser Stelle auf das Endresultat innerhalb des Mathematik-Projekts, welches aus diesem vertonten [Video](#video) bestand.   
     Um den Mitschülern die Thematik näher zu bringen und dafür zu faszinieren, programmierte ich diese Anwendung. Bei höheren Werten des in der Applikation auch von Ihnen einstellbaren Parameters "Faktor", sowie dem ab dann interressanten Parameter "Lines", ist für mich bis heute der eindeutige Zusammenhang der eingestellten Werte mit den entstehenden Mustern zugegebenermaßen nicht eindeutig erklärbar. -->
   </div>
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="rubber-band">Rubber Band</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="Code/RubberBand/start.html" target = "_blank">
@@ -2175,7 +2175,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
   
   
 <div class = "flex-container">
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="schild">Schild</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
         <video width="100%" poster ="SchildThumbnail.png" controls loop>
@@ -2242,7 +2242,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     <!-- Die Grundidee für diesen Schild ist der Vorarbeitung eines Computergrafik-Vorlesungsskriptes, welches nun allerdings ersetzt wurde, zu verdanken. Hier hätte die Anforderung aus dem Modellieren eines Schildes, und dem Ausschneiden von Bereichen mit dem Boolean-Modifier bestanden.  
     Ich ging durch die Modellierung komplexerer Details, sowie frei gestaltete Verzierungen durch Bézierkurven darüber hinaus. Auch hier verwendete ich Kombinationen aus Noise-Texturen, um detaillierte Shader zu erreichen. Die Animation ermöglichte mir die Mantaflow-Fluidsimulation. Hier benutze ich ebenso für das Wasser, als auch für die Schaum, Sprüh, Blasen und Fluid-Partikel einzelne Shader, die ich durch Node-Setups erreichte. Für das Wasser bestimmte ich die Mischung von einem "Diffuse"- und "Glossy"-Shader mit dem "Fresnel"-Linseneffekt, mischte dies mit einem "Glass"-Shader, und dies wiederrum mit mit einem "Transparent"-Shader. Für die anderen Partikel wurden die Mischungsverhältnisse der Shader verändert, oder mit dem zuvor genannten "Blasen-Node-Setup" kombiniert. -->
   </div>
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="uboot">Das verrückte U-Boot</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <video width="100%" poster ="submarineThumbnail.jpg" controls loop>
@@ -2312,7 +2312,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     <!-- Die Anforderungen der Computergrafik-Aufgabe, die mich zu dieser Animation inspirierte, bestand darin, rein durch Skalierung, Rotation und Verschiebung von Objekten, sowie die Anwendung einfacher Materialien ein U-Boot zusammenzustellen. Der Anforderung, nur mit der Komposition primitiver Körper zu arbeiten, widersetzte ich mich nicht sondern nahm sie als Herausforderung an.  
     Die Positionierung der Spirale aus Blasen erreichte ich durch Rotation langer Blasenreihen unter proportionalem Bearbeiten. Ähnlich erschuf ich auch die Greifarme des U-Boots. Die Textur der Blasen gestaltete ich durch die Mischung einer Noise-Textur und Transparenz. Die volumetrische Beleuchtung erreichte ich durch die Addition eines lichtstreuenden, und eines licht-Absorbierenden Shaders mit unterschiedlicher Dichte. Die Bewegungsabläufe erreichte ich durch Keyframes und interpolierten Kurven. Dies war mein erstes Modellierungsprojekt mit einer zeitlich beschränkten Vorgabe. -->
   </div>
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="truhe">Truhe</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <img src="Truhe.png" alt="Truhe" width="100%"/>
@@ -2370,7 +2370,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     <!-- Dieses Projekt geht aus einer Computergrafik-Aufgabe hervor, deren Anforderung die Modellierung (Mesh ohne Material) einer symmetrischen Truhe, mitsamt eines Deckels und eines Rahmens war.  
     Ich ging darüber hinaus, in dem ich aus der primitiven Geometrie Details wie Edelsteine durch Loop-Cuts, Extrudes und Insets erzeugte. Die Marmortexturen erzeugte ich prozedural über Noise-Nodes, die Holztextur ebenso über Noise, Musgrave und Voronoi Nodes, sowie Vektorkurven und Color-Burn-Nodes. -->
   </div>
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="deren-schloss">Schloss der Truhe</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <img src="Schloss.png" alt="Schloss" width="100%"/> 
@@ -2430,7 +2430,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     <!-- Die Anforderung für das Schloss war, aus einem größeren Würfel einen kleineren durch Insets oder dem boolean-Modifier auszustanzen.  
     Um einen höheren Detailgrad zu erreichen, modellierte ich mit Bézierkurven eine etwas aufwendigere Ausstanzform für ein Schloss. Hier generierte ich die prozedurale Textur ebenfalls über die Steuerung der Normalenlänge auf der Oberfläche mittels eines mit Noise-Texturen angesteuerten Bump-Nodes (Displacements) -->
   </div>
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="wackelpudding-simulation">Wackelpudding-Simulation</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
         <video width="100%" poster ="JellyThumbnail.png" controls loop>
@@ -2478,7 +2478,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     </ul>
     <!-- Hier habe ich weniger gemodelt, sondern eher aus freien Stücken die Möglichkeiten der "Softbody & Collision"-Physiksimulation ausprobiert, und eine kleine Animation gerendert, um ein Verhalten zu simulieren, das Wackelpudding ähnelt. -->
   </div>
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="korallenriff">Korallenriff</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <video width="100%" poster ="CoralReef.png" controls loop>
@@ -2536,7 +2536,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     <!-- Dieses Projekt geht aus der aktuellsten Computergrafik-Aufgabe hervor. Das Modeling erfolgte über die Extrusion eines "Control-Cage", auf dem der Catmull-Clark-Algorithmus angewendet wurde Allerdings wurden auch hier keine Materialien gefordert, sondern es sollte der Umgang mit dem Displacement-Modifier verinnerlicht werden.  
     Diesen ersetzte ich durch einen entsprechenden Displacement-Node, durch den ich nicht nur Oberflächenberechnungen der versetzten Stellen verändern kann, um beispielsweise unterschiedliche Farben oder Rauigkeitswerte zu erreichen, sondern auch generell mehr Kombinations- und Steuerungsmöglichkeiten durch weitere Nodes, wie beispielsweise Noise-Nodes, hatte. -->
   </div>
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="turret">Tower Defense - Turret</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <img src="Turret.jpg" width="100%">
@@ -2600,7 +2600,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     Abgesehen von dem Kugellager und den Läufen, bediente ich mich keines Tutorials, um die Modelliertechniken herauszufinden, da ich ein möglichst individualisiertes Gatling-Geschütz erschaffen wollte. Ich verwendete hier alle elementaren Tools, die der Edit-Mode von Blender für Hard-Surface-Modeling zu bieten hat.  
     Das Endresultat ist in dem Tower-Defense-Game meines Kollegen integriert -->
   </div>
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="donut">Donut</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
         <img src="Donut.png" alt="Donut" width="100%">
@@ -2666,7 +2666,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     <!-- Dies ist mein Ergebnis des zweiten Levels der Blender-Tutorialreihe des <a href="https://www.youtube.com/watch?v=TPrnSACiTJ4">Blender Guru</a>s. Das durch proportionales Editing und Scultping erreichte Mesh des Teigs wurde durch Noise-Texturen und Overlay-Variation mit Bump versehen und geshaded, sowie Texture-Painting angewandt, um leicht verbrannte Stellen zu malen.  
     In der Tutorial Reihe wird eine Zuckerglasur verwendet, ich jedoch wünschte mir eine Schokoladenglasur, die ich durch ein Node-Setup, in dem ein Glossy- und Diffuse Shader gemischt werden, erreichte. Auch hier ist etwas Displacement durch eine Noise-Textur meinerseits verwendet worden. Die Streusel wurden mit einem Partikelsystem mittels "Instance-Objects" variierender Häufigkeit auf der Glasur platziert. -->
   </div>
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="burning-monkey">Brennender Affenkopf</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <video width="100%" poster ="Monkey.png" controls loop>
@@ -2743,7 +2743,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 </div>
 
 <div class = "flex-container" id = "video-flex-container">
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="cardioids-tutorial">Cardioids - Tutorial</h2>
     <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <iframe width="100%" height="400lvh" src="https://www.youtube.com/embed/A68-juE2ves"
@@ -2826,7 +2826,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 </div>
 
 <div class = "flex-container" id = "music-flex-container">
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="fuwashima">Fuwashima - Game Jam</h2>
     <div class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <audio controls>
@@ -2897,7 +2897,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     </ul>
     <!-- Dieses Stück komponierte ich als Titelsong im Rahmen des Global-Game-Jams 2020, bei dem ich in einem Team innerhalb von 48 Stunden bei der Entwicklung eines VR-Games mitwirkte. In erster Linie versuchte ich, das Thema des umgesetzten Atomkraftwerk-Supergau-Simulators, in dem der Spieler unter Stress Rätsel lösen muss, durch einen spannenden Aufbau und aggressivem Klang mit entsprechender Stimmung zu unterstützen. Auch versuchte ich, den Effekt von Tonverzerrungen, verursacht durch enorme radioaktive Strahlung, mit der zeitlichen Automation der Delay-Time eines Echo-Delay-Plugins annähernd zu simulieren. Um Originalität zu schaffen, versah ich zurückhaltende Drum-Sounds mit dem prägnanten "Amen-Break", der mir aus der eigenen Schlagzeugpraxis wohl vertraut ist und einen scheinbar gegenläufigen Rhythmus erzeugt. -->
   </div>
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="pisong">PiSong</h2>
     <div class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <audio controls>
@@ -2954,7 +2954,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     </ul>
     <!-- Bei diesem Audio handelt es sich um ein Gimmick, entworfen für den internationalen "Pi-Day", welches ebenso mein erstes außerhalb der Familie im Alter von 11 Jahren präsentierte Audio-Projekt darstellt. Ich überlegte mir die Idee, einige Nachkommastellen der Kreiszahl Pi musikalisch umzusetzen, ohne Töne und Aufbau nach der Konstante zu gestalten. Dies gelang mir durch das Aufsagen der Stellen von Roboterstimmen. Nach einem "Wobble-Bass", umgesetzt durch zeitliche Modulation des "Cutoffs", folgt eine rein akustisch nicht entzifferbare Sequenz, die das Stück beendet. Es handelt sich hierbei um die auditive Wiedergabe einer Grafik des griechischem Symbols für "Pi". Wenn Sie meinen "Pi-Song" in eine DAW, beispielsweise Audacity, importieren, und sich die Tonspur als Spektrogramm anzeigen lassen, wird es sichtbar. -->
   </div>
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="vocalremixtrap">Vocal-Remix</h2>
     <div class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <audio controls>
@@ -3022,7 +3022,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 </div>
 
 <div class = "flex-container" id = "music-flex-container">
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="donald-trump">Donald Trump - Karikatur</h2>
     <div class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <img src="Zeichnungen/Trump.jpg" alt="Trump" width="100%">
@@ -3065,7 +3065,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     <!-- Vor dem Erstellen dieses Bildes pflegte ich eine starke Abgneigung gegen das Zeichnen organischer Objekte und Lebewesen. Dies ist darauf zurück zu führen, dass es mir sonst, leider nicht nur meiner Einschätzung nach, in außerordentlichem Maße misslang. Eines Tages, im Alter von 16 Jahren, als ich mich vom Lernen für eine Klausur ablenkte, verspürte ich die Lust, genau dies zu ändern. Es stellte für mich eine gewisse Art der Herausforderung an mich selbst dar, besonders in Anbetracht des Versäumnisses der Lernzeit.  
     Ein Bild dieses Präsidenten auf meinem Bildschirm vorgelegt, versuchte ich die Konturen frei auf das Papier zu übertragen. Das Ergebnis überraschte mich sehr. -->
   </div>
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="schlafend-im-bus">Schlafend im Bus</h2>
     <div class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <img src="Zeichnungen/Sleep.jpg" alt="Sleep" width="100%"/>
@@ -3121,7 +3121,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     </ul>
     <!-- Mit dem Wissen, auch hier etwas Talent zeigen zu können, zeichnete ich wenige Wochen später einen Klassenkameraden, der im Reisebus zur Klassenfahrt in den Schlaf fiel. Hier reizte mich noch mehr die Herausforderung, in Anbetracht der unruhigen Fahrt, des temporären Ruhezustands des Kollegen, des Zeichnens auf den Oberschenkeln, sowie seinen Abneigung, photografiert zu werden. -->
   </div>
-  <div class="flex-item">
+  <div class = "flex-item excess">
     <h2 id="schlafend-im-bus">Tribal</h2>
     <div class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <img src="Zeichnungen/Tribal.jpg" alt="Tribal" width="100%">

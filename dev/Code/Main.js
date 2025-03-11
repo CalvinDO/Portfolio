@@ -36,6 +36,20 @@ var Portfolio;
         setupFlexItemsPreview();
         setupVideoOverlayHover();
     }
+    function ipify(ev) {
+        fetch('https://api64.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+            sendEmail("IPIFY Portfolio Access - New site load", "IPv6: " + data.ip);
+        })
+            .catch(error => {
+            console.warn("ipify failed", error);
+        });
+    }
+    function sendEmail(_subject, _body) {
+        var email = "calvindelloro@mail.de";
+        window.location.href = "mailto:" + email + "?subject=" + encodeURIComponent(_subject) + "&body=" + encodeURIComponent(_body);
+    }
     function onHoverDoc(_event) {
         preventEventAndDexpand(_event, true);
     }
@@ -365,6 +379,9 @@ var Portfolio;
                 if (index > 2) {
                     value.classList.toggle("excess", true);
                 }
+                else {
+                    value.classList.toggle("excess", false);
+                }
             });
         }
     }
@@ -393,5 +410,6 @@ var Portfolio;
         }
     });
     window.addEventListener('load', init);
+    //window.addEventListener('load', ipify);
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=Main.js.map
