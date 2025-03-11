@@ -12,7 +12,7 @@ var Portfolio;
         let documentsHeading = document.querySelector("#dokumente");
         let documentsHeadingSection = documentsHeading.parentElement;
         footer.insertAdjacentElement('afterbegin', documentsHeadingSection);
-        footer.insertAdjacentElement('afterbegin', documentsWrapper);
+        documentsHeadingSection.insertAdjacentElement('afterend', documentsWrapper);
     }
     function handleInteraction(ev) {
         footer = document.querySelector("#footer_wrap footer");

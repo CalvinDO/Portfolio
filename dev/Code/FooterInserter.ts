@@ -18,7 +18,7 @@ namespace Portfolio {
         let documentsHeadingSection: HTMLDivElement = <HTMLDivElement>documentsHeading.parentElement;
 
         footer.insertAdjacentElement('afterbegin', documentsHeadingSection);
-        footer.insertAdjacentElement('afterbegin', documentsWrapper);
+        documentsHeadingSection.insertAdjacentElement('afterend', documentsWrapper);
 
     }
 
