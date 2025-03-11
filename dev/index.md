@@ -3196,7 +3196,7 @@ footer .section-header {
     <li><a href="CCF18022020_0001.jpg" target = "_blank">Abiturzeugnis</a></li>
     <li><a href="CCF18022020_0003.jpg" target = "_blank">Auszeichnung des Gymnasiums für kulturelles Engagement</a></li>
     <li><a href="CCF18022020_0002.jpg" target = "_blank">Hackathon-Urkunde</a></li>
-    <li><a href="https://jirkadelloro.github.io/Neutrum.pdf" target = "_blank">Das geschlechtergerechte Neutrum nach Prof. Dell'Oro-Friedl</a></li>
+    <li><a href="https://jirkadelloro.github.io/Neutrum" target = "_blank">Das geschlechtergerechte Neutrum nach Prof. Dell'Oro-Friedl</a></li>
   </ul>
 </div>
 
