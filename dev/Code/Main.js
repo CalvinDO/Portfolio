@@ -373,6 +373,7 @@ var Portfolio;
     }
     function setupButtonInContainer(flexContainer, key, parent) {
         let button = document.createElement("button");
+        button.innerHTML = "mehr";
         button.classList.toggle("more-projects", true);
         button.onclick = onClickMoreProjects(flexContainer, button);
         flexContainer.insertAdjacentElement('afterend', button);

@@ -539,6 +539,7 @@ namespace Portfolio {
     function setupButtonInContainer(flexContainer: HTMLElement, key: number, parent: NodeListOf<HTMLElement>): void {
 
         let button: HTMLButtonElement = document.createElement("button");
+        button.innerHTML = "mehr";
         button.classList.toggle("more-projects", true);
 
         button.onclick = onClickMoreProjects(flexContainer, button);
