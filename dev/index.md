@@ -461,7 +461,7 @@ details[open] ~ .klicken {
 
 </style>
 
-<p id="ausfuehrlicher-lebenslauf"><a href="Lebenslauf.md" target = "_blank">Ausführlicher Lebenslauf</a></p>
+<p id="ausfuehrlicher-lebenslauf"><a href="DatenundLebenslauf.pdf" target = "_blank">Ausführlicher Lebenslauf</a></p>
 
 <style>
 
@@ -3184,7 +3184,7 @@ footer .section-header {
 </div>
 <div class ="documents-wrapper">
   <ul class = "documents-list">
-    <li><a href="Lebenslauf.md" target = "_blank">Daten und Lebenslauf</a></li>
+    <li><a href="DatenundLebenslauf.pdf" target = "_blank">Daten und Lebenslauf</a></li>
     <li><a href="EmpfehlungsschreibenVonProfChristophMueller.pdf" target = "_blank">Empfehlungsschreiben Prof. Christoph Müller</a></li>
     <li><a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf" target = "_blank">Empfehlungsschreiben Prof. Dr. Thomas Schneider</a></li>
     <li><a href="BachelorOfScience.pdf" target = "_blank">Bachelorzeugnis</a></li>

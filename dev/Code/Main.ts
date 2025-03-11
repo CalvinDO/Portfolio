@@ -535,8 +535,8 @@ function setupFlexItemsPreview() {
 
     for (let container of document.querySelectorAll(".flex-container")) {
 
-        for (let item of container.childNodes) {
-            console.log(item);
+        for (let item of container.children) {
+
             /*
             container.childNodes.forEach((value: HTMLElement, index: number) => {
 
@@ -545,10 +545,6 @@ function setupFlexItemsPreview() {
                 }
             });
             */
-        }
-        console.log("children:");
-        for (let item of container.children) {
-            console.log(item);
         }
     }
 }
