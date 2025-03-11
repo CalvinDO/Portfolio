@@ -371,10 +371,11 @@ var Portfolio;
     function setupMoreProjectsButtons() {
         document.querySelectorAll(".flex-container").forEach(setupButtonInContainer);
     }
-    function setupButtonInContainer(flexItem, key, parent) {
+    function setupButtonInContainer(flexContainer, key, parent) {
         let button = document.createElement("button");
         button.classList.toggle("more-projects", true);
-        button.onclick = onClickMoreProjects(flexItem, button);
+        button.onclick = onClickMoreProjects(flexContainer, button);
+        flexContainer.insertAdjacentElement('afterend', button);
     }
     function onClickMoreProjects(value, button) {
         return function () {

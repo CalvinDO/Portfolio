@@ -536,12 +536,14 @@ namespace Portfolio {
         document.querySelectorAll(".flex-container").forEach(setupButtonInContainer);
     }
 
-    function setupButtonInContainer(flexItem: HTMLElement, key: number, parent: NodeListOf<HTMLElement>): void {
+    function setupButtonInContainer(flexContainer: HTMLElement, key: number, parent: NodeListOf<HTMLElement>): void {
 
         let button: HTMLButtonElement = document.createElement("button");
         button.classList.toggle("more-projects", true);
 
-        button.onclick = onClickMoreProjects(flexItem, button);
+        button.onclick = onClickMoreProjects(flexContainer, button);
+
+        flexContainer.insertAdjacentElement('afterend', button);
     }
 
     function onClickMoreProjects(value: HTMLElement, button: HTMLButtonElement): (this: GlobalEventHandlers, ev: MouseEvent) => any {
@@ -565,7 +567,7 @@ namespace Portfolio {
 
     window.addEventListener('load', init);
 
-    
+
 }
 
 
