@@ -1084,8 +1084,9 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 }
 
 #main_content .quote-container {
-  min-height: 0;
-  margin-top: 62px;
+    min-height: 0;
+    margin-top: 62px;
+    padding-right: 5.4vw;
 }
 
 #main_content blockquote {
