@@ -461,7 +461,8 @@ details[open] ~ .klicken {
 
 </style>
 
-<p id="ausfuehrlicher-lebenslauf"><a href="DatenundLebenslauf.pdf" target = "_blank">Ausführlicher Lebenslauf</a></p>
+<br>
+<p id="ausfuehrlicher-lebenslauf"><a href="DatenundLebenslauf.pdf" target="_blank"><i class="fa-solid fa-file-lines"></i>&nbsp;&nbsp;Ausführlicher Lebenslauf</a></p>
 
 <style>
 
