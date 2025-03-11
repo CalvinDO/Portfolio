@@ -32,6 +32,7 @@ var Portfolio;
         //removeForkme();
         setupDetailsFlexItems();
         setupProjectFlexItems();
+        setupMoreProjectsButtons();
         setupFlexItemsPreview();
         setupVideoOverlayHover();
     }
@@ -352,6 +353,35 @@ var Portfolio;
         });
     }
     Portfolio.setupNavBar = setupNavBar;
+    function turnPage() {
+        window.scrollTo({
+            top: document.querySelector("#main_content").offsetTop,
+            behavior: 'smooth', // Sanftes Scrollen
+        });
+    }
+    function setupFlexItemsPreview() {
+        for (let container of document.querySelectorAll(".flex-container")) {
+            Array.from(container.children).forEach((value, index) => {
+                if (index > 2) {
+                    value.classList.toggle("excess", true);
+                }
+            });
+        }
+    }
+    function setupMoreProjectsButtons() {
+        document.querySelectorAll(".flex-container").forEach(setupButtonInContainer);
+    }
+    function setupButtonInContainer(flexItem, key, parent) {
+        let button = document.createElement("button");
+        button.classList.toggle("more-projects", true);
+        button.onclick = onClickMoreProjects(flexItem, button);
+    }
+    function onClickMoreProjects(value, button) {
+        return function () {
+            Array.from(value.children).forEach(flexItem => flexItem.classList.toggle("excess", false));
+            button.remove();
+        };
+    }
     document.addEventListener("DOMContentLoaded", () => {
         try {
             setupNavBar();
@@ -362,19 +392,4 @@ var Portfolio;
     });
     window.addEventListener('load', init);
 })(Portfolio || (Portfolio = {}));
-function turnPage() {
-    window.scrollTo({
-        top: document.querySelector("#main_content").offsetTop,
-        behavior: 'smooth', // Sanftes Scrollen
-    });
-}
-function setupFlexItemsPreview() {
-    for (let container of document.querySelectorAll(".flex-container")) {
-        Array.from(container.children).forEach((value, index) => {
-            if (index > 2) {
-                value.classList.toggle("excess", true);
-            }
-        });
-    }
-}
 //# sourceMappingURL=Main.js.map

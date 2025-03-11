@@ -579,6 +579,7 @@ h1#header-coding ~ h1 {
   margin-bottom: 53px !important;
 }
 
+
 .flex-item {
   width: calc(-37px + 33.333333%); /* Standard: 3 Elemente pro Zeile */
   box-sizing: border-box;
@@ -592,6 +593,30 @@ h1#header-coding ~ h1 {
   border: #2f2f2f;
   border-style: none;
   border-width: medium;
+}
+
+button.more-projects:hover {
+    opacity: 0.618;
+}
+
+button.more-projects {
+  top: -23px;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 140px;
+  height: 52px;
+  line-height: 52px;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: x-large;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00a8dd;
+  color: #f8f9fa;
+  border: none;
 }
 
 .excess {

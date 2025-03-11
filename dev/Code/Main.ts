@@ -41,6 +41,8 @@ namespace Portfolio {
 
         setupProjectFlexItems();
 
+        setupMoreProjectsButtons();
+
         setupFlexItemsPreview();
 
         setupVideoOverlayHover();
@@ -510,6 +512,47 @@ namespace Portfolio {
 
     }
 
+    function turnPage() {
+        window.scrollTo({
+            top: (<HTMLElement>document.querySelector("#main_content")).offsetTop, // Hier scrollen wir die Seite zu der Position des nächsten Abschnitts
+            behavior: 'smooth', // Sanftes Scrollen
+        });
+    }
+
+    function setupFlexItemsPreview() {
+
+        for (let container of document.querySelectorAll(".flex-container")) {
+
+            Array.from(container.children).forEach((value: HTMLElement, index: number) => {
+
+                if (index > 2) {
+                    value.classList.toggle("excess", true);
+                }
+            });
+        }
+    }
+
+    function setupMoreProjectsButtons() {
+        document.querySelectorAll(".flex-container").forEach(setupButtonInContainer);
+    }
+
+    function setupButtonInContainer(flexItem: HTMLElement, key: number, parent: NodeListOf<HTMLElement>): void {
+
+        let button: HTMLButtonElement = document.createElement("button");
+        button.classList.toggle("more-projects", true);
+
+        button.onclick = onClickMoreProjects(flexItem, button);
+    }
+
+    function onClickMoreProjects(value: HTMLElement, button: HTMLButtonElement): (this: GlobalEventHandlers, ev: MouseEvent) => any {
+
+        return function () {
+
+            Array.from(value.children).forEach(flexItem => flexItem.classList.toggle("excess", false));
+            button.remove();
+        };
+    }
+
     document.addEventListener("DOMContentLoaded", () => {
 
         try {
@@ -521,25 +564,9 @@ namespace Portfolio {
     });
 
     window.addEventListener('load', init);
+
+    
 }
 
 
-function turnPage() {
-    window.scrollTo({
-        top: (<HTMLElement>document.querySelector("#main_content")).offsetTop, // Hier scrollen wir die Seite zu der Position des nächsten Abschnitts
-        behavior: 'smooth', // Sanftes Scrollen
-    });
-}
 
-function setupFlexItemsPreview() {
-
-    for (let container of document.querySelectorAll(".flex-container")) {
-
-        Array.from(container.children).forEach((value: HTMLElement, index: number) => {
-
-            if (index > 2) {
-                value.classList.toggle("excess", true);
-            }
-        });
-    }
-}
