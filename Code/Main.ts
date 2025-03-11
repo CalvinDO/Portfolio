@@ -11,13 +11,6 @@ namespace Portfolio {
         console.warn(error);
     }
 
-    /*
-    try {
-        init();
-    } catch (error) {
-        console.warn("Init called too fast: " + error);
-    }
-    */
 
     function init() {
 
@@ -41,9 +34,28 @@ namespace Portfolio {
 
         setupProjectFlexItems();
 
+        setupMoreProjectsButtons();
+
         setupFlexItemsPreview();
 
         setupVideoOverlayHover();
+    }
+
+    function ipify(this: Window, ev: Event) {
+
+        fetch('https://api64.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                sendEmail("IPIFY Portfolio Access - New site load", "IPv6: " + data.ip);
+            })
+            .catch(error => {
+                console.warn("ipify failed", error);
+            });
+    }
+
+    function sendEmail(_subject: string, _body: string) {
+        var email = "calvindelloro@mail.de";
+        window.location.href = "mailto:" + email + "?subject=" + encodeURIComponent(_subject) + "&body=" + encodeURIComponent(_body);
     }
 
     function onHoverDoc(_event: Event) {
@@ -510,6 +522,52 @@ namespace Portfolio {
 
     }
 
+    function turnPage() {
+        window.scrollTo({
+            top: (<HTMLElement>document.querySelector("#main_content")).offsetTop, // Hier scrollen wir die Seite zu der Position des nächsten Abschnitts
+            behavior: 'smooth', // Sanftes Scrollen
+        });
+    }
+
+    function setupFlexItemsPreview() {
+
+        for (let container of document.querySelectorAll(".flex-container")) {
+
+            Array.from(container.children).forEach((value: HTMLElement, index: number) => {
+
+                if (index > 2) {
+                    value.classList.toggle("excess", true);
+                } else {
+                    value.classList.toggle("excess", false);
+                }
+            });
+        }
+    }
+
+    function setupMoreProjectsButtons() {
+        document.querySelectorAll(".flex-container").forEach(setupButtonInContainer);
+    }
+
+    function setupButtonInContainer(flexContainer: HTMLElement, key: number, parent: NodeListOf<HTMLElement>): void {
+
+        let button: HTMLButtonElement = document.createElement("button");
+        button.innerHTML = "mehr";
+        button.classList.toggle("more-projects", true);
+
+        button.onclick = onClickMoreProjects(flexContainer, button);
+
+        flexContainer.insertAdjacentElement('afterend', button);
+    }
+
+    function onClickMoreProjects(value: HTMLElement, button: HTMLButtonElement): (this: GlobalEventHandlers, ev: MouseEvent) => any {
+
+        return function () {
+
+            Array.from(value.children).forEach(flexItem => flexItem.classList.toggle("excess", false));
+            button.remove();
+        };
+    }
+
     document.addEventListener("DOMContentLoaded", () => {
 
         try {
@@ -521,30 +579,10 @@ namespace Portfolio {
     });
 
     window.addEventListener('load', init);
+    //window.addEventListener('load', ipify);
 }
 
 
-function turnPage() {
-    window.scrollTo({
-        top: (<HTMLElement>document.querySelector("#main_content")).offsetTop, // Hier scrollen wir die Seite zu der Position des nächsten Abschnitts
-        behavior: 'smooth', // Sanftes Scrollen
-    });
-}
 
-function setupFlexItemsPreview() {
 
-    for (let container of document.querySelectorAll(".flex-container")) {
 
-        for (let item of container.children) {
-
-            /*
-            container.childNodes.forEach((value: HTMLElement, index: number) => {
-
-                if (index > 2) {
-                    value.classList.toggle("excess", true);
-                }
-            });
-            */
-        }
-    }
-}
