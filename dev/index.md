@@ -213,7 +213,7 @@ h1{
 
 <div class = "navbar-placeholder" id="navbar-placeholder"></div>
 
-<nav class ="navbar" id = "navbar" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50">
+<nav class ="navbar" id = "navbar">
   <ul class = "menu">
     <li><a href="#motivation">Motivation</a></li>
     <li><a href="#header-coding">Coding</a></li>
