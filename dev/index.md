@@ -269,7 +269,7 @@ h1{
   <span class="quote-text"><strong>weit über</strong> die vorgegebenen <strong>Lehrziele hinaus</strong><br>
   </span>
   <footer>
-    <cite class="author">— <a href="EmpfehlungsschreibenVonProfChristophMueller.pdf" target="_blank">Prof. Christoph Müller, Hochschule Furtwangen University</a></cite>
+    <cite class="author">— <a href="EmpfehlungsschreibenVonProfChristophMueller.pdf" target="_blank">Prof. Christoph Müller, HFU</a></cite>
   </footer>
   </blockquote>
 </div>
