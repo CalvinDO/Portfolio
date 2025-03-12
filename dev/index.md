@@ -782,7 +782,7 @@ button.more-projects {
 }
 
 .expanded .third-toggle-content {
-  padding-bottom: 22px;
+  padding-bottom: 22px !important;
 }
 
 
@@ -1090,7 +1090,10 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 */
         
 .skills {
-    line-height: 2.1; /* Der Wert 1.8 kann angepasst werden, um den Abstand zu verändern */
+  line-height: 2.1;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 15px;
 }
 
 .task-list {
