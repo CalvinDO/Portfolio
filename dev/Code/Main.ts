@@ -28,15 +28,37 @@ namespace Portfolio {
 
         setupDetailsFlexItems();
 
+
+        setupProjectFlexItems();
+        setupVideoOverlayHover();
+        setupFlexItemsPreview();
+
+        /*
+        addDynamicProjects();
         
         setupProjectFlexItems();
-        
-        setupFlexItemsPreview();
-        
         setupVideoOverlayHover();
-        
+        setupFlexItemsPreview();
+        */
+
         setupMoreProjectsButtons();
     }
+
+    function addDynamicProjects() {
+
+        addCodingDynamicProjects();
+        addModellingDynamicProjects();
+    }
+
+    function addCodingDynamicProjects(): void {
+
+
+    }
+
+    function addModellingDynamicProjects(): void {
+
+    }
+
 
     function ipify(this: Window, ev: Event) {
 

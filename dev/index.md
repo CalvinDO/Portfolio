@@ -1314,6 +1314,85 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     Zugrunde liegen Evolutionäre Algorithmen, die Probleme ähnlich biologischer Organismen lösen, da genetische Operatoren wie Selektion, Rekombination und Mutation die Evolution durch Reproduktion der stärksten Gene steuern. In meiner Bachelor-Arbeit nutzte ich die topologische Flexibilität von NEAT (Neuroevolution of Augumenting Topologies) um die Kreaturen durch evolvierende Genome zu bewegen. Untersucht habe ich, welche Berechnungsmethode und Parameter-Konfiguration des NEAT-Algorithmus' zu der weitesten Laufdistanz verschiedener Kreaturen führt, ohne Laufmuster vorzugeben. Ich wollte eine Anwendung entwickeln, die ohne weitere Eingriffe des Nutzers zu Laufmustern seiner erstellten Kreaturen führt. Durch diese Arbeit entwickelte ich die Fähigkeit, künstliche Intelligenzen auf Basis von evolutionär veränderten Neuronalen Netzen zu programmieren und trainieren, sowie einen InGame-Editor in Unity zu programmieren.  
     Die Kamera kann im Editor mit Mausbewegung und Drücken sowie Scrollen der mittleren Maustaste gesteuert werden. Bauen neuer Glieder wird mit Linksklick gestartet und mit Mausbewegung verlängert. Ein erneuter Linksklick schließt das Bauen ab, während die rechte Maustaste das Bauen abbricht. Den Rotations-Einstellungs-Modus schalten Sie mit "R" um. Weitere Anleitung finden Sie in der <a href = "NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">Thesis</a> -->
   </div>
+  
+  <div class = "flex-item excess">
+    <h2 id="morbus-animi">Morbus Animi</h2>
+    <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+        <a href="https://simmer.io/@DerCalvino/morbus-animi-final"  target = "_blank">
+            <video width="100%" poster = "MorbusAnimiThumbnail.jpg" controls loop>
+                <source src="Morbus-Animi.mp4" alt="Morbus-Animi" type="video/mp4"/>
+                Ihr Browser unterstützt den Video-Tag nicht
+            </video>
+        </a>
+        <div class = "klicken-indicator">Klicken zum Spielen</div>
+        <div class = "primary-info-container">
+          <div class="team-size-container">
+          <span><i class='fas fa-users'></i>&nbsp;&nbsp;6</span>
+          </div>
+          <div class = "context-awards">
+            <i class="fa fa-university"></i>
+            <i class="fas fa-award"></i>
+          </div>
+          <div class="tags">
+            <span class="tag">Horrorgame</span>
+            <span class="tag">JumpNRun</span>
+            <span class="tag">NavMesh</span>
+          </div>
+          <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;1y</span>
+        </div>
+    </div>  
+    <h4>
+        Projektstudium<br>
+        6-köpfiges Team<br>
+        Frühling 2021 – Frühling 2022<br>
+        Horrorspiel, IndieNight-Erstplatziert
+    </h4>
+    <br>
+    <div class="skills">
+        <strong>Unity (C#), NavMesh</strong><br>
+        <em>Teamorientiert – Strukturiert – Erzählstark</em><br>
+        <strong>Style Guides, Dokumentation, Roadmap, Kanban, SCRUM, Git</strong>
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Fortgeschrittener Camera-Controller</strong><br>
+          <span>Programmierung eines intelligenten Third-Person-Kamerasystems</span>
+          <ul>
+              <li>Verdeckung, Bewegung, Hindernis-Vermeidung</li>
+          </ul>
+      </li>
+      <li><strong>Modulare Asset-Programmierung</strong><br>
+          <span>Erstellung parametrischer Assets zur flexiblen Anpassung durch andere Abteilungen</span>
+          <ul>
+              <li>Dynamische Elemente: Story, Level, Puzzle, Effekt, Sound</li>
+          </ul>
+      </li>
+      <li><strong>Spielmechanik & Physik</strong><br>
+          <span>Entwicklung eines Jump-and-Run</span>
+          <ul>
+              <li>Schwingen, Greifen, Hangeln, Parkour</li>
+          </ul>
+      </li>
+      <li><strong>KI-Gegneri & Steuerung</strong><br>
+          <span>Programmierung und Balancing der Gegneri-KI (Unity NavMesh)</span>
+          <ul>
+              <li>Anpassungsfähige Verfolgungs- und Fluchtmechaniken</li>
+          </ul>
+      </li>
+      <li><strong>Details & Technische Tiefe</strong><br>
+          <span>Diverses Coding zur Steigerung der Immersion und Interaktivität</span>
+          <ul>
+              <li>Bone-Rigs mit Multi-Aim Constraints & Weights</li>
+          </ul>
+      </li>
+    </ul>
+    <div class="controls">
+        Steuerung wird im Spiel erklärt.
+    </div>
+    <!-- Mit zwei Grafikerinnen, einem VFX-Spezialist, einem Storyteller, einem anderen Programmierer und mir entwickelten wir im vierten und fünften Semester im Rahmen des Projektstudiums dieses psychische Horrorspiel. Auch bei der Organisation dieses Projekts half die Erfahrung mit dem SCRUM-System im kommerziellen Umfeld bei <a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a>.<br>
+    Ich übernahm bis auf Inventar, Collectables und Menü-GUI das Coding der Skripte, um Spielmechanik, Physik-, Animations-, Sound- und KI-Controller, sowie UserInterfaces und Spielbalance zu realisieren. Besonders die Programmierung des Jump-and-Runs, mit Schwingen und Greifen sowie Hängen an Kanten, lag in meinem Fokus und lieferte eingängige Lernerfahrungen. Gleiches gilt für Entwicklung und Balancing des KI-Gegners mit Unity NavMesh. Auch mit dem Coding modularer Assets bereicherte ich das Projekt und die Kooperation, da andere Abteilungen diese parametrisierten, um Spielgeschehen wie Story-Fortschritt, Puzzle-Logik, Effekte und Sounds zu steuern. Mit diesem Titel gewannen wir den ersten Platz der Projektausstellung bei der "IndieNight" an der Hochschule Furtwangen. <br>
+    Die Steuerung wird im Spiel erklärt. -->
+  </div>
 
   <div class = "flex-item excess">
     <h2 id="the-last-hope">The Last Hope</h2>
@@ -1464,84 +1543,6 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     Die Umsetzung innerhalb des Kurses "Echtzeit-Computergrafik" im sechsten Semester erfolgte mit WebAR, JavaScript und GLSL. In einem dreiköpfigen Team machten wir uns mit Programmierung von Vertex- und Fragmentshadern vertraut, sowie mit Umgebungsvariablen von WebAR und "Three.js". -->
   </div>
 
-  <div class = "flex-item excess">
-    <h2 id="morbus-animi">Morbus Animi</h2>
-    <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-        <a href="https://simmer.io/@DerCalvino/morbus-animi-final"  target = "_blank">
-            <video width="100%" poster = "MorbusAnimiThumbnail.jpg" controls loop>
-                <source src="Morbus-Animi.mp4" alt="Morbus-Animi" type="video/mp4"/>
-                Ihr Browser unterstützt den Video-Tag nicht
-            </video>
-        </a>
-        <div class = "klicken-indicator">Klicken zum Spielen</div>
-        <div class = "primary-info-container">
-          <div class="team-size-container">
-          <span><i class='fas fa-users'></i>&nbsp;&nbsp;6</span>
-          </div>
-          <div class = "context-awards">
-            <i class="fa fa-university"></i>
-            <i class="fas fa-award"></i>
-          </div>
-          <div class="tags">
-            <span class="tag">Horrorgame</span>
-            <span class="tag">JumpNRun</span>
-            <span class="tag">NavMesh</span>
-          </div>
-          <span class ="duration"><i class="fa fa-calendar"></i>&nbsp;&nbsp;1y</span>
-        </div>
-    </div>  
-    <h4>
-        Projektstudium<br>
-        6-köpfiges Team<br>
-        Frühling 2021 – Frühling 2022<br>
-        Horrorspiel, IndieNight-Erstplatziert
-    </h4>
-    <br>
-    <div class="skills">
-        <strong>Unity (C#), NavMesh</strong><br>
-        <em>Teamorientiert – Strukturiert – Erzählstark</em><br>
-        <strong>Style Guides, Dokumentation, Roadmap, Kanban, SCRUM, Git</strong>
-    </div>
-    <br>
-    <ul class="task-list">
-      <li><strong>Fortgeschrittener Camera-Controller</strong><br>
-          <span>Programmierung eines intelligenten Third-Person-Kamerasystems</span>
-          <ul>
-              <li>Verdeckung, Bewegung, Hindernis-Vermeidung</li>
-          </ul>
-      </li>
-      <li><strong>Modulare Asset-Programmierung</strong><br>
-          <span>Erstellung parametrischer Assets zur flexiblen Anpassung durch andere Abteilungen</span>
-          <ul>
-              <li>Dynamische Elemente: Story, Level, Puzzle, Effekt, Sound</li>
-          </ul>
-      </li>
-      <li><strong>Spielmechanik & Physik</strong><br>
-          <span>Entwicklung eines Jump-and-Run</span>
-          <ul>
-              <li>Schwingen, Greifen, Hangeln, Parkour</li>
-          </ul>
-      </li>
-      <li><strong>KI-Gegneri & Steuerung</strong><br>
-          <span>Programmierung und Balancing der Gegneri-KI (Unity NavMesh)</span>
-          <ul>
-              <li>Anpassungsfähige Verfolgungs- und Fluchtmechaniken</li>
-          </ul>
-      </li>
-      <li><strong>Details & Technische Tiefe</strong><br>
-          <span>Diverses Coding zur Steigerung der Immersion und Interaktivität</span>
-          <ul>
-              <li>Bone-Rigs mit Multi-Aim Constraints & Weights</li>
-          </ul>
-      </li>
-    </ul>
-    <div class="controls">
-        Steuerung wird im Spiel erklärt.
-    </div>
-    <!-- Mit zwei Grafikerinnen, einem VFX-Spezialist, einem Storyteller, einem anderen Programmierer und mir entwickelten wir im vierten und fünften Semester im Rahmen des Projektstudiums dieses psychische Horrorspiel. Auch bei der Organisation dieses Projekts half die Erfahrung mit dem SCRUM-System im kommerziellen Umfeld bei <a href="https://www.weltenbauer-se.com/de">weltenbauer. Software Entwicklung GmbH</a>.<br>
-    Ich übernahm bis auf Inventar, Collectables und Menü-GUI das Coding der Skripte, um Spielmechanik, Physik-, Animations-, Sound- und KI-Controller, sowie UserInterfaces und Spielbalance zu realisieren. Besonders die Programmierung des Jump-and-Runs, mit Schwingen und Greifen sowie Hängen an Kanten, lag in meinem Fokus und lieferte eingängige Lernerfahrungen. Gleiches gilt für Entwicklung und Balancing des KI-Gegners mit Unity NavMesh. Auch mit dem Coding modularer Assets bereicherte ich das Projekt und die Kooperation, da andere Abteilungen diese parametrisierten, um Spielgeschehen wie Story-Fortschritt, Puzzle-Logik, Effekte und Sounds zu steuern. Mit diesem Titel gewannen wir den ersten Platz der Projektausstellung bei der "IndieNight" an der Hochschule Furtwangen. <br>
-    Die Steuerung wird im Spiel erklärt. -->
-  </div>
   <div class = "flex-item excess">
     <h2 id="gesetzestext-generator">Gesetzestext-Generator</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
@@ -3252,5 +3253,3 @@ footer .section-header {
 <script src = "Code/FooterInserter.js"></script>
 
 <br><br><br><br><br>
-
-</div>
