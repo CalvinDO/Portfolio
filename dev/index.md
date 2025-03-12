@@ -1147,7 +1147,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 <div id="overlay"></div>
 
 <div class="quote-container"><blockquote>
-  <span class="quote-text">Er arbeitete sehr <strong>effizient</strong>, <strong>routiniert</strong> und <strong>zuverlässig</strong>.<br>
+  <span class="quote-text">[<strong>Calvin Dell'Oro</strong>] arbeitete sehr <strong>effizient</strong>, <strong>routiniert</strong> und <strong>zuverlässig</strong>.<br>
   </span>
   <footer>
     <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf" target = "_blank">René Nold, Geschäftsführer, weltenbauer. Software Entwicklung GmbH</a></cite>
