@@ -465,7 +465,7 @@ details[open] ~ .klicken {
             </li>
           </ul>
           </summary>
-          Im Rahmen der freiwilligen Aufgaben des Programmiermoduls des ersten Semesters meines abgeschlossenen Studiums entwickelte ich mit Java einen ewigen Kalender, <strong>Game of Life</strong> und <strong>Tic-Tac-Toe</strong>. Letzteres baute ich mit einem zufällig spielenden Computergegner aus, der zum Trainieren einer künstlichen Intelligenz genutzt werden soll.<br>
+          Im Rahmen der freiwilligen Aufgaben des Programmiermoduls des ersten Semesters meines abgeschlossenen Studiums entwickelte ich mit Java einen ewigen Kalender, <strong>Game of Life</strong> und <strong>Tic-Tac-Toe</strong>. Letzteres baute ich mit einem zufällig spielenden Computergegneri aus, der zum Trainieren einer künstlichen Intelligenz genutzt werden soll.<br>
           Beim <strong>Global Game Jam 2020</strong> im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines <a href="#fuwashima">VR-Spiels</a> mit. Meine Hauptaufgaben lagen im <strong>Gamedesign</strong> und <a href="#fuwashima"><strong>Sound</strong></a>. Dieses Event weckte bei mir erneut das Interesse an der <strong>3D-Programmierung</strong> und dem <strong>3D-Modeling</strong>, weshalb ich mich intensiver mit <strong>Unity</strong> und <strong>Blender</strong> beschäftigte.
       </details>
       <img src="startpageArrow.png" class="klicken">
@@ -595,7 +595,7 @@ details[open] ~ .klicken {
     <div class="motivation-item" id="wunsch">
         <i class="fa-solid fa-flag-checkered"></i>
         <p>Gerne programmiere ich <strong>Spiele ohne Gewaltdarstellungen</strong> und biete Spieleris eine eher <strong>friedliche</strong> und <strong>meditative Erfahrung</strong>. Bei Mehrspielermodi sollten alle <strong>konstruktiv</strong> und <strong>kooperativ</strong> zusammenarbeiten.<br>  
-        Optimalerweise verzichtet das Spiel auf Gegner und vermittelt <strong>intuitive Einsichten</strong> über tiefgreifende Themen und <strong>Philosophien</strong>. <strong>Puzzle-Games</strong>, <strong>Aufbau-Strategiespiele</strong> sowie <strong>Cozy–</strong> oder <strong>Educational-Games</strong>, <strong>Simulatoren</strong> oder <strong>Musik–, Sound– und Rhythm-Games</strong> kommen besonders infrage.</p>
+        Optimalerweise verzichtet das Spiel auf Gegneris und vermittelt <strong>intuitive Einsichten</strong> über tiefgreifende Themen und <strong>Philosophien</strong>. <strong>Puzzle-Games</strong>, <strong>Aufbau-Strategiespiele</strong> sowie <strong>Cozy–</strong> oder <strong>Educational-Games</strong>, <strong>Simulatoren</strong> oder <strong>Musik–, Sound– und Rhythm-Games</strong> kommen besonders infrage.</p>
     </div>
     <div class="motivation-item" id="jobs">
         <i class="fa-solid fa-screwdriver-wrench"></i>
@@ -1513,8 +1513,8 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
               <li>Schwingen, Greifen, Hangeln, Parkour</li>
           </ul>
       </li>
-      <li><strong>KI-Gegner & Steuerung</strong><br>
-          <span>Programmierung und Balancing der Gegner-KI (Unity NavMesh)</span>
+      <li><strong>KI-Gegneri & Steuerung</strong><br>
+          <span>Programmierung und Balancing der Gegneri-KI (Unity NavMesh)</span>
           <ul>
               <li>Anpassungsfähige Verfolgungs- und Fluchtmechaniken</li>
           </ul>
