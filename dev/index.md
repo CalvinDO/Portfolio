@@ -1,3 +1,5 @@
+<div id = "hardcode-html" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
 <script src="Code/Main.js"></script>
 
 <style>
@@ -175,11 +177,6 @@ h1{
   padding: 0;
   margin: 0;
   flex-wrap: wrap;
-  /* background: #f8f9fa; */
-}
-
-.menu li {
-  /*margin: 0 0.6180339%;*/
 }
 
 .menu li a {
@@ -196,17 +193,21 @@ h1{
   background: #212529;
 }
 
-.menu li a:hover {
+.menu li a:hover, .menu li.active a {
   text-decoration: none;
   background: #212529;
   color: #E9ECEF;
 }
 
-.navbar.sticky .menu li a:hover {
+.navbar.sticky .menu li a:hover, .navbar.sticky .menu li.active a {
   background: #E9ECEF; 
   color: #343A40;
 }
 
+
+.menu li {
+  /*margin: 0 0.6180339%;*/
+}
 
 </style>
 
@@ -214,7 +215,7 @@ h1{
 
 <div class = "navbar-placeholder" id="navbar-placeholder"></div>
 
-<nav class ="navbar">
+<nav class ="navbar" id = "navbar" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50">
   <ul class = "menu">
     <li><a href="#motivation">Motivation</a></li>
     <li><a href="#header-coding">Coding</a></li>
@@ -1146,6 +1147,11 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <!-- umbrella icon -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<!-- bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JS (Optional, needed for Bootstrap functionality) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 <div id="overlay"></div>
 
@@ -3245,3 +3251,5 @@ footer .section-header {
 <script src = "Code/FooterInserter.js"></script>
 
 <br><br><br><br><br>
+
+</div>
