@@ -104,8 +104,8 @@ h1{
 }
 
 .section-header {
-  margin-top: 145px;
-  margin-bottom: 62px;
+  margin-top: 200px;
+  margin-bottom: 95px;
   text-align: center;
   font-size: 200px;
   color: #212529;
@@ -225,6 +225,54 @@ h1{
     <li><a href="#dokumente">Dokumente</a></li>
   </ul>
 </nav>
+
+<style>
+
+
+#main_content .quote-container::before {
+  color: #00a8dd !important;
+  font-size: calc(16.18vw * 0.618);
+  bottom: 1.618vw;
+  right: calc(3vw * 0.618) !important;
+}
+
+#main_content .quote-container {
+    min-height: 0;
+    padding-top: 100px;
+    padding-right: 5.4vw;
+}
+
+#first-blue-quote {
+    margin-top: 125px !important;
+}
+
+#main_content blockquote {
+    color: #212529 !important;
+}
+
+#main_content blockquote a {
+    color: #212529 !important;
+}
+
+#main_content blockquote * {
+    font-size: calc((20px + 0.6180339vw)* 0.618);
+}
+
+.quote-container + .section-header {
+  margin-top: 45px;
+}
+
+</style>
+
+<div class="quote-container" id="first-blue-quote" style="
+"><blockquote>
+  <span class="quote-text"><strong>weit über</strong> die vorgegebenen <strong>Lehrziele hinaus</strong><br>
+  </span>
+  <footer>
+    <cite class="author">— <a href="EmpfehlungsschreibenVonProfChristophMueller.pdf" target="_blank">Prof. Christoph Müller, Hochschule Furtwangen University</a></cite>
+  </footer>
+  </blockquote>
+</div>
 
 <div class="section-header">
 <h1 id="motivation">Motivation</h1>
@@ -1097,40 +1145,6 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 <div id="overlay"></div>
-
-<style>
-
-
-#main_content .quote-container::before {
-  color: #00a8dd !important;
-  font-size: calc(16.18vw * 0.618);
-  bottom: 1.618vw;
-  right: calc(3vw * 0.618) !important;
-}
-
-#main_content .quote-container {
-    min-height: 0;
-    margin-top: 62px;
-    padding-right: 5.4vw;
-}
-
-#main_content blockquote {
-    color: #212529 !important;
-}
-
-#main_content blockquote a {
-    color: #212529 !important;
-}
-
-#main_content blockquote * {
-    font-size: calc((20px + 0.6180339vw)* 0.618);
-}
-
-.quote-container + .section-header {
-  margin-top: 45px;
-}
-
-</style>
 
 <div class="quote-container"><blockquote>
   <span class="quote-text">Er arbeitete sehr <strong>effizient</strong>, <strong>routiniert</strong> und <strong>zuverlässig</strong>.<br>
