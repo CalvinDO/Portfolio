@@ -19,10 +19,6 @@ var Portfolio;
         overlay = document.querySelector('#overlay');
         document.addEventListener('click', onClickDoc, { capture: true });
         document.addEventListener('mouseover', onHoverDoc, { capture: true });
-        /*
-        setupOverlay();
-        */
-        //removeForkme();
         setupDetailsFlexItems();
         setupProjectFlexItems();
         setupMoreProjectsButtons();
@@ -398,6 +394,7 @@ var Portfolio;
         };
     }
     document.addEventListener("DOMContentLoaded", () => {
+        console.log("DOM CONTENT LOADED");
         try {
             setupNavBar();
         }

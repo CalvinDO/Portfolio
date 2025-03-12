@@ -25,10 +25,6 @@ namespace Portfolio {
         document.addEventListener('click', onClickDoc, { capture: true });
         document.addEventListener('mouseover', onHoverDoc, { capture: true });
 
-        /*
-        setupOverlay();
-        */
-        //removeForkme();
 
         setupDetailsFlexItems();
 
@@ -573,6 +569,8 @@ namespace Portfolio {
     }
 
     document.addEventListener("DOMContentLoaded", () => {
+
+        console.log("DOM CONTENT LOADED");
 
         try {
             setupNavBar();
