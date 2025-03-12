@@ -259,7 +259,7 @@ h1{
 }
 
 .quote-container + .section-header {
-  margin-top: 45px;
+  margin-top: 150px;
 }
 
 </style>
@@ -523,7 +523,7 @@ details[open] ~ .klicken {
 
   margin-bottom: 0px;
   margin-top: 0px;
-  padding-top: 25px;
+  padding-top: 100px;
   padding-bottom: 25px;
 
   font-size: large;
@@ -535,7 +535,7 @@ details[open] ~ .klicken {
     padding: 0% 23.604%;
     text-align: start;
 
-    padding-top: 25px;
+    padding-top: 100px;
     padding-bottom: 25px;
   }
 }
@@ -546,7 +546,7 @@ details[open] ~ .klicken {
     padding: 0% 9%;
     padding-left: 5.18%;
 
-    padding-top: 25px;
+    padding-top: 100px;
     padding-bottom: 25px;
   }
 }
