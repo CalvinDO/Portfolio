@@ -1,5 +1,3 @@
-<div id = "hardcode-html" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
-
 <script src="Code/Main.js"></script>
 
 <style>
@@ -274,6 +272,8 @@ h1{
   </footer>
   </blockquote>
 </div>
+
+<div id = "hardcode-html" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 
 <div class="section-header">
 <h1 id="motivation">Motivation</h1>
@@ -3188,6 +3188,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     Anstatt einen Pinsel oder Kaligrafiestift zu verwenden, benutzte ich konsequent eine Art eines Fine-Liners, dessen Spitze ich nie das Papier berühren lies, und somit über einen durch die Oberflächenspannung entstehenden winzigen Tintenkanal äußerst vorsichtig über dem Blatt schweben lassen musste, da direkter Kontakt sofort zu unansehnlichen Färbungen führte.  
     Die Motive lehnten ausschließlich an Tribal-Tattoos an. -->
   </div>
+</div>
 </div>
 
 <style>

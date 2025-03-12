@@ -28,13 +28,14 @@ namespace Portfolio {
 
         setupDetailsFlexItems();
 
+        
         setupProjectFlexItems();
-
-        setupMoreProjectsButtons();
-
+        
         setupFlexItemsPreview();
-
+        
         setupVideoOverlayHover();
+        
+        setupMoreProjectsButtons();
     }
 
     function ipify(this: Window, ev: Event) {

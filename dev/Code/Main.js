@@ -21,9 +21,9 @@ var Portfolio;
         document.addEventListener('mouseover', onHoverDoc, { capture: true });
         setupDetailsFlexItems();
         setupProjectFlexItems();
-        setupMoreProjectsButtons();
         setupFlexItemsPreview();
         setupVideoOverlayHover();
+        setupMoreProjectsButtons();
     }
     function ipify(ev) {
         fetch('https://api64.ipify.org?format=json')
