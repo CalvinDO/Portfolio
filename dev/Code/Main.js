@@ -296,7 +296,7 @@ var Portfolio;
     }
     function setupHeaderQuote() {
         let quote = document.createElement("blockquote");
-        quote.innerHTML = '<span class="quote-text"><strong>Calvin Dell’Oro</strong> [zählt] unter den etlichen hundert Studierenden,<br>die ich seit 2008 [...] unterrichtet habe,<br>zu den drei <strong>engagiertesten</strong> und <strong>erfolgreichsten</strong>.</span><footer><cite class="author">— <a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf" target = "_blank">Prof. Dr. rer. nat. Thomas Schneider</a></cite></footer>';
+        quote.innerHTML = '<span class="quote-text"><strong>Calvin Dell’Oro</strong> [zählt] unter den etlichen hundert Studierenden,<br>die ich seit 2008 [...] unterrichtet habe,<br>zu den drei <strong>engagiertesten</strong> und <strong>erfolgreichsten</strong>.</span><footer><cite class="author">— <a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf" target = "_blank">Prof. Dr. rer. nat. Thomas Schneider, HFU</a></cite></footer>';
         /*, <cite class="quote-time">2025</cite>*/
         let quoteContainer = document.createElement("div");
         quoteContainer.classList.add("quote-container");
@@ -382,6 +382,9 @@ var Portfolio;
         document.querySelectorAll(".flex-container").forEach(setupButtonInContainer);
     }
     function setupButtonInContainer(flexContainer, key, parent) {
+        if (flexContainer.children.length <= 3) {
+            return;
+        }
         let button = document.createElement("button");
         button.innerHTML = "mehr";
         button.classList.toggle("more-projects", true);
