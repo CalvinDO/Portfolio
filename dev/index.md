@@ -175,6 +175,11 @@ h1{
   padding: 0;
   margin: 0;
   flex-wrap: wrap;
+  /* background: #f8f9fa; */
+}
+
+.menu li {
+  /*margin: 0 0.6180339%;*/
 }
 
 .menu li a {
@@ -191,21 +196,17 @@ h1{
   background: #212529;
 }
 
-.menu li a:hover, .menu li.active a {
+.menu li a:hover {
   text-decoration: none;
   background: #212529;
   color: #E9ECEF;
 }
 
-.navbar.sticky .menu li a:hover, .navbar.sticky .menu li.active a {
+.navbar.sticky .menu li a:hover {
   background: #E9ECEF; 
   color: #343A40;
 }
 
-
-.menu li {
-  /*margin: 0 0.6180339%;*/
-}
 
 </style>
 
@@ -213,7 +214,7 @@ h1{
 
 <div class = "navbar-placeholder" id="navbar-placeholder"></div>
 
-<nav class ="navbar" id = "navbar">
+<nav class ="navbar">
   <ul class = "menu">
     <li><a href="#motivation">Motivation</a></li>
     <li><a href="#header-coding">Coding</a></li>
@@ -1146,11 +1147,6 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 <!-- umbrella icon -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-<!-- bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- Bootstrap JS (Optional, needed for Bootstrap functionality) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
 <div id="overlay"></div>
 
 <div class="quote-container"><blockquote>
@@ -1312,7 +1308,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     Zugrunde liegen Evolutionäre Algorithmen, die Probleme ähnlich biologischer Organismen lösen, da genetische Operatoren wie Selektion, Rekombination und Mutation die Evolution durch Reproduktion der stärksten Gene steuern. In meiner Bachelor-Arbeit nutzte ich die topologische Flexibilität von NEAT (Neuroevolution of Augumenting Topologies) um die Kreaturen durch evolvierende Genome zu bewegen. Untersucht habe ich, welche Berechnungsmethode und Parameter-Konfiguration des NEAT-Algorithmus' zu der weitesten Laufdistanz verschiedener Kreaturen führt, ohne Laufmuster vorzugeben. Ich wollte eine Anwendung entwickeln, die ohne weitere Eingriffe des Nutzers zu Laufmustern seiner erstellten Kreaturen führt. Durch diese Arbeit entwickelte ich die Fähigkeit, künstliche Intelligenzen auf Basis von evolutionär veränderten Neuronalen Netzen zu programmieren und trainieren, sowie einen InGame-Editor in Unity zu programmieren.  
     Die Kamera kann im Editor mit Mausbewegung und Drücken sowie Scrollen der mittleren Maustaste gesteuert werden. Bauen neuer Glieder wird mit Linksklick gestartet und mit Mausbewegung verlängert. Ein erneuter Linksklick schließt das Bauen ab, während die rechte Maustaste das Bauen abbricht. Den Rotations-Einstellungs-Modus schalten Sie mit "R" um. Weitere Anleitung finden Sie in der <a href = "NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf">Thesis</a> -->
   </div>
-  
+
   <div class = "flex-item excess">
     <h2 id="morbus-animi">Morbus Animi</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
@@ -1391,7 +1387,6 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     Ich übernahm bis auf Inventar, Collectables und Menü-GUI das Coding der Skripte, um Spielmechanik, Physik-, Animations-, Sound- und KI-Controller, sowie UserInterfaces und Spielbalance zu realisieren. Besonders die Programmierung des Jump-and-Runs, mit Schwingen und Greifen sowie Hängen an Kanten, lag in meinem Fokus und lieferte eingängige Lernerfahrungen. Gleiches gilt für Entwicklung und Balancing des KI-Gegners mit Unity NavMesh. Auch mit dem Coding modularer Assets bereicherte ich das Projekt und die Kooperation, da andere Abteilungen diese parametrisierten, um Spielgeschehen wie Story-Fortschritt, Puzzle-Logik, Effekte und Sounds zu steuern. Mit diesem Titel gewannen wir den ersten Platz der Projektausstellung bei der "IndieNight" an der Hochschule Furtwangen. <br>
     Die Steuerung wird im Spiel erklärt. -->
   </div>
-
   <div class = "flex-item excess">
     <h2 id="the-last-hope">The Last Hope</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
