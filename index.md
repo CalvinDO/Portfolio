@@ -104,8 +104,8 @@ h1{
 }
 
 .section-header {
-  margin-top: 145px;
-  margin-bottom: 62px;
+  margin-top: 200px;
+  margin-bottom: 95px;
   text-align: center;
   font-size: 200px;
   color: #212529;
@@ -225,6 +225,54 @@ h1{
     <li><a href="#dokumente">Dokumente</a></li>
   </ul>
 </nav>
+
+<style>
+
+
+#main_content .quote-container::before {
+  color: #00a8dd !important;
+  font-size: calc(16.18vw * 0.618);
+  bottom: 1.618vw;
+  right: calc(3vw * 0.618) !important;
+}
+
+#main_content .quote-container {
+    min-height: 0;
+    padding-top: 100px;
+    padding-right: 5.4vw;
+}
+
+#first-blue-quote {
+    margin-top: 125px !important;
+}
+
+#main_content blockquote {
+    color: #212529 !important;
+}
+
+#main_content blockquote a {
+    color: #212529 !important;
+}
+
+#main_content blockquote * {
+    font-size: calc((20px + 0.6180339vw)* 0.618);
+}
+
+.quote-container + .section-header {
+  margin-top: 150px;
+}
+
+</style>
+
+<div class="quote-container" id="first-blue-quote" style="
+"><blockquote>
+  <span class="quote-text"><strong>weit über</strong> die vorgegebenen <strong>Lehrziele hinaus</strong><br>
+  </span>
+  <footer>
+    <cite class="author">— <a href="EmpfehlungsschreibenVonProfChristophMueller.pdf" target="_blank">Prof. Christoph Müller, HFU</a></cite>
+  </footer>
+  </blockquote>
+</div>
 
 <div class="section-header">
 <h1 id="motivation">Motivation</h1>
@@ -417,7 +465,7 @@ details[open] ~ .klicken {
             </li>
           </ul>
           </summary>
-          Im Rahmen der freiwilligen Aufgaben des Programmiermoduls des ersten Semesters meines abgeschlossenen Studiums entwickelte ich mit Java einen ewigen Kalender, <strong>Game of Life</strong> und <strong>Tic-Tac-Toe</strong>. Letzteres baute ich mit einem zufällig spielenden Computergegner aus, der zum Trainieren einer künstlichen Intelligenz genutzt werden soll.<br>
+          Im Rahmen der freiwilligen Aufgaben des Programmiermoduls des ersten Semesters meines abgeschlossenen Studiums entwickelte ich mit Java einen ewigen Kalender, <strong>Game of Life</strong> und <strong>Tic-Tac-Toe</strong>. Letzteres baute ich mit einem zufällig spielenden Computergegneri aus, der zum Trainieren einer künstlichen Intelligenz genutzt werden soll.<br>
           Beim <strong>Global Game Jam 2020</strong> im Spiellabor der Hochschule wirkte ich in einem Team bei der Entwicklung eines <a href="#fuwashima">VR-Spiels</a> mit. Meine Hauptaufgaben lagen im <strong>Gamedesign</strong> und <a href="#fuwashima"><strong>Sound</strong></a>. Dieses Event weckte bei mir erneut das Interesse an der <strong>3D-Programmierung</strong> und dem <strong>3D-Modeling</strong>, weshalb ich mich intensiver mit <strong>Unity</strong> und <strong>Blender</strong> beschäftigte.
       </details>
       <img src="startpageArrow.png" class="klicken">
@@ -475,7 +523,7 @@ details[open] ~ .klicken {
 
   margin-bottom: 0px;
   margin-top: 0px;
-  padding-top: 25px;
+  padding-top: 100px;
   padding-bottom: 25px;
 
   font-size: large;
@@ -487,7 +535,7 @@ details[open] ~ .klicken {
     padding: 0% 23.604%;
     text-align: start;
 
-    padding-top: 25px;
+    padding-top: 100px;
     padding-bottom: 25px;
   }
 }
@@ -498,7 +546,7 @@ details[open] ~ .klicken {
     padding: 0% 9%;
     padding-left: 5.18%;
 
-    padding-top: 25px;
+    padding-top: 100px;
     padding-bottom: 25px;
   }
 }
@@ -547,7 +595,7 @@ details[open] ~ .klicken {
     <div class="motivation-item" id="wunsch">
         <i class="fa-solid fa-flag-checkered"></i>
         <p>Gerne programmiere ich <strong>Spiele ohne Gewaltdarstellungen</strong> und biete Spieleris eine eher <strong>friedliche</strong> und <strong>meditative Erfahrung</strong>. Bei Mehrspielermodi sollten alle <strong>konstruktiv</strong> und <strong>kooperativ</strong> zusammenarbeiten.<br>  
-        Optimalerweise verzichtet das Spiel auf Gegner und vermittelt <strong>intuitive Einsichten</strong> über tiefgreifende Themen und <strong>Philosophien</strong>. <strong>Puzzle-Games</strong>, <strong>Aufbau-Strategiespiele</strong> sowie <strong>Cozy–</strong> oder <strong>Educational-Games</strong>, <strong>Simulatoren</strong> oder <strong>Musik–, Sound– und Rhythm-Games</strong> kommen besonders infrage.</p>
+        Optimalerweise verzichtet das Spiel auf Gegneris und vermittelt <strong>intuitive Einsichten</strong> über tiefgreifende Themen und <strong>Philosophien</strong>. <strong>Puzzle-Games</strong>, <strong>Aufbau-Strategiespiele</strong> sowie <strong>Cozy–</strong> oder <strong>Educational-Games</strong>, <strong>Simulatoren</strong> oder <strong>Musik–, Sound– und Rhythm-Games</strong> kommen besonders infrage.</p>
     </div>
     <div class="motivation-item" id="jobs">
         <i class="fa-solid fa-screwdriver-wrench"></i>
@@ -1098,45 +1146,11 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 
 <div id="overlay"></div>
 
-<style>
-
-
-#main_content .quote-container::before {
-  color: #00a8dd !important;
-  font-size: calc(16.18vw * 0.618);
-  bottom: 1.618vw;
-  right: calc(3vw * 0.618) !important;
-}
-
-#main_content .quote-container {
-    min-height: 0;
-    margin-top: 62px;
-    padding-right: 5.4vw;
-}
-
-#main_content blockquote {
-    color: #212529 !important;
-}
-
-#main_content blockquote a {
-    color: #212529 !important;
-}
-
-#main_content blockquote * {
-    font-size: calc((20px + 0.6180339vw)* 0.618);
-}
-
-.quote-container + .section-header {
-  margin-top: 45px;
-}
-
-</style>
-
 <div class="quote-container"><blockquote>
-  <span class="quote-text">Er arbeitete sehr <strong>effizient</strong>, <strong>routiniert</strong> und <strong>zuverlässig</strong>.<br>
+  <span class="quote-text">[<strong>Calvin Dell'Oro</strong>] arbeitete sehr <strong>effizient</strong>, <strong>routiniert</strong> und <strong>zuverlässig</strong>.<br>
   </span>
   <footer>
-    <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf" target = "_blank">René Nold, Geschäftsführer, weltenbauer Software Entwicklung GmbH</a></cite>
+    <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf" target = "_blank">René Nold, Geschäftsführer, weltenbauer. Software Entwicklung GmbH</a></cite>
   </footer>
   </blockquote>
 </div>
@@ -1499,8 +1513,8 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
               <li>Schwingen, Greifen, Hangeln, Parkour</li>
           </ul>
       </li>
-      <li><strong>KI-Gegner & Steuerung</strong><br>
-          <span>Programmierung und Balancing der Gegner-KI (Unity NavMesh)</span>
+      <li><strong>KI-Gegneri & Steuerung</strong><br>
+          <span>Programmierung und Balancing der Gegneri-KI (Unity NavMesh)</span>
           <ul>
               <li>Anpassungsfähige Verfolgungs- und Fluchtmechaniken</li>
           </ul>
@@ -3226,3 +3240,5 @@ footer .section-header {
 </div>
 
 <script src = "Code/FooterInserter.js"></script>
+
+<br><br><br><br><br>
