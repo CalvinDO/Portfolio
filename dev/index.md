@@ -40,6 +40,17 @@ blockquote a {
   color: #F8F9FA;
 }
 
+blockquote img {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  border: none !important;
+  transform: translateY(50%);
+  width: calc(20px + 1.580339vw);
+  padding-left: 20px;
+  justify-self: center;
+  top: 15%;
+}
+
 .quote-text{
   position: relative;
 }
@@ -268,7 +279,7 @@ h1{
   <span class="quote-text">[Calvin Dell'Oro] arbeitete sehr <strong>effizient</strong>, <strong>routiniert</strong> und <strong>zuverlässig</strong>.<br>
   </span>
   <footer>
-    <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf" target = "_blank">René Nold, Geschäftsführer, weltenbauer. Software Entwicklung GmbH</a></cite>
+    <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf" target = "_blank">René Nold, Geschäftsführer, weltenbauer. Software Entwicklung GmbH</a><img src = "weltenbauerLogoMainContent"></cite>
   </footer>
   </blockquote>
 </div>
@@ -1171,7 +1182,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
   <span class="quote-text">Dell'Oro genießt in unserem Hause <strong>hohes Vertrauen</strong> und war stets <strong>ehrlich</strong>, <strong>pünktlich</strong> und <strong>fleißig</strong>.<br>
   </span>
   <footer>
-    <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf" target="_blank">René Nold, Geschäftsführer, weltenbauer. Software Entwicklung GmbH</a></cite>
+    <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf" target="_blank">René Nold, Geschäftsführer, weltenbauer. Software Entwicklung GmbH</a><img src = "weltenbauerLogoMainContent"></cite>
   </footer>
   </blockquote>
 </div>
