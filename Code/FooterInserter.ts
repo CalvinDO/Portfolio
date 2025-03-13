@@ -4,11 +4,16 @@ namespace Portfolio {
     let footer: HTMLElement;
 
     try {
-        setupFooterDocuments();
+        setupFooter();
     } catch (error) {
         console.warn(error);
     }
 
+    function setupFooter(): void {
+
+        setupFooterDocuments();
+        setupQuote();
+    }
 
     function setupFooterDocuments() {
 
@@ -19,7 +24,22 @@ namespace Portfolio {
 
         footer.insertAdjacentElement('afterbegin', documentsHeadingSection);
         documentsHeadingSection.insertAdjacentElement('afterend', documentsWrapper);
+    }
 
+    function setupQuote() {
+        footer.insertAdjacentElement('afterbegin', getSetupedFooterWrapQuote());
+    }
+
+    function getSetupedFooterWrapQuote() {
+
+        let quote: HTMLQuoteElement = document.createElement("blockquote");
+        quote.innerHTML = '<span class="quote-text">Sehr gerne <strong>empfehle</strong> ich [...] Dell’Oro <strong>mit Nachdruck</strong> für eine Tätigkeit im Bereich <strong>Game Development</strong></span><footer><cite class="author">— <a href="EmpfehlungsschreibenVonProfChristophMueller.pdf" target = "_blank">Prof. Christoph Müller, HFU</a></cite></footer>';
+        /*, <cite class="quote-time">2025</cite>*/
+        let quoteContainer: HTMLDivElement = document.createElement("div");
+        quoteContainer.classList.add("quote-container");
+        quoteContainer.appendChild(quote);
+
+        return quoteContainer;
     }
 
     function handleInteraction(this: HTMLElement, ev: MouseEvent) {
@@ -27,7 +47,7 @@ namespace Portfolio {
         footer = document.querySelector("#footer_wrap footer");
         if (footer) {
             if (!footer.contains(document.querySelector(".documents-wrapper"))) {
-                setupFooterDocuments();
+                setupFooter();
             }
         }
     }

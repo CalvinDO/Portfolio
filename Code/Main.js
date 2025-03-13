@@ -19,15 +19,26 @@ var Portfolio;
         overlay = document.querySelector('#overlay');
         document.addEventListener('click', onClickDoc, { capture: true });
         document.addEventListener('mouseover', onHoverDoc, { capture: true });
-        /*
-        setupOverlay();
-        */
-        //removeForkme();
         setupDetailsFlexItems();
         setupProjectFlexItems();
-        setupMoreProjectsButtons();
-        setupFlexItemsPreview();
         setupVideoOverlayHover();
+        setupFlexItemsPreview();
+        /*
+        addDynamicProjects();
+        
+        setupProjectFlexItems();
+        setupVideoOverlayHover();
+        setupFlexItemsPreview();
+        */
+        setupMoreProjectsButtons();
+    }
+    function addDynamicProjects() {
+        addCodingDynamicProjects();
+        addModellingDynamicProjects();
+    }
+    function addCodingDynamicProjects() {
+    }
+    function addModellingDynamicProjects() {
     }
     function ipify(ev) {
         fetch('https://api64.ipify.org?format=json')
@@ -282,7 +293,7 @@ var Portfolio;
     }
     function setupHeader() {
         let header = document.querySelector("header");
-        let quoteContainer = setupHeaderQuote();
+        let quoteContainer = getSetupedHeaderQuote();
         setupHeaderArrow(header, quoteContainer);
         header.addEventListener('click', handleClickHeader);
     }
@@ -294,7 +305,7 @@ var Portfolio;
             turnPage();
         }
     }
-    function setupHeaderQuote() {
+    function getSetupedHeaderQuote() {
         let quote = document.createElement("blockquote");
         quote.innerHTML = '<span class="quote-text"><strong>Calvin Dell’Oro</strong> [zählt] unter den etlichen hundert Studierenden,<br>die ich seit 2008 [...] unterrichtet habe,<br>zu den drei <strong>engagiertesten</strong> und <strong>erfolgreichsten</strong>.</span><footer><cite class="author">— <a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf" target = "_blank">Prof. Dr. rer. nat. Thomas Schneider, HFU</a></cite></footer>';
         /*, <cite class="quote-time">2025</cite>*/
@@ -398,6 +409,7 @@ var Portfolio;
         };
     }
     document.addEventListener("DOMContentLoaded", () => {
+        console.log("DOM CONTENT LOADED");
         try {
             setupNavBar();
         }

@@ -3,7 +3,7 @@ namespace Portfolio {
     let overlay: HTMLDivElement = document.querySelector('#overlay');
 
     setupHeader();
-
+    
     try {
         removeForkme();
         setupNavBar();
@@ -25,21 +25,40 @@ namespace Portfolio {
         document.addEventListener('click', onClickDoc, { capture: true });
         document.addEventListener('mouseover', onHoverDoc, { capture: true });
 
-        /*
-        setupOverlay();
-        */
-        //removeForkme();
 
         setupDetailsFlexItems();
 
+
         setupProjectFlexItems();
-
-        setupMoreProjectsButtons();
-
+        setupVideoOverlayHover();
         setupFlexItemsPreview();
 
+        /*
+        addDynamicProjects();
+        
+        setupProjectFlexItems();
         setupVideoOverlayHover();
+        setupFlexItemsPreview();
+        */
+
+        setupMoreProjectsButtons();
     }
+
+    function addDynamicProjects() {
+
+        addCodingDynamicProjects();
+        addModellingDynamicProjects();
+    }
+
+    function addCodingDynamicProjects(): void {
+
+
+    }
+
+    function addModellingDynamicProjects(): void {
+
+    }
+
 
     function ipify(this: Window, ev: Event) {
 
@@ -413,7 +432,7 @@ namespace Portfolio {
 
         let header: HTMLElement | null = document.querySelector("header");
 
-        let quoteContainer: HTMLDivElement = setupHeaderQuote();
+        let quoteContainer: HTMLDivElement = getSetupedHeaderQuote();
 
 
         setupHeaderArrow(header, quoteContainer);
@@ -436,15 +455,19 @@ namespace Portfolio {
         }
     }
 
-    function setupHeaderQuote() {
+    function getSetupedHeaderQuote() {
+
         let quote: HTMLQuoteElement = document.createElement("blockquote");
         quote.innerHTML = '<span class="quote-text"><strong>Calvin Dell’Oro</strong> [zählt] unter den etlichen hundert Studierenden,<br>die ich seit 2008 [...] unterrichtet habe,<br>zu den drei <strong>engagiertesten</strong> und <strong>erfolgreichsten</strong>.</span><footer><cite class="author">— <a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf" target = "_blank">Prof. Dr. rer. nat. Thomas Schneider, HFU</a></cite></footer>';
         /*, <cite class="quote-time">2025</cite>*/
         let quoteContainer: HTMLDivElement = document.createElement("div");
         quoteContainer.classList.add("quote-container");
         quoteContainer.appendChild(quote);
+
         return quoteContainer;
     }
+
+
 
     function setupHeaderArrow(header: HTMLElement, quoteContainer: HTMLDivElement) {
         header.insertAdjacentElement('beforeend', quoteContainer);
@@ -573,6 +596,8 @@ namespace Portfolio {
     }
 
     document.addEventListener("DOMContentLoaded", () => {
+
+        console.log("DOM CONTENT LOADED");
 
         try {
             setupNavBar();
