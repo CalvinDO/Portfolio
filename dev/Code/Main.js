@@ -49,7 +49,7 @@ var Portfolio;
     function addDynamicProjectsIn(_containerPrefix) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                const response = yield fetch("Code/" + _containerPrefix + "DynamicProjects.html");
+                const response = yield fetch("Code/" + _containerPrefix + "DynamicProjects.txt");
                 if (!response.ok)
                     throw new Error("Fehler beim Laden der" + _containerPrefix + "Coding Dymanic Projects Datei");
                 const htmlText = yield response.text();
