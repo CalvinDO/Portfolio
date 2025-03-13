@@ -265,8 +265,8 @@ h1{
     color: #212529 !important;
 }
 
-#main_content blockquote img {
-    width: calc((20px + 0.7180339vw));
+#main_content blockquote img, #footer_wrap blockquote img {
+    width: calc((20px + 0.9vw));
 }
 
 #weltenbauer-main-logo {
