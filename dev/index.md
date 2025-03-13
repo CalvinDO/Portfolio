@@ -229,17 +229,17 @@ h1{
 <style>
 
 
-#main_content .quote-container::before {
-  color: #00a8dd !important;
+#main_content .quote-container::before, #footer_wrap .quote-container::before  {
+  color: #00a8dd;
   font-size: calc(16.18vw * 0.618);
   bottom: 1.618vw;
   right: calc(3vw * 0.618) !important;
 }
 
-#main_content .quote-container {
-    min-height: 0;
-    padding-top: 100px;
-    padding-right: 5.4vw;
+#main_content .quote-container, #footer_wrap .quote-container {
+  min-height: 0;
+  padding-top: 100px;
+  padding-right: 5.4vw;
 }
 
 #first-blue-quote {
@@ -254,7 +254,7 @@ h1{
     color: #212529 !important;
 }
 
-#main_content blockquote * {
+#main_content blockquote *, #footer_wrap blockquote * {
     font-size: calc((20px + 0.6180339vw)* 0.618);
 }
 
