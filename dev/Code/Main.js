@@ -33,6 +33,12 @@ var Portfolio;
             setupProjectFlexItems();
             setupVideoOverlayHover();
             setupFlexItemsPreview();
+            /* TODO: try multithread solution */
+            //setupHeavyProjects();
+        });
+    }
+    function setupHeavyProjects() {
+        return __awaiter(this, void 0, void 0, function* () {
             yield addAllDynamicProjects();
             setupProjectFlexItems();
             setupVideoOverlayHover();

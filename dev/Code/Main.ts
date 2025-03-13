@@ -33,6 +33,11 @@ namespace Portfolio {
         setupVideoOverlayHover();
         setupFlexItemsPreview();
 
+        /* TODO: try multithread solution */
+        //setupHeavyProjects();
+    }
+
+    async function setupHeavyProjects(): Promise<void> {
 
         await addAllDynamicProjects();
 
