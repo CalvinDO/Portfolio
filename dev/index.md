@@ -265,6 +265,15 @@ h1{
     color: #212529 !important;
 }
 
+#main_content blockquote img {
+    width: calc((20px + 0.7180339vw));
+}
+
+#weltenbauer-main-logo {
+  width: calc((20px + 4vw)) !important;
+  top: 7%;
+}
+
 #main_content blockquote *, #footer_wrap blockquote * {
     font-size: calc((20px + 0.6180339vw)* 0.618);
 }
@@ -279,7 +288,7 @@ h1{
   <span class="quote-text">[Calvin Dell'Oro] arbeitete sehr <strong>effizient</strong>, <strong>routiniert</strong> und <strong>zuverlässig</strong>.<br>
   </span>
   <footer>
-    <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf" target = "_blank">René Nold, Geschäftsführer</a><img src = "weltenbauerLogoMainContent.png"></cite>
+    <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf" target = "_blank">René Nold, Geschäftsführer</a><img src = "weltenbauerLogoMainContent.png" id ="weltenbauer-main-logo"></cite>
   </footer>
   </blockquote>
 </div>
@@ -1182,7 +1191,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
   <span class="quote-text">Dell'Oro genießt in unserem Hause <strong>hohes Vertrauen</strong> und war stets <strong>ehrlich</strong>, <strong>pünktlich</strong> und <strong>fleißig</strong>.<br>
   </span>
   <footer>
-    <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf" target="_blank">René Nold, Geschäftsführer</a><img src = "weltenbauerLogoMainContent.png"></cite>
+    <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf" target="_blank">René Nold, Geschäftsführer</a><img src = "weltenbauerLogoMainContent.png" id = "weltenbauer-main-logo"></cite>
   </footer>
   </blockquote>
 </div>
