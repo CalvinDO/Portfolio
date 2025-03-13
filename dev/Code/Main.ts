@@ -54,7 +54,7 @@ namespace Portfolio {
 
         try {
 
-            const response = await fetch(_containerPrefix + "DynamicProjects.html");
+            const response = await fetch("Code/" + _containerPrefix + "DynamicProjects.html");
             if (!response.ok) throw new Error("Fehler beim Laden der" + _containerPrefix + "Coding Dymanic Projects Datei");
 
             const htmlText = await response.text();
