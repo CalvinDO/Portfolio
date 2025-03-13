@@ -1158,11 +1158,12 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 <div id="overlay"></div>
 
 <div class="quote-container"><blockquote>
-  <span class="quote-text">Durch […] <strong>schnelle Auffassungsgabe</strong>, […] <strong>aktive Beteiligung</strong> und […] nie erlahmende Bereitschaft zum <strong>Mit- bzw. Weiterdenken</strong> [ist Calvin Dell’Oro] von Beginn an positiv aufgefallen.<br>
+  <span class="quote-text">Durch […] <strong>schnelle Auffassungsgabe</strong>, […] <strong>aktive Beteiligung</strong> und <br>
+  […] nie erlahmende Bereitschaft zum <strong>Mit- bzw. Weiterdenken</strong><br>
+  [ist Calvin Dell’Oro] von Beginn an positiv aufgefallen.<br>
   </span>
   <footer>
-    <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf" target="_blank">René Nold, Geschäftsführer, weltenbauer. Software Entwicklung GmbH</a></cite>
-  </footer>
+    <cite class="author">— <a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf" target = "_blank">Prof. Dr. rer. nat. Thomas Schneider, HFU</a></cite></footer>
   </blockquote>
 </div>
 
