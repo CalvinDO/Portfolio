@@ -264,8 +264,16 @@ h1{
 
 </style>
 
-<div class="quote-container" id="first-blue-quote" style="
-"><blockquote>
+<div class="quote-container" id="first-blue-quote" ><blockquote>
+  <span class="quote-text">[<strong>Calvin Dell'Oro</strong>] arbeitete sehr <strong>effizient</strong>, <strong>routiniert</strong> und <strong>zuverlässig</strong>.<br>
+  </span>
+  <footer>
+    <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf" target = "_blank">René Nold, Geschäftsführer, weltenbauer. Software Entwicklung GmbH</a></cite>
+  </footer>
+  </blockquote>
+</div>
+
+<div class="quote-container"><blockquote>
   <span class="quote-text"><strong>weit über</strong> die vorgegebenen <strong>Lehrziele hinaus</strong><br>
   </span>
   <footer>
@@ -1150,10 +1158,19 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 <div id="overlay"></div>
 
 <div class="quote-container"><blockquote>
-  <span class="quote-text">[<strong>Calvin Dell'Oro</strong>] arbeitete sehr <strong>effizient</strong>, <strong>routiniert</strong> und <strong>zuverlässig</strong>.<br>
+  <span class="quote-text">Durch […] <strong>schnelle Auffassungsgabe</strong>, […] <strong>aktive Beteiligung</strong> und […] nie erlahmende Bereitschaft zum <strong>Mit- bzw. Weiterdenken</strong> [ist Calvin Dell’Oro] von Beginn an positiv aufgefallen.<br>
   </span>
   <footer>
-    <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf" target = "_blank">René Nold, Geschäftsführer, weltenbauer. Software Entwicklung GmbH</a></cite>
+    <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf" target="_blank">René Nold, Geschäftsführer, weltenbauer. Software Entwicklung GmbH</a></cite>
+  </footer>
+  </blockquote>
+</div>
+
+<div class="quote-container"><blockquote>
+  <span class="quote-text">Dell'Oro genießt in unserem Hause <strong>hohes Vertrauen</strong> und war stets <strong>ehrlich</strong>, <strong>pünktlich</strong> und <strong>fleißig</strong>.<br>
+  </span>
+  <footer>
+    <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf" target="_blank">René Nold, Geschäftsführer, weltenbauer. Software Entwicklung GmbH</a></cite>
   </footer>
   </blockquote>
 </div>
