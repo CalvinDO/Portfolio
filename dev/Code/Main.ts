@@ -3,7 +3,7 @@ namespace Portfolio {
     let overlay: HTMLDivElement = document.querySelector('#overlay');
 
     setupHeader();
-    
+
     try {
         removeForkme();
         setupNavBar();
@@ -12,7 +12,7 @@ namespace Portfolio {
     }
 
 
-    function init() {
+    async function init(): Promise<void> {
 
         try {
             setupNavBar();
@@ -33,30 +33,40 @@ namespace Portfolio {
         setupVideoOverlayHover();
         setupFlexItemsPreview();
 
-        /*
-        addDynamicProjects();
-        
+
+        await addAllDynamicProjects();
+
         setupProjectFlexItems();
         setupVideoOverlayHover();
         setupFlexItemsPreview();
-        */
+
 
         setupMoreProjectsButtons();
     }
 
-    function addDynamicProjects() {
+    async function addAllDynamicProjects(): Promise<void> {
 
-        addCodingDynamicProjects();
-        addModellingDynamicProjects();
+        await addDynamicProjectsIn("coding");
+        await addDynamicProjectsIn("modelling");
     }
 
-    function addCodingDynamicProjects(): void {
+    async function addDynamicProjectsIn(_containerPrefix: string): Promise<void> {
 
+        try {
 
-    }
+            const response = await fetch(_containerPrefix + "DynamicProjects.html");
+            if (!response.ok) throw new Error("Fehler beim Laden der" + _containerPrefix + "Coding Dymanic Projects Datei");
 
-    function addModellingDynamicProjects(): void {
+            const htmlText = await response.text();
+            const container = document.querySelector("#" + _containerPrefix + "-container");
 
+            if (container) {
+                container.innerHTML += htmlText; // Flex-Items einfügen
+            }
+
+        } catch (error) {
+            console.error("Fehler:", error);
+        }
     }
 
 
