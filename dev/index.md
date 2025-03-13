@@ -279,7 +279,7 @@ h1{
   <span class="quote-text">[Calvin Dell'Oro] arbeitete sehr <strong>effizient</strong>, <strong>routiniert</strong> und <strong>zuverlässig</strong>.<br>
   </span>
   <footer>
-    <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf" target = "_blank">René Nold, Geschäftsführer, weltenbauer. Software Entwicklung GmbH</a><img src = "weltenbauerLogoMainContent"></cite>
+    <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf" target = "_blank">René Nold, Geschäftsführer</a><img src = "weltenbauerLogoMainContent"></cite>
   </footer>
   </blockquote>
 </div>
@@ -288,7 +288,7 @@ h1{
   <span class="quote-text"><strong>weit über</strong> die vorgegebenen <strong>Lehrziele hinaus</strong><br>
   </span>
   <footer>
-    <cite class="author">— <a href="EmpfehlungsschreibenVonProfChristophMueller.pdf" target="_blank">Prof. Christoph Müller, HFU</a></cite>
+    <cite class="author">— <a href="EmpfehlungsschreibenVonProfChristophMueller.pdf" target="_blank">Prof. Christoph Müller</a><img src = "HFULogoMainContent"></cite>
   </footer>
   </blockquote>
 </div>
@@ -1174,7 +1174,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
   [ist Calvin Dell’Oro] von Beginn an positiv aufgefallen.<br>
   </span>
   <footer>
-    <cite class="author">— <a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf" target = "_blank">Prof. Dr. rer. nat. Thomas Schneider, HFU</a></cite></footer>
+    <cite class="author">— <a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf" target = "_blank">Prof. Dr. rer. nat. Thomas Schneider</a><img src = "HFULogoMainContent"></cite></footer>
   </blockquote>
 </div>
 
@@ -1182,7 +1182,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
   <span class="quote-text">Dell'Oro genießt in unserem Hause <strong>hohes Vertrauen</strong> und war stets <strong>ehrlich</strong>, <strong>pünktlich</strong> und <strong>fleißig</strong>.<br>
   </span>
   <footer>
-    <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf" target="_blank">René Nold, Geschäftsführer, weltenbauer. Software Entwicklung GmbH</a><img src = "weltenbauerLogoMainContent"></cite>
+    <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf" target="_blank">René Nold, Geschäftsführer</a><img src = "weltenbauerLogoMainContent"></cite>
   </footer>
   </blockquote>
 </div>
