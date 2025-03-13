@@ -3,7 +3,7 @@ namespace Portfolio {
     let overlay: HTMLDivElement = document.querySelector('#overlay');
 
     setupHeader();
-    
+
     try {
         removeForkme();
         setupNavBar();
@@ -12,7 +12,7 @@ namespace Portfolio {
     }
 
 
-    function init() {
+    async function init(): Promise<void> {
 
         try {
             setupNavBar();
@@ -33,30 +33,45 @@ namespace Portfolio {
         setupVideoOverlayHover();
         setupFlexItemsPreview();
 
-        /*
-        addDynamicProjects();
-        
+        /* TODO: try multithread solution */
+        //setupHeavyProjects();
+    }
+
+    async function setupHeavyProjects(): Promise<void> {
+
+        await addAllDynamicProjects();
+
         setupProjectFlexItems();
         setupVideoOverlayHover();
         setupFlexItemsPreview();
-        */
+
 
         setupMoreProjectsButtons();
     }
 
-    function addDynamicProjects() {
+    async function addAllDynamicProjects(): Promise<void> {
 
-        addCodingDynamicProjects();
-        addModellingDynamicProjects();
+        await addDynamicProjectsIn("coding");
+        await addDynamicProjectsIn("modelling");
     }
 
-    function addCodingDynamicProjects(): void {
+    async function addDynamicProjectsIn(_containerPrefix: string): Promise<void> {
 
+        try {
 
-    }
+            const response = await fetch("Code/" + _containerPrefix + "DynamicProjects.txt");
+            if (!response.ok) throw new Error("Fehler beim Laden der" + _containerPrefix + "Coding Dymanic Projects Datei");
 
-    function addModellingDynamicProjects(): void {
+            const htmlText = await response.text();
+            const container = document.querySelector("#" + _containerPrefix + "-container");
 
+            if (container) {
+                container.innerHTML += htmlText; // Flex-Items einfügen
+            }
+
+        } catch (error) {
+            console.error("Fehler:", error);
+        }
     }
 
 
@@ -458,7 +473,7 @@ namespace Portfolio {
     function getSetupedHeaderQuote() {
 
         let quote: HTMLQuoteElement = document.createElement("blockquote");
-        quote.innerHTML = '<span class="quote-text"><strong>Calvin Dell’Oro</strong> [zählt] unter den etlichen hundert Studierenden,<br>die ich seit 2008 [...] unterrichtet habe,<br>zu den drei <strong>engagiertesten</strong> und <strong>erfolgreichsten</strong>.</span><footer><cite class="author">— <a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf" target = "_blank">Prof. Dr. rer. nat. Thomas Schneider, HFU</a></cite></footer>';
+        quote.innerHTML = '<span class="quote-text"><strong>Calvin Dell’Oro</strong> [zählt] unter den etlichen hundert Studierenden,<br>die ich seit 2008 [...] unterrichtet habe,<br>zu den drei <strong>engagiertesten</strong> und <strong>erfolgreichsten</strong>.</span><footer><cite class="author">— <a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf" target = "_blank">Prof. Dr. rer. nat. Thomas Schneider</a><img src = "HFULogo.jpg"></cite></footer>';
         /*, <cite class="quote-time">2025</cite>*/
         let quoteContainer: HTMLDivElement = document.createElement("div");
         quoteContainer.classList.add("quote-container");

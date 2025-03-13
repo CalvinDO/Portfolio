@@ -1,3 +1,12 @@
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 var Portfolio;
 (function (Portfolio) {
     let overlay = document.querySelector('#overlay');
@@ -10,35 +19,55 @@ var Portfolio;
         console.warn(error);
     }
     function init() {
-        try {
-            setupNavBar();
-        }
-        catch (error) {
-            console.warn("try init setupnavbar, error:", error);
-        }
-        overlay = document.querySelector('#overlay');
-        document.addEventListener('click', onClickDoc, { capture: true });
-        document.addEventListener('mouseover', onHoverDoc, { capture: true });
-        setupDetailsFlexItems();
-        setupProjectFlexItems();
-        setupVideoOverlayHover();
-        setupFlexItemsPreview();
-        /*
-        addDynamicProjects();
-        
-        setupProjectFlexItems();
-        setupVideoOverlayHover();
-        setupFlexItemsPreview();
-        */
-        setupMoreProjectsButtons();
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                setupNavBar();
+            }
+            catch (error) {
+                console.warn("try init setupnavbar, error:", error);
+            }
+            overlay = document.querySelector('#overlay');
+            document.addEventListener('click', onClickDoc, { capture: true });
+            document.addEventListener('mouseover', onHoverDoc, { capture: true });
+            setupDetailsFlexItems();
+            setupProjectFlexItems();
+            setupVideoOverlayHover();
+            setupFlexItemsPreview();
+            /* TODO: try multithread solution */
+            //setupHeavyProjects();
+        });
     }
-    function addDynamicProjects() {
-        addCodingDynamicProjects();
-        addModellingDynamicProjects();
+    function setupHeavyProjects() {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield addAllDynamicProjects();
+            setupProjectFlexItems();
+            setupVideoOverlayHover();
+            setupFlexItemsPreview();
+            setupMoreProjectsButtons();
+        });
     }
-    function addCodingDynamicProjects() {
+    function addAllDynamicProjects() {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield addDynamicProjectsIn("coding");
+            yield addDynamicProjectsIn("modelling");
+        });
     }
-    function addModellingDynamicProjects() {
+    function addDynamicProjectsIn(_containerPrefix) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const response = yield fetch("Code/" + _containerPrefix + "DynamicProjects.txt");
+                if (!response.ok)
+                    throw new Error("Fehler beim Laden der" + _containerPrefix + "Coding Dymanic Projects Datei");
+                const htmlText = yield response.text();
+                const container = document.querySelector("#" + _containerPrefix + "-container");
+                if (container) {
+                    container.innerHTML += htmlText; // Flex-Items einfügen
+                }
+            }
+            catch (error) {
+                console.error("Fehler:", error);
+            }
+        });
     }
     function ipify(ev) {
         fetch('https://api64.ipify.org?format=json')
@@ -307,7 +336,7 @@ var Portfolio;
     }
     function getSetupedHeaderQuote() {
         let quote = document.createElement("blockquote");
-        quote.innerHTML = '<span class="quote-text"><strong>Calvin Dell’Oro</strong> [zählt] unter den etlichen hundert Studierenden,<br>die ich seit 2008 [...] unterrichtet habe,<br>zu den drei <strong>engagiertesten</strong> und <strong>erfolgreichsten</strong>.</span><footer><cite class="author">— <a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf" target = "_blank">Prof. Dr. rer. nat. Thomas Schneider, HFU</a></cite></footer>';
+        quote.innerHTML = '<span class="quote-text"><strong>Calvin Dell’Oro</strong> [zählt] unter den etlichen hundert Studierenden,<br>die ich seit 2008 [...] unterrichtet habe,<br>zu den drei <strong>engagiertesten</strong> und <strong>erfolgreichsten</strong>.</span><footer><cite class="author">— <a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf" target = "_blank">Prof. Dr. rer. nat. Thomas Schneider</a><img src = "HFULogo.jpg"></cite></footer>';
         /*, <cite class="quote-time">2025</cite>*/
         let quoteContainer = document.createElement("div");
         quoteContainer.classList.add("quote-container");

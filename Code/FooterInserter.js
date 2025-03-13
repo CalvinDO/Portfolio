@@ -23,7 +23,7 @@ var Portfolio;
     }
     function getSetupedFooterWrapQuote() {
         let quote = document.createElement("blockquote");
-        quote.innerHTML = '<span class="quote-text">Sehr gerne <strong>empfehle</strong> ich [...] Dell’Oro <strong>mit Nachdruck</strong> für eine Tätigkeit im Bereich <strong>Game Development</strong></span><footer><cite class="author">— <a href="EmpfehlungsschreibenVonProfChristophMueller.pdf" target = "_blank">Prof. Christoph Müller, HFU</a></cite></footer>';
+        quote.innerHTML = '<span class="quote-text">Sehr gerne <strong>empfehle</strong> ich [...] Dell’Oro <strong>mit Nachdruck</strong> für eine Tätigkeit im Bereich <strong>Game Development</strong></span><footer><cite class="author">— <a href="EmpfehlungsschreibenVonProfChristophMueller.pdf" target = "_blank">Prof. Christoph Müller</a><img src = "HFULogo.jpg"></cite></footer>';
         /*, <cite class="quote-time">2025</cite>*/
         let quoteContainer = document.createElement("div");
         quoteContainer.classList.add("quote-container");
