@@ -265,7 +265,7 @@ h1{
 </style>
 
 <div class="quote-container" id="first-blue-quote" ><blockquote>
-  <span class="quote-text">[<strong>Calvin Dell'Oro</strong>] arbeitete sehr <strong>effizient</strong>, <strong>routiniert</strong> und <strong>zuverlässig</strong>.<br>
+  <span class="quote-text">[Calvin Dell'Oro] arbeitete sehr <strong>effizient</strong>, <strong>routiniert</strong> und <strong>zuverlässig</strong>.<br>
   </span>
   <footer>
     <cite class="author">— <a href="PraktikumsbestätigungCalvinDellOro.pdf" target = "_blank">René Nold, Geschäftsführer, weltenbauer. Software Entwicklung GmbH</a></cite>
