@@ -640,27 +640,23 @@ namespace Portfolio {
     });
 
     async function manageUserData(event, _load?: boolean) {
-
         if (_load) {
             userData = new UserData();
         }
 
-        await fetch('https://api64.ipify.org?format=json')
-            .then(response => response.json())
-            .then(data => {
-                userData.ip = data.ip;
-            })
-            .catch(error => {
-                console.warn("Ipify failed", error);
-            }
-            );
+        try {
+            const response = await fetch('https://api64.ipify.org?format=json');
+            const data = await response.json();
+            userData.ip = data.ip;
+        } catch (error) {
+            console.warn("Ipify failed", error);
+        }
 
-
-        sendEmail("¡Test! Portfolio " + (_load ? "loaded" : "closed"), JSON.stringify(userData, null, 2));
+        // Ensure email is sent before exiting
+        await sendEmail("¡Test! Portfolio " + (_load ? "loaded" : "closed"), JSON.stringify(userData, null, 2));
     }
 
     async function sendEmail(_subject: string, _body: string): Promise<void> {
-
         const emailData = {
             to: 'calvindelloro@mail.de',
             subject: _subject,
@@ -668,42 +664,43 @@ namespace Portfolio {
         };
 
         try {
-
             const response = await fetch('https://portfolio-ten-liard-43.vercel.app/api/send-email', {
-
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(emailData),
             });
 
-            //console.log(response);
-
             const result = await response.json();
             if (response.ok) {
-                console.log("response.ok"/*'Email sent:', result.message*/);
+                console.log("Email sent successfully");
             } else {
-                console.warn("response not ok"/*'Error sending email:', result.error*/);
+                console.warn("Failed to send email:", result.error);
             }
         } catch (error) {
-            console.warn("Request failed"/*'Request failed:', error*/);
+            console.warn("Request failed", error);
         }
     }
+
+    // Use `navigator.sendBeacon` to ensure data is sent before the page unloads
+    window.addEventListener("beforeunload", function (event) {
+        event.preventDefault();
+        event.returnValue = "";
+
+        const emailData = {
+            to: 'calvindelloro@mail.de',
+            subject: "¡Test! Portfolio closed",
+            html: '<pre> Development test email! <br><br> ' + JSON.stringify(userData, null, 2) + "</pre>"
+        };
+
+        const blob = new Blob([JSON.stringify(emailData)], { type: 'application/json' });
+        navigator.sendBeacon('https://portfolio-ten-liard-43.vercel.app/api/send-email', blob);
+    });
 
     window.addEventListener('load', init);
 
     // Event listener for window load
     window.addEventListener('load', function (event) {
         manageUserData(event, true);  // Calls sendIpifyEmail when the page is loaded
-    });
-
-    // Event listener for beforeunload
-    window.addEventListener("beforeunload", function (event) {
-        // Call the sendIpifyEmail function when the page is about to unload
-        manageUserData(event, false);  // Pass event to sendIpifyEmail
-
-        // Optionally, prevent the default action and show a confirmation dialog
-        event.preventDefault();
-        event.returnValue = "";  // Some browsers use this to show a confirmation dialog
     });
 }
 
