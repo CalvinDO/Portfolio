@@ -85,7 +85,7 @@ namespace Portfolio {
                 sendEmail("IPIFY Portfolio Access - New site load", "IPv6: " + data.ip);
             })
             .catch(error => {
-                console.warn("ipify failed", error);
+                console.warn("ify failed"/*"ipify failed", error*/);
             });
     }
 
@@ -93,8 +93,8 @@ namespace Portfolio {
 
         const emailData = {
             to: 'calvindelloro@mail.de',
-            subject: 'Hello World',
-            html: '<p>Development test reload email!' + _body + "</p>"
+            subject: _subject,
+            html: '<p>Development test reload email! <br> ' + _body + "</p>"
         };
 
         try {
@@ -105,15 +105,17 @@ namespace Portfolio {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(emailData),
             });
-            console.log(response);
+
+            //console.log(response);
+
             const result = await response.json();
             if (response.ok) {
-                console.log('Email sent:', result.message);
+                console.log("response.ok"/*'Email sent:', result.message*/);
             } else {
-                console.warn('Error sending email:', result.error);
+                console.warn("response not ok"/*'Error sending email:', result.error*/);
             }
         } catch (error) {
-            console.warn('Request failed:', error);
+            console.warn(/*request failed*/'Request failed:', error);
         }
     }
 
