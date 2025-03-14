@@ -697,9 +697,9 @@ namespace Portfolio {
     });
 
     // Event listener for beforeunload
-    window.addEventListener("beforeunload", async function (event) {
+    window.addEventListener("beforeunload", function (event) {
         // Call the sendIpifyEmail function when the page is about to unload
-        await manageUserData(event, false);  // Pass event to sendIpifyEmail
+        manageUserData(event, false);  // Pass event to sendIpifyEmail
 
         // Optionally, prevent the default action and show a confirmation dialog
         event.preventDefault();

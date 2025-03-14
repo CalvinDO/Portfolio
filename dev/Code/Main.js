@@ -509,13 +509,11 @@ var Portfolio;
     });
     // Event listener for beforeunload
     window.addEventListener("beforeunload", function (event) {
-        return __awaiter(this, void 0, void 0, function* () {
-            // Call the sendIpifyEmail function when the page is about to unload
-            yield manageUserData(event, false); // Pass event to sendIpifyEmail
-            // Optionally, prevent the default action and show a confirmation dialog
-            event.preventDefault();
-            event.returnValue = ""; // Some browsers use this to show a confirmation dialog
-        });
+        // Call the sendIpifyEmail function when the page is about to unload
+        manageUserData(event, false); // Pass event to sendIpifyEmail
+        // Optionally, prevent the default action and show a confirmation dialog
+        event.preventDefault();
+        event.returnValue = ""; // Some browsers use this to show a confirmation dialog
     });
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=Main.js.map
