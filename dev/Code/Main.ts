@@ -640,17 +640,21 @@ namespace Portfolio {
     });
 
     async function manageUserData(event, _load?: boolean) {
+
         if (_load) {
+
             userData = new UserData();
+
+            try {
+                const response = await fetch('https://api64.ipify.org?format=json');
+                const data = await response.json();
+                userData.ip = data.ip;
+            } catch (error) {
+                console.warn("Ipify failed", error);
+            }
         }
 
-        try {
-            const response = await fetch('https://api64.ipify.org?format=json');
-            const data = await response.json();
-            userData.ip = data.ip;
-        } catch (error) {
-            console.warn("Ipify failed", error);
-        }
+
 
         // Ensure email is sent before exiting
         await sendEmail("¡Test! Portfolio " + (_load ? "loaded" : "closed"), JSON.stringify(userData, null, 2));

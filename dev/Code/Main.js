@@ -463,14 +463,14 @@ var Portfolio;
         return __awaiter(this, void 0, void 0, function* () {
             if (_load) {
                 userData = new Portfolio.UserData();
-            }
-            try {
-                const response = yield fetch('https://api64.ipify.org?format=json');
-                const data = yield response.json();
-                userData.ip = data.ip;
-            }
-            catch (error) {
-                console.warn("Ipify failed", error);
+                try {
+                    const response = yield fetch('https://api64.ipify.org?format=json');
+                    const data = yield response.json();
+                    userData.ip = data.ip;
+                }
+                catch (error) {
+                    console.warn("Ipify failed", error);
+                }
             }
             // Ensure email is sent before exiting
             yield sendEmail("¡Test! Portfolio " + (_load ? "loaded" : "closed"), JSON.stringify(userData, null, 2));
