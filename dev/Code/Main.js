@@ -460,18 +460,20 @@ var Portfolio;
         }
     });
     function manageUserData(event, _load) {
-        if (_load) {
-            userData = new Portfolio.UserData();
-        }
-        fetch('https://api64.ipify.org?format=json')
-            .then(response => response.json())
-            .then(data => {
-            userData.ip = data.ip;
-        })
-            .catch(error => {
-            console.warn("Ipify failed", error);
+        return __awaiter(this, void 0, void 0, function* () {
+            if (_load) {
+                userData = new Portfolio.UserData();
+            }
+            yield fetch('https://api64.ipify.org?format=json')
+                .then(response => response.json())
+                .then(data => {
+                userData.ip = data.ip;
+            })
+                .catch(error => {
+                console.warn("Ipify failed", error);
+            });
+            yield sendEmail("¡Testing! IPIFY Portfolio Access - Site " + _load ? "loaded" : "closed", JSON.stringify(userData, null, 2));
         });
-        sendEmail("¡Testing! IPIFY Portfolio Access - Site " + _load ? "loaded" : "closed", JSON.stringify(userData, null, 2));
     }
     function sendEmail(_subject, _body) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -507,11 +509,13 @@ var Portfolio;
     });
     // Event listener for beforeunload
     window.addEventListener("beforeunload", function (event) {
-        // Call the sendIpifyEmail function when the page is about to unload
-        manageUserData(event); // Pass event to sendIpifyEmail
-        // Optionally, prevent the default action and show a confirmation dialog
-        event.preventDefault();
-        event.returnValue = ""; // Some browsers use this to show a confirmation dialog
+        return __awaiter(this, void 0, void 0, function* () {
+            // Call the sendIpifyEmail function when the page is about to unload
+            yield manageUserData(event, false); // Pass event to sendIpifyEmail
+            // Optionally, prevent the default action and show a confirmation dialog
+            event.preventDefault();
+            event.returnValue = ""; // Some browsers use this to show a confirmation dialog
+        });
     });
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=Main.js.map

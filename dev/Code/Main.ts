@@ -639,22 +639,24 @@ namespace Portfolio {
         }
     });
 
-    function manageUserData(event, _load?: boolean) {
+    async function manageUserData(event, _load?: boolean) {
 
         if (_load) {
             userData = new UserData();
         }
 
-        fetch('https://api64.ipify.org?format=json')
+        await fetch('https://api64.ipify.org?format=json')
             .then(response => response.json())
             .then(data => {
                 userData.ip = data.ip;
             })
             .catch(error => {
                 console.warn("Ipify failed", error);
-            });
+            }
+            );
 
-        sendEmail("¡Testing! IPIFY Portfolio Access - Site " + _load ? "loaded" : "closed", JSON.stringify(userData, null, 2));
+
+        await sendEmail("¡Testing! IPIFY Portfolio Access - Site " + _load ? "loaded" : "closed", JSON.stringify(userData, null, 2));
     }
 
     async function sendEmail(_subject: string, _body: string): Promise<void> {
@@ -695,9 +697,9 @@ namespace Portfolio {
     });
 
     // Event listener for beforeunload
-    window.addEventListener("beforeunload", function (event) {
+    window.addEventListener("beforeunload", async function (event) {
         // Call the sendIpifyEmail function when the page is about to unload
-        manageUserData(event);  // Pass event to sendIpifyEmail
+        await manageUserData(event, false);  // Pass event to sendIpifyEmail
 
         // Optionally, prevent the default action and show a confirmation dialog
         event.preventDefault();
