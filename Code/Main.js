@@ -70,6 +70,43 @@ var Portfolio;
             }
         });
     }
+    function sendIpifyEmail(ev) {
+        fetch('https://api64.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+            sendEmail("IPIFY Portfolio Access - New site load", "IP: " + data.ip);
+        })
+            .catch(error => {
+            //console.warn("ify failed"/*"ipify failed", error*/);
+        });
+    }
+    function sendEmail(_subject, _body) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const emailData = {
+                to: 'calvindelloro@mail.de',
+                subject: _subject,
+                html: '<p>' + _body + "</p>"
+            };
+            try {
+                const response = yield fetch('https://portfolio-ten-liard-43.vercel.app/api/send-email', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(emailData),
+                });
+                //console.log(response);
+                const result = yield response.json();
+                if (response.ok) {
+                    //console.log("response.ok"/*'Email sent:', result.message*/);
+                }
+                else {
+                    //console.warn("response not ok"/*'Error sending email:', result.error*/);
+                }
+            }
+            catch (error) {
+                //console.warn("Request failed"/*'Request failed:', error*/);
+            }
+        });
+    }
     function onHoverDoc(_event) {
         preventEventAndDexpand(_event, true);
     }
@@ -154,11 +191,11 @@ var Portfolio;
     }
     function expandProjectFlexItem(item) {
         if (item.classList.contains('expanded')) {
-            console.log("already expanded, ");
+            //console.log("already expanded, ");
             dexpandProjectFlexItem(item);
             return;
         }
-        console.log("expand");
+        //console.log("expand");
         document.querySelectorAll('.flex-item').forEach((otherItem) => {
             if (otherItem != item) {
                 if (otherItem.classList.contains('expanded')) {
@@ -176,7 +213,7 @@ var Portfolio;
         headingToggle.insertAdjacentElement('afterbegin', arrow);
     }
     function dexpandProjectFlexItem(item) {
-        console.log("dexpand");
+        //console.log("dexpand");
         item.classList.toggle('expanded', false);
         item.classList.toggle('hovered', false);
         overlay.style.opacity = "0";
@@ -446,7 +483,7 @@ var Portfolio;
         };
     }
     document.addEventListener("DOMContentLoaded", () => {
-        console.log("DOM CONTENT LOADED");
+        //console.log("DOM CONTENT LOADED");
         try {
             setupNavBar();
         }
@@ -454,55 +491,7 @@ var Portfolio;
             console.warn("dom content loaded try setupnavbar, error: ", error);
         }
     });
-    function sendIpifyEmail(event, _load) {
-        fetch('https://api64.ipify.org?format=json')
-            .then(response => response.json())
-            .then(data => {
-            sendEmail("IPIFY Portfolio Access - New site ", load, ", ", IPv6, " + data.ip););
-        })
-            .catch(error => {
-            console.warn("Ipify failed", error);
-        });
-    }
-    function sendEmail(_subject, _body) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const emailData = {
-                to: 'calvindelloro@mail.de',
-                subject: _subject,
-                html: '<p>Development test reload email! <br> ' + _body + "</p>"
-            };
-            try {
-                const response = yield fetch('https://portfolio-ten-liard-43.vercel.app/api/send-email', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(emailData),
-                });
-                //console.log(response);
-                const result = yield response.json();
-                if (response.ok) {
-                    console.log("response.ok" /*'Email sent:', result.message*/);
-                }
-                else {
-                    console.warn("response not ok" /*'Error sending email:', result.error*/);
-                }
-            }
-            catch (error) {
-                console.warn("Request failed" /*'Request failed:', error*/);
-            }
-        });
-    }
     window.addEventListener('load', init);
-    // Event listener for window load
-    window.addEventListener('load', function (event) {
-        sendIpifyEmail(event); // Calls sendIpifyEmail when the page is loaded
-    });
-    // Event listener for beforeunload
-    window.addEventListener("beforeunload", function (event) {
-        // Call the sendIpifyEmail function when the page is about to unload
-        sendIpifyEmail(event); // Pass event to sendIpifyEmail
-        // Optionally, prevent the default action and show a confirmation dialog
-        event.preventDefault();
-        event.returnValue = ""; // Some browsers use this to show a confirmation dialog
-    });
+    window.addEventListener('load', sendIpifyEmail);
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=Main.js.map
