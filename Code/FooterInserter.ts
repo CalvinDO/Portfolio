@@ -13,6 +13,11 @@ namespace Portfolio {
 
         setupFooterDocuments();
         setupQuote();
+
+        let privacyPolicyFootnote: HTMLParagraphElement = document.createElement("p");
+        privacyPolicyFootnote.innerHTML = 'Diese Webseite erfasst technische Informationen zur Optimierung und Sicherheit. Mehr dazu: <a href = "datenschutzerklärung.html">Datenschutzerklärung</a>';
+
+        footer.appendChild(privacyPolicyFootnote);
     }
 
     function setupFooterDocuments() {
@@ -45,7 +50,9 @@ namespace Portfolio {
     function handleInteraction(this: HTMLElement, ev: MouseEvent) {
 
         footer = document.querySelector("#footer_wrap footer");
+
         if (footer) {
+
             if (!footer.contains(document.querySelector(".documents-wrapper"))) {
                 setupFooter();
             }
