@@ -2,6 +2,8 @@ var Portfolio;
 (function (Portfolio) {
     class UserData {
         constructor() {
+            this.itemTimes = [];
+            this.clickedLinks = [];
         }
     }
     Portfolio.UserData = UserData;
