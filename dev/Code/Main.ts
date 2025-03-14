@@ -7,6 +7,7 @@ namespace Portfolio {
     setupHeader();
 
     try {
+        manageUserData(true);
         removeForkme();
         setupNavBar();
     } catch (error) {
@@ -15,6 +16,8 @@ namespace Portfolio {
 
 
     async function init(): Promise<void> {
+
+        userData = new UserData();
 
         try {
             setupNavBar();
@@ -639,11 +642,9 @@ namespace Portfolio {
         }
     });
 
-    async function manageUserData(event, _load?: boolean) {
+    async function manageUserData(_load?: boolean) {
 
         if (_load) {
-
-            userData = new UserData();
 
             try {
                 const response = await fetch('https://api64.ipify.org?format=json');
@@ -688,9 +689,11 @@ namespace Portfolio {
     window.addEventListener('load', init);
 
     // Event listener for window load
+    /*
     window.addEventListener('load', function (event) {
         manageUserData(event, true);
     });
+    */
 }
 
 

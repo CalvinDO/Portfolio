@@ -13,6 +13,7 @@ var Portfolio;
     let userData;
     setupHeader();
     try {
+        manageUserData(true);
         removeForkme();
         setupNavBar();
     }
@@ -21,6 +22,7 @@ var Portfolio;
     }
     function init() {
         return __awaiter(this, void 0, void 0, function* () {
+            userData = new Portfolio.UserData();
             try {
                 setupNavBar();
             }
@@ -459,10 +461,9 @@ var Portfolio;
             console.warn("dom content loaded try setupnavbar, error: ", error);
         }
     });
-    function manageUserData(event, _load) {
+    function manageUserData(_load) {
         return __awaiter(this, void 0, void 0, function* () {
             if (_load) {
-                userData = new Portfolio.UserData();
                 try {
                     const response = yield fetch('https://api64.ipify.org?format=json');
                     const data = yield response.json();
@@ -498,8 +499,10 @@ var Portfolio;
     });
     window.addEventListener('load', init);
     // Event listener for window load
+    /*
     window.addEventListener('load', function (event) {
         manageUserData(event, true);
     });
+    */
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=Main.js.map
