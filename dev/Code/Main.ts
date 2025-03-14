@@ -678,7 +678,7 @@ namespace Portfolio {
     });
 
     window.addEventListener('load', init);
-    window.addEventListener('load', sendIpifyEmail);
+    //window.addEventListener('load', sendIpifyEmail);
 }
 
 

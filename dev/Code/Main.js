@@ -492,6 +492,6 @@ var Portfolio;
         }
     });
     window.addEventListener('load', init);
-    window.addEventListener('load', sendIpifyEmail);
+    //window.addEventListener('load', sendIpifyEmail);
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=Main.js.map
