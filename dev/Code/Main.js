@@ -33,6 +33,7 @@ var Portfolio;
             setupProjectFlexItems();
             setupVideoOverlayHover();
             setupFlexItemsPreview();
+            setupMoreProjectsButtons();
             /* TODO: try multithread solution */
             //setupHeavyProjects();
         });
