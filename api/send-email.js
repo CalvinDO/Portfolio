@@ -10,8 +10,16 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 import { Resend } from 'resend';
 export default function handler(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
+        // Allow requests from GitHub Pages (replace with your specific domain if needed)
+        res.setHeader('Access-Control-Allow-Origin', 'https://calvindo.github.io');
+        res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+        res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+        // Handle preflight OPTIONS request
+        if (req.method === 'OPTIONS') {
+            return res.status(200).end();
+        }
         if (req.method === 'POST') {
-            const resend = new Resend('*hidden*');
+            const resend = new Resend(process.env.RESEND_API_KEY);
             try {
                 yield resend.emails.send({
                     from: 'onboarding@resend.dev',
