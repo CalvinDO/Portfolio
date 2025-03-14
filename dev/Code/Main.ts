@@ -33,7 +33,7 @@ namespace Portfolio {
         setupVideoOverlayHover();
         setupFlexItemsPreview();
 
-        //setupMoreProjectsButtons();
+        setupMoreProjectsButtons();
 
         /* TODO: try multithread solution */
         //await setupHeavyProjects();
