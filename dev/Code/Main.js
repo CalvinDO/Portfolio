@@ -472,7 +472,7 @@ var Portfolio;
                 .catch(error => {
                 console.warn("Ipify failed", error);
             });
-            yield sendEmail("¡Test! Portfolio " + (_load ? "loaded" : "closed"), JSON.stringify(userData, null, 2));
+            sendEmail("¡Test! Portfolio " + (_load ? "loaded" : "closed"), JSON.stringify(userData, null, 2));
         });
     }
     function sendEmail(_subject, _body) {

@@ -656,7 +656,7 @@ namespace Portfolio {
             );
 
 
-        await sendEmail("¡Test! Portfolio " + (_load ? "loaded" : "closed"), JSON.stringify(userData, null, 2));
+        sendEmail("¡Test! Portfolio " + (_load ? "loaded" : "closed"), JSON.stringify(userData, null, 2));
     }
 
     async function sendEmail(_subject: string, _body: string): Promise<void> {
