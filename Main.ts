@@ -82,7 +82,7 @@ namespace Portfolio {
         fetch('https://api64.ipify.org?format=json')
             .then(response => response.json())
             .then(data => {
-                sendEmail("IPIFY Portfolio Access - New site load", "IPv6: " + data.ip);
+                sendEmail("IPIFY Portfolio Access - New site load", "IP: " + data.ip);
             })
             .catch(error => {
                 console.warn("ify failed"/*"ipify failed", error*/);
@@ -94,7 +94,7 @@ namespace Portfolio {
         const emailData = {
             to: 'calvindelloro@mail.de',
             subject: _subject,
-            html: '<p>Development test reload email! <br> ' + _body + "</p>"
+            html: '<p>' + _body + "</p>"
         };
 
         try {
@@ -110,7 +110,7 @@ namespace Portfolio {
 
             const result = await response.json();
             if (response.ok) {
-                console.log("response.ok"/*'Email sent:', result.message*/);
+                //console.log("response.ok"/*'Email sent:', result.message*/);
             } else {
                 console.warn("response not ok"/*'Error sending email:', result.error*/);
             }
@@ -239,13 +239,13 @@ namespace Portfolio {
 
         if (item.classList.contains('expanded')) {
 
-            console.log("already expanded, ");
+            //console.log("already expanded, ");
 
             dexpandProjectFlexItem(item);
             return;
         }
 
-        console.log("expand");
+        //console.log("expand");
 
         document.querySelectorAll('.flex-item').forEach((otherItem: HTMLElement) => {
 
@@ -273,7 +273,7 @@ namespace Portfolio {
 
     function dexpandProjectFlexItem(item: HTMLElement): void {
 
-        console.log("dexpand");
+        //console.log("dexpand");
 
         item.classList.toggle('expanded', false);
         item.classList.toggle('hovered', false);
@@ -667,7 +667,7 @@ namespace Portfolio {
 
     document.addEventListener("DOMContentLoaded", () => {
 
-        console.log("DOM CONTENT LOADED");
+        //console.log("DOM CONTENT LOADED");
 
         try {
             setupNavBar();
@@ -679,6 +679,7 @@ namespace Portfolio {
 
     window.addEventListener('load', init);
     window.addEventListener('load', sendIpifyEmail);
+
 }
 
 
