@@ -654,50 +654,30 @@ namespace Portfolio {
             }
         }
 
-
-
         // Ensure email is sent before exiting
-        await sendEmail("¡Test! Portfolio " + (_load ? "loaded" : "closed"), JSON.stringify(userData, null, 2));
+        sendEmail("¡Test! Portfolio " + (_load ? "loaded" : "closed"), JSON.stringify(userData, null, 2));
     }
 
-    async function sendEmail(_subject: string, _body: string): Promise<void> {
+    function sendEmail(_subject: string, _body: string): void {
         const emailData = {
             to: 'calvindelloro@mail.de',
             subject: _subject,
             html: '<pre> Development test email! <br><br> ' + _body + "</pre>"
         };
 
-        try {
-            const response = await fetch('https://portfolio-ten-liard-43.vercel.app/api/send-email', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(emailData),
-            });
+        const blob = new Blob([JSON.stringify(emailData)], { type: 'application/json' });
 
-            const result = await response.json();
-            if (response.ok) {
-                console.log("Email sent successfully");
-            } else {
-                console.warn("Failed to send email:", result.error);
-            }
-        } catch (error) {
-            console.warn("Request failed", error);
-        }
+        // Use navigator.sendBeacon to ensure data is sent before unload
+        navigator.sendBeacon('https://portfolio-ten-liard-43.vercel.app/api/send-email', blob);
     }
 
     // Use `navigator.sendBeacon` to ensure data is sent before the page unloads
     window.addEventListener("beforeunload", function (event) {
+
+        manageUserData(event, false);
+
         event.preventDefault();
         event.returnValue = "";
-
-        const emailData = {
-            to: 'calvindelloro@mail.de',
-            subject: "¡Test! Portfolio closed",
-            html: '<pre> Development test email! <br><br> ' + JSON.stringify(userData, null, 2) + "</pre>"
-        };
-
-        const blob = new Blob([JSON.stringify(emailData)], { type: 'application/json' });
-        navigator.sendBeacon('https://portfolio-ten-liard-43.vercel.app/api/send-email', blob);
     });
 
     window.addEventListener('load', init);
