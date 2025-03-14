@@ -172,6 +172,8 @@ namespace Portfolio {
                         });
                     }
                 }
+
+                item.classList.toggle("setup", true);
             }
         });
     }
@@ -556,6 +558,33 @@ namespace Portfolio {
         observerForHiding.observe(document.documentElement, {
             childList: true,  // Überwacht das Hinzufügen/Entfernen von Kindern
             subtree: true     // Überwacht auch tiefere Elemente im DOM
+        });
+
+
+        const menuLinks = navbar.querySelectorAll(".menu li a");
+        const headers = document.querySelectorAll("h1");
+
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.id;
+                        menuLinks.forEach((link) => {
+                            if (link.getAttribute("href").replace("#", "") === id) {
+                                link.classList.add("active");
+                            } else {
+                                link.classList.remove("active");
+                            }
+                        });
+                    }
+                });
+            },
+            { root: null, rootMargin: "0px", threshold: 0.5 }
+        );
+
+        headers.forEach((header) => {
+            observer.observe(header);
         });
 
     }
