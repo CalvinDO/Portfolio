@@ -36,7 +36,7 @@ namespace Portfolio {
         //setupMoreProjectsButtons();
 
         /* TODO: try multithread solution */
-        await setupHeavyProjects();
+        //await setupHeavyProjects();
     }
 
     async function setupHeavyProjects(): Promise<void> {

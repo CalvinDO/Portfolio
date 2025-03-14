@@ -35,7 +35,7 @@ var Portfolio;
             setupFlexItemsPreview();
             //setupMoreProjectsButtons();
             /* TODO: try multithread solution */
-            yield setupHeavyProjects();
+            //await setupHeavyProjects();
         });
     }
     function setupHeavyProjects() {
