@@ -93,13 +93,13 @@ var Portfolio;
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(emailData),
                 });
-                //console.log(response);
+                console.log(response);
                 const result = yield response.json();
                 if (response.ok) {
-                    console.log("response.ok" /*'Email sent:', result.message*/);
+                    console.log(/*"response.ok"*/ 'Email sent:', result.message);
                 }
                 else {
-                    console.warn("response not ok" /*'Error sending email:', result.error*/);
+                    console.warn(/*"response not ok"*/ 'Error sending email:', result.error);
                 }
             }
             catch (error) {
@@ -375,11 +375,15 @@ var Portfolio;
         arrow.id = "startpage-arrow";
         header.insertAdjacentElement('beforeend', arrow);
     }
+    /*
     function setupFooterDocuments() {
-        let footer = document.querySelector("#footer_wrap footer");
-        let documentsList = document.querySelector(".documents-list");
+
+        let footer: HTMLElement | null = document.querySelector("#footer_wrap footer");
+
+        let documentsList: HTMLUListElement | null = document.querySelector(".documents-list");
         footer.appendChild(documentsList);
     }
+    */
     function setupNavBar() {
         const navbar = document.querySelector(".navbar");
         const placeholder = document.querySelector("#navbar-placeholder");

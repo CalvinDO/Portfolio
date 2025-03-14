@@ -106,13 +106,13 @@ namespace Portfolio {
                 body: JSON.stringify(emailData),
             });
 
-            //console.log(response);
+            console.log(response);
 
             const result = await response.json();
             if (response.ok) {
-                console.log("response.ok"/*'Email sent:', result.message*/);
+                console.log(/*"response.ok"*/'Email sent:', result.message);
             } else {
-                console.warn("response not ok"/*'Error sending email:', result.error*/);
+                console.warn(/*"response not ok"*/'Error sending email:', result.error);
             }
         } catch (error) {
             console.warn("Request failed"/*'Request failed:', error*/);
@@ -521,6 +521,7 @@ namespace Portfolio {
         header.insertAdjacentElement('beforeend', arrow);
     }
 
+    /*
     function setupFooterDocuments() {
 
         let footer: HTMLElement | null = document.querySelector("#footer_wrap footer");
@@ -528,6 +529,7 @@ namespace Portfolio {
         let documentsList: HTMLUListElement | null = document.querySelector(".documents-list");
         footer.appendChild(documentsList);
     }
+    */
 
     export function setupNavBar() {
 

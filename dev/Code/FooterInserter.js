@@ -10,6 +10,9 @@ var Portfolio;
     function setupFooter() {
         setupFooterDocuments();
         setupQuote();
+        let privacyPolicyFootnote = document.createElement("p");
+        privacyPolicyFootnote.innerHTML = 'Diese Webseite erfasst technische Informationen zur Optimierung und Sicherheit. Mehr dazu: <a href = "datenschutzerklärung.html">Datenschutzerklärung</a>';
+        footer.appendChild(privacyPolicyFootnote);
     }
     function setupFooterDocuments() {
         let documentsWrapper = document.querySelector(".documents-wrapper");
