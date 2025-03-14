@@ -13,7 +13,6 @@ var Portfolio;
     let userData;
     setupHeader();
     try {
-        manageUserData(true);
         removeForkme();
         setupNavBar();
     }
@@ -493,16 +492,14 @@ var Portfolio;
     }
     // Use beforeunload to trigger sendEmail before exiting
     window.addEventListener("beforeunload", function (event) {
-        manageUserData(event, false);
+        manageUserData(false);
         event.preventDefault();
         event.returnValue = "";
     });
     window.addEventListener('load', init);
     // Event listener for window load
-    /*
     window.addEventListener('load', function (event) {
-        manageUserData(event, true);
+        manageUserData(true);
     });
-    */
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=Main.js.map

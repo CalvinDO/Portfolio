@@ -7,7 +7,6 @@ namespace Portfolio {
     setupHeader();
 
     try {
-        manageUserData(true);
         removeForkme();
         setupNavBar();
     } catch (error) {
@@ -680,7 +679,7 @@ namespace Portfolio {
     // Use beforeunload to trigger sendEmail before exiting
     window.addEventListener("beforeunload", function (event) {
 
-        manageUserData(event, false);
+        manageUserData(false);
 
         event.preventDefault();
         event.returnValue = "";
@@ -689,11 +688,11 @@ namespace Portfolio {
     window.addEventListener('load', init);
 
     // Event listener for window load
-    /*
+    
     window.addEventListener('load', function (event) {
-        manageUserData(event, true);
+        manageUserData(true);
     });
-    */
+    
 }
 
 
