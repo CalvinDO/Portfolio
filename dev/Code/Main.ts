@@ -33,10 +33,10 @@ namespace Portfolio {
         setupVideoOverlayHover();
         setupFlexItemsPreview();
 
-        setupMoreProjectsButtons();
+        //setupMoreProjectsButtons();
 
         /* TODO: try multithread solution */
-        //setupHeavyProjects();
+        setupHeavyProjects();
     }
 
     async function setupHeavyProjects(): Promise<void> {
@@ -144,35 +144,36 @@ namespace Portfolio {
 
         items.forEach((item: HTMLElement) => {
 
-            let video: HTMLVideoElement = item.querySelector("video");
+            if (!item.classList.contains("setup")) {
 
-            if (video) {
+                let video: HTMLVideoElement = item.querySelector("video");
 
-                video.addEventListener('mouseenter', () => {
-                    video.play();
-                });
+                if (video) {
 
-                video.addEventListener('mouseleave', () => {
-                    video.pause();
-                    //video.currentTime = 0;
-                });
-
-                let arrow: HTMLElement = item.querySelector(".toggle-arrow");
-
-                if (!arrow.classList.contains("is-x")) {
-                    arrow.addEventListener('mouseenter', () => {
+                    video.addEventListener('mouseenter', () => {
                         video.play();
                     });
 
-                    arrow.addEventListener('mouseleave', () => {
+                    video.addEventListener('mouseleave', () => {
                         video.pause();
                         //video.currentTime = 0;
                     });
+
+                    let arrow: HTMLElement = item.querySelector(".toggle-arrow");
+
+                    if (!arrow.classList.contains("is-x")) {
+                        arrow.addEventListener('mouseenter', () => {
+                            video.play();
+                        });
+
+                        arrow.addEventListener('mouseleave', () => {
+                            video.pause();
+                            //video.currentTime = 0;
+                        });
+                    }
                 }
             }
         });
-
-
     }
 
     function setupDetailsFlexItems() {
@@ -195,11 +196,15 @@ namespace Portfolio {
         */
     }
 
+
     function addClickExpand(parent: HTMLElement, toggleTrigger: HTMLDivElement): void {
 
-        toggleTrigger.addEventListener('click', () => {
-            expandProjectFlexItem(parent);
-        });
+        if (!parent.classList.contains("setup")) {
+
+            toggleTrigger.addEventListener('click', () => {
+                expandProjectFlexItem(parent);
+            });
+        }
     }
 
     function expandProjectFlexItem(item: HTMLElement): void {
@@ -284,6 +289,10 @@ namespace Portfolio {
 
     function setupFlexItem(item: HTMLElement): void {
 
+        if (item.classList.contains("setup")) {
+            return;
+        }
+
         const content = item.querySelector('.toggle-content');
 
         if (!content) {
@@ -295,10 +304,6 @@ namespace Portfolio {
             return;
         }
 
-
-        //console.log("content found");
-
-        //const container: HTMLDivElement = <HTMLDivElement>item.querySelector('.visual-presentation-container');
         let arrow: HTMLDivElement = item.querySelector('.toggle-arrow');
 
         while (!arrow) {
@@ -315,19 +320,12 @@ namespace Portfolio {
         movePrimaryInfoIntoHeadingIn(item);
 
         let isMobile = window.matchMedia("(max-width: 890px)").matches;
-        //console.log("isMobile? " + isMobile);
 
         setupArrow(arrow, item);
 
         setupMouseEnter(item);
 
         setupMouseLeave(item);
-
-        /*
-        if (!isMobile) {
-    
-        }
-        */
     }
 
     function movePrimaryInfoIntoHeadingIn(item: HTMLElement) {

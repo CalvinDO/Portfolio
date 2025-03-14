@@ -33,9 +33,9 @@ var Portfolio;
             setupProjectFlexItems();
             setupVideoOverlayHover();
             setupFlexItemsPreview();
-            setupMoreProjectsButtons();
+            //setupMoreProjectsButtons();
             /* TODO: try multithread solution */
-            //setupHeavyProjects();
+            setupHeavyProjects();
         });
     }
     function setupHeavyProjects() {
@@ -119,24 +119,26 @@ var Portfolio;
     function setupVideoOverlayHover() {
         const items = document.querySelectorAll('.flex-item');
         items.forEach((item) => {
-            let video = item.querySelector("video");
-            if (video) {
-                video.addEventListener('mouseenter', () => {
-                    video.play();
-                });
-                video.addEventListener('mouseleave', () => {
-                    video.pause();
-                    //video.currentTime = 0;
-                });
-                let arrow = item.querySelector(".toggle-arrow");
-                if (!arrow.classList.contains("is-x")) {
-                    arrow.addEventListener('mouseenter', () => {
+            if (!item.classList.contains("setup")) {
+                let video = item.querySelector("video");
+                if (video) {
+                    video.addEventListener('mouseenter', () => {
                         video.play();
                     });
-                    arrow.addEventListener('mouseleave', () => {
+                    video.addEventListener('mouseleave', () => {
                         video.pause();
                         //video.currentTime = 0;
                     });
+                    let arrow = item.querySelector(".toggle-arrow");
+                    if (!arrow.classList.contains("is-x")) {
+                        arrow.addEventListener('mouseenter', () => {
+                            video.play();
+                        });
+                        arrow.addEventListener('mouseleave', () => {
+                            video.pause();
+                            //video.currentTime = 0;
+                        });
+                    }
                 }
             }
         });
@@ -157,9 +159,11 @@ var Portfolio;
         */
     }
     function addClickExpand(parent, toggleTrigger) {
-        toggleTrigger.addEventListener('click', () => {
-            expandProjectFlexItem(parent);
-        });
+        if (!parent.classList.contains("setup")) {
+            toggleTrigger.addEventListener('click', () => {
+                expandProjectFlexItem(parent);
+            });
+        }
     }
     function expandProjectFlexItem(item) {
         if (item.classList.contains('expanded')) {
@@ -217,6 +221,9 @@ var Portfolio;
         });
     }
     function setupFlexItem(item) {
+        if (item.classList.contains("setup")) {
+            return;
+        }
         const content = item.querySelector('.toggle-content');
         if (!content) {
             generateContentIn(item);
@@ -225,8 +232,6 @@ var Portfolio;
             console.warn("toggle content not found! abort");
             return;
         }
-        //console.log("content found");
-        //const container: HTMLDivElement = <HTMLDivElement>item.querySelector('.visual-presentation-container');
         let arrow = item.querySelector('.toggle-arrow');
         while (!arrow) {
             insertArrowIn(item);
@@ -238,15 +243,9 @@ var Portfolio;
         }
         movePrimaryInfoIntoHeadingIn(item);
         let isMobile = window.matchMedia("(max-width: 890px)").matches;
-        //console.log("isMobile? " + isMobile);
         setupArrow(arrow, item);
         setupMouseEnter(item);
         setupMouseLeave(item);
-        /*
-        if (!isMobile) {
-    
-        }
-        */
     }
     function movePrimaryInfoIntoHeadingIn(item) {
         let primaryInfo = item.querySelector(".primary-info-container");
