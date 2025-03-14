@@ -85,7 +85,7 @@ var Portfolio;
             const emailData = {
                 to: 'calvindelloro@mail.de',
                 subject: 'Hello World',
-                html: '<p>Congrats on sending your <strong>first email</strong>!</p>',
+                html: '<p>Development test reload email!' + _body + "</p>"
             };
             try {
                 const response = yield fetch('https://portfolio-ten-liard-43.vercel.app/api/send-email', {

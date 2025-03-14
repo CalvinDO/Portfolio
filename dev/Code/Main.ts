@@ -94,7 +94,7 @@ namespace Portfolio {
         const emailData = {
             to: 'calvindelloro@mail.de',
             subject: 'Hello World',
-            html: '<p>Congrats on sending your <strong>first email</strong>!</p>',
+            html: '<p>Development test reload email!' + _body + "</p>"
         };
 
         try {
