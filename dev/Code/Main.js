@@ -70,7 +70,7 @@ var Portfolio;
             }
         });
     }
-    function ipify(ev) {
+    function sendIpifyEmail(ev) {
         fetch('https://api64.ipify.org?format=json')
             .then(response => response.json())
             .then(data => {
@@ -81,8 +81,30 @@ var Portfolio;
         });
     }
     function sendEmail(_subject, _body) {
-        var email = "calvindelloro@mail.de";
-        window.location.href = "mailto:" + email + "?subject=" + encodeURIComponent(_subject) + "&body=" + encodeURIComponent(_body);
+        return __awaiter(this, void 0, void 0, function* () {
+            const emailData = {
+                to: 'calvindelloro@mail.de',
+                subject: 'Hello World',
+                html: '<p>Congrats on sending your <strong>first email</strong>!</p>',
+            };
+            try {
+                const response = yield fetch('/api/send-email', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(emailData),
+                });
+                const result = yield response.json();
+                if (response.ok) {
+                    console.log('Email sent:', result.message);
+                }
+                else {
+                    console.warn('Error sending email:', result.error);
+                }
+            }
+            catch (error) {
+                console.warn('Request failed:', error);
+            }
+        });
     }
     function onHoverDoc(_event) {
         preventEventAndDexpand(_event, true);
@@ -469,6 +491,6 @@ var Portfolio;
         }
     });
     window.addEventListener('load', init);
-    //window.addEventListener('load', ipify);
+    window.addEventListener('load', sendIpifyEmail);
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=Main.js.map

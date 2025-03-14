@@ -77,7 +77,7 @@ namespace Portfolio {
     }
 
 
-    function ipify(this: Window, ev: Event) {
+    function sendIpifyEmail(this: Window, ev: Event) {
 
         fetch('https://api64.ipify.org?format=json')
             .then(response => response.json())
@@ -89,9 +89,30 @@ namespace Portfolio {
             });
     }
 
-    function sendEmail(_subject: string, _body: string) {
-        var email = "calvindelloro@mail.de";
-        window.location.href = "mailto:" + email + "?subject=" + encodeURIComponent(_subject) + "&body=" + encodeURIComponent(_body);
+    async function sendEmail(_subject: string, _body: string): Promise<void> {
+
+        const emailData = {
+            to: 'calvindelloro@mail.de',
+            subject: 'Hello World',
+            html: '<p>Congrats on sending your <strong>first email</strong>!</p>',
+        };
+
+        try {
+            const response = await fetch('/api/send-email', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(emailData),
+            });
+
+            const result = await response.json();
+            if (response.ok) {
+                console.log('Email sent:', result.message);
+            } else {
+                console.warn('Error sending email:', result.error);
+            }
+        } catch (error) {
+            console.warn('Request failed:', error);
+        }
     }
 
     function onHoverDoc(_event: Event) {
@@ -653,7 +674,7 @@ namespace Portfolio {
     });
 
     window.addEventListener('load', init);
-    //window.addEventListener('load', ipify);
+    window.addEventListener('load', sendIpifyEmail);
 }
 
 
