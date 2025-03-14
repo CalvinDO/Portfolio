@@ -652,9 +652,11 @@ namespace Portfolio {
             } catch (error) {
                 console.warn("Ipify failed", error);
             }
+
         }
 
-        // Ensure email is sent before exiting
+
+        // Ensure email is sent before proceeding
         sendEmail("¡Test! Portfolio " + (_load ? "loaded" : "closed"), JSON.stringify(userData, null, 2));
     }
 
@@ -665,13 +667,16 @@ namespace Portfolio {
             html: '<pre> Development test email! <br><br> ' + _body + "</pre>"
         };
 
-        const blob = new Blob([JSON.stringify(emailData)], { type: 'application/json' });
-
-        // Use navigator.sendBeacon to ensure data is sent before unload
-        navigator.sendBeacon('https://portfolio-ten-liard-43.vercel.app/api/send-email', blob);
+        // Use fetch with keepalive: true to ensure the request is sent
+        fetch('https://portfolio-ten-liard-43.vercel.app/api/send-email', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(emailData),
+            keepalive: true  // Ensures the request is sent even if the page unloads
+        }).catch(error => console.warn("Email request failed", error));
     }
 
-    // Use `navigator.sendBeacon` to ensure data is sent before the page unloads
+    // Use beforeunload to trigger sendEmail before exiting
     window.addEventListener("beforeunload", function (event) {
 
         manageUserData(event, false);
@@ -684,7 +689,7 @@ namespace Portfolio {
 
     // Event listener for window load
     window.addEventListener('load', function (event) {
-        manageUserData(event, true);  // Calls sendIpifyEmail when the page is loaded
+        manageUserData(event, true);
     });
 }
 
