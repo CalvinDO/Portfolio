@@ -93,6 +93,7 @@ var Portfolio;
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(emailData),
                 });
+                console.log(response);
                 const result = yield response.json();
                 if (response.ok) {
                     console.log('Email sent:', result.message);
