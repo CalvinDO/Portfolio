@@ -2424,72 +2424,8 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     <!-- Dieses Projekt geht aus einer Computergrafik-Aufgabe hervor, deren Anforderung die Modellierung (Mesh ohne Material) einer symmetrischen Truhe, mitsamt eines Deckels und eines Rahmens war.  
     Ich ging darüber hinaus, in dem ich aus der primitiven Geometrie Details wie Edelsteine durch Loop-Cuts, Extrudes und Insets erzeugte. Die Marmortexturen erzeugte ich prozedural über Noise-Nodes, die Holztextur ebenso über Noise, Musgrave und Voronoi Nodes, sowie Vektorkurven und Color-Burn-Nodes. -->
   </div>
-  
-</div>
 
-<div class="section-header">
-<i class="fa-solid fa-film"></i>
-<h1 id="video">Video</h1>
-</div>
-
-<div class = "flex-container" id = "video-flex-container">
-  <div class = "flex-item excess">
-    <h2 id="cardioids-tutorial">Cardioids - Tutorial</h2>
-    <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-      <iframe width="100%" height="400lvh" src="https://www.youtube.com/embed/A68-juE2ves"
-      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"                allowfullscreen>
-      </iframe>
-      <div class = "primary-info-container">
-        <div class="team-size-container">
-          <i class="material-icons">person</i>1
-        </div>
-        <div class = "context-awards">
-         <i class ="fa-solid fa-person-chalkboard"></i>
-        </div>
-        <div class = "tags">
-          <span class="tag">Overwolf</span>
-          <span class="tag">AVS Editor</span>
-        </div>
-        <span class ="duration"><i class="far fa-clock"></i>&nbsp;&nbsp;3h</span>
-      </div>
-    </div>
-    <h4>
-      Schulvortrag<br>
-      Solo-Projekt<br>
-      Frühling 2019<br>
-      <a href="#cardioids">Herzkurve</a>-Erklärvideo
-    </h4>
-    <br>
-    <div class="skills">
-      <strong>Overwolf, AVS Editor</strong><br>
-      <em>Präsentativ – Didaktisch – Selbstständig</em><br>
-      <!-- <strong>Git</strong> -->
-    </div>
-    <br>
-    <ul class="task-list">
-      <li><strong>Vertontes Erklärvideo für Mathematikunterricht</strong><br>
-        <span>Entstanden unter Auswahl eigener Themen</span>
-          <ul>
-            <li>
-              Präsentative Aufbereitung
-            </li>
-          </ul>
-      </li>
-      <li><strong>Komplexes mathematisches Thema</strong><br>
-        <span>Erklärung von Grundlagen und Programmcode</span>
-        <ul>
-          <li>
-            Analogien zur alltäglichen Welt
-          </li>
-          <li>
-            Erläuterung des Programms ähnlich Pseudocode
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <!-- Dies ist das unter [Cardioids](#cardioids) angedeutete Lernvideo, welches im Rahmen einer Projektarbeit unter Auswahl eines eigenen Themas entstand. Hier wird ebenso die Funktionsweise meines dazu verfassten Programms ähnlich zu Pseudocode erklärt. -->
-  </div>
-  <div class = "flex-item excess">
+   <div class = "flex-item excess">
       <h2 id="deren-schloss">Schloss der Truhe</h2>
       <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
         <img src="Schloss.png" alt="Schloss" width="100%"/> 
@@ -2854,6 +2790,71 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
       <!-- Dies war mein erstes Blender Projekt überhaupt. Auf diesem Stand hatte ich noch nie Topologie verändert, und somit für eine Mantaflow Feuer&Rauch-Simulation den vorgefertigten Affenkopf "Suzanne" verwendet, und eine Animation gerendert. Die Position der einzelnen Flammen wird durch eine Wolken-Textur über das Objekt bewegt, um einen höheren Grad an Zufall zu erreichen.  
       Ein brennender Affenkopf kommt in dem Donut-Tutorial des <a href="https://www.youtube.com/watch?v=TPrnSACiTJ4">Blender Guru</a>s ganz zu Beginn vor, allerdings gab es zu dessen Entstehungszeit Mantaflow noch nicht. Er demonstrierte das Feuer, um Motivation für Blender zu schaffen. Dieser Teil der ersten Folge war mit Mantaflow allerdings nicht nachahmbar, was mich nicht zur Aufgabe, sondern zur eigenständigen Nachforschung und zum Ausprobieren ermutigte, bis ich einen brennenden Affenkopf erhielt. -->
     </div>
+</div>
+
+<div class="section-header">
+<i class="fa-solid fa-film"></i>
+<h1 id="video">Video</h1>
+</div>
+
+<div class = "flex-container" id = "video-flex-container">
+  <div class = "flex-item excess">
+    <h2 id="cardioids-tutorial">Cardioids - Tutorial</h2>
+    <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+      <iframe width="100%" height="400lvh" src="https://www.youtube.com/embed/A68-juE2ves"
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"                allowfullscreen>
+      </iframe>
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>1
+        </div>
+        <div class = "context-awards">
+         <i class ="fa-solid fa-person-chalkboard"></i>
+        </div>
+        <div class = "tags">
+          <span class="tag">Overwolf</span>
+          <span class="tag">AVS Editor</span>
+        </div>
+        <span class ="duration"><i class="far fa-clock"></i>&nbsp;&nbsp;3h</span>
+      </div>
+    </div>
+    <h4>
+      Schulvortrag<br>
+      Solo-Projekt<br>
+      Frühling 2019<br>
+      <a href="#cardioids">Herzkurve</a>-Erklärvideo
+    </h4>
+    <br>
+    <div class="skills">
+      <strong>Overwolf, AVS Editor</strong><br>
+      <em>Präsentativ – Didaktisch – Selbstständig</em><br>
+      <!-- <strong>Git</strong> -->
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Vertontes Erklärvideo für Mathematikunterricht</strong><br>
+        <span>Entstanden unter Auswahl eigener Themen</span>
+          <ul>
+            <li>
+              Präsentative Aufbereitung
+            </li>
+          </ul>
+      </li>
+      <li><strong>Komplexes mathematisches Thema</strong><br>
+        <span>Erklärung von Grundlagen und Programmcode</span>
+        <ul>
+          <li>
+            Analogien zur alltäglichen Welt
+          </li>
+          <li>
+            Erläuterung des Programms ähnlich Pseudocode
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <!-- Dies ist das unter [Cardioids](#cardioids) angedeutete Lernvideo, welches im Rahmen einer Projektarbeit unter Auswahl eines eigenen Themas entstand. Hier wird ebenso die Funktionsweise meines dazu verfassten Programms ähnlich zu Pseudocode erklärt. -->
+  </div>
+ 
 </div>
 
 <style>
