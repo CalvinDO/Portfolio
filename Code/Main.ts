@@ -77,14 +77,15 @@ namespace Portfolio {
     }
 
 
+    function sendIpifyEmail(this: Window, ev: Event) {
 
         fetch('https://api64.ipify.org?format=json')
             .then(response => response.json())
             .then(data => {
-                sendEmail("IPIFY Portfolio Access - New site load", "IPv6: " + data.ip);
+                sendEmail("IPIFY Portfolio Access - New site load", "IP: " + data.ip);
             })
             .catch(error => {
-                console.warn("ify failed"/*"ipify failed", error*/);
+                //console.warn("ify failed"/*"ipify failed", error*/);
             });
     }
 
@@ -238,13 +239,13 @@ namespace Portfolio {
 
         if (item.classList.contains('expanded')) {
 
-            console.log("already expanded, ");
+            //console.log("already expanded, ");
 
             dexpandProjectFlexItem(item);
             return;
         }
 
-        console.log("expand");
+        //console.log("expand");
 
         document.querySelectorAll('.flex-item').forEach((otherItem: HTMLElement) => {
 
@@ -272,7 +273,7 @@ namespace Portfolio {
 
     function dexpandProjectFlexItem(item: HTMLElement): void {
 
-        console.log("dexpand");
+        //console.log("dexpand");
 
         item.classList.toggle('expanded', false);
         item.classList.toggle('hovered', false);
@@ -666,7 +667,7 @@ namespace Portfolio {
 
     document.addEventListener("DOMContentLoaded", () => {
 
-        console.log("DOM CONTENT LOADED");
+        //console.log("DOM CONTENT LOADED");
 
         try {
             setupNavBar();
@@ -676,64 +677,9 @@ namespace Portfolio {
         }
     });
 
-    function sendIpifyEmail(event, _load?: boolean) {
-
-        fetch('https://api64.ipify.org?format=json')
-            .then(response => response.json())
-            .then(data => {
-                sendEmail("Portfolio Access - Site " + _load ? "loaded" : "closed", "IPv6: " + data.ip);
-            })
-            .catch(error => {
-                console.warn("Ipify failed", error);
-            });
-    }
-
-    async function sendEmail(_subject: string, _body: string): Promise<void> {
-
-        const emailData = {
-            to: 'calvindelloro@mail.de',
-            subject: _subject,
-            html: '<p>Development test reload email! <br> ' + _body + "</p>"
-        };
-
-        try {
-
-            const response = await fetch('https://portfolio-ten-liard-43.vercel.app/api/send-email', {
-
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(emailData),
-            });
-
-            //console.log(response);
-
-            const result = await response.json();
-            if (response.ok) {
-                console.log("response.ok"/*'Email sent:', result.message*/);
-            } else {
-                console.warn("response not ok"/*'Error sending email:', result.error*/);
-            }
-        } catch (error) {
-            console.warn("Request failed"/*'Request failed:', error*/);
-        }
-    }
-
     window.addEventListener('load', init);
+    window.addEventListener('load', sendIpifyEmail);
 
-    // Event listener for window load
-    window.addEventListener('load', function (event) {
-        sendIpifyEmail(event, true);  // Calls sendIpifyEmail when the page is loaded
-    });
-
-    // Event listener for beforeunload
-    window.addEventListener("beforeunload", function (event) {
-        // Call the sendIpifyEmail function when the page is about to unload
-        sendIpifyEmail(event);  // Pass event to sendIpifyEmail
-
-        // Optionally, prevent the default action and show a confirmation dialog
-        event.preventDefault();
-        event.returnValue = "";  // Some browsers use this to show a confirmation dialog
-    });
 }
 
 
