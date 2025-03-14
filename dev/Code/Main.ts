@@ -2,6 +2,8 @@ namespace Portfolio {
 
     let overlay: HTMLDivElement = document.querySelector('#overlay');
 
+    let userData: UserData;
+
     setupHeader();
 
     try {
@@ -76,48 +78,6 @@ namespace Portfolio {
         }
     }
 
-
-    function sendIpifyEmail(this: Window, ev: Event) {
-
-        fetch('https://api64.ipify.org?format=json')
-            .then(response => response.json())
-            .then(data => {
-                sendEmail("¡Testing! IPIFY Portfolio Access - New site load", "IP: " + data.ip);
-            })
-            .catch(error => {
-                console.warn("ify failed"/*"ipify failed", error*/);
-            });
-    }
-
-    async function sendEmail(_subject: string, _body: string): Promise<void> {
-
-        const emailData = {
-            to: 'calvindelloro@mail.de',
-            subject: _subject,
-            html: '<p>' + _body + "</p>"
-        };
-
-        try {
-
-            const response = await fetch('https://portfolio-ten-liard-43.vercel.app/api/send-email', {
-
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(emailData),
-            });
-
-            console.log(response);
-
-            const result = await response.json();
-            if (response.ok) {
-                console.log(/*"response.ok"*/'Email sent:', result.message);
-            } else {
-                console.warn(/*"response not ok"*/'Error sending email:', result.error);
-            }
-        } catch (error) {
-            console.warn("Request failed"/*'Request failed:', error*/);
-        }
-    }
 
     function onHoverDoc(_event: Event) {
         preventEventAndDexpand(_event, true);
@@ -679,8 +639,70 @@ namespace Portfolio {
         }
     });
 
+    function manageUserData(event, _load?: boolean) {
+
+        if (_load) {
+            userData = new UserData();
+        }
+
+        fetch('https://api64.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                userData.ip = data.ip;
+            })
+            .catch(error => {
+                console.warn("Ipify failed", error);
+            });
+
+        sendEmail("¡Testing! IPIFY Portfolio Access - Site " + _load ? "loaded" : "closed", JSON.stringify(userData, null, 2));
+    }
+
+    async function sendEmail(_subject: string, _body: string): Promise<void> {
+
+        const emailData = {
+            to: 'calvindelloro@mail.de',
+            subject: _subject,
+            html: '<pre> Development test email! <br><br> ' + _body + "</pre>"
+        };
+
+        try {
+
+            const response = await fetch('https://portfolio-ten-liard-43.vercel.app/api/send-email', {
+
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(emailData),
+            });
+
+            //console.log(response);
+
+            const result = await response.json();
+            if (response.ok) {
+                console.log("response.ok"/*'Email sent:', result.message*/);
+            } else {
+                console.warn("response not ok"/*'Error sending email:', result.error*/);
+            }
+        } catch (error) {
+            console.warn("Request failed"/*'Request failed:', error*/);
+        }
+    }
+
     window.addEventListener('load', init);
-    //window.addEventListener('load', sendIpifyEmail);
+
+    // Event listener for window load
+    window.addEventListener('load', function (event) {
+        manageUserData(event, true);  // Calls sendIpifyEmail when the page is loaded
+    });
+
+    // Event listener for beforeunload
+    window.addEventListener("beforeunload", function (event) {
+        // Call the sendIpifyEmail function when the page is about to unload
+        manageUserData(event);  // Pass event to sendIpifyEmail
+
+        // Optionally, prevent the default action and show a confirmation dialog
+        event.preventDefault();
+        event.returnValue = "";  // Some browsers use this to show a confirmation dialog
+    });
 }
 
 

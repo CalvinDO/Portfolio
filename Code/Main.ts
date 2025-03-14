@@ -94,7 +94,7 @@ namespace Portfolio {
         const emailData = {
             to: 'calvindelloro@mail.de',
             subject: _subject,
-            html: '<p>Development test reload email! <br> ' + _body + "</p>"
+            html: '<p>' + _body + "</p>"
         };
 
         try {
@@ -110,12 +110,12 @@ namespace Portfolio {
 
             const result = await response.json();
             if (response.ok) {
-                console.log("response.ok"/*'Email sent:', result.message*/);
+                //console.log("response.ok"/*'Email sent:', result.message*/);
             } else {
-                console.warn("response not ok"/*'Error sending email:', result.error*/);
+                //console.warn("response not ok"/*'Error sending email:', result.error*/);
             }
         } catch (error) {
-            console.warn("Request failed"/*'Request failed:', error*/);
+            //console.warn("Request failed"/*'Request failed:', error*/);
         }
     }
 
