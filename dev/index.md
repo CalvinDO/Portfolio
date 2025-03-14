@@ -213,9 +213,9 @@ h1{
   color: #E9ECEF;
 }
 
-.navbar.sticky .menu li a:hover {
-  background: #E9ECEF; 
-  color: #343A40;
+.navbar.sticky .menu li a:hover, .navbar.sticky .menu li a.active {
+    background: #E9ECEF;
+    color: #343A40;
 }
 
 
@@ -1631,7 +1631,6 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     Ich ging darüber hinaus, in dem ich aus der primitiven Geometrie Details wie Edelsteine durch Loop-Cuts, Extrudes und Insets erzeugte. Die Marmortexturen erzeugte ich prozedural über Noise-Nodes, die Holztextur ebenso über Noise, Musgrave und Voronoi Nodes, sowie Vektorkurven und Color-Burn-Nodes. -->
   </div>
 
-   
 </div>
 
 <div class="section-header">
