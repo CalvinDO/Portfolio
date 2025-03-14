@@ -115,7 +115,7 @@ namespace Portfolio {
                 console.warn("response not ok"/*'Error sending email:', result.error*/);
             }
         } catch (error) {
-            console.warn(/*request failed*/'Request failed:', error);
+            console.warn("Request failed"/*'Request failed:', error*/);
         }
     }
 

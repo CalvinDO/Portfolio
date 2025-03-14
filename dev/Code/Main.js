@@ -103,7 +103,7 @@ var Portfolio;
                 }
             }
             catch (error) {
-                console.warn(/*request failed*/ 'Request failed:', error);
+                console.warn("Request failed" /*'Request failed:', error*/);
             }
         });
     }
