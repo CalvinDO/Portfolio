@@ -244,7 +244,7 @@ namespace Portfolio {
         console.log("dexpand");
 
         item.classList.toggle('expanded', false);
-
+        item.classList.toggle('hovered', false);
         overlay.style.opacity = "0";
 
         let secondToggleDiv: HTMLElement = item.querySelector(".second-toggle-content");

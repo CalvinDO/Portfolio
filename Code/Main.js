@@ -187,6 +187,7 @@ var Portfolio;
     function dexpandProjectFlexItem(item) {
         console.log("dexpand");
         item.classList.toggle('expanded', false);
+        item.classList.toggle('hovered', false);
         overlay.style.opacity = "0";
         let secondToggleDiv = item.querySelector(".second-toggle-content");
         item.querySelector(".third-toggle-content").insertAdjacentElement('beforebegin', secondToggleDiv);
