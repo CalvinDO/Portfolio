@@ -88,7 +88,7 @@ var Portfolio;
                 html: '<p>Congrats on sending your <strong>first email</strong>!</p>',
             };
             try {
-                const response = yield fetch('https://calvindos-projects.vercel.app/portfolio/api/send-email', {
+                const response = yield fetch('https://portfolio-ten-liard-43.vercel.app/api/send-email', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(emailData),
