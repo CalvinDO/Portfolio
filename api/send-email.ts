@@ -4,7 +4,7 @@ export default async function handler(req, res): Promise<void> {
 
     if (req.method === 'POST') {
 
-        const resend = new Resend('*hidden*');
+        const resend = new Resend(process.env.RESEND_API_KEY);
 
         try {
 

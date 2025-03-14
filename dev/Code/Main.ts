@@ -98,7 +98,7 @@ namespace Portfolio {
         };
 
         try {
-            const response = await fetch('/api/send-email', {
+            const response = await fetch('https://calvindos-projects.vercel.app/portfolio/api/send-email', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(emailData),
