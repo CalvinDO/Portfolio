@@ -35,7 +35,7 @@ var Portfolio;
             setupFlexItemsPreview();
             setupMoreProjectsButtons();
             /* TODO: try multithread solution */
-            //setupHeavyProjects();
+            //await setupHeavyProjects();
         });
     }
     function setupHeavyProjects() {
@@ -70,19 +70,42 @@ var Portfolio;
             }
         });
     }
-    function ipify(ev) {
+    function sendIpifyEmail(ev) {
         fetch('https://api64.ipify.org?format=json')
             .then(response => response.json())
             .then(data => {
             sendEmail("IPIFY Portfolio Access - New site load", "IPv6: " + data.ip);
         })
             .catch(error => {
-            console.warn("ipify failed", error);
+            console.warn("ify failed" /*"ipify failed", error*/);
         });
     }
     function sendEmail(_subject, _body) {
-        var email = "calvindelloro@mail.de";
-        window.location.href = "mailto:" + email + "?subject=" + encodeURIComponent(_subject) + "&body=" + encodeURIComponent(_body);
+        return __awaiter(this, void 0, void 0, function* () {
+            const emailData = {
+                to: 'calvindelloro@mail.de',
+                subject: _subject,
+                html: '<p>Development test reload email! <br> ' + _body + "</p>"
+            };
+            try {
+                const response = yield fetch('https://portfolio-ten-liard-43.vercel.app/api/send-email', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(emailData),
+                });
+                //console.log(response);
+                const result = yield response.json();
+                if (response.ok) {
+                    console.log("response.ok" /*'Email sent:', result.message*/);
+                }
+                else {
+                    console.warn("response not ok" /*'Error sending email:', result.error*/);
+                }
+            }
+            catch (error) {
+                console.warn("Request failed" /*'Request failed:', error*/);
+            }
+        });
     }
     function onHoverDoc(_event) {
         preventEventAndDexpand(_event, true);
@@ -119,25 +142,28 @@ var Portfolio;
     function setupVideoOverlayHover() {
         const items = document.querySelectorAll('.flex-item');
         items.forEach((item) => {
-            let video = item.querySelector("video");
-            if (video) {
-                video.addEventListener('mouseenter', () => {
-                    video.play();
-                });
-                video.addEventListener('mouseleave', () => {
-                    video.pause();
-                    //video.currentTime = 0;
-                });
-                let arrow = item.querySelector(".toggle-arrow");
-                if (!arrow.classList.contains("is-x")) {
-                    arrow.addEventListener('mouseenter', () => {
+            if (!item.classList.contains("setup")) {
+                let video = item.querySelector("video");
+                if (video) {
+                    video.addEventListener('mouseenter', () => {
                         video.play();
                     });
-                    arrow.addEventListener('mouseleave', () => {
+                    video.addEventListener('mouseleave', () => {
                         video.pause();
                         //video.currentTime = 0;
                     });
+                    let arrow = item.querySelector(".toggle-arrow");
+                    if (!arrow.classList.contains("is-x")) {
+                        arrow.addEventListener('mouseenter', () => {
+                            video.play();
+                        });
+                        arrow.addEventListener('mouseleave', () => {
+                            video.pause();
+                            //video.currentTime = 0;
+                        });
+                    }
                 }
+                item.classList.toggle("setup", true);
             }
         });
     }
@@ -157,9 +183,11 @@ var Portfolio;
         */
     }
     function addClickExpand(parent, toggleTrigger) {
-        toggleTrigger.addEventListener('click', () => {
-            expandProjectFlexItem(parent);
-        });
+        if (!parent.classList.contains("setup")) {
+            toggleTrigger.addEventListener('click', () => {
+                expandProjectFlexItem(parent);
+            });
+        }
     }
     function expandProjectFlexItem(item) {
         if (item.classList.contains('expanded')) {
@@ -218,6 +246,9 @@ var Portfolio;
         });
     }
     function setupFlexItem(item) {
+        if (item.classList.contains("setup")) {
+            return;
+        }
         const content = item.querySelector('.toggle-content');
         if (!content) {
             generateContentIn(item);
@@ -226,8 +257,6 @@ var Portfolio;
             console.warn("toggle content not found! abort");
             return;
         }
-        //console.log("content found");
-        //const container: HTMLDivElement = <HTMLDivElement>item.querySelector('.visual-presentation-container');
         let arrow = item.querySelector('.toggle-arrow');
         while (!arrow) {
             insertArrowIn(item);
@@ -239,15 +268,9 @@ var Portfolio;
         }
         movePrimaryInfoIntoHeadingIn(item);
         let isMobile = window.matchMedia("(max-width: 890px)").matches;
-        //console.log("isMobile? " + isMobile);
         setupArrow(arrow, item);
         setupMouseEnter(item);
         setupMouseLeave(item);
-        /*
-        if (!isMobile) {
-    
-        }
-        */
     }
     function movePrimaryInfoIntoHeadingIn(item) {
         let primaryInfo = item.querySelector(".primary-info-container");
@@ -400,6 +423,26 @@ var Portfolio;
             childList: true,
             subtree: true // Überwacht auch tiefere Elemente im DOM
         });
+        const menuLinks = navbar.querySelectorAll(".menu li a");
+        const headers = document.querySelectorAll("h1");
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.id;
+                    menuLinks.forEach((link) => {
+                        if (link.getAttribute("href").replace("#", "") === id) {
+                            link.classList.add("active");
+                        }
+                        else {
+                            link.classList.remove("active");
+                        }
+                    });
+                }
+            });
+        }, { root: null, rootMargin: "0px", threshold: 0.5 });
+        headers.forEach((header) => {
+            observer.observe(header);
+        });
     }
     Portfolio.setupNavBar = setupNavBar;
     function turnPage() {
@@ -449,6 +492,6 @@ var Portfolio;
         }
     });
     window.addEventListener('load', init);
-    //window.addEventListener('load', ipify);
+    window.addEventListener('load', sendIpifyEmail);
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=Main.js.map

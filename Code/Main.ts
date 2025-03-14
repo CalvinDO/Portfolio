@@ -36,7 +36,7 @@ namespace Portfolio {
         setupMoreProjectsButtons();
 
         /* TODO: try multithread solution */
-        //setupHeavyProjects();
+        //await setupHeavyProjects();
     }
 
     async function setupHeavyProjects(): Promise<void> {
@@ -77,7 +77,7 @@ namespace Portfolio {
     }
 
 
-    function ipify(this: Window, ev: Event) {
+    function sendIpifyEmail(this: Window, ev: Event) {
 
         fetch('https://api64.ipify.org?format=json')
             .then(response => response.json())
@@ -85,13 +85,38 @@ namespace Portfolio {
                 sendEmail("IPIFY Portfolio Access - New site load", "IPv6: " + data.ip);
             })
             .catch(error => {
-                console.warn("ipify failed", error);
+                console.warn("ify failed"/*"ipify failed", error*/);
             });
     }
 
-    function sendEmail(_subject: string, _body: string) {
-        var email = "calvindelloro@mail.de";
-        window.location.href = "mailto:" + email + "?subject=" + encodeURIComponent(_subject) + "&body=" + encodeURIComponent(_body);
+    async function sendEmail(_subject: string, _body: string): Promise<void> {
+
+        const emailData = {
+            to: 'calvindelloro@mail.de',
+            subject: _subject,
+            html: '<p>Development test reload email! <br> ' + _body + "</p>"
+        };
+
+        try {
+
+            const response = await fetch('https://portfolio-ten-liard-43.vercel.app/api/send-email', {
+
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(emailData),
+            });
+
+            //console.log(response);
+
+            const result = await response.json();
+            if (response.ok) {
+                console.log("response.ok"/*'Email sent:', result.message*/);
+            } else {
+                console.warn("response not ok"/*'Error sending email:', result.error*/);
+            }
+        } catch (error) {
+            console.warn("Request failed"/*'Request failed:', error*/);
+        }
     }
 
     function onHoverDoc(_event: Event) {
@@ -144,35 +169,38 @@ namespace Portfolio {
 
         items.forEach((item: HTMLElement) => {
 
-            let video: HTMLVideoElement = item.querySelector("video");
+            if (!item.classList.contains("setup")) {
 
-            if (video) {
+                let video: HTMLVideoElement = item.querySelector("video");
 
-                video.addEventListener('mouseenter', () => {
-                    video.play();
-                });
+                if (video) {
 
-                video.addEventListener('mouseleave', () => {
-                    video.pause();
-                    //video.currentTime = 0;
-                });
-
-                let arrow: HTMLElement = item.querySelector(".toggle-arrow");
-
-                if (!arrow.classList.contains("is-x")) {
-                    arrow.addEventListener('mouseenter', () => {
+                    video.addEventListener('mouseenter', () => {
                         video.play();
                     });
 
-                    arrow.addEventListener('mouseleave', () => {
+                    video.addEventListener('mouseleave', () => {
                         video.pause();
                         //video.currentTime = 0;
                     });
+
+                    let arrow: HTMLElement = item.querySelector(".toggle-arrow");
+
+                    if (!arrow.classList.contains("is-x")) {
+                        arrow.addEventListener('mouseenter', () => {
+                            video.play();
+                        });
+
+                        arrow.addEventListener('mouseleave', () => {
+                            video.pause();
+                            //video.currentTime = 0;
+                        });
+                    }
                 }
+
+                item.classList.toggle("setup", true);
             }
         });
-
-
     }
 
     function setupDetailsFlexItems() {
@@ -195,11 +223,15 @@ namespace Portfolio {
         */
     }
 
+
     function addClickExpand(parent: HTMLElement, toggleTrigger: HTMLDivElement): void {
 
-        toggleTrigger.addEventListener('click', () => {
-            expandProjectFlexItem(parent);
-        });
+        if (!parent.classList.contains("setup")) {
+
+            toggleTrigger.addEventListener('click', () => {
+                expandProjectFlexItem(parent);
+            });
+        }
     }
 
     function expandProjectFlexItem(item: HTMLElement): void {
@@ -245,6 +277,7 @@ namespace Portfolio {
 
         item.classList.toggle('expanded', false);
         item.classList.toggle('hovered', false);
+
         overlay.style.opacity = "0";
 
         let secondToggleDiv: HTMLElement = item.querySelector(".second-toggle-content");
@@ -284,6 +317,10 @@ namespace Portfolio {
 
     function setupFlexItem(item: HTMLElement): void {
 
+        if (item.classList.contains("setup")) {
+            return;
+        }
+
         const content = item.querySelector('.toggle-content');
 
         if (!content) {
@@ -295,10 +332,6 @@ namespace Portfolio {
             return;
         }
 
-
-        //console.log("content found");
-
-        //const container: HTMLDivElement = <HTMLDivElement>item.querySelector('.visual-presentation-container');
         let arrow: HTMLDivElement = item.querySelector('.toggle-arrow');
 
         while (!arrow) {
@@ -315,19 +348,12 @@ namespace Portfolio {
         movePrimaryInfoIntoHeadingIn(item);
 
         let isMobile = window.matchMedia("(max-width: 890px)").matches;
-        //console.log("isMobile? " + isMobile);
 
         setupArrow(arrow, item);
 
         setupMouseEnter(item);
 
         setupMouseLeave(item);
-
-        /*
-        if (!isMobile) {
-    
-        }
-        */
     }
 
     function movePrimaryInfoIntoHeadingIn(item: HTMLElement) {
@@ -560,6 +586,33 @@ namespace Portfolio {
             subtree: true     // Überwacht auch tiefere Elemente im DOM
         });
 
+
+        const menuLinks = navbar.querySelectorAll(".menu li a");
+        const headers = document.querySelectorAll("h1");
+
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.id;
+                        menuLinks.forEach((link) => {
+                            if (link.getAttribute("href").replace("#", "") === id) {
+                                link.classList.add("active");
+                            } else {
+                                link.classList.remove("active");
+                            }
+                        });
+                    }
+                });
+            },
+            { root: null, rootMargin: "0px", threshold: 0.5 }
+        );
+
+        headers.forEach((header) => {
+            observer.observe(header);
+        });
+
     }
 
     function turnPage() {
@@ -625,7 +678,7 @@ namespace Portfolio {
     });
 
     window.addEventListener('load', init);
-    //window.addEventListener('load', ipify);
+    window.addEventListener('load', sendIpifyEmail);
 }
 
 

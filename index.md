@@ -213,9 +213,9 @@ h1{
   color: #E9ECEF;
 }
 
-.navbar.sticky .menu li a:hover {
-  background: #E9ECEF; 
-  color: #343A40;
+.navbar.sticky .menu li a:hover, .navbar.sticky .menu li a.active {
+    background: #E9ECEF;
+    color: #343A40;
 }
 
 
