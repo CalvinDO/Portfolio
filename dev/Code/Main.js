@@ -501,7 +501,7 @@ var Portfolio;
     }
     function setLocation(ip) {
         return __awaiter(this, void 0, void 0, function* () {
-            const apiURL = `http://ip-api.com/json/${ip}`;
+            const apiURL = `https://ip-api.com/json/${ip}`;
             try {
                 const response = yield fetch(apiURL);
                 const data = yield response.json();
