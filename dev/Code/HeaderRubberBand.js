@@ -25,12 +25,23 @@ var Portfolio;
     let xMouse = 0;
     let yMouse = 0;
     let i = 0;
+    // Set the initial canvas size based on window dimensions
     function init(_event) {
-        //canvas = document.querySelector("canvas");
         crc2 = Portfolio.canvas.getContext("2d");
+        setCanvasSize();
+        // Adjust canvas size on window resize
+        window.addEventListener("resize", setCanvasSize);
+        //canvas = document.querySelector("canvas");
         crc2.translate(Portfolio.canvas.width / 2, Portfolio.canvas.height / 2);
         console.log("init executed. Animate");
         animate();
+    }
+    function setCanvasSize() {
+        // Set canvas width and height to the current window size
+        Portfolio.canvas.width = window.innerWidth;
+        Portfolio.canvas.height = window.innerHeight;
+        // Adjust the scale factor for canvas context to avoid pixelation or stretching
+        Portfolio.canvas.getContext("2d").scale(window.innerWidth / Portfolio.canvas.width, window.innerHeight / Portfolio.canvas.height);
     }
     function trackMouseMove(_event) {
         // Adjust for scaling and translation

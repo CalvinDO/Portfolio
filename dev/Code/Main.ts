@@ -15,9 +15,10 @@ namespace Portfolio {
     let clickedLinks: string[];
 
     let devToolsUsage: { timeOpened: string }[] = [];
-
+    
     export let canvas: HTMLCanvasElement;
-
+    
+    
     document.documentElement.lang = "de";
 
     setupHeader();
@@ -523,21 +524,6 @@ namespace Portfolio {
         canvas = document.querySelector("canvas");
 
         header.insertAdjacentElement('afterbegin', canvas);
-
-        // Set the initial canvas size based on window dimensions
-        setCanvasSize();
-
-        // Adjust canvas size on window resize
-        window.addEventListener("resize", setCanvasSize);
-    }
-
-    function setCanvasSize() {
-        // Set canvas width and height to the current window size
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        // Adjust the scale factor for canvas context to avoid pixelation or stretching
-        canvas.getContext("2d").scale(window.innerWidth / canvas.width, window.innerHeight / canvas.height);
     }
 
     function handleClickHeader(this: HTMLElement, ev: MouseEvent): void {

@@ -35,14 +35,35 @@ namespace Portfolio {
 
     let i: number = 0;
 
+
+
+    // Set the initial canvas size based on window dimensions
+
+
+
     function init(_event: Event): void {
 
-        //canvas = document.querySelector("canvas");
         crc2 = canvas.getContext("2d");
+
+        setCanvasSize();
+
+        // Adjust canvas size on window resize
+        window.addEventListener("resize", setCanvasSize);
+
+        //canvas = document.querySelector("canvas");
         crc2.translate(canvas.width / 2, canvas.height / 2);
 
         console.log("init executed. Animate");
         animate();
+    }
+
+    function setCanvasSize() {
+        // Set canvas width and height to the current window size
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        // Adjust the scale factor for canvas context to avoid pixelation or stretching
+        canvas.getContext("2d").scale(window.innerWidth / canvas.width, window.innerHeight / canvas.height);
     }
 
     function trackMouseMove(_event: MouseEvent): void {
