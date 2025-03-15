@@ -16,6 +16,8 @@ namespace Portfolio {
 
     let devToolsUsage: { timeOpened: string }[];
 
+    export let canvas: HTMLCanvasElement;
+
     setupHeader();
 
     try {
@@ -503,14 +505,21 @@ namespace Portfolio {
 
     function setupHeader() {
 
-        let header: HTMLElement | null = document.querySelector("header");
+        let header: HTMLElement | null = document.querySelector("#header_wrap header");
 
         let quoteContainer: HTMLDivElement = getSetupedHeaderQuote();
 
+        setupCanvasIn(header);
 
         setupHeaderArrow(header, quoteContainer);
 
         header.addEventListener('click', handleClickHeader);
+    }
+
+    function setupCanvasIn(header: HTMLElement) {
+
+        canvas = document.createElement("canvas");
+        header.insertAdjacentElement('afterbegin', canvas);
     }
 
     function handleClickHeader(this: HTMLElement, ev: MouseEvent): void {

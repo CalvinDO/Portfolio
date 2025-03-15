@@ -354,10 +354,15 @@ var Portfolio;
         banner.remove();
     }
     function setupHeader() {
-        let header = document.querySelector("header");
+        let header = document.querySelector("#header_wrap header");
         let quoteContainer = getSetupedHeaderQuote();
+        setupCanvasIn(header);
         setupHeaderArrow(header, quoteContainer);
         header.addEventListener('click', handleClickHeader);
+    }
+    function setupCanvasIn(header) {
+        Portfolio.canvas = document.createElement("canvas");
+        header.insertAdjacentElement('afterbegin', Portfolio.canvas);
     }
     function handleClickHeader(ev) {
         let rect = this.getBoundingClientRect();

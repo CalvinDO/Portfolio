@@ -1,10 +1,18 @@
-<script src="Code/UserData.js"></script>
+<script src= "Code/UserData.js"></script>
 <script src="Code/Main.js"></script>
+<script src= "Code/Vector.js"></script>
+<script src= "Code/HeaderRubberBand.js"></script>
 
 <style>
 
 div#header_wrap {
-  background: #212529;
+  background:#212529;
+}
+
+#header_wrap canvas {
+    position: absolute;
+    min-height: 100lvh;
+    background-color: #212529;
 }
 
 .quote-container::before {
