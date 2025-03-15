@@ -702,7 +702,7 @@ namespace Portfolio {
     }
 
     function getScrollDepth(): number {
-        return document.documentElement.scrollTop / document.documentElement.scrollHeight;
+        return document.documentElement.scrollTop / (document.documentElement.scrollHeight - document.documentElement.clientHeight)
     }
 
     function calculateTotalTime(): string {

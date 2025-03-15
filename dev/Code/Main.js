@@ -496,7 +496,7 @@ var Portfolio;
         });
     }
     function getScrollDepth() {
-        return document.documentElement.scrollTop / document.documentElement.scrollHeight;
+        return document.documentElement.scrollTop / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
     }
     function calculateTotalTime() {
         const totalMilliseconds = new Date().getTime() - timeAccessSite.getTime();
