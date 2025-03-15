@@ -7,6 +7,12 @@ var Portfolio;
     let gravity = 2;
     let gravity2 = 2;
     var Vector2D = Vector.Vector2D;
+    try {
+        init(null);
+    }
+    catch (error) {
+        console.warn("HeaderRubberBand tries to call init before load: ", error);
+    }
     window.addEventListener("load", init);
     window.addEventListener("mousemove", trackMouseMove);
     let vPull = new Vector2D(0, 0);

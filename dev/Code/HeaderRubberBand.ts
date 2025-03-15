@@ -10,7 +10,11 @@ namespace Portfolio {
     let gravity2 = 2;
     import Vector2D = Vector.Vector2D;
 
-
+    try {
+        init(null);
+    } catch (error) {
+        console.warn("HeaderRubberBand tries to call init before load: ", error);
+    }
     window.addEventListener("load", init);
     window.addEventListener("mousemove", trackMouseMove);
 

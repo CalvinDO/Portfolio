@@ -361,7 +361,7 @@ var Portfolio;
         header.addEventListener('click', handleClickHeader);
     }
     function setupCanvasIn(header) {
-        Portfolio.canvas = document.querySelector("canvas");
+        Portfolio.canvas = document.createElement("canvas");
         header.insertAdjacentElement('afterbegin', Portfolio.canvas);
     }
     function handleClickHeader(ev) {

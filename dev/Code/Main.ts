@@ -15,10 +15,10 @@ namespace Portfolio {
     let clickedLinks: string[];
 
     let devToolsUsage: { timeOpened: string }[] = [];
-    
+
     export let canvas: HTMLCanvasElement;
-    
-    
+
+
     document.documentElement.lang = "de";
 
     setupHeader();
@@ -521,7 +521,7 @@ namespace Portfolio {
 
     function setupCanvasIn(header: HTMLElement) {
 
-        canvas = document.querySelector("canvas");
+        canvas = document.createElement("canvas");
 
         header.insertAdjacentElement('afterbegin', canvas);
     }
