@@ -18,6 +18,8 @@ namespace Portfolio {
 
     export let canvas: HTMLCanvasElement;
 
+    document.documentElement.lang = "de";
+    
     setupHeader();
 
     try {

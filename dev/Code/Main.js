@@ -18,6 +18,7 @@ var Portfolio;
     let maxScrollDepth;
     let clickedLinks;
     let devToolsUsage = [];
+    document.documentElement.lang = "de";
     setupHeader();
     try {
         removeForkme();
