@@ -41,8 +41,8 @@ namespace Portfolio {
 
     let lastPressedKey: string = "";
 
-    export let ballColor: string = "#6C757D";
-    export let lineColor: string = ballColor;
+    let ballColor: string = "#495057";
+    let lineColor: string = ballColor;
 
     // Set the initial canvas size based on window dimensions
 
@@ -241,8 +241,10 @@ namespace Portfolio {
         drawPull(4);
         drawPull2(3);
 
+        /*
         ballColor = window.ballColor;
         lineColor = window.lineColor;
+        */
 
         requestAnimationFrame(animate);
     }
@@ -251,10 +253,11 @@ namespace Portfolio {
 
 
 }
-
+/*
 interface Window {
 
     ballColor: string;
     lineColor: string
 }
 
+*/

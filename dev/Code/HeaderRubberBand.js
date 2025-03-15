@@ -28,8 +28,8 @@ var Portfolio;
     let yMouse = 0;
     let i = 0;
     let lastPressedKey = "";
-    Portfolio.ballColor = "#6C757D";
-    Portfolio.lineColor = Portfolio.ballColor;
+    let ballColor = "#495057";
+    let lineColor = ballColor;
     // Set the initial canvas size based on window dimensions
     try {
         init(null);
@@ -104,24 +104,24 @@ var Portfolio;
     }
     function drawBall(_radius) {
         crc2.beginPath();
-        crc2.strokeStyle = Portfolio.ballColor;
-        crc2.fillStyle = Portfolio.ballColor;
+        crc2.strokeStyle = ballColor;
+        crc2.fillStyle = ballColor;
         crc2.arc(vBall.x, vBall.y, _radius, 0 * Math.PI, 2 * Math.PI, null);
         crc2.stroke();
         crc2.fill();
     }
     function drawBall2(_radius) {
         crc2.beginPath();
-        crc2.strokeStyle = Portfolio.ballColor;
-        crc2.fillStyle = Portfolio.ballColor;
+        crc2.strokeStyle = ballColor;
+        crc2.fillStyle = ballColor;
         crc2.arc(vBall2.x, vBall2.y, _radius, 0 * Math.PI, 2 * Math.PI, null);
         crc2.stroke();
         crc2.fill();
     }
     function drawPointer(_radius) {
         crc2.beginPath();
-        crc2.strokeStyle = Portfolio.ballColor;
-        crc2.fillStyle = Portfolio.ballColor;
+        crc2.strokeStyle = ballColor;
+        crc2.fillStyle = ballColor;
         crc2.arc(xMouse, yMouse, _radius, 0 * Math.PI, 2 * Math.PI, null);
         crc2.stroke();
         crc2.fill();
@@ -152,7 +152,7 @@ var Portfolio;
     }
     function drawPull(_width) {
         crc2.beginPath();
-        crc2.strokeStyle = Portfolio.lineColor;
+        crc2.strokeStyle = lineColor;
         crc2.lineWidth = _width;
         crc2.moveTo(vBall.x, vBall.y);
         crc2.lineTo(vPointer.x, vPointer.y);
@@ -160,7 +160,7 @@ var Portfolio;
     }
     function drawPull2(_width) {
         crc2.beginPath();
-        crc2.strokeStyle = Portfolio.lineColor;
+        crc2.strokeStyle = lineColor;
         crc2.lineWidth = _width;
         crc2.moveTo(vBall2.x, vBall2.y);
         crc2.lineTo(vBall.x, vBall.y);
@@ -174,9 +174,19 @@ var Portfolio;
         drawBall2(20);
         drawPull(4);
         drawPull2(3);
-        Portfolio.ballColor = window.ballColor;
-        Portfolio.lineColor = window.lineColor;
+        /*
+        ballColor = window.ballColor;
+        lineColor = window.lineColor;
+        */
         requestAnimationFrame(animate);
     }
 })(Portfolio || (Portfolio = {}));
+/*
+interface Window {
+
+    ballColor: string;
+    lineColor: string
+}
+
+*/ 
 //# sourceMappingURL=HeaderRubberBand.js.map
