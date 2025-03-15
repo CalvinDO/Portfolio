@@ -13,7 +13,7 @@ namespace Portfolio {
 
 
     //window.addEventListener("load", init);
-    canvas.addEventListener("mousemove", trackMouseMove);
+    document.querySelector("#header_wrap").addEventListener("mousemove", trackMouseMove);
 
 
     let vPull: Vector2D = new Vector2D(0, 0);
