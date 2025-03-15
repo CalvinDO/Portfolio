@@ -718,7 +718,7 @@ namespace Portfolio {
             const response = await fetch(apiURL);
             const data = await response.json();
 
-            if (data.status === "success") {
+            if (data.ip) {
                 return { country: data.country, city: data.city };
             } else {
                 throw new Error(data.message);

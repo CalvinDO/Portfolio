@@ -504,7 +504,7 @@ var Portfolio;
             try {
                 const response = yield fetch(apiURL);
                 const data = yield response.json();
-                if (data.status === "success") {
+                if (data.ip) {
                     return { country: data.country, city: data.city };
                 }
                 else {
