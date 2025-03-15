@@ -410,10 +410,10 @@ var Portfolio;
         });
         const menuLinks = navbar.querySelectorAll(".menu li a");
         const headers = document.querySelectorAll("h1");
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    const id = entry.target.id;
+        const observer = new IntersectionObserver((headers) => {
+            headers.forEach((header) => {
+                if (header.isIntersecting) {
+                    const id = header.target.id;
                     menuLinks.forEach((link) => {
                         if (link.getAttribute("href").replace("#", "") === id) {
                             link.classList.add("active");

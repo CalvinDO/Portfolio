@@ -590,10 +590,10 @@ namespace Portfolio {
 
 
         const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        const id = entry.target.id;
+            (headers) => {
+                headers.forEach((header) => {
+                    if (header.isIntersecting) {
+                        const id = header.target.id;
                         menuLinks.forEach((link) => {
                             if (link.getAttribute("href").replace("#", "") === id) {
                                 link.classList.add("active");
