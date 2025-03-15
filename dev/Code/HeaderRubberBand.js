@@ -33,9 +33,9 @@ var Portfolio;
         animate();
     }
     function trackMouseMove(_event) {
-        // console.log(_event.clientX, _event.clientY);
-        xMouse = _event.clientX - Portfolio.canvas.width / 2;
-        yMouse = _event.clientY - Portfolio.canvas.height / 2;
+        // Adjust for scaling and translation
+        xMouse = (_event.clientX - Portfolio.canvas.width / 2) * (Portfolio.canvas.width / window.innerWidth);
+        yMouse = (_event.clientY - Portfolio.canvas.height / 2) * (Portfolio.canvas.height / window.innerHeight);
         vPointer.x = xMouse;
         vPointer.y = yMouse;
     }

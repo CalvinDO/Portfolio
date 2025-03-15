@@ -46,10 +46,9 @@ namespace Portfolio {
     }
 
     function trackMouseMove(_event: MouseEvent): void {
-
-        // console.log(_event.clientX, _event.clientY);
-        xMouse = _event.clientX - canvas.width / 2;
-        yMouse = _event.clientY - canvas.height / 2;
+        // Adjust for scaling and translation
+        xMouse = (_event.clientX - canvas.width / 2) * (canvas.width / window.innerWidth);
+        yMouse = (_event.clientY - canvas.height / 2) * (canvas.height / window.innerHeight);
 
         vPointer.x = xMouse;
         vPointer.y = yMouse;

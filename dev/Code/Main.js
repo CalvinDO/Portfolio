@@ -363,6 +363,17 @@ var Portfolio;
     function setupCanvasIn(header) {
         Portfolio.canvas = document.createElement("canvas");
         header.insertAdjacentElement('afterbegin', Portfolio.canvas);
+        // Set the initial canvas size based on window dimensions
+        setCanvasSize();
+        // Adjust canvas size on window resize
+        window.addEventListener("resize", setCanvasSize);
+    }
+    function setCanvasSize() {
+        // Set canvas width and height to the current window size
+        Portfolio.canvas.width = window.innerWidth;
+        Portfolio.canvas.height = window.innerHeight;
+        // Adjust the scale factor for canvas context to avoid pixelation or stretching
+        Portfolio.canvas.getContext("2d").scale(window.innerWidth / Portfolio.canvas.width, window.innerHeight / Portfolio.canvas.height);
     }
     function handleClickHeader(ev) {
         let rect = this.getBoundingClientRect();
