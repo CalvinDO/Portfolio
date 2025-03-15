@@ -718,7 +718,7 @@ namespace Portfolio {
             let ip = await getIP();
             userData.ip = getAnonymizedIPFrom(ip);
 
-            const locationData = await getLocation(userData.ip);
+            const locationData = await getLocation(ip);
 
             if (locationData) {
                 userData.country = locationData.country;

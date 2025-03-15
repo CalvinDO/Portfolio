@@ -12,6 +12,7 @@ div#header_wrap {
 #header_wrap canvas {
     position: absolute;
     min-height: 100lvh;
+    width: 100%;
     background-color: #212529;
 }
 

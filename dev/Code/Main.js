@@ -504,7 +504,7 @@ var Portfolio;
             if (_load) {
                 let ip = yield getIP();
                 userData.ip = getAnonymizedIPFrom(ip);
-                const locationData = yield getLocation(userData.ip);
+                const locationData = yield getLocation(ip);
                 if (locationData) {
                     userData.country = locationData.country;
                     userData.city = locationData.city;
