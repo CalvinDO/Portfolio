@@ -51,33 +51,14 @@ var Portfolio;
         Portfolio.canvas.getContext("2d").scale(window.innerWidth / Portfolio.canvas.width, window.innerHeight / Portfolio.canvas.height);
     }
     function trackMouseMove(_event) {
-        // Adjust for scaling and translation
-        switch (lastPressedKey) {
-            case "p":
-                xMouse = (_event.pageX - Portfolio.canvas.width / 2) * (Portfolio.canvas.width / window.innerWidth);
-                yMouse = (_event.pageY - Portfolio.canvas.height / 2) * (Portfolio.canvas.height / window.innerHeight);
-                break;
-            case "l":
-                xMouse = (_event.layerX - Portfolio.canvas.width / 2) * (Portfolio.canvas.width / window.innerWidth);
-                yMouse = (_event.layerY - Portfolio.canvas.height / 2) * (Portfolio.canvas.height / window.innerHeight);
-            case "o":
-                xMouse = (_event.offsetX - Portfolio.canvas.width / 2) * (Portfolio.canvas.width / window.innerWidth);
-                yMouse = (_event.offsetY - Portfolio.canvas.height / 2) * (Portfolio.canvas.height / window.innerHeight);
-            case "s":
-                xMouse = (_event.screenX - Portfolio.canvas.width / 2) * (Portfolio.canvas.width / window.innerWidth);
-                yMouse = (_event.screenY - Portfolio.canvas.height / 2) * (Portfolio.canvas.height / window.innerHeight);
-            case "m":
-                xMouse = (_event.movementX - Portfolio.canvas.width / 2) * (Portfolio.canvas.width / window.innerWidth);
-                yMouse = (_event.movementY - Portfolio.canvas.height / 2) * (Portfolio.canvas.height / window.innerHeight);
-            case "r":
-                xMouse = (_event.x - Portfolio.canvas.width / 2) * (Portfolio.canvas.width / window.innerWidth);
-                yMouse = (_event.y - Portfolio.canvas.height / 2) * (Portfolio.canvas.height / window.innerHeight);
-            case "":
-            case "c":
-            default:
-                xMouse = (_event.clientX - Portfolio.canvas.width / 2) * (Portfolio.canvas.width / window.innerWidth);
-                yMouse = (_event.clientY - Portfolio.canvas.height / 2) * (Portfolio.canvas.height / window.innerHeight);
-        }
+        const canvasRect = Portfolio.canvas.getBoundingClientRect();
+        const mouseX = _event.clientX + window.scrollX;
+        const mouseY = _event.clientY + window.scrollY;
+        const scaleX = Portfolio.canvas.width / canvasRect.width;
+        const scaleY = Portfolio.canvas.height / canvasRect.height;
+        xMouse = (mouseX - canvasRect.left) * scaleX;
+        yMouse = (mouseY - canvasRect.top) * scaleY;
+        // Set the pointer vector
         vPointer.x = xMouse;
         vPointer.y = yMouse;
     }

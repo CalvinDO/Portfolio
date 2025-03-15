@@ -73,36 +73,20 @@ namespace Portfolio {
     }
 
     function trackMouseMove(_event: MouseEvent): void {
-        // Adjust for scaling and translation
 
-        switch (lastPressedKey) {
-            case "p":
-                xMouse = (_event.pageX - canvas.width / 2) * (canvas.width / window.innerWidth);
-                yMouse = (_event.pageY - canvas.height / 2) * (canvas.height / window.innerHeight);
-                break;
-            case "l":
-                xMouse = (_event.layerX - canvas.width / 2) * (canvas.width / window.innerWidth);
-                yMouse = (_event.layerY - canvas.height / 2) * (canvas.height / window.innerHeight);
-            case "o":
-                xMouse = (_event.offsetX - canvas.width / 2) * (canvas.width / window.innerWidth);
-                yMouse = (_event.offsetY - canvas.height / 2) * (canvas.height / window.innerHeight);
-            case "s":
-                xMouse = (_event.screenX - canvas.width / 2) * (canvas.width / window.innerWidth);
-                yMouse = (_event.screenY - canvas.height / 2) * (canvas.height / window.innerHeight);
-            case "m":
-                xMouse = (_event.movementX - canvas.width / 2) * (canvas.width / window.innerWidth);
-                yMouse = (_event.movementY - canvas.height / 2) * (canvas.height / window.innerHeight);
-            case "r":
-                xMouse = (_event.x - canvas.width / 2) * (canvas.width / window.innerWidth);
-                yMouse = (_event.y - canvas.height / 2) * (canvas.height / window.innerHeight);
-            case "":
-            case "c":
-            default:
-                xMouse = (_event.clientX - canvas.width / 2) * (canvas.width / window.innerWidth);
-                yMouse = (_event.clientY - canvas.height / 2) * (canvas.height / window.innerHeight);
-        }
+        const canvasRect = canvas.getBoundingClientRect();
+
+        const mouseX = _event.clientX + window.scrollX;
+        const mouseY = _event.clientY + window.scrollY;
 
 
+        const scaleX = canvas.width / canvasRect.width;
+        const scaleY = canvas.height / canvasRect.height;
+
+        xMouse = (mouseX - canvasRect.left) * scaleX;
+        yMouse = (mouseY - canvasRect.top) * scaleY;
+
+        // Set the pointer vector
         vPointer.x = xMouse;
         vPointer.y = yMouse;
     }
