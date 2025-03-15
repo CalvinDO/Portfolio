@@ -14,7 +14,7 @@ var Portfolio;
         console.warn("HeaderRubberBand tries to call init before load: ", error);
     }
     window.addEventListener("load", init);
-    window.addEventListener("mousemove", trackMouseMove);
+    Portfolio.canvas.addEventListener("mousemove", trackMouseMove);
     let vPull = new Vector2D(0, 0);
     let vPull2 = new Vector2D(0, 0);
     let vPull3 = new Vector2D(0, 0);
