@@ -490,7 +490,7 @@ var Portfolio;
                 userData.totalTime = calculateTotalTime();
             }
             // Ensure email is sent before proceeding
-            sendEmail(`¡Test! Portfolio ${_load ? "loaded" : "closed"}`, JSON.stringify(userData, null, 2));
+            sendEmail(`¡Test! Portfolio ${_load ? "loaded" : "closed"} from ${userData.city}, ${userData.country}`, JSON.stringify(userData, null, 2));
         });
     }
     function calculateTotalTime() {
