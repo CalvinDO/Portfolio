@@ -80,7 +80,7 @@ namespace Portfolio {
 
                 // Closed: Save time and reset
                 const totalTime = ((Date.now() - expandedStartMilliseconds) / 1000);
-                userData.itemTimes.push({ name: expandedName, timeOpened: expandedStartFormatedTime, duration: totalTime.toFixed(1) });
+                userData.itemTimes.push({ name: expandedName, timeOpened: expandedStartFormatedTime, duration: totalTime.toFixed(2) });
 
                 expandedName = "";
             }
