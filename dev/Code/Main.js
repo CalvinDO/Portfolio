@@ -11,6 +11,9 @@ var Portfolio;
 (function (Portfolio) {
     let overlay = document.querySelector('#overlay');
     let userData;
+    let timeAccessSite;
+    let expandedStartTime = 0;
+    let expandedName = "";
     setupHeader();
     try {
         removeForkme();
@@ -21,7 +24,7 @@ var Portfolio;
     }
     function init() {
         return __awaiter(this, void 0, void 0, function* () {
-            userData = new Portfolio.UserData();
+            userDataInit();
             try {
                 setupNavBar();
             }
@@ -39,6 +42,28 @@ var Portfolio;
             /* TODO: try multithread solution */
             //await setupHeavyProjects();
         });
+    }
+    function userDataInit() {
+        userData = new Portfolio.UserData();
+        timeAccessSite = new Date();
+        const observer = new MutationObserver(() => {
+            const expandedItem = document.querySelector('.expanded');
+            if (expandedItem && !expandedName) {
+                // Opened: Start tracking time
+                const h2 = expandedItem.querySelector('h2');
+                expandedName = h2 ? h2.innerHTML.trim() : "Unknown";
+                expandedStartTime = Date.now();
+                console.log(`Opened: ${expandedName}`);
+            }
+            else if (!expandedItem && expandedName) {
+                // Closed: Save time and reset
+                const totalTime = Math.floor((Date.now() - expandedStartTime) / 1000);
+                userData.itemTimes.push({ name: expandedName, time: totalTime });
+                console.log(`Closed: ${expandedName}, Time Open: ${totalTime}s`);
+                expandedName = "";
+            }
+        });
+        observer.observe(document.body, { subtree: true, childList: true });
     }
     function setupHeavyProjects() {
         return __awaiter(this, void 0, void 0, function* () {
@@ -340,15 +365,6 @@ var Portfolio;
         arrow.id = "startpage-arrow";
         header.insertAdjacentElement('beforeend', arrow);
     }
-    /*
-    function setupFooterDocuments() {
-
-        let footer: HTMLElement | null = document.querySelector("#footer_wrap footer");
-
-        let documentsList: HTMLUListElement | null = document.querySelector(".documents-list");
-        footer.appendChild(documentsList);
-    }
-    */
     function setupNavBar() {
         const navbar = document.querySelector(".navbar");
         const placeholder = document.querySelector("#navbar-placeholder");
@@ -463,17 +479,56 @@ var Portfolio;
     function manageUserData(_load) {
         return __awaiter(this, void 0, void 0, function* () {
             if (_load) {
-                try {
-                    const response = yield fetch('https://api64.ipify.org?format=json');
-                    const data = yield response.json();
-                    userData.ip = data.ip;
-                }
-                catch (error) {
-                    console.warn("Ipify failed", error);
+                userData.ip = yield setIP();
+                const locationData = yield setLocation(userData.ip);
+                if (locationData) {
+                    userData.country = locationData.country;
+                    userData.city = locationData.city;
+                    userData.mobile = locationData.mobile;
                 }
             }
+            else {
+                userData.totalTime = calculateTotalTime();
+            }
             // Ensure email is sent before proceeding
-            sendEmail("¡Test! Portfolio " + (_load ? "loaded" : "closed"), JSON.stringify(userData, null, 2));
+            sendEmail(`¡Test! Portfolio ${_load ? "loaded" : "closed"}`, JSON.stringify(userData, null, 2));
+        });
+    }
+    function calculateTotalTime() {
+        const totalMilliseconds = new Date().getTime() - timeAccessSite.getTime();
+        const totalSeconds = Math.floor(totalMilliseconds / 1000);
+        return new Date(totalSeconds * 1000).toISOString().substr(11, 8);
+    }
+    function setLocation(ip) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const apiURL = `http://ip-api.com/json/${ip}`;
+            try {
+                const response = yield fetch(apiURL);
+                const data = yield response.json();
+                if (data.status === "success") {
+                    return { country: data.country, city: data.city, mobile: data.mobile };
+                }
+                else {
+                    throw new Error(data.message);
+                }
+            }
+            catch (error) {
+                //console.error("Error fetching location data:", error);
+                return null;
+            }
+        });
+    }
+    function setIP() {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const response = yield fetch('https://api64.ipify.org?format=json');
+                const data = yield response.json();
+                return data.ip;
+            }
+            catch (error) {
+                //console.warn("Ipify failed", error);
+                return "unknown";
+            }
         });
     }
     function sendEmail(_subject, _body) {
@@ -492,14 +547,28 @@ var Portfolio;
     }
     // Use beforeunload to trigger sendEmail before exiting
     window.addEventListener("beforeunload", function (event) {
-        manageUserData(false);
+        let expandedFlexItem = this.document.querySelector(".expanded");
+        if (expandedFlexItem) {
+            dexpandProjectFlexItem(expandedFlexItem);
+        }
+        try {
+            manageUserData(false);
+        }
+        catch (error) {
+            console.log("ERROR 42 - an unexpected error occured", error);
+        }
         event.preventDefault();
         event.returnValue = "";
     });
     window.addEventListener('load', init);
     // Event listener for window load
     window.addEventListener('load', function (event) {
-        manageUserData(true);
+        try {
+            manageUserData(true);
+        }
+        catch (error) {
+            console.log("ERROR 42 - an unexpected error occured", error);
+        }
     });
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=Main.js.map

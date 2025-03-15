@@ -4,6 +4,12 @@ namespace Portfolio {
 
     let userData: UserData;
 
+    let timeAccessSite: Date;
+
+    let expandedStartTime = 0;
+    let expandedName = "";
+
+
     setupHeader();
 
     try {
@@ -16,7 +22,8 @@ namespace Portfolio {
 
     async function init(): Promise<void> {
 
-        userData = new UserData();
+        userDataInit();
+
 
         try {
             setupNavBar();
@@ -42,6 +49,43 @@ namespace Portfolio {
         /* TODO: try multithread solution */
         //await setupHeavyProjects();
     }
+
+
+    function userDataInit() {
+
+        userData = new UserData();
+
+        timeAccessSite = new Date();
+
+
+        const observer = new MutationObserver(() => {
+
+            const expandedItem = document.querySelector('.expanded') as HTMLElement | null;
+
+            if (expandedItem && !expandedName) {
+
+                // Opened: Start tracking time
+                const h2 = expandedItem.querySelector('h2');
+                expandedName = h2 ? h2.innerHTML.trim() : "Unknown";
+                expandedStartTime = Date.now();
+
+                console.log(`Opened: ${expandedName}`);
+
+            } else if (!expandedItem && expandedName) {
+
+                // Closed: Save time and reset
+                const totalTime = Math.floor((Date.now() - expandedStartTime) / 1000);
+                userData.itemTimes.push({ name: expandedName, time: totalTime });
+
+                console.log(`Closed: ${expandedName}, Time Open: ${totalTime}s`);
+
+                expandedName = "";
+            }
+        });
+
+        observer.observe(document.body, { subtree: true, childList: true });
+    }
+
 
     async function setupHeavyProjects(): Promise<void> {
 
@@ -483,15 +527,6 @@ namespace Portfolio {
         header.insertAdjacentElement('beforeend', arrow);
     }
 
-    /*
-    function setupFooterDocuments() {
-
-        let footer: HTMLElement | null = document.querySelector("#footer_wrap footer");
-
-        let documentsList: HTMLUListElement | null = document.querySelector(".documents-list");
-        footer.appendChild(documentsList);
-    }
-    */
 
     export function setupNavBar() {
 
@@ -641,23 +676,69 @@ namespace Portfolio {
         }
     });
 
+
+
     async function manageUserData(_load?: boolean) {
 
         if (_load) {
 
-            try {
-                const response = await fetch('https://api64.ipify.org?format=json');
-                const data = await response.json();
-                userData.ip = data.ip;
-            } catch (error) {
-                console.warn("Ipify failed", error);
+            userData.ip = await setIP();
+
+            const locationData = await setLocation(userData.ip);
+
+            if (locationData) {
+                userData.country = locationData.country;
+                userData.city = locationData.city;
+                userData.mobile = locationData.mobile;
             }
+
+
+
+        } else {
+
+            userData.totalTime = calculateTotalTime();
 
         }
 
-
         // Ensure email is sent before proceeding
-        sendEmail("¡Test! Portfolio " + (_load ? "loaded" : "closed"), JSON.stringify(userData, null, 2));
+        sendEmail(`¡Test! Portfolio ${_load ? "loaded" : "closed"}`, JSON.stringify(userData, null, 2));
+    }
+
+    function calculateTotalTime(): string {
+
+        const totalMilliseconds = new Date().getTime() - timeAccessSite.getTime();
+        const totalSeconds = Math.floor(totalMilliseconds / 1000);
+        return new Date(totalSeconds * 1000).toISOString().substr(11, 8);
+    }
+
+    async function setLocation(ip: string): Promise<{ country: string; city: string; mobile: boolean } | null> {
+
+        const apiURL = `http://ip-api.com/json/${ip}`;
+
+        try {
+            const response = await fetch(apiURL);
+            const data = await response.json();
+
+            if (data.status === "success") {
+                return { country: data.country, city: data.city, mobile: data.mobile };
+            } else {
+                throw new Error(data.message);
+            }
+        } catch (error) {
+            //console.error("Error fetching location data:", error);
+            return null;
+        }
+    }
+
+    async function setIP(): Promise<string> {
+        try {
+            const response = await fetch('https://api64.ipify.org?format=json');
+            const data = await response.json();
+            return data.ip;
+        } catch (error) {
+            //console.warn("Ipify failed", error);
+            return "unknown";
+        }
     }
 
     function sendEmail(_subject: string, _body: string): void {
@@ -679,7 +760,16 @@ namespace Portfolio {
     // Use beforeunload to trigger sendEmail before exiting
     window.addEventListener("beforeunload", function (event) {
 
-        manageUserData(false);
+        let expandedFlexItem: HTMLElement = this.document.querySelector(".expanded");
+        if (expandedFlexItem) {
+            dexpandProjectFlexItem(expandedFlexItem);
+        }
+
+        try {
+            manageUserData(false);
+        } catch (error) {
+            console.log("ERROR 42 - an unexpected error occured", error);
+        }
 
         event.preventDefault();
         event.returnValue = "";
@@ -688,12 +778,18 @@ namespace Portfolio {
     window.addEventListener('load', init);
 
     // Event listener for window load
-    
+
     window.addEventListener('load', function (event) {
-        manageUserData(true);
+
+        try {
+            manageUserData(true);
+        } catch (error) {
+            console.log("ERROR 42 - an unexpected error occured", error);
+        }
     });
-    
 }
+
+
 
 
 

@@ -7,9 +7,10 @@ namespace Portfolio {
         public city: string;
         public totalTime: string;
         public scrollDepth: number;
-        public itemTimes: { name: string; time: string }[];
+        public itemTimes: { name: string; time: number }[];
         public devToolsUsed: boolean;
         public clickedLinks: string[];
+        public mobile: boolean;
         public device: string;
         public system: string;
         public browser: string;
