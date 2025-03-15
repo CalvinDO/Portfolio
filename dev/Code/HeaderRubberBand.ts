@@ -36,6 +36,7 @@ namespace Portfolio {
 
     let i: number = 0;
 
+    let lastPressedKey: string = "";
 
 
     // Set the initial canvas size based on window dimensions
@@ -73,12 +74,44 @@ namespace Portfolio {
 
     function trackMouseMove(_event: MouseEvent): void {
         // Adjust for scaling and translation
-        xMouse = (_event.clientX - canvas.width / 2) * (canvas.width / window.innerWidth);
-        yMouse = (_event.clientY - canvas.height / 2) * (canvas.height / window.innerHeight);
+
+        switch (lastPressedKey) {
+            case "p":
+                xMouse = (_event.pageX - canvas.width / 2) * (canvas.width / window.innerWidth);
+                yMouse = (_event.pageY - canvas.height / 2) * (canvas.height / window.innerHeight);
+                break;
+            case "l":
+                xMouse = (_event.layerX - canvas.width / 2) * (canvas.width / window.innerWidth);
+                yMouse = (_event.layerY - canvas.height / 2) * (canvas.height / window.innerHeight);
+            case "o":
+                xMouse = (_event.offsetX - canvas.width / 2) * (canvas.width / window.innerWidth);
+                yMouse = (_event.offsetY - canvas.height / 2) * (canvas.height / window.innerHeight);
+            case "s":
+                xMouse = (_event.screenX - canvas.width / 2) * (canvas.width / window.innerWidth);
+                yMouse = (_event.screenY - canvas.height / 2) * (canvas.height / window.innerHeight);
+            case "m":
+                xMouse = (_event.movementX - canvas.width / 2) * (canvas.width / window.innerWidth);
+                yMouse = (_event.movementY - canvas.height / 2) * (canvas.height / window.innerHeight);
+            case "r":
+                xMouse = (_event.x - canvas.width / 2) * (canvas.width / window.innerWidth);
+                yMouse = (_event.y - canvas.height / 2) * (canvas.height / window.innerHeight);
+            case "":
+            case "c":
+            default:
+                xMouse = (_event.clientX - canvas.width / 2) * (canvas.width / window.innerWidth);
+                yMouse = (_event.clientY - canvas.height / 2) * (canvas.height / window.innerHeight);
+        }
+
 
         vPointer.x = xMouse;
         vPointer.y = yMouse;
     }
+
+    function onKeyDown(_event: KeyboardEvent): void {
+        lastPressedKey = _event.key;
+    }
+
+    window.addEventListener('keydown', onKeyDown);
 
 
     function drawBackground(_x: number, _y: number, _w: number, _h: number) {

@@ -25,6 +25,7 @@ var Portfolio;
     let xMouse = 0;
     let yMouse = 0;
     let i = 0;
+    let lastPressedKey = "";
     // Set the initial canvas size based on window dimensions
     try {
         init(null);
@@ -51,11 +52,39 @@ var Portfolio;
     }
     function trackMouseMove(_event) {
         // Adjust for scaling and translation
-        xMouse = (_event.clientX - Portfolio.canvas.width / 2) * (Portfolio.canvas.width / window.innerWidth);
-        yMouse = (_event.clientY - Portfolio.canvas.height / 2) * (Portfolio.canvas.height / window.innerHeight);
+        switch (lastPressedKey) {
+            case "p":
+                xMouse = (_event.pageX - Portfolio.canvas.width / 2) * (Portfolio.canvas.width / window.innerWidth);
+                yMouse = (_event.pageY - Portfolio.canvas.height / 2) * (Portfolio.canvas.height / window.innerHeight);
+                break;
+            case "l":
+                xMouse = (_event.layerX - Portfolio.canvas.width / 2) * (Portfolio.canvas.width / window.innerWidth);
+                yMouse = (_event.layerY - Portfolio.canvas.height / 2) * (Portfolio.canvas.height / window.innerHeight);
+            case "o":
+                xMouse = (_event.offsetX - Portfolio.canvas.width / 2) * (Portfolio.canvas.width / window.innerWidth);
+                yMouse = (_event.offsetY - Portfolio.canvas.height / 2) * (Portfolio.canvas.height / window.innerHeight);
+            case "s":
+                xMouse = (_event.screenX - Portfolio.canvas.width / 2) * (Portfolio.canvas.width / window.innerWidth);
+                yMouse = (_event.screenY - Portfolio.canvas.height / 2) * (Portfolio.canvas.height / window.innerHeight);
+            case "m":
+                xMouse = (_event.movementX - Portfolio.canvas.width / 2) * (Portfolio.canvas.width / window.innerWidth);
+                yMouse = (_event.movementY - Portfolio.canvas.height / 2) * (Portfolio.canvas.height / window.innerHeight);
+            case "r":
+                xMouse = (_event.x - Portfolio.canvas.width / 2) * (Portfolio.canvas.width / window.innerWidth);
+                yMouse = (_event.y - Portfolio.canvas.height / 2) * (Portfolio.canvas.height / window.innerHeight);
+            case "":
+            case "c":
+            default:
+                xMouse = (_event.clientX - Portfolio.canvas.width / 2) * (Portfolio.canvas.width / window.innerWidth);
+                yMouse = (_event.clientY - Portfolio.canvas.height / 2) * (Portfolio.canvas.height / window.innerHeight);
+        }
         vPointer.x = xMouse;
         vPointer.y = yMouse;
     }
+    function onKeyDown(_event) {
+        lastPressedKey = _event.key;
+    }
+    window.addEventListener('keydown', onKeyDown);
     function drawBackground(_x, _y, _w, _h) {
         crc2.beginPath();
         crc2.strokeStyle = 'hsl(210, 10.80%, 14.50%)';
