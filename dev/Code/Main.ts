@@ -6,8 +6,9 @@ namespace Portfolio {
 
     let timeAccessSite: Date;
 
-    let expandedStartTime = 0;
-    let expandedName = "";
+    let expandedStartMilliseconds: number = 0;
+    let expandedStartFormatedTime: string = "";
+    let expandedName: string = "";
 
     let maxScrollDepth: number;
 
@@ -71,15 +72,15 @@ namespace Portfolio {
                 // Opened: Start tracking time
                 const h2 = expandedItem.querySelector('h2');
                 expandedName = h2 ? h2.innerHTML.trim() : "Unknown";
-                expandedStartTime = Date.now();
-
+                expandedStartMilliseconds = Date.now();
+                expandedStartFormatedTime = getCurrentTotalTime();
                 console.log(`Opened: ${expandedName}`);
 
             } else if (!expandedItem && expandedName) {
 
                 // Closed: Save time and reset
-                const totalTime = ((Date.now() - expandedStartTime) / 1000);
-                userData.itemTimes.push({ name: expandedName, time: totalTime.toFixed(1) });
+                const totalTime = ((Date.now() - expandedStartMilliseconds) / 1000);
+                userData.itemTimes.push({ name: expandedName, timeOpened: expandedStartFormatedTime, duration: totalTime.toFixed(1) });
 
                 expandedName = "";
             }
@@ -702,7 +703,7 @@ namespace Portfolio {
 
         } else {
 
-            userData.totalTime = calculateTotalTime();
+            userData.totalTime = getCurrentTotalTime();
             userData.exitScrollDepth = getScrollDepth();
             userData.maxScrollDepth = maxScrollDepth;
             userData.clickedLinks = clickedLinks;
@@ -715,7 +716,7 @@ namespace Portfolio {
         return document.documentElement.scrollTop / (document.documentElement.scrollHeight - document.documentElement.clientHeight)
     }
 
-    function calculateTotalTime(): string {
+    function getCurrentTotalTime(): string {
 
         const totalMilliseconds = new Date().getTime() - timeAccessSite.getTime();
         const totalSeconds = Math.floor(totalMilliseconds / 1000);

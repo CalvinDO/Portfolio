@@ -12,7 +12,8 @@ var Portfolio;
     let overlay = document.querySelector('#overlay');
     let userData;
     let timeAccessSite;
-    let expandedStartTime = 0;
+    let expandedStartMilliseconds = 0;
+    let expandedStartFormatedTime = "";
     let expandedName = "";
     let maxScrollDepth;
     let clickedLinks;
@@ -54,13 +55,14 @@ var Portfolio;
                 // Opened: Start tracking time
                 const h2 = expandedItem.querySelector('h2');
                 expandedName = h2 ? h2.innerHTML.trim() : "Unknown";
-                expandedStartTime = Date.now();
+                expandedStartMilliseconds = Date.now();
+                expandedStartFormatedTime = getCurrentTotalTime();
                 console.log(`Opened: ${expandedName}`);
             }
             else if (!expandedItem && expandedName) {
                 // Closed: Save time and reset
-                const totalTime = ((Date.now() - expandedStartTime) / 1000);
-                userData.itemTimes.push({ name: expandedName, time: totalTime.toFixed(1) });
+                const totalTime = ((Date.now() - expandedStartMilliseconds) / 1000);
+                userData.itemTimes.push({ name: expandedName, timeOpened: expandedStartFormatedTime, duration: totalTime.toFixed(1) });
                 expandedName = "";
             }
         });
@@ -491,7 +493,7 @@ var Portfolio;
                 }
             }
             else {
-                userData.totalTime = calculateTotalTime();
+                userData.totalTime = getCurrentTotalTime();
                 userData.exitScrollDepth = getScrollDepth();
                 userData.maxScrollDepth = maxScrollDepth;
                 userData.clickedLinks = clickedLinks;
@@ -502,7 +504,7 @@ var Portfolio;
     function getScrollDepth() {
         return document.documentElement.scrollTop / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
     }
-    function calculateTotalTime() {
+    function getCurrentTotalTime() {
         const totalMilliseconds = new Date().getTime() - timeAccessSite.getTime();
         const totalSeconds = Math.floor(totalMilliseconds / 1000);
         return new Date(totalSeconds * 1000).toISOString().substr(11, 8);
