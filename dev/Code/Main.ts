@@ -761,7 +761,9 @@ namespace Portfolio {
     // Use beforeunload to trigger sendEmail before exiting
     window.addEventListener("beforeunload", function (event) {
 
+
         let expandedFlexItem: HTMLElement = this.document.querySelector(".expanded");
+
         if (expandedFlexItem) {
             dexpandProjectFlexItem(expandedFlexItem);
         }
