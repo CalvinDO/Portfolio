@@ -5,6 +5,13 @@
 
 <style>
 
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 div#header_wrap {
   background:#212529;
 }
