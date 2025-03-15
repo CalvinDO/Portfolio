@@ -7,13 +7,7 @@ var Portfolio;
     let gravity = 2;
     let gravity2 = 2;
     var Vector2D = Vector.Vector2D;
-    try {
-        init(null);
-    }
-    catch (error) {
-        console.warn("HeaderRubberBand tries to call init before load: ", error);
-    }
-    window.addEventListener("load", init);
+    //window.addEventListener("load", init);
     Portfolio.canvas.addEventListener("mousemove", trackMouseMove);
     let vPull = new Vector2D(0, 0);
     let vPull2 = new Vector2D(0, 0);
@@ -32,6 +26,12 @@ var Portfolio;
     let yMouse = 0;
     let i = 0;
     // Set the initial canvas size based on window dimensions
+    try {
+        init(null);
+    }
+    catch (error) {
+        console.warn("HeaderRubberBand tries to call init before load: ", error);
+    }
     function init(_event) {
         crc2 = Portfolio.canvas.getContext("2d");
         setCanvasSize();
