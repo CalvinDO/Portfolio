@@ -724,7 +724,7 @@ namespace Portfolio {
                 throw new Error(data.message);
             }
         } catch (error) {
-            //console.error("Error fetching location data:", error);
+            console.error("Error fetching location data:", error);
             return null;
         }
     }

@@ -512,7 +512,7 @@ var Portfolio;
                 }
             }
             catch (error) {
-                //console.error("Error fetching location data:", error);
+                console.error("Error fetching location data:", error);
                 return null;
             }
         });
