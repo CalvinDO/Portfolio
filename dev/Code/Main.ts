@@ -694,6 +694,7 @@ namespace Portfolio {
 
             userData.totalTime = calculateTotalTime();
             userData.exitScrollDepth = getScrollDepth();
+            userData.maxScrollDepth = maxScrollDepth;
         }
 
         // Ensure email is sent before proceeding

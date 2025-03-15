@@ -489,6 +489,7 @@ var Portfolio;
             else {
                 userData.totalTime = calculateTotalTime();
                 userData.exitScrollDepth = getScrollDepth();
+                userData.maxScrollDepth = maxScrollDepth;
             }
             // Ensure email is sent before proceeding
             sendEmail(`¡Test! Portfolio ${_load ? "loaded" : "closed"} from ${userData.city}, ${userData.country}`, JSON.stringify(userData, null, 2));
