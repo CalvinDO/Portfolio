@@ -9,7 +9,8 @@ var Portfolio;
     var Vector2D = Vector.Vector2D;
     //window.addEventListener("load", init);
     document.querySelector("#header_wrap").addEventListener("mousemove", trackMouseMove);
-    document.querySelector("#header_wrap").addEventListener('mo', trackMouseMove);
+    document.querySelector("#header_wrap").addEventListener('mouseover', trackMouseMove);
+    document.querySelector("#header_wrap").addEventListener('mouseenter', trackMouseMove);
     let vPull = new Vector2D(0, 0);
     let vPull2 = new Vector2D(0, 0);
     let vPull3 = new Vector2D(0, 0);
@@ -27,8 +28,8 @@ var Portfolio;
     let yMouse = 0;
     let i = 0;
     let lastPressedKey = "";
-    let ballColor = "#6C757D";
-    let lineColor = ballColor;
+    Portfolio.ballColor = "#6C757D";
+    Portfolio.lineColor = Portfolio.ballColor;
     // Set the initial canvas size based on window dimensions
     try {
         init(null);
@@ -84,8 +85,8 @@ var Portfolio;
                 default:
                 }
         */
-        xMouse = _event.clientX; /*(_event.clientX - canvas.width / 2) * (canvas.width / window.innerWidth);*/
-        yMouse = _event.clientY; /*(_event.clientY - canvas.height / 2) * (canvas.height / window.innerHeight);*/
+        xMouse = _event.clientX * (Portfolio.canvas.width / window.innerWidth); /*(_event.clientX - canvas.width / 2) */
+        yMouse = _event.clientY * (Portfolio.canvas.height / window.innerHeight); /*(_event.clientY - canvas.height / 2) */
         vPointer.x = xMouse;
         vPointer.y = yMouse;
     }
@@ -103,24 +104,24 @@ var Portfolio;
     }
     function drawBall(_radius) {
         crc2.beginPath();
-        crc2.strokeStyle = ballColor;
-        crc2.fillStyle = ballColor;
+        crc2.strokeStyle = Portfolio.ballColor;
+        crc2.fillStyle = Portfolio.ballColor;
         crc2.arc(vBall.x, vBall.y, _radius, 0 * Math.PI, 2 * Math.PI, null);
         crc2.stroke();
         crc2.fill();
     }
     function drawBall2(_radius) {
         crc2.beginPath();
-        crc2.strokeStyle = ballColor;
-        crc2.fillStyle = ballColor;
+        crc2.strokeStyle = Portfolio.ballColor;
+        crc2.fillStyle = Portfolio.ballColor;
         crc2.arc(vBall2.x, vBall2.y, _radius, 0 * Math.PI, 2 * Math.PI, null);
         crc2.stroke();
         crc2.fill();
     }
     function drawPointer(_radius) {
         crc2.beginPath();
-        crc2.strokeStyle = ballColor;
-        crc2.fillStyle = ballColor;
+        crc2.strokeStyle = Portfolio.ballColor;
+        crc2.fillStyle = Portfolio.ballColor;
         crc2.arc(xMouse, yMouse, _radius, 0 * Math.PI, 2 * Math.PI, null);
         crc2.stroke();
         crc2.fill();
@@ -151,7 +152,7 @@ var Portfolio;
     }
     function drawPull(_width) {
         crc2.beginPath();
-        crc2.strokeStyle = lineColor;
+        crc2.strokeStyle = Portfolio.lineColor;
         crc2.lineWidth = _width;
         crc2.moveTo(vBall.x, vBall.y);
         crc2.lineTo(vPointer.x, vPointer.y);
@@ -159,7 +160,7 @@ var Portfolio;
     }
     function drawPull2(_width) {
         crc2.beginPath();
-        crc2.strokeStyle = lineColor;
+        crc2.strokeStyle = Portfolio.lineColor;
         crc2.lineWidth = _width;
         crc2.moveTo(vBall2.x, vBall2.y);
         crc2.lineTo(vBall.x, vBall.y);
@@ -173,6 +174,8 @@ var Portfolio;
         drawBall2(20);
         drawPull(4);
         drawPull2(3);
+        Portfolio.ballColor = window.ballColor;
+        Portfolio.lineColor = window.lineColor;
         requestAnimationFrame(animate);
     }
 })(Portfolio || (Portfolio = {}));

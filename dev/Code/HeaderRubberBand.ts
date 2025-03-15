@@ -1,5 +1,7 @@
 namespace Portfolio {
 
+
+
     let crc2: CanvasRenderingContext2D;
 
     const timeSliceInMS: number = 1;
@@ -39,8 +41,8 @@ namespace Portfolio {
 
     let lastPressedKey: string = "";
 
-    let ballColor: string = "#6C757D";
-    let lineColor: string = ballColor;
+    export let ballColor: string = "#6C757D";
+    export let lineColor: string = ballColor;
 
     // Set the initial canvas size based on window dimensions
 
@@ -114,8 +116,8 @@ namespace Portfolio {
                 }
         */
 
-        xMouse = _event.clientX /*(_event.clientX - canvas.width / 2) * (canvas.width / window.innerWidth);*/
-        yMouse = _event.clientY/*(_event.clientY - canvas.height / 2) * (canvas.height / window.innerHeight);*/
+        xMouse = _event.clientX * (canvas.width / window.innerWidth);/*(_event.clientX - canvas.width / 2) */
+        yMouse = _event.clientY * (canvas.height / window.innerHeight);/*(_event.clientY - canvas.height / 2) */
 
 
         vPointer.x = xMouse;
@@ -239,6 +241,20 @@ namespace Portfolio {
         drawPull(4);
         drawPull2(3);
 
+        ballColor = window.ballColor;
+        lineColor = window.lineColor;
+
         requestAnimationFrame(animate);
     }
+
+
+
+
 }
+
+interface Window {
+
+    ballColor: string;
+    lineColor: string
+}
+
