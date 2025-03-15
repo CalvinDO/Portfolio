@@ -38,6 +38,8 @@ namespace Portfolio {
 
     let lastPressedKey: string = "";
 
+    let ballColor: string = "#6C757D";
+    let lineColor: string = ballColor;
 
     // Set the initial canvas size based on window dimensions
 
@@ -136,8 +138,8 @@ namespace Portfolio {
     function drawBall(_radius: number) {
 
         crc2.beginPath();
-        crc2.strokeStyle = "black";
-        crc2.fillStyle = "black";
+        crc2.strokeStyle = ballColor;
+        crc2.fillStyle = ballColor;
         crc2.arc(vBall.x, vBall.y, _radius, 0 * Math.PI, 2 * Math.PI, null);
         crc2.stroke();
         crc2.fill()
@@ -146,8 +148,8 @@ namespace Portfolio {
     function drawBall2(_radius: number) {
 
         crc2.beginPath();
-        crc2.strokeStyle = "red";
-        crc2.fillStyle = "red";
+        crc2.strokeStyle = ballColor;
+        crc2.fillStyle = ballColor;
         crc2.arc(vBall2.x, vBall2.y, _radius, 0 * Math.PI, 2 * Math.PI, null);
         crc2.stroke();
         crc2.fill()
@@ -156,8 +158,8 @@ namespace Portfolio {
     function drawPointer(_radius: number) {
 
         crc2.beginPath();
-        crc2.strokeStyle = "green";
-        crc2.fillStyle = "green";
+        crc2.strokeStyle = ballColor;
+        crc2.fillStyle = ballColor;
         crc2.arc(xMouse, yMouse, _radius, 0 * Math.PI, 2 * Math.PI, null);
         crc2.stroke();
         crc2.fill();
@@ -205,7 +207,7 @@ namespace Portfolio {
     function drawPull(_width: number): void {
 
         crc2.beginPath();
-        crc2.strokeStyle = "black";
+        crc2.strokeStyle = lineColor;
         crc2.lineWidth = _width;
         crc2.moveTo(vBall.x, vBall.y);
         crc2.lineTo(vPointer.x, vPointer.y);
@@ -215,7 +217,7 @@ namespace Portfolio {
     function drawPull2(_width: number): void {
 
         crc2.beginPath();
-        crc2.strokeStyle = "black";
+        crc2.strokeStyle = lineColor;
         crc2.lineWidth = _width;
         crc2.moveTo(vBall2.x, vBall2.y);
         crc2.lineTo(vBall.x, vBall.y);

@@ -26,6 +26,8 @@ var Portfolio;
     let yMouse = 0;
     let i = 0;
     let lastPressedKey = "";
+    let ballColor = "#6C757D";
+    let lineColor = ballColor;
     // Set the initial canvas size based on window dimensions
     try {
         init(null);
@@ -100,24 +102,24 @@ var Portfolio;
     }
     function drawBall(_radius) {
         crc2.beginPath();
-        crc2.strokeStyle = "black";
-        crc2.fillStyle = "black";
+        crc2.strokeStyle = ballColor;
+        crc2.fillStyle = ballColor;
         crc2.arc(vBall.x, vBall.y, _radius, 0 * Math.PI, 2 * Math.PI, null);
         crc2.stroke();
         crc2.fill();
     }
     function drawBall2(_radius) {
         crc2.beginPath();
-        crc2.strokeStyle = "red";
-        crc2.fillStyle = "red";
+        crc2.strokeStyle = ballColor;
+        crc2.fillStyle = ballColor;
         crc2.arc(vBall2.x, vBall2.y, _radius, 0 * Math.PI, 2 * Math.PI, null);
         crc2.stroke();
         crc2.fill();
     }
     function drawPointer(_radius) {
         crc2.beginPath();
-        crc2.strokeStyle = "green";
-        crc2.fillStyle = "green";
+        crc2.strokeStyle = ballColor;
+        crc2.fillStyle = ballColor;
         crc2.arc(xMouse, yMouse, _radius, 0 * Math.PI, 2 * Math.PI, null);
         crc2.stroke();
         crc2.fill();
@@ -148,7 +150,7 @@ var Portfolio;
     }
     function drawPull(_width) {
         crc2.beginPath();
-        crc2.strokeStyle = "black";
+        crc2.strokeStyle = lineColor;
         crc2.lineWidth = _width;
         crc2.moveTo(vBall.x, vBall.y);
         crc2.lineTo(vPointer.x, vPointer.y);
@@ -156,7 +158,7 @@ var Portfolio;
     }
     function drawPull2(_width) {
         crc2.beginPath();
-        crc2.strokeStyle = "black";
+        crc2.strokeStyle = lineColor;
         crc2.lineWidth = _width;
         crc2.moveTo(vBall2.x, vBall2.y);
         crc2.lineTo(vBall.x, vBall.y);
