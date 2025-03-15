@@ -37,20 +37,20 @@ var Portfolio;
     }
     function init(_event) {
         crc2 = Portfolio.canvas.getContext("2d");
-        setCanvasSizeAndMousePos();
+        xMouse = Portfolio.canvas.width / 2;
+        yMouse = Portfolio.canvas.height / 2;
+        setCanvasSize();
         // Adjust canvas size on window resize
-        window.addEventListener("resize", setCanvasSizeAndMousePos);
+        window.addEventListener("resize", setCanvasSize);
         //canvas = document.querySelector("canvas");
         //crc2.translate(canvas.width / 2, canvas.height / 2);
         console.log("init executed. Animate");
         animate();
     }
-    function setCanvasSizeAndMousePos() {
+    function setCanvasSize() {
         // Set canvas width and height to the current window size
         Portfolio.canvas.width = window.innerWidth;
         Portfolio.canvas.height = window.innerHeight;
-        xMouse = Portfolio.canvas.width / 2;
-        yMouse = Portfolio.canvas.height / 2;
         // Adjust the scale factor for canvas context to avoid pixelation or stretching
         Portfolio.canvas.getContext("2d").scale(window.innerWidth / Portfolio.canvas.width, window.innerHeight / Portfolio.canvas.height);
     }

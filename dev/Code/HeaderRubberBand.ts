@@ -53,10 +53,13 @@ namespace Portfolio {
 
         crc2 = canvas.getContext("2d");
 
-        setCanvasSizeAndMousePos();
+        xMouse = canvas.width / 2;
+        yMouse = canvas.height / 2;
+
+        setCanvasSize();
 
         // Adjust canvas size on window resize
-        window.addEventListener("resize", setCanvasSizeAndMousePos);
+        window.addEventListener("resize", setCanvasSize);
 
         //canvas = document.querySelector("canvas");
         //crc2.translate(canvas.width / 2, canvas.height / 2);
@@ -67,13 +70,13 @@ namespace Portfolio {
         animate();
     }
 
-    function setCanvasSizeAndMousePos() {
+    function setCanvasSize() {
+
         // Set canvas width and height to the current window size
+
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
 
-        xMouse = canvas.width / 2;
-        yMouse = canvas.height / 2;
 
         // Adjust the scale factor for canvas context to avoid pixelation or stretching
         canvas.getContext("2d").scale(window.innerWidth / canvas.width, window.innerHeight / canvas.height);
