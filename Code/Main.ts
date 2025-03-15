@@ -2,22 +2,56 @@ namespace Portfolio {
 
     let overlay: HTMLDivElement = document.querySelector('#overlay');
 
+    let userData: UserData;
+
+    let timeAccessSite: Date;
+
+    let expandedStartMilliseconds: number = 0;
+    let expandedStartFormatedTime: string = "";
+    let expandedName: string = "";
+
+    let maxScrollDepth: number;
+
+    let clickedLinks: string[];
+
+    let devToolsUsage: { timeOpened: string }[] = [];
+
+    export let canvas: HTMLCanvasElement;
+
+
+    document.documentElement.lang = "de";
+
     setupHeader();
 
     try {
+
         removeForkme();
-        setupNavBar();
+        //setupNavBar();
+
+
+        // Check if the document is fully loaded or still loading
+        if (document.readyState === 'complete' || document.readyState === 'interactive') {
+            // Document is ready
+            setupEventListeners();
+        } else {
+            // Wait for the document to be fully loaded
+            window.addEventListener('load', setupEventListeners);
+        }
+
     } catch (error) {
-        console.warn(error);
+        //console.warn(error);
     }
 
 
     async function init(): Promise<void> {
 
+        userDataInit();
+
+
         try {
             setupNavBar();
         } catch (error) {
-            console.warn("try init setupnavbar, error:", error);
+            //console.warn("try init setupnavbar, error:", error);
         }
 
         overlay = <HTMLDivElement>document.querySelector('#overlay');
@@ -38,6 +72,49 @@ namespace Portfolio {
         /* TODO: try multithread solution */
         //await setupHeavyProjects();
     }
+
+
+    function userDataInit() {
+
+        userData = new UserData();
+
+        timeAccessSite = new Date();
+
+
+        const observer = new MutationObserver(() => {
+
+            const expandedItem = document.querySelector('.expanded') as HTMLElement | null;
+
+            if (expandedItem && !expandedName) {
+
+                // Opened: Start tracking time
+                const h2 = expandedItem.querySelector('h2');
+                expandedName = h2 ? h2.innerHTML.trim() : "Unknown";
+                expandedStartMilliseconds = Date.now();
+                expandedStartFormatedTime = getCurrentTotalTime();
+                //console.log(`Opened: ${expandedName}`);
+
+            } else if (!expandedItem && expandedName) {
+
+                // Closed: Save time and reset
+                const totalTime = ((Date.now() - expandedStartMilliseconds) / 1000);
+                userData.itemTimes.push({ name: expandedName, timeOpened: expandedStartFormatedTime, duration: totalTime.toFixed(2) });
+
+                expandedName = "";
+            }
+        });
+
+        observer.observe(document.body, { subtree: true, childList: true });
+
+        maxScrollDepth = 0;
+
+        clickedLinks = [];
+
+        let links: NodeListOf<HTMLAnchorElement> = document.querySelectorAll("a");
+        links.forEach(link => { link.onclick = function () { clickedLinks.push(link.href) } });
+
+    }
+
 
     async function setupHeavyProjects(): Promise<void> {
 
@@ -72,52 +149,10 @@ namespace Portfolio {
             }
 
         } catch (error) {
-            console.error("Fehler:", error);
+            //console.error("Fehler:", error);
         }
     }
 
-
-    function sendIpifyEmail(this: Window, ev: Event) {
-
-        fetch('https://api64.ipify.org?format=json')
-            .then(response => response.json())
-            .then(data => {
-                sendEmail("IPIFY Portfolio Access - New site load", "IP: " + data.ip);
-            })
-            .catch(error => {
-                //console.warn("ify failed"/*"ipify failed", error*/);
-            });
-    }
-
-    async function sendEmail(_subject: string, _body: string): Promise<void> {
-
-        const emailData = {
-            to: 'calvindelloro@mail.de',
-            subject: _subject,
-            html: '<p>' + _body + "</p>"
-        };
-
-        try {
-
-            const response = await fetch('https://portfolio-ten-liard-43.vercel.app/api/send-email', {
-
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(emailData),
-            });
-
-            //console.log(response);
-
-            const result = await response.json();
-            if (response.ok) {
-                //console.log("response.ok"/*'Email sent:', result.message*/);
-            } else {
-                //console.warn("response not ok"/*'Error sending email:', result.error*/);
-            }
-        } catch (error) {
-            //console.warn("Request failed"/*'Request failed:', error*/);
-        }
-    }
 
     function onHoverDoc(_event: Event) {
         preventEventAndDexpand(_event, true);
@@ -328,7 +363,7 @@ namespace Portfolio {
         }
 
         if (!item.querySelector('.toggle-content')) {
-            console.warn("toggle content not found! abort");
+            //console.warn("toggle content not found! abort");
             return;
         }
 
@@ -473,14 +508,22 @@ namespace Portfolio {
 
     function setupHeader() {
 
-        let header: HTMLElement | null = document.querySelector("header");
+        let header: HTMLElement | null = document.querySelector("#header_wrap header");
 
         let quoteContainer: HTMLDivElement = getSetupedHeaderQuote();
 
+        //setupCanvasIn(header);
 
         setupHeaderArrow(header, quoteContainer);
 
         header.addEventListener('click', handleClickHeader);
+    }
+
+    function setupCanvasIn(header: HTMLElement) {
+
+        canvas = document.createElement("canvas");
+
+        header.insertAdjacentElement('afterbegin', canvas);
     }
 
     function handleClickHeader(this: HTMLElement, ev: MouseEvent): void {
@@ -489,19 +532,23 @@ namespace Portfolio {
 
         let clickToScrollArea = rect.bottom - rect.height / 3;
 
-        //console.log("rectheight / 3: " + rect.height / 3, " - rectbottom: " + rect.bottom);
-
-
-
         if (ev.clientY > clickToScrollArea) {
             turnPage();
         }
     }
 
+
+    function turnPage() {
+        window.scrollTo({
+            top: (<HTMLElement>document.querySelector("#main_content_wrap")).offsetTop, // Hier scrollen wir die Seite zu der Position des nächsten Abschnitts
+            behavior: 'smooth', // Sanftes Scrollen
+        });
+    }
+
     function getSetupedHeaderQuote() {
 
         let quote: HTMLQuoteElement = document.createElement("blockquote");
-        quote.innerHTML = '<span class="quote-text"><strong>Calvin Dell’Oro</strong> [zählt] unter den etlichen hundert Studierenden,<br>die ich seit 2008 [...] unterrichtet habe,<br>zu den drei <strong>engagiertesten</strong> und <strong>erfolgreichsten</strong>.</span><footer><cite class="author">— <a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf" target = "_blank">Prof. Dr. rer. nat. Thomas Schneider</a><img src = "HFULogo.jpg"></cite></footer>';
+        quote.innerHTML = '<span class="quote-text"><strong>Calvin Dell’Oro</strong> [zählt] unter den etlichen hundert Studierenden,<br>die ich seit 2008 [...] unterrichtet habe,<br>zu den drei <strong>engagiertesten</strong> und <strong>erfolgreichsten</strong>.</span><footer><cite class="author">— <a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf" target = "_blank">Prof. Dr. rer. nat. Thomas Schneider</a><img src = "HFULogo.png"></cite></footer>';
         /*, <cite class="quote-time">2025</cite>*/
         let quoteContainer: HTMLDivElement = document.createElement("div");
         quoteContainer.classList.add("quote-container");
@@ -521,13 +568,6 @@ namespace Portfolio {
         header.insertAdjacentElement('beforeend', arrow);
     }
 
-    function setupFooterDocuments() {
-
-        let footer: HTMLElement | null = document.querySelector("#footer_wrap footer");
-
-        let documentsList: HTMLUListElement | null = document.querySelector(".documents-list");
-        footer.appendChild(documentsList);
-    }
 
     export function setupNavBar() {
 
@@ -592,10 +632,10 @@ namespace Portfolio {
 
 
         const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        const id = entry.target.id;
+            (headers) => {
+                headers.forEach((header) => {
+                    if (header.isIntersecting) {
+                        const id = header.target.id;
                         menuLinks.forEach((link) => {
                             if (link.getAttribute("href").replace("#", "") === id) {
                                 link.classList.add("active");
@@ -615,12 +655,6 @@ namespace Portfolio {
 
     }
 
-    function turnPage() {
-        window.scrollTo({
-            top: (<HTMLElement>document.querySelector("#main_content")).offsetTop, // Hier scrollen wir die Seite zu der Position des nächsten Abschnitts
-            behavior: 'smooth', // Sanftes Scrollen
-        });
-    }
 
     function setupFlexItemsPreview() {
 
@@ -673,16 +707,203 @@ namespace Portfolio {
             setupNavBar();
         }
         catch (error) {
-            console.warn("dom content loaded try setupnavbar, error: ", error);
+            //console.warn("dom content loaded try setupnavbar, error: ", error);
         }
     });
 
+
+
+    async function manageUserData(_load?: boolean) {
+
+        if (_load) {
+
+            let ip = await getIP();
+            userData.ip = getAnonymizedIPFrom(ip);
+
+            const locationData = await getLocation(ip);
+
+            if (locationData) {
+                userData.country = locationData.country;
+                userData.city = locationData.city;
+            }
+
+            userData.isMobile = getIsMobile();
+            userData.browser = window.navigator.userAgent;
+            userData.referrerURL = document.referrer;
+        } else {
+
+            userData.totalTime = getCurrentTotalTime();
+            userData.exitScrollDepth = getScrollDepth();
+            userData.maxScrollDepth = maxScrollDepth;
+            userData.clickedLinks = clickedLinks;
+            userData.devToolsUsage = devToolsUsage;
+
+            //console.log(userData.devToolsUsage, devToolsUsage);
+        }
+
+        sendEmail(`¡Test! Portfolio ${_load ? "loaded" : "closed"} from ${userData.city}, ${userData.country}`, JSON.stringify(userData, null, 2));
+    }
+
+    function getIsMobile(): boolean {
+        const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+        return regex.test(navigator.userAgent);
+    }
+
+    function getScrollDepth(): number {
+        return document.documentElement.scrollTop / (document.documentElement.scrollHeight - document.documentElement.clientHeight)
+    }
+
+    function getCurrentTotalTime(): string {
+
+        const totalMilliseconds = new Date().getTime() - timeAccessSite.getTime();
+        const totalSeconds = Math.floor(totalMilliseconds / 1000);
+        return new Date(totalSeconds * 1000).toISOString().substr(11, 8);
+    }
+
+    async function getLocation(ip: string): Promise<{ country: string; city: string } | null> {
+
+        const apiURL = `https://get.geojs.io/v1/ip/geo/${ip}.json`;
+
+        try {
+            const response = await fetch(apiURL);
+            const data = await response.json();
+
+            if (data.ip) {
+                return { country: data.country, city: data.city };
+            } else {
+                throw new Error(data.message);
+            }
+        } catch (error) {
+            //console.error("Error fetching location data:", error);
+            return null;
+        }
+    }
+
+    async function getIP(): Promise<string> {
+        try {
+            const response = await fetch('https://api64.ipify.org?format=json');
+            const data = await response.json();
+
+            let uncensoredIP: string = data.ip;
+            return uncensoredIP;
+
+        } catch (error) {
+            //console.warn("Ipify failed", error);
+            return "unknown";
+        }
+    }
+
+    function getAnonymizedIPFrom(ip: string): string {
+        // Überprüfen, ob es sich um eine IPv4-Adresse handelt
+        if (ip.includes('.')) {
+            const parts = ip.split('.');
+            if (parts.length === 4) {
+                // Zensiere die letzten beiden Oktette
+                parts[2] = 'x';
+                parts[3] = 'x';
+                return parts.join('.');
+            }
+        }
+
+        // Überprüfen, ob es sich um eine IPv6-Adresse handelt
+        if (ip.includes(':')) {
+            const parts = ip.split(':');
+            if (parts.length === 8) {
+                // Zensiere die letzten 4 Gruppen
+                for (let i = 4; i < parts.length; i++) {
+                    parts[i] = 'x';
+                }
+                return parts.join(':');
+            }
+        }
+
+        // Falls es eine nicht unterstützte IP-Adresse ist, gib sie unverändert zurück
+        return "Unsupported IP format";
+    }
+
+    function sendEmail(_subject: string, _body: string): void {
+        const emailData = {
+            to: 'calvindelloro@mail.de',
+            subject: _subject,
+            html: '<pre> Development test email! <br><br> ' + _body + "</pre>"
+        };
+
+        // Use fetch with keepalive: true to ensure the request is sent
+        fetch('https://portfolio-ten-liard-43.vercel.app/api/send-email', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(emailData),
+            keepalive: true  // Ensures the request is sent even if the page unloads
+        }).catch(error => {/*console.warn("Email request failed", error)*/ });
+    }
+
+    // Use beforeunload to trigger sendEmail before exiting
+    window.addEventListener("beforeunload", function (event) {
+
+
+        let expandedFlexItem: HTMLElement = this.document.querySelector(".expanded");
+
+        if (expandedFlexItem) {
+            dexpandProjectFlexItem(expandedFlexItem);
+        }
+
+        try {
+            manageUserData(false);
+        } catch (error) {
+            //console.log("ERROR 42 - an unexpected error occured", error);
+        }
+
+        event.preventDefault();
+        event.returnValue = "";
+    });
+
     window.addEventListener('load', init);
-    window.addEventListener('load', sendIpifyEmail);
 
+    // Event listener for window load
+
+    window.addEventListener('load', function (event) {
+
+        try {
+            manageUserData(true);
+        } catch (error) {
+            //console.log("ERROR 42 - an unexpected error occured", error);
+        }
+    });
+
+
+
+    function handleScroll(this: Window, ev: Event) {
+
+        let currentScrollDepth: number = getScrollDepth();
+
+        if (currentScrollDepth > maxScrollDepth) {
+            maxScrollDepth = currentScrollDepth;
+        }
+    }
+
+
+    document.addEventListener('scroll', handleScroll);
+    document.addEventListener('scrollend', handleScroll)
+
+
+    function detectDevTool(allow: number = 100): void {
+
+        const start = +new Date(); // Start time to detect the debugger.
+        debugger;  // This will trigger if DevTools are open.
+        const end = +new Date();  // End time to check the difference.
+
+        if (isNaN(start) || isNaN(end) || end - start > allow) {
+            devToolsUsage.push({ timeOpened: getCurrentTotalTime() });
+        }
+    }
+
+    // Set up event listeners
+    function setupEventListeners(): void {
+
+        window.addEventListener('resize', () => detectDevTool());
+        window.addEventListener('mousemove', () => detectDevTool());
+        window.addEventListener('focus', () => detectDevTool());
+        window.addEventListener('blur', () => detectDevTool());
+    }
 }
-
-
-
-
 
