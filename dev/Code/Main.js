@@ -484,7 +484,6 @@ var Portfolio;
                 if (locationData) {
                     userData.country = locationData.country;
                     userData.city = locationData.city;
-                    userData.mobile = locationData.mobile;
                 }
             }
             else {
@@ -501,12 +500,12 @@ var Portfolio;
     }
     function setLocation(ip) {
         return __awaiter(this, void 0, void 0, function* () {
-            const apiURL = `http://ip-api.com/json/${ip}`;
+            const apiURL = `https://get.geojs.io/v1/ip/geo/${ip}.json`;
             try {
                 const response = yield fetch(apiURL);
                 const data = yield response.json();
                 if (data.status === "success") {
-                    return { country: data.country, city: data.city, mobile: data.mobile };
+                    return { country: data.country, city: data.city };
                 }
                 else {
                     throw new Error(data.message);

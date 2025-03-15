@@ -689,7 +689,6 @@ namespace Portfolio {
             if (locationData) {
                 userData.country = locationData.country;
                 userData.city = locationData.city;
-                userData.mobile = locationData.mobile;
             }
 
 
@@ -711,16 +710,16 @@ namespace Portfolio {
         return new Date(totalSeconds * 1000).toISOString().substr(11, 8);
     }
 
-    async function setLocation(ip: string): Promise<{ country: string; city: string; mobile: boolean } | null> {
+    async function setLocation(ip: string): Promise<{ country: string; city: string } | null> {
 
-        const apiURL = `http://ip-api.com/json/${ip}`;
+        const apiURL = `https://get.geojs.io/v1/ip/geo/${ip}.json`;
 
         try {
             const response = await fetch(apiURL);
             const data = await response.json();
 
             if (data.status === "success") {
-                return { country: data.country, city: data.city, mobile: data.mobile };
+                return { country: data.country, city: data.city };
             } else {
                 throw new Error(data.message);
             }
