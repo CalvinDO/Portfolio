@@ -10,10 +10,10 @@ div#header_wrap {
 }
 
 #header_wrap canvas {
-    position: absolute;
-    min-height: 100lvh;
-    width: 100%;
-    background-color: #212529;
+  position: fixed;
+  min-height: 100lvh;
+  width: 100%;
+  background-color: #212529;
 }
 
 .quote-container::before {
@@ -117,6 +117,7 @@ blockquote:first-child{
 }
 
 #main_content_wrap{
+  position: relative;
   background: #f8f9fa;
 }
 

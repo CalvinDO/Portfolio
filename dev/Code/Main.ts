@@ -522,7 +522,7 @@ namespace Portfolio {
     function setupCanvasIn(header: HTMLElement) {
 
         canvas = document.createElement("canvas");
-
+        
         header.insertAdjacentElement('afterbegin', canvas);
     }
 
@@ -532,13 +532,17 @@ namespace Portfolio {
 
         let clickToScrollArea = rect.bottom - rect.height / 3;
 
-        //console.log("rectheight / 3: " + rect.height / 3, " - rectbottom: " + rect.bottom);
-
-
-
         if (ev.clientY > clickToScrollArea) {
             turnPage();
         }
+    }
+
+
+    function turnPage() {
+        window.scrollTo({
+            top: (<HTMLElement>document.querySelector("#main_content_wrap")).offsetTop, // Hier scrollen wir die Seite zu der Position des nächsten Abschnitts
+            behavior: 'smooth', // Sanftes Scrollen
+        });
     }
 
     function getSetupedHeaderQuote() {
@@ -651,12 +655,6 @@ namespace Portfolio {
 
     }
 
-    function turnPage() {
-        window.scrollTo({
-            top: (<HTMLElement>document.querySelector("#main_content")).offsetTop, // Hier scrollen wir die Seite zu der Position des nächsten Abschnitts
-            behavior: 'smooth', // Sanftes Scrollen
-        });
-    }
 
     function setupFlexItemsPreview() {
 

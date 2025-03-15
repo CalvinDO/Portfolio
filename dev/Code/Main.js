@@ -367,10 +367,15 @@ var Portfolio;
     function handleClickHeader(ev) {
         let rect = this.getBoundingClientRect();
         let clickToScrollArea = rect.bottom - rect.height / 3;
-        //console.log("rectheight / 3: " + rect.height / 3, " - rectbottom: " + rect.bottom);
         if (ev.clientY > clickToScrollArea) {
             turnPage();
         }
+    }
+    function turnPage() {
+        window.scrollTo({
+            top: document.querySelector("#main_content_wrap").offsetTop,
+            behavior: 'smooth', // Sanftes Scrollen
+        });
     }
     function getSetupedHeaderQuote() {
         let quote = document.createElement("blockquote");
@@ -453,12 +458,6 @@ var Portfolio;
         });
     }
     Portfolio.setupNavBar = setupNavBar;
-    function turnPage() {
-        window.scrollTo({
-            top: document.querySelector("#main_content").offsetTop,
-            behavior: 'smooth', // Sanftes Scrollen
-        });
-    }
     function setupFlexItemsPreview() {
         for (let container of document.querySelectorAll(".flex-container")) {
             Array.from(container.children).forEach((value, index) => {
