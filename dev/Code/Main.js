@@ -57,7 +57,7 @@ var Portfolio;
             }
             else if (!expandedItem && expandedName) {
                 // Closed: Save time and reset
-                const totalTime = Math.floor((Date.now() - expandedStartTime) / 1000);
+                const totalTime = ((Date.now() - expandedStartTime) / 1000);
                 userData.itemTimes.push({ name: expandedName, time: totalTime });
                 console.log(`Closed: ${expandedName}, Time Open: ${totalTime}s`);
                 expandedName = "";
