@@ -16,6 +16,8 @@ namespace Portfolio {
         public referrerURL: string;
 
         constructor() {
+            
+            this.devToolsUsage = [];
             this.itemTimes = [];
             this.clickedLinks = [];
         }

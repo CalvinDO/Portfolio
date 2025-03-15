@@ -2,6 +2,7 @@ var Portfolio;
 (function (Portfolio) {
     class UserData {
         constructor() {
+            this.devToolsUsage = [];
             this.itemTimes = [];
             this.clickedLinks = [];
         }

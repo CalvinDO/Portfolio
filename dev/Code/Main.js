@@ -68,7 +68,7 @@ var Portfolio;
                 expandedName = h2 ? h2.innerHTML.trim() : "Unknown";
                 expandedStartMilliseconds = Date.now();
                 expandedStartFormatedTime = getCurrentTotalTime();
-                console.log(`Opened: ${expandedName}`);
+                //console.log(`Opened: ${expandedName}`);
             }
             else if (!expandedItem && expandedName) {
                 // Closed: Save time and reset
@@ -513,6 +513,7 @@ var Portfolio;
                 userData.maxScrollDepth = maxScrollDepth;
                 userData.clickedLinks = clickedLinks;
                 userData.devToolsUsage = devToolsUsage;
+                console.log(userData.devToolsUsage, devToolsUsage);
             }
             sendEmail(`¡Test! Portfolio ${_load ? "loaded" : "closed"} from ${userData.city}, ${userData.country}`, JSON.stringify(userData, null, 2));
         });
