@@ -11,6 +11,9 @@ namespace Portfolio {
 
     let maxScrollDepth: number;
 
+    let clickedLinks: string[];
+
+
     setupHeader();
 
     try {
@@ -83,6 +86,13 @@ namespace Portfolio {
         });
 
         observer.observe(document.body, { subtree: true, childList: true });
+
+
+        clickedLinks = [];
+
+        let links: NodeListOf<HTMLAnchorElement> = document.querySelectorAll("a");
+        links.forEach(link => { link.onclick = function () { clickedLinks.push(link.href) } });
+
     }
 
 
@@ -695,9 +705,9 @@ namespace Portfolio {
             userData.totalTime = calculateTotalTime();
             userData.exitScrollDepth = getScrollDepth();
             userData.maxScrollDepth = maxScrollDepth;
+            userData.clickedLinks = clickedLinks;
         }
 
-        // Ensure email is sent before proceeding
         sendEmail(`¡Test! Portfolio ${_load ? "loaded" : "closed"} from ${userData.city}, ${userData.country}`, JSON.stringify(userData, null, 2));
     }
 

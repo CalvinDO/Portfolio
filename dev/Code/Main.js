@@ -15,6 +15,7 @@ var Portfolio;
     let expandedStartTime = 0;
     let expandedName = "";
     let maxScrollDepth;
+    let clickedLinks;
     setupHeader();
     try {
         removeForkme();
@@ -64,6 +65,9 @@ var Portfolio;
             }
         });
         observer.observe(document.body, { subtree: true, childList: true });
+        clickedLinks = [];
+        let links = document.querySelectorAll("a");
+        links.forEach(link => { link.onclick = function () { clickedLinks.push(link.href); }; });
     }
     function setupHeavyProjects() {
         return __awaiter(this, void 0, void 0, function* () {
@@ -490,8 +494,8 @@ var Portfolio;
                 userData.totalTime = calculateTotalTime();
                 userData.exitScrollDepth = getScrollDepth();
                 userData.maxScrollDepth = maxScrollDepth;
+                userData.clickedLinks = clickedLinks;
             }
-            // Ensure email is sent before proceeding
             sendEmail(`¡Test! Portfolio ${_load ? "loaded" : "closed"} from ${userData.city}, ${userData.country}`, JSON.stringify(userData, null, 2));
         });
     }
