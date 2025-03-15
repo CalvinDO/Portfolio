@@ -693,14 +693,17 @@ namespace Portfolio {
 
         if (_load) {
 
-            userData.ip = await setIP();
+            userData.ip = await getIP();
 
-            const locationData = await setLocation(userData.ip);
+            const locationData = await getLocation(userData.ip);
 
             if (locationData) {
                 userData.country = locationData.country;
                 userData.city = locationData.city;
             }
+
+            userData.isMobile = getIsMobile();
+            userData.browser = window.navigator.userAgent;
 
         } else {
 
@@ -711,6 +714,11 @@ namespace Portfolio {
         }
 
         sendEmail(`¡Test! Portfolio ${_load ? "loaded" : "closed"} from ${userData.city}, ${userData.country}`, JSON.stringify(userData, null, 2));
+    }
+
+    function getIsMobile(): boolean {
+        const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+        return regex.test(navigator.userAgent);
     }
 
     function getScrollDepth(): number {
@@ -724,7 +732,7 @@ namespace Portfolio {
         return new Date(totalSeconds * 1000).toISOString().substr(11, 8);
     }
 
-    async function setLocation(ip: string): Promise<{ country: string; city: string } | null> {
+    async function getLocation(ip: string): Promise<{ country: string; city: string } | null> {
 
         const apiURL = `https://get.geojs.io/v1/ip/geo/${ip}.json`;
 
@@ -743,7 +751,7 @@ namespace Portfolio {
         }
     }
 
-    async function setIP(): Promise<string> {
+    async function getIP(): Promise<string> {
         try {
             const response = await fetch('https://api64.ipify.org?format=json');
             const data = await response.json();

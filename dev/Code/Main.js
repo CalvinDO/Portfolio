@@ -486,12 +486,14 @@ var Portfolio;
     function manageUserData(_load) {
         return __awaiter(this, void 0, void 0, function* () {
             if (_load) {
-                userData.ip = yield setIP();
-                const locationData = yield setLocation(userData.ip);
+                userData.ip = yield getIP();
+                const locationData = yield getLocation(userData.ip);
                 if (locationData) {
                     userData.country = locationData.country;
                     userData.city = locationData.city;
                 }
+                userData.isMobile = getIsMobile();
+                userData.browser = window.navigator.userAgent;
             }
             else {
                 userData.totalTime = getCurrentTotalTime();
@@ -502,6 +504,10 @@ var Portfolio;
             sendEmail(`¡Test! Portfolio ${_load ? "loaded" : "closed"} from ${userData.city}, ${userData.country}`, JSON.stringify(userData, null, 2));
         });
     }
+    function getIsMobile() {
+        const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+        return regex.test(navigator.userAgent);
+    }
     function getScrollDepth() {
         return document.documentElement.scrollTop / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
     }
@@ -510,7 +516,7 @@ var Portfolio;
         const totalSeconds = Math.floor(totalMilliseconds / 1000);
         return new Date(totalSeconds * 1000).toISOString().substr(11, 8);
     }
-    function setLocation(ip) {
+    function getLocation(ip) {
         return __awaiter(this, void 0, void 0, function* () {
             const apiURL = `https://get.geojs.io/v1/ip/geo/${ip}.json`;
             try {
@@ -529,7 +535,7 @@ var Portfolio;
             }
         });
     }
-    function setIP() {
+    function getIP() {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 const response = yield fetch('https://api64.ipify.org?format=json');

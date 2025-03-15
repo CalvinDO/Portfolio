@@ -11,9 +11,7 @@ namespace Portfolio {
         public itemTimes: { name: string; timeOpened: string, duration: string }[];
         public devToolsUsed: boolean;
         public clickedLinks: string[];
-        public mobile: boolean;
-        public device: string;
-        public system: string;
+        public isMobile: boolean;
         public browser: string;
         public referrerURL: string;
 
