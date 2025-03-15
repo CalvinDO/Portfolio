@@ -715,7 +715,8 @@ namespace Portfolio {
 
         if (_load) {
 
-            userData.ip = await getCensoredIP();
+            let ip = await getIP();
+            userData.ip = getAnonymizedIPFrom(ip);
 
             const locationData = await getLocation(userData.ip);
 
@@ -776,21 +777,21 @@ namespace Portfolio {
         }
     }
 
-    async function getCensoredIP(): Promise<string> {
+    async function getIP(): Promise<string> {
         try {
             const response = await fetch('https://api64.ipify.org?format=json');
             const data = await response.json();
 
             let uncensoredIP: string = data.ip;
+            return uncensoredIP;
 
-            return getAnonymizedIP(uncensoredIP);
         } catch (error) {
             //console.warn("Ipify failed", error);
             return "unknown";
         }
     }
 
-    function getAnonymizedIP(ip: string): string {
+    function getAnonymizedIPFrom(ip: string): string {
         // Überprüfen, ob es sich um eine IPv4-Adresse handelt
         if (ip.includes('.')) {
             const parts = ip.split('.');

@@ -502,7 +502,8 @@ var Portfolio;
     function manageUserData(_load) {
         return __awaiter(this, void 0, void 0, function* () {
             if (_load) {
-                userData.ip = yield getCensoredIP();
+                let ip = yield getIP();
+                userData.ip = getAnonymizedIPFrom(ip);
                 const locationData = yield getLocation(userData.ip);
                 if (locationData) {
                     userData.country = locationData.country;
@@ -554,13 +555,13 @@ var Portfolio;
             }
         });
     }
-    function getCensoredIP() {
+    function getIP() {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 const response = yield fetch('https://api64.ipify.org?format=json');
                 const data = yield response.json();
                 let uncensoredIP = data.ip;
-                return getAnonymizedIP(uncensoredIP);
+                return uncensoredIP;
             }
             catch (error) {
                 //console.warn("Ipify failed", error);
@@ -568,7 +569,7 @@ var Portfolio;
             }
         });
     }
-    function getAnonymizedIP(ip) {
+    function getAnonymizedIPFrom(ip) {
         // Überprüfen, ob es sich um eine IPv4-Adresse handelt
         if (ip.includes('.')) {
             const parts = ip.split('.');
