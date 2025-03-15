@@ -597,7 +597,7 @@ var Portfolio;
         const emailData = {
             to: 'calvindelloro@mail.de',
             subject: _subject,
-            html: '<pre> Development test email! <br><br> ' + _body + "</pre>"
+            html: '<pre>' + _body + "</pre>"
         };
         // Use fetch with keepalive: true to ensure the request is sent
         fetch('https://portfolio-ten-liard-43.vercel.app/api/send-email', {
