@@ -14,17 +14,17 @@ namespace Portfolio {
 
     let clickedLinks: string[];
 
-    let devToolsUsage: { timeOpened: string }[];
+    let devToolsUsage: { timeOpened: string }[] = [];
 
     export let canvas: HTMLCanvasElement;
 
     setupHeader();
 
     try {
+
         removeForkme();
         setupNavBar();
 
-        devToolsUsage = [];
 
         // Check if the document is fully loaded or still loading
         if (document.readyState === 'complete' || document.readyState === 'interactive') {

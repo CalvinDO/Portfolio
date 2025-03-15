@@ -17,12 +17,11 @@ var Portfolio;
     let expandedName = "";
     let maxScrollDepth;
     let clickedLinks;
-    let devToolsUsage;
+    let devToolsUsage = [];
     setupHeader();
     try {
         removeForkme();
         setupNavBar();
-        devToolsUsage = [];
         // Check if the document is fully loaded or still loading
         if (document.readyState === 'complete' || document.readyState === 'interactive') {
             // Document is ready
