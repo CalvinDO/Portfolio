@@ -832,7 +832,7 @@ namespace Portfolio {
         let currentScrollDepth: number = getScrollDepth();
 
         if (currentScrollDepth > maxScrollDepth) {
-            maxScrollDepth = maxScrollDepth;
+            maxScrollDepth = currentScrollDepth;
         }
     }
 

@@ -512,6 +512,7 @@ var Portfolio;
                 userData.exitScrollDepth = getScrollDepth();
                 userData.maxScrollDepth = maxScrollDepth;
                 userData.clickedLinks = clickedLinks;
+                userData.devToolsUsage = devToolsUsage;
             }
             sendEmail(`¡Test! Portfolio ${_load ? "loaded" : "closed"} from ${userData.city}, ${userData.country}`, JSON.stringify(userData, null, 2));
         });
@@ -602,7 +603,7 @@ var Portfolio;
     function handleScroll(ev) {
         let currentScrollDepth = getScrollDepth();
         if (currentScrollDepth > maxScrollDepth) {
-            maxScrollDepth = maxScrollDepth;
+            maxScrollDepth = currentScrollDepth;
         }
     }
     document.addEventListener('scroll', handleScroll);
@@ -612,8 +613,7 @@ var Portfolio;
         debugger; // This will trigger if DevTools are open.
         const end = +new Date(); // End time to check the difference.
         if (isNaN(start) || isNaN(end) || end - start > allow) {
-            // Code to run if developer tools are detected.
-            console.log('Developer tools detected!');
+            devToolsUsage.push({ timeOpened: getCurrentTotalTime() });
         }
     }
     // Set up event listeners
