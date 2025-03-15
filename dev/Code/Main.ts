@@ -88,6 +88,7 @@ namespace Portfolio {
 
         observer.observe(document.body, { subtree: true, childList: true });
 
+        maxScrollDepth = 0;
 
         clickedLinks = [];
 

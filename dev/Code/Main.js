@@ -67,6 +67,7 @@ var Portfolio;
             }
         });
         observer.observe(document.body, { subtree: true, childList: true });
+        maxScrollDepth = 0;
         clickedLinks = [];
         let links = document.querySelectorAll("a");
         links.forEach(link => { link.onclick = function () { clickedLinks.push(link.href); }; });
