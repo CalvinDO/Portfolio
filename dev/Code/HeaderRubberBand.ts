@@ -14,7 +14,8 @@ namespace Portfolio {
 
     //window.addEventListener("load", init);
     document.querySelector("#header_wrap").addEventListener("mousemove", trackMouseMove);
-
+    document.querySelector("#header_wrap").addEventListener('mouseover', trackMouseMove);
+    document.querySelector("#header_wrap").addEventListener('mouseenter', trackMouseMove);
 
     let vPull: Vector2D = new Vector2D(0, 0);
     let vPull2: Vector2D = new Vector2D(0, 0);

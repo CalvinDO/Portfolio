@@ -9,6 +9,7 @@ var Portfolio;
     var Vector2D = Vector.Vector2D;
     //window.addEventListener("load", init);
     document.querySelector("#header_wrap").addEventListener("mousemove", trackMouseMove);
+    document.querySelector("#header_wrap").addEventListener('mo', trackMouseMove);
     let vPull = new Vector2D(0, 0);
     let vPull2 = new Vector2D(0, 0);
     let vPull3 = new Vector2D(0, 0);
