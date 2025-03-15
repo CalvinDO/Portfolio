@@ -741,7 +741,7 @@ namespace Portfolio {
             //console.log(userData.devToolsUsage, devToolsUsage);
         }
 
-        sendEmail(`¡Test! Portfolio ${_load ? "loaded" : "closed"} from ${userData.city}, ${userData.country}`, JSON.stringify(userData, null, 2));
+        sendEmail(`Portfolio ${_load ? "loaded" : "closed"} from ${userData.city}, ${userData.country}`, JSON.stringify(userData, null, 2));
     }
 
     function getIsMobile(): boolean {
