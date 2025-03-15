@@ -6,7 +6,7 @@ namespace Portfolio {
         public country: string;
         public city: string;
         public totalTime: string;
-        public scrollDepth: number;
+        public exitScrollDepth: number;
         public itemTimes: { name: string; time: string }[];
         public devToolsUsed: boolean;
         public clickedLinks: string[];

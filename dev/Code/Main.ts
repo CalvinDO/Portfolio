@@ -9,6 +9,7 @@ namespace Portfolio {
     let expandedStartTime = 0;
     let expandedName = "";
 
+    let maxScrollDepth: number;
 
     setupHeader();
 
@@ -689,16 +690,18 @@ namespace Portfolio {
                 userData.city = locationData.city;
             }
 
-
-
         } else {
 
             userData.totalTime = calculateTotalTime();
-
+            userData.exitScrollDepth = getScrollDepth();
         }
 
         // Ensure email is sent before proceeding
         sendEmail(`¡Test! Portfolio ${_load ? "loaded" : "closed"} from ${userData.city}, ${userData.country}`, JSON.stringify(userData, null, 2));
+    }
+
+    function getScrollDepth(): number {
+        return document.documentElement.scrollTop / document.documentElement.scrollHeight;
     }
 
     function calculateTotalTime(): string {
@@ -784,11 +787,21 @@ namespace Portfolio {
             console.log("ERROR 42 - an unexpected error occured", error);
         }
     });
+
+
+
+    function handleScroll(this: Window, ev: Event) {
+
+        let currentScrollDepth: number = getScrollDepth();
+
+        if (currentScrollDepth > maxScrollDepth) {
+            maxScrollDepth = maxScrollDepth;
+        }
+    }
+
+
+    document.addEventListener('scroll', handleScroll);
+    document.addEventListener('scrollend', handleScroll)
+
 }
-
-
-
-
-
-
 

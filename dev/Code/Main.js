@@ -14,6 +14,7 @@ var Portfolio;
     let timeAccessSite;
     let expandedStartTime = 0;
     let expandedName = "";
+    let maxScrollDepth;
     setupHeader();
     try {
         removeForkme();
@@ -487,10 +488,14 @@ var Portfolio;
             }
             else {
                 userData.totalTime = calculateTotalTime();
+                userData.exitScrollDepth = getScrollDepth();
             }
             // Ensure email is sent before proceeding
             sendEmail(`¡Test! Portfolio ${_load ? "loaded" : "closed"} from ${userData.city}, ${userData.country}`, JSON.stringify(userData, null, 2));
         });
+    }
+    function getScrollDepth() {
+        return document.documentElement.scrollTop / document.documentElement.scrollHeight;
     }
     function calculateTotalTime() {
         const totalMilliseconds = new Date().getTime() - timeAccessSite.getTime();
@@ -568,5 +573,13 @@ var Portfolio;
             console.log("ERROR 42 - an unexpected error occured", error);
         }
     });
+    function handleScroll(ev) {
+        let currentScrollDepth = getScrollDepth();
+        if (currentScrollDepth > maxScrollDepth) {
+            maxScrollDepth = maxScrollDepth;
+        }
+    }
+    document.addEventListener('scroll', handleScroll);
+    document.addEventListener('scrollend', handleScroll);
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=Main.js.map
