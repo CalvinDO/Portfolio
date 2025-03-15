@@ -706,7 +706,7 @@ namespace Portfolio {
 
         if (_load) {
 
-            userData.ip = await getIP();
+            userData.ip = await getCensoredIP();
 
             const locationData = await getLocation(userData.ip);
 
@@ -767,15 +767,46 @@ namespace Portfolio {
         }
     }
 
-    async function getIP(): Promise<string> {
+    async function getCensoredIP(): Promise<string> {
         try {
             const response = await fetch('https://api64.ipify.org?format=json');
             const data = await response.json();
-            return data.ip;
+
+            let uncensoredIP: string = data.ip;
+
+            return getAnonymizedIP(uncensoredIP);
         } catch (error) {
             //console.warn("Ipify failed", error);
             return "unknown";
         }
+    }
+
+    function getAnonymizedIP(ip: string): string {
+        // Überprüfen, ob es sich um eine IPv4-Adresse handelt
+        if (ip.includes('.')) {
+            const parts = ip.split('.');
+            if (parts.length === 4) {
+                // Zensiere die letzten beiden Oktette
+                parts[2] = 'x';
+                parts[3] = 'x';
+                return parts.join('.');
+            }
+        }
+
+        // Überprüfen, ob es sich um eine IPv6-Adresse handelt
+        if (ip.includes(':')) {
+            const parts = ip.split(':');
+            if (parts.length === 8) {
+                // Zensiere die letzten 4 Gruppen
+                for (let i = 4; i < parts.length; i++) {
+                    parts[i] = 'x';
+                }
+                return parts.join(':');
+            }
+        }
+
+        // Falls es eine nicht unterstützte IP-Adresse ist, gib sie unverändert zurück
+        return "Unsupported IP format";
     }
 
     function sendEmail(_subject: string, _body: string): void {
