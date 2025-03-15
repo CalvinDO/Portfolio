@@ -713,7 +713,7 @@ namespace Portfolio {
 
     async function setLocation(ip: string): Promise<{ country: string; city: string; mobile: boolean } | null> {
 
-        const apiURL = `https://ip-api.com/json/${ip}`;
+        const apiURL = `http://ip-api.com/json/${ip}`;
 
         try {
             const response = await fetch(apiURL);
