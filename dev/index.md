@@ -298,7 +298,7 @@ h1{
   <span class="quote-text"><strong>weit über</strong> die vorgegebenen <strong>Lehrziele hinaus</strong><br>
   </span>
   <footer>
-    <cite class="author">— <a href="EmpfehlungsschreibenVonProfChristophMueller.pdf" target="_blank">Prof. Christoph Müller</a><img src = "HFULogoMainContent.jpg"></cite>
+    <cite class="author">— <a href="EmpfehlungsschreibenVonProfChristophMueller.pdf" target="_blank">Prof. Christoph Müller</a><img src = "HFULogoMainContent.png"></cite>
   </footer>
   </blockquote>
 </div>
@@ -1184,7 +1184,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
   [ist Calvin Dell’Oro] von Beginn an positiv aufgefallen.<br>
   </span>
   <footer>
-    <cite class="author">— <a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf" target = "_blank">Prof. Dr. rer. nat. Thomas Schneider</a><img src = "HFULogoMainContent.jpg"></cite></footer>
+    <cite class="author">— <a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf" target = "_blank">Prof. Dr. rer. nat. Thomas Schneider</a><img src = "HFULogoMainContent.png"></cite></footer>
   </blockquote>
 </div>
 
