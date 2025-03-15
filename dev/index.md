@@ -1,7 +1,7 @@
-<script src= "Code/UserData.js"></script>
-<script src="Code/Main.js"></script>
 <script src= "Code/Vector.js"></script>
 <script src= "Code/HeaderRubberBand.js"></script>
+<script src= "Code/UserData.js"></script>
+<script src="Code/Main.js"></script>
 
 <style>
 
@@ -3271,6 +3271,8 @@ footer .section-header {
 }
 
 </style>
+
+<canvas></canvas>
 
 <div class="section-header">
 <h1 id = "dokumente">Dokumente</h1>

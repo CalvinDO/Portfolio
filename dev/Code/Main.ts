@@ -19,7 +19,7 @@ namespace Portfolio {
     export let canvas: HTMLCanvasElement;
 
     document.documentElement.lang = "de";
-    
+
     setupHeader();
 
     try {
@@ -520,7 +520,8 @@ namespace Portfolio {
 
     function setupCanvasIn(header: HTMLElement) {
 
-        canvas = document.createElement("canvas");
+        canvas = document.querySelector("canvas");
+
         header.insertAdjacentElement('afterbegin', canvas);
 
         // Set the initial canvas size based on window dimensions

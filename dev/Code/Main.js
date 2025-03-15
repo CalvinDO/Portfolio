@@ -361,7 +361,7 @@ var Portfolio;
         header.addEventListener('click', handleClickHeader);
     }
     function setupCanvasIn(header) {
-        Portfolio.canvas = document.createElement("canvas");
+        Portfolio.canvas = document.querySelector("canvas");
         header.insertAdjacentElement('afterbegin', Portfolio.canvas);
         // Set the initial canvas size based on window dimensions
         setCanvasSize();
