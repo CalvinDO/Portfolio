@@ -14,12 +14,25 @@ namespace Portfolio {
 
     let clickedLinks: string[];
 
+    let devToolsUsage: { timeOpened: string }[];
 
     setupHeader();
 
     try {
         removeForkme();
         setupNavBar();
+
+        devToolsUsage = [];
+
+        // Check if the document is fully loaded or still loading
+        if (document.readyState === 'complete' || document.readyState === 'interactive') {
+            // Document is ready
+            setupEventListeners();
+        } else {
+            // Wait for the document to be fully loaded
+            window.addEventListener('load', setupEventListeners);
+        }
+
     } catch (error) {
         console.warn(error);
     }
@@ -704,13 +717,14 @@ namespace Portfolio {
 
             userData.isMobile = getIsMobile();
             userData.browser = window.navigator.userAgent;
-
+            userData.referrerURL = document.referrer;
         } else {
 
             userData.totalTime = getCurrentTotalTime();
             userData.exitScrollDepth = getScrollDepth();
             userData.maxScrollDepth = maxScrollDepth;
             userData.clickedLinks = clickedLinks;
+            userData.devToolsUsage = devToolsUsage;
         }
 
         sendEmail(`¡Test! Portfolio ${_load ? "loaded" : "closed"} from ${userData.city}, ${userData.country}`, JSON.stringify(userData, null, 2));
@@ -826,5 +840,25 @@ namespace Portfolio {
     document.addEventListener('scroll', handleScroll);
     document.addEventListener('scrollend', handleScroll)
 
+
+    function detectDevTool(allow: number = 100): void {
+
+        const start = +new Date(); // Start time to detect the debugger.
+        debugger;  // This will trigger if DevTools are open.
+        const end = +new Date();  // End time to check the difference.
+
+        if (isNaN(start) || isNaN(end) || end - start > allow) {
+            devToolsUsage.push({ timeOpened: getCurrentTotalTime() });
+        }
+    }
+
+    // Set up event listeners
+    function setupEventListeners(): void {
+
+        window.addEventListener('resize', () => detectDevTool());
+        window.addEventListener('mousemove', () => detectDevTool());
+        window.addEventListener('focus', () => detectDevTool());
+        window.addEventListener('blur', () => detectDevTool());
+    }
 }
 

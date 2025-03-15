@@ -17,10 +17,21 @@ var Portfolio;
     let expandedName = "";
     let maxScrollDepth;
     let clickedLinks;
+    let devToolsUsage;
     setupHeader();
     try {
         removeForkme();
         setupNavBar();
+        devToolsUsage = [];
+        // Check if the document is fully loaded or still loading
+        if (document.readyState === 'complete' || document.readyState === 'interactive') {
+            // Document is ready
+            setupEventListeners();
+        }
+        else {
+            // Wait for the document to be fully loaded
+            window.addEventListener('load', setupEventListeners);
+        }
     }
     catch (error) {
         console.warn(error);
@@ -494,6 +505,7 @@ var Portfolio;
                 }
                 userData.isMobile = getIsMobile();
                 userData.browser = window.navigator.userAgent;
+                userData.referrerURL = document.referrer;
             }
             else {
                 userData.totalTime = getCurrentTotalTime();
@@ -595,5 +607,21 @@ var Portfolio;
     }
     document.addEventListener('scroll', handleScroll);
     document.addEventListener('scrollend', handleScroll);
+    function detectDevTool(allow = 100) {
+        const start = +new Date(); // Start time to detect the debugger.
+        debugger; // This will trigger if DevTools are open.
+        const end = +new Date(); // End time to check the difference.
+        if (isNaN(start) || isNaN(end) || end - start > allow) {
+            // Code to run if developer tools are detected.
+            console.log('Developer tools detected!');
+        }
+    }
+    // Set up event listeners
+    function setupEventListeners() {
+        window.addEventListener('resize', () => detectDevTool());
+        window.addEventListener('mousemove', () => detectDevTool());
+        window.addEventListener('focus', () => detectDevTool());
+        window.addEventListener('blur', () => detectDevTool());
+    }
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=Main.js.map
