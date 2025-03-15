@@ -35,18 +35,20 @@ var Portfolio;
     }
     function init(_event) {
         crc2 = Portfolio.canvas.getContext("2d");
-        setCanvasSize();
+        setCanvasSizeAndMousePos();
         // Adjust canvas size on window resize
-        window.addEventListener("resize", setCanvasSize);
+        window.addEventListener("resize", setCanvasSizeAndMousePos);
         //canvas = document.querySelector("canvas");
-        crc2.translate(Portfolio.canvas.width / 2, Portfolio.canvas.height / 2);
+        //crc2.translate(canvas.width / 2, canvas.height / 2);
         console.log("init executed. Animate");
         animate();
     }
-    function setCanvasSize() {
+    function setCanvasSizeAndMousePos() {
         // Set canvas width and height to the current window size
         Portfolio.canvas.width = window.innerWidth;
         Portfolio.canvas.height = window.innerHeight;
+        xMouse = Portfolio.canvas.width / 2;
+        yMouse = Portfolio.canvas.height / 2;
         // Adjust the scale factor for canvas context to avoid pixelation or stretching
         Portfolio.canvas.getContext("2d").scale(window.innerWidth / Portfolio.canvas.width, window.innerHeight / Portfolio.canvas.height);
     }
@@ -79,8 +81,8 @@ var Portfolio;
                 default:
                 }
         */
-        xMouse = (_event.clientX - Portfolio.canvas.width / 2) * (Portfolio.canvas.width / window.innerWidth);
-        yMouse = (_event.clientY - Portfolio.canvas.height / 2) * (Portfolio.canvas.height / window.innerHeight);
+        xMouse = _event.clientX; /*(_event.clientX - canvas.width / 2) * (canvas.width / window.innerWidth);*/
+        yMouse = _event.clientY; /*(_event.clientY - canvas.height / 2) * (canvas.height / window.innerHeight);*/
         vPointer.x = xMouse;
         vPointer.y = yMouse;
     }
