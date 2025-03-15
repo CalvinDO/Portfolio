@@ -3,11 +3,14 @@ namespace Portfolio {
 
     let footer: HTMLElement;
 
+    /*
     try {
         setupFooter();
     } catch (error) {
         console.warn(error);
     }
+    */
+
 
     function setupFooter(): void {
 

@@ -26,7 +26,7 @@ namespace Portfolio {
     try {
 
         removeForkme();
-        setupNavBar();
+        //setupNavBar();
 
 
         // Check if the document is fully loaded or still loading

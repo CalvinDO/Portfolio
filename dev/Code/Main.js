@@ -22,7 +22,7 @@ var Portfolio;
     setupHeader();
     try {
         removeForkme();
-        setupNavBar();
+        //setupNavBar();
         // Check if the document is fully loaded or still loading
         if (document.readyState === 'complete' || document.readyState === 'interactive') {
             // Document is ready

@@ -1,12 +1,13 @@
 var Portfolio;
 (function (Portfolio) {
     let footer;
+    /*
     try {
         setupFooter();
-    }
-    catch (error) {
+    } catch (error) {
         console.warn(error);
     }
+    */
     function setupFooter() {
         setupFooterDocuments();
         setupQuote();
