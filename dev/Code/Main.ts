@@ -75,9 +75,7 @@ namespace Portfolio {
 
                 // Closed: Save time and reset
                 const totalTime = ((Date.now() - expandedStartTime) / 1000);
-                userData.itemTimes.push({ name: expandedName, time: totalTime });
-
-                console.log(`Closed: ${expandedName}, Time Open: ${totalTime}s`);
+                userData.itemTimes.push({ name: expandedName, time: totalTime.toFixed(1) });
 
                 expandedName = "";
             }

@@ -7,7 +7,7 @@ namespace Portfolio {
         public city: string;
         public totalTime: string;
         public scrollDepth: number;
-        public itemTimes: { name: string; time: number }[];
+        public itemTimes: { name: string; time: string }[];
         public devToolsUsed: boolean;
         public clickedLinks: string[];
         public mobile: boolean;
