@@ -43,8 +43,8 @@ namespace Portfolio {
     let ballColor: string = "#495057";
     let lineColor: string = ballColor;
 
-    let lineWidth: number = 6.5;
-    let ballRadius: number = 14.5;
+    let lineWidth: number = 6;
+    let ballRadius: number = 15;
     let pointerRadius: number = 3;
 
     let pullForceFactor: number = 1 / 50;
