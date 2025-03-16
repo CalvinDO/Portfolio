@@ -29,8 +29,8 @@ var Portfolio;
     let lastPressedKey = "";
     let ballColor = "#495057";
     let lineColor = ballColor;
-    let lineWidth = 4;
-    let ballRadius = 16;
+    let lineWidth = 6.5;
+    let ballRadius = 14.5;
     let pointerRadius = 3;
     let pullForceFactor = 1 / 50;
     // Set the initial canvas size based on window dimensions
