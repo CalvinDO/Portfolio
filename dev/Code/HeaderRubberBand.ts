@@ -154,7 +154,8 @@ namespace Portfolio {
         crc2.fill();
     }
 
-    class Ball {
+    export class Ball {
+
         position: Vector2D;
         speed: Vector2D = new Vector2D(0, 0);
         pull: Vector2D = new Vector2D(0, 0);
@@ -171,12 +172,12 @@ namespace Portfolio {
             this.radius = _radius;
         }
 
-        createLinkedBall(): Ball {
+        public createLinkedBall(): Ball {
             let newBallPosition = new Vector2D(this.position.x, this.position.y + this.radius * 2);
             return new Ball(newBallPosition, this.color, this.lineColor, this.radius);
         }
 
-        moveBall(_pointer: Vector2D, _balls: Ball[]): void {
+        public moveBall(_pointer: Vector2D, _balls: Ball[]): void {
             for (let i = 0; i < _balls.length; i++) {
                 let ball = _balls[i];
 
@@ -205,11 +206,11 @@ namespace Portfolio {
             }
         }
 
-        drawBall(): void {
+        public drawBall(): void {
             drawCircle(this.position, this.radius);
         }
 
-        drawPull(): void {
+        public drawPull(): void {
             if (this.position !== vPointer) {
                 drawLine(this.position, vPointer);
             }

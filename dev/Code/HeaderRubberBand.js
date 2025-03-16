@@ -160,5 +160,6 @@ var Portfolio;
             }
         }
     }
+    Portfolio.Ball = Ball;
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=HeaderRubberBand.js.map
