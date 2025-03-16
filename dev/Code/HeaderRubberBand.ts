@@ -1,17 +1,14 @@
 namespace Portfolio {
 
-
+    import Vector2D = Vector.Vector2D;
 
     let crc2: CanvasRenderingContext2D;
 
     const timeSliceInMS: number = 1;
 
     // Initial position
-    let position = 0;
+    //let position = 0;
     let gravity = 2;
-    let gravity2 = 2;
-    import Vector2D = Vector.Vector2D;
-
 
 
     //window.addEventListener("load", init);
@@ -28,13 +25,15 @@ namespace Portfolio {
     //let vResult: Vector2D = new Vector2D(0, 0);
     let vBall: Vector2D = new Vector2D(0, 0);
     let vBall2: Vector2D = new Vector2D(0, 0);
+
     let vPointer: Vector2D = new Vector2D(0, 0);
+
     let vGravity: Vector2D = new Vector2D(0, gravity);
     let vGravity2: Vector2D = new Vector2D(0, gravity);
     let vFriction: Vector2D = new Vector2D(0, 0);
     let vFriction2: Vector2D = new Vector2D(0, 0);
 
-    let xMouse: number = 0;
+    let _pos: number = 0;
     let yMouse: number = 0;
 
     let i: number = 0;
@@ -43,6 +42,10 @@ namespace Portfolio {
 
     let ballColor: string = "#495057";
     let lineColor: string = ballColor;
+
+    let lineWidth: number = 4;
+    let ballRadius: number = 12;
+    let pointerRadius: number = 4;
 
     // Set the initial canvas size based on window dimensions
 
@@ -56,7 +59,7 @@ namespace Portfolio {
 
         crc2 = canvas.getContext("2d");
 
-        xMouse = canvas.width / 2;
+        _pos = canvas.width / 2;
         yMouse = canvas.height / 2;
 
         setCanvasSize();
@@ -117,11 +120,11 @@ namespace Portfolio {
         */
         const canvasRect = canvas.getBoundingClientRect();
 
-        xMouse = _event.clientX * (canvasRect.width / window.innerWidth);/*(_event.clientX - canvas.width / 2) */
+        _pos = _event.clientX * (canvasRect.width / window.innerWidth);/*(_event.clientX - canvas.width / 2) */
         yMouse = _event.clientY * (canvasRect.height / window.innerHeight);/*(_event.clientY - canvas.height / 2) */
 
 
-        vPointer.x = xMouse;
+        vPointer.x = _pos;
         vPointer.y = yMouse;
     }
 
@@ -142,35 +145,33 @@ namespace Portfolio {
         crc2.fill()
     }
 
-    function drawBall(_radius: number) {
+    function drawBall() {
 
-        crc2.beginPath();
-        crc2.strokeStyle = ballColor;
-        crc2.fillStyle = ballColor;
-        crc2.arc(vBall.x, vBall.y, _radius, 0 * Math.PI, 2 * Math.PI, null);
-        crc2.stroke();
-        crc2.fill()
+        drawCircle(vBall, ballRadius);
     }
 
-    function drawBall2(_radius: number) {
+    function drawBall2() {
 
-        crc2.beginPath();
-        crc2.strokeStyle = ballColor;
-        crc2.fillStyle = ballColor;
-        crc2.arc(vBall2.x, vBall2.y, _radius, 0 * Math.PI, 2 * Math.PI, null);
-        crc2.stroke();
-        crc2.fill()
+        drawCircle(vBall2, ballRadius);
     }
 
-    function drawPointer(_radius: number) {
+    function drawPointer() {
 
-        crc2.beginPath();
-        crc2.strokeStyle = ballColor;
-        crc2.fillStyle = ballColor;
-        crc2.arc(xMouse, yMouse, _radius, 0 * Math.PI, 2 * Math.PI, null);
-        crc2.stroke();
-        crc2.fill();
+        drawCircle(vPointer, pointerRadius);
     }
+
+
+    function drawPull(): void {
+
+        drawLine(vBall, vPointer);
+    }
+
+
+    function drawPull2(): void {
+
+        drawLine(vBall2, vBall);
+    }
+
 
     function moveBall() {
 
@@ -208,39 +209,19 @@ namespace Portfolio {
         //console.log(vPointer, vPull, vSpeed, vBall, vFriction);
     }
 
-
-
-
-    function drawPull(_width: number): void {
-
-        crc2.beginPath();
-        crc2.strokeStyle = lineColor;
-        crc2.lineWidth = _width;
-        crc2.moveTo(vBall.x, vBall.y);
-        crc2.lineTo(vPointer.x, vPointer.y);
-        crc2.stroke();
-    }
-
-    function drawPull2(_width: number): void {
-
-        crc2.beginPath();
-        crc2.strokeStyle = lineColor;
-        crc2.lineWidth = _width;
-        crc2.moveTo(vBall2.x, vBall2.y);
-        crc2.lineTo(vBall.x, vBall.y);
-        crc2.stroke();
-    }
-
-
     function animate() {
 
         drawBackground(-canvas.width, -canvas.height, canvas.width * 2, canvas.height * 2);
-        drawPointer(7);
+
+        drawPointer();
+
         moveBall();
-        drawBall(20);
-        drawBall2(20);
-        drawPull(4);
-        drawPull2(3);
+
+        drawBall();
+        drawBall2();
+
+        drawPull();
+        drawPull2();
 
         /*
         ballColor = window.ballColor;
@@ -251,9 +232,31 @@ namespace Portfolio {
     }
 
 
+    function drawLine(_from: Vector.Vector2D, _to: Vector.Vector2D) {
+
+        crc2.beginPath();
+        crc2.strokeStyle = lineColor;
+        crc2.lineWidth = lineWidth;
+        crc2.moveTo(_from.x, _from.y);
+        crc2.lineTo(_to.x, _to.y);
+        crc2.stroke();
+    }
+
+
+    function drawCircle(_pos: Vector.Vector2D, _radius: number) {
+
+        crc2.beginPath();
+        crc2.strokeStyle = ballColor;
+        crc2.fillStyle = ballColor;
+        crc2.arc(_pos.x, _pos.y, _radius, 0 * Math.PI, 2 * Math.PI, null);
+        crc2.stroke();
+        crc2.fill();
+    }
 
 
 }
+
+
 /*
 interface Window {
 
