@@ -27,13 +27,13 @@ var Portfolio;
     let yMouse = 0;
     let i = 0;
     let lastPressedKey = "";
+    let ballRadius = 15;
     let ballColor = "#495057";
     let lineColor = ballColor;
     let lineWidth = 6;
-    let ballRadius = 15;
     let pointerRadius = 3;
     let pullForceFactor = 1 / 50;
-    // Set the initial canvas size based on window dimensions
+    let balls = [];
     try {
         init(null);
     }
@@ -46,17 +46,13 @@ var Portfolio;
         yMouse = 0;
         vPointer = new Vector2D(xMouse, yMouse);
         setCanvasSize();
-        // Adjust canvas size on window resize
         window.addEventListener("resize", setCanvasSize);
-        //canvas = document.querySelector("canvas");
-        //crc2.translate(canvas.width / 2, canvas.height / 2);
-        console.log("init executed. Animate");
+        generateChain(4);
         animate();
     }
     function setCanvasSize() {
         Portfolio.canvas.width = window.innerWidth;
         Portfolio.canvas.height = window.innerHeight;
-        // Adjust the scale factor for canvas context to avoid pixelation or stretching
         Portfolio.canvas.getContext("2d").scale(window.innerWidth / Portfolio.canvas.width, window.innerHeight / Portfolio.canvas.height);
     }
     function trackMouseMove(_event) {
@@ -69,6 +65,25 @@ var Portfolio;
         lastPressedKey = _event.key;
     }
     window.addEventListener('keydown', onKeyDown);
+    function generateChain(_num) {
+        let previousBall = new Ball(vPointer, ballColor, lineColor, ballRadius);
+        balls.push(previousBall);
+        for (let i = 1; i < _num; i++) {
+            let newBall = previousBall.createLinkedBall();
+            balls.push(newBall);
+            previousBall = newBall;
+        }
+    }
+    function animate() {
+        drawBackground(-Portfolio.canvas.width, -Portfolio.canvas.height, Portfolio.canvas.width * 2, Portfolio.canvas.height * 2);
+        drawPointer();
+        for (let ball of balls) {
+            ball.moveBall(vPointer, balls);
+            ball.drawBall();
+            ball.drawPull();
+        }
+        requestAnimationFrame(animate);
+    }
     function drawBackground(_x, _y, _w, _h) {
         crc2.beginPath();
         crc2.strokeStyle = 'hsl(210, 10.80%, 14.50%)';
@@ -77,53 +92,8 @@ var Portfolio;
         crc2.stroke();
         crc2.fill();
     }
-    function drawBall() {
-        drawCircle(vBall, ballRadius);
-    }
-    function drawBall2() {
-        drawCircle(vBall2, ballRadius);
-    }
     function drawPointer() {
         drawCircle(vPointer, pointerRadius);
-    }
-    function drawPull() {
-        drawLine(vBall, vPointer);
-    }
-    function drawPull2() {
-        drawLine(vBall2, vBall);
-    }
-    function moveBall() {
-        vPull = vBall.getDiff(vPointer);
-        vPull.x *= -pullForceFactor;
-        vPull.y *= -pullForceFactor;
-        vPull2 = vBall2.getDiff(vBall);
-        vPull2.x *= -pullForceFactor;
-        vPull2.y *= -pullForceFactor;
-        vPull3.x = -vPull2.x;
-        vPull3.y = -vPull2.y;
-        vSpeed.add(vGravity);
-        vSpeed.add(vPull);
-        vSpeed.add(vPull3);
-        vSpeed2.add(vGravity2);
-        vSpeed2.add(vPull2);
-        vFriction.x = vSpeed.x / 50;
-        vFriction.y = vSpeed.y / 50;
-        vFriction2.x = vSpeed2.x / 50;
-        vFriction2.y = vSpeed2.y / 50;
-        vSpeed.subtract(vFriction);
-        vSpeed2.subtract(vFriction2);
-        vBall.add(vSpeed);
-        vBall2.add(vSpeed2);
-    }
-    function animate() {
-        drawBackground(-Portfolio.canvas.width, -Portfolio.canvas.height, Portfolio.canvas.width * 2, Portfolio.canvas.height * 2);
-        drawPointer();
-        moveBall();
-        drawBall();
-        drawBall2();
-        drawPull();
-        drawPull2();
-        requestAnimationFrame(animate);
     }
     function drawLine(_from, _to) {
         crc2.beginPath();
@@ -140,6 +110,55 @@ var Portfolio;
         crc2.arc(_pos.x, _pos.y, _radius, 0 * Math.PI, 2 * Math.PI, null);
         crc2.stroke();
         crc2.fill();
+    }
+    class Ball {
+        constructor(_position, _color, _lineColor, _radius) {
+            this.speed = new Vector2D(0, 0);
+            this.pull = new Vector2D(0, 0);
+            this.gravity = new Vector2D(0, gravity);
+            this.friction = new Vector2D(0, 0);
+            this.radius = ballRadius;
+            this.color = ballColor;
+            this.lineColor = lineColor;
+            this.position = _position;
+            this.color = _color;
+            this.lineColor = _lineColor;
+            this.radius = _radius;
+        }
+        createLinkedBall() {
+            let newBallPosition = new Vector2D(this.position.x, this.position.y + this.radius * 2);
+            return new Ball(newBallPosition, this.color, this.lineColor, this.radius);
+        }
+        moveBall(_pointer, _balls) {
+            for (let i = 0; i < _balls.length; i++) {
+                let ball = _balls[i];
+                // Apply gravity and pull forces to each ball in the chain
+                ball.pull = ball.position.getDiff(_pointer);
+                ball.pull.x *= -pullForceFactor;
+                ball.pull.y *= -pullForceFactor;
+                ball.speed.add(ball.gravity);
+                ball.speed.add(ball.pull);
+                if (i > 0) {
+                    let prevBall = _balls[i - 1];
+                    let ballToPrevBall = ball.position.getDiff(prevBall.position);
+                    ballToPrevBall.x *= -pullForceFactor;
+                    ballToPrevBall.y *= -pullForceFactor;
+                    ball.speed.add(ballToPrevBall);
+                }
+                ball.friction.x = ball.speed.x / 50;
+                ball.friction.y = ball.speed.y / 50;
+                ball.speed.subtract(ball.friction);
+                ball.position.add(ball.speed);
+            }
+        }
+        drawBall() {
+            drawCircle(this.position, this.radius);
+        }
+        drawPull() {
+            if (this.position !== vPointer) {
+                drawLine(this.position, vPointer);
+            }
+        }
     }
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=HeaderRubberBand.js.map

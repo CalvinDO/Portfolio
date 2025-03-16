@@ -40,15 +40,19 @@ namespace Portfolio {
 
     let lastPressedKey: string = "";
 
+
+    let ballRadius: number = 15;
+
+
     let ballColor: string = "#495057";
     let lineColor: string = ballColor;
 
     let lineWidth: number = 6;
-    let ballRadius: number = 15;
     let pointerRadius: number = 3;
 
     let pullForceFactor: number = 1 / 50;
-    // Set the initial canvas size based on window dimensions
+
+    let balls: Ball[] = [];
 
     try {
         init(null);
@@ -57,7 +61,6 @@ namespace Portfolio {
     }
 
     function init(_event: Event): void {
-
         crc2 = canvas.getContext("2d");
 
         xMouse = canvas.width / 2;
@@ -66,29 +69,21 @@ namespace Portfolio {
 
         setCanvasSize();
 
-        // Adjust canvas size on window resize
         window.addEventListener("resize", setCanvasSize);
 
-        //canvas = document.querySelector("canvas");
-        //crc2.translate(canvas.width / 2, canvas.height / 2);
+        generateChain(4);
 
-
-
-        console.log("init executed. Animate");
         animate();
     }
 
-    function setCanvasSize() {
-
+    function setCanvasSize(): void {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
 
-        // Adjust the scale factor for canvas context to avoid pixelation or stretching
         canvas.getContext("2d").scale(window.innerWidth / canvas.width, window.innerHeight / canvas.height);
     }
 
     function trackMouseMove(_event: MouseEvent): void {
-
         const canvasRect = canvas.getBoundingClientRect();
 
         xMouse = (_event.clientX - canvasRect.left) * (canvas.width / canvasRect.width);
@@ -103,9 +98,32 @@ namespace Portfolio {
 
     window.addEventListener('keydown', onKeyDown);
 
+    function generateChain(_num: number): void {
+        let previousBall: Ball = new Ball(vPointer, ballColor, lineColor, ballRadius);
+        balls.push(previousBall);
 
-    function drawBackground(_x: number, _y: number, _w: number, _h: number) {
+        for (let i = 1; i < _num; i++) {
+            let newBall = previousBall.createLinkedBall();
+            balls.push(newBall);
+            previousBall = newBall;
+        }
+    }
 
+    function animate(): void {
+        drawBackground(-canvas.width, -canvas.height, canvas.width * 2, canvas.height * 2);
+
+        drawPointer();
+
+        for (let ball of balls) {
+            ball.moveBall(vPointer, balls);
+            ball.drawBall();
+            ball.drawPull();
+        }
+
+        requestAnimationFrame(animate);
+    }
+
+    function drawBackground(_x: number, _y: number, _w: number, _h: number): void {
         crc2.beginPath();
         crc2.strokeStyle = 'hsl(210, 10.80%, 14.50%)';
         crc2.fillStyle = 'hsl(210, 10.80%, 14.50%)';
@@ -114,89 +132,11 @@ namespace Portfolio {
         crc2.fill()
     }
 
-    function drawBall() {
-
-        drawCircle(vBall, ballRadius);
-    }
-
-    function drawBall2() {
-
-        drawCircle(vBall2, ballRadius);
-    }
-
-    function drawPointer() {
-
+    function drawPointer(): void {
         drawCircle(vPointer, pointerRadius);
     }
 
-
-    function drawPull(): void {
-
-        drawLine(vBall, vPointer);
-    }
-
-
-    function drawPull2(): void {
-
-        drawLine(vBall2, vBall);
-    }
-
-
-    function moveBall() {
-
-        vPull = vBall.getDiff(vPointer);
-        vPull.x *= - pullForceFactor;
-        vPull.y *= -pullForceFactor;
-
-        vPull2 = vBall2.getDiff(vBall);
-        vPull2.x *= -pullForceFactor;
-        vPull2.y *= -pullForceFactor;
-
-        vPull3.x = - vPull2.x;
-        vPull3.y = - vPull2.y;
-
-        vSpeed.add(vGravity);
-        vSpeed.add(vPull);
-
-        vSpeed.add(vPull3);
-
-        vSpeed2.add(vGravity2);
-        vSpeed2.add(vPull2);
-
-        vFriction.x = vSpeed.x / 50;
-        vFriction.y = vSpeed.y / 50;
-
-        vFriction2.x = vSpeed2.x / 50;
-        vFriction2.y = vSpeed2.y / 50;
-
-        vSpeed.subtract(vFriction);
-        vSpeed2.subtract(vFriction2);
-
-        vBall.add(vSpeed);
-        vBall2.add(vSpeed2);
-    }
-
-    function animate() {
-
-        drawBackground(-canvas.width, -canvas.height, canvas.width * 2, canvas.height * 2);
-
-        drawPointer();
-
-        moveBall();
-
-        drawBall();
-        drawBall2();
-
-        drawPull();
-        drawPull2();
-
-
-        requestAnimationFrame(animate);
-    }
-
-
-    function drawLine(_from: Vector.Vector2D, _to: Vector.Vector2D) {
-
+    function drawLine(_from: Vector2D, _to: Vector2D): void {
         crc2.beginPath();
         crc2.strokeStyle = lineColor;
         crc2.lineWidth = lineWidth;
@@ -205,9 +145,7 @@ namespace Portfolio {
         crc2.stroke();
     }
 
-
-    function drawCircle(_pos: Vector.Vector2D, _radius: number) {
-
+    function drawCircle(_pos: Vector2D, _radius: number): void {
         crc2.beginPath();
         crc2.strokeStyle = ballColor;
         crc2.fillStyle = ballColor;
@@ -215,5 +153,68 @@ namespace Portfolio {
         crc2.stroke();
         crc2.fill();
     }
+
+    class Ball {
+        position: Vector2D;
+        speed: Vector2D = new Vector2D(0, 0);
+        pull: Vector2D = new Vector2D(0, 0);
+        gravity: Vector2D = new Vector2D(0, gravity);
+        friction: Vector2D = new Vector2D(0, 0);
+        radius: number = ballRadius;
+        color: string = ballColor;
+        lineColor: string = lineColor;
+
+        constructor(_position: Vector2D, _color: string, _lineColor: string, _radius: number) {
+            this.position = _position;
+            this.color = _color;
+            this.lineColor = _lineColor;
+            this.radius = _radius;
+        }
+
+        createLinkedBall(): Ball {
+            let newBallPosition = new Vector2D(this.position.x, this.position.y + this.radius * 2);
+            return new Ball(newBallPosition, this.color, this.lineColor, this.radius);
+        }
+
+        moveBall(_pointer: Vector2D, _balls: Ball[]): void {
+            for (let i = 0; i < _balls.length; i++) {
+                let ball = _balls[i];
+
+                // Apply gravity and pull forces to each ball in the chain
+                ball.pull = ball.position.getDiff(_pointer);
+                ball.pull.x *= -pullForceFactor;
+                ball.pull.y *= -pullForceFactor;
+
+                ball.speed.add(ball.gravity);
+                ball.speed.add(ball.pull);
+
+                if (i > 0) {
+                    let prevBall = _balls[i - 1];
+                    let ballToPrevBall = ball.position.getDiff(prevBall.position);
+                    ballToPrevBall.x *= -pullForceFactor;
+                    ballToPrevBall.y *= -pullForceFactor;
+                    ball.speed.add(ballToPrevBall);
+                }
+
+                ball.friction.x = ball.speed.x / 50;
+                ball.friction.y = ball.speed.y / 50;
+
+                ball.speed.subtract(ball.friction);
+
+                ball.position.add(ball.speed);
+            }
+        }
+
+        drawBall(): void {
+            drawCircle(this.position, this.radius);
+        }
+
+        drawPull(): void {
+            if (this.position !== vPointer) {
+                drawLine(this.position, vPointer);
+            }
+        }
+    }
+
 
 }
