@@ -23,15 +23,15 @@ var Portfolio;
     let vGravity2 = new Vector2D(0, gravity);
     let vFriction = new Vector2D(0, 0);
     let vFriction2 = new Vector2D(0, 0);
-    let _pos = 0;
+    let xMouse = 0;
     let yMouse = 0;
     let i = 0;
     let lastPressedKey = "";
     let ballColor = "#495057";
     let lineColor = ballColor;
     let lineWidth = 4;
-    let ballRadius = 12;
-    let pointerRadius = 4;
+    let ballRadius = 16;
+    let pointerRadius = 3;
     // Set the initial canvas size based on window dimensions
     try {
         init(null);
@@ -41,8 +41,8 @@ var Portfolio;
     }
     function init(_event) {
         crc2 = Portfolio.canvas.getContext("2d");
-        _pos = Portfolio.canvas.width / 2;
-        yMouse = Portfolio.canvas.height / 2;
+        //xMouse = canvas.width / 2;
+        //yMouse = canvas.height / 2;
         setCanvasSize();
         // Adjust canvas size on window resize
         window.addEventListener("resize", setCanvasSize);
@@ -88,9 +88,9 @@ var Portfolio;
                 }
         */
         const canvasRect = Portfolio.canvas.getBoundingClientRect();
-        _pos = _event.clientX * (canvasRect.width / window.innerWidth); /*(_event.clientX - canvas.width / 2) */
-        yMouse = _event.clientY * (canvasRect.height / window.innerHeight); /*(_event.clientY - canvas.height / 2) */
-        vPointer.x = _pos;
+        xMouse = (_event.clientX - canvasRect.left) * (Portfolio.canvas.width / canvasRect.width);
+        yMouse = (_event.clientY - canvasRect.top) * (Portfolio.canvas.height / canvasRect.height);
+        vPointer.x = xMouse;
         vPointer.y = yMouse;
     }
     function onKeyDown(_event) {

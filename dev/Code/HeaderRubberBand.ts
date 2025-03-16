@@ -33,7 +33,7 @@ namespace Portfolio {
     let vFriction: Vector2D = new Vector2D(0, 0);
     let vFriction2: Vector2D = new Vector2D(0, 0);
 
-    let _pos: number = 0;
+    let xMouse: number = 0;
     let yMouse: number = 0;
 
     let i: number = 0;
@@ -44,8 +44,8 @@ namespace Portfolio {
     let lineColor: string = ballColor;
 
     let lineWidth: number = 4;
-    let ballRadius: number = 12;
-    let pointerRadius: number = 4;
+    let ballRadius: number = 16;
+    let pointerRadius: number = 3;
 
     // Set the initial canvas size based on window dimensions
 
@@ -59,8 +59,8 @@ namespace Portfolio {
 
         crc2 = canvas.getContext("2d");
 
-        _pos = canvas.width / 2;
-        yMouse = canvas.height / 2;
+        //xMouse = canvas.width / 2;
+        //yMouse = canvas.height / 2;
 
         setCanvasSize();
 
@@ -120,11 +120,10 @@ namespace Portfolio {
         */
         const canvasRect = canvas.getBoundingClientRect();
 
-        _pos = _event.clientX * (canvasRect.width / window.innerWidth);/*(_event.clientX - canvas.width / 2) */
-        yMouse = _event.clientY * (canvasRect.height / window.innerHeight);/*(_event.clientY - canvas.height / 2) */
+        xMouse = (_event.clientX - canvasRect.left) * (canvas.width / canvasRect.width);
+        yMouse = (_event.clientY - canvasRect.top) * (canvas.height / canvasRect.height);
 
-
-        vPointer.x = _pos;
+        vPointer.x = xMouse;
         vPointer.y = yMouse;
     }
 
