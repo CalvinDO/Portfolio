@@ -85,8 +85,9 @@ var Portfolio;
                 default:
                 }
         */
-        xMouse = _event.clientX * (Portfolio.canvas.width / window.innerWidth); /*(_event.clientX - canvas.width / 2) */
-        yMouse = _event.clientY * (Portfolio.canvas.height / window.innerHeight); /*(_event.clientY - canvas.height / 2) */
+        const canvasRect = Portfolio.canvas.getBoundingClientRect();
+        xMouse = _event.clientX * (canvasRect.width / window.innerWidth); /*(_event.clientX - canvas.width / 2) */
+        yMouse = _event.clientY * (canvasRect.height / window.innerHeight); /*(_event.clientY - canvas.height / 2) */
         vPointer.x = xMouse;
         vPointer.y = yMouse;
     }

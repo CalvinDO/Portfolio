@@ -115,9 +115,10 @@ namespace Portfolio {
                 default:
                 }
         */
+        const canvasRect = canvas.getBoundingClientRect();
 
-        xMouse = _event.clientX * (canvas.width / window.innerWidth);/*(_event.clientX - canvas.width / 2) */
-        yMouse = _event.clientY * (canvas.height / window.innerHeight);/*(_event.clientY - canvas.height / 2) */
+        xMouse = _event.clientX * (canvasRect.width / window.innerWidth);/*(_event.clientX - canvas.width / 2) */
+        yMouse = _event.clientY * (canvasRect.height / window.innerHeight);/*(_event.clientY - canvas.height / 2) */
 
 
         vPointer.x = xMouse;
