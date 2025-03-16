@@ -1,5 +1,7 @@
+<script src= "Code/Vector.js"></script>
 <script src= "Code/UserData.js"></script>
 <script src="Code/Main.js"></script>
+<script src= "Code/HeaderRubberBand.js"></script>
 
 <style>
 

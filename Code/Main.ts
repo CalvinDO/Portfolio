@@ -512,7 +512,7 @@ namespace Portfolio {
 
         let quoteContainer: HTMLDivElement = getSetupedHeaderQuote();
 
-        //setupCanvasIn(header);
+        setupCanvasIn(header);
 
         setupHeaderArrow(header, quoteContainer);
 

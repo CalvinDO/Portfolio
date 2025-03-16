@@ -356,7 +356,7 @@ var Portfolio;
     function setupHeader() {
         let header = document.querySelector("#header_wrap header");
         let quoteContainer = getSetupedHeaderQuote();
-        //setupCanvasIn(header);
+        setupCanvasIn(header);
         setupHeaderArrow(header, quoteContainer);
         header.addEventListener('click', handleClickHeader);
     }
