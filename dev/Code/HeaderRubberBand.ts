@@ -2,6 +2,70 @@ namespace Portfolio {
 
     import Vector2D = Vector.Vector2D;
 
+
+    export class Ball {
+
+        position: Vector2D;
+        speed: Vector2D = new Vector2D(0, 0);
+        pull: Vector2D = new Vector2D(0, 0);
+        gravity: Vector2D = new Vector2D(0, gravity);
+        friction: Vector2D = new Vector2D(0, 0);
+        radius: number = ballRadius;
+        color: string = ballColor;
+        lineColor: string = lineColor;
+
+        constructor(_position: Vector2D, _color: string, _lineColor: string, _radius: number) {
+            this.position = _position;
+            this.color = _color;
+            this.lineColor = _lineColor;
+            this.radius = _radius;
+        }
+
+        public createLinkedBall(): Ball {
+            let newBallPosition = new Vector2D(this.position.x, this.position.y + this.radius * 2);
+            return new Ball(newBallPosition, this.color, this.lineColor, this.radius);
+        }
+
+        public moveBall(_pointer: Vector2D, _balls: Ball[]): void {
+            for (let i = 0; i < _balls.length; i++) {
+                let ball = _balls[i];
+
+                // Apply gravity and pull forces to each ball in the chain
+                ball.pull = ball.position.getDiff(_pointer);
+                ball.pull.x *= -pullForceFactor;
+                ball.pull.y *= -pullForceFactor;
+
+                ball.speed.add(ball.gravity);
+                ball.speed.add(ball.pull);
+
+                if (i > 0) {
+                    let prevBall = _balls[i - 1];
+                    let ballToPrevBall = ball.position.getDiff(prevBall.position);
+                    ballToPrevBall.x *= -pullForceFactor;
+                    ballToPrevBall.y *= -pullForceFactor;
+                    ball.speed.add(ballToPrevBall);
+                }
+
+                ball.friction.x = ball.speed.x / 50;
+                ball.friction.y = ball.speed.y / 50;
+
+                ball.speed.subtract(ball.friction);
+
+                ball.position.add(ball.speed);
+            }
+        }
+
+        public drawBall(): void {
+            drawCircle(this.position, this.radius);
+        }
+
+        public drawPull(): void {
+            if (this.position !== vPointer) {
+                drawLine(this.position, vPointer);
+            }
+        }
+    }
+
     let crc2: CanvasRenderingContext2D;
 
     const timeSliceInMS: number = 1;
@@ -153,69 +217,5 @@ namespace Portfolio {
         crc2.stroke();
         crc2.fill();
     }
-
-    export class Ball {
-
-        position: Vector2D;
-        speed: Vector2D = new Vector2D(0, 0);
-        pull: Vector2D = new Vector2D(0, 0);
-        gravity: Vector2D = new Vector2D(0, gravity);
-        friction: Vector2D = new Vector2D(0, 0);
-        radius: number = ballRadius;
-        color: string = ballColor;
-        lineColor: string = lineColor;
-
-        constructor(_position: Vector2D, _color: string, _lineColor: string, _radius: number) {
-            this.position = _position;
-            this.color = _color;
-            this.lineColor = _lineColor;
-            this.radius = _radius;
-        }
-
-        public createLinkedBall(): Ball {
-            let newBallPosition = new Vector2D(this.position.x, this.position.y + this.radius * 2);
-            return new Ball(newBallPosition, this.color, this.lineColor, this.radius);
-        }
-
-        public moveBall(_pointer: Vector2D, _balls: Ball[]): void {
-            for (let i = 0; i < _balls.length; i++) {
-                let ball = _balls[i];
-
-                // Apply gravity and pull forces to each ball in the chain
-                ball.pull = ball.position.getDiff(_pointer);
-                ball.pull.x *= -pullForceFactor;
-                ball.pull.y *= -pullForceFactor;
-
-                ball.speed.add(ball.gravity);
-                ball.speed.add(ball.pull);
-
-                if (i > 0) {
-                    let prevBall = _balls[i - 1];
-                    let ballToPrevBall = ball.position.getDiff(prevBall.position);
-                    ballToPrevBall.x *= -pullForceFactor;
-                    ballToPrevBall.y *= -pullForceFactor;
-                    ball.speed.add(ballToPrevBall);
-                }
-
-                ball.friction.x = ball.speed.x / 50;
-                ball.friction.y = ball.speed.y / 50;
-
-                ball.speed.subtract(ball.friction);
-
-                ball.position.add(ball.speed);
-            }
-        }
-
-        public drawBall(): void {
-            drawCircle(this.position, this.radius);
-        }
-
-        public drawPull(): void {
-            if (this.position !== vPointer) {
-                drawLine(this.position, vPointer);
-            }
-        }
-    }
-
 
 }
