@@ -1,12 +1,11 @@
 var Portfolio;
 (function (Portfolio) {
+    var Vector2D = Vector.Vector2D;
     let crc2;
     const timeSliceInMS = 1;
     // Initial position
-    let position = 0;
+    //let position = 0;
     let gravity = 2;
-    let gravity2 = 2;
-    var Vector2D = Vector.Vector2D;
     //window.addEventListener("load", init);
     document.querySelector("#header_wrap").addEventListener("mousemove", trackMouseMove);
     document.querySelector("#header_wrap").addEventListener('mouseover', trackMouseMove);
@@ -30,6 +29,10 @@ var Portfolio;
     let lastPressedKey = "";
     let ballColor = "#495057";
     let lineColor = ballColor;
+    let lineWidth = 6;
+    let ballRadius = 15;
+    let pointerRadius = 3;
+    let pullForceFactor = 1 / 50;
     // Set the initial canvas size based on window dimensions
     try {
         init(null);
@@ -40,7 +43,8 @@ var Portfolio;
     function init(_event) {
         crc2 = Portfolio.canvas.getContext("2d");
         xMouse = Portfolio.canvas.width / 2;
-        yMouse = Portfolio.canvas.height / 2;
+        yMouse = 0;
+        vPointer = new Vector2D(xMouse, yMouse);
         setCanvasSize();
         // Adjust canvas size on window resize
         window.addEventListener("resize", setCanvasSize);
@@ -50,45 +54,16 @@ var Portfolio;
         animate();
     }
     function setCanvasSize() {
-        // Set canvas width and height to the current window size
         Portfolio.canvas.width = window.innerWidth;
         Portfolio.canvas.height = window.innerHeight;
         // Adjust the scale factor for canvas context to avoid pixelation or stretching
         Portfolio.canvas.getContext("2d").scale(window.innerWidth / Portfolio.canvas.width, window.innerHeight / Portfolio.canvas.height);
     }
     function trackMouseMove(_event) {
-        // Adjust for scaling and translation
-        /*
-            switch (lastPressedKey) {
-                case "p":
-                    xMouse = (_event.pageX - canvas.width / 2) * (canvas.width / window.innerWidth);
-                    yMouse = (_event.pageY - canvas.height / 2) * (canvas.height / window.innerHeight);
-                    break;
-                case "l":
-                    xMouse = (_event.layerX - canvas.width / 2) * (canvas.width / window.innerWidth);
-                    yMouse = (_event.layerY - canvas.height / 2) * (canvas.height / window.innerHeight);
-                case "o":
-                    xMouse = (_event.offsetX - canvas.width / 2) * (canvas.width / window.innerWidth);
-                    yMouse = (_event.offsetY - canvas.height / 2) * (canvas.height / window.innerHeight);
-                case "s":
-                    xMouse = (_event.screenX - canvas.width / 2) * (canvas.width / window.innerWidth);
-                    yMouse = (_event.screenY - canvas.height / 2) * (canvas.height / window.innerHeight);
-                case "m":
-                    xMouse = (_event.movementX - canvas.width / 2) * (canvas.width / window.innerWidth);
-                    yMouse = (_event.movementY - canvas.height / 2) * (canvas.height / window.innerHeight);
-                case "r":
-                    xMouse = (_event.x - canvas.width / 2) * (canvas.width / window.innerWidth);
-                    yMouse = (_event.y - canvas.height / 2) * (canvas.height / window.innerHeight);
-                case "":
-                    
-                case "c":
-                default:
-                }
-        */
-        xMouse = _event.clientX * (Portfolio.canvas.width / window.innerWidth); /*(_event.clientX - canvas.width / 2) */
-        yMouse = _event.clientY * (Portfolio.canvas.height / window.innerHeight); /*(_event.clientY - canvas.height / 2) */
-        vPointer.x = xMouse;
-        vPointer.y = yMouse;
+        const canvasRect = Portfolio.canvas.getBoundingClientRect();
+        xMouse = (_event.clientX - canvasRect.left) * (Portfolio.canvas.width / canvasRect.width);
+        yMouse = (_event.clientY - canvasRect.top) * (Portfolio.canvas.height / canvasRect.height);
+        vPointer = new Vector2D(xMouse, yMouse);
     }
     function onKeyDown(_event) {
         lastPressedKey = _event.key;
@@ -102,39 +77,30 @@ var Portfolio;
         crc2.stroke();
         crc2.fill();
     }
-    function drawBall(_radius) {
-        crc2.beginPath();
-        crc2.strokeStyle = ballColor;
-        crc2.fillStyle = ballColor;
-        crc2.arc(vBall.x, vBall.y, _radius, 0 * Math.PI, 2 * Math.PI, null);
-        crc2.stroke();
-        crc2.fill();
+    function drawBall() {
+        drawCircle(vBall, ballRadius);
     }
-    function drawBall2(_radius) {
-        crc2.beginPath();
-        crc2.strokeStyle = ballColor;
-        crc2.fillStyle = ballColor;
-        crc2.arc(vBall2.x, vBall2.y, _radius, 0 * Math.PI, 2 * Math.PI, null);
-        crc2.stroke();
-        crc2.fill();
+    function drawBall2() {
+        drawCircle(vBall2, ballRadius);
     }
-    function drawPointer(_radius) {
-        crc2.beginPath();
-        crc2.strokeStyle = ballColor;
-        crc2.fillStyle = ballColor;
-        crc2.arc(xMouse, yMouse, _radius, 0 * Math.PI, 2 * Math.PI, null);
-        crc2.stroke();
-        crc2.fill();
+    function drawPointer() {
+        drawCircle(vPointer, pointerRadius);
+    }
+    function drawPull() {
+        drawLine(vBall, vPointer);
+    }
+    function drawPull2() {
+        drawLine(vBall2, vBall);
     }
     function moveBall() {
         vPull = vBall.getDiff(vPointer);
-        vPull.x *= -1 / 50;
-        vPull.y *= -1 / 50;
+        vPull.x *= -pullForceFactor;
+        vPull.y *= -pullForceFactor;
         vPull2 = vBall2.getDiff(vBall);
-        vPull2.x *= -1 / 50;
-        vPull2.y *= -1 / 50;
-        vPull3.x = vPull2.x / -1;
-        vPull3.y = vPull2.y / -1;
+        vPull2.x *= -pullForceFactor;
+        vPull2.y *= -pullForceFactor;
+        vPull3.x = -vPull2.x;
+        vPull3.y = -vPull2.y;
         vSpeed.add(vGravity);
         vSpeed.add(vPull);
         vSpeed.add(vPull3);
@@ -148,45 +114,32 @@ var Portfolio;
         vSpeed2.subtract(vFriction2);
         vBall.add(vSpeed);
         vBall2.add(vSpeed2);
-        //console.log(vPointer, vPull, vSpeed, vBall, vFriction);
-    }
-    function drawPull(_width) {
-        crc2.beginPath();
-        crc2.strokeStyle = lineColor;
-        crc2.lineWidth = _width;
-        crc2.moveTo(vBall.x, vBall.y);
-        crc2.lineTo(vPointer.x, vPointer.y);
-        crc2.stroke();
-    }
-    function drawPull2(_width) {
-        crc2.beginPath();
-        crc2.strokeStyle = lineColor;
-        crc2.lineWidth = _width;
-        crc2.moveTo(vBall2.x, vBall2.y);
-        crc2.lineTo(vBall.x, vBall.y);
-        crc2.stroke();
     }
     function animate() {
         drawBackground(-Portfolio.canvas.width, -Portfolio.canvas.height, Portfolio.canvas.width * 2, Portfolio.canvas.height * 2);
-        drawPointer(7);
+        drawPointer();
         moveBall();
-        drawBall(20);
-        drawBall2(20);
-        drawPull(4);
-        drawPull2(3);
-        /*
-        ballColor = window.ballColor;
-        lineColor = window.lineColor;
-        */
+        drawBall();
+        drawBall2();
+        drawPull();
+        drawPull2();
         requestAnimationFrame(animate);
     }
+    function drawLine(_from, _to) {
+        crc2.beginPath();
+        crc2.strokeStyle = lineColor;
+        crc2.lineWidth = lineWidth;
+        crc2.moveTo(_from.x, _from.y);
+        crc2.lineTo(_to.x, _to.y);
+        crc2.stroke();
+    }
+    function drawCircle(_pos, _radius) {
+        crc2.beginPath();
+        crc2.strokeStyle = ballColor;
+        crc2.fillStyle = ballColor;
+        crc2.arc(_pos.x, _pos.y, _radius, 0 * Math.PI, 2 * Math.PI, null);
+        crc2.stroke();
+        crc2.fill();
+    }
 })(Portfolio || (Portfolio = {}));
-/*
-interface Window {
-
-    ballColor: string;
-    lineColor: string
-}
-
-*/ 
 //# sourceMappingURL=HeaderRubberBand.js.map
