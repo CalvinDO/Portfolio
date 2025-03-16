@@ -47,6 +47,7 @@ namespace Portfolio {
     let ballRadius: number = 16;
     let pointerRadius: number = 3;
 
+    let pullForceFactor: number = 1 / 50;
     // Set the initial canvas size based on window dimensions
 
     try {
@@ -78,46 +79,15 @@ namespace Portfolio {
 
     function setCanvasSize() {
 
-        // Set canvas width and height to the current window size
-
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
-
 
         // Adjust the scale factor for canvas context to avoid pixelation or stretching
         canvas.getContext("2d").scale(window.innerWidth / canvas.width, window.innerHeight / canvas.height);
     }
 
     function trackMouseMove(_event: MouseEvent): void {
-        // Adjust for scaling and translation
 
-        /*
-            switch (lastPressedKey) {
-                case "p":
-                    xMouse = (_event.pageX - canvas.width / 2) * (canvas.width / window.innerWidth);
-                    yMouse = (_event.pageY - canvas.height / 2) * (canvas.height / window.innerHeight);
-                    break;
-                case "l":
-                    xMouse = (_event.layerX - canvas.width / 2) * (canvas.width / window.innerWidth);
-                    yMouse = (_event.layerY - canvas.height / 2) * (canvas.height / window.innerHeight);
-                case "o":
-                    xMouse = (_event.offsetX - canvas.width / 2) * (canvas.width / window.innerWidth);
-                    yMouse = (_event.offsetY - canvas.height / 2) * (canvas.height / window.innerHeight);
-                case "s":
-                    xMouse = (_event.screenX - canvas.width / 2) * (canvas.width / window.innerWidth);
-                    yMouse = (_event.screenY - canvas.height / 2) * (canvas.height / window.innerHeight);
-                case "m":
-                    xMouse = (_event.movementX - canvas.width / 2) * (canvas.width / window.innerWidth);
-                    yMouse = (_event.movementY - canvas.height / 2) * (canvas.height / window.innerHeight);
-                case "r":
-                    xMouse = (_event.x - canvas.width / 2) * (canvas.width / window.innerWidth);
-                    yMouse = (_event.y - canvas.height / 2) * (canvas.height / window.innerHeight);
-                case "":
-                    
-                case "c":
-                default:
-                }
-        */
         const canvasRect = canvas.getBoundingClientRect();
 
         xMouse = (_event.clientX - canvasRect.left) * (canvas.width / canvasRect.width);
@@ -175,15 +145,15 @@ namespace Portfolio {
     function moveBall() {
 
         vPull = vBall.getDiff(vPointer);
-        vPull.x *= -1 / 50;
-        vPull.y *= -1 / 50;
+        vPull.x *= - pullForceFactor;
+        vPull.y *= -pullForceFactor;
 
         vPull2 = vBall2.getDiff(vBall);
-        vPull2.x *= -1 / 50;
-        vPull2.y *= -1 / 50;
+        vPull2.x *= -pullForceFactor;
+        vPull2.y *= -pullForceFactor;
 
-        vPull3.x = vPull2.x / -1;
-        vPull3.y = vPull2.y / -1;
+        vPull3.x = - vPull2.x;
+        vPull3.y = - vPull2.y;
 
         vSpeed.add(vGravity);
         vSpeed.add(vPull);
@@ -204,8 +174,6 @@ namespace Portfolio {
 
         vBall.add(vSpeed);
         vBall2.add(vSpeed2);
-
-        //console.log(vPointer, vPull, vSpeed, vBall, vFriction);
     }
 
     function animate() {
@@ -222,10 +190,6 @@ namespace Portfolio {
         drawPull();
         drawPull2();
 
-        /*
-        ballColor = window.ballColor;
-        lineColor = window.lineColor;
-        */
 
         requestAnimationFrame(animate);
     }
@@ -252,15 +216,4 @@ namespace Portfolio {
         crc2.fill();
     }
 
-
 }
-
-
-/*
-interface Window {
-
-    ballColor: string;
-    lineColor: string
-}
-
-*/

@@ -32,6 +32,7 @@ var Portfolio;
     let lineWidth = 4;
     let ballRadius = 16;
     let pointerRadius = 3;
+    let pullForceFactor = 1 / 50;
     // Set the initial canvas size based on window dimensions
     try {
         init(null);
@@ -52,41 +53,12 @@ var Portfolio;
         animate();
     }
     function setCanvasSize() {
-        // Set canvas width and height to the current window size
         Portfolio.canvas.width = window.innerWidth;
         Portfolio.canvas.height = window.innerHeight;
         // Adjust the scale factor for canvas context to avoid pixelation or stretching
         Portfolio.canvas.getContext("2d").scale(window.innerWidth / Portfolio.canvas.width, window.innerHeight / Portfolio.canvas.height);
     }
     function trackMouseMove(_event) {
-        // Adjust for scaling and translation
-        /*
-            switch (lastPressedKey) {
-                case "p":
-                    xMouse = (_event.pageX - canvas.width / 2) * (canvas.width / window.innerWidth);
-                    yMouse = (_event.pageY - canvas.height / 2) * (canvas.height / window.innerHeight);
-                    break;
-                case "l":
-                    xMouse = (_event.layerX - canvas.width / 2) * (canvas.width / window.innerWidth);
-                    yMouse = (_event.layerY - canvas.height / 2) * (canvas.height / window.innerHeight);
-                case "o":
-                    xMouse = (_event.offsetX - canvas.width / 2) * (canvas.width / window.innerWidth);
-                    yMouse = (_event.offsetY - canvas.height / 2) * (canvas.height / window.innerHeight);
-                case "s":
-                    xMouse = (_event.screenX - canvas.width / 2) * (canvas.width / window.innerWidth);
-                    yMouse = (_event.screenY - canvas.height / 2) * (canvas.height / window.innerHeight);
-                case "m":
-                    xMouse = (_event.movementX - canvas.width / 2) * (canvas.width / window.innerWidth);
-                    yMouse = (_event.movementY - canvas.height / 2) * (canvas.height / window.innerHeight);
-                case "r":
-                    xMouse = (_event.x - canvas.width / 2) * (canvas.width / window.innerWidth);
-                    yMouse = (_event.y - canvas.height / 2) * (canvas.height / window.innerHeight);
-                case "":
-                    
-                case "c":
-                default:
-                }
-        */
         const canvasRect = Portfolio.canvas.getBoundingClientRect();
         xMouse = (_event.clientX - canvasRect.left) * (Portfolio.canvas.width / canvasRect.width);
         yMouse = (_event.clientY - canvasRect.top) * (Portfolio.canvas.height / canvasRect.height);
@@ -122,13 +94,13 @@ var Portfolio;
     }
     function moveBall() {
         vPull = vBall.getDiff(vPointer);
-        vPull.x *= -1 / 50;
-        vPull.y *= -1 / 50;
+        vPull.x *= -pullForceFactor;
+        vPull.y *= -pullForceFactor;
         vPull2 = vBall2.getDiff(vBall);
-        vPull2.x *= -1 / 50;
-        vPull2.y *= -1 / 50;
-        vPull3.x = vPull2.x / -1;
-        vPull3.y = vPull2.y / -1;
+        vPull2.x *= -pullForceFactor;
+        vPull2.y *= -pullForceFactor;
+        vPull3.x = -vPull2.x;
+        vPull3.y = -vPull2.y;
         vSpeed.add(vGravity);
         vSpeed.add(vPull);
         vSpeed.add(vPull3);
@@ -142,7 +114,6 @@ var Portfolio;
         vSpeed2.subtract(vFriction2);
         vBall.add(vSpeed);
         vBall2.add(vSpeed2);
-        //console.log(vPointer, vPull, vSpeed, vBall, vFriction);
     }
     function animate() {
         drawBackground(-Portfolio.canvas.width, -Portfolio.canvas.height, Portfolio.canvas.width * 2, Portfolio.canvas.height * 2);
@@ -152,10 +123,6 @@ var Portfolio;
         drawBall2();
         drawPull();
         drawPull2();
-        /*
-        ballColor = window.ballColor;
-        lineColor = window.lineColor;
-        */
         requestAnimationFrame(animate);
     }
     function drawLine(_from, _to) {
@@ -175,12 +142,4 @@ var Portfolio;
         crc2.fill();
     }
 })(Portfolio || (Portfolio = {}));
-/*
-interface Window {
-
-    ballColor: string;
-    lineColor: string
-}
-
-*/ 
 //# sourceMappingURL=HeaderRubberBand.js.map
