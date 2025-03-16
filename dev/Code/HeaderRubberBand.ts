@@ -60,8 +60,9 @@ namespace Portfolio {
 
         crc2 = canvas.getContext("2d");
 
-        //xMouse = canvas.width / 2;
-        //yMouse = canvas.height / 2;
+        xMouse = canvas.width / 2;
+        yMouse = 0;
+        vPointer = new Vector2D(xMouse, yMouse);
 
         setCanvasSize();
 
@@ -93,8 +94,7 @@ namespace Portfolio {
         xMouse = (_event.clientX - canvasRect.left) * (canvas.width / canvasRect.width);
         yMouse = (_event.clientY - canvasRect.top) * (canvas.height / canvasRect.height);
 
-        vPointer.x = xMouse;
-        vPointer.y = yMouse;
+        vPointer = new Vector2D(xMouse, yMouse);
     }
 
     function onKeyDown(_event: KeyboardEvent): void {

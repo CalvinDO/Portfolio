@@ -42,8 +42,9 @@ var Portfolio;
     }
     function init(_event) {
         crc2 = Portfolio.canvas.getContext("2d");
-        //xMouse = canvas.width / 2;
-        //yMouse = canvas.height / 2;
+        xMouse = Portfolio.canvas.width / 2;
+        yMouse = 0;
+        vPointer = new Vector2D(xMouse, yMouse);
         setCanvasSize();
         // Adjust canvas size on window resize
         window.addEventListener("resize", setCanvasSize);
@@ -62,8 +63,7 @@ var Portfolio;
         const canvasRect = Portfolio.canvas.getBoundingClientRect();
         xMouse = (_event.clientX - canvasRect.left) * (Portfolio.canvas.width / canvasRect.width);
         yMouse = (_event.clientY - canvasRect.top) * (Portfolio.canvas.height / canvasRect.height);
-        vPointer.x = xMouse;
-        vPointer.y = yMouse;
+        vPointer = new Vector2D(xMouse, yMouse);
     }
     function onKeyDown(_event) {
         lastPressedKey = _event.key;
