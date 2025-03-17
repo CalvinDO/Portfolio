@@ -4,9 +4,7 @@ namespace Portfolio {
 
 
     let crc2: CanvasRenderingContext2D;
-
-    const timeSliceInMS: number = 1;
-
+    
 
     //window.addEventListener("load", init);
     document.querySelector("#header_wrap").addEventListener("mousemove", trackMouseMove);
@@ -91,7 +89,6 @@ namespace Portfolio {
     function animate(): void {
 
         drawBackground(-canvas.width, -canvas.height, canvas.width * 2, canvas.height * 2);
-
 
         calculateAndDrawBalls();
 

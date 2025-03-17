@@ -2,7 +2,6 @@ var Portfolio;
 (function (Portfolio) {
     var Vector2D = Vector.Vector2D;
     let crc2;
-    const timeSliceInMS = 1;
     //window.addEventListener("load", init);
     document.querySelector("#header_wrap").addEventListener("mousemove", trackMouseMove);
     document.querySelector("#header_wrap").addEventListener('mouseover', trackMouseMove);
