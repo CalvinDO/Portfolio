@@ -177,7 +177,7 @@ namespace Portfolio {
 
     function trackTouchMove(_event: TouchEvent): void {
 
-        if (_event.type != "touchend" && _event.type != "touchcancel") {
+        if (_event.type == 'touchmove') {
             _event.preventDefault();
         }
 
