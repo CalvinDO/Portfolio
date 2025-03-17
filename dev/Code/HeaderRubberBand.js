@@ -13,7 +13,7 @@ var Portfolio;
         }
         createLinkedBall() {
             let newBallPosition = new Vector2D(this.position.x, this.position.y + this.radius * 2);
-            return new Ball(newBallPosition, this, false, this.radius);
+            return new Ball(newBallPosition, this, false, Ball.defaultRadius);
         }
         calculatePulls(_balls) {
             if (this.isKinematic || !this.parent) {
@@ -50,7 +50,7 @@ var Portfolio;
         }
     }
     Ball.defaultRadius = 15;
-    Ball.pullForceFactor = 1 / 50;
+    Ball.pullForceFactor = 1 / 25;
     Portfolio.Ball = Ball;
     let crc2;
     //window.addEventListener("load", init);
@@ -78,7 +78,7 @@ var Portfolio;
         Portfolio.vPointer = new Vector2D(Portfolio.canvas.width / 2, 0);
         setCanvasSize();
         window.addEventListener("resize", setCanvasSize);
-        generateChain(4);
+        generateChain(7);
         animate();
     }
     Portfolio.initHeaderR = initHeaderR;

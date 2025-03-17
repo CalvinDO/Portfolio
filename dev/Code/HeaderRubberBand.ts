@@ -5,7 +5,7 @@ namespace Portfolio {
     export class Ball {
 
         private static defaultRadius: number = 15;
-        private static pullForceFactor: number = 1 / 50;
+        private static pullForceFactor: number = 1 / 25;
 
         private position: Vector2D;
         private speed: Vector2D = new Vector2D(0, 0);
@@ -34,7 +34,7 @@ namespace Portfolio {
         public createLinkedBall(): Ball {
 
             let newBallPosition = new Vector2D(this.position.x, this.position.y + this.radius * 2);
-            return new Ball(newBallPosition, this, false, this.radius);
+            return new Ball(newBallPosition, this, false, Ball.defaultRadius);
         }
 
         public calculatePulls(_balls: Ball[]): void {
@@ -132,7 +132,7 @@ namespace Portfolio {
 
         window.addEventListener("resize", setCanvasSize);
 
-        generateChain(4);
+        generateChain(7);
 
         animate();
     }
