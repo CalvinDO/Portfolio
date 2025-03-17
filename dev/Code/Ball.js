@@ -1,95 +1,56 @@
-/*
-
-namespace Portfolio {
-
-    import Vector2D = Vector.Vector2D;
-
-    export class Ball {
-
-        private static defaultRadius: number = 15;
-        private static pullForceFactor: number = 1 / 50;
-
-        private position: Vector2D;
-        private speed: Vector2D = new Vector2D(0, 0);
-
-        private radius: number;
-
-        private parent: Ball;
-        private childBall: Ball;
-
-        private isKinematic: boolean;
-
-
-        constructor(_position: Vector2D, _parent?: Ball, _isKinematic?: boolean, _radius?: number) {
-
+var Portfolio;
+(function (Portfolio) {
+    var Vector2D = Vector.Vector2D;
+    class Ball {
+        constructor(_position, _parent, _isKinematic, _radius) {
+            this.speed = new Vector2D(0, 0);
             this.position = _position;
             this.parent = _parent;
-
             if (this.parent) {
                 this.parent.childBall = this;
             }
-
             this.radius = _radius || Ball.defaultRadius;
-
         }
-
-        public createLinkedBall(): Ball {
-
+        createLinkedBall() {
             let newBallPosition = new Vector2D(this.position.x, this.position.y + this.radius * 2);
             return new Ball(newBallPosition, this, false, this.radius);
         }
-
-        public calculatePulls(_balls: Ball[]): void {
-
+        calculatePulls(_balls) {
             if (this.isKinematic || !this.parent) {
-
-                this.position.setVector(vPointer);
-
+                this.position.setVector(Portfolio.vPointer);
                 return;
             }
-
-            let pullToParent: Vector2D = this.position.getDiff(this.parent.position);
-            pullToParent.scale(- Ball.pullForceFactor);
+            let pullToParent = this.position.getDiff(this.parent.position);
+            pullToParent.scale(-Ball.pullForceFactor);
             this.speed.add(pullToParent);
-
-
             if (this.childBall) {
-
-                let pullToChild: Vector2D = this.position.getDiff(this.childBall.position);
-                pullToChild.scale(- Ball.pullForceFactor);
+                let pullToChild = this.position.getDiff(this.childBall.position);
+                pullToChild.scale(-Ball.pullForceFactor);
                 this.speed.add(pullToChild);
             }
-
-
-            this.speed.add(gravity);
-
-            let friction: Vector2D = new Vector2D(0, 0);
+            this.speed.add(Portfolio.gravity);
+            let friction = new Vector2D(0, 0);
             friction.setVector(this.speed);
             friction.scale(1 / 50);
-
             this.speed.subtract(friction);
-
             this.position.add(this.speed);
         }
-
-        public drawBall(): void {
-            drawCircle(this.position, this.radius);
+        drawBall() {
+            Portfolio.drawCircle(this.position, this.radius);
         }
-
-        public drawConnection(): void {
+        drawConnection() {
             if (this.parent) {
-                drawLine(this.position, this.parent.position);
+                Portfolio.drawLine(this.position, this.parent.position);
             }
         }
-
-        public calculateAndDraw(_balls: Ball[]): void {
-
+        calculateAndDraw(_balls) {
             this.calculatePulls(_balls);
             this.drawBall();
             this.drawConnection();
         }
     }
-}
-
-*/ 
+    Ball.defaultRadius = 15;
+    Ball.pullForceFactor = 1 / 50;
+    Portfolio.Ball = Ball;
+})(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=Ball.js.map

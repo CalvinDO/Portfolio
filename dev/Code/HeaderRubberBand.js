@@ -16,13 +16,14 @@ var Portfolio;
     Portfolio.vPointer = new Vector2D(0, 0);
     let lastPressedKey = "";
     let balls = [];
-    try {
-        init(null);
-    }
-    catch (error) {
-        console.warn("HeaderRubberBand tries to call init before load: ", error);
-    }
-    function init(_event) {
+    /*
+        try {
+            init(null);
+        } catch (error) {
+            console.warn("HeaderRubberBand tries to call init before load: ", error);
+        }
+    */
+    function initHeaderR(_event) {
         crc2 = Portfolio.canvas.getContext("2d");
         Portfolio.vPointer = new Vector2D(Portfolio.canvas.width / 2, 0);
         setCanvasSize();
@@ -30,6 +31,7 @@ var Portfolio;
         generateChain(4);
         animate();
     }
+    Portfolio.initHeaderR = initHeaderR;
     function setCanvasSize() {
         Portfolio.canvas.width = window.innerWidth;
         Portfolio.canvas.height = window.innerHeight;
@@ -46,7 +48,7 @@ var Portfolio;
     }
     window.addEventListener('keydown', onKeyDown);
     function generateChain(_num) {
-        let previousBall = new Ball(Portfolio.vPointer, null, true, pointerRadius);
+        let previousBall = new Portfolio.Ball(Portfolio.vPointer, null, true, pointerRadius);
         balls.push(previousBall);
         for (let i = 1; i < _num; i++) {
             let newBall = previousBall.createLinkedBall();
@@ -90,56 +92,5 @@ var Portfolio;
         crc2.fill();
     }
     Portfolio.drawCircle = drawCircle;
-    class Ball {
-        constructor(_position, _parent, _isKinematic, _radius) {
-            this.speed = new Vector2D(0, 0);
-            this.position = _position;
-            this.parent = _parent;
-            if (this.parent) {
-                this.parent.childBall = this;
-            }
-            this.radius = _radius || Ball.defaultRadius;
-        }
-        createLinkedBall() {
-            let newBallPosition = new Vector2D(this.position.x, this.position.y + this.radius * 2);
-            return new Ball(newBallPosition, this, false, this.radius);
-        }
-        calculatePulls(_balls) {
-            if (this.isKinematic || !this.parent) {
-                this.position.setVector(Portfolio.vPointer);
-                return;
-            }
-            let pullToParent = this.position.getDiff(this.parent.position);
-            pullToParent.scale(-Ball.pullForceFactor);
-            this.speed.add(pullToParent);
-            if (this.childBall) {
-                let pullToChild = this.position.getDiff(this.childBall.position);
-                pullToChild.scale(-Ball.pullForceFactor);
-                this.speed.add(pullToChild);
-            }
-            this.speed.add(Portfolio.gravity);
-            let friction = new Vector2D(0, 0);
-            friction.setVector(this.speed);
-            friction.scale(1 / 50);
-            this.speed.subtract(friction);
-            this.position.add(this.speed);
-        }
-        drawBall() {
-            drawCircle(this.position, this.radius);
-        }
-        drawConnection() {
-            if (this.parent) {
-                drawLine(this.position, this.parent.position);
-            }
-        }
-        calculateAndDraw(_balls) {
-            this.calculatePulls(_balls);
-            this.drawBall();
-            this.drawConnection();
-        }
-    }
-    Ball.defaultRadius = 15;
-    Ball.pullForceFactor = 1 / 50;
-    Portfolio.Ball = Ball;
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=HeaderRubberBand.js.map

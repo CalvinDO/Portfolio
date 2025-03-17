@@ -1,5 +1,3 @@
-/*
-
 namespace Portfolio {
 
     import Vector2D = Vector.Vector2D;
@@ -90,5 +88,3 @@ namespace Portfolio {
         }
     }
 }
-
-*/
