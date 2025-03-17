@@ -4,9 +4,9 @@ namespace Portfolio {
 
     export class Ball {
 
-        private static defaultRadius: number = 10;
-        private static pullForceFactor: number = 1 / 25;
-        private static frictionConstant: number = 0.5;
+        private static defaultRadius: number = 4;
+        private static pullForceFactor: number = 15;
+        private static frictionConstant: number = 12;
 
         private position: Vector2D;
         private speed: Vector2D = new Vector2D(0, 0);
@@ -48,8 +48,7 @@ namespace Portfolio {
             }
 
             let pullToParent: Vector2D = this.position.getDiff(this.parent.position);
-            pullToParent.scale(- Ball.pullForceFactor);
-            pullToParent.scale(deltaTime);
+            pullToParent.scale(- Ball.pullForceFactor * deltaTime);
 
             this.speed.add(pullToParent);
 
@@ -57,18 +56,21 @@ namespace Portfolio {
             if (this.childBall) {
 
                 let pullToChild: Vector2D = this.position.getDiff(this.childBall.position);
-                pullToChild.scale(- Ball.pullForceFactor);
-                pullToChild.scale(deltaTime);
+                pullToChild.scale(- Ball.pullForceFactor * deltaTime);
                 this.speed.add(pullToChild);
             }
 
+            let scaledGravity: Vector2D = new Vector2D(0, 0);
+            scaledGravity.setVector(gravity);
+            scaledGravity.scale(deltaTime);
+            this.speed.add(scaledGravity);
 
-            this.speed.add(gravity);
 
-            let friction: Vector2D = new Vector2D(Math.pow(this.speed.x, 2), Math.pow(this.speed.y, 2));
+            let friction: Vector2D = new Vector2D(this.speed.x, this.speed.y);
             friction.scale(Ball.frictionConstant);
             friction.scale(deltaTime);
             this.speed.subtract(friction);
+
 
             this.position.add(this.speed);
         }
@@ -103,7 +105,7 @@ namespace Portfolio {
 
     // Initial position
     //let position = 0;
-    export let gravity: Vector2D = new Vector2D(0, 2);
+    export let gravity: Vector2D = new Vector2D(0, 30);
 
     let lineWidth: number = 6;
     let lineColor: string = "#495057";
@@ -115,9 +117,9 @@ namespace Portfolio {
 
     let lastPressedKey: string = "";
 
-
-
     let balls: Ball[] = [];
+
+    let chainLength: number = 21;
 
     //avarage good frameRate for deltaTime as start;
     export let deltaTime: number = 0.020;
@@ -131,6 +133,11 @@ namespace Portfolio {
 
 
     export function initHeaderR(_event: Event): void {
+
+        if (!canvas) {
+            canvas = document.querySelector("canvas");
+        }
+
         crc2 = canvas.getContext("2d");
 
         vPointer = new Vector2D(canvas.width / 2, 0);
@@ -139,7 +146,7 @@ namespace Portfolio {
 
         window.addEventListener("resize", setCanvasSize);
 
-        generateChain(7);
+        generateChain(chainLength);
 
         animate();
     }

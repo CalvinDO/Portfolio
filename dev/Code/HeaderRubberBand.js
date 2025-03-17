@@ -21,17 +21,18 @@ var Portfolio;
                 return;
             }
             let pullToParent = this.position.getDiff(this.parent.position);
-            pullToParent.scale(-Ball.pullForceFactor);
-            pullToParent.scale(Portfolio.deltaTime);
+            pullToParent.scale(-Ball.pullForceFactor * Portfolio.deltaTime);
             this.speed.add(pullToParent);
             if (this.childBall) {
                 let pullToChild = this.position.getDiff(this.childBall.position);
-                pullToChild.scale(-Ball.pullForceFactor);
-                pullToChild.scale(Portfolio.deltaTime);
+                pullToChild.scale(-Ball.pullForceFactor * Portfolio.deltaTime);
                 this.speed.add(pullToChild);
             }
-            this.speed.add(Portfolio.gravity);
-            let friction = new Vector2D(Math.pow(this.speed.x, 2), Math.pow(this.speed.y, 2));
+            let scaledGravity = new Vector2D(0, 0);
+            scaledGravity.setVector(Portfolio.gravity);
+            scaledGravity.scale(Portfolio.deltaTime);
+            this.speed.add(scaledGravity);
+            let friction = new Vector2D(this.speed.x, this.speed.y);
             friction.scale(Ball.frictionConstant);
             friction.scale(Portfolio.deltaTime);
             this.speed.subtract(friction);
@@ -51,9 +52,9 @@ var Portfolio;
             this.drawConnection();
         }
     }
-    Ball.defaultRadius = 10;
-    Ball.pullForceFactor = 1 / 25;
-    Ball.frictionConstant = 0.5;
+    Ball.defaultRadius = 4;
+    Ball.pullForceFactor = 15;
+    Ball.frictionConstant = 12;
     Portfolio.Ball = Ball;
     let crc2;
     //window.addEventListener("load", init);
@@ -62,7 +63,7 @@ var Portfolio;
     document.querySelector("#header_wrap").addEventListener('mouseenter', trackMouseMove);
     // Initial position
     //let position = 0;
-    Portfolio.gravity = new Vector2D(0, 2);
+    Portfolio.gravity = new Vector2D(0, 30);
     let lineWidth = 6;
     let lineColor = "#495057";
     let ballColor = lineColor;
@@ -70,6 +71,7 @@ var Portfolio;
     Portfolio.vPointer = new Vector2D(0, 0);
     let lastPressedKey = "";
     let balls = [];
+    let chainLength = 21;
     //avarage good frameRate for deltaTime as start;
     Portfolio.deltaTime = 0.020;
     let timeLastFrame = Date.now();
@@ -80,11 +82,14 @@ var Portfolio;
         console.warn("HeaderRubberBand fast call error:", error);
     }
     function initHeaderR(_event) {
+        if (!Portfolio.canvas) {
+            Portfolio.canvas = document.querySelector("canvas");
+        }
         crc2 = Portfolio.canvas.getContext("2d");
         Portfolio.vPointer = new Vector2D(Portfolio.canvas.width / 2, 0);
         setCanvasSize();
         window.addEventListener("resize", setCanvasSize);
-        generateChain(7);
+        generateChain(chainLength);
         animate();
     }
     Portfolio.initHeaderR = initHeaderR;
