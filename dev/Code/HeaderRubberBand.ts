@@ -2,13 +2,10 @@ namespace Portfolio {
 
     import Vector2D = Vector.Vector2D;
 
+
     let crc2: CanvasRenderingContext2D;
 
     const timeSliceInMS: number = 1;
-
-    // Initial position
-    //let position = 0;
-    let gravity = 2;
 
 
     //window.addEventListener("load", init);
@@ -16,39 +13,24 @@ namespace Portfolio {
     document.querySelector("#header_wrap").addEventListener('mouseover', trackMouseMove);
     document.querySelector("#header_wrap").addEventListener('mouseenter', trackMouseMove);
 
-    let vPull: Vector2D = new Vector2D(0, 0);
-    let vPull2: Vector2D = new Vector2D(0, 0);
-    let vPull3: Vector2D = new Vector2D(0, 0);
 
-    let vSpeed: Vector2D = new Vector2D(0, 0);
-    let vSpeed2: Vector2D = new Vector2D(0, 0);
-    //let vResult: Vector2D = new Vector2D(0, 0);
-    let vBall: Vector2D = new Vector2D(0, 0);
-    let vBall2: Vector2D = new Vector2D(0, 0);
+    // Initial position
+    //let position = 0;
+    export let gravity: Vector2D = new Vector2D(0, -2);
 
-    let vPointer: Vector2D = new Vector2D(0, 0);
+    let lineWidth: number = 6;
+    let lineColor: string = "#495057";
+    let ballColor: string = lineColor;
 
-    let vGravity: Vector2D = new Vector2D(0, gravity);
-    let vGravity2: Vector2D = new Vector2D(0, gravity);
-    let vFriction: Vector2D = new Vector2D(0, 0);
-    let vFriction2: Vector2D = new Vector2D(0, 0);
+    let pointerRadius: number = 3;
 
-    let xMouse: number = 0;
-    let yMouse: number = 0;
-
-    let i: number = 0;
+    export let vPointer: Vector2D = new Vector2D(0, 0);
 
     let lastPressedKey: string = "";
 
-    let ballColor: string = "#495057";
-    let lineColor: string = ballColor;
 
-    let lineWidth: number = 6;
-    let ballRadius: number = 15;
-    let pointerRadius: number = 3;
 
-    let pullForceFactor: number = 1 / 50;
-    // Set the initial canvas size based on window dimensions
+    let balls: Ball[] = [];
 
     try {
         init(null);
@@ -57,33 +39,24 @@ namespace Portfolio {
     }
 
     function init(_event: Event): void {
-
         crc2 = canvas.getContext("2d");
 
-        xMouse = canvas.width / 2;
-        yMouse = 0;
-        vPointer = new Vector2D(xMouse, yMouse);
+        vPointer = new Vector2D(canvas.width / 2, 0);
 
         setCanvasSize();
 
-        // Adjust canvas size on window resize
         window.addEventListener("resize", setCanvasSize);
 
-        //canvas = document.querySelector("canvas");
-        //crc2.translate(canvas.width / 2, canvas.height / 2);
+        generateChain(4);
 
-
-
-        console.log("init executed. Animate");
         animate();
     }
 
-    function setCanvasSize() {
+    function setCanvasSize(): void {
 
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
 
-        // Adjust the scale factor for canvas context to avoid pixelation or stretching
         canvas.getContext("2d").scale(window.innerWidth / canvas.width, window.innerHeight / canvas.height);
     }
 
@@ -91,10 +64,10 @@ namespace Portfolio {
 
         const canvasRect = canvas.getBoundingClientRect();
 
-        xMouse = (_event.clientX - canvasRect.left) * (canvas.width / canvasRect.width);
-        yMouse = (_event.clientY - canvasRect.top) * (canvas.height / canvasRect.height);
+        let xPointer: number = (_event.clientX - canvasRect.left) * (canvas.width / canvasRect.width);
+        let yPointer: number = (_event.clientY - canvasRect.top) * (canvas.height / canvasRect.height);
 
-        vPointer = new Vector2D(xMouse, yMouse);
+        vPointer = new Vector2D(xPointer, yPointer);
     }
 
     function onKeyDown(_event: KeyboardEvent): void {
@@ -103,9 +76,36 @@ namespace Portfolio {
 
     window.addEventListener('keydown', onKeyDown);
 
+    function generateChain(_num: number): void {
 
-    function drawBackground(_x: number, _y: number, _w: number, _h: number) {
+        let previousBall: Ball = new Ball(vPointer, null, true, pointerRadius);
+        balls.push(previousBall);
 
+        for (let i = 1; i < _num; i++) {
+            let newBall = previousBall.createLinkedBall();
+            balls.push(newBall);
+            previousBall = newBall;
+        }
+    }
+
+    function animate(): void {
+
+        drawBackground(-canvas.width, -canvas.height, canvas.width * 2, canvas.height * 2);
+
+
+        calculateAndDrawBalls();
+
+        requestAnimationFrame(animate);
+    }
+
+    function calculateAndDrawBalls() {
+
+        for (let ball of balls) {
+            ball.calculateAndDraw(balls);
+        }
+    }
+
+    function drawBackground(_x: number, _y: number, _w: number, _h: number): void {
         crc2.beginPath();
         crc2.strokeStyle = 'hsl(210, 10.80%, 14.50%)';
         crc2.fillStyle = 'hsl(210, 10.80%, 14.50%)';
@@ -114,88 +114,7 @@ namespace Portfolio {
         crc2.fill()
     }
 
-    function drawBall() {
-
-        drawCircle(vBall, ballRadius);
-    }
-
-    function drawBall2() {
-
-        drawCircle(vBall2, ballRadius);
-    }
-
-    function drawPointer() {
-
-        drawCircle(vPointer, pointerRadius);
-    }
-
-
-    function drawPull(): void {
-
-        drawLine(vBall, vPointer);
-    }
-
-
-    function drawPull2(): void {
-
-        drawLine(vBall2, vBall);
-    }
-
-
-    function moveBall() {
-
-        vPull = vBall.getDiff(vPointer);
-        vPull.x *= - pullForceFactor;
-        vPull.y *= -pullForceFactor;
-
-        vPull2 = vBall2.getDiff(vBall);
-        vPull2.x *= -pullForceFactor;
-        vPull2.y *= -pullForceFactor;
-
-        vPull3.x = - vPull2.x;
-        vPull3.y = - vPull2.y;
-
-        vSpeed.add(vGravity);
-        vSpeed.add(vPull);
-
-        vSpeed.add(vPull3);
-
-        vSpeed2.add(vGravity2);
-        vSpeed2.add(vPull2);
-
-        vFriction.x = vSpeed.x / 50;
-        vFriction.y = vSpeed.y / 50;
-
-        vFriction2.x = vSpeed2.x / 50;
-        vFriction2.y = vSpeed2.y / 50;
-
-        vSpeed.subtract(vFriction);
-        vSpeed2.subtract(vFriction2);
-
-        vBall.add(vSpeed);
-        vBall2.add(vSpeed2);
-    }
-
-    function animate() {
-
-        drawBackground(-canvas.width, -canvas.height, canvas.width * 2, canvas.height * 2);
-
-        drawPointer();
-
-        moveBall();
-
-        drawBall();
-        drawBall2();
-
-        drawPull();
-        drawPull2();
-
-
-        requestAnimationFrame(animate);
-    }
-
-
-    function drawLine(_from: Vector.Vector2D, _to: Vector.Vector2D) {
+    export function drawLine(_from: Vector2D, _to: Vector2D): void {
 
         crc2.beginPath();
         crc2.strokeStyle = lineColor;
@@ -205,8 +124,7 @@ namespace Portfolio {
         crc2.stroke();
     }
 
-
-    function drawCircle(_pos: Vector.Vector2D, _radius: number) {
+    export function drawCircle(_pos: Vector2D, _radius: number): void {
 
         crc2.beginPath();
         crc2.strokeStyle = ballColor;
