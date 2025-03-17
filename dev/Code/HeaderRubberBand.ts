@@ -14,7 +14,7 @@ namespace Portfolio {
 
     // Initial position
     //let position = 0;
-    export let gravity: Vector2D = new Vector2D(0, -2);
+    export let gravity: Vector2D = new Vector2D(0, 2);
 
     let lineWidth: number = 6;
     let lineColor: string = "#495057";

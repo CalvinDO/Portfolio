@@ -8,7 +8,7 @@ var Portfolio;
     document.querySelector("#header_wrap").addEventListener('mouseenter', trackMouseMove);
     // Initial position
     //let position = 0;
-    Portfolio.gravity = new Vector2D(0, -2);
+    Portfolio.gravity = new Vector2D(0, 2);
     let lineWidth = 6;
     let lineColor = "#495057";
     let ballColor = lineColor;
