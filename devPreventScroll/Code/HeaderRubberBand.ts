@@ -177,19 +177,21 @@ namespace Portfolio {
 
     function trackTouchMove(_event: TouchEvent): void {
 
-        _event.preventDefault();
+        if (_event.type != "touchend" && _event.type != "touchcancel") {
+            _event.preventDefault();
+        }
 
         const touch = _event.touches[0] || _event.changedTouches[0];
 
-        if (!touch) return; 
+        if (!touch) return;
 
         const canvasRect = canvas.getBoundingClientRect();
 
-       
+
         let xPointer: number = (touch.clientX - canvasRect.left) * (canvas.width / canvasRect.width);
         let yPointer: number = (touch.clientY - canvasRect.top) * (canvas.height / canvasRect.height);
 
-       
+
         vPointer = new Vector2D(xPointer, yPointer);
     }
 

@@ -111,7 +111,9 @@ var Portfolio;
         Portfolio.vPointer = new Vector2D(xPointer, yPointer);
     }
     function trackTouchMove(_event) {
-        _event.preventDefault();
+        if (_event.type != "touchend" && _event.type != "touchcancel") {
+            _event.preventDefault();
+        }
         const touch = _event.touches[0] || _event.changedTouches[0];
         if (!touch)
             return;
