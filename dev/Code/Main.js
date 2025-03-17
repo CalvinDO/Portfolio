@@ -19,21 +19,6 @@ var Portfolio;
     let clickedLinks;
     let devToolsUsage = [];
     document.documentElement.lang = "de";
-    setupHead();
-    function setupHead() {
-        function loadScript(src, callback) {
-            const script = document.createElement('script');
-            script.src = src;
-            script.onload = callback;
-            document.head.appendChild(script);
-        }
-        loadScript('Code/Ball.js', function () {
-            loadScript('Code/HeaderRubberBand.js', function () {
-                // Both scripts are loaded, you can now safely call init()
-                Portfolio.initHeaderR(null);
-            });
-        });
-    }
     setupHeader();
     try {
         removeForkme();

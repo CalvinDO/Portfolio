@@ -21,25 +21,6 @@ namespace Portfolio {
 
     document.documentElement.lang = "de";
 
-    setupHead();
-
-    function setupHead(): void {
-
-        function loadScript(src, callback) {
-            const script = document.createElement('script');
-            script.src = src;
-            script.onload = callback;
-            document.head.appendChild(script);
-        }
-
-        loadScript('Code/Ball.js', function () {
-            loadScript('Code/HeaderRubberBand.js', function () {
-                // Both scripts are loaded, you can now safely call init()
-                initHeaderR(null);
-            });
-        });
-    }
-
     setupHeader();
 
     try {
