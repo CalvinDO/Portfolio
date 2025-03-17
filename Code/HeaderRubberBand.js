@@ -1,74 +1,138 @@
 var Portfolio;
 (function (Portfolio) {
+    var _a;
     var Vector2D = Vector.Vector2D;
+    class Ball {
+        constructor(_position, _parent, _isKinematic, _radius) {
+            this.speed = new Vector2D(0, 0);
+            this.position = _position;
+            this.parent = _parent;
+            if (this.parent) {
+                this.parent.childBall = this;
+            }
+            this.radius = _radius || Ball.defaultRadius;
+        }
+        createLinkedBall() {
+            let newBallPosition = new Vector2D(this.position.x, this.position.y + this.radius * 2);
+            return new Ball(newBallPosition, this, false, Ball.defaultRadius);
+        }
+        calculate(_balls) {
+            if (this.isKinematic || !this.parent) {
+                this.position.setVector(Portfolio.vPointer);
+                return;
+            }
+            let pullToParent = this.position.getDiff(this.parent.position);
+            pullToParent.scale(-Ball.pullForceFactor * Portfolio.deltaTime);
+            this.speed.add(pullToParent);
+            if (this.childBall) {
+                let pullToChild = this.position.getDiff(this.childBall.position);
+                pullToChild.scale(-Ball.pullForceFactor * Portfolio.deltaTime);
+                this.speed.add(pullToChild);
+            }
+            let scaledGravity = new Vector2D(0, 0);
+            scaledGravity.setVector(Portfolio.gravity);
+            scaledGravity.scale(Portfolio.deltaTime);
+            this.speed.add(scaledGravity);
+            let friction = new Vector2D(this.speed.x, this.speed.y);
+            friction.scale(Ball.frictionConstant);
+            friction.scale(Portfolio.deltaTime);
+            this.speed.subtract(friction);
+            this.position.add(this.speed);
+        }
+        drawBall() {
+            drawCircle(this.position, this.radius);
+        }
+        drawConnection() {
+            if (this.parent) {
+                drawLine(this.position, this.parent.position);
+            }
+        }
+        calculateAndDraw(_balls) {
+            this.calculate(_balls);
+            this.drawBall();
+            this.drawConnection();
+        }
+    }
+    _a = Ball;
+    Ball.defaultRadius = 15;
+    Ball.pullForceFactor = 1;
+    Ball.frictionConstant = _a.pullForceFactor * 1.618;
+    Portfolio.Ball = Ball;
     let crc2;
-    const timeSliceInMS = 1;
-    // Initial position
-    //let position = 0;
-    let gravity = 2;
     //window.addEventListener("load", init);
     document.querySelector("#header_wrap").addEventListener("mousemove", trackMouseMove);
     document.querySelector("#header_wrap").addEventListener('mouseover', trackMouseMove);
     document.querySelector("#header_wrap").addEventListener('mouseenter', trackMouseMove);
-    let vPull = new Vector2D(0, 0);
-    let vPull2 = new Vector2D(0, 0);
-    let vPull3 = new Vector2D(0, 0);
-    let vSpeed = new Vector2D(0, 0);
-    let vSpeed2 = new Vector2D(0, 0);
-    //let vResult: Vector2D = new Vector2D(0, 0);
-    let vBall = new Vector2D(0, 0);
-    let vBall2 = new Vector2D(0, 0);
-    let vPointer = new Vector2D(0, 0);
-    let vGravity = new Vector2D(0, gravity);
-    let vGravity2 = new Vector2D(0, gravity);
-    let vFriction = new Vector2D(0, 0);
-    let vFriction2 = new Vector2D(0, 0);
-    let xMouse = 0;
-    let yMouse = 0;
-    let i = 0;
-    let lastPressedKey = "";
-    let ballColor = "#495057";
-    let lineColor = ballColor;
+    // Initial position
+    //let position = 0;
+    Portfolio.gravity = new Vector2D(0, 100);
     let lineWidth = 6;
-    let ballRadius = 15;
+    let lineColor = "#495057";
+    let ballColor = lineColor;
     let pointerRadius = 3;
-    let pullForceFactor = 1 / 50;
-    // Set the initial canvas size based on window dimensions
+    Portfolio.vPointer = new Vector2D(0, 0);
+    let lastPressedKey = "";
+    let balls = [];
+    let chainLength = 3;
+    //avarage good frameRate for deltaTime as start;
+    Portfolio.deltaTime = 0.020;
+    let timeLastFrame = Date.now();
     try {
-        init(null);
+        initHeaderR(null);
     }
     catch (error) {
-        console.warn("HeaderRubberBand tries to call init before load: ", error);
+        console.warn("HeaderRubberBand fast call error:", error);
     }
-    function init(_event) {
+    function initHeaderR(_event) {
+        if (!Portfolio.canvas) {
+            Portfolio.canvas = document.querySelector("canvas");
+        }
         crc2 = Portfolio.canvas.getContext("2d");
-        xMouse = Portfolio.canvas.width / 2;
-        yMouse = 0;
-        vPointer = new Vector2D(xMouse, yMouse);
+        Portfolio.vPointer = new Vector2D(Portfolio.canvas.width / 2, 0);
         setCanvasSize();
-        // Adjust canvas size on window resize
         window.addEventListener("resize", setCanvasSize);
-        //canvas = document.querySelector("canvas");
-        //crc2.translate(canvas.width / 2, canvas.height / 2);
-        console.log("init executed. Animate");
+        generateChain(chainLength);
         animate();
     }
+    Portfolio.initHeaderR = initHeaderR;
     function setCanvasSize() {
         Portfolio.canvas.width = window.innerWidth;
         Portfolio.canvas.height = window.innerHeight;
-        // Adjust the scale factor for canvas context to avoid pixelation or stretching
         Portfolio.canvas.getContext("2d").scale(window.innerWidth / Portfolio.canvas.width, window.innerHeight / Portfolio.canvas.height);
     }
     function trackMouseMove(_event) {
         const canvasRect = Portfolio.canvas.getBoundingClientRect();
-        xMouse = (_event.clientX - canvasRect.left) * (Portfolio.canvas.width / canvasRect.width);
-        yMouse = (_event.clientY - canvasRect.top) * (Portfolio.canvas.height / canvasRect.height);
-        vPointer = new Vector2D(xMouse, yMouse);
+        let xPointer = (_event.clientX - canvasRect.left) * (Portfolio.canvas.width / canvasRect.width);
+        let yPointer = (_event.clientY - canvasRect.top) * (Portfolio.canvas.height / canvasRect.height);
+        Portfolio.vPointer = new Vector2D(xPointer, yPointer);
     }
     function onKeyDown(_event) {
         lastPressedKey = _event.key;
     }
     window.addEventListener('keydown', onKeyDown);
+    function generateChain(_num) {
+        let previousBall = new Ball(Portfolio.vPointer, null, true, pointerRadius);
+        balls.push(previousBall);
+        for (let i = 1; i < _num; i++) {
+            let newBall = previousBall.createLinkedBall();
+            balls.push(newBall);
+            previousBall = newBall;
+        }
+    }
+    function animate() {
+        let timeThisFrame = Date.now();
+        Portfolio.deltaTime = timeThisFrame - timeLastFrame;
+        Portfolio.deltaTime /= 1000;
+        timeLastFrame = timeThisFrame;
+        drawBackground(-Portfolio.canvas.width, -Portfolio.canvas.height, Portfolio.canvas.width * 2, Portfolio.canvas.height * 2);
+        calculateAndDrawBalls();
+        requestAnimationFrame(animate);
+    }
+    function calculateAndDrawBalls() {
+        for (let ball of balls) {
+            ball.calculateAndDraw(balls);
+        }
+    }
     function drawBackground(_x, _y, _w, _h) {
         crc2.beginPath();
         crc2.strokeStyle = 'hsl(210, 10.80%, 14.50%)';
@@ -76,54 +140,6 @@ var Portfolio;
         crc2.rect(_x, _y, _w, _h);
         crc2.stroke();
         crc2.fill();
-    }
-    function drawBall() {
-        drawCircle(vBall, ballRadius);
-    }
-    function drawBall2() {
-        drawCircle(vBall2, ballRadius);
-    }
-    function drawPointer() {
-        drawCircle(vPointer, pointerRadius);
-    }
-    function drawPull() {
-        drawLine(vBall, vPointer);
-    }
-    function drawPull2() {
-        drawLine(vBall2, vBall);
-    }
-    function moveBall() {
-        vPull = vBall.getDiff(vPointer);
-        vPull.x *= -pullForceFactor;
-        vPull.y *= -pullForceFactor;
-        vPull2 = vBall2.getDiff(vBall);
-        vPull2.x *= -pullForceFactor;
-        vPull2.y *= -pullForceFactor;
-        vPull3.x = -vPull2.x;
-        vPull3.y = -vPull2.y;
-        vSpeed.add(vGravity);
-        vSpeed.add(vPull);
-        vSpeed.add(vPull3);
-        vSpeed2.add(vGravity2);
-        vSpeed2.add(vPull2);
-        vFriction.x = vSpeed.x / 50;
-        vFriction.y = vSpeed.y / 50;
-        vFriction2.x = vSpeed2.x / 50;
-        vFriction2.y = vSpeed2.y / 50;
-        vSpeed.subtract(vFriction);
-        vSpeed2.subtract(vFriction2);
-        vBall.add(vSpeed);
-        vBall2.add(vSpeed2);
-    }
-    function animate() {
-        drawBackground(-Portfolio.canvas.width, -Portfolio.canvas.height, Portfolio.canvas.width * 2, Portfolio.canvas.height * 2);
-        drawPointer();
-        moveBall();
-        drawBall();
-        drawBall2();
-        drawPull();
-        drawPull2();
-        requestAnimationFrame(animate);
     }
     function drawLine(_from, _to) {
         crc2.beginPath();
@@ -133,6 +149,7 @@ var Portfolio;
         crc2.lineTo(_to.x, _to.y);
         crc2.stroke();
     }
+    Portfolio.drawLine = drawLine;
     function drawCircle(_pos, _radius) {
         crc2.beginPath();
         crc2.strokeStyle = ballColor;
@@ -141,5 +158,6 @@ var Portfolio;
         crc2.stroke();
         crc2.fill();
     }
+    Portfolio.drawCircle = drawCircle;
 })(Portfolio || (Portfolio = {}));
 //# sourceMappingURL=HeaderRubberBand.js.map

@@ -1,5 +1,6 @@
 var Portfolio;
 (function (Portfolio) {
+    var _a;
     var Vector2D = Vector.Vector2D;
     class Ball {
         constructor(_position, _parent, _isKinematic, _radius) {
@@ -52,9 +53,10 @@ var Portfolio;
             this.drawConnection();
         }
     }
-    Ball.defaultRadius = 4;
-    Ball.pullForceFactor = 15;
-    Ball.frictionConstant = 12;
+    _a = Ball;
+    Ball.defaultRadius = 15;
+    Ball.pullForceFactor = 1;
+    Ball.frictionConstant = _a.pullForceFactor * 1.618;
     Portfolio.Ball = Ball;
     let crc2;
     //window.addEventListener("load", init);
@@ -63,7 +65,7 @@ var Portfolio;
     document.querySelector("#header_wrap").addEventListener('mouseenter', trackMouseMove);
     // Initial position
     //let position = 0;
-    Portfolio.gravity = new Vector2D(0, 30);
+    Portfolio.gravity = new Vector2D(0, 100);
     let lineWidth = 6;
     let lineColor = "#495057";
     let ballColor = lineColor;
@@ -71,7 +73,7 @@ var Portfolio;
     Portfolio.vPointer = new Vector2D(0, 0);
     let lastPressedKey = "";
     let balls = [];
-    let chainLength = 21;
+    let chainLength = 3;
     //avarage good frameRate for deltaTime as start;
     Portfolio.deltaTime = 0.020;
     let timeLastFrame = Date.now();

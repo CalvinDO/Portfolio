@@ -4,9 +4,9 @@ namespace Portfolio {
 
     export class Ball {
 
-        private static defaultRadius: number = 4;
-        private static pullForceFactor: number = 15;
-        private static frictionConstant: number = 12;
+        private static defaultRadius: number = 15;
+        private static pullForceFactor: number = 1;
+        private static frictionConstant: number = this.pullForceFactor* 1.618;
 
         private position: Vector2D;
         private speed: Vector2D = new Vector2D(0, 0);
@@ -105,7 +105,7 @@ namespace Portfolio {
 
     // Initial position
     //let position = 0;
-    export let gravity: Vector2D = new Vector2D(0, 30);
+    export let gravity: Vector2D = new Vector2D(0, 100);
 
     let lineWidth: number = 6;
     let lineColor: string = "#495057";
@@ -119,7 +119,7 @@ namespace Portfolio {
 
     let balls: Ball[] = [];
 
-    let chainLength: number = 21;
+    let chainLength: number = 3;
 
     //avarage good frameRate for deltaTime as start;
     export let deltaTime: number = 0.020;
