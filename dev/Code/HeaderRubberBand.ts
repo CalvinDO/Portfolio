@@ -6,7 +6,7 @@ namespace Portfolio {
 
         private static defaultRadius: number = 15;
         private static pullForceFactor: number = 1;
-        private static frictionConstant: number = this.pullForceFactor* 1.618;
+        private static frictionConstant: number = this.pullForceFactor * 1.618;
 
         private position: Vector2D;
         private speed: Vector2D = new Vector2D(0, 0);
@@ -102,6 +102,12 @@ namespace Portfolio {
     document.querySelector("#header_wrap").addEventListener('mouseover', trackMouseMove);
     document.querySelector("#header_wrap").addEventListener('mouseenter', trackMouseMove);
 
+    document.querySelector("#header_wrap").addEventListener("touchstart", trackTouchMove);
+    document.querySelector("#header_wrap").addEventListener("touchmove", trackTouchMove);
+    document.querySelector("#header_wrap").addEventListener("touchend", trackTouchMove);
+    document.querySelector("#header_wrap").addEventListener("touchcancel", trackTouchMove);
+
+   
 
     // Initial position
     //let position = 0;
@@ -166,6 +172,25 @@ namespace Portfolio {
         let xPointer: number = (_event.clientX - canvasRect.left) * (canvas.width / canvasRect.width);
         let yPointer: number = (_event.clientY - canvasRect.top) * (canvas.height / canvasRect.height);
 
+        vPointer = new Vector2D(xPointer, yPointer);
+    }
+
+    function trackTouchMove(_event: TouchEvent): void {
+        
+        //_event.preventDefault();
+
+        
+        const touch = _event.touches[0] || _event.changedTouches[0];
+
+        if (!touch) return; 
+
+        const canvasRect = canvas.getBoundingClientRect();
+
+        
+        let xPointer: number = (touch.clientX - canvasRect.left) * (canvas.width / canvasRect.width);
+        let yPointer: number = (touch.clientY - canvasRect.top) * (canvas.height / canvasRect.height);
+
+        
         vPointer = new Vector2D(xPointer, yPointer);
     }
 

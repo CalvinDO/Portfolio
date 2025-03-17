@@ -63,6 +63,10 @@ var Portfolio;
     document.querySelector("#header_wrap").addEventListener("mousemove", trackMouseMove);
     document.querySelector("#header_wrap").addEventListener('mouseover', trackMouseMove);
     document.querySelector("#header_wrap").addEventListener('mouseenter', trackMouseMove);
+    document.querySelector("#header_wrap").addEventListener("touchstart", trackTouchMove);
+    document.querySelector("#header_wrap").addEventListener("touchmove", trackTouchMove);
+    document.querySelector("#header_wrap").addEventListener("touchend", trackTouchMove);
+    document.querySelector("#header_wrap").addEventListener("touchcancel", trackTouchMove);
     // Initial position
     //let position = 0;
     Portfolio.gravity = new Vector2D(0, 100);
@@ -104,6 +108,20 @@ var Portfolio;
         const canvasRect = Portfolio.canvas.getBoundingClientRect();
         let xPointer = (_event.clientX - canvasRect.left) * (Portfolio.canvas.width / canvasRect.width);
         let yPointer = (_event.clientY - canvasRect.top) * (Portfolio.canvas.height / canvasRect.height);
+        Portfolio.vPointer = new Vector2D(xPointer, yPointer);
+    }
+    function trackTouchMove(_event) {
+        // Prevent default behavior (e.g., page scrolling)
+        //_event.preventDefault();
+        // Get the first touch point (index 0)
+        const touch = _event.touches[0] || _event.changedTouches[0];
+        if (!touch)
+            return; // If there's no touch point, do nothing
+        const canvasRect = Portfolio.canvas.getBoundingClientRect();
+        // Calculate the pointer position relative to the canvas
+        let xPointer = (touch.clientX - canvasRect.left) * (Portfolio.canvas.width / canvasRect.width);
+        let yPointer = (touch.clientY - canvasRect.top) * (Portfolio.canvas.height / canvasRect.height);
+        // Update the pointer position
         Portfolio.vPointer = new Vector2D(xPointer, yPointer);
     }
     function onKeyDown(_event) {
