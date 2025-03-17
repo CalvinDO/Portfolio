@@ -15,23 +15,25 @@ var Portfolio;
             let newBallPosition = new Vector2D(this.position.x, this.position.y + this.radius * 2);
             return new Ball(newBallPosition, this, false, Ball.defaultRadius);
         }
-        calculatePulls(_balls) {
+        calculate(_balls) {
             if (this.isKinematic || !this.parent) {
                 this.position.setVector(Portfolio.vPointer);
                 return;
             }
             let pullToParent = this.position.getDiff(this.parent.position);
             pullToParent.scale(-Ball.pullForceFactor);
+            pullToParent.scale(Portfolio.deltaTime);
             this.speed.add(pullToParent);
             if (this.childBall) {
                 let pullToChild = this.position.getDiff(this.childBall.position);
                 pullToChild.scale(-Ball.pullForceFactor);
+                pullToChild.scale(Portfolio.deltaTime);
                 this.speed.add(pullToChild);
             }
             this.speed.add(Portfolio.gravity);
-            let friction = new Vector2D(0, 0);
-            friction.setVector(this.speed);
-            friction.scale(1 / 50);
+            let friction = new Vector2D(Math.pow(this.speed.x, 2), Math.pow(this.speed.y, 2));
+            friction.scale(Ball.frictionConstant);
+            friction.scale(Portfolio.deltaTime);
             this.speed.subtract(friction);
             this.position.add(this.speed);
         }
@@ -44,13 +46,14 @@ var Portfolio;
             }
         }
         calculateAndDraw(_balls) {
-            this.calculatePulls(_balls);
+            this.calculate(_balls);
             this.drawBall();
             this.drawConnection();
         }
     }
-    Ball.defaultRadius = 15;
+    Ball.defaultRadius = 10;
     Ball.pullForceFactor = 1 / 25;
+    Ball.frictionConstant = 0.5;
     Portfolio.Ball = Ball;
     let crc2;
     //window.addEventListener("load", init);
@@ -67,6 +70,9 @@ var Portfolio;
     Portfolio.vPointer = new Vector2D(0, 0);
     let lastPressedKey = "";
     let balls = [];
+    //avarage good frameRate for deltaTime as start;
+    Portfolio.deltaTime = 0.020;
+    let timeLastFrame = Date.now();
     try {
         initHeaderR(null);
     }
@@ -107,6 +113,10 @@ var Portfolio;
         }
     }
     function animate() {
+        let timeThisFrame = Date.now();
+        Portfolio.deltaTime = timeThisFrame - timeLastFrame;
+        Portfolio.deltaTime /= 1000;
+        timeLastFrame = timeThisFrame;
         drawBackground(-Portfolio.canvas.width, -Portfolio.canvas.height, Portfolio.canvas.width * 2, Portfolio.canvas.height * 2);
         calculateAndDrawBalls();
         requestAnimationFrame(animate);

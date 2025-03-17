@@ -4,8 +4,9 @@ namespace Portfolio {
 
     export class Ball {
 
-        private static defaultRadius: number = 15;
+        private static defaultRadius: number = 10;
         private static pullForceFactor: number = 1 / 25;
+        private static frictionConstant: number = 0.5;
 
         private position: Vector2D;
         private speed: Vector2D = new Vector2D(0, 0);
@@ -37,7 +38,7 @@ namespace Portfolio {
             return new Ball(newBallPosition, this, false, Ball.defaultRadius);
         }
 
-        public calculatePulls(_balls: Ball[]): void {
+        public calculate(_balls: Ball[]): void {
 
             if (this.isKinematic || !this.parent) {
 
@@ -48,6 +49,8 @@ namespace Portfolio {
 
             let pullToParent: Vector2D = this.position.getDiff(this.parent.position);
             pullToParent.scale(- Ball.pullForceFactor);
+            pullToParent.scale(deltaTime);
+
             this.speed.add(pullToParent);
 
 
@@ -55,16 +58,16 @@ namespace Portfolio {
 
                 let pullToChild: Vector2D = this.position.getDiff(this.childBall.position);
                 pullToChild.scale(- Ball.pullForceFactor);
+                pullToChild.scale(deltaTime);
                 this.speed.add(pullToChild);
             }
 
 
             this.speed.add(gravity);
 
-            let friction: Vector2D = new Vector2D(0, 0);
-            friction.setVector(this.speed);
-            friction.scale(1 / 50);
-
+            let friction: Vector2D = new Vector2D(Math.pow(this.speed.x, 2), Math.pow(this.speed.y, 2));
+            friction.scale(Ball.frictionConstant);
+            friction.scale(deltaTime);
             this.speed.subtract(friction);
 
             this.position.add(this.speed);
@@ -82,7 +85,7 @@ namespace Portfolio {
 
         public calculateAndDraw(_balls: Ball[]): void {
 
-            this.calculatePulls(_balls);
+            this.calculate(_balls);
             this.drawBall();
             this.drawConnection();
         }
@@ -115,6 +118,10 @@ namespace Portfolio {
 
 
     let balls: Ball[] = [];
+
+    //avarage good frameRate for deltaTime as start;
+    export let deltaTime: number = 0.020;
+    let timeLastFrame: number = Date.now();
 
     try {
         initHeaderR(null);
@@ -174,6 +181,11 @@ namespace Portfolio {
     }
 
     function animate(): void {
+
+        let timeThisFrame: number = Date.now();
+        deltaTime = timeThisFrame - timeLastFrame;
+        deltaTime /= 1000;
+        timeLastFrame = timeThisFrame;
 
         drawBackground(-canvas.width, -canvas.height, canvas.width * 2, canvas.height * 2);
 
