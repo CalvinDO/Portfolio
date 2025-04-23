@@ -1270,7 +1270,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
       <br>
       <ul class="task-list">
       <li><strong>Fahrzeug-Setup</strong><br>
-          <span>Integration von über 80 Fahrzeugmodellen mit funktionsspezifischen Logikbausteinen</span>
+          <span>Integration von dutzenden Fahrzeugmodellen mit funktionsspezifischen Logikbausteinen</span>
           <ul>
               <li>Rotationslimits, Getriebe- und Motorsimulation, Terrainsimulation</li>
               <li>Fahrzeugaudio mit FMOD</li>
