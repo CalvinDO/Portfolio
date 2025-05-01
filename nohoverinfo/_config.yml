@@ -1,8 +1,0 @@
-theme: jekyll-theme-slate
-
-sass:
-  style: compressed
-
-extra:
-  head:
-    - link: "custom.css"

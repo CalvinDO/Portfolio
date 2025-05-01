@@ -29,9 +29,10 @@ blockquote {
   border-left: 0;
   color: #F8F9FA;
   position: relative;
+  font-family: "Poppins", sans-serif;
 }
 
-.quote-text {
+.quote-text{
   position: relative;
 }
 
@@ -63,6 +64,10 @@ blockquote:first-child{
   width: 100% !important;
   max-width: none !important;
   min-width: none !important;
+}
+
+#main_content_wrap{
+  background: #f8f9fa;
 }
 
 h1{
@@ -103,7 +108,7 @@ h1{
   color: #343A40;
   padding: 10px 15px;
   display: block;
-  background-color: #F8F9FA;
+  background-color: hsl(0deg 0% 20% / 6%);
   transition: background 0.3s;
   border-radius: 5px;
 }
@@ -151,9 +156,9 @@ h1{
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #f9f9f9;
-
+  background-color: #fafafa;
   height: 100%;
+  color: #212529;
 }
 
 @media (max-width: 1225px) {
@@ -328,17 +333,83 @@ details[open] ~ .klicken {
 <style>
 
 #motivation-end-container {
-    padding: 0% 23.604%;
+  padding: 0% 28.604%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  gap: 20px;
 }
+
+
+@media (max-width: 900px){
+  #motivation-end-container {
+    padding: 0% 23.604%;
+    text-align: start;
+  }
+}
+
+
+@media (max-width: 500px){
+  #motivation-end-container {
+    padding: 0% 9%;
+    padding-left: 5.18%;
+  }
+}
+
+#motivation-end-container p{
+  margin: 12.5px 0px 12.5px;
+}
+
+.motivation-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.motivation-item i {
+  font-size: 1.5rem;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#abschluss i {
+  color: #4361ee;
+}
+#wunsch i {
+  color: #3a0ca3;
+}
+#jobs i {
+  color: #f72585;
+}
+#warum i {
+  color: #4cc9f0;
+}
+
 </style>
 
 <div id="motivation-end-container">
-<p>Alter: 21<br>
-Ich schloss das Studium mit meiner <a href="#neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen">Bachelor-Thesis “Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen”</a> ab, bei dem in einem Editor Knochen-Gelenk-Konstruktionen erstellt werden, die durch Mutationen über Generationen hinweg Laufmuster von Grund auf lernen.<br>
-<br>
-Auf dieser Seite sammle ich einige meiner Arbeiten, um einen Beleg für meinen Enthusiasmus und Lernfähigkeit zu liefern und Interesse für ein Angebot als Spieleprogrammierer zu wecken. Mittlerweile hat sich eine Spezifikation des Spielgenres herauskristallisiert, in dem ich gerne arbeite: Spiele, die ohne Gewaltdarstellungen dem Spieler eine eher friedliche, meditative Erfahrung bieten. Wenn Mehrspielermodi vorhanden sind, sollten die Spieler konstruktiv und kooperativ zusammenarbeiten. Optimalerweise kämpft der Spieler im Spiel gegen nichts, und kommt im Spielverlauf zu intuitiven Einsichten über tiefgreifende Themen und Philosophien.<br>
-Puzzle-Games und Aufbau-Strategiespiele sowie Cozy Games, Simulatoren oder Musik-/Sound- und Rhythm-Games kommen besonders in Frage.<br>
-Ich bin musikalisch begabt, spiele viele Instrumente, digital wie akustisch. Grundlegende 3D-Modelling- und Design-Kenntnisse sind vorhanden, jedoch nicht als Haupttätigkeit bevorzugt. In der Soundgestaltung und Soundtechnik des Spiels kann ich mitwirken, während Programmieren meine Haupttätigkeit darstellt.</p>
+    <div class="motivation-item" id="abschluss">
+        <i class="fa-solid fa-graduation-cap fa-bounce"></i>
+        <p>Mit 21 Jahren schloss ich das Studium mit meiner <a href="#neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen">Bachelor-Thesis "Neuroevolution benutzerdefinierter mehrbeiniger Kreaturen"</a> ab, bei der in einem Editor Knochen-Gelenk-Konstruktionen erstellt werden, die durch Mutationen über Generationen hinweg Laufmuster von Grund auf lernen.</p>
+    </div>
+    <div class="motivation-item" id="wunsch">
+        <i class="fa-solid fa-flag-checkered fa-shake"></i>
+        <p>Gerne programmiere ich Spiele ohne Gewaltdarstellungen und biete dem Spieler eine eher friedliche und meditative Erfahrung. Bei Mehrspielermodi sollten die Spieler konstruktiv und kooperativ zusammenarbeiten.<br>Optimalerweise verzichtet das Spiel auf Gegner und vermittelt intuitive Einsichten über tiefgreifende Themen und Philosophien.<br>
+        Puzzle-Games, Aufbau-Strategiespiele sowie Cozy Games, Simulatoren oder Musik-, Sound- und Rhythm-Games kommen besonders infrage.</p>
+    </div>
+    <div class="motivation-item" id="jobs">
+        <i class="fa-solid fa-screwdriver-wrench fa-spin"></i>
+        <p><strong>Programmieren</strong> stellt meine Haupttätigkeit dar. Daneben bin ich musikalisch begabt und spiele viele Instrumente – digital wie akustisch. Grundlegende 3D-Modelling- und Design-Kenntnisse sind vorhanden, jedoch nicht als Haupttätigkeit bevorzugt. In der Soundgestaltung und Soundtechnik des Spiels wirke ich gerne mit.</p>
+    </div>
+    <div class="motivation-item" id="warum">
+        <i class="fa-solid fa-circle-check fa-beat"></i>
+        <p>Auf dieser Seite sammle ich einige meiner Arbeiten, um einen Beleg für meinen Enthusiasmus und meine Lernfähigkeit zu liefern und Interesse für ein Angebot als Spieleprogrammierer zu wecken.</p>
+    </div>
 </div>
 
 <hr/>  
@@ -367,7 +438,7 @@ h1#header-coding ~ h1 {
   width: calc(33.33%); /* Standard: 3 Elemente pro Zeile */
   box-sizing: border-box;
   padding: 0px;
-  background-color: #000000;
+  background-color: #212529;
   text-align: center;
 
   position: relative; /* Notwendig, damit .toggle-content sich relativ zum flex-item ausrichtet */
@@ -497,6 +568,11 @@ h1#header-coding ~ h1 {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease-in-out;
+  z-index: 0;
+}
+
+.expanded .visual-presentation-container img, .expanded .visual-presentation-container video {
+    z-index: 12 !important;
 }
 
 .flex-item {
@@ -530,7 +606,6 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
   transform: translate(-50%, -50%);
   color: white;
   font-size: 2em;
-  opacity: 0.5;
   pointer-events: none;
   display: inline-block;
   vertical-align: middle;
@@ -538,8 +613,12 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
   white-space: nowrap;
 }
 
+:not(.hovered) .klicken-indicator {
+  opacity: 0;
+}
+
 .hovered .klicken-indicator {
-    opacity: 0.93;
+    opacity: 0.8618;
     font-size: 2em;
     font-weight: bold;
     text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6180339);
@@ -644,9 +723,9 @@ video, img, .visual-presentation-container:not(#multi-display) {
   display: flex;
   align-items: center; /* Perfekte vertikale Ausrichtung */
   gap: 5px; /* Abstand zwischen Icon und Text */
-  font-size: 18px !important;
-  color: #4361ee;
-  text-shadow: -1px 0 #f8f9fa, 0 1px #f8f9fa, 1px 0 #f8f9fa, 0 -1px #f8f9fa;
+  font-size: 19px !important;
+  color: #4cc9f0;
+  /* text-shadow: -1px 0 #f8f9fa, 0 1px #f8f9fa, 1px 0 #f8f9fa, 0 -1px #f8f9fa; */
   margin-left: 1.618%;
 }
 
@@ -656,7 +735,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
 }
 
 .team-size-container i {
-  font-size: 18px; /* Gleiche Größe wie der Text */
+  font-size: 19px; /* Gleiche Größe wie der Text */
   line-height: 1; /* Verhindert Höhenabweichungen */
   display: flex; /* Sorgt für perfekte Zentrierung */
   align-items: center;
@@ -680,7 +759,7 @@ video, img, .visual-presentation-container:not(#multi-display) {
 }
 
 .context-awards * {
-  font-size: 20px !important;
+  font-size: 19px !important;
   color: #3a0ca3;
   text-shadow: -1px 0 #f8f9fa, 0 1px #f8f9fa, 1px 0 #f8f9fa, 0 -1px #f8f9fa;
 }
@@ -821,11 +900,11 @@ span.toggle-arrow-span {
 <div class = "flex-container">
   <div class = "flex-item">
     <div class="toggle-content heading-toggle-content">
-      <h2 id ="bau-simulator">Bau-Simulator (Kommerziell)</h2>
+      <h2 id ="bau-simulator">Construction Simulator®</h2>
     </div>
     <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="https://store.steampowered.com/app/1273400/BauSimulator">
-      <video width="100%" controls loop>
+      <video width="100%" poster = "ConstructionSimulatorThumbnail.jpg" controls loop>
           <source src="ConstructionSimulator.mp4" alt="ConstructionSimulator" type="video/mp4"/>
           Ihr Browser unterstützt den Video-Tag nicht
       </video>
@@ -895,7 +974,7 @@ span.toggle-arrow-span {
     <h2 id="neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen">Neuroevolution</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
         <a href="https://simmer.io/@DerCalvino/neuroevolutionbenutzerdefiniertermehrbeinigerkreaturen">
-            <video width="100%" controls loop>
+            <video width="100%" poster ="NeuroevolutionThumbnail.jpg" controls loop>
                 <source src="BachelorThesis.mp4" alt="BachelorThesis" type="video/mp4"/>
                 Ihr Browser unterstützt den Video-Tag nicht
             </video>
@@ -968,7 +1047,7 @@ span.toggle-arrow-span {
     <h2 id="the-last-hope">The Last Hope</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
         <a href="https://simmer.io/@DerCalvino/thelasthope">
-            <video width="100%" controls loop>
+            <video width="100%" poster = "TheLastHopeThumbnail.png" controls loop>
                 <source src="TheLastHope.mp4" alt="TheLastHope" type="video/mp4"/>
                 Ihr Browser unterstützt den Video-Tag nicht
             </video>
@@ -1071,7 +1150,7 @@ span.toggle-arrow-span {
     <div class="toggle-content second-toggle-content">
       <h4>
       Echtzeit-Computergrafik<br>
-      3-köpfiges Team<br>
+      Trio-Team<br>
       Herbst 2022<br>
       Mobile Web-AR Partyspiel
       </h4>
@@ -1117,7 +1196,7 @@ span.toggle-arrow-span {
     <h2 id="morbus-animi">Morbus Animi</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
         <a href="https://simmer.io/@DerCalvino/morbus-animi-final">
-            <video width="100%" controls loop>
+            <video width="100%" poster = "MorbusAnimiThumbnail.jpg" controls loop>
                 <source src="Morbus-Animi.mp4" alt="Morbus-Animi" type="video/mp4"/>
                 Ihr Browser unterstützt den Video-Tag nicht
             </video>
@@ -1286,7 +1365,7 @@ span.toggle-arrow-span {
   </div>
   <h4>
     Datenverarbeitung in der Medienproduktion<br>
-    3-köpfiges Team<br>
+    Trio-Team<br>
     Frühling 2022<br>
     Blender-Addon
   </h4>
@@ -1329,7 +1408,7 @@ span.toggle-arrow-span {
     <h2 id="discombobulated-space-station">Discombobulated Space Station</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
         <a href="https://calvindo.github.io/PRIMA/">
-            <video width="100%" controls loop>
+            <video width="100%" poster = "DiscombobulatedSpaceStationThumbnail.jpg" controls loop>
                 <source src="DiscombobulatedSpaceStation.mp4" alt="DiscombobulatedSpaceStation" type="video/mp4"/>
                 Ihr Browser unterstützt den Video-Tag nicht
             </video>
@@ -1394,7 +1473,10 @@ span.toggle-arrow-span {
     <h2 id="eisladen">Eisladen</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="https://calvindo.github.io/GiS/Eisladen/">
-        <img src="Eisladen.png" width="100%">
+        <video width="100%" poster = "EisladenThumbnail.png" controls loop>
+            <source src="Eisladen.mp4" alt="Eisladen" type="video/mp4"/>
+            Ihr Browser unterstützt den Video-Tag nicht
+        </video>
       </a>
       <div class = "klicken-indicator">Klicken zum Spielen</div>
       <div class = "primary-info-container">
@@ -1476,7 +1558,10 @@ span.toggle-arrow-span {
     <h2 id="dischoverhfu">DiscHoverHFU</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="https://calvindo.github.io/DiscHoverHFU/Code/DiscHoverHFU.html">
-        <img src="DiscHoverHFU.png" width="100%">
+        <video width="100%" poster = "DiscHoverHFUThumbnail.png" controls loop>
+            <source src="DiscHoverHFU.mp4" alt="DiscHoverHFU" type="video/mp4"/>
+            Ihr Browser unterstützt den Video-Tag nicht
+        </video>
       </a>
       <div class = "klicken-indicator">Klicken zum Spielen</div>
       <div class = "primary-info-container">
@@ -1679,7 +1764,10 @@ span.toggle-arrow-span {
     <h2 id="cardioids">Cardioids</h2>
     <div  class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="Code/Cardioids/start.html">
-        <img src="cardioids.PNG" width="100%">
+      <video width="100%" controls loop poster="cardioids.PNG">
+                <source src="Cardioids.mp4" alt="Cardioids" type="video/mp4"/>
+                Ihr Browser unterstützt den Video-Tag nicht
+        </video>
       </a>
       <div class = "klicken-indicator">Klicken zum Anwenden</div>
       <div class = "primary-info-container">
@@ -1761,7 +1849,10 @@ span.toggle-arrow-span {
     <h2 id="rubber-band">Rubber Band</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <a href="Code/RubberBand/start.html">
-        <img src="Rubber.PNG" width="100%">
+      <video width="100%" controls loop poster="Rubber.PNG">
+                <source src="RubberBand.mp4" alt="RubberBand" type="video/mp4"/>
+                Ihr Browser unterstützt den Video-Tag nicht
+        </video>
       </a>
       <div class = "klicken-indicator">Klicken zum Spielen</div>
       <div class = "primary-info-container">
@@ -1838,7 +1929,7 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="schild">Schild</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-        <video width="100%" controls loop>
+        <video width="100%" poster ="SchildThumbnail.png" controls loop>
             <source src="SchildWater.mp4" alt="SchildWater">
             Ihr Browser unterstützt das Videoformat nicht.
         </video>
@@ -1905,7 +1996,7 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="uboot">Das verrückte U-Boot</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-      <video width="100%" controls loop>
+      <video width="100%" poster ="submarineThumbnail.jpg" controls loop>
           <source src="submarine.mp4" alt="submarine" type="video/mp4">
           Ihr Browser unterstützt den Video-Tag nicht.
       </video>
@@ -2031,7 +2122,7 @@ span.toggle-arrow-span {
     Ich ging darüber hinaus, in dem ich aus der primitiven Geometrie Details wie Edelsteine durch Loop-Cuts, Extrudes und Insets erzeugte. Die Marmortexturen erzeugte ich prozedural über Noise-Nodes, die Holztextur ebenso über Noise, Musgrave und Voronoi Nodes, sowie Vektorkurven und Color-Burn-Nodes. -->
   </div>
   <div class="flex-item">
-    <h2 id="deren-schloss">Deren Schloss</h2>
+    <h2 id="deren-schloss">Schloss der Truhe</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <img src="Schloss.png" alt="Schloss" width="100%"/> 
       <div class = "primary-info-container">
@@ -2093,7 +2184,7 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="wackelpudding-simulation">Wackelpudding-Simulation</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-        <video width="100%" controls loop>
+        <video width="100%" poster ="JellyThumbnail.png" controls loop>
             <source src="Jelly.mp4" alt="Jelly" type="video/mp4"/>
             Ihr Browser unterstützt den Video-Tag nicht.
         </video>
@@ -2141,7 +2232,7 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="korallenriff">Korallenriff</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-      <video width="100%" controls loop>
+      <video width="100%" poster ="CoralReef.png" controls loop>
           <source src="CoralReef.mp4" alt="CoralReef">
           Ihr Browser unterstützt das Videoformat nicht.
       </video>
@@ -2329,7 +2420,7 @@ span.toggle-arrow-span {
   <div class="flex-item">
     <h2 id="burning-monkey">Brennender Affenkopf</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-      <video width="100%" controls loop>
+      <video width="100%" poster ="Monkey.png" controls loop>
           <source src="Monkey.mp4" alt="Monkey">
           Ihr Browser unterstützt das Videoformat nicht.
       </video>
@@ -2402,7 +2493,6 @@ span.toggle-arrow-span {
 
 # Video
 
-## Cardioids - Tutorial
 <div class = "flex-container" id = "video-flex-container">
   <div class="flex-item">
     <h2 id="cardioids-tutorial">Cardioids - Tutorial</h2>
@@ -2465,67 +2555,417 @@ span.toggle-arrow-span {
 <hr/>  
 <hr/>
 
+<style>
+
+.visual-presentation-container audio {
+  height: 115px;
+  width: 96.18%;
+}
+
+.expanded audio {
+    z-index: 12 !important;
+    position: relative;
+}
+
+.context-awards img {
+  width: 34px !important;
+  height: auto !important;
+}
+
+</style>
+
 # Musik
 
-## Fuwashima (Soundtrack zum GlobalGameJam2020)
-
-<audio controls>
-            <source src="Musik/Fuwashima.mp3" type="audio/mp3">
-            Ihr Browser unterstützt den Audio-Tag nicht
-</audio>  
-Dieses Stück komponierte ich als Titelsong im Rahmen des Global-Game-Jams 2020, bei dem ich in einem Team innerhalb von 48 Stunden bei der Entwicklung eines VR-Games mitwirkte. In erster Linie versuchte ich, das Thema des umgesetzten Atomkraftwerk-Supergau-Simulators, in dem der Spieler unter Stress Rätsel lösen muss, durch einen spannenden Aufbau und aggressivem Klang mit entsprechender Stimmung zu unterstützen. Auch versuchte ich, den Effekt von Tonverzerrungen, verursacht durch enorme radioaktive Strahlung, mit der zeitlichen Automation der Delay-Time eines Echo-Delay-Plugins annähernd zu simulieren. Um Originalität zu schaffen, versah ich zurückhaltende Drum-Sounds mit dem prägnanten "Amen-Break", der mir aus der eigenen Schlagzeugpraxis wohl vertraut ist und einen scheinbar gegenläufigen Rhythmus erzeugt.
-
-## PiSong
-
-<audio controls>
-            <source src="Musik/PiSong.mp3" type="audio/mp3">
-            Ihr Browser unterstützt den Audio-Tag nicht
-</audio>
-Bei diesem Audio handelt es sich um ein Gimmick, entworfen für den internationalen "Pi-Day", welches ebenso mein erstes außerhalb der Familie im Alter von 11 Jahren präsentierte Audio-Projekt darstellt. Ich überlegte mir die Idee, einige Nachkommastellen der Kreiszahl Pi musikalisch umzusetzen, ohne Töne und Aufbau nach der Konstante zu gestalten. Dies gelang mir durch das Aufsagen der Stellen von Roboterstimmen. Nach einem "Wobble-Bass", umgesetzt durch zeitliche Modulation des "Cutoffs", folgt eine rein akustisch nicht entzifferbare Sequenz, die das Stück beendet. Es handelt sich hierbei um die auditive Wiedergabe einer Grafik des griechischem Symbols für "Pi". Wenn Sie meinen "Pi-Song" in eine DAW, beispielsweise Audacity, importieren, und sich die Tonspur als Spektrogramm anzeigen lassen, wird es sichtbar.
-
-## VocalRemixTrap
-
-<audio controls>
-            <source src="Musik/VocalRemixTrap.mp3" type="audio/mp3">
-            Ihr Browser unterstützt den Audio-Tag nicht
-</audio>
-Bei diesem Stück handelt es sich ebenfalls um ein Gimmick, diesmal im Kreis von engen Freunden. Ich versuchte, aus einigen verschiedenen menschlichen Aufnahmen, die bei uns täglich für Lacher sorgten, einen "Remix" zu erstellen, der an der Musikrichtung des Traps anlehnt. Dabei verwendete ich eine Vielzahl von Plugins, wovon sich das wichtigste, welches für die Stimmverzerrungen verantwortlich ist, "Fruity Granulizer" nennt. Dies ist mein erstes Audioprojekt, in dem ich, unterstützt durch meinen als DJ erfahrenen Schwager, auf Audioqualität, Mischungen (EQ-ing), Normpegel achtete, sowie Kompressoren benutzte.
+<div class = "flex-container" id = "music-flex-container">
+  <div class="flex-item">
+    <h2 id="fuwashima">Fuwashima - Game Jam</h2>
+    <div class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+      <audio controls>
+        <source src="Musik/Fuwashima.mp3" type="audio/mp3">
+        Ihr Browser unterstützt den Audio-Tag nicht
+      </audio>
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>3
+        </div>
+        <div class = "context-awards">
+         <img src = "GGJ_Logo.png">
+         <i class="fas fa-umbrella-beach"></i>
+        </div>
+        <div class = "tags">
+          <span class="tag">FL Studio</span>
+          <span class="tag">Delay & Echo</span>
+          <span class="tag">Arpeggio</span>
+        </div>
+        <span class ="duration"><i class="far fa-clock"></i>&nbsp;&nbsp;20h</span>
+      </div>
+    </div>
+    <h4>
+      Global Game Jam<br>
+      Trio-Team<br>
+      Frühling 2020<br>
+      Nuklearer Supergau
+    </h4>
+    <br>
+    <div class="skills">
+      <strong>FL Studio, Delay & Echo, Arpeggio, GGJ</strong><br>
+      <em>Expressionistisch - Intensiv - Kooperativ</em><br>
+      <!-- <strong>Git</strong> -->
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Titelsong für Atomkraftwerk-Simulator zu dritt</strong><br>
+        <span>Unterstützung des Themas durch auditive Stimmung</span>
+          <ul>
+            <li>
+              Aggressiver Klang und spannender Aufbau
+            </li>
+            <li>
+              Tonverzerrungen durch radioaktive Strahlung 
+            </li>
+            <li>
+              Zeitliche Automation von Delay- und Echo-Plugins
+            </li>
+          </ul>
+        <span>Versehen mit origineller Note</span>
+          <ul>
+            <li>
+                Zurückhaltende Drum-Sounds mit "Amen-Break"
+            </li>
+            <li>
+                "Gegenläufiger" Rythmus, vertraut aus eigener Schlagzeugpraxis
+            </li>
+          </ul>
+      </li>
+      <li><strong>Mitwirken am Gamedesign</strong><br>
+        <span>Verhindern des Supergaus</span>
+        <ul>
+          <li>
+            Lösen von Rätseln unter Stress
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <!-- Dieses Stück komponierte ich als Titelsong im Rahmen des Global-Game-Jams 2020, bei dem ich in einem Team innerhalb von 48 Stunden bei der Entwicklung eines VR-Games mitwirkte. In erster Linie versuchte ich, das Thema des umgesetzten Atomkraftwerk-Supergau-Simulators, in dem der Spieler unter Stress Rätsel lösen muss, durch einen spannenden Aufbau und aggressivem Klang mit entsprechender Stimmung zu unterstützen. Auch versuchte ich, den Effekt von Tonverzerrungen, verursacht durch enorme radioaktive Strahlung, mit der zeitlichen Automation der Delay-Time eines Echo-Delay-Plugins annähernd zu simulieren. Um Originalität zu schaffen, versah ich zurückhaltende Drum-Sounds mit dem prägnanten "Amen-Break", der mir aus der eigenen Schlagzeugpraxis wohl vertraut ist und einen scheinbar gegenläufigen Rhythmus erzeugt. -->
+  </div>
+  <div class="flex-item">
+    <h2 id="pisong">PiSong</h2>
+    <div class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+      <audio controls>
+        <source src="Musik/PiSong.mp3" type="audio/mp3">
+        Ihr Browser unterstützt den Audio-Tag nicht
+      </audio>
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>1
+        </div>
+        <div class = "context-awards">
+         <i class="fas fa-pi"></i>
+         <i class="fas fa-umbrella-beach"></i>
+        </div>
+        <div class = "tags">
+          <span class="tag">Dubstep</span>
+          <span class="tag">Speech-Synthese</span>
+          <span class="tag">Audio-Watermark</span>
+        </div>
+        <span class ="duration"><i class="far fa-clock"></i>&nbsp;&nbsp;3h</span>
+      </div>
+    </div>
+    <h4>
+      Pi-Tag<br>
+      Solo-Projekt<br>
+      Frühling 2013<br>
+      Tribut für die Kreiszahl
+    </h4>
+    <br>
+    <div class="skills">
+      <strong>Dubstep, Speech-Synthese, Audio-Watermark</strong><br>
+      <em>Experimentell - Mathematisch - Explorativ</em><br>
+      <!-- <strong>Git</strong> -->
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Gimmick für internationalen Pi-Day</strong><br>
+        <span>Musikalische Verkörperung der Kreiszahl</span>
+          <ul>
+            <li>
+              Dubstep durch Cutoff-Modulation
+            </li>
+            <li>
+              Sprachsynthese durch Roboterstimme für Rap
+            </li>
+          </ul>
+        <span>Implementierung eines auditiven Wasserzeichens</span>
+          <ul>
+            <li>
+                Tonspur als Spektrogramm in DAW zeigt "π"-Symbol
+            </li>
+          </ul>
+      </li>
+    </ul>
+    <!-- Bei diesem Audio handelt es sich um ein Gimmick, entworfen für den internationalen "Pi-Day", welches ebenso mein erstes außerhalb der Familie im Alter von 11 Jahren präsentierte Audio-Projekt darstellt. Ich überlegte mir die Idee, einige Nachkommastellen der Kreiszahl Pi musikalisch umzusetzen, ohne Töne und Aufbau nach der Konstante zu gestalten. Dies gelang mir durch das Aufsagen der Stellen von Roboterstimmen. Nach einem "Wobble-Bass", umgesetzt durch zeitliche Modulation des "Cutoffs", folgt eine rein akustisch nicht entzifferbare Sequenz, die das Stück beendet. Es handelt sich hierbei um die auditive Wiedergabe einer Grafik des griechischem Symbols für "Pi". Wenn Sie meinen "Pi-Song" in eine DAW, beispielsweise Audacity, importieren, und sich die Tonspur als Spektrogramm anzeigen lassen, wird es sichtbar. -->
+  </div>
+  <div class="flex-item">
+    <h2 id="vocalremixtrap">Vocal-Remix</h2>
+    <div class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+      <audio controls>
+        <source src="Musik/VocalRemixTrap.mp3" type="audio/mp3">
+        Ihr Browser unterstützt den Audio-Tag nicht
+      </audio>
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>2
+        </div>
+        <div class = "context-awards">
+         <i class="fas fa-umbrella-beach"></i>
+        </div>
+        <div class = "tags">
+          <span class="tag">Trap</span>
+          <span class="tag">Granulizer</span>
+          <span class="tag">EQ-ing</span>
+          <span class="tag">Kompressor</span>
+        </div>
+        <span class ="duration"><i class="far fa-clock"></i>&nbsp;&nbsp;5t</span>
+      </div>
+    </div>
+    <h4>
+      Gimmick im Freundeskreis<br>
+      Duo-Team<br>
+      Sommer 2017<br>
+      Komische Sprachverzerrung
+    </h4>
+    <br>
+    <div class="skills">
+      <strong>Trap, Granulizer, EQ-ing, Kompressor</strong><br>
+      <em>Gemeinschaftlich - Lustig - Detailverliebt</em><br>
+      <!-- <strong>Git</strong> -->
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Trap aus Meme-Sprachaufnahmen</strong><br>
+        <span>Humorvolles Pitching</span>
+          <ul>
+            <li>
+              Tonhöhenverschiebung durch Fruity Granulizer
+            </li>
+            <li>
+              Sprach-Samples als melodisches Instrument
+            </li>
+          </ul>
+        <span>Mixing und Mastering</span>
+          <ul>
+            <li>
+                Beratung von als DJ erfahrenen Schwager
+            </li>
+            <li>
+                Kompressoren, Normpegel, Audioqualität 
+            </li>
+          </ul>
+      </li>
+    </ul>
+    <!-- Bei diesem Stück handelt es sich ebenfalls um ein Gimmick, diesmal im Kreis von engen Freunden. Ich versuchte, aus einigen verschiedenen menschlichen Aufnahmen, die bei uns täglich für Lacher sorgten, einen "Remix" zu erstellen, der an der Musikrichtung des Traps anlehnt. Dabei verwendete ich eine Vielzahl von Plugins, wovon sich das wichtigste, welches für die Stimmverzerrungen verantwortlich ist, "Fruity Granulizer" nennt. Dies ist mein erstes Audioprojekt, in dem ich, unterstützt durch meinen als DJ erfahrenen Schwager, auf Audioqualität, Mischungen (EQ-ing), Normpegel achtete, sowie Kompressoren benutzte. -->
+  </div>
+</div>
 
 <hr/>  
 <hr/>
 
 # Grafik
 
-## Donald Trump, Kugelschreiberzeichnung
-
-<img src="Zeichnungen/Trump.jpg" alt="Trump" width="100%">
-Vor dem Erstellen dieses Bildes pflegte ich eine starke Abgneigung gegen das Zeichnen organischer Objekte und Lebewesen. Dies ist darauf zurück zu führen, dass es mir sonst, leider nicht nur meiner Einschätzung nach, in außerordentlichem Maße misslang. Eines Tages, im Alter von 16 Jahren, als ich mich vom Lernen für eine Klausur ablenkte, verspürte ich die Lust, genau dies zu ändern. Es stellte für mich eine gewisse Art der Herausforderung an mich selbst dar, besonders in Anbetracht des Versäumnisses der Lernzeit.  
-Ein Bild dieses Präsidenten auf meinem Bildschirm vorgelegt, versuchte ich die Konturen frei auf das Papier zu übertragen. Das Ergebnis überraschte mich sehr.
-
-## Schlafend im Bus, Kugelschreiberzeichnung
-
-<img src="Zeichnungen/Sleep.jpg" alt="Sleep" width="100%"/>
-Mit dem Wissen, auch hier etwas Talent zeigen zu können, zeichnete ich wenige Wochen später einen Klassenkameraden, der im Reisebus zur Klassenfahrt in den Schlaf fiel. Hier reizte mich noch mehr die Herausforderung, in Anbetracht der unruhigen Fahrt, des temporären Ruhezustands des Kollegen, des Zeichnens auf den Oberschenkeln, sowie seinen Abneigung, photografiert zu werden.
-
-## Tribal, Tuschezeichnung
-
-<img src="Zeichnungen/Tribal.jpg" alt="Tribal" width="100%">
-Mit dieser, sich von Kugelschreiberzeichnungen stark unterscheidenden Art des Zeichnens experimentiert ich schon früher, im Alter von etwa 13 Jahren, was allerdings auch auf eine Art der Herausforderung meiner Selbstdisziplin zurückzuführen ist, da ich meine Werkzeuge hierbei stark einschränkte.  
-Anstatt einen Pinsel oder Kaligrafiestift zu verwenden, benutzte ich konsequent eine Art eines Fine-Liners, dessen Spitze ich nie das Papier berühren lies, und somit über einen durch die Oberflächenspannung entstehenden winzigen Tintenkanal äußerst vorsichtig über dem Blatt schweben lassen musste, da direkter Kontakt sofort zu unansehnlichen Färbungen führte.  
-Die Motive lehnten ausschließlich an Tribal-Tattoos an.
+<div class = "flex-container" id = "music-flex-container">
+  <div class="flex-item">
+    <h2 id="donald-trump">Donald Trump - Karikatur</h2>
+    <div class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+      <img src="Zeichnungen/Trump.jpg" alt="Trump" width="100%">
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>1
+        </div>
+        <div class = "context-awards">
+         <i class="fas fa-umbrella-beach"></i>
+        </div>
+        <div class = "tags">
+          <span class="tag">Kugelschreiber</span>
+        </div>
+        <span class ="duration"><i class="far fa-clock"></i>&nbsp;&nbsp;3h</span>
+      </div>
+    </div>
+    <h4>
+      Ablenkung bei Klausurvorbereitung<br>
+      Solo-Projekt<br>
+      Winter 2017<br>
+      Karikatur eines Prominenten
+    </h4>
+    <br>
+    <div class="skills">
+      <strong>Kugelschreiber</strong><br>
+      <em>Satirisch - Herausfordernd - Minimalistisch</em><br>
+      <!-- <strong>Git</strong> -->
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Erste gelungene Zeichnung organischer Objekte</strong><br>
+        <span>Herausforderung wegen Abneigung gegen Zeichnung von Lebewesen</span>
+          <ul>
+            <li>
+              Freies Abzeichnen aus Fotografie des Präsidenten
+            </li>
+          </ul>
+      </li>
+    </ul>
+    <!-- Vor dem Erstellen dieses Bildes pflegte ich eine starke Abgneigung gegen das Zeichnen organischer Objekte und Lebewesen. Dies ist darauf zurück zu führen, dass es mir sonst, leider nicht nur meiner Einschätzung nach, in außerordentlichem Maße misslang. Eines Tages, im Alter von 16 Jahren, als ich mich vom Lernen für eine Klausur ablenkte, verspürte ich die Lust, genau dies zu ändern. Es stellte für mich eine gewisse Art der Herausforderung an mich selbst dar, besonders in Anbetracht des Versäumnisses der Lernzeit.  
+    Ein Bild dieses Präsidenten auf meinem Bildschirm vorgelegt, versuchte ich die Konturen frei auf das Papier zu übertragen. Das Ergebnis überraschte mich sehr. -->
+  </div>
+  <div class="flex-item">
+    <h2 id="schlafend-im-bus">Schlafend im Bus</h2>
+    <div class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+      <img src="Zeichnungen/Sleep.jpg" alt="Sleep" width="100%"/>
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>1
+        </div>
+        <div class = "context-awards">
+         <i class="fas fa-umbrella-beach"></i>
+        </div>
+        <div class = "tags">
+          <span class="tag">Kugelschreiber</span>
+        </div>
+        <span class ="duration"><i class="far fa-clock"></i>&nbsp;&nbsp;2h</span>
+      </div>
+    </div>
+    <h4>
+      Beschäftigung im Bus<br>
+      Solo-Projekt<br>
+      Winter 2017<br>
+      Schoßzeichnung
+    </h4>
+    <br>
+    <div class="skills">
+      <strong>Kugelschreiber</strong><br>
+      <em>Realistisch - Herausfordernd - Provokant</em><br>
+      <!-- <strong>Git</strong> -->
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Zweite Zeichnung nach Entdeckung des Talents</strong><br>
+        <span>Klassenkamerade wollte nicht fotografiert werden</span>
+          <ul>
+            <li>
+              Als Provokation zeichnete ich ihn
+            </li>
+          </ul>
+      </li>
+      <li><strong>Reiz durch Herausforderung</strong><br>
+        <span>Bedingungen erschwerten die Vollbringung des Werks</span>
+          <ul>
+            <li>
+              Unruhige Fahrt
+            </li>
+            <li>
+              Temporärer Ruhezustand
+            </li>
+            <li>
+              Zeichnen auf Oberschenkeln
+            </li>
+          </ul>
+      </li>
+    </ul>
+    <!-- Mit dem Wissen, auch hier etwas Talent zeigen zu können, zeichnete ich wenige Wochen später einen Klassenkameraden, der im Reisebus zur Klassenfahrt in den Schlaf fiel. Hier reizte mich noch mehr die Herausforderung, in Anbetracht der unruhigen Fahrt, des temporären Ruhezustands des Kollegen, des Zeichnens auf den Oberschenkeln, sowie seinen Abneigung, photografiert zu werden. -->
+  </div>
+  <div class="flex-item">
+    <h2 id="schlafend-im-bus">Tribal</h2>
+    <div class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
+      <img src="Zeichnungen/Tribal.jpg" alt="Tribal" width="100%">
+      <div class = "primary-info-container">
+        <div class="team-size-container">
+          <i class="material-icons">person</i>1
+        </div>
+        <div class = "context-awards">
+         <i class="fas fa-umbrella-beach"></i>
+        </div>
+        <div class = "tags">
+          <span class="tag">Fine-Liner</span>
+        </div>
+        <span class ="duration"><i class="far fa-clock"></i>&nbsp;&nbsp;2h</span>
+      </div>
+    </div>
+    <h4>
+      Kreative Zeichentechnik<br>
+      Solo-Projekt<br>
+      Winter 2017<br>
+      Tribal-Tattoo
+    </h4>
+    <br>
+    <div class="skills">
+      <strong>Fine-Liner</strong><br>
+      <em>Kreativ - Herausfordernd - Expressionistisch</em><br>
+      <!-- <strong>Git</strong> -->
+    </div>
+    <br>
+    <ul class="task-list">
+      <li><strong>Eigene kreative Zeichentechnik mit Fine-Liner</strong><br>
+        <span>Spitze durfte nie das Papier berühren</span>
+          <ul>
+            <li>
+              Schwebender Tintenkanal durch Oberflächenspannung
+            </li>
+          </ul>
+      </li>
+    </ul>
+    <!-- Mit dieser, sich von Kugelschreiberzeichnungen stark unterscheidenden Art des Zeichnens experimentiert ich schon früher, im Alter von etwa 13 Jahren, was allerdings auch auf eine Art der Herausforderung meiner Selbstdisziplin zurückzuführen ist, da ich meine Werkzeuge hierbei stark einschränkte.  
+    Anstatt einen Pinsel oder Kaligrafiestift zu verwenden, benutzte ich konsequent eine Art eines Fine-Liners, dessen Spitze ich nie das Papier berühren lies, und somit über einen durch die Oberflächenspannung entstehenden winzigen Tintenkanal äußerst vorsichtig über dem Blatt schweben lassen musste, da direkter Kontakt sofort zu unansehnlichen Färbungen führte.  
+    Die Motive lehnten ausschließlich an Tribal-Tattoos an. -->
+  </div>
+</div>
 
 <hr/>  
 <hr/>
 
-# Dokumente
+<style>
 
-- [Daten und Lebenslauf](Lebenslauf.md)
-- [Empfehlungsschreiben Prof. Christoph Müller](EmpfehlungsschreibenVonProfChristophMueller.pdf)
-- [Empfehlungsschreiben Prof. Dr. Thomas Schneider](EmpfehlungsschreibenVonProfDrThomasSchneider.pdf)
-- [Bachelorzeugnis](BachelorOfScience.pdf)
-- [Bachelor Notenspiegel](StudiumNotenspiegel.pdf)
-- [Exmatrikulationsbescheinigung](Exmatrikulationsbescheinigung.pdf)
-- [Praktikumsbestätigung](PraktikumsbestätigungCalvinDellOro.pdf)
-- [Abiturzeugnis](CCF18022020_0001.jpg)
-- [Auszeichnung des Gymnasiums für kulturelles Engagement](CCF18022020_0003.jpg)
-- [Hackathon-Urkunde](CCF18022020_0002.jpg)
+.copyright, .copyright + p {
+  display: none !important;
+}
+
+.documents-wrapper {
+  display: flex;
+  justify-content: center; /* Zentriert den gesamten Inhalt horizontal */
+}
+.documents-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: left; /* Listenelemente linksbündig ausrichten */
+}
+
+.documents-wrapper, .documents-wrapper *{
+  color: #F8F9FA !important;
+}
+
+#dokumente{
+  color: #F8F9FA !important;
+}
+
+#footer_wrap {
+  position: relative;
+  z-index: 0;
+}
+
+</style>
+
+<h1 id = "dokumente">Dokumente</h1>
+<div class ="documents-wrapper">
+  <ul class = "documents-list">
+    <li><a href="Lebenslauf.md">Daten und Lebenslauf</a></li>
+    <li><a href="EmpfehlungsschreibenVonProfChristophMueller.pdf">Empfehlungsschreiben Prof. Christoph Müller</a></li>
+    <li><a href="EmpfehlungsschreibenVonProfDrThomasSchneider.pdf">Empfehlungsschreiben Prof. Dr. Thomas Schneider</a></li>
+    <li><a href="BachelorOfScience.pdf">Bachelorzeugnis</a></li>
+    <li><a href="StudiumNotenspiegel.pdf">Bachelor Notenspiegel</a></li>
+    <li><a href="Exmatrikulationsbescheinigung.pdf">Exmatrikulationsbescheinigung</a></li>
+    <li><a href="PraktikumsbestätigungCalvinDellOro.pdf">Praktikumsbestätigung</a></li>
+    <li><a href="CCF18022020_0001.jpg">Abiturzeugnis</a></li>
+    <li><a href="CCF18022020_0003.jpg">Auszeichnung des Gymnasiums für kulturelles Engagement</a></li>
+    <li><a href="CCF18022020_0002.jpg">Hackathon-Urkunde</a></li>
+  </ul>
+</div>
+
+<script src = "Code/FooterInserter.js">

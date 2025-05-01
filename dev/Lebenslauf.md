@@ -1,6 +1,6 @@
 # Daten und Lebenslauf
 
-<img src="Calvin1.jpeg" align="right" width="24.5%"/>
+<img src="Calvin1.jpeg" style="float: right; width: 24.5%;" />
 
 ## Adresse
 
@@ -23,7 +23,8 @@ Tätigkeit: Jobsuche, nach Bachelor-Abschluss und Reise
 PSG Baden-Württemberg, Titisee-Neustadt  
 7/19 – 8/19 Archivierung Ferienjob (Excel, Auswertungsautomatismen, Scannen)
 Novartis AG, Basel  
-8/20 - 01/21 Game Developer Praktikum (Unity, FMOD; Programmierung, Asset-Parametrierung & Integration)  
+3/20 - 8/20 Tutoriat Programmierung (Java) – Hochschule Furtwangen
+8/20 - 1/21 Game Developer Praktikum (Unity, FMOD; Programmierung, Asset-Parametrierung & Integration)  
 weltenbauer. Software Entwicklung GmbH, Wiesbaden  
 1/21 - 4/23 Game Developer Werkstudent (Unity; Programmierung, Asset-Parametrierung & Integration)  
 weltenbauer. Software Entwicklung GmbH, Remote Furtwangen - Wiesbaden
