@@ -2,7 +2,6 @@
 <script src= "Code/UserData.js"></script>
 <script src= "Code/Main.js"></script>
 <script src= "Code/HeaderRubberBand.js"></script>
-<!-- <script src= "Code/Ball.js"></script> -->
 
 <style>
 
