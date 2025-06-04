@@ -1295,7 +1295,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
   <div class = "flex-item excess">
     <h2 id="neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen">Neuroevolution</h2>
     <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
-        <a href="https://simmer.io/@DerCalvino/neuroevolutionbenutzerdefiniertermehrbeinigerkreaturen" target = "_blank">
+        <a href="https://calvin-delloro.itch.io/neuroevolution-benutzerdefinierter-mehrbeiniger-kreaturen" target = "_blank">
             <video width="100%" poster ="NeuroevolutionThumbnail.jpg" controls loop>
                 <source src="BachelorThesis.mp4" alt="BachelorThesis" type="video/mp4"/>
                 Ihr Browser unterstützt den Video-Tag nicht
