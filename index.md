@@ -1358,6 +1358,8 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     Bauen Abschließen: erneuter Linksklick<br>
     Bauen Abbrechen: rechte Maustaste<br>
     Rotations-Einstellungs-Modus: "R"<br>
+    Fortfahren zur Trainingsumgebung: Start klicken<br>
+    Training aktivieren: "Learn OFF" klicken<br>
     Weitere Anleitung: <a href ="NeuroevolutionBenutzerdefinierterMehrbeinigerKreaturen.pdf"  target = "_blank">Thesis</a>
     </div>
     <!-- Dieser AI-Playground ist die Methode meiner Bachelor-Thesis des siebten Semesters. Es ermöglicht Benutzern, eine Kreatur aus Gliedern und Gelenken nach Belieben in einem Editor zu bauen, sowie Rotationslimits der Glieder anzupassen. Im zweiten Schritt startet eine Simulation, bei dem der Kreatur ein vollständig verbundenes künstliches Neuronales Netzwerk zugeteilt wird. Daten über aktuelle Pose und Position werden als Sensoren oder Inputs in das Netz eingespeist, Outputs sind die angestrebten Winkel der Gelenke. Über Generationen hinweg werden die Kreatur und ihre Mutationen je nach räumlichem Fortschritt belohnt, selektiert und die besten Gene in die nächste Generation weitergetragen, wo sie wieder mutieren. Somit lernen die Bauten zu laufen.  
