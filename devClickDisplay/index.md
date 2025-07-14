@@ -3094,7 +3094,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
 </div>
 
 <div class = "flex-container" id = "music-flex-container">
-  <div class = "flex-item excess">
+  <!-- <div class = "flex-item excess">
     <h2 id="donald-trump">Donald Trump - Karikatur</h2>
     <div class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
       <img src="Zeichnungen/Trump.jpg" alt="Trump" width="100%">
@@ -3121,7 +3121,6 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
     <div class="skills">
       <strong>Kugelschreiber</strong><br>
       <em>Satirisch – Herausfordernd – Minimalistisch</em><br>
-      <!-- <strong>Git</strong> -->
     </div>
     <br>
     <ul class="task-list">
@@ -3134,9 +3133,9 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
           </ul>
       </li>
     </ul>
+  </div> -->
     <!-- Vor dem Erstellen dieses Bildes pflegte ich eine starke Abgneigung gegen das Zeichnen organischer Objekte und Lebewesen. Dies ist darauf zurück zu führen, dass es mir sonst, leider nicht nur meiner Einschätzung nach, in außerordentlichem Maße misslang. Eines Tages, im Alter von 16 Jahren, als ich mich vom Lernen für eine Klausur ablenkte, verspürte ich die Lust, genau dies zu ändern. Es stellte für mich eine gewisse Art der Herausforderung an mich selbst dar, besonders in Anbetracht des Versäumnisses der Lernzeit.  
     Ein Bild dieses Präsidenten auf meinem Bildschirm vorgelegt, versuchte ich die Konturen frei auf das Papier zu übertragen. Das Ergebnis überraschte mich sehr. -->
-  </div>
   <div class = "flex-item excess">
     <h2 id="schlafend-im-bus">Schlafend im Bus</h2>
     <div class = "visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
