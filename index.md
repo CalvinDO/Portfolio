@@ -1527,13 +1527,13 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
         <a href="https://calvindo.github.io/Realtime-BeerPhong/aFrame.html"  target = "_blank">
           <div style="position: relative;">
             <img src="BeerPhong.jpeg" style="width: 100%; height: auto; max-width: 100%;">
-            <div class = "klicken-indicator">Klicken<br>zum<br>Spielen</div>
+            <div class = "klicken-indicator" title = 'Klicken<br>zum<br>Spielen'></div>
           </div>
         </a>  
         <a href="BeerPhongMarker.png" download>
           <div style="position: relative;">
             <img src="BeerPhongMarker.png" style="width: 100%; height: auto; max-width: 100%;">
-            <div id = "klicken-beerphong-special-indicator" class = "klicken-indicator">Klicken<br>zum<br>Marker</div>
+            <div id = "klicken-beerphong-special-indicator" class = "klicken-indicator" title = 'Klicken<br>zum<br>Marker'>Klicken<br>zum<br>Öffnen</div>
           </div>
         </a>
         <div class="toggle-arrow"><span class = "toggle-arrow-span"><i class="fas fa-times"></i></span></div>

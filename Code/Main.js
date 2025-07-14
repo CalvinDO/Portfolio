@@ -220,7 +220,7 @@ var Portfolio;
         arrow.classList.toggle("is-x", true);
         headingToggle.insertAdjacentElement('afterbegin', arrow);
         let klickenIndicator = item.querySelector(".klicken-indicator");
-        klickenIndicator.textContent = klickenIndicator.title;
+        klickenIndicator.innerHTML = klickenIndicator.title;
     }
     function dexpandProjectFlexItem(item) {
         //console.log("dexpand");
@@ -233,7 +233,7 @@ var Portfolio;
         item.querySelector(".vignette").insertAdjacentElement('beforebegin', arrow);
         arrow.classList.toggle("is-x", false);
         let klickenIndicator = item.querySelector(".klicken-indicator");
-        klickenIndicator.textContent = "Klicken zum Öffnen";
+        klickenIndicator.innerHTML = "Klicken zum Öffnen";
     }
     function handleDetailsFlexItem(detailsFlexItem) {
         let detail = detailsFlexItem.querySelector("details");
