@@ -220,7 +220,7 @@ var Portfolio;
         arrow.classList.toggle("is-x", true);
         headingToggle.insertAdjacentElement('afterbegin', arrow);
         let klickenIndicator = item.querySelector(".klicken-indicator");
-        klickenIndicator.textContent = "Klicken zum Spielen";
+        klickenIndicator.textContent = klickenIndicator.title;
     }
     function dexpandProjectFlexItem(item) {
         //console.log("dexpand");

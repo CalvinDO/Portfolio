@@ -1603,7 +1603,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
         <a href="https://colab.research.google.com/github/CalvinDO/AITextGenerator/blob/main/LawLanguageRNN/textGenerator.ipynb"  target = "_blank">
           <img src="TextGenerator.png" width="100%">
         </a>
-        <div class = "klicken-indicator">Klicken zum Anwenden</div>
+        <div class = "klicken-indicator" title = "Klicken zum Anwenden">Klicken zum Öffnen</div>
         <div class = "primary-info-container">
           <div class="team-size-container">
             <i class="material-icons">person</i>1
@@ -1675,7 +1675,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
       <a href="Code/TreeGenerator/TreeGenerator.zip" download>
         <img src="TreeGenerator.png" width="100%" />
       </a>
-      <div class = "klicken-indicator">Klicken zum Downloaden</div>
+      <div class = "klicken-indicator" title = "Klicken zum Downloaden">Klicken zum Öffnen</div>
       <div class = "primary-info-container">
         <div class="team-size-container">
           <span><i class='fas fa-users'></i>&nbsp;&nbsp;3</span>
@@ -1964,7 +1964,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
                   Ihr Browser unterstützt den Video-Tag nicht
           </video>
         </a>
-        <div class = "klicken-indicator">Klicken zum Anwenden</div>
+        <div class = "klicken-indicator" title = "Klicken zum Anwenden">Klicken zum Öffnen</div>
         <div class = "primary-info-container">
           <div class="team-size-container">
             <i class="material-icons">person</i>1
@@ -2024,7 +2024,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
         <a href="Code/Fraktal/start.html" target = "_blank">
           <img src="Fraktal.PNG" alt="Fraktal" width="100%">
         </a>
-        <div class = "klicken-indicator">Klicken zum Anwenden</div>
+        <div class = "klicken-indicator" title = "Klicken zum Anwenden">Klicken zum Öffnen</div>
         <div class = "primary-info-container">
           <div class="team-size-container">
             <i class="material-icons">person</i>1
@@ -2097,7 +2097,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
                   Ihr Browser unterstützt den Video-Tag nicht
           </video>
         </a>
-        <div class = "klicken-indicator">Klicken zum Anwenden</div>
+        <div class = "klicken-indicator" title = "Klicken zum Anwenden">Klicken zum Öffnen</div>
         <div class = "primary-info-container">
           <div class="team-size-container">
             <i class="material-icons">person</i>1

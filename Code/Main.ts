@@ -306,7 +306,7 @@ namespace Portfolio {
         headingToggle.insertAdjacentElement('afterbegin', arrow);
 
         let klickenIndicator: HTMLDivElement = item.querySelector(".klicken-indicator");
-        klickenIndicator.textContent = "Klicken zum Spielen";
+        klickenIndicator.textContent = klickenIndicator.title;
     }
 
 
