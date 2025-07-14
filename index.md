@@ -2611,13 +2611,10 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
       <!-- Dieses Projekt geht aus der aktuellsten Computergrafik-Aufgabe hervor. Das Modeling erfolgte über die Extrusion eines "Control-Cage", auf dem der Catmull-Clark-Algorithmus angewendet wurde Allerdings wurden auch hier keine Materialien gefordert, sondern es sollte der Umgang mit dem Displacement-Modifier verinnerlicht werden.  
       Diesen ersetzte ich durch einen entsprechenden Displacement-Node, durch den ich nicht nur Oberflächenberechnungen der versetzten Stellen verändern kann, um beispielsweise unterschiedliche Farben oder Rauigkeitswerte zu erreichen, sondern auch generell mehr Kombinations- und Steuerungsmöglichkeiten durch weitere Nodes, wie beispielsweise Noise-Nodes, hatte. -->
     </div>
-    <div class = "flex-item excess">
+    <!-- <div class = "flex-item excess">
       <h2 id="turret">Tower Defense - Turret</h2>
       <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
         <img src="Turret.jpg" width="100%">
-        <!-- <iframe width="100%" height="300em" src="https://www.youtube.com/embed/VAOCARtbn54"
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>   -->
         <div class = "primary-info-container">
           <div class="team-size-container">
             <span><i class='fas fa-users'></i>&nbsp;&nbsp;2</span>
@@ -2642,7 +2639,6 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
       <div class="skills">
         <strong>Blender, Hard-Surface-Modeling</strong><br>
         <em>Kollaborativ – Autodidaktisch – Individualisiert</em><br>
-        <!-- <strong></strong> -->
       </div>
       <br>
       <ul class="task-list">
@@ -2671,10 +2667,10 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
           </ul>
         </li>
       </ul>
+    </div> -->
       <!-- Dies ist mein erstes 3D-Mesh-Modellierungsprojekt, daher wird in diesem Video teilweise unerfahrener Workflow wiedergegeben. Die Idee dazu kam mir, als ich einem Kollegen beim Programmieren eines 3D-Tower-Defense Spiels zuschaute.  
       Abgesehen von dem Kugellager und den Läufen, bediente ich mich keines Tutorials, um die Modelliertechniken herauszufinden, da ich ein möglichst individualisiertes Gatling-Geschütz erschaffen wollte. Ich verwendete hier alle elementaren Tools, die der Edit-Mode von Blender für Hard-Surface-Modeling zu bieten hat.  
       Das Endresultat ist in dem Tower-Defense-Game meines Kollegen integriert -->
-    </div>
     <div class = "flex-item excess">
       <h2 id="donut">Donut</h2>
       <div class="visual-presentation-container" style="position: relative; display: inline-block; cursor: pointer;">
