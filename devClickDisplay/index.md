@@ -783,6 +783,10 @@ button.more-projects {
   opacity: 0.82;
 }
 
+.flex-item.hovered .klicken-indicator {
+    opacity: 1;
+}
+
 .expanded .toggle-content.second-toggle-content {
   height: 128px !important;
   top: 100%;
