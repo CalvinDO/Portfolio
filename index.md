@@ -783,6 +783,10 @@ button.more-projects {
   opacity: 0.82;
 }
 
+.flex-item.hovered .klicken-indicator {
+    opacity: 1;
+}
+
 .expanded .toggle-content.second-toggle-content {
   height: 128px !important;
   top: 100%;
@@ -1232,7 +1236,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
       </video>
       </a>
       <div class="vignette"></div>
-      <div class = "klicken-indicator">Klicken zum Spielen</div>
+      <div class = "klicken-indicator">Klicken zum Öffnen</div>
       <div class="toggle-arrow"><span class = "toggle-arrow-span"><i class="fas fa-times"></i></span></div>
     </div>
     <div class = "primary-info-container">
@@ -1301,7 +1305,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
                 Ihr Browser unterstützt den Video-Tag nicht
             </video>
         </a>
-        <div class = "klicken-indicator">Klicken zum Spielen</div>
+        <div class = "klicken-indicator">Klicken zum Öffnen</div>
         <div class = "primary-info-container">
           <div class="team-size-container">
             <i class="material-icons">person</i>1
@@ -1376,7 +1380,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
                 Ihr Browser unterstützt den Video-Tag nicht
             </video>
         </a>
-        <div class = "klicken-indicator">Klicken zum Spielen</div>
+        <div class = "klicken-indicator">Klicken zum Öffnen</div>
         <div class = "primary-info-container">
           <div class="team-size-container">
           <span><i class='fas fa-users'></i>&nbsp;&nbsp;6</span>
@@ -1454,7 +1458,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
                   Ihr Browser unterstützt den Video-Tag nicht
               </video>
           </a>
-          <div class = "klicken-indicator">Klicken zum Spielen</div>
+          <div class = "klicken-indicator">Klicken zum Öffnen</div>
           <div class = "primary-info-container">
             <div class="team-size-container">
               <span><i class='fas fa-users'></i>&nbsp;&nbsp;6</span>
@@ -1736,7 +1740,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
                   Ihr Browser unterstützt den Video-Tag nicht
               </video>
           </a>
-          <div class = "klicken-indicator">Klicken zum Spielen</div>
+          <div class = "klicken-indicator">Klicken zum Öffnen</div>
           <div class = "primary-info-container">
             <div class="team-size-container">
               <i class="material-icons">person</i>1
@@ -1801,7 +1805,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
               Ihr Browser unterstützt den Video-Tag nicht
           </video>
         </a>
-        <div class = "klicken-indicator">Klicken zum Spielen</div>
+        <div class = "klicken-indicator">Klicken zum Öffnen</div>
         <div class = "primary-info-container">
           <div class="team-size-container">
             <i class="material-icons">person</i>1
@@ -1886,7 +1890,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
               Ihr Browser unterstützt den Video-Tag nicht
           </video>
         </a>
-        <div class = "klicken-indicator">Klicken zum Spielen</div>
+        <div class = "klicken-indicator">Klicken zum Öffnen</div>
         <div class = "primary-info-container">
           <div class="team-size-container">
             <span><i class='fas fa-users'></i>&nbsp;&nbsp;2</span>
@@ -2178,7 +2182,7 @@ body:has(.flex-item.expanded) .flex-item:not(.expanded) {
                   Ihr Browser unterstützt den Video-Tag nicht
           </video>
         </a>
-        <div class = "klicken-indicator">Klicken zum Spielen</div>
+        <div class = "klicken-indicator">Klicken zum Öffnen</div>
         <div class = "primary-info-container">
           <div class="team-size-container">
             <i class="material-icons">person</i>1
