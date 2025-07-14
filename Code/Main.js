@@ -219,8 +219,13 @@ var Portfolio;
         let arrow = item.querySelector(".toggle-arrow");
         arrow.classList.toggle("is-x", true);
         headingToggle.insertAdjacentElement('afterbegin', arrow);
-        let klickenIndicator = item.querySelector(".klicken-indicator");
-        klickenIndicator.innerHTML = klickenIndicator.title;
+        try {
+            let klickenIndicator = item.querySelector(".klicken-indicator");
+            klickenIndicator.innerHTML = klickenIndicator.title;
+        }
+        catch (error) {
+            console.warn(error);
+        }
     }
     function dexpandProjectFlexItem(item) {
         //console.log("dexpand");
@@ -232,8 +237,13 @@ var Portfolio;
         let arrow = item.querySelector(".toggle-arrow");
         item.querySelector(".vignette").insertAdjacentElement('beforebegin', arrow);
         arrow.classList.toggle("is-x", false);
-        let klickenIndicator = item.querySelector(".klicken-indicator");
-        klickenIndicator.innerHTML = "Klicken zum Öffnen";
+        try {
+            let klickenIndicator = item.querySelector(".klicken-indicator");
+            klickenIndicator.innerHTML = "Klicken zum Öffnen";
+        }
+        catch (error) {
+            console.warn(error);
+        }
     }
     function handleDetailsFlexItem(detailsFlexItem) {
         let detail = detailsFlexItem.querySelector("details");

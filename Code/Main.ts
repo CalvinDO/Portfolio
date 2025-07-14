@@ -305,8 +305,13 @@ namespace Portfolio {
         arrow.classList.toggle("is-x", true);
         headingToggle.insertAdjacentElement('afterbegin', arrow);
 
-        let klickenIndicator: HTMLDivElement = item.querySelector(".klicken-indicator");
-        klickenIndicator.innerHTML = klickenIndicator.title;
+        try {
+
+            let klickenIndicator: HTMLDivElement = item.querySelector(".klicken-indicator");
+            klickenIndicator.innerHTML = klickenIndicator.title;
+        } catch (error) {
+            console.warn(error);
+        }
     }
 
 
@@ -326,8 +331,12 @@ namespace Portfolio {
         item.querySelector(".vignette").insertAdjacentElement('beforebegin', arrow);
         arrow.classList.toggle("is-x", false);
 
-        let klickenIndicator: HTMLDivElement = item.querySelector(".klicken-indicator");
-        klickenIndicator.innerHTML = "Klicken zum Öffnen";
+        try {
+            let klickenIndicator: HTMLDivElement = item.querySelector(".klicken-indicator");
+            klickenIndicator.innerHTML = "Klicken zum Öffnen";
+        } catch (error) {
+            console.warn(error);
+        }
     }
 
 
